@@ -1,0 +1,83 @@
+{
+  "logicalTable": {
+    "name": "Facts",
+    "type": "FACT",
+    "logicalColumns": [
+      {
+        "name": "Unit Sales",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "OpaqueSales",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:FoodMart...OpaqueSales.Unit Sales"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Store Cost",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "OpaqueSales",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:FoodMart...OpaqueSales.Store Cost"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "OpaqueSales",
+        "logicalTableRef": "Facts",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "Unit Sales",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:FoodMart...OpaqueSales.Unit Sales"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Store Cost",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:FoodMart...OpaqueSales.Store Cost"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "OpaqueSales",
+            "joins": [
+            ]
+          }
+        ]
+      },
+    ]
+  }
+}

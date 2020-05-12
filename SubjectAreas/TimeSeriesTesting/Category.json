@@ -1,0 +1,31 @@
+{
+  "presentationTable": {
+    "name": "Category",
+    "presentationColumns": [
+      {
+        "name": "PlanRevenue",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Category.PlanRevenue"
+      },
+      {
+        "name": "CategoryID",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Category.CategoryID"
+      },
+      {
+        "name": "CategoryName",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Category.CategoryName"
+      },
+      {
+        "name": "Description",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Category.Description"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Category.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Category.QtySold"
+      }
+    ]
+  }
+}

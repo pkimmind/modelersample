@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Address",
+    "presentationColumns": [
+      {
+        "name": "[Customer].[Address].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Address.[Customer].[Address].[(All)]"
+      },
+      {
+        "name": "Address",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Address.Address"
+      },
+      {
+        "name": "KEY0#12",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Address.KEY0#12"
+      },
+      {
+        "name": "KEY0#13",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Address.KEY0#13"
+      },
+      {
+        "name": "MEMBER_VALUE#12",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Address.MEMBER_VALUE#12"
+      },
+      {
+        "name": "MEMBER_VALUE#13",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Address.MEMBER_VALUE#13"
+      },
+      {
+        "name": "NAME#10",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Address.NAME#10"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Address",
+        "levels": [
+          {
+            "name": "[Customer].[Address].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Customer].[Address].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Address.[Customer].[Address].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Address",
+            "displayColumns": [
+              {
+                "name": "Address",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Address.Address"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

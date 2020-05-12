@@ -1,0 +1,28 @@
+{
+  "presentationTable": {
+    "name": "OpaqueTable",
+    "alternateNames": [
+      "OpaqueCubeTable"
+    ],
+    "presentationColumns": [
+      {
+        "name": "Cost Center",
+        "sourceLogicalColumn": "logicalColumn:Opaque PNG Demo.OpaqueCubeTable.[0COSTCENTER].[LEVEL01]",
+        "alternateNames": [
+          "[0COSTCENTER].[LEVEL01]"
+        ]
+      },
+      {
+        "name": "Fiscal Period",
+        "sourceLogicalColumn": "logicalColumn:Opaque PNG Demo.OpaqueCubeTable.[0FISCPER].[LEVEL01]",
+        "alternateNames": [
+          "[0FISCPER].[LEVEL01]"
+        ]
+      },
+      {
+        "name": "Amount",
+        "sourceLogicalColumn": "logicalColumn:Opaque PNG Demo.Facts.Amount"
+      }
+    ]
+  }
+}

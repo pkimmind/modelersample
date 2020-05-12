@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Birth Date",
+    "presentationColumns": [
+      {
+        "name": "[Employee].[Birth Date].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Birth Date.[Employee].[Birth Date].[(All)]"
+      },
+      {
+        "name": "Birth Date#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Birth Date.Birth Date#2"
+      },
+      {
+        "name": "KEY0#139",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Birth Date.KEY0#139"
+      },
+      {
+        "name": "KEY0#140",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Birth Date.KEY0#140"
+      },
+      {
+        "name": "MEMBER_VALUE#139",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Birth Date.MEMBER_VALUE#139"
+      },
+      {
+        "name": "MEMBER_VALUE#140",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Birth Date.MEMBER_VALUE#140"
+      },
+      {
+        "name": "NAME#113",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Birth Date.NAME#113"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Birth Date",
+        "levels": [
+          {
+            "name": "[Employee].[Birth Date].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Employee].[Birth Date].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Birth Date.[Employee].[Birth Date].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Birth Date",
+            "displayColumns": [
+              {
+                "name": "Birth Date#2",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Birth Date.Birth Date#2"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

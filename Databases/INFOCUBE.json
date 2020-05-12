@@ -1,0 +1,50 @@
+{
+  "database": {
+    "name": "INFOCUBE",
+    "type": "SAPBW35",
+    "databaseType": 43,
+    "features": [
+      {
+        "name": "IN_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "MAX_COLUMNS_IN_GROUP_BY",
+        "value": 10
+      },
+      {
+        "name": "MAX_BULK_FETCH_BUFFER_SIZE",
+        "value": "0X50000",
+      },
+      {
+        "name": "DEFAULT_BULK_FETCH_ROW_COUNT",
+        "value": "0X64",
+      }
+    ],
+    "connectionPools": [
+      {
+        "name": "Connection Pool",
+        "user": "SAMPLE",
+        "connectionTimeout": 5,
+        "connectionTimeoutUnit": "MINUTES",
+        "maxConnDiff": 10,
+        "maxConnections": 10,
+        "connection": "http://64.181.196.35:8001/sap/bw/xml/soap/xmla",
+        "type": "XMLA",
+        "requiresFullyQualifedTableNames": false,
+        "multithreaded": false,
+        "isCloseAfterEveryRequest": false,
+        "outputType": "xml",
+        "ignoreFirstLine": false,
+        "bulkInsertBufferSize": 0,
+        "transactionBoundary": 0,
+        "xmlaInfo": "default",
+        "xmlaCatalog": "$INFOCUBE",
+        "xmlaUseSession": false,
+        "isSiebelJDBSecured": false
+      }
+    ]
+    "joins": [
+    ]
+  }
+}

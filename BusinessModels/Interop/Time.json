@@ -1,0 +1,174 @@
+{
+  "logicalTable": {
+    "name": "Time",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "Year",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "$INTOP_C02",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:INFOCUBE...INTOP_C02.Year"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Quarter",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "$INTOP_C02",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:INFOCUBE...INTOP_C02.Quarter"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Year",
+              "isPrimary": "true",
+              "columns": [
+                "Year",
+                "Quarter"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "$INTOP_C02",
+        "logicalTableRef": "Time",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "Year",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:INFOCUBE...INTOP_C02.Year"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Quarter",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:INFOCUBE...INTOP_C02.Quarter"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "INTOP_C02",
+            "joins": [
+            ]
+          }
+        ]
+      },
+    ],
+    "dimension": {
+      "name": "Time",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "Year",
+      "levels": [
+        {
+          "name": "Year",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Year",
+          "keys": [
+            {
+              "name": "Year",
+              "isPrimary": "true",
+              "columns": [
+                "Year"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Quarter",
+              "isGTA": false,
+              "memberCount": 4,
+              "levelConst": "Quarter",
+              "keys": [
+                {
+                  "name": "Quarter",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Quarter"
+                  ]
+                }
+              ],
+              "columns": [
+                "Quarter"
+              ]
+            }
+          ],
+          "columns": [
+            "Year"
+          ]
+        },
+        {
+          "name": "Quarter",
+          "isGTA": false,
+          "memberCount": 4,
+          "levelConst": "Quarter",
+          "keys": [
+            {
+              "name": "Quarter",
+              "isPrimary": "true",
+              "columns": [
+                "Quarter"
+              ]
+            }
+          ],
+          "columns": [
+            "Quarter"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Time",
+        "levels": [
+          {
+            "name": "Year",
+            "childLevels": [
+              {
+                "name": "Quarter"
+              }
+            ]
+          },
+          {
+            "name": "Quarter"
+          }
+        ]
+      }
+    }
+  }
+}

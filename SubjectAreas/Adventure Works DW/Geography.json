@@ -1,0 +1,173 @@
+{
+  "presentationTable": {
+    "name": "Geography",
+    "presentationColumns": [
+      {
+        "name": "[Geography].[Geography].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.[Geography].[Geography].[(All)]"
+      },
+      {
+        "name": "City#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.City#5"
+      },
+      {
+        "name": "City#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.City#6"
+      },
+      {
+        "name": "Country#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.Country#5"
+      },
+      {
+        "name": "Country#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.Country#6"
+      },
+      {
+        "name": "KEY0#193",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.KEY0#193"
+      },
+      {
+        "name": "KEY0#194",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.KEY0#194"
+      },
+      {
+        "name": "KEY0#195",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.KEY0#195"
+      },
+      {
+        "name": "KEY0#196",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.KEY0#196"
+      },
+      {
+        "name": "KEY0#197",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.KEY0#197"
+      },
+      {
+        "name": "KEY1#19",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.KEY1#19"
+      },
+      {
+        "name": "KEY1#20",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.KEY1#20"
+      },
+      {
+        "name": "KEY1#21",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.KEY1#21"
+      },
+      {
+        "name": "MEMBER_VALUE#193",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.MEMBER_VALUE#193"
+      },
+      {
+        "name": "MEMBER_VALUE#194",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.MEMBER_VALUE#194"
+      },
+      {
+        "name": "MEMBER_VALUE#195",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.MEMBER_VALUE#195"
+      },
+      {
+        "name": "MEMBER_VALUE#196",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.MEMBER_VALUE#196"
+      },
+      {
+        "name": "MEMBER_VALUE#197",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.MEMBER_VALUE#197"
+      },
+      {
+        "name": "NAME#155",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.NAME#155"
+      },
+      {
+        "name": "NAME#156",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.NAME#156"
+      },
+      {
+        "name": "NAME#157",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.NAME#157"
+      },
+      {
+        "name": "NAME#158",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.NAME#158"
+      },
+      {
+        "name": "NAME#159",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.NAME#159"
+      },
+      {
+        "name": "Postal Code#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.Postal Code#4"
+      },
+      {
+        "name": "State-Province#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.State-Province#5"
+      },
+      {
+        "name": "State-Province#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.State-Province#6"
+      },
+      {
+        "name": "TRAN0#9",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.TRAN0#9"
+      },
+      {
+        "name": "TRAN1#9",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.TRAN1#9"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Geography",
+        "levels": [
+          {
+            "name": "[Geography].[Geography].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Geography].[Geography].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.[Geography].[Geography].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Country",
+            "displayColumns": [
+              {
+                "name": "Country#5",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.Country#5"
+              }
+            ]
+          },
+          {
+            "name": "State-Province",
+            "displayColumns": [
+              {
+                "name": "State-Province#5",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.State-Province#5"
+              }
+            ]
+          },
+          {
+            "name": "City",
+            "displayColumns": [
+              {
+                "name": "City#5",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.City#5"
+              }
+            ]
+          },
+          {
+            "name": "Postal Code",
+            "displayColumns": [
+              {
+                "name": "Postal Code#4",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.Postal Code#4"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Customer PO Number#2",
+    "presentationColumns": [
+      {
+        "name": "[Sales Summary Order Details].[Customer PO Number].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer PO Number#2.[Sales Summary Order Details].[Customer PO Number].[(All)]"
+      },
+      {
+        "name": "Customer PO Number#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer PO Number#2.Customer PO Number#4"
+      },
+      {
+        "name": "KEY0#366",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer PO Number#2.KEY0#366"
+      },
+      {
+        "name": "KEY0#367",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer PO Number#2.KEY0#367"
+      },
+      {
+        "name": "MEMBER_VALUE#366",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer PO Number#2.MEMBER_VALUE#366"
+      },
+      {
+        "name": "MEMBER_VALUE#367",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer PO Number#2.MEMBER_VALUE#367"
+      },
+      {
+        "name": "NAME#287",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer PO Number#2.NAME#287"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Customer PO Number#2",
+        "levels": [
+          {
+            "name": "[Sales Summary Order Details].[Customer PO Number].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Sales Summary Order Details].[Customer PO Number].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer PO Number#2.[Sales Summary Order Details].[Customer PO Number].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Customer PO Number",
+            "displayColumns": [
+              {
+                "name": "Customer PO Number#4",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer PO Number#2.Customer PO Number#4"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

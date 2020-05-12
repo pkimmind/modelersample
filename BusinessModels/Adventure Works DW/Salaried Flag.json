@@ -1,0 +1,444 @@
+{
+  "logicalTable": {
+    "name": "Salaried Flag",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Employee].[Salaried Flag].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Employee].[Salaried Flag].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Salaried Flag].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Employee].[Salaried Flag].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Salaried Flag].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#175",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#175"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#176",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#176"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#175",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#175"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#176",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#176"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#139",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#139"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#140",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#140"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Salaried Flag - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Salaried Flag - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Salaried Flag#7",
+        "writeable": false,
+        "descriptorColumn": "Salaried Flag - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Salaried Flag#7"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Salaried Flag",
+              "isPrimary": "true",
+              "columns": [
+                "[Employee].[Salaried Flag].[(All)]",
+                "Salaried Flag#7"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Salaried Flag",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "[Employee].[Salaried Flag].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Salaried Flag].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Employee].[Salaried Flag].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Salaried Flag].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#175",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#175"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#176",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#176"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#175",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#175"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#176",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#176"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#139",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#139"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#140",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#140"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Salaried Flag - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Salaried Flag - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Salaried Flag#7",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Salaried Flag#7"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Salaried Flag.Salaried Flag"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Salaried Flag",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "[Employee].[Salaried Flag].[(All)]",
+      "levels": [
+        {
+          "name": "[Employee].[Salaried Flag].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Employee].[Salaried Flag].[(All)]",
+          "keys": [
+            {
+              "name": "[Employee].[Salaried Flag].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Employee].[Salaried Flag].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Employee].[Salaried Flag].[(All)]",
+              "columns": [
+                "[Employee].[Salaried Flag].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Salaried Flag",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Salaried Flag",
+              "keys": [
+                {
+                  "name": "Salaried Flag - Member Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Salaried Flag - Member Key"
+                  ]
+                },
+                {
+                  "name": "Salaried Flag",
+                  "columns": [
+                    "Salaried Flag#7"
+                  ]
+                }
+              ],
+              "columns": [
+                "KEY0#176",
+                "MEMBER_VALUE#176",
+                "NAME#140",
+                "Salaried Flag - Member Key",
+                "Salaried Flag#7"
+              ]
+            }
+          ],
+          "columns": [
+            "[Employee].[Salaried Flag].[(All)]",
+            "[Employee].[Salaried Flag].[(All)] - Member Key",
+            "KEY0#175",
+            "MEMBER_VALUE#175",
+            "NAME#139"
+          ]
+        },
+        {
+          "name": "Salaried Flag",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Salaried Flag",
+          "keys": [
+            {
+              "name": "Salaried Flag - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "Salaried Flag - Member Key"
+              ]
+            },
+            {
+              "name": "Salaried Flag",
+              "columns": [
+                "Salaried Flag#7"
+              ]
+            }
+          ],
+          "columns": [
+            "KEY0#176",
+            "MEMBER_VALUE#176",
+            "NAME#140",
+            "Salaried Flag - Member Key",
+            "Salaried Flag#7"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Salaried Flag",
+        "levels": [
+          {
+            "name": "[Employee].[Salaried Flag].[(All)]",
+            "childLevels": [
+              {
+                "name": "Salaried Flag"
+              }
+            ]
+          },
+          {
+            "name": "Salaried Flag"
+          }
+        ]
+      }
+    }
+  }
+}

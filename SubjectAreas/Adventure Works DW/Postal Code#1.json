@@ -1,0 +1,74 @@
+{
+  "presentationTable": {
+    "name": "Postal Code#1",
+    "presentationColumns": [
+      {
+        "name": "[Geography].[Postal Code].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Postal Code#1.[Geography].[Postal Code].[(All)]"
+      },
+      {
+        "name": "City#7",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Postal Code#1.City#7"
+      },
+      {
+        "name": "KEY0#198",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Postal Code#1.KEY0#198"
+      },
+      {
+        "name": "KEY0#199",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Postal Code#1.KEY0#199"
+      },
+      {
+        "name": "KEY1#22",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Postal Code#1.KEY1#22"
+      },
+      {
+        "name": "MEMBER_VALUE#198",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Postal Code#1.MEMBER_VALUE#198"
+      },
+      {
+        "name": "MEMBER_VALUE#199",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Postal Code#1.MEMBER_VALUE#199"
+      },
+      {
+        "name": "NAME#160",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Postal Code#1.NAME#160"
+      },
+      {
+        "name": "NAME#161",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Postal Code#1.NAME#161"
+      },
+      {
+        "name": "Postal Code#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Postal Code#1.Postal Code#5"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Postal Code#1",
+        "levels": [
+          {
+            "name": "[Geography].[Postal Code].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Geography].[Postal Code].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Postal Code#1.[Geography].[Postal Code].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Postal Code",
+            "displayColumns": [
+              {
+                "name": "Postal Code#5",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Postal Code#1.Postal Code#5"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

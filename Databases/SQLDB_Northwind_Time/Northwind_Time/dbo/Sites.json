@@ -1,0 +1,69 @@
+{
+  "physicalTable": {
+    "name": "Sites",
+    "caching": {
+    },
+    "physicalColumns": [
+      {
+        "name": "SiteID",
+        "dataType": "SMALLINT",
+        "length": 5
+      },
+      {
+        "name": "CustomerID",
+        "dataType": "CHAR",
+        "length": 5
+      },
+      {
+        "name": "SiteName",
+        "dataType": "VARCHAR",
+        "length": 40
+      },
+      {
+        "name": "ContactName",
+        "dataType": "VARCHAR",
+        "length": 30
+      },
+      {
+        "name": "ContactTitle",
+        "dataType": "VARCHAR",
+        "length": 30
+      },
+      {
+        "name": "Address",
+        "dataType": "VARCHAR",
+        "length": 60
+      },
+      {
+        "name": "City",
+        "dataType": "CHAR",
+        "length": 15
+      },
+      {
+        "name": "Region",
+        "dataType": "CHAR",
+        "length": 15
+      },
+      {
+        "name": "PostalCode",
+        "dataType": "CHAR",
+        "length": 10
+      },
+      {
+        "name": "Country",
+        "dataType": "CHAR",
+        "length": 15
+      },
+      {
+        "name": "Phone",
+        "dataType": "CHAR",
+        "length": 24
+      },
+      {
+        "name": "Fax",
+        "dataType": "CHAR",
+        "length": 24
+      }
+    ]
+  }
+}

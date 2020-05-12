@@ -1,0 +1,71 @@
+{
+  "subjectArea": {
+    "name": "TimeSeriesTesting",
+    "sourceBusinessModel": "businessModel:SS- Time Series",
+    "implicitFactColumn": "logicalColumn:SS- Time Series.SalesFacts.Revenue",
+    "tableOrder": [
+      {
+        "name": "presentationTable:TimeSeriesTesting..Sales"
+      },
+      {
+        "name": "presentationTable:TimeSeriesTesting..Product"
+      },
+      {
+        "name": "presentationTable:TimeSeriesTesting..Supplier"
+      },
+      {
+        "name": "presentationTable:TimeSeriesTesting..Category"
+      },
+      {
+        "name": "presentationTable:TimeSeriesTesting..SupplierCity"
+      },
+      {
+        "name": "presentationTable:TimeSeriesTesting..SupplierRegion"
+      },
+      {
+        "name": "presentationTable:TimeSeriesTesting..SupplierCountry"
+      },
+      {
+        "name": "presentationTable:TimeSeriesTesting..Shipper"
+      },
+      {
+        "name": "presentationTable:TimeSeriesTesting..Employee"
+      },
+      {
+        "name": "presentationTable:TimeSeriesTesting..EmployeeCity"
+      },
+      {
+        "name": "presentationTable:TimeSeriesTesting..EmployeeRegion"
+      },
+      {
+        "name": "presentationTable:TimeSeriesTesting..EmployeeCountry"
+      },
+      {
+        "name": "presentationTable:TimeSeriesTesting..Site"
+      },
+      {
+        "name": "presentationTable:TimeSeriesTesting..Customer"
+      },
+      {
+        "name": "presentationTable:TimeSeriesTesting..Cross Sell"
+      },
+      {
+        "name": "presentationTable:TimeSeriesTesting..MultiDimShareBases"
+      },
+      {
+        "name": "presentationTable:TimeSeriesTesting..DAY"
+      },
+      {
+        "name": "presentationTable:TimeSeriesTesting..Time_snow"
+      },
+      {
+        "name": "presentationTable:TimeSeriesTesting..SalesPlan"
+      },
+      {
+        "name": "presentationTable:TimeSeriesTesting..holidays"
+      }
+    ],
+    "permissions": {
+    }
+  }
+}

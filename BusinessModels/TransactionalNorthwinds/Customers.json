@@ -1,0 +1,466 @@
+{
+  "logicalTable": {
+    "name": "Customers",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "CustomerID",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Customers",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Customers.CustomerID"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "CompanyName",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Customers",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Customers.CompanyName"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "PK__Customers__Custo__18CBB9A1",
+              "isPrimary": "true",
+              "columns": [
+                "CustomerID"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Customers",
+        "logicalTableRef": "Customers",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "CustomerID",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Customers.CustomerID"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "CompanyName",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Customers.CompanyName"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Customers",
+            "joins": [
+            ]
+          }
+        ]
+      },
+    ],
+    "dimension": {
+      "name": "Orders Dimension",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "levels": [
+        {
+          "name": "Customers",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Customers",
+          "keys": [
+            {
+              "name": "CustomerID",
+              "isPrimary": "true",
+              "columns": [
+                "CustomerID"
+              ]
+            },
+            {
+              "name": "CompanyName",
+              "columns": [
+                "CompanyName"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Sites",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Sites",
+              "keys": [
+                {
+                  "name": "Sites_Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "SiteID",
+                    "CustomerID"
+                  ]
+                }
+              ],
+              "childLevels": [
+                {
+                  "name": "Orders",
+                  "isGTA": false,
+                  "memberCount": 1,
+                  "levelConst": "Orders",
+                  "keys": [
+                    {
+                      "name": "OrderID",
+                      "isPrimary": "true",
+                      "columns": [
+                        "OrderID"
+                      ]
+                    }
+                  ],
+                  "columns": [
+                    "OrderID",
+                    "CustomerID",
+                    "SiteID",
+                    "EmployeeID",
+                    "OrderDate",
+                    "RequiredDate",
+                    "ShippedDate",
+                    "ShipVia",
+                    "Freight",
+                    "ShipName",
+                    "ShipAddress",
+                    "ShipCity",
+                    "ShipRegion",
+                    "ShipPostalCode",
+                    "ShipCountry"
+                  ]
+                }
+              ],
+              "columns": [
+                "SiteID",
+                "CustomerID",
+                "SiteName",
+                "ContactName",
+                "ContactTitle",
+                "Address",
+                "City",
+                "Region",
+                "PostalCode",
+                "Country",
+                "Phone",
+                "Fax"
+              ]
+            }
+          ],
+          "columns": [
+            "CustomerID",
+            "CompanyName"
+          ]
+        },
+        {
+          "name": "Sites",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Sites",
+          "keys": [
+            {
+              "name": "Sites_Key",
+              "isPrimary": "true",
+              "columns": [
+                "SiteID",
+                "CustomerID"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Orders",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Orders",
+              "keys": [
+                {
+                  "name": "OrderID",
+                  "isPrimary": "true",
+                  "columns": [
+                    "OrderID"
+                  ]
+                }
+              ],
+              "columns": [
+                "OrderID",
+                "CustomerID",
+                "SiteID",
+                "EmployeeID",
+                "OrderDate",
+                "RequiredDate",
+                "ShippedDate",
+                "ShipVia",
+                "Freight",
+                "ShipName",
+                "ShipAddress",
+                "ShipCity",
+                "ShipRegion",
+                "ShipPostalCode",
+                "ShipCountry"
+              ]
+            }
+          ],
+          "columns": [
+            "SiteID",
+            "CustomerID",
+            "SiteName",
+            "ContactName",
+            "ContactTitle",
+            "Address",
+            "City",
+            "Region",
+            "PostalCode",
+            "Country",
+            "Phone",
+            "Fax"
+          ]
+        },
+        {
+          "name": "Orders",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Orders",
+          "keys": [
+            {
+              "name": "OrderID",
+              "isPrimary": "true",
+              "columns": [
+                "OrderID"
+              ]
+            }
+          ],
+          "columns": [
+            "OrderID",
+            "CustomerID",
+            "SiteID",
+            "EmployeeID",
+            "OrderDate",
+            "RequiredDate",
+            "ShippedDate",
+            "ShipVia",
+            "Freight",
+            "ShipName",
+            "ShipAddress",
+            "ShipCity",
+            "ShipRegion",
+            "ShipPostalCode",
+            "ShipCountry"
+          ]
+        },
+        {
+          "name": "Employees",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Employees",
+          "keys": [
+            {
+              "name": "EmployeeID",
+              "isPrimary": "true",
+              "columns": [
+                "EmployeeID"
+              ]
+            },
+            {
+              "name": "Employee_Name",
+              "columns": [
+                "LastName",
+                "FirstName"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Orders",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Orders",
+              "keys": [
+                {
+                  "name": "OrderID",
+                  "isPrimary": "true",
+                  "columns": [
+                    "OrderID"
+                  ]
+                }
+              ],
+              "columns": [
+                "OrderID",
+                "CustomerID",
+                "SiteID",
+                "EmployeeID",
+                "OrderDate",
+                "RequiredDate",
+                "ShippedDate",
+                "ShipVia",
+                "Freight",
+                "ShipName",
+                "ShipAddress",
+                "ShipCity",
+                "ShipRegion",
+                "ShipPostalCode",
+                "ShipCountry"
+              ]
+            }
+          ],
+          "columns": [
+            "EmployeeID",
+            "LastName",
+            "FirstName",
+            "Title",
+            "TitleOfCourtesy",
+            "BirthDate",
+            "HireDate",
+            "Address",
+            "City",
+            "Region",
+            "PostalCode",
+            "Country",
+            "HomePhone",
+            "Extension",
+            "Notes",
+            "ReportsTo"
+          ]
+        },
+        {
+          "name": "Shippers",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Shippers",
+          "keys": [
+            {
+              "name": "ShipperID",
+              "isPrimary": "true",
+              "columns": [
+                "ShipperID"
+              ]
+            },
+            {
+              "name": "CompanyName",
+              "columns": [
+                "CompanyName"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Orders",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Orders",
+              "keys": [
+                {
+                  "name": "OrderID",
+                  "isPrimary": "true",
+                  "columns": [
+                    "OrderID"
+                  ]
+                }
+              ],
+              "columns": [
+                "OrderID",
+                "CustomerID",
+                "SiteID",
+                "EmployeeID",
+                "OrderDate",
+                "RequiredDate",
+                "ShippedDate",
+                "ShipVia",
+                "Freight",
+                "ShipName",
+                "ShipAddress",
+                "ShipCity",
+                "ShipRegion",
+                "ShipPostalCode",
+                "ShipCountry"
+              ]
+            }
+          ],
+          "columns": [
+            "ShipperID",
+            "CompanyName",
+            "Phone"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Orders Dimension",
+        "levels": [
+          {
+            "name": "Customers",
+            "childLevels": [
+              {
+                "name": "Sites",
+                "childLevels": [
+                  {
+                    "name": "Orders"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Sites",
+            "childLevels": [
+              {
+                "name": "Orders"
+              }
+            ]
+          },
+          {
+            "name": "Orders"
+          },
+          {
+            "name": "Employees",
+            "childLevels": [
+              {
+                "name": "Orders"
+              }
+            ]
+          },
+          {
+            "name": "Shippers",
+            "childLevels": [
+              {
+                "name": "Orders"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

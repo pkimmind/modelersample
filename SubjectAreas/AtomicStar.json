@@ -1,0 +1,33 @@
+{
+  "subjectArea": {
+    "name": "AtomicStar",
+    "sourceBusinessModel": "businessModel:AtomicStar",
+    "tableOrder": [
+      {
+        "name": "presentationTable:AtomicStar..SalesFacts"
+      },
+      {
+        "name": "presentationTable:AtomicStar..Product"
+      },
+      {
+        "name": "presentationTable:AtomicStar..Customer"
+      },
+      {
+        "name": "presentationTable:AtomicStar..ShipmentTime"
+      },
+      {
+        "name": "presentationTable:AtomicStar..Shipper"
+      },
+      {
+        "name": "presentationTable:AtomicStar..Employee"
+      }
+    ],
+    "permissions": {
+      {
+        "accessor": "BIAuthor",
+        "access": "na",
+        "type": "role"
+      }
+    }
+  }
+}

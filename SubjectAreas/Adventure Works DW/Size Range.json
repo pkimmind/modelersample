@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Size Range",
+    "presentationColumns": [
+      {
+        "name": "[Product].[Size Range].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Size Range.[Product].[Size Range].[(All)]"
+      },
+      {
+        "name": "KEY0#263",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Size Range.KEY0#263"
+      },
+      {
+        "name": "KEY0#264",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Size Range.KEY0#264"
+      },
+      {
+        "name": "MEMBER_VALUE#263",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Size Range.MEMBER_VALUE#263"
+      },
+      {
+        "name": "MEMBER_VALUE#264",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Size Range.MEMBER_VALUE#264"
+      },
+      {
+        "name": "NAME#207",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Size Range.NAME#207"
+      },
+      {
+        "name": "Size Range#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Size Range.Size Range#2"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Size Range",
+        "levels": [
+          {
+            "name": "[Product].[Size Range].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Product].[Size Range].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Size Range.[Product].[Size Range].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Size Range",
+            "displayColumns": [
+              {
+                "name": "Size Range#2",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Size Range.Size Range#2"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

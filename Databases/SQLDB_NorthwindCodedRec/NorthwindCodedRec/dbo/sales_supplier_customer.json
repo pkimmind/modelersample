@@ -1,0 +1,23 @@
+{
+  "physicalTable": {
+    "name": "sales_supplier_customer",
+    "caching": {
+    },
+    "physicalColumns": [
+      {
+        "name": "SupplierID",
+        "dataType": "SMALLINT"
+      },
+      {
+        "name": "CustomerID",
+        "dataType": "CHAR",
+        "length": 5
+      },
+      {
+        "name": "QtySold",
+        "dataType": "INT",
+        "length": 10
+      }
+    ]
+  }
+}

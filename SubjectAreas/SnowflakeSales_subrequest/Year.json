@@ -1,0 +1,29 @@
+{
+  "presentationTable": {
+    "name": "Year",
+    "alternateNames": [
+      "ShipYear"
+    ],
+    "presentationColumns": [
+      {
+        "name": "Year",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.Year.Year",
+        "alternateNames": [
+          "ShipYear"
+        ]
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.Year.Revenue"
+      },
+      {
+        "name": "PlanRevenue",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.Year.PlanRevenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.Year.QtySold"
+      }
+    ]
+  }
+}

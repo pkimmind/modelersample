@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "Date.Calendar Year",
+    "presentationColumns": [
+      {
+        "name": "[Date].[Calendar Year].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar Year.[Date].[Calendar Year].[(All)]"
+      },
+      {
+        "name": "Calendar Year#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar Year.Calendar Year#2"
+      },
+      {
+        "name": "KEY0#66",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar Year.KEY0#66"
+      },
+      {
+        "name": "KEY0#67",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar Year.KEY0#67"
+      },
+      {
+        "name": "MEMBER_VALUE#66",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar Year.MEMBER_VALUE#66"
+      },
+      {
+        "name": "MEMBER_VALUE#67",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar Year.MEMBER_VALUE#67"
+      },
+      {
+        "name": "NAME#55",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar Year.NAME#55"
+      },
+      {
+        "name": "NAME#56",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar Year.NAME#56"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Date.Calendar Year",
+        "levels": [
+          {
+            "name": "[Date].[Calendar Year].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Date].[Calendar Year].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar Year.[Date].[Calendar Year].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Calendar Year",
+            "displayColumns": [
+              {
+                "name": "Calendar Year#2",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar Year.Calendar Year#2"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

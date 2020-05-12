@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "Discount Percent",
+    "presentationColumns": [
+      {
+        "name": "[Promotion].[Discount Percent].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Discount Percent.[Promotion].[Discount Percent].[(All)]"
+      },
+      {
+        "name": "Discount Percent",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Discount Percent.Discount Percent"
+      },
+      {
+        "name": "KEY0#280",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Discount Percent.KEY0#280"
+      },
+      {
+        "name": "KEY0#281",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Discount Percent.KEY0#281"
+      },
+      {
+        "name": "MEMBER_VALUE#280",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Discount Percent.MEMBER_VALUE#280"
+      },
+      {
+        "name": "MEMBER_VALUE#281",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Discount Percent.MEMBER_VALUE#281"
+      },
+      {
+        "name": "NAME#221",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Discount Percent.NAME#221"
+      },
+      {
+        "name": "NAME#222",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Discount Percent.NAME#222"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Discount Percent",
+        "levels": [
+          {
+            "name": "[Promotion].[Discount Percent].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Promotion].[Discount Percent].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Discount Percent.[Promotion].[Discount Percent].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Discount Percent",
+            "displayColumns": [
+              {
+                "name": "Discount Percent",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Discount Percent.Discount Percent"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

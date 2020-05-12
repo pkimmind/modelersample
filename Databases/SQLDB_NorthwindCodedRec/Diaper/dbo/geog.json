@@ -1,0 +1,59 @@
+{
+  "physicalTable": {
+    "name": "geog",
+    "caching": {
+    },
+    "physicalColumns": [
+      {
+        "name": "GEOGKEY",
+        "dataType": "INT",
+        "length": 10
+      },
+      {
+        "name": "GEOGDESC",
+        "dataType": "CHAR",
+        "length": 255
+      },
+      {
+        "name": "outlet",
+        "dataType": "CHAR",
+        "length": 255
+      },
+      {
+        "name": "region",
+        "dataType": "CHAR",
+        "length": 255
+      },
+      {
+        "name": "ATTR11",
+        "dataType": "CHAR",
+        "length": 255
+      },
+      {
+        "name": "GEOGLEVEL",
+        "dataType": "CHAR",
+        "length": 255
+      },
+      {
+        "name": "ACV",
+        "dataType": "DOUBLE",
+        "length": 15
+      },
+      {
+        "name": "POPULATION",
+        "dataType": "DOUBLE",
+        "length": 15
+      },
+      {
+        "name": "HH",
+        "dataType": "DOUBLE",
+        "length": 15
+      },
+      {
+        "name": "BRIDGE",
+        "dataType": "CHAR",
+        "length": 255
+      }
+    ]
+  }
+}

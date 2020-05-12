@@ -1,0 +1,444 @@
+{
+  "logicalTable": {
+    "name": "Sales Person Flag",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Employee].[Sales Person Flag].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Employee].[Sales Person Flag].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Sales Person Flag].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Employee].[Sales Person Flag].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Sales Person Flag].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#177",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#177"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#178",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#178"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#177",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#177"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#178",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#178"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#141",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#141"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#142",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#142"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Sales Person Flag - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Sales Person Flag - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Sales Person Flag#7",
+        "writeable": false,
+        "descriptorColumn": "Sales Person Flag - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Sales Person Flag#7"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Sales Person Flag",
+              "isPrimary": "true",
+              "columns": [
+                "[Employee].[Sales Person Flag].[(All)]",
+                "Sales Person Flag#7"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Sales Person Flag",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "[Employee].[Sales Person Flag].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Sales Person Flag].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Employee].[Sales Person Flag].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Sales Person Flag].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#177",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#177"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#178",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#178"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#177",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#177"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#178",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#178"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#141",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#141"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#142",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#142"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Sales Person Flag - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Sales Person Flag - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Sales Person Flag#7",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Sales Person Flag#7"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Sales Person Flag.Sales Person Flag"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Sales Person Flag",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "[Employee].[Sales Person Flag].[(All)]",
+      "levels": [
+        {
+          "name": "[Employee].[Sales Person Flag].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Employee].[Sales Person Flag].[(All)]",
+          "keys": [
+            {
+              "name": "[Employee].[Sales Person Flag].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Employee].[Sales Person Flag].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Employee].[Sales Person Flag].[(All)]",
+              "columns": [
+                "[Employee].[Sales Person Flag].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Sales Person Flag",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Sales Person Flag",
+              "keys": [
+                {
+                  "name": "Sales Person Flag - Member Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Sales Person Flag - Member Key"
+                  ]
+                },
+                {
+                  "name": "Sales Person Flag",
+                  "columns": [
+                    "Sales Person Flag#7"
+                  ]
+                }
+              ],
+              "columns": [
+                "KEY0#178",
+                "MEMBER_VALUE#178",
+                "NAME#142",
+                "Sales Person Flag - Member Key",
+                "Sales Person Flag#7"
+              ]
+            }
+          ],
+          "columns": [
+            "[Employee].[Sales Person Flag].[(All)]",
+            "[Employee].[Sales Person Flag].[(All)] - Member Key",
+            "KEY0#177",
+            "MEMBER_VALUE#177",
+            "NAME#141"
+          ]
+        },
+        {
+          "name": "Sales Person Flag",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Sales Person Flag",
+          "keys": [
+            {
+              "name": "Sales Person Flag - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "Sales Person Flag - Member Key"
+              ]
+            },
+            {
+              "name": "Sales Person Flag",
+              "columns": [
+                "Sales Person Flag#7"
+              ]
+            }
+          ],
+          "columns": [
+            "KEY0#178",
+            "MEMBER_VALUE#178",
+            "NAME#142",
+            "Sales Person Flag - Member Key",
+            "Sales Person Flag#7"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Sales Person Flag",
+        "levels": [
+          {
+            "name": "[Employee].[Sales Person Flag].[(All)]",
+            "childLevels": [
+              {
+                "name": "Sales Person Flag"
+              }
+            ]
+          },
+          {
+            "name": "Sales Person Flag"
+          }
+        ]
+      }
+    }
+  }
+}

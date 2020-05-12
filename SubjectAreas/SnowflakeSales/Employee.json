@@ -1,0 +1,79 @@
+{
+  "presentationTable": {
+    "name": "Employee",
+    "presentationColumns": [
+      {
+        "name": "EmployeeID",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Employee.EmployeeID"
+      },
+      {
+        "name": "LastName",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Employee.LastName"
+      },
+      {
+        "name": "FirstName",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Employee.FirstName"
+      },
+      {
+        "name": "Title",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Employee.Title"
+      },
+      {
+        "name": "TitleOfCourtesy",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Employee.TitleOfCourtesy"
+      },
+      {
+        "name": "BirthDate",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Employee.BirthDate"
+      },
+      {
+        "name": "HireDate",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Employee.HireDate"
+      },
+      {
+        "name": "PostalCode",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Employee.PostalCode"
+      },
+      {
+        "name": "Address",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Employee.Address"
+      },
+      {
+        "name": "HomePhone",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Employee.HomePhone"
+      },
+      {
+        "name": "Extension",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Employee.Extension"
+      },
+      {
+        "name": "Notes",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Employee.Notes"
+      },
+      {
+        "name": "ReportsTo",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Employee.ReportsTo"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Employee.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Employee.QtySold"
+      },
+      {
+        "name": "Country",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Employee.Country"
+      },
+      {
+        "name": "Region",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Employee.Region"
+      },
+      {
+        "name": "City",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Employee.City"
+      }
+    ]
+  }
+}

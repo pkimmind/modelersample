@@ -1,0 +1,171 @@
+{
+  "presentationTable": {
+    "name": "Stock Level",
+    "presentationColumns": [
+      {
+        "name": "[Product].[Stock Level].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.[Product].[Stock Level].[(All)]"
+      },
+      {
+        "name": "Class#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.Class#3"
+      },
+      {
+        "name": "Color#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.Color#3"
+      },
+      {
+        "name": "Days to Manufacture#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.Days to Manufacture#4"
+      },
+      {
+        "name": "Dealer Price#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.Dealer Price#3"
+      },
+      {
+        "name": "End Date#11",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.End Date#11"
+      },
+      {
+        "name": "KEY0#271",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.KEY0#271"
+      },
+      {
+        "name": "KEY0#272",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.KEY0#272"
+      },
+      {
+        "name": "KEY0#273",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.KEY0#273"
+      },
+      {
+        "name": "Large Photo#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.Large Photo#3"
+      },
+      {
+        "name": "List Price#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.List Price#3"
+      },
+      {
+        "name": "MEMBER_VALUE#271",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.MEMBER_VALUE#271"
+      },
+      {
+        "name": "MEMBER_VALUE#272",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.MEMBER_VALUE#272"
+      },
+      {
+        "name": "MEMBER_VALUE#273",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.MEMBER_VALUE#273"
+      },
+      {
+        "name": "Model Name#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.Model Name#3"
+      },
+      {
+        "name": "NAME#213",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.NAME#213"
+      },
+      {
+        "name": "NAME#214",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.NAME#214"
+      },
+      {
+        "name": "Product Key#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.Product Key#3"
+      },
+      {
+        "name": "Product#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.Product#2"
+      },
+      {
+        "name": "Reorder Point#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.Reorder Point#3"
+      },
+      {
+        "name": "Safety Stock Level#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.Safety Stock Level#3"
+      },
+      {
+        "name": "Safety Stock Level#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.Safety Stock Level#4"
+      },
+      {
+        "name": "Size Range#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.Size Range#3"
+      },
+      {
+        "name": "Size#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.Size#3"
+      },
+      {
+        "name": "Standard Cost#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.Standard Cost#3"
+      },
+      {
+        "name": "Start Date#11",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.Start Date#11"
+      },
+      {
+        "name": "Status#11",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.Status#11"
+      },
+      {
+        "name": "Style#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.Style#2"
+      },
+      {
+        "name": "Subcategory#8",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.Subcategory#8"
+      },
+      {
+        "name": "TRAN0#18",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.TRAN0#18"
+      },
+      {
+        "name": "TRAN1#18",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.TRAN1#18"
+      },
+      {
+        "name": "Weight#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.Weight#2"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Stock Level",
+        "levels": [
+          {
+            "name": "[Product].[Stock Level].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Product].[Stock Level].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.[Product].[Stock Level].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Safety Stock Level",
+            "displayColumns": [
+              {
+                "name": "Safety Stock Level#3",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.Safety Stock Level#3"
+              }
+            ]
+          },
+          {
+            "name": "Product",
+            "displayColumns": [
+              {
+                "name": "Product#2",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.Product#2"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

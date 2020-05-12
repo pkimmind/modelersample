@@ -1,0 +1,39 @@
+{
+  "presentationTable": {
+    "name": "Week",
+    "alternateNames": [
+      "ShipWeek"
+    ],
+    "presentationColumns": [
+      {
+        "name": "Year",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.Week.Year",
+        "alternateNames": [
+          "ShipYear"
+        ]
+      },
+      {
+        "name": "Qtr",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.Week.Qtr",
+        "alternateNames": [
+          "ShipQtr"
+        ]
+      },
+      {
+        "name": "Week",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.Week.Week",
+        "alternateNames": [
+          "ShipWeek"
+        ]
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.Week.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.Week.QtySold"
+      }
+    ]
+  }
+}

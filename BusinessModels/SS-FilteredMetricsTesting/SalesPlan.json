@@ -1,0 +1,160 @@
+{
+  "logicalTable": {
+    "name": "SalesPlan",
+    "type": "FACT",
+    "logicalColumns": [
+      {
+        "name": "Category ID",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "SalesPlan",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.SalesPlan.CategoryID"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Country",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "SalesPlan",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.SalesPlan.Country"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Year",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "SalesPlan",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.SalesPlan.Year"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "PlanRevenue",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "SalesPlan",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.SalesPlan.Revenue"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Category ID, Country, Year",
+              "isPrimary": "true",
+              "columns": [
+                "Category ID",
+                "Country",
+                "Year"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "SalesPlan",
+        "logicalTableRef": "SalesPlan",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "Category ID",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.SalesPlan.CategoryID"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Country",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.SalesPlan.Country"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Year",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.SalesPlan.Year"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "PlanRevenue",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.SalesPlan.Revenue"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "SalesPlan",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1, %2, %3)",
+  "expressionObjects": [
+    "logicalLevel:SS-FilteredMetricsTesting.Employee.Country",
+    "logicalLevel:SS-FilteredMetricsTesting.Time.Year",
+    "logicalLevel:SS-FilteredMetricsTesting.Product.Category"
+  ]
+}
+      },
+    ]
+  }
+}

@@ -1,0 +1,519 @@
+{
+  "logicalTable": {
+    "name": "Products",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "ProductID",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Products",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.ProductID"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "ProductName",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Products",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.ProductName"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "SupplierID",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Products",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.SupplierID"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "CategoryID",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Products",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.CategoryID"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "QuantityPerUnit",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Products",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.QuantityPerUnit"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "UnitPrice",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Products",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.UnitPrice"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "UnitsInStock",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Products",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.UnitsInStock"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "UnitsOnOrder",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Products",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.UnitsOnOrder"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "ReorderLevel",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Products",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.ReorderLevel"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Discontinued",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Products",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.Discontinued"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "PK__Products__Produc__089551D8",
+              "isPrimary": "true",
+              "columns": [
+                "ProductID"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Products",
+        "logicalTableRef": "Products",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "ProductID",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.ProductID"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "ProductName",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.ProductName"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "SupplierID",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.SupplierID"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "CategoryID",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.CategoryID"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "QuantityPerUnit",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.QuantityPerUnit"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "UnitPrice",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.UnitPrice"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "UnitsInStock",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.UnitsInStock"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "UnitsOnOrder",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.UnitsOnOrder"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "ReorderLevel",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.ReorderLevel"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Discontinued",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.Discontinued"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Products",
+            "joins": [
+            ]
+          }
+        ]
+      },
+    ],
+    "dimension": {
+      "name": "Product Dimension",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "levels": [
+        {
+          "name": "Suppliers",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Suppliers",
+          "keys": [
+            {
+              "name": "SupplierID",
+              "isPrimary": "true",
+              "columns": [
+                "SupplierID"
+              ]
+            },
+            {
+              "name": "CompanyName",
+              "columns": [
+                "CompanyName"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Products",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Products",
+              "keys": [
+                {
+                  "name": "ProductID",
+                  "isPrimary": "true",
+                  "columns": [
+                    "ProductID"
+                  ]
+                },
+                {
+                  "name": "ProductName",
+                  "columns": [
+                    "ProductName"
+                  ]
+                }
+              ],
+              "columns": [
+                "ProductID",
+                "ProductName",
+                "SupplierID",
+                "CategoryID",
+                "QuantityPerUnit",
+                "UnitPrice",
+                "UnitsInStock",
+                "UnitsOnOrder",
+                "ReorderLevel",
+                "Discontinued"
+              ]
+            }
+          ],
+          "columns": [
+            "SupplierID",
+            "CompanyName",
+            "ContactName",
+            "ContactTitle",
+            "Address",
+            "City",
+            "Region",
+            "PostalCode",
+            "Country",
+            "Phone",
+            "Fax"
+          ]
+        },
+        {
+          "name": "Products",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Products",
+          "keys": [
+            {
+              "name": "ProductID",
+              "isPrimary": "true",
+              "columns": [
+                "ProductID"
+              ]
+            },
+            {
+              "name": "ProductName",
+              "columns": [
+                "ProductName"
+              ]
+            }
+          ],
+          "columns": [
+            "ProductID",
+            "ProductName",
+            "SupplierID",
+            "CategoryID",
+            "QuantityPerUnit",
+            "UnitPrice",
+            "UnitsInStock",
+            "UnitsOnOrder",
+            "ReorderLevel",
+            "Discontinued"
+          ]
+        },
+        {
+          "name": "Categories",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Categories",
+          "keys": [
+            {
+              "name": "CategoryID",
+              "isPrimary": "true",
+              "columns": [
+                "CategoryID"
+              ]
+            },
+            {
+              "name": "CategoryName",
+              "columns": [
+                "CategoryName"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Products",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Products",
+              "keys": [
+                {
+                  "name": "ProductID",
+                  "isPrimary": "true",
+                  "columns": [
+                    "ProductID"
+                  ]
+                },
+                {
+                  "name": "ProductName",
+                  "columns": [
+                    "ProductName"
+                  ]
+                }
+              ],
+              "columns": [
+                "ProductID",
+                "ProductName",
+                "SupplierID",
+                "CategoryID",
+                "QuantityPerUnit",
+                "UnitPrice",
+                "UnitsInStock",
+                "UnitsOnOrder",
+                "ReorderLevel",
+                "Discontinued"
+              ]
+            }
+          ],
+          "columns": [
+            "CategoryID",
+            "CategoryName",
+            "Description"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Product Dimension",
+        "levels": [
+          {
+            "name": "Suppliers",
+            "childLevels": [
+              {
+                "name": "Products"
+              }
+            ]
+          },
+          {
+            "name": "Products"
+          },
+          {
+            "name": "Categories",
+            "childLevels": [
+              {
+                "name": "Products"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

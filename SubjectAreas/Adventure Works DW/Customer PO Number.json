@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Customer PO Number",
+    "presentationColumns": [
+      {
+        "name": "[Internet Sales Order Details].[Customer PO Number].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer PO Number.[Internet Sales Order Details].[Customer PO Number].[(All)]"
+      },
+      {
+        "name": "Customer PO Number",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer PO Number.Customer PO Number"
+      },
+      {
+        "name": "KEY0#204",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer PO Number.KEY0#204"
+      },
+      {
+        "name": "KEY0#205",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer PO Number.KEY0#205"
+      },
+      {
+        "name": "MEMBER_VALUE#204",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer PO Number.MEMBER_VALUE#204"
+      },
+      {
+        "name": "MEMBER_VALUE#205",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer PO Number.MEMBER_VALUE#205"
+      },
+      {
+        "name": "NAME#165",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer PO Number.NAME#165"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Customer PO Number",
+        "levels": [
+          {
+            "name": "[Internet Sales Order Details].[Customer PO Number].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Internet Sales Order Details].[Customer PO Number].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer PO Number.[Internet Sales Order Details].[Customer PO Number].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Customer PO Number",
+            "displayColumns": [
+              {
+                "name": "Customer PO Number",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer PO Number.Customer PO Number"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

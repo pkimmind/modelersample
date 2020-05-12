@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Delivery Date.Day of Year",
+    "presentationColumns": [
+      {
+        "name": "[Delivery Date].[Day of Year].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Day of Year.[Delivery Date].[Day of Year].[(All)]"
+      },
+      {
+        "name": "Day of Year#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Day of Year.Day of Year#6"
+      },
+      {
+        "name": "KEY0#114",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Day of Year.KEY0#114"
+      },
+      {
+        "name": "KEY0#115",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Day of Year.KEY0#115"
+      },
+      {
+        "name": "MEMBER_VALUE#114",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Day of Year.MEMBER_VALUE#114"
+      },
+      {
+        "name": "MEMBER_VALUE#115",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Day of Year.MEMBER_VALUE#115"
+      },
+      {
+        "name": "NAME#93",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Day of Year.NAME#93"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Delivery Date.Day of Year",
+        "levels": [
+          {
+            "name": "[Delivery Date].[Day of Year].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Delivery Date].[Day of Year].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Day of Year.[Delivery Date].[Day of Year].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Day of Year",
+            "displayColumns": [
+              {
+                "name": "Day of Year#6",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Day of Year.Day of Year#6"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

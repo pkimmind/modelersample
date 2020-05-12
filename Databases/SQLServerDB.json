@@ -1,0 +1,629 @@
+{
+  "database": {
+    "name": "SQLServerDB",
+    "type": "SQLServer2012",
+    "databaseType": 83,
+    "features": [
+      {
+        "name": "LEFT_OUTER_JOIN_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "RIGHT_OUTER_JOIN_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "FULL_OUTER_JOIN_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "NESTED_OUTER_JOIN_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "UNION_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "UNION_ALL_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "COUNT_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "COUNT_DISTINCT_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "COUNT_STAR_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "SUM_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "AVG_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "MIN_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "MAX_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "RANK_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "TOPN_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "BOTTOMN_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "GROUP_BY_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "GROUP_BY_EXPR_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "HAVING_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "ORDERBY_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "EXPRESSIONS_IN_ORDERBY_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "NULL_VALUES_SORT_FIRST",
+        "value": false
+      },
+      {
+        "name": "DISTINCT_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "CASE_LOOK_UP_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "CASE_IF_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "DATE_LITERAL_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "TIME_LITERAL_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "DATE_TIME_LITERAL_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "CALENDAR_EXTRACT_DAY_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "CALENDAR_EXTRACT_DAY_OF_YEAR_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "CALENDAR_EXTRACT_HOUR_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "CALENDAR_EXTRACT_MINUTE_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "CALENDAR_EXTRACT_MONTH_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "CALENDAR_EXTRACT_QUARTER_OF_YEAR_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "CALENDAR_EXTRACT_SECOND_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "CALENDAR_EXTRACT_WEEK_OF_YEAR_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "CALENDAR_EXTRACT_YEAR_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "CALENDAR_EXTRACT_SHORT_NAME_OF_MONTH_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "CALENDAR_EXTRACT_DAY_OF_WEEK_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "CALENDAR_EXTRACT_SHORT_NAME_OF_DAY_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "TIMESTAMP_ADD_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "TIMESTAMP_DIFF_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "POSITION_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "ASCII_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "LENGTH_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "EXP_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "POWER_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "SQRT_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "CEILING_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "FLOOR_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "ROUND_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "SIGN_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "ABS_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "MOD_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "RAND_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "LOG_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "LOG10_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "PI_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "DEGREES_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "RADIANS_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "SIN_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "COS_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "TAN_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "COT_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "ASIN_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "ACOS_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "ATAN_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "ATAN2_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "SINH_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "COSH_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "TANH_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "TRIM_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "LTRIM_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "RTRIM_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "UPPER_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "LOWER_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "CONCAT_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "SUBSTRING_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "REPLACE_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "INSERT_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "LEFT_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "RIGHT_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "SPACE_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "REPEAT_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "CHAR_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "CONCAT_NULL_RETURNS_NULL",
+        "value": false
+      },
+      {
+        "name": "DATABASE_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "IFNULL_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "USER_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "CONVERT_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "NULL_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "BETWEEN_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "LIKE_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "LIKE_ESCAPE_CLAUSE_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "IN_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "CAST_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "DERIVED_TABLES_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "CORRELATION_NAME_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "PREDICATE_SCALAR_SUBQUERY_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "VALUE_SUBQUERY_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "CORRELATED_SUBQUERY_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "COMPARISON_SUBQUERY_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "EXISTS_SUBQUERY_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "IN_SUBQUERY_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "QUANTIFIED_SUBQUERY_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "STDDEV_SAMP_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "STDDEV_POP_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "EXCEPT_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "INTERSECT_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "RUNNING_COUNT_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "NULLIF_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "INSERT_SELECT_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "SUBTOTALLING_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "ROWNUM_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "CREATE_VIEW_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "WITH_CLAUSE_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "DUAL_TABLE_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "SUBQUERY_IN_CASE_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "DENSE_RANK_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "ROWNUM_LIMIT_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "ROWNUM_OFFSET_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "COALESCE_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "MAX_COLUMNS_IN_GROUP_BY",
+        "value": 0
+      },
+      {
+        "name": "MAX_COLUMNS_IN_ORDER_BY",
+        "value": 0
+      },
+      {
+        "name": "MAX_TABLES_IN_SELECT",
+        "value": 0
+      },
+      {
+        "name": "CONVERT_BINARY_BITMASK",
+        "value": "0X0",
+      },
+      {
+        "name": "CONVERT_BIT_BITMASK",
+        "value": "0X0",
+      },
+      {
+        "name": "CONVERT_CHAR_BITMASK",
+        "value": "0X0",
+      },
+      {
+        "name": "CONVERT_DECIMAL_BITMASK",
+        "value": "0X0",
+      },
+      {
+        "name": "CONVERT_DOUBLE_BITMASK",
+        "value": "0X0",
+      },
+      {
+        "name": "CONVERT_FLOAT_BITMASK",
+        "value": "0X0",
+      },
+      {
+        "name": "CONVERT_INTEGER_BITMASK",
+        "value": "0X0",
+      },
+      {
+        "name": "CONVERT_LONG_VAR_BINARY_BITMASK",
+        "value": "0X0",
+      },
+      {
+        "name": "CONVERT_LONG_VAR_CHAR_BITMASK",
+        "value": "0X0",
+      },
+      {
+        "name": "CONVERT_NUMERIC_BITMASK",
+        "value": "0X0",
+      },
+      {
+        "name": "CONVERT_REAL_BITMASK",
+        "value": "0X0",
+      },
+      {
+        "name": "CONVERT_SMALL_INT_BITMASK",
+        "value": "0X0",
+      },
+      {
+        "name": "CONVERT_TIMESTAMP_BITMASK",
+        "value": "0X0",
+      },
+      {
+        "name": "CONVERT_TINY_INT_BITMASK",
+        "value": "0X0",
+      },
+      {
+        "name": "CONVERT_VAR_BINARY_BITMASK",
+        "value": "0X0",
+      },
+      {
+        "name": "CONVERT_VAR_CHAR_BITMASK",
+        "value": "0X0",
+      },
+      {
+        "name": "FRACTIONAL_SECOND_PRECISION",
+        "value": "0X0",
+      },
+      {
+        "name": "MAX_ENTRIES_PER_IN_LIST",
+        "value": "0X0",
+      },
+      {
+        "name": "MAX_PARAMETERS_PER_DRIVE_JOIN",
+        "value": "0X0",
+      },
+      {
+        "name": "MAX_QUERIES_PER_DRIVE_JOIN",
+        "value": "0X0",
+      },
+      {
+        "name": "MAX_BULK_FETCH_BUFFER_SIZE",
+        "value": "0X50000",
+      },
+      {
+        "name": "DEFAULT_BULK_FETCH_ROW_COUNT",
+        "value": "0X64",
+      },
+      {
+        "name": "COMMENT_START",
+        "value": "",
+      },
+      {
+        "name": "COMMENT_END",
+        "value": "",
+      }
+    ],
+    "connectionPools": [
+      {
+        "name": "ConnectionPool",
+        "user": "nwuser",
+        "connectionTimeout": 5,
+        "connectionTimeoutUnit": "MINUTES",
+        "maxConnDiff": 10,
+        "maxConnections": 10,
+        "connection": "DRIVER=valueof(NQ_SESSION.SQLSERVERDRIVER);SERVER=slc03qeh;PORT=1433;DATABASE=Northwind",
+        "type": "ODBC350",
+        "requiresFullyQualifedTableNames": false,
+        "multithreaded": false,
+        "isCloseAfterEveryRequest": false,
+        "outputType": "xml",
+        "ignoreFirstLine": false,
+        "bulkInsertBufferSize": 131072,
+        "tempTablePrefix": "TT",
+        "transactionBoundary": 1000,
+        "xmlaUseSession": false,
+        "isSiebelJDBSecured": false
+      }
+    ]
+    "joins": [
+    ]
+  }
+}

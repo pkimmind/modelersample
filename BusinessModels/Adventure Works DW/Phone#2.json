@@ -1,0 +1,413 @@
+{
+  "logicalTable": {
+    "name": "Phone#2",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Reseller].[Phone].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Reseller].[Phone].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Reseller].[Phone].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Reseller].[Phone].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Reseller].[Phone].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#324",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#324"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#325",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#325"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#324",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#324"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#325",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#325"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#259",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#259"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Phone - Member Key#2",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Phone - Member Key#2"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Phone#11",
+        "writeable": false,
+        "descriptorColumn": "Phone - Member Key#2",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Phone#11"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Phone#2",
+              "isPrimary": "true",
+              "columns": [
+                "[Reseller].[Phone].[(All)]",
+                "Phone#11"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Phone#2",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "[Reseller].[Phone].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Reseller].[Phone].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Reseller].[Phone].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Reseller].[Phone].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#324",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#324"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#325",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#325"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#324",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#324"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#325",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#325"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#259",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#259"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Phone - Member Key#2",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Phone - Member Key#2"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Phone#11",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Phone#11"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Phone#2.Phone"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Phone#2",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "[Reseller].[Phone].[(All)]",
+      "levels": [
+        {
+          "name": "[Reseller].[Phone].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Reseller].[Phone].[(All)]",
+          "keys": [
+            {
+              "name": "[Reseller].[Phone].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Reseller].[Phone].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Reseller].[Phone].[(All)]",
+              "columns": [
+                "[Reseller].[Phone].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Phone",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Phone",
+              "keys": [
+                {
+                  "name": "Phone - Member Key#2",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Phone - Member Key#2"
+                  ]
+                },
+                {
+                  "name": "Phone",
+                  "columns": [
+                    "Phone#11"
+                  ]
+                }
+              ],
+              "columns": [
+                "KEY0#325",
+                "MEMBER_VALUE#325",
+                "Phone - Member Key#2",
+                "Phone#11"
+              ]
+            }
+          ],
+          "columns": [
+            "[Reseller].[Phone].[(All)]",
+            "[Reseller].[Phone].[(All)] - Member Key",
+            "KEY0#324",
+            "MEMBER_VALUE#324",
+            "NAME#259"
+          ]
+        },
+        {
+          "name": "Phone",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Phone",
+          "keys": [
+            {
+              "name": "Phone - Member Key#2",
+              "isPrimary": "true",
+              "columns": [
+                "Phone - Member Key#2"
+              ]
+            },
+            {
+              "name": "Phone",
+              "columns": [
+                "Phone#11"
+              ]
+            }
+          ],
+          "columns": [
+            "KEY0#325",
+            "MEMBER_VALUE#325",
+            "Phone - Member Key#2",
+            "Phone#11"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Phone#2",
+        "levels": [
+          {
+            "name": "[Reseller].[Phone].[(All)]",
+            "childLevels": [
+              {
+                "name": "Phone"
+              }
+            ]
+          },
+          {
+            "name": "Phone"
+          }
+        ]
+      }
+    }
+  }
+}

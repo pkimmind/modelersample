@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Date.Day of Year",
+    "presentationColumns": [
+      {
+        "name": "[Date].[Day of Year].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day of Year.[Date].[Day of Year].[(All)]"
+      },
+      {
+        "name": "Day of Year#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day of Year.Day of Year#2"
+      },
+      {
+        "name": "KEY0#76",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day of Year.KEY0#76"
+      },
+      {
+        "name": "KEY0#77",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day of Year.KEY0#77"
+      },
+      {
+        "name": "MEMBER_VALUE#76",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day of Year.MEMBER_VALUE#76"
+      },
+      {
+        "name": "MEMBER_VALUE#77",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day of Year.MEMBER_VALUE#77"
+      },
+      {
+        "name": "NAME#63",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day of Year.NAME#63"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Date.Day of Year",
+        "levels": [
+          {
+            "name": "[Date].[Day of Year].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Date].[Day of Year].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day of Year.[Date].[Day of Year].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Day of Year",
+            "displayColumns": [
+              {
+                "name": "Day of Year#2",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day of Year.Day of Year#2"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

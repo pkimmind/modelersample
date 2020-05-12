@@ -1,0 +1,444 @@
+{
+  "logicalTable": {
+    "name": "Gender",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Customer].[Gender].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Customer].[Gender].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Customer].[Gender].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Customer].[Gender].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Customer].[Gender].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Gender - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Gender - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Gender#2",
+        "writeable": false,
+        "descriptorColumn": "Gender - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Gender#2"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#34",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#34"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#35",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#35"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#34",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#34"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#35",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#35"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#29",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#29"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#30",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#30"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Gender",
+              "isPrimary": "true",
+              "columns": [
+                "[Customer].[Gender].[(All)]",
+                "Gender#2"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Gender",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "[Customer].[Gender].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Customer].[Gender].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Customer].[Gender].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Customer].[Gender].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Gender - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Gender - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Gender#2",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Gender#2"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#34",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#34"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#35",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#35"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#34",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#34"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#35",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#35"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#29",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#29"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#30",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#30"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Gender.Gender"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Gender",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "[Customer].[Gender].[(All)]",
+      "levels": [
+        {
+          "name": "[Customer].[Gender].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Customer].[Gender].[(All)]",
+          "keys": [
+            {
+              "name": "[Customer].[Gender].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Customer].[Gender].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Customer].[Gender].[(All)]",
+              "columns": [
+                "[Customer].[Gender].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Gender",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Gender",
+              "keys": [
+                {
+                  "name": "Gender - Member Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Gender - Member Key"
+                  ]
+                },
+                {
+                  "name": "Gender",
+                  "columns": [
+                    "Gender#2"
+                  ]
+                }
+              ],
+              "columns": [
+                "Gender - Member Key",
+                "Gender#2",
+                "KEY0#35",
+                "MEMBER_VALUE#35",
+                "NAME#30"
+              ]
+            }
+          ],
+          "columns": [
+            "[Customer].[Gender].[(All)]",
+            "[Customer].[Gender].[(All)] - Member Key",
+            "KEY0#34",
+            "MEMBER_VALUE#34",
+            "NAME#29"
+          ]
+        },
+        {
+          "name": "Gender",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Gender",
+          "keys": [
+            {
+              "name": "Gender - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "Gender - Member Key"
+              ]
+            },
+            {
+              "name": "Gender",
+              "columns": [
+                "Gender#2"
+              ]
+            }
+          ],
+          "columns": [
+            "Gender - Member Key",
+            "Gender#2",
+            "KEY0#35",
+            "MEMBER_VALUE#35",
+            "NAME#30"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Gender",
+        "levels": [
+          {
+            "name": "[Customer].[Gender].[(All)]",
+            "childLevels": [
+              {
+                "name": "Gender"
+              }
+            ]
+          },
+          {
+            "name": "Gender"
+          }
+        ]
+      }
+    }
+  }
+}

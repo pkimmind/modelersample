@@ -1,0 +1,19 @@
+{
+  "presentationTable": {
+    "name": "Shippers",
+    "presentationColumns": [
+      {
+        "name": "ShipperID",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Shippers.ShipperID"
+      },
+      {
+        "name": "CompanyName",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Shippers.CompanyName"
+      },
+      {
+        "name": "Phone",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Shippers.Phone"
+      }
+    ]
+  }
+}

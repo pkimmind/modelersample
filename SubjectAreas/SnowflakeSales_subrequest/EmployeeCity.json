@@ -1,0 +1,27 @@
+{
+  "presentationTable": {
+    "name": "EmployeeCity",
+    "presentationColumns": [
+      {
+        "name": "City",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.EmployeeCity.City"
+      },
+      {
+        "name": "Region",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.EmployeeCity.Region"
+      },
+      {
+        "name": "Country",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.EmployeeCity.Country"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.EmployeeCity.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.EmployeeCity.QtySold"
+      }
+    ]
+  }
+}

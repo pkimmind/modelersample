@@ -1,0 +1,164 @@
+{
+  "presentationTable": {
+    "name": "Organizations",
+    "presentationColumns": [
+      {
+        "name": "Currency Code#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.Currency Code#1"
+      },
+      {
+        "name": "Currency Code#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.Currency Code#2"
+      },
+      {
+        "name": "Currency Code#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.Currency Code#3"
+      },
+      {
+        "name": "Currency Code#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.Currency Code#4"
+      },
+      {
+        "name": "KEY0#215",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.KEY0#215"
+      },
+      {
+        "name": "KEY0#216",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.KEY0#216"
+      },
+      {
+        "name": "KEY0#217",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.KEY0#217"
+      },
+      {
+        "name": "KEY0#218",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.KEY0#218"
+      },
+      {
+        "name": "MEMBER_VALUE#215",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.MEMBER_VALUE#215"
+      },
+      {
+        "name": "MEMBER_VALUE#216",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.MEMBER_VALUE#216"
+      },
+      {
+        "name": "MEMBER_VALUE#217",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.MEMBER_VALUE#217"
+      },
+      {
+        "name": "MEMBER_VALUE#218",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.MEMBER_VALUE#218"
+      },
+      {
+        "name": "NAME#172",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.NAME#172"
+      },
+      {
+        "name": "NAME#173",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.NAME#173"
+      },
+      {
+        "name": "NAME#174",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.NAME#174"
+      },
+      {
+        "name": "NAME#175",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.NAME#175"
+      },
+      {
+        "name": "Organization Level 01",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.Organization Level 01"
+      },
+      {
+        "name": "Organization Level 02",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.Organization Level 02"
+      },
+      {
+        "name": "Organization Level 03",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.Organization Level 03"
+      },
+      {
+        "name": "Organization Level 04",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.Organization Level 04"
+      },
+      {
+        "name": "Organizations",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.Organizations"
+      },
+      {
+        "name": "Organizations#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.Organizations#1"
+      },
+      {
+        "name": "Organizations#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.Organizations#2"
+      },
+      {
+        "name": "Organizations#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.Organizations#3"
+      },
+      {
+        "name": "UNARY_OPERATOR#10",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.UNARY_OPERATOR#10"
+      },
+      {
+        "name": "UNARY_OPERATOR#7",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.UNARY_OPERATOR#7"
+      },
+      {
+        "name": "UNARY_OPERATOR#8",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.UNARY_OPERATOR#8"
+      },
+      {
+        "name": "UNARY_OPERATOR#9",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.UNARY_OPERATOR#9"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Organizations",
+        "levels": [
+          {
+            "name": "Organization Level 01",
+            "displayColumns": [
+              {
+                "name": "Organization Level 01",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.Organization Level 01"
+              }
+            ]
+          },
+          {
+            "name": "Organization Level 02",
+            "displayColumns": [
+              {
+                "name": "Organization Level 02",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.Organization Level 02"
+              }
+            ]
+          },
+          {
+            "name": "Organization Level 03",
+            "displayColumns": [
+              {
+                "name": "Organization Level 03",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.Organization Level 03"
+              }
+            ]
+          },
+          {
+            "name": "Organization Level 04",
+            "displayColumns": [
+              {
+                "name": "Organization Level 04",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.Organization Level 04"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

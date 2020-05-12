@@ -1,0 +1,504 @@
+{
+  "logicalTable": {
+    "name": "Departments",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "Department Level 01",
+        "writeable": false,
+        "descriptorColumn": "Department Level 01 - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Department Level 01"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Department Level 01 - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Department Level 01 - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Department Level 02",
+        "writeable": false,
+        "descriptorColumn": "Department Level 02 - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Department Level 02"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Department Level 02 - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Department Level 02 - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Departments",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Departments"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Departments#1",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Departments#1"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#132",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#132"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#133",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#133"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#132",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#132"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#133",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#133"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#107",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#107"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#108",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#108"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Departments",
+              "isPrimary": "true",
+              "columns": [
+                "Department Level 01",
+                "Department Level 02"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Departments",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "Department Level 01",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Department Level 01"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Department Level 01 - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Department Level 01 - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Department Level 02",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Department Level 02"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Department Level 02 - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Department Level 02 - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Departments",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Departments"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Departments#1",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Departments#1"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#132",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#132"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#133",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#133"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#132",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#132"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#133",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#133"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#107",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#107"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#108",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#108"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Departments.Department Level 02"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Departments",
+      "isValueBased": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "Department Level 01",
+      "levels": [
+        {
+          "name": "Department Level 01",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Department Level 01",
+          "keys": [
+            {
+              "name": "Department Level 01 - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "Department Level 01 - Member Key"
+              ]
+            },
+            {
+              "name": "Department Level 01",
+              "columns": [
+                "Department Level 01"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Department Level 02",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Department Level 02",
+              "keys": [
+                {
+                  "name": "Department Level 02 - Member Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Department Level 02 - Member Key"
+                  ]
+                },
+                {
+                  "name": "Department Level 02",
+                  "columns": [
+                    "Department Level 02"
+                  ]
+                }
+              ],
+              "columns": [
+                "Department Level 02",
+                "Department Level 02 - Member Key",
+                "Departments#1",
+                "KEY0#133",
+                "MEMBER_VALUE#133",
+                "NAME#108"
+              ]
+            }
+          ],
+          "columns": [
+            "Department Level 01",
+            "Department Level 01 - Member Key",
+            "Departments",
+            "KEY0#132",
+            "MEMBER_VALUE#132",
+            "NAME#107"
+          ]
+        },
+        {
+          "name": "Department Level 02",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Department Level 02",
+          "keys": [
+            {
+              "name": "Department Level 02 - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "Department Level 02 - Member Key"
+              ]
+            },
+            {
+              "name": "Department Level 02",
+              "columns": [
+                "Department Level 02"
+              ]
+            }
+          ],
+          "columns": [
+            "Department Level 02",
+            "Department Level 02 - Member Key",
+            "Departments#1",
+            "KEY0#133",
+            "MEMBER_VALUE#133",
+            "NAME#108"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Departments",
+        "levels": [
+          {
+            "name": "Department Level 01",
+            "childLevels": [
+              {
+                "name": "Department Level 02"
+              }
+            ]
+          },
+          {
+            "name": "Department Level 02"
+          }
+        ]
+      }
+    }
+  }
+}

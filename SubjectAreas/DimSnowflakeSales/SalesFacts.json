@@ -1,0 +1,53 @@
+{
+  "presentationTable": {
+    "name": "SalesFacts",
+    "alternateNames": [
+      "Sales"
+    ],
+    "presentationColumns": [
+      {
+        "name": "ShipVia",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.SalesFacts.ShipVia"
+      },
+      {
+        "name": "EmployeeID",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.SalesFacts.EmployeeID"
+      },
+      {
+        "name": "ProductID",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.SalesFacts.ProductID"
+      },
+      {
+        "name": "CustomerID",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.SalesFacts.CustomerID"
+      },
+      {
+        "name": "SiteID",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.SalesFacts.SiteID"
+      },
+      {
+        "name": "PlanRevenue",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.SalesFacts.PlanRevenue"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.SalesFacts.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.SalesFacts.QtySold",
+        "alternateNames": [
+          "Quantity"
+        ]
+      },
+      {
+        "name": "OrderDate",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.SalesFacts.OrderDate"
+      },
+      {
+        "name": "QtySoldNoTime",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.SalesFacts.QtySoldNoTime"
+      }
+    ]
+  }
+}

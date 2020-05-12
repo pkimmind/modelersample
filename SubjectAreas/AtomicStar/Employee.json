@@ -1,0 +1,71 @@
+{
+  "presentationTable": {
+    "name": "Employee",
+    "presentationColumns": [
+      {
+        "name": "EmployeeID",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Employee.EmployeeID"
+      },
+      {
+        "name": "LastName",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Employee.LastName"
+      },
+      {
+        "name": "FirstName",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Employee.FirstName"
+      },
+      {
+        "name": "Title",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Employee.Title"
+      },
+      {
+        "name": "TitleOfCourtesy",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Employee.TitleOfCourtesy"
+      },
+      {
+        "name": "BirthDate",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Employee.BirthDate"
+      },
+      {
+        "name": "HireDate",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Employee.HireDate"
+      },
+      {
+        "name": "Address",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Employee.Address"
+      },
+      {
+        "name": "City",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Employee.City"
+      },
+      {
+        "name": "Region",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Employee.Region"
+      },
+      {
+        "name": "PostalCode",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Employee.PostalCode"
+      },
+      {
+        "name": "Country",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Employee.Country"
+      },
+      {
+        "name": "HomePhone",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Employee.HomePhone"
+      },
+      {
+        "name": "Extension",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Employee.Extension"
+      },
+      {
+        "name": "Notes",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Employee.Notes"
+      },
+      {
+        "name": "ReportsTo",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Employee.ReportsTo"
+      }
+    ]
+  }
+}

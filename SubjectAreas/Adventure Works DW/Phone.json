@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Phone",
+    "presentationColumns": [
+      {
+        "name": "[Customer].[Phone].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Phone.[Customer].[Phone].[(All)]"
+      },
+      {
+        "name": "KEY0#46",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Phone.KEY0#46"
+      },
+      {
+        "name": "KEY0#47",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Phone.KEY0#47"
+      },
+      {
+        "name": "MEMBER_VALUE#46",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Phone.MEMBER_VALUE#46"
+      },
+      {
+        "name": "MEMBER_VALUE#47",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Phone.MEMBER_VALUE#47"
+      },
+      {
+        "name": "NAME#39",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Phone.NAME#39"
+      },
+      {
+        "name": "Phone#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Phone.Phone#2"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Phone",
+        "levels": [
+          {
+            "name": "[Customer].[Phone].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Customer].[Phone].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Phone.[Customer].[Phone].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Phone",
+            "displayColumns": [
+              {
+                "name": "Phone#2",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Phone.Phone#2"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

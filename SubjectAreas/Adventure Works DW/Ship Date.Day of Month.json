@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Ship Date.Day of Month",
+    "presentationColumns": [
+      {
+        "name": "[Ship Date].[Day of Month].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Day of Month.[Ship Date].[Day of Month].[(All)]"
+      },
+      {
+        "name": "Day of Month#10",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Day of Month.Day of Month#10"
+      },
+      {
+        "name": "KEY0#402",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Day of Month.KEY0#402"
+      },
+      {
+        "name": "KEY0#403",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Day of Month.KEY0#403"
+      },
+      {
+        "name": "MEMBER_VALUE#402",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Day of Month.MEMBER_VALUE#402"
+      },
+      {
+        "name": "MEMBER_VALUE#403",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Day of Month.MEMBER_VALUE#403"
+      },
+      {
+        "name": "NAME#312",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Day of Month.NAME#312"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Ship Date.Day of Month",
+        "levels": [
+          {
+            "name": "[Ship Date].[Day of Month].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Ship Date].[Day of Month].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Day of Month.[Ship Date].[Day of Month].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Day of Month",
+            "displayColumns": [
+              {
+                "name": "Day of Month#10",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Day of Month.Day of Month#10"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

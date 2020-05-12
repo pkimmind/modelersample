@@ -1,0 +1,59 @@
+{
+  "presentationTable": {
+    "name": "Supplier",
+    "presentationColumns": [
+      {
+        "name": "SupplierID",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.Supplier.SupplierID"
+      },
+      {
+        "name": "CompanyName",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.Supplier.CompanyName"
+      },
+      {
+        "name": "ContactName",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.Supplier.ContactName"
+      },
+      {
+        "name": "ContactTitle",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.Supplier.ContactTitle"
+      },
+      {
+        "name": "Address",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.Supplier.Address"
+      },
+      {
+        "name": "PostalCode",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.Supplier.PostalCode"
+      },
+      {
+        "name": "Phone",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.Supplier.Phone"
+      },
+      {
+        "name": "Fax",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.Supplier.Fax"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.Supplier.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.Supplier.QtySold"
+      },
+      {
+        "name": "Country",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.Supplier.Country"
+      },
+      {
+        "name": "Region",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.Supplier.Region"
+      },
+      {
+        "name": "City",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.Supplier.City"
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Business Type",
+    "presentationColumns": [
+      {
+        "name": "[Reseller].[Business Type].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Business Type.[Reseller].[Business Type].[(All)]"
+      },
+      {
+        "name": "Business Type",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Business Type.Business Type"
+      },
+      {
+        "name": "KEY0#308",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Business Type.KEY0#308"
+      },
+      {
+        "name": "KEY0#309",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Business Type.KEY0#309"
+      },
+      {
+        "name": "MEMBER_VALUE#308",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Business Type.MEMBER_VALUE#308"
+      },
+      {
+        "name": "MEMBER_VALUE#309",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Business Type.MEMBER_VALUE#309"
+      },
+      {
+        "name": "NAME#244",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Business Type.NAME#244"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Business Type",
+        "levels": [
+          {
+            "name": "[Reseller].[Business Type].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Reseller].[Business Type].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Business Type.[Reseller].[Business Type].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Business Type",
+            "displayColumns": [
+              {
+                "name": "Business Type",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Business Type.Business Type"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

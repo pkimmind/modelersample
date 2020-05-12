@@ -1,0 +1,95 @@
+{
+  "presentationTable": {
+    "name": "Product",
+    "presentationColumns": [
+      {
+        "name": "ProductID",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Product.ProductID"
+      },
+      {
+        "name": "ProductName",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Product.ProductName"
+      },
+      {
+        "name": "SupplierID",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Product.SupplierID"
+      },
+      {
+        "name": "QuantityPerUnit",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Product.QuantityPerUnit"
+      },
+      {
+        "name": "UnitPrice",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Product.UnitPrice"
+      },
+      {
+        "name": "UnitsInStock",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Product.UnitsInStock"
+      },
+      {
+        "name": "UnitsOnOrder",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Product.UnitsOnOrder"
+      },
+      {
+        "name": "ReorderLevel",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Product.ReorderLevel"
+      },
+      {
+        "name": "Discontinued",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Product.Discontinued"
+      },
+      {
+        "name": "CategoryID",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Product.CategoryID"
+      },
+      {
+        "name": "CategoryName",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Product.CategoryName"
+      },
+      {
+        "name": "Description",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Product.Description"
+      },
+      {
+        "name": "CompanyName",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Product.CompanyName"
+      },
+      {
+        "name": "ContactName",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Product.ContactName"
+      },
+      {
+        "name": "ContactTitle",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Product.ContactTitle"
+      },
+      {
+        "name": "Address",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Product.Address"
+      },
+      {
+        "name": "City",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Product.City"
+      },
+      {
+        "name": "Region",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Product.Region"
+      },
+      {
+        "name": "PostalCode",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Product.PostalCode"
+      },
+      {
+        "name": "Country",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Product.Country"
+      },
+      {
+        "name": "Phone",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Product.Phone"
+      },
+      {
+        "name": "Fax",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Product.Fax"
+      }
+    ]
+  }
+}

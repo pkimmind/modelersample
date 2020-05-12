@@ -1,0 +1,61 @@
+{
+  "physicalTable": {
+    "name": "W_YEAR_D",
+    "description": "External Name:????
+",
+    "caching": {
+    },
+    "physicalColumns": [
+      {
+        "name": "ROW_WID",
+        "dataType": "DOUBLE",
+        "length": 10
+      },
+      {
+        "name": "CAL_YEAR",
+        "dataType": "SMALLINT",
+        "length": 4
+      },
+      {
+        "name": "JULIAN_YEAR_NUM",
+        "dataType": "DOUBLE",
+        "length": 10
+      },
+      {
+        "name": "YEAR_KEY",
+        "dataType": "DOUBLE",
+        "length": 15
+      },
+      {
+        "name": "Y_END_CAL_DT_KEY",
+        "dataType": "DOUBLE",
+        "length": 15
+      },
+      {
+        "name": "Y_END_CAL_DT_WID",
+        "dataType": "DOUBLE",
+        "length": 10
+      },
+      {
+        "name": "Y_STRT_CAL_DT_KEY",
+        "dataType": "DOUBLE",
+        "length": 15
+      },
+      {
+        "name": "Y_STRT_CAL_DT_WID",
+        "dataType": "DOUBLE",
+        "length": 10
+      },
+      {
+        "name": "YEAR_AGO_WID",
+        "dataType": "DOUBLE",
+        "length": 10
+      },
+      {
+        "name": "PER_NAME_YEAR",
+        "dataType": "VARCHAR",
+        "length": 200
+      }
+    ]
+  }
+}

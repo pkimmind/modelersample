@@ -1,0 +1,46 @@
+{
+  "presentationTable": {
+    "name": "Time_snow",
+    "alternateNames": [
+      "Dim_Time_snow"
+    ],
+    "presentationColumns": [
+      {
+        "name": "CALENDAR_DATETIME",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Dim_Time_snow.CALENDAR_DATETIME"
+      },
+      {
+        "name": "day_ROW_WID",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Dim_Time_snow.day_ROW_WID"
+      },
+      {
+        "name": "CAL_MONTH",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Dim_Time_snow.CAL_MONTH"
+      },
+      {
+        "name": "month_ROW_WID",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Dim_Time_snow.month_ROW_WID"
+      },
+      {
+        "name": "CAL_QTR",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Dim_Time_snow.CAL_QTR"
+      },
+      {
+        "name": "qtr_ROW_WID",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Dim_Time_snow.qtr_ROW_WID"
+      },
+      {
+        "name": "CAL_YEAR",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Dim_Time_snow.CAL_YEAR"
+      },
+      {
+        "name": "year_ROW_WID",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Dim_Time_snow.year_ROW_WID"
+      },
+      {
+        "name": "CAL_WEEK",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Dim_Time_snow.CAL_WEEK"
+      }
+    ]
+  }
+}

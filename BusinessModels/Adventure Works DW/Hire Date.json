@@ -1,0 +1,444 @@
+{
+  "logicalTable": {
+    "name": "Hire Date",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Employee].[Hire Date].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Employee].[Hire Date].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Hire Date].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Employee].[Hire Date].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Hire Date].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Hire Date - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Hire Date - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Hire Date#7",
+        "writeable": false,
+        "descriptorColumn": "Hire Date - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Hire Date#7"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#165",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#165"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#166",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#166"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#165",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#165"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#166",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#166"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#132",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#132"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#133",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#133"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Hire Date",
+              "isPrimary": "true",
+              "columns": [
+                "[Employee].[Hire Date].[(All)]",
+                "Hire Date#7"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Hire Date",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "[Employee].[Hire Date].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Hire Date].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Employee].[Hire Date].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Hire Date].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Hire Date - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Hire Date - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Hire Date#7",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Hire Date#7"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#165",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#165"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#166",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#166"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#165",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#165"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#166",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#166"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#132",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#132"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#133",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#133"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Hire Date.Hire Date"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Hire Date",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "[Employee].[Hire Date].[(All)]",
+      "levels": [
+        {
+          "name": "[Employee].[Hire Date].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Employee].[Hire Date].[(All)]",
+          "keys": [
+            {
+              "name": "[Employee].[Hire Date].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Employee].[Hire Date].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Employee].[Hire Date].[(All)]",
+              "columns": [
+                "[Employee].[Hire Date].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Hire Date",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Hire Date",
+              "keys": [
+                {
+                  "name": "Hire Date - Member Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Hire Date - Member Key"
+                  ]
+                },
+                {
+                  "name": "Hire Date",
+                  "columns": [
+                    "Hire Date#7"
+                  ]
+                }
+              ],
+              "columns": [
+                "Hire Date - Member Key",
+                "Hire Date#7",
+                "KEY0#166",
+                "MEMBER_VALUE#166",
+                "NAME#133"
+              ]
+            }
+          ],
+          "columns": [
+            "[Employee].[Hire Date].[(All)]",
+            "[Employee].[Hire Date].[(All)] - Member Key",
+            "KEY0#165",
+            "MEMBER_VALUE#165",
+            "NAME#132"
+          ]
+        },
+        {
+          "name": "Hire Date",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Hire Date",
+          "keys": [
+            {
+              "name": "Hire Date - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "Hire Date - Member Key"
+              ]
+            },
+            {
+              "name": "Hire Date",
+              "columns": [
+                "Hire Date#7"
+              ]
+            }
+          ],
+          "columns": [
+            "Hire Date - Member Key",
+            "Hire Date#7",
+            "KEY0#166",
+            "MEMBER_VALUE#166",
+            "NAME#133"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Hire Date",
+        "levels": [
+          {
+            "name": "[Employee].[Hire Date].[(All)]",
+            "childLevels": [
+              {
+                "name": "Hire Date"
+              }
+            ]
+          },
+          {
+            "name": "Hire Date"
+          }
+        ]
+      }
+    }
+  }
+}

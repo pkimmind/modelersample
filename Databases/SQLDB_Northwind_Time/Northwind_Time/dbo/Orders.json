@@ -1,0 +1,97 @@
+{
+  "physicalTable": {
+    "name": "Orders",
+    "caching": {
+    },
+    "physicalColumns": [
+      {
+        "name": "OrderID",
+        "dataType": "INT",
+        "length": 10
+      },
+      {
+        "name": "CustomerID",
+        "dataType": "CHAR",
+        "length": 5
+      },
+      {
+        "name": "SiteID",
+        "dataType": "SMALLINT"
+      },
+      {
+        "name": "EmployeeID",
+        "dataType": "SMALLINT"
+      },
+      {
+        "name": "OrderDate",
+        "dataType": "DATETIME",
+        "length": 23
+      },
+      {
+        "name": "RequiredDate",
+        "dataType": "DATETIME",
+        "length": 23
+      },
+      {
+        "name": "ShippedDate",
+        "dataType": "DATETIME",
+        "length": 23
+      },
+      {
+        "name": "ShipVia",
+        "dataType": "SMALLINT",
+        "length": 5
+      },
+      {
+        "name": "Freight",
+        "dataType": "DOUBLE",
+        "length": 10
+      },
+      {
+        "name": "ShipName",
+        "dataType": "VARCHAR",
+        "length": 40
+      },
+      {
+        "name": "ShipAddress",
+        "dataType": "VARCHAR",
+        "length": 60
+      },
+      {
+        "name": "ShipCity",
+        "dataType": "CHAR",
+        "length": 15
+      },
+      {
+        "name": "ShipRegion",
+        "dataType": "CHAR",
+        "length": 15
+      },
+      {
+        "name": "ShipPostalCode",
+        "dataType": "CHAR",
+        "length": 10
+      },
+      {
+        "name": "ShipCountry",
+        "dataType": "CHAR",
+        "length": 15
+      },
+      {
+        "name": "DateID",
+        "dataType": "DOUBLE",
+        "length": 10
+      },
+      {
+        "name": "holiday_name",
+        "dataType": "CHAR",
+        "length": 10
+      },
+      {
+        "name": "holiday_id",
+        "dataType": "DOUBLE",
+        "length": 10
+      }
+    ]
+  }
+}

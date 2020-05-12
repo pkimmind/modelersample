@@ -1,0 +1,39 @@
+{
+  "presentationTable": {
+    "name": "MultiDimShareBases",
+    "presentationColumns": [
+      {
+        "name": "Category Country Revenue",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SalesFacts.Category Country Revenue"
+      },
+      {
+        "name": "Category Qtr Revenue",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SalesFacts.Category Qtr Revenue"
+      },
+      {
+        "name": "% of Category Country Revenue",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SalesFacts.% of Category Country Revenue"
+      },
+      {
+        "name": "% of Category Qtr Revenue",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SalesFacts.% of Category Qtr Revenue"
+      },
+      {
+        "name": "All Product Time Population",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SalesFacts.All Product Time Population"
+      },
+      {
+        "name": "All Product Country Time Population",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SalesFacts.All Product Country Time Population"
+      },
+      {
+        "name": "% of Country Population",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SalesFacts.% of Country Population"
+      },
+      {
+        "name": "Revenue Development Index",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SalesFacts.Revenue Development Index"
+      }
+    ]
+  }
+}

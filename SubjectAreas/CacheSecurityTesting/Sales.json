@@ -1,0 +1,23 @@
+{
+  "presentationTable": {
+    "name": "Sales",
+    "presentationColumns": [
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:CacheSecurityTesting.Sales.Revenue"
+      },
+      {
+        "name": "PlanRevenue",
+        "sourceLogicalColumn": "logicalColumn:CacheSecurityTesting.Sales.PlanRevenue"
+      },
+      {
+        "name": "EmployeeID",
+        "sourceLogicalColumn": "logicalColumn:CacheSecurityTesting.Sales.EmployeeID"
+      },
+      {
+        "name": "ShipCountry",
+        "sourceLogicalColumn": "logicalColumn:CacheSecurityTesting.Sales.ShipCountry"
+      }
+    ]
+  }
+}

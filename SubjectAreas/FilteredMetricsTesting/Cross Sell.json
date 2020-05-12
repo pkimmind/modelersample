@@ -1,0 +1,47 @@
+{
+  "presentationTable": {
+    "name": "Cross Sell",
+    "presentationColumns": [
+      {
+        "name": "CategoryName",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.Cross Sell Product.CategoryName"
+      },
+      {
+        "name": "ProductName",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.Cross Sell Product.ProductName"
+      },
+      {
+        "name": "UnitPrice",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.Cross Sell Product.UnitPrice"
+      },
+      {
+        "name": "UnitsInStock",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.Cross Sell Product.UnitsInStock"
+      },
+      {
+        "name": "ProductID",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.Cross Sell Product.ProductID"
+      },
+      {
+        "name": "Likelihood of Buying",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.Likelihood of Buying"
+      },
+      {
+        "name": "Basket Count",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.Basket Count"
+      },
+      {
+        "name": "Likelihood of Buying by $",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.Likelihood of Buying by $"
+      },
+      {
+        "name": "Basket Count by All Cross Sell",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.Basket Count by All Cross Sell"
+      },
+      {
+        "name": "Revenue by All Cross Sell",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.Revenue by All Cross Sell"
+      }
+    ]
+  }
+}

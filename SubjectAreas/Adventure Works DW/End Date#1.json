@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "End Date#1",
+    "presentationColumns": [
+      {
+        "name": "[Product].[End Date].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.End Date#1.[Product].[End Date].[(All)]"
+      },
+      {
+        "name": "End Date#8",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.End Date#1.End Date#8"
+      },
+      {
+        "name": "KEY0#229",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.End Date#1.KEY0#229"
+      },
+      {
+        "name": "KEY0#230",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.End Date#1.KEY0#230"
+      },
+      {
+        "name": "MEMBER_VALUE#229",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.End Date#1.MEMBER_VALUE#229"
+      },
+      {
+        "name": "MEMBER_VALUE#230",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.End Date#1.MEMBER_VALUE#230"
+      },
+      {
+        "name": "NAME#183",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.End Date#1.NAME#183"
+      },
+      {
+        "name": "NAME#184",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.End Date#1.NAME#184"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "End Date#1",
+        "levels": [
+          {
+            "name": "[Product].[End Date].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Product].[End Date].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.End Date#1.[Product].[End Date].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "End Date",
+            "displayColumns": [
+              {
+                "name": "End Date#8",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.End Date#1.End Date#8"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

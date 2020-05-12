@@ -1,0 +1,414 @@
+{
+  "logicalTable": {
+    "name": "Date.Week of Year",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Date].[Week of Year].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Date].[Week of Year].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Date].[Week of Year].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Date].[Week of Year].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Date].[Week of Year].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#92",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#92"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#93",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#93"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#92",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#92"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#93",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#93"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#76",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#76"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Week of Year - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Week of Year - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Week of Year#3",
+        "writeable": false,
+        "descriptorColumn": "Week of Year - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Week of Year#3"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Date.Week of Year",
+              "isPrimary": "true",
+              "columns": [
+                "[Date].[Week of Year].[(All)]",
+                "Week of Year#3"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Date.Week of Year",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "[Date].[Week of Year].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Date].[Week of Year].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Date].[Week of Year].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Date].[Week of Year].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#92",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#92"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#93",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#93"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#92",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#92"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#93",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#93"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#76",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#76"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Week of Year - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Week of Year - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Week of Year#3",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Week of Year#3"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Date.Week of Year.Week of Year"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Date.Week of Year",
+      "isTimeDim": "true",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "[Date].[Week of Year].[(All)]",
+      "levels": [
+        {
+          "name": "[Date].[Week of Year].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Date].[Week of Year].[(All)]",
+          "keys": [
+            {
+              "name": "[Date].[Week of Year].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Date].[Week of Year].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Date].[Week of Year].[(All)]",
+              "columns": [
+                "[Date].[Week of Year].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Week of Year",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Week of Year",
+              "keys": [
+                {
+                  "name": "Week of Year - Member Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Week of Year - Member Key"
+                  ]
+                },
+                {
+                  "name": "Week of Year",
+                  "columns": [
+                    "Week of Year#3"
+                  ]
+                }
+              ],
+              "columns": [
+                "KEY0#93",
+                "MEMBER_VALUE#93",
+                "Week of Year - Member Key",
+                "Week of Year#3"
+              ]
+            }
+          ],
+          "columns": [
+            "[Date].[Week of Year].[(All)]",
+            "[Date].[Week of Year].[(All)] - Member Key",
+            "KEY0#92",
+            "MEMBER_VALUE#92",
+            "NAME#76"
+          ]
+        },
+        {
+          "name": "Week of Year",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Week of Year",
+          "keys": [
+            {
+              "name": "Week of Year - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "Week of Year - Member Key"
+              ]
+            },
+            {
+              "name": "Week of Year",
+              "columns": [
+                "Week of Year#3"
+              ]
+            }
+          ],
+          "columns": [
+            "KEY0#93",
+            "MEMBER_VALUE#93",
+            "Week of Year - Member Key",
+            "Week of Year#3"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Date.Week of Year",
+        "levels": [
+          {
+            "name": "[Date].[Week of Year].[(All)]",
+            "childLevels": [
+              {
+                "name": "Week of Year"
+              }
+            ]
+          },
+          {
+            "name": "Week of Year"
+          }
+        ]
+      }
+    }
+  }
+}

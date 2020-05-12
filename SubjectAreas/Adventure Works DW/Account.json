@@ -1,0 +1,86 @@
+{
+  "presentationTable": {
+    "name": "Account",
+    "presentationColumns": [
+      {
+        "name": "[Account].[Account].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account.[Account].[Account].[(All)]"
+      },
+      {
+        "name": "Account",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account.Account"
+      },
+      {
+        "name": "Account Number",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account.Account Number"
+      },
+      {
+        "name": "Account Type",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account.Account Type"
+      },
+      {
+        "name": "Accounts",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account.Accounts"
+      },
+      {
+        "name": "CUSTOM_ROLLUP",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account.CUSTOM_ROLLUP"
+      },
+      {
+        "name": "KEY0",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account.KEY0"
+      },
+      {
+        "name": "KEY0#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account.KEY0#1"
+      },
+      {
+        "name": "MEMBER_VALUE",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account.MEMBER_VALUE"
+      },
+      {
+        "name": "MEMBER_VALUE#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account.MEMBER_VALUE#1"
+      },
+      {
+        "name": "NAME",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account.NAME"
+      },
+      {
+        "name": "NAME#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account.NAME#1"
+      },
+      {
+        "name": "UNARY_OPERATOR",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account.UNARY_OPERATOR"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Account",
+        "levels": [
+          {
+            "name": "[Account].[Account].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Account].[Account].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account.[Account].[Account].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Account",
+            "displayColumns": [
+              {
+                "name": "Account",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account.Account"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

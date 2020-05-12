@@ -1,0 +1,27 @@
+{
+  "presentationTable": {
+    "name": "Shipper",
+    "presentationColumns": [
+      {
+        "name": "ShipperID",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Shipper.ShipperID"
+      },
+      {
+        "name": "CompanyName",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Shipper.CompanyName"
+      },
+      {
+        "name": "Phone",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Shipper.Phone"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Shipper.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Shipper.QtySold"
+      }
+    ]
+  }
+}

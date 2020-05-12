@@ -1,0 +1,444 @@
+{
+  "logicalTable": {
+    "name": "Order Frequency",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Reseller].[Order Frequency].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Reseller].[Order Frequency].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Reseller].[Order Frequency].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Reseller].[Order Frequency].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Reseller].[Order Frequency].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#320",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#320"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#321",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#321"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#320",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#320"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#321",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#321"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#255",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#255"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#256",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#256"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Order Frequency",
+        "writeable": false,
+        "descriptorColumn": "Order Frequency - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Order Frequency"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Order Frequency - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Order Frequency - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Order Frequency",
+              "isPrimary": "true",
+              "columns": [
+                "[Reseller].[Order Frequency].[(All)]",
+                "Order Frequency"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Order Frequency",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "[Reseller].[Order Frequency].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Reseller].[Order Frequency].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Reseller].[Order Frequency].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Reseller].[Order Frequency].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#320",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#320"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#321",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#321"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#320",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#320"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#321",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#321"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#255",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#255"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#256",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#256"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Order Frequency",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Order Frequency"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Order Frequency - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Order Frequency - Member Key"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Order Frequency.Order Frequency"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Order Frequency",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "[Reseller].[Order Frequency].[(All)]",
+      "levels": [
+        {
+          "name": "[Reseller].[Order Frequency].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Reseller].[Order Frequency].[(All)]",
+          "keys": [
+            {
+              "name": "[Reseller].[Order Frequency].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Reseller].[Order Frequency].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Reseller].[Order Frequency].[(All)]",
+              "columns": [
+                "[Reseller].[Order Frequency].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Order Frequency",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Order Frequency",
+              "keys": [
+                {
+                  "name": "Order Frequency - Member Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Order Frequency - Member Key"
+                  ]
+                },
+                {
+                  "name": "Order Frequency",
+                  "columns": [
+                    "Order Frequency"
+                  ]
+                }
+              ],
+              "columns": [
+                "KEY0#321",
+                "MEMBER_VALUE#321",
+                "NAME#256",
+                "Order Frequency",
+                "Order Frequency - Member Key"
+              ]
+            }
+          ],
+          "columns": [
+            "[Reseller].[Order Frequency].[(All)]",
+            "[Reseller].[Order Frequency].[(All)] - Member Key",
+            "KEY0#320",
+            "MEMBER_VALUE#320",
+            "NAME#255"
+          ]
+        },
+        {
+          "name": "Order Frequency",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Order Frequency",
+          "keys": [
+            {
+              "name": "Order Frequency - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "Order Frequency - Member Key"
+              ]
+            },
+            {
+              "name": "Order Frequency",
+              "columns": [
+                "Order Frequency"
+              ]
+            }
+          ],
+          "columns": [
+            "KEY0#321",
+            "MEMBER_VALUE#321",
+            "NAME#256",
+            "Order Frequency",
+            "Order Frequency - Member Key"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Order Frequency",
+        "levels": [
+          {
+            "name": "[Reseller].[Order Frequency].[(All)]",
+            "childLevels": [
+              {
+                "name": "Order Frequency"
+              }
+            ]
+          },
+          {
+            "name": "Order Frequency"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "presentationTable": {
+    "name": "Reseller Bank",
+    "presentationColumns": [
+      {
+        "name": "[Reseller].[Reseller Bank].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Bank.[Reseller].[Reseller Bank].[(All)]"
+      },
+      {
+        "name": "Address#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Bank.Address#5"
+      },
+      {
+        "name": "Annual Revenue#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Bank.Annual Revenue#2"
+      },
+      {
+        "name": "Annual Sales#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Bank.Annual Sales#2"
+      },
+      {
+        "name": "Bank Name#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Bank.Bank Name#2"
+      },
+      {
+        "name": "Bank Name#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Bank.Bank Name#3"
+      },
+      {
+        "name": "Business Type#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Bank.Business Type#2"
+      },
+      {
+        "name": "First Order Year#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Bank.First Order Year#2"
+      },
+      {
+        "name": "KEY0#330",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Bank.KEY0#330"
+      },
+      {
+        "name": "KEY0#331",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Bank.KEY0#331"
+      },
+      {
+        "name": "KEY0#332",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Bank.KEY0#332"
+      },
+      {
+        "name": "Last Order Year#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Bank.Last Order Year#2"
+      },
+      {
+        "name": "MEMBER_VALUE#330",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Bank.MEMBER_VALUE#330"
+      },
+      {
+        "name": "MEMBER_VALUE#331",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Bank.MEMBER_VALUE#331"
+      },
+      {
+        "name": "MEMBER_VALUE#332",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Bank.MEMBER_VALUE#332"
+      },
+      {
+        "name": "Min Payment Amount#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Bank.Min Payment Amount#2"
+      },
+      {
+        "name": "Min Payment Type#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Bank.Min Payment Type#2"
+      },
+      {
+        "name": "NAME#263",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Bank.NAME#263"
+      },
+      {
+        "name": "NAME#264",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Bank.NAME#264"
+      },
+      {
+        "name": "Number of Employees#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Bank.Number of Employees#2"
+      },
+      {
+        "name": "Order Frequency#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Bank.Order Frequency#2"
+      },
+      {
+        "name": "Order Month#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Bank.Order Month#2"
+      },
+      {
+        "name": "Phone#13",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Bank.Phone#13"
+      },
+      {
+        "name": "Product Line#7",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Bank.Product Line#7"
+      },
+      {
+        "name": "Reseller#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Bank.Reseller#1"
+      },
+      {
+        "name": "Year Opened#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Bank.Year Opened#1"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Reseller Bank",
+        "levels": [
+          {
+            "name": "[Reseller].[Reseller Bank].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Reseller].[Reseller Bank].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Bank.[Reseller].[Reseller Bank].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Bank Name",
+            "displayColumns": [
+              {
+                "name": "Bank Name#2",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Bank.Bank Name#2"
+              }
+            ]
+          },
+          {
+            "name": "Reseller",
+            "displayColumns": [
+              {
+                "name": "Reseller#1",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Bank.Reseller#1"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

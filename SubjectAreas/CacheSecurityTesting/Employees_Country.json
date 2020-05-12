@@ -1,0 +1,29 @@
+{
+  "presentationTable": {
+    "name": "Employees_Country",
+    "presentationColumns": [
+      {
+        "name": "EmployeeCountry",
+        "sourceLogicalColumn": "logicalColumn:CacheSecurityTesting.Employees_Country.EmployeeCountry"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:CacheSecurityTesting.Employees_Country.Revenue"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Employees",
+        "levels": [
+          {
+            "name": "All Employees",
+            "displayColumns": [
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

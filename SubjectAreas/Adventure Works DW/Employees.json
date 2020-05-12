@@ -1,0 +1,666 @@
+{
+  "presentationTable": {
+    "name": "Employees",
+    "presentationColumns": [
+      {
+        "name": "[Employee].[Employees].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.[Employee].[Employees].[(All)]"
+      },
+      {
+        "name": "Base Rate#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Base Rate#3"
+      },
+      {
+        "name": "Base Rate#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Base Rate#4"
+      },
+      {
+        "name": "Base Rate#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Base Rate#5"
+      },
+      {
+        "name": "Base Rate#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Base Rate#6"
+      },
+      {
+        "name": "Base Rate#7",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Base Rate#7"
+      },
+      {
+        "name": "Birth Date#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Birth Date#5"
+      },
+      {
+        "name": "Birth Date#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Birth Date#6"
+      },
+      {
+        "name": "Birth Date#7",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Birth Date#7"
+      },
+      {
+        "name": "Birth Date#8",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Birth Date#8"
+      },
+      {
+        "name": "Birth Date#9",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Birth Date#9"
+      },
+      {
+        "name": "Department Name#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Department Name#3"
+      },
+      {
+        "name": "Department Name#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Department Name#4"
+      },
+      {
+        "name": "Department Name#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Department Name#5"
+      },
+      {
+        "name": "Department Name#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Department Name#6"
+      },
+      {
+        "name": "Department Name#7",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Department Name#7"
+      },
+      {
+        "name": "Email Address#10",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Email Address#10"
+      },
+      {
+        "name": "Email Address#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Email Address#6"
+      },
+      {
+        "name": "Email Address#7",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Email Address#7"
+      },
+      {
+        "name": "Email Address#8",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Email Address#8"
+      },
+      {
+        "name": "Email Address#9",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Email Address#9"
+      },
+      {
+        "name": "Emergency Contact Name#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Emergency Contact Name#3"
+      },
+      {
+        "name": "Emergency Contact Name#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Emergency Contact Name#4"
+      },
+      {
+        "name": "Emergency Contact Name#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Emergency Contact Name#5"
+      },
+      {
+        "name": "Emergency Contact Name#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Emergency Contact Name#6"
+      },
+      {
+        "name": "Emergency Contact Name#7",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Emergency Contact Name#7"
+      },
+      {
+        "name": "Emergency Contact Phone#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Emergency Contact Phone#3"
+      },
+      {
+        "name": "Emergency Contact Phone#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Emergency Contact Phone#4"
+      },
+      {
+        "name": "Emergency Contact Phone#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Emergency Contact Phone#5"
+      },
+      {
+        "name": "Emergency Contact Phone#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Emergency Contact Phone#6"
+      },
+      {
+        "name": "Emergency Contact Phone#7",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Emergency Contact Phone#7"
+      },
+      {
+        "name": "Employee Level 02",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Employee Level 02"
+      },
+      {
+        "name": "Employee Level 03",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Employee Level 03"
+      },
+      {
+        "name": "Employee Level 04",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Employee Level 04"
+      },
+      {
+        "name": "Employee Level 05",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Employee Level 05"
+      },
+      {
+        "name": "Employee Level 06",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Employee Level 06"
+      },
+      {
+        "name": "Employees#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Employees#2"
+      },
+      {
+        "name": "Employees#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Employees#3"
+      },
+      {
+        "name": "Employees#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Employees#4"
+      },
+      {
+        "name": "Employees#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Employees#5"
+      },
+      {
+        "name": "Employees#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Employees#6"
+      },
+      {
+        "name": "End Date#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.End Date#2"
+      },
+      {
+        "name": "End Date#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.End Date#3"
+      },
+      {
+        "name": "End Date#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.End Date#4"
+      },
+      {
+        "name": "End Date#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.End Date#5"
+      },
+      {
+        "name": "End Date#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.End Date#6"
+      },
+      {
+        "name": "Gender#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Gender#5"
+      },
+      {
+        "name": "Gender#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Gender#6"
+      },
+      {
+        "name": "Gender#7",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Gender#7"
+      },
+      {
+        "name": "Gender#8",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Gender#8"
+      },
+      {
+        "name": "Gender#9",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Gender#9"
+      },
+      {
+        "name": "Hire Date#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Hire Date#2"
+      },
+      {
+        "name": "Hire Date#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Hire Date#3"
+      },
+      {
+        "name": "Hire Date#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Hire Date#4"
+      },
+      {
+        "name": "Hire Date#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Hire Date#5"
+      },
+      {
+        "name": "Hire Date#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Hire Date#6"
+      },
+      {
+        "name": "Hire Year#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Hire Year#2"
+      },
+      {
+        "name": "Hire Year#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Hire Year#3"
+      },
+      {
+        "name": "Hire Year#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Hire Year#4"
+      },
+      {
+        "name": "Hire Year#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Hire Year#5"
+      },
+      {
+        "name": "Hire Year#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Hire Year#6"
+      },
+      {
+        "name": "KEY0#155",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.KEY0#155"
+      },
+      {
+        "name": "KEY0#156",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.KEY0#156"
+      },
+      {
+        "name": "KEY0#157",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.KEY0#157"
+      },
+      {
+        "name": "KEY0#158",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.KEY0#158"
+      },
+      {
+        "name": "KEY0#159",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.KEY0#159"
+      },
+      {
+        "name": "KEY0#160",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.KEY0#160"
+      },
+      {
+        "name": "Login ID#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Login ID#2"
+      },
+      {
+        "name": "Login ID#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Login ID#3"
+      },
+      {
+        "name": "Login ID#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Login ID#4"
+      },
+      {
+        "name": "Login ID#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Login ID#5"
+      },
+      {
+        "name": "Login ID#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Login ID#6"
+      },
+      {
+        "name": "Manager SSN#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Manager SSN#2"
+      },
+      {
+        "name": "Manager SSN#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Manager SSN#3"
+      },
+      {
+        "name": "Manager SSN#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Manager SSN#4"
+      },
+      {
+        "name": "Manager SSN#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Manager SSN#5"
+      },
+      {
+        "name": "Manager SSN#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Manager SSN#6"
+      },
+      {
+        "name": "Marital Status#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Marital Status#5"
+      },
+      {
+        "name": "Marital Status#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Marital Status#6"
+      },
+      {
+        "name": "Marital Status#7",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Marital Status#7"
+      },
+      {
+        "name": "Marital Status#8",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Marital Status#8"
+      },
+      {
+        "name": "Marital Status#9",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Marital Status#9"
+      },
+      {
+        "name": "MEMBER_VALUE#155",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.MEMBER_VALUE#155"
+      },
+      {
+        "name": "MEMBER_VALUE#156",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.MEMBER_VALUE#156"
+      },
+      {
+        "name": "MEMBER_VALUE#157",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.MEMBER_VALUE#157"
+      },
+      {
+        "name": "MEMBER_VALUE#158",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.MEMBER_VALUE#158"
+      },
+      {
+        "name": "MEMBER_VALUE#159",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.MEMBER_VALUE#159"
+      },
+      {
+        "name": "MEMBER_VALUE#160",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.MEMBER_VALUE#160"
+      },
+      {
+        "name": "NAME#122",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.NAME#122"
+      },
+      {
+        "name": "NAME#123",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.NAME#123"
+      },
+      {
+        "name": "NAME#124",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.NAME#124"
+      },
+      {
+        "name": "NAME#125",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.NAME#125"
+      },
+      {
+        "name": "NAME#126",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.NAME#126"
+      },
+      {
+        "name": "NAME#127",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.NAME#127"
+      },
+      {
+        "name": "Pay Frequency#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Pay Frequency#2"
+      },
+      {
+        "name": "Pay Frequency#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Pay Frequency#3"
+      },
+      {
+        "name": "Pay Frequency#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Pay Frequency#4"
+      },
+      {
+        "name": "Pay Frequency#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Pay Frequency#5"
+      },
+      {
+        "name": "Pay Frequency#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Pay Frequency#6"
+      },
+      {
+        "name": "Phone#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Phone#5"
+      },
+      {
+        "name": "Phone#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Phone#6"
+      },
+      {
+        "name": "Phone#7",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Phone#7"
+      },
+      {
+        "name": "Phone#8",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Phone#8"
+      },
+      {
+        "name": "Phone#9",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Phone#9"
+      },
+      {
+        "name": "Salaried Flag#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Salaried Flag#2"
+      },
+      {
+        "name": "Salaried Flag#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Salaried Flag#3"
+      },
+      {
+        "name": "Salaried Flag#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Salaried Flag#4"
+      },
+      {
+        "name": "Salaried Flag#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Salaried Flag#5"
+      },
+      {
+        "name": "Salaried Flag#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Salaried Flag#6"
+      },
+      {
+        "name": "Sales Person Flag#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Sales Person Flag#2"
+      },
+      {
+        "name": "Sales Person Flag#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Sales Person Flag#3"
+      },
+      {
+        "name": "Sales Person Flag#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Sales Person Flag#4"
+      },
+      {
+        "name": "Sales Person Flag#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Sales Person Flag#5"
+      },
+      {
+        "name": "Sales Person Flag#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Sales Person Flag#6"
+      },
+      {
+        "name": "Sales Territory Key",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Sales Territory Key"
+      },
+      {
+        "name": "Sales Territory Key#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Sales Territory Key#1"
+      },
+      {
+        "name": "Sales Territory Key#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Sales Territory Key#2"
+      },
+      {
+        "name": "Sales Territory Key#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Sales Territory Key#3"
+      },
+      {
+        "name": "Sales Territory Key#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Sales Territory Key#4"
+      },
+      {
+        "name": "Sick Leave Hours#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Sick Leave Hours#2"
+      },
+      {
+        "name": "Sick Leave Hours#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Sick Leave Hours#3"
+      },
+      {
+        "name": "Sick Leave Hours#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Sick Leave Hours#4"
+      },
+      {
+        "name": "Sick Leave Hours#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Sick Leave Hours#5"
+      },
+      {
+        "name": "Sick Leave Hours#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Sick Leave Hours#6"
+      },
+      {
+        "name": "SSN#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.SSN#2"
+      },
+      {
+        "name": "SSN#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.SSN#3"
+      },
+      {
+        "name": "SSN#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.SSN#4"
+      },
+      {
+        "name": "SSN#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.SSN#5"
+      },
+      {
+        "name": "SSN#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.SSN#6"
+      },
+      {
+        "name": "Start Date#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Start Date#2"
+      },
+      {
+        "name": "Start Date#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Start Date#3"
+      },
+      {
+        "name": "Start Date#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Start Date#4"
+      },
+      {
+        "name": "Start Date#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Start Date#5"
+      },
+      {
+        "name": "Start Date#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Start Date#6"
+      },
+      {
+        "name": "Status#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Status#2"
+      },
+      {
+        "name": "Status#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Status#3"
+      },
+      {
+        "name": "Status#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Status#4"
+      },
+      {
+        "name": "Status#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Status#5"
+      },
+      {
+        "name": "Status#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Status#6"
+      },
+      {
+        "name": "Title#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Title#3"
+      },
+      {
+        "name": "Title#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Title#4"
+      },
+      {
+        "name": "Title#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Title#5"
+      },
+      {
+        "name": "Title#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Title#6"
+      },
+      {
+        "name": "Title#7",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Title#7"
+      },
+      {
+        "name": "Vacation Hours#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Vacation Hours#2"
+      },
+      {
+        "name": "Vacation Hours#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Vacation Hours#3"
+      },
+      {
+        "name": "Vacation Hours#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Vacation Hours#4"
+      },
+      {
+        "name": "Vacation Hours#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Vacation Hours#5"
+      },
+      {
+        "name": "Vacation Hours#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Vacation Hours#6"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Employees",
+        "levels": [
+          {
+            "name": "[Employee].[Employees].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Employee].[Employees].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.[Employee].[Employees].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Employee Level 02",
+            "displayColumns": [
+              {
+                "name": "Employee Level 02",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Employee Level 02"
+              }
+            ]
+          },
+          {
+            "name": "Employee Level 03",
+            "displayColumns": [
+              {
+                "name": "Employee Level 03",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Employee Level 03"
+              }
+            ]
+          },
+          {
+            "name": "Employee Level 04",
+            "displayColumns": [
+              {
+                "name": "Employee Level 04",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Employee Level 04"
+              }
+            ]
+          },
+          {
+            "name": "Employee Level 05",
+            "displayColumns": [
+              {
+                "name": "Employee Level 05",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Employee Level 05"
+              }
+            ]
+          },
+          {
+            "name": "Employee Level 06",
+            "displayColumns": [
+              {
+                "name": "Employee Level 06",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Employee Level 06"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

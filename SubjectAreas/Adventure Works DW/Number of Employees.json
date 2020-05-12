@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "Number of Employees",
+    "presentationColumns": [
+      {
+        "name": "[Reseller].[Number of Employees].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Employees.[Reseller].[Number of Employees].[(All)]"
+      },
+      {
+        "name": "KEY0#318",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Employees.KEY0#318"
+      },
+      {
+        "name": "KEY0#319",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Employees.KEY0#319"
+      },
+      {
+        "name": "MEMBER_VALUE#318",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Employees.MEMBER_VALUE#318"
+      },
+      {
+        "name": "MEMBER_VALUE#319",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Employees.MEMBER_VALUE#319"
+      },
+      {
+        "name": "NAME#253",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Employees.NAME#253"
+      },
+      {
+        "name": "NAME#254",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Employees.NAME#254"
+      },
+      {
+        "name": "Number of Employees",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Employees.Number of Employees"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Number of Employees",
+        "levels": [
+          {
+            "name": "[Reseller].[Number of Employees].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Reseller].[Number of Employees].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Employees.[Reseller].[Number of Employees].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Number of Employees",
+            "displayColumns": [
+              {
+                "name": "Number of Employees",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Employees.Number of Employees"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

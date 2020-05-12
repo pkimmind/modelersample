@@ -1,0 +1,571 @@
+{
+  "logicalTable": {
+    "name": "Week",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "Year",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Orders",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": " EXTRACT( YEAR  FROM %1)",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.OrderDate"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Qtr",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Orders",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": " EXTRACT( QUARTER_OF_YEAR  FROM %1)",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.OrderDate"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Week",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Orders",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": " EXTRACT( WEEK_OF_YEAR  FROM %1)",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.OrderDate"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Revenue",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.Revenue"
+              ]
+            }
+          },
+        ]
+      {
+        "name": "QtySold",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.QtySold"
+              ]
+            }
+          },
+        ]
+    ],
+    "keys": [
+            {
+              "name": "Week",
+              "isPrimary": "true",
+              "columns": [
+                "Year",
+                "Week"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Orders",
+        "isDistinct": "true",
+        "logicalTableRef": "Week",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "Year",
+                  "logicalExpression": {
+                    "expressionTemplate": " EXTRACT( YEAR  FROM %1)",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.OrderDate"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Qtr",
+                  "logicalExpression": {
+                    "expressionTemplate": " EXTRACT( QUARTER_OF_YEAR  FROM %1)",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.OrderDate"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Week",
+                  "logicalExpression": {
+                    "expressionTemplate": " EXTRACT( WEEK_OF_YEAR  FROM %1)",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.OrderDate"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Orders",
+            "joins": [
+            ]
+          }
+        ]
+      },
+    ],
+    "dimension": {
+      "name": "Time",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "All Time",
+      "levels": [
+        {
+          "name": "All Time",
+          "memberCount": 1,
+          "levelConst": "All Time",
+          "childLevels": [
+            {
+              "name": "Year",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Year",
+              "keys": [
+                {
+                  "name": "Year_Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Year"
+                  ]
+                }
+              ],
+              "childLevels": [
+                {
+                  "name": "Qtr",
+                  "isGTA": false,
+                  "memberCount": 1,
+                  "levelConst": "Qtr",
+                  "keys": [
+                    {
+                      "name": "Qtr_Key",
+                      "isPrimary": "true",
+                      "columns": [
+                        "Year",
+                        "Qtr"
+                      ]
+                    }
+                  ],
+                  "childLevels": [
+                    {
+                      "name": "Week",
+                      "isGTA": false,
+                      "memberCount": 1,
+                      "levelConst": "Week",
+                      "keys": [
+                        {
+                          "name": "Week_Key",
+                          "isPrimary": "true",
+                          "columns": [
+                            "Year",
+                            "Week"
+                          ]
+                        }
+                      ],
+                      "childLevels": [
+                        {
+                          "name": "Day",
+                          "isGTA": false,
+                          "memberCount": 1,
+                          "levelConst": "Day",
+                          "keys": [
+                            {
+                              "name": "Day",
+                              "isPrimary": "true",
+                              "columns": [
+                                "Day"
+                              ]
+                            }
+                          ],
+                          "columns": [
+                            "Year",
+                            "Week",
+                            "Day"
+                          ]
+                        }
+                      ],
+                      "columns": [
+                        "Year",
+                        "Qtr",
+                        "Week",
+                        "Revenue",
+                        "QtySold"
+                      ]
+                    }
+                  ],
+                  "columns": [
+                    "Category Qtr Revenue",
+                    "Year",
+                    "Qtr",
+                    "Revenue",
+                    "QtySold",
+                    "Qtr Name"
+                  ]
+                }
+              ],
+              "columns": [
+                "YearlySales",
+                "Year",
+                "Revenue",
+                "PlanRevenue",
+                "QtySold"
+              ]
+            }
+          ],
+          "columns": [
+            "All Product Time Population",
+            "All Product Country Time Population",
+            "Last",
+            "Change",
+            "% Change",
+            "Volume"
+          ]
+        },
+        {
+          "name": "Year",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Year",
+          "keys": [
+            {
+              "name": "Year_Key",
+              "isPrimary": "true",
+              "columns": [
+                "Year"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Qtr",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Qtr",
+              "keys": [
+                {
+                  "name": "Qtr_Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Year",
+                    "Qtr"
+                  ]
+                }
+              ],
+              "childLevels": [
+                {
+                  "name": "Week",
+                  "isGTA": false,
+                  "memberCount": 1,
+                  "levelConst": "Week",
+                  "keys": [
+                    {
+                      "name": "Week_Key",
+                      "isPrimary": "true",
+                      "columns": [
+                        "Year",
+                        "Week"
+                      ]
+                    }
+                  ],
+                  "childLevels": [
+                    {
+                      "name": "Day",
+                      "isGTA": false,
+                      "memberCount": 1,
+                      "levelConst": "Day",
+                      "keys": [
+                        {
+                          "name": "Day",
+                          "isPrimary": "true",
+                          "columns": [
+                            "Day"
+                          ]
+                        }
+                      ],
+                      "columns": [
+                        "Year",
+                        "Week",
+                        "Day"
+                      ]
+                    }
+                  ],
+                  "columns": [
+                    "Year",
+                    "Qtr",
+                    "Week",
+                    "Revenue",
+                    "QtySold"
+                  ]
+                }
+              ],
+              "columns": [
+                "Category Qtr Revenue",
+                "Year",
+                "Qtr",
+                "Revenue",
+                "QtySold",
+                "Qtr Name"
+              ]
+            }
+          ],
+          "columns": [
+            "YearlySales",
+            "Year",
+            "Revenue",
+            "PlanRevenue",
+            "QtySold"
+          ]
+        },
+        {
+          "name": "Qtr",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Qtr",
+          "keys": [
+            {
+              "name": "Qtr_Key",
+              "isPrimary": "true",
+              "columns": [
+                "Year",
+                "Qtr"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Week",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Week",
+              "keys": [
+                {
+                  "name": "Week_Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Year",
+                    "Week"
+                  ]
+                }
+              ],
+              "childLevels": [
+                {
+                  "name": "Day",
+                  "isGTA": false,
+                  "memberCount": 1,
+                  "levelConst": "Day",
+                  "keys": [
+                    {
+                      "name": "Day",
+                      "isPrimary": "true",
+                      "columns": [
+                        "Day"
+                      ]
+                    }
+                  ],
+                  "columns": [
+                    "Year",
+                    "Week",
+                    "Day"
+                  ]
+                }
+              ],
+              "columns": [
+                "Year",
+                "Qtr",
+                "Week",
+                "Revenue",
+                "QtySold"
+              ]
+            }
+          ],
+          "columns": [
+            "Category Qtr Revenue",
+            "Year",
+            "Qtr",
+            "Revenue",
+            "QtySold",
+            "Qtr Name"
+          ]
+        },
+        {
+          "name": "Week",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Week",
+          "keys": [
+            {
+              "name": "Week_Key",
+              "isPrimary": "true",
+              "columns": [
+                "Year",
+                "Week"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Day",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Day",
+              "keys": [
+                {
+                  "name": "Day",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Day"
+                  ]
+                }
+              ],
+              "columns": [
+                "Year",
+                "Week",
+                "Day"
+              ]
+            }
+          ],
+          "columns": [
+            "Year",
+            "Qtr",
+            "Week",
+            "Revenue",
+            "QtySold"
+          ]
+        },
+        {
+          "name": "Day",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Day",
+          "keys": [
+            {
+              "name": "Day",
+              "isPrimary": "true",
+              "columns": [
+                "Day"
+              ]
+            }
+          ],
+          "columns": [
+            "Year",
+            "Week",
+            "Day"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Time",
+        "levels": [
+          {
+            "name": "All Time",
+            "childLevels": [
+              {
+                "name": "Year",
+                "childLevels": [
+                  {
+                    "name": "Qtr",
+                    "childLevels": [
+                      {
+                        "name": "Week",
+                        "childLevels": [
+                          {
+                            "name": "Day"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Year",
+            "childLevels": [
+              {
+                "name": "Qtr",
+                "childLevels": [
+                  {
+                    "name": "Week",
+                    "childLevels": [
+                      {
+                        "name": "Day"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Qtr",
+            "childLevels": [
+              {
+                "name": "Week",
+                "childLevels": [
+                  {
+                    "name": "Day"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Week",
+            "childLevels": [
+              {
+                "name": "Day"
+              }
+            ]
+          },
+          {
+            "name": "Day"
+          }
+        ]
+      }
+    }
+  }
+}

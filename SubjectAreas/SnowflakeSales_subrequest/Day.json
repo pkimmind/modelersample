@@ -1,0 +1,19 @@
+{
+  "presentationTable": {
+    "name": "Day",
+    "presentationColumns": [
+      {
+        "name": "Year",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.Day.Year"
+      },
+      {
+        "name": "Week",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.Day.Week"
+      },
+      {
+        "name": "Day",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.Day.Day"
+      }
+    ]
+  }
+}

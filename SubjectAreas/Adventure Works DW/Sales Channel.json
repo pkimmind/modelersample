@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Sales Channel",
+    "presentationColumns": [
+      {
+        "name": "[Sales Channel].[Sales Channel].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Channel.[Sales Channel].[Sales Channel].[(All)]"
+      },
+      {
+        "name": "KEY0#355",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Channel.KEY0#355"
+      },
+      {
+        "name": "KEY0#356",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Channel.KEY0#356"
+      },
+      {
+        "name": "MEMBER_VALUE#355",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Channel.MEMBER_VALUE#355"
+      },
+      {
+        "name": "MEMBER_VALUE#356",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Channel.MEMBER_VALUE#356"
+      },
+      {
+        "name": "NAME#280",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Channel.NAME#280"
+      },
+      {
+        "name": "Sales Channel",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Channel.Sales Channel"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Sales Channel",
+        "levels": [
+          {
+            "name": "[Sales Channel].[Sales Channel].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Sales Channel].[Sales Channel].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Channel.[Sales Channel].[Sales Channel].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Sales Channel",
+            "displayColumns": [
+              {
+                "name": "Sales Channel",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Channel.Sales Channel"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

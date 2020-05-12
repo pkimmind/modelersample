@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Account Type",
+    "presentationColumns": [
+      {
+        "name": "[Account].[Account Type].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account Type.[Account].[Account Type].[(All)]"
+      },
+      {
+        "name": "Account Type#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account Type.Account Type#1"
+      },
+      {
+        "name": "KEY0#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account Type.KEY0#4"
+      },
+      {
+        "name": "KEY0#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account Type.KEY0#5"
+      },
+      {
+        "name": "MEMBER_VALUE#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account Type.MEMBER_VALUE#4"
+      },
+      {
+        "name": "MEMBER_VALUE#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account Type.MEMBER_VALUE#5"
+      },
+      {
+        "name": "NAME#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account Type.NAME#3"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Account Type",
+        "levels": [
+          {
+            "name": "[Account].[Account Type].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Account].[Account Type].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account Type.[Account].[Account Type].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Account Type",
+            "displayColumns": [
+              {
+                "name": "Account Type#1",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account Type.Account Type#1"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

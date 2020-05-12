@@ -1,0 +1,45 @@
+{
+  "physicalTable": {
+    "name": "Customers",
+    "caching": {
+    },
+    "physicalColumns": [
+      {
+        "name": "CustomerID",
+        "dataType": "CHAR",
+        "length": 5
+      },
+      {
+        "name": "CompanyName",
+        "dataType": "VARCHAR",
+        "length": 50
+      },
+      {
+        "name": "MyInt",
+        "dataType": "INT"
+      },
+      {
+        "name": "MyDouble",
+        "dataType": "DOUBLE"
+      },
+      {
+        "name": "MyFloat",
+        "dataType": "FLOAT"
+      },
+      {
+        "name": "MyVarBinary",
+        "dataType": "VARBINARY",
+        "length": 15
+      },
+      {
+        "name": "MyVarChar",
+        "dataType": "VARCHAR",
+        "length": 15
+      },
+      {
+        "name": "MyTime",
+        "dataType": "TIME"
+      }
+    ]
+  }
+}

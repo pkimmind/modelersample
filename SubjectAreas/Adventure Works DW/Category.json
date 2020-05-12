@@ -1,0 +1,74 @@
+{
+  "presentationTable": {
+    "name": "Category",
+    "presentationColumns": [
+      {
+        "name": "[Product].[Category].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Category.[Product].[Category].[(All)]"
+      },
+      {
+        "name": "Category",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Category.Category"
+      },
+      {
+        "name": "KEY0#219",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Category.KEY0#219"
+      },
+      {
+        "name": "KEY0#220",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Category.KEY0#220"
+      },
+      {
+        "name": "MEMBER_VALUE#219",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Category.MEMBER_VALUE#219"
+      },
+      {
+        "name": "MEMBER_VALUE#220",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Category.MEMBER_VALUE#220"
+      },
+      {
+        "name": "NAME#176",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Category.NAME#176"
+      },
+      {
+        "name": "NAME#177",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Category.NAME#177"
+      },
+      {
+        "name": "TRAN0#10",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Category.TRAN0#10"
+      },
+      {
+        "name": "TRAN1#10",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Category.TRAN1#10"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Category",
+        "levels": [
+          {
+            "name": "[Product].[Category].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Product].[Category].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Category.[Product].[Category].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Category",
+            "displayColumns": [
+              {
+                "name": "Category",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Category.Category"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

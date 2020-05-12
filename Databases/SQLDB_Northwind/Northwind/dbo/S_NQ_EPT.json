@@ -1,0 +1,47 @@
+{
+  "physicalTable": {
+    "name": "S_NQ_EPT",
+    "isCacheable": false,
+    "caching": {
+      "enable": false
+    },
+    "pollFreq": "6000",
+    "physicalColumns": [
+      {
+        "name": "CATALOG_NAME",
+        "dataType": "VARCHAR",
+        "length": 120
+      },
+      {
+        "name": "DATABASE_NAME",
+        "dataType": "VARCHAR",
+        "length": 120
+      },
+      {
+        "name": "OTHER_RESERVED",
+        "dataType": "VARCHAR",
+        "length": 120
+      },
+      {
+        "name": "SCHEMA_NAME",
+        "dataType": "VARCHAR",
+        "length": 120
+      },
+      {
+        "name": "TABLE_NAME",
+        "dataType": "VARCHAR",
+        "length": 120
+      },
+      {
+        "name": "UPDATE_TS",
+        "dataType": "DATETIME",
+        "length": 120
+      },
+      {
+        "name": "UPDATE_TYPE",
+        "dataType": "DOUBLE",
+        "length": 10
+      }
+    ]
+  }
+}

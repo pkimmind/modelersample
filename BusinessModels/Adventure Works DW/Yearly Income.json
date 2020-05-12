@@ -1,0 +1,444 @@
+{
+  "logicalTable": {
+    "name": "Yearly Income",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Customer].[Yearly Income].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Customer].[Yearly Income].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Customer].[Yearly Income].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Customer].[Yearly Income].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Customer].[Yearly Income].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#54",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#54"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#55",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#55"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#54",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#54"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#55",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#55"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#45",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#45"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#46",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#46"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Yearly Income - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Yearly Income - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Yearly Income#2",
+        "writeable": false,
+        "descriptorColumn": "Yearly Income - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Yearly Income#2"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Yearly Income",
+              "isPrimary": "true",
+              "columns": [
+                "[Customer].[Yearly Income].[(All)]",
+                "Yearly Income#2"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Yearly Income",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "[Customer].[Yearly Income].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Customer].[Yearly Income].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Customer].[Yearly Income].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Customer].[Yearly Income].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#54",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#54"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#55",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#55"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#54",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#54"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#55",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#55"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#45",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#45"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#46",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#46"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Yearly Income - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Yearly Income - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Yearly Income#2",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Yearly Income#2"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Yearly Income.Yearly Income"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Yearly Income",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "[Customer].[Yearly Income].[(All)]",
+      "levels": [
+        {
+          "name": "[Customer].[Yearly Income].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Customer].[Yearly Income].[(All)]",
+          "keys": [
+            {
+              "name": "[Customer].[Yearly Income].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Customer].[Yearly Income].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Customer].[Yearly Income].[(All)]",
+              "columns": [
+                "[Customer].[Yearly Income].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Yearly Income",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Yearly Income",
+              "keys": [
+                {
+                  "name": "Yearly Income - Member Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Yearly Income - Member Key"
+                  ]
+                },
+                {
+                  "name": "Yearly Income",
+                  "columns": [
+                    "Yearly Income#2"
+                  ]
+                }
+              ],
+              "columns": [
+                "KEY0#55",
+                "MEMBER_VALUE#55",
+                "NAME#46",
+                "Yearly Income - Member Key",
+                "Yearly Income#2"
+              ]
+            }
+          ],
+          "columns": [
+            "[Customer].[Yearly Income].[(All)]",
+            "[Customer].[Yearly Income].[(All)] - Member Key",
+            "KEY0#54",
+            "MEMBER_VALUE#54",
+            "NAME#45"
+          ]
+        },
+        {
+          "name": "Yearly Income",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Yearly Income",
+          "keys": [
+            {
+              "name": "Yearly Income - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "Yearly Income - Member Key"
+              ]
+            },
+            {
+              "name": "Yearly Income",
+              "columns": [
+                "Yearly Income#2"
+              ]
+            }
+          ],
+          "columns": [
+            "KEY0#55",
+            "MEMBER_VALUE#55",
+            "NAME#46",
+            "Yearly Income - Member Key",
+            "Yearly Income#2"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Yearly Income",
+        "levels": [
+          {
+            "name": "[Customer].[Yearly Income].[(All)]",
+            "childLevels": [
+              {
+                "name": "Yearly Income"
+              }
+            ]
+          },
+          {
+            "name": "Yearly Income"
+          }
+        ]
+      }
+    }
+  }
+}

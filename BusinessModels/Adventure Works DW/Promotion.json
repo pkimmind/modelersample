@@ -1,0 +1,723 @@
+{
+  "logicalTable": {
+    "name": "Promotion",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Promotion].[Promotion].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Promotion].[Promotion].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Promotion].[Promotion].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Promotion].[Promotion].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Promotion].[Promotion].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Discount Percent#1",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Discount Percent#1"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "End Date#13",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.End Date#13"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#288",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#288"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#289",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#289"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Max Quantity#1",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Max Quantity#1"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#288",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#288"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#289",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#289"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Min Quantity#1",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Min Quantity#1"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#228",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#228"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#229",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#229"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Promotion",
+        "writeable": false,
+        "descriptorColumn": "Promotion - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Promotion"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Promotion - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Promotion - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Promotion Category",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Promotion Category"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Promotion Type",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Promotion Type"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Start Date#12",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Start Date#12"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "TRAN0#20",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.TRAN0#20"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "TRAN1#20",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.TRAN1#20"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Promotion",
+              "isPrimary": "true",
+              "columns": [
+                "[Promotion].[Promotion].[(All)]",
+                "Promotion"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Promotion",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "[Promotion].[Promotion].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Promotion].[Promotion].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Promotion].[Promotion].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Promotion].[Promotion].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Discount Percent#1",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Discount Percent#1"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "End Date#13",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.End Date#13"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#288",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#288"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#289",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#289"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Max Quantity#1",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Max Quantity#1"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#288",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#288"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#289",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#289"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Min Quantity#1",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Min Quantity#1"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#228",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#228"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#229",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#229"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Promotion",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Promotion"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Promotion - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Promotion - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Promotion Category",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Promotion Category"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Promotion Type",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Promotion Type"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Start Date#12",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Start Date#12"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "TRAN0#20",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.TRAN0#20"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "TRAN1#20",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.TRAN1#20"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Promotion.Promotion"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Promotion",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "[Promotion].[Promotion].[(All)]",
+      "levels": [
+        {
+          "name": "[Promotion].[Promotion].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Promotion].[Promotion].[(All)]",
+          "keys": [
+            {
+              "name": "[Promotion].[Promotion].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Promotion].[Promotion].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Promotion].[Promotion].[(All)]",
+              "columns": [
+                "[Promotion].[Promotion].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Promotion",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Promotion",
+              "keys": [
+                {
+                  "name": "Promotion - Member Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Promotion - Member Key"
+                  ]
+                },
+                {
+                  "name": "Promotion",
+                  "columns": [
+                    "Promotion"
+                  ]
+                }
+              ],
+              "columns": [
+                "Discount Percent#1",
+                "End Date#13",
+                "KEY0#289",
+                "Max Quantity#1",
+                "MEMBER_VALUE#289",
+                "Min Quantity#1",
+                "NAME#229",
+                "Promotion",
+                "Promotion - Member Key",
+                "Promotion Category",
+                "Promotion Type",
+                "Start Date#12",
+                "TRAN0#20",
+                "TRAN1#20"
+              ]
+            }
+          ],
+          "columns": [
+            "[Promotion].[Promotion].[(All)]",
+            "[Promotion].[Promotion].[(All)] - Member Key",
+            "KEY0#288",
+            "MEMBER_VALUE#288",
+            "NAME#228"
+          ]
+        },
+        {
+          "name": "Promotion",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Promotion",
+          "keys": [
+            {
+              "name": "Promotion - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "Promotion - Member Key"
+              ]
+            },
+            {
+              "name": "Promotion",
+              "columns": [
+                "Promotion"
+              ]
+            }
+          ],
+          "columns": [
+            "Discount Percent#1",
+            "End Date#13",
+            "KEY0#289",
+            "Max Quantity#1",
+            "MEMBER_VALUE#289",
+            "Min Quantity#1",
+            "NAME#229",
+            "Promotion",
+            "Promotion - Member Key",
+            "Promotion Category",
+            "Promotion Type",
+            "Start Date#12",
+            "TRAN0#20",
+            "TRAN1#20"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Promotion",
+        "levels": [
+          {
+            "name": "[Promotion].[Promotion].[(All)]",
+            "childLevels": [
+              {
+                "name": "Promotion"
+              }
+            ]
+          },
+          {
+            "name": "Promotion"
+          }
+        ]
+      }
+    }
+  }
+}

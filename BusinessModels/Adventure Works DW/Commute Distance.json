@@ -1,0 +1,444 @@
+{
+  "logicalTable": {
+    "name": "Commute Distance",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Customer].[Commute Distance].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Customer].[Commute Distance].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Customer].[Commute Distance].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Customer].[Commute Distance].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Customer].[Commute Distance].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Commute Distance",
+        "writeable": false,
+        "descriptorColumn": "Commute Distance - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Commute Distance"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Commute Distance - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Commute Distance - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Commute Distance Sort",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Commute Distance Sort"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#16",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#16"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#17",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#17"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#16",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#16"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#17",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#17"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#13",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#13"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Commute Distance",
+              "isPrimary": "true",
+              "columns": [
+                "[Customer].[Commute Distance].[(All)]",
+                "Commute Distance"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Commute Distance",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "[Customer].[Commute Distance].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Customer].[Commute Distance].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Customer].[Commute Distance].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Customer].[Commute Distance].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Commute Distance",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Commute Distance"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Commute Distance - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Commute Distance - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Commute Distance Sort",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Commute Distance Sort"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#16",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#16"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#17",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#17"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#16",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#16"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#17",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#17"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#13",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#13"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Commute Distance.Commute Distance"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Commute Distance",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "[Customer].[Commute Distance].[(All)]",
+      "levels": [
+        {
+          "name": "[Customer].[Commute Distance].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Customer].[Commute Distance].[(All)]",
+          "keys": [
+            {
+              "name": "[Customer].[Commute Distance].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Customer].[Commute Distance].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Customer].[Commute Distance].[(All)]",
+              "columns": [
+                "[Customer].[Commute Distance].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Commute Distance",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Commute Distance",
+              "keys": [
+                {
+                  "name": "Commute Distance - Member Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Commute Distance - Member Key"
+                  ]
+                },
+                {
+                  "name": "Commute Distance",
+                  "columns": [
+                    "Commute Distance"
+                  ]
+                }
+              ],
+              "columns": [
+                "Commute Distance",
+                "Commute Distance - Member Key",
+                "Commute Distance Sort",
+                "KEY0#17",
+                "MEMBER_VALUE#17"
+              ]
+            }
+          ],
+          "columns": [
+            "[Customer].[Commute Distance].[(All)]",
+            "[Customer].[Commute Distance].[(All)] - Member Key",
+            "KEY0#16",
+            "MEMBER_VALUE#16",
+            "NAME#13"
+          ]
+        },
+        {
+          "name": "Commute Distance",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Commute Distance",
+          "keys": [
+            {
+              "name": "Commute Distance - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "Commute Distance - Member Key"
+              ]
+            },
+            {
+              "name": "Commute Distance",
+              "columns": [
+                "Commute Distance"
+              ]
+            }
+          ],
+          "columns": [
+            "Commute Distance",
+            "Commute Distance - Member Key",
+            "Commute Distance Sort",
+            "KEY0#17",
+            "MEMBER_VALUE#17"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Commute Distance",
+        "levels": [
+          {
+            "name": "[Customer].[Commute Distance].[(All)]",
+            "childLevels": [
+              {
+                "name": "Commute Distance"
+              }
+            ]
+          },
+          {
+            "name": "Commute Distance"
+          }
+        ]
+      }
+    }
+  }
+}

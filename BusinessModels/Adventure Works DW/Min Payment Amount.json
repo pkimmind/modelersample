@@ -1,0 +1,444 @@
+{
+  "logicalTable": {
+    "name": "Min Payment Amount",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Reseller].[Min Payment Amount].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Reseller].[Min Payment Amount].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Reseller].[Min Payment Amount].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Reseller].[Min Payment Amount].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Reseller].[Min Payment Amount].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#314",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#314"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#315",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#315"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#314",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#314"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#315",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#315"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Min Payment Amount",
+        "writeable": false,
+        "descriptorColumn": "Min Payment Amount - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Min Payment Amount"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Min Payment Amount - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Min Payment Amount - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#249",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#249"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#250",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#250"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Min Payment Amount",
+              "isPrimary": "true",
+              "columns": [
+                "[Reseller].[Min Payment Amount].[(All)]",
+                "Min Payment Amount"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Min Payment Amount",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "[Reseller].[Min Payment Amount].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Reseller].[Min Payment Amount].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Reseller].[Min Payment Amount].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Reseller].[Min Payment Amount].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#314",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#314"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#315",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#315"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#314",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#314"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#315",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#315"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Min Payment Amount",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Min Payment Amount"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Min Payment Amount - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Min Payment Amount - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#249",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#249"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#250",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#250"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Min Payment Amount.Min Payment Amount"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Min Payment Amount",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "[Reseller].[Min Payment Amount].[(All)]",
+      "levels": [
+        {
+          "name": "[Reseller].[Min Payment Amount].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Reseller].[Min Payment Amount].[(All)]",
+          "keys": [
+            {
+              "name": "[Reseller].[Min Payment Amount].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Reseller].[Min Payment Amount].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Reseller].[Min Payment Amount].[(All)]",
+              "columns": [
+                "[Reseller].[Min Payment Amount].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Min Payment Amount",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Min Payment Amount",
+              "keys": [
+                {
+                  "name": "Min Payment Amount - Member Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Min Payment Amount - Member Key"
+                  ]
+                },
+                {
+                  "name": "Min Payment Amount",
+                  "columns": [
+                    "Min Payment Amount"
+                  ]
+                }
+              ],
+              "columns": [
+                "KEY0#315",
+                "MEMBER_VALUE#315",
+                "Min Payment Amount",
+                "Min Payment Amount - Member Key",
+                "NAME#250"
+              ]
+            }
+          ],
+          "columns": [
+            "[Reseller].[Min Payment Amount].[(All)]",
+            "[Reseller].[Min Payment Amount].[(All)] - Member Key",
+            "KEY0#314",
+            "MEMBER_VALUE#314",
+            "NAME#249"
+          ]
+        },
+        {
+          "name": "Min Payment Amount",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Min Payment Amount",
+          "keys": [
+            {
+              "name": "Min Payment Amount - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "Min Payment Amount - Member Key"
+              ]
+            },
+            {
+              "name": "Min Payment Amount",
+              "columns": [
+                "Min Payment Amount"
+              ]
+            }
+          ],
+          "columns": [
+            "KEY0#315",
+            "MEMBER_VALUE#315",
+            "Min Payment Amount",
+            "Min Payment Amount - Member Key",
+            "NAME#250"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Min Payment Amount",
+        "levels": [
+          {
+            "name": "[Reseller].[Min Payment Amount].[(All)]",
+            "childLevels": [
+              {
+                "name": "Min Payment Amount"
+              }
+            ]
+          },
+          {
+            "name": "Min Payment Amount"
+          }
+        ]
+      }
+    }
+  }
+}

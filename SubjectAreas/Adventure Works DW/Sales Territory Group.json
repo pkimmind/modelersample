@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Sales Territory Group",
+    "presentationColumns": [
+      {
+        "name": "[Sales Territory].[Sales Territory Group].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Group.[Sales Territory].[Sales Territory Group].[(All)]"
+      },
+      {
+        "name": "KEY0#381",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Group.KEY0#381"
+      },
+      {
+        "name": "KEY0#382",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Group.KEY0#382"
+      },
+      {
+        "name": "MEMBER_VALUE#381",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Group.MEMBER_VALUE#381"
+      },
+      {
+        "name": "MEMBER_VALUE#382",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Group.MEMBER_VALUE#382"
+      },
+      {
+        "name": "NAME#294",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Group.NAME#294"
+      },
+      {
+        "name": "Sales Territory Group#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Group.Sales Territory Group#2"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Sales Territory Group",
+        "levels": [
+          {
+            "name": "[Sales Territory].[Sales Territory Group].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Sales Territory].[Sales Territory Group].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Group.[Sales Territory].[Sales Territory Group].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Sales Territory Group",
+            "displayColumns": [
+              {
+                "name": "Sales Territory Group#2",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Group.Sales Territory Group#2"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "presentationTable": {
+    "name": "Sales",
+    "alternateNames": [
+      "SalesFacts"
+    ],
+    "presentationColumns": [
+      {
+        "name": "ShipVia",
+        "sourceLogicalColumn": "logicalColumn:AutoSnowflakeSales.SalesFacts.ShipVia"
+      },
+      {
+        "name": "EmployeeID",
+        "sourceLogicalColumn": "logicalColumn:AutoSnowflakeSales.SalesFacts.EmployeeID"
+      },
+      {
+        "name": "ProductID",
+        "sourceLogicalColumn": "logicalColumn:AutoSnowflakeSales.SalesFacts.ProductID"
+      },
+      {
+        "name": "CustomerID",
+        "sourceLogicalColumn": "logicalColumn:AutoSnowflakeSales.SalesFacts.CustomerID"
+      },
+      {
+        "name": "SiteID",
+        "sourceLogicalColumn": "logicalColumn:AutoSnowflakeSales.SalesFacts.SiteID"
+      },
+      {
+        "name": "PlanRevenue",
+        "sourceLogicalColumn": "logicalColumn:AutoSnowflakeSales.SalesFacts.PlanRevenue"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:AutoSnowflakeSales.SalesFacts.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:AutoSnowflakeSales.SalesFacts.QtySold",
+        "alternateNames": [
+          "Quantity"
+        ]
+      },
+      {
+        "name": "OrderDate",
+        "sourceLogicalColumn": "logicalColumn:AutoSnowflakeSales.SalesFacts.OrderDate"
+      }
+    ]
+  }
+}

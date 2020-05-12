@@ -1,0 +1,56 @@
+{
+  "presentationTable": {
+    "name": "Cross Sell",
+    "presentationColumns": [
+      {
+        "name": "CategoryName",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Cross Sell Product.CategoryName"
+      },
+      {
+        "name": "ProductName",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Cross Sell Product.ProductName"
+      },
+      {
+        "name": "UnitPrice",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Cross Sell Product.UnitPrice"
+      },
+      {
+        "name": "UnitsInStock",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Cross Sell Product.UnitsInStock"
+      },
+      {
+        "name": "ProductID",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Cross Sell Product.ProductID"
+      },
+      {
+        "name": "Likelihood of Buying",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SalesFacts.Likelihood of Buying",
+        "alternateNames": [
+          "% of Line Item Count by All Cross Sell"
+        ]
+      },
+      {
+        "name": "Basket Count",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SalesFacts.Basket Count"
+      },
+      {
+        "name": "Likelihood of Buying by $",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SalesFacts.Likelihood of Buying by $",
+        "alternateNames": [
+          "% of Revenue by All Cross Product"
+        ]
+      },
+      {
+        "name": "Basket Count by All Cross Sell",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SalesFacts.Basket Count by All Cross Sell"
+      },
+      {
+        "name": "Revenue by All Cross Sell",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SalesFacts.Revenue by All Cross Sell",
+        "alternateNames": [
+          "Revenue by All Cross Product"
+        ]
+      }
+    ]
+  }
+}

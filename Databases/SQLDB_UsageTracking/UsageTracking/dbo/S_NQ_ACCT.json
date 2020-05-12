@@ -1,0 +1,194 @@
+{
+  "physicalTable": {
+    "name": "S_NQ_ACCT",
+    "caching": {
+    },
+    "physicalColumns": [
+      {
+        "name": "USER_NAME",
+        "dataType": "VARCHAR",
+        "length": 128
+      },
+      {
+        "name": "REPOSITORY_NAME",
+        "dataType": "VARCHAR",
+        "length": 128
+      },
+      {
+        "name": "SUBJECT_AREA_NAME",
+        "dataType": "VARCHAR",
+        "length": 128
+      },
+      {
+        "name": "NODE_ID",
+        "dataType": "VARCHAR",
+        "length": 15
+      },
+      {
+        "name": "START_TS",
+        "dataType": "DATETIME",
+        "length": 23
+      },
+      {
+        "name": "START_DT",
+        "dataType": "DATETIME",
+        "length": 23
+      },
+      {
+        "name": "START_HOUR_MIN",
+        "dataType": "CHAR",
+        "length": 5
+      },
+      {
+        "name": "END_TS",
+        "dataType": "DATETIME",
+        "length": 23
+      },
+      {
+        "name": "END_DT",
+        "dataType": "DATETIME",
+        "length": 23
+      },
+      {
+        "name": "END_HOUR_MIN",
+        "dataType": "CHAR",
+        "length": 5
+      },
+      {
+        "name": "QUERY_TEXT",
+        "dataType": "VARCHAR",
+        "length": 1024
+      },
+      {
+        "name": "SUCCESS_FLG",
+        "dataType": "DOUBLE",
+        "length": 10
+      },
+      {
+        "name": "ROW_COUNT",
+        "dataType": "DOUBLE",
+        "length": 10
+      },
+      {
+        "name": "TOTAL_TIME_SEC",
+        "dataType": "DOUBLE",
+        "length": 10
+      },
+      {
+        "name": "COMPILE_TIME_SEC",
+        "dataType": "DOUBLE",
+        "length": 10
+      },
+      {
+        "name": "NUM_DB_QUERY",
+        "dataType": "DOUBLE",
+        "length": 10
+      },
+      {
+        "name": "CUM_DB_TIME_SEC",
+        "dataType": "DOUBLE",
+        "length": 10
+      },
+      {
+        "name": "CUM_NUM_DB_ROW",
+        "dataType": "DOUBLE",
+        "length": 10
+      },
+      {
+        "name": "CACHE_IND_FLG",
+        "dataType": "CHAR",
+        "length": 1
+      },
+      {
+        "name": "QUERY_SRC_CD",
+        "dataType": "VARCHAR",
+        "length": 30
+      },
+      {
+        "name": "SAW_SRC_PATH",
+        "dataType": "VARCHAR",
+        "length": 250
+      },
+      {
+        "name": "SAW_DASHBOARD",
+        "dataType": "VARCHAR",
+        "length": 150
+      },
+      {
+        "name": "SAW_DASHBOARD_PG",
+        "dataType": "VARCHAR",
+        "length": 150
+      },
+      {
+        "name": "PRESENTATION_NAME",
+        "dataType": "VARCHAR",
+        "length": 128
+      },
+      {
+        "name": "ERROR_TEXT",
+        "dataType": "VARCHAR",
+        "length": 250
+      },
+      {
+        "name": "IMPERSONATOR_USER_NAME",
+        "dataType": "VARCHAR",
+        "length": 128
+      },
+      {
+        "name": "NUM_CACHE_INSERTED",
+        "dataType": "DOUBLE"
+      },
+      {
+        "name": "NUM_CACHE_HITS",
+        "dataType": "DOUBLE"
+      },
+      {
+        "name": "ID",
+        "dataType": "VARCHAR",
+        "length": 50
+      },
+      {
+        "name": "QUERY_BLOB",
+        "dataType": "LONGVARCHAR",
+        "length": 4000
+      },
+      {
+        "name": "QUERY_KEY",
+        "dataType": "VARCHAR",
+        "length": 128
+      },
+      {
+        "name": "HASH_ID",
+        "dataType": "VARCHAR",
+        "length": 128
+      },
+      {
+        "name": "RESP_TIME_SEC",
+        "dataType": "DOUBLE"
+      },
+      {
+        "name": "SERVICE_NAME",
+        "dataType": "VARCHAR",
+        "length": 128
+      },
+      {
+        "name": "SESSION_ID",
+        "dataType": "DOUBLE"
+      },
+      {
+        "name": "TENANT_ID",
+        "dataType": "VARCHAR",
+        "length": 128
+      },
+      {
+        "name": "TOTAL_TEMP_KB",
+        "dataType": "DOUBLE"
+      },
+      {
+        "name": "ECID",
+        "dataType": "VARCHAR",
+        "length": 1024
+      }
+    ]
+  }
+}

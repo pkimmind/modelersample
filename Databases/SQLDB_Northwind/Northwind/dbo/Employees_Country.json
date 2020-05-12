@@ -1,0 +1,22 @@
+{
+  "physicalTable": {
+    "name": "Employees_Country",
+    "description": "This opaque view allows us to support a many-to-many physical join betwen the physical employees and salesplan tables.",
+    "sourceType": "SELECT",
+    "caching": {
+    },
+    "selectStatements": [
+      {
+        "databaseType": "DEFAULT",
+        "query": "select distinct Country as Country from Employees"
+      }
+    ],
+    "physicalColumns": [
+      {
+        "name": "Country",
+        "dataType": "CHAR",
+        "length": 15
+      }
+    ]
+  }
+}

@@ -1,0 +1,413 @@
+{
+  "logicalTable": {
+    "name": "Carrier Tracking Number",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Internet Sales Order Details].[Carrier Tracking Number].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Internet Sales Order Details].[Carrier Tracking Number].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Internet Sales Order Details].[Carrier Tracking Number].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Internet Sales Order Details].[Carrier Tracking Number].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Internet Sales Order Details].[Carrier Tracking Number].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Carrier Tracking Number",
+        "writeable": false,
+        "descriptorColumn": "Carrier Tracking Number - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Carrier Tracking Number"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Carrier Tracking Number - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Carrier Tracking Number - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#202",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#202"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#203",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#203"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#202",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#202"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#203",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#203"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#164",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#164"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Carrier Tracking Number",
+              "isPrimary": "true",
+              "columns": [
+                "[Internet Sales Order Details].[Carrier Tracking Number].[(All)]",
+                "Carrier Tracking Number"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Carrier Tracking Number",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "[Internet Sales Order Details].[Carrier Tracking Number].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Internet Sales Order Details].[Carrier Tracking Number].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Internet Sales Order Details].[Carrier Tracking Number].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Internet Sales Order Details].[Carrier Tracking Number].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Carrier Tracking Number",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Carrier Tracking Number"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Carrier Tracking Number - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Carrier Tracking Number - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#202",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#202"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#203",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#203"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#202",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#202"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#203",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#203"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#164",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#164"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Carrier Tracking Number.Carrier Tracking Number"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Carrier Tracking Number",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "[Internet Sales Order Details].[Carrier Tracking Number].[(All)]",
+      "levels": [
+        {
+          "name": "[Internet Sales Order Details].[Carrier Tracking Number].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Internet Sales Order Details].[Carrier Tracking Number].[(All)]",
+          "keys": [
+            {
+              "name": "[Internet Sales Order Details].[Carrier Tracking Number].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Internet Sales Order Details].[Carrier Tracking Number].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Internet Sales Order Details].[Carrier Tracking Number].[(All)]",
+              "columns": [
+                "[Internet Sales Order Details].[Carrier Tracking Number].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Carrier Tracking Number",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Carrier Tracking Number",
+              "keys": [
+                {
+                  "name": "Carrier Tracking Number - Member Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Carrier Tracking Number - Member Key"
+                  ]
+                },
+                {
+                  "name": "Carrier Tracking Number",
+                  "columns": [
+                    "Carrier Tracking Number"
+                  ]
+                }
+              ],
+              "columns": [
+                "Carrier Tracking Number",
+                "Carrier Tracking Number - Member Key",
+                "KEY0#203",
+                "MEMBER_VALUE#203"
+              ]
+            }
+          ],
+          "columns": [
+            "[Internet Sales Order Details].[Carrier Tracking Number].[(All)]",
+            "[Internet Sales Order Details].[Carrier Tracking Number].[(All)] - Member Key",
+            "KEY0#202",
+            "MEMBER_VALUE#202",
+            "NAME#164"
+          ]
+        },
+        {
+          "name": "Carrier Tracking Number",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Carrier Tracking Number",
+          "keys": [
+            {
+              "name": "Carrier Tracking Number - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "Carrier Tracking Number - Member Key"
+              ]
+            },
+            {
+              "name": "Carrier Tracking Number",
+              "columns": [
+                "Carrier Tracking Number"
+              ]
+            }
+          ],
+          "columns": [
+            "Carrier Tracking Number",
+            "Carrier Tracking Number - Member Key",
+            "KEY0#203",
+            "MEMBER_VALUE#203"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Carrier Tracking Number",
+        "levels": [
+          {
+            "name": "[Internet Sales Order Details].[Carrier Tracking Number].[(All)]",
+            "childLevels": [
+              {
+                "name": "Carrier Tracking Number"
+              }
+            ]
+          },
+          {
+            "name": "Carrier Tracking Number"
+          }
+        ]
+      }
+    }
+  }
+}

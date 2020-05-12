@@ -1,0 +1,39 @@
+{
+  "presentationTable": {
+    "name": "MultiDimShareBases",
+    "presentationColumns": [
+      {
+        "name": "% of Category Qtr Revenue",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.% of Category Qtr Revenue"
+      },
+      {
+        "name": "Category Country Revenue",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.Category Country Revenue"
+      },
+      {
+        "name": "Category Qtr Revenue",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.Category Qtr Revenue"
+      },
+      {
+        "name": "% of Category Country Revenue",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.% of Category Country Revenue"
+      },
+      {
+        "name": "All Product Time Population",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.All Product Time Population"
+      },
+      {
+        "name": "All Product Country Time Population",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.All Product Country Time Population"
+      },
+      {
+        "name": "% of Country Population",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.% of Country Population"
+      },
+      {
+        "name": "Revenue Development Index",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.Revenue Development Index"
+      }
+    ]
+  }
+}

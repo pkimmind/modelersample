@@ -1,0 +1,25 @@
+{
+  "presentationTable": {
+    "name": "Yearly Facts",
+    "alternateNames": [
+      "Years"
+    ],
+    "presentationColumns": [
+      {
+        "name": "Year",
+        "sourceLogicalColumn": "logicalColumn:OpaqueFoodmart.Years.[Time].[Year]",
+        "alternateNames": [
+          "[Time].[Year]"
+        ]
+      },
+      {
+        "name": "Unit Sales",
+        "sourceLogicalColumn": "logicalColumn:OpaqueFoodmart.Facts.Unit Sales"
+      },
+      {
+        "name": "Store Cost",
+        "sourceLogicalColumn": "logicalColumn:OpaqueFoodmart.Facts.Store Cost"
+      }
+    ]
+  }
+}

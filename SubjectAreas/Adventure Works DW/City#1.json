@@ -1,0 +1,74 @@
+{
+  "presentationTable": {
+    "name": "City#1",
+    "presentationColumns": [
+      {
+        "name": "[Geography].[City].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City#1.[Geography].[City].[(All)]"
+      },
+      {
+        "name": "City#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City#1.City#4"
+      },
+      {
+        "name": "KEY0#189",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City#1.KEY0#189"
+      },
+      {
+        "name": "KEY0#190",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City#1.KEY0#190"
+      },
+      {
+        "name": "KEY1#18",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City#1.KEY1#18"
+      },
+      {
+        "name": "MEMBER_VALUE#189",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City#1.MEMBER_VALUE#189"
+      },
+      {
+        "name": "MEMBER_VALUE#190",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City#1.MEMBER_VALUE#190"
+      },
+      {
+        "name": "NAME#151",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City#1.NAME#151"
+      },
+      {
+        "name": "NAME#152",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City#1.NAME#152"
+      },
+      {
+        "name": "State-Province#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City#1.State-Province#4"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "City#1",
+        "levels": [
+          {
+            "name": "[Geography].[City].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Geography].[City].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City#1.[Geography].[City].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "City",
+            "displayColumns": [
+              {
+                "name": "City#4",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City#1.City#4"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

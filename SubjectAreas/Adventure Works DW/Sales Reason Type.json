@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Sales Reason Type",
+    "presentationColumns": [
+      {
+        "name": "[Sales Reason].[Sales Reason Type].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Reason Type.[Sales Reason].[Sales Reason Type].[(All)]"
+      },
+      {
+        "name": "KEY0#359",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Reason Type.KEY0#359"
+      },
+      {
+        "name": "KEY0#360",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Reason Type.KEY0#360"
+      },
+      {
+        "name": "MEMBER_VALUE#359",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Reason Type.MEMBER_VALUE#359"
+      },
+      {
+        "name": "MEMBER_VALUE#360",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Reason Type.MEMBER_VALUE#360"
+      },
+      {
+        "name": "NAME#283",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Reason Type.NAME#283"
+      },
+      {
+        "name": "Sales Reason Type#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Reason Type.Sales Reason Type#1"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Sales Reason Type",
+        "levels": [
+          {
+            "name": "[Sales Reason].[Sales Reason Type].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Sales Reason].[Sales Reason Type].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Reason Type.[Sales Reason].[Sales Reason Type].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Sales Reason Type",
+            "displayColumns": [
+              {
+                "name": "Sales Reason Type#1",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Reason Type.Sales Reason Type#1"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

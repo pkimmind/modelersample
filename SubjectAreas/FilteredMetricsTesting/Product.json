@@ -1,0 +1,55 @@
+{
+  "presentationTable": {
+    "name": "Product",
+    "presentationColumns": [
+      {
+        "name": "ProductID",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.Product.ProductID"
+      },
+      {
+        "name": "ProductName",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.Product.ProductName"
+      },
+      {
+        "name": "SupplierID",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.Product.SupplierID"
+      },
+      {
+        "name": "CategoryID",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.Product.CategoryID"
+      },
+      {
+        "name": "QuantityPerUnit",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.Product.QuantityPerUnit"
+      },
+      {
+        "name": "UnitPrice",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.Product.UnitPrice"
+      },
+      {
+        "name": "UnitsInStock",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.Product.UnitsInStock"
+      },
+      {
+        "name": "ReorderLevel",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.Product.ReorderLevel"
+      },
+      {
+        "name": "Discontinued",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.Product.Discontinued"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.Product.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.Product.QtySold"
+      },
+      {
+        "name": "UnitsOnOrder",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.Product.UnitsOnOrder"
+      }
+    ]
+  }
+}

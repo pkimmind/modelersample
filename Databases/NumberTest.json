@@ -1,0 +1,293 @@
+{
+  "database": {
+    "name": "NumberTest",
+    "type": "Oracle10gR2",
+    "databaseType": 46,
+    "features": [
+      {
+        "name": "LEFT_OUTER_JOIN_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "RIGHT_OUTER_JOIN_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "FULL_OUTER_JOIN_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "COUNT_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "COUNT_DISTINCT_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "COUNT_STAR_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "SUM_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "AVG_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "MIN_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "MAX_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "FIRST_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "LAST_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "RANK_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "TOPN_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "BOTTOMN_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "GROUP_BY_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "GROUP_BY_EXPR_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "ORDERBY_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "DISTINCT_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "CASE_LOOK_UP_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "CASE_IF_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "LENGTH_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "EXP_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "POWER_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "SQRT_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "CEILING_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "FLOOR_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "ROUND_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "TRUNCATE_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "SIGN_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "ABS_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "MOD_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "RAND_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "LOG_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "LOG10_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "SIN_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "COS_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "TAN_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "ASIN_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "ACOS_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "ATAN_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "SINH_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "EQUALITY_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "LESS_THAN_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "GREATER_THAN_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "LESS_EQUAL_THAN_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "GREATER_EQUAL_THAN_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "NOT_EQUAL_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "NOT_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "MEDIAN_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "RUNNING_COUNT_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "PERF_PREFER_NO_COMMON_QUERY_FACTORING",
+        "value": false
+      },
+      {
+        "name": "NESTED_ORDERBY_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "FRACTIONAL_SECOND_PRECISION",
+        "value": "0X0",
+      },
+      {
+        "name": "MAX_BULK_FETCH_BUFFER_SIZE",
+        "value": "0X50000",
+      },
+      {
+        "name": "DEFAULT_BULK_FETCH_ROW_COUNT",
+        "value": "0X64",
+      },
+      {
+        "name": "MAX_COLUMNS_IN_INDEX",
+        "value": "0X0",
+      }
+    ],
+    "connectionPools": [
+      {
+        "name": "Connection Pool",
+        "user": "northwind",
+        "connectionTimeout": 5,
+        "connectionTimeoutUnit": "MINUTES",
+        "maxConnDiff": 10,
+        "maxConnections": 10,
+        "connection": "biserver-dev.us.oracle.com:1521/orcl",
+        "type": "Default",
+        "requiresFullyQualifedTableNames": false,
+        "multithreaded": false,
+        "isCloseAfterEveryRequest": false,
+        "outputType": "xml",
+        "ignoreFirstLine": false,
+        "bulkInsertBufferSize": 131072,
+        "tempTablePrefix": "TT",
+        "transactionBoundary": 1000,
+        "xmlaUseSession": false,
+        "isSiebelJDBSecured": false
+      },
+      {
+        "name": "ConnectionScriptsTest",
+        "user": "northwind",
+        "connectionTimeout": 5,
+        "connectionTimeoutUnit": "MINUTES",
+        "maxConnDiff": 10,
+        "maxConnections": 10,
+        "connection": "biserver-dev:1521/ORCL",
+        "type": "Default",
+        "requiresFullyQualifedTableNames": false,
+        "multithreaded": false,
+        "isCloseAfterEveryRequest": false,
+        "outputType": "xml",
+        "ignoreFirstLine": false,
+        "bulkInsertBufferSize": 131072,
+        "tempTablePrefix": "TT",
+        "transactionBoundary": 1000,
+        "xmlaUseSession": false,
+        "isSiebelJDBSecured": false,
+        "runOnConnectScripts": {
+          "Value": "select 1 from valueof(NQ_SESSION.TABLE_3)",
+        }
+        "runBeforeQueryScripts": {
+          "Value": "select 1 from valueof(NQ_SESSION.TABLE_2)",
+        }
+        "runAfterQueryScripts": {
+          "Value": "select 1 from valueof(NQ_SESSION.TABLE_1)",
+        }
+        "runOnDisconnectScripts": {
+          "Value": "select 1 from valueof(NQ_SESSION.TABLE_2)",
+        }
+      }
+    ]
+    "joins": [
+    ]
+  }
+}

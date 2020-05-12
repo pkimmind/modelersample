@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Ship Date.Calendar Quarter of Year",
+    "presentationColumns": [
+      {
+        "name": "[Ship Date].[Calendar Quarter of Year].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Quarter of Year.[Ship Date].[Calendar Quarter of Year].[(All)]"
+      },
+      {
+        "name": "Calendar Quarter of Year#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Quarter of Year.Calendar Quarter of Year#5"
+      },
+      {
+        "name": "KEY0#392",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Quarter of Year.KEY0#392"
+      },
+      {
+        "name": "KEY0#393",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Quarter of Year.KEY0#393"
+      },
+      {
+        "name": "MEMBER_VALUE#392",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Quarter of Year.MEMBER_VALUE#392"
+      },
+      {
+        "name": "MEMBER_VALUE#393",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Quarter of Year.MEMBER_VALUE#393"
+      },
+      {
+        "name": "NAME#304",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Quarter of Year.NAME#304"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Ship Date.Calendar Quarter of Year",
+        "levels": [
+          {
+            "name": "[Ship Date].[Calendar Quarter of Year].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Ship Date].[Calendar Quarter of Year].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Quarter of Year.[Ship Date].[Calendar Quarter of Year].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Calendar Quarter of Year",
+            "displayColumns": [
+              {
+                "name": "Calendar Quarter of Year#5",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Quarter of Year.Calendar Quarter of Year#5"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "presentationTable": {
+    "name": "Adventure Works",
+    "presentationColumns": [
+      {
+        "name": "Amount",
+        "localization": {
+          "descriptionVariable": "VALUEOF(NQ_SESSION.CD_Adventure_Works_DW_Adventure_Works_Amount)"
+        },
+        "useLogicalName": false,
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Amount"
+      },
+      {
+        "name": "Average Rate",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Average Rate"
+      },
+      {
+        "name": "Average Sales Amount",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Average Sales Amount"
+      },
+      {
+        "name": "Average Unit Price",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Average Unit Price"
+      },
+      {
+        "name": "Customer Count",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Customer Count"
+      },
+      {
+        "name": "Discount Amount",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Discount Amount"
+      },
+      {
+        "name": "Discount Percentage",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Discount Percentage"
+      },
+      {
+        "name": "End of Day Rate",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.End of Day Rate"
+      },
+      {
+        "name": "Expense to Revenue Ratio",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Expense to Revenue Ratio"
+      },
+      {
+        "name": "Extended Amount",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Extended Amount"
+      },
+      {
+        "name": "Freight Cost",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Freight Cost"
+      },
+      {
+        "name": "Gross Profit",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Gross Profit"
+      },
+      {
+        "name": "Gross Profit Margin",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Gross Profit Margin"
+      },
+      {
+        "name": "Growth in Customer Base",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Growth in Customer Base"
+      },
+      {
+        "name": "Internet Average Sales Amount",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Internet Average Sales Amount"
+      },
+      {
+        "name": "Internet Average Unit Price",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Internet Average Unit Price"
+      },
+      {
+        "name": "Internet Extended Amount",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Internet Extended Amount"
+      },
+      {
+        "name": "Internet Freight Cost",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Internet Freight Cost"
+      },
+      {
+        "name": "Internet Gross Profit",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Internet Gross Profit"
+      },
+      {
+        "name": "Internet Gross Profit Margin",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Internet Gross Profit Margin"
+      },
+      {
+        "name": "Internet Order Count",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Internet Order Count"
+      },
+      {
+        "name": "Internet Order Quantity",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Internet Order Quantity"
+      },
+      {
+        "name": "Internet Ratio to All Products",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Internet Ratio to All Products"
+      },
+      {
+        "name": "Internet Ratio to Parent Product",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Internet Ratio to Parent Product"
+      },
+      {
+        "name": "Internet Sales Amount",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Internet Sales Amount"
+      },
+      {
+        "name": "Internet Standard Product Cost",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Internet Standard Product Cost"
+      },
+      {
+        "name": "Internet Tax Amount",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Internet Tax Amount"
+      },
+      {
+        "name": "Internet Total Product Cost",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Internet Total Product Cost"
+      },
+      {
+        "name": "Order Count",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Order Count"
+      },
+      {
+        "name": "Order Quantity",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Order Quantity"
+      },
+      {
+        "name": "Ratio to All Products",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Ratio to All Products"
+      },
+      {
+        "name": "Ratio to Parent Product",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Ratio to Parent Product"
+      },
+      {
+        "name": "Reseller Average Sales Amount",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Reseller Average Sales Amount"
+      },
+      {
+        "name": "Reseller Average Unit Price",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Reseller Average Unit Price"
+      },
+      {
+        "name": "Reseller Extended Amount",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Reseller Extended Amount"
+      },
+      {
+        "name": "Reseller Freight Cost",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Reseller Freight Cost"
+      },
+      {
+        "name": "Reseller Gross Profit",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Reseller Gross Profit"
+      },
+      {
+        "name": "Reseller Gross Profit Margin",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Reseller Gross Profit Margin"
+      },
+      {
+        "name": "Reseller Order Count",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Reseller Order Count"
+      },
+      {
+        "name": "Reseller Order Quantity",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Reseller Order Quantity"
+      },
+      {
+        "name": "Reseller Ratio to All Products",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Reseller Ratio to All Products"
+      },
+      {
+        "name": "Reseller Ratio to Parent Product",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Reseller Ratio to Parent Product"
+      },
+      {
+        "name": "Reseller Sales Amount",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Reseller Sales Amount"
+      },
+      {
+        "name": "Reseller Standard Product Cost",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Reseller Standard Product Cost"
+      },
+      {
+        "name": "Reseller Tax Amount",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Reseller Tax Amount"
+      },
+      {
+        "name": "Reseller Total Product Cost",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Reseller Total Product Cost"
+      },
+      {
+        "name": "Sales Amount",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Sales Amount"
+      },
+      {
+        "name": "Sales Amount Quota",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Sales Amount Quota"
+      },
+      {
+        "name": "Standard Product Cost",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Standard Product Cost"
+      },
+      {
+        "name": "Tax Amount",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Tax Amount"
+      },
+      {
+        "name": "Total Product Cost",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Adventure Works.Total Product Cost"
+      }
+    ]
+  }
+}

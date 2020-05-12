@@ -1,0 +1,26 @@
+{
+  "physicalTable": {
+    "name": "w_day_d_x",
+    "description": "External Name:??
+",
+    "caching": {
+    },
+    "physicalColumns": [
+      {
+        "name": "row_wid",
+        "dataType": "DOUBLE",
+        "length": 18
+      },
+      {
+        "name": "cal_month",
+        "dataType": "DOUBLE",
+        "length": 18
+      },
+      {
+        "name": "month_name",
+        "dataType": "CHAR",
+        "length": 30
+      }
+    ]
+  }
+}

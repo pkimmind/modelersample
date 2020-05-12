@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "Sales Territory Country",
+    "presentationColumns": [
+      {
+        "name": "[Sales Territory].[Sales Territory Country].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Country.[Sales Territory].[Sales Territory Country].[(All)]"
+      },
+      {
+        "name": "KEY0#379",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Country.KEY0#379"
+      },
+      {
+        "name": "KEY0#380",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Country.KEY0#380"
+      },
+      {
+        "name": "MEMBER_VALUE#379",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Country.MEMBER_VALUE#379"
+      },
+      {
+        "name": "MEMBER_VALUE#380",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Country.MEMBER_VALUE#380"
+      },
+      {
+        "name": "NAME#293",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Country.NAME#293"
+      },
+      {
+        "name": "Sales Territory Country#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Country.Sales Territory Country#1"
+      },
+      {
+        "name": "Sales Territory Group#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Country.Sales Territory Group#1"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Sales Territory Country",
+        "levels": [
+          {
+            "name": "[Sales Territory].[Sales Territory Country].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Sales Territory].[Sales Territory Country].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Country.[Sales Territory].[Sales Territory Country].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Sales Territory Country",
+            "displayColumns": [
+              {
+                "name": "Sales Territory Country#1",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Country.Sales Territory Country#1"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

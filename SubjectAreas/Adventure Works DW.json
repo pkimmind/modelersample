@@ -1,0 +1,581 @@
+{
+  "subjectArea": {
+    "name": "Adventure Works DW",
+    "localization": {
+      "localizationKey": "Adventure Works DW",
+      "nameVariable": "VALUEOF(NQ_SESSION.CN_Adventure_Works_DW)",
+      "descriptionVariable": "VALUEOF(NQ_SESSION.CD_Adventure_Works_DW)"
+    },
+    "sourceBusinessModel": "businessModel:Adventure Works DW",
+    "alternateNames": [
+      "HjieAliasNames For Adventure Works DW"
+    ],
+    "implicitFactColumn": "logicalColumn:Adventure Works DW.Adventure Works.Customer Count",
+    "description": "My SA Adventure Works description",
+    "tableOrder": [
+      {
+        "name": "presentationTable:Adventure Works DW..Adventure Works"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Account"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..City"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Account Number"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Account Type"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Accounts"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Address"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Commute Distance"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Country"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Customer"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Customer Geography"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Date of First Purchase"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Education"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Email Address"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Gender"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Home Owner"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Marital Status"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Number of Cars Owned"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Number of Children At Home"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Occupation"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Phone"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Postal Code"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..State-Province"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Total Children"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Yearly Income"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Date.Calendar"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Date.Calendar Quarter of Year"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Date.Calendar Semester of Year"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Date.Calendar Year"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Date.Date"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Date.Day Name"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Date.Day of Month"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Date.Day of Week"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Date.Day of Year"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Date.Fiscal"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Date.Fiscal Quarter of Year"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Date.Fiscal Semester of Year"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Date.Fiscal Year"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Date.Month of Year"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Date.Week of Year"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Delivery Date.Calendar"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Delivery Date.Calendar Quarter of Year"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Delivery Date.Calendar Semester of Year"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Delivery Date.Calendar Year"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Delivery Date.Date"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Delivery Date.Day Name"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Delivery Date.Day of Month"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Delivery Date.Day of Week"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Delivery Date.Day of Year"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Delivery Date.Fiscal"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Delivery Date.Fiscal Quarter of Year"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Delivery Date.Fiscal Semester of Year"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Delivery Date.Fiscal Year"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Delivery Date.Month of Year"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Delivery Date.Week of Year"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Departments"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Destination Currency"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Destination Currency Code"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Base Rate"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Birth Date"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Department Name"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Email Address#1"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Emergency Contact Name"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Emergency Contact Phone"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Employee"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Employee Department"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Employees"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..End Date"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Gender#1"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Hire Date"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Hire Year"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Marital Status#1"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Pay Frequency"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Phone#1"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Salaried Flag"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Sales Person Flag"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Sick Leave Hours"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Start Date"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Status"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Title"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Vacation Hours"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..City#1"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Country#1"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Geography"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Postal Code#1"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..State-Province#1"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Carrier Tracking Number"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Customer PO Number"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Internet Sales Orders"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Sales Order Line"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Sales Order Number"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Currency Code"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Organizations"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Category"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Class"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Color"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Days to Manufacture"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Dealer Price"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..End Date#1"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Large Photo"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..List Price"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Manufacture Time"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Model Name"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Product"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Product Categories"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Product Key"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Product Line"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Product Model Categories"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Product Model Lines"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Reorder Point"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Safety Stock Level"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Size"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Size Range"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Standard Cost"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Start Date#1"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Status#1"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Stock Level"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Style"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Subcategory"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Weight"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Discount Percent"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..End Date#2"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Max Quantity"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Min Quantity"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Promotion"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Promotion Category"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Promotion Type"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Promotions"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Start Date#2"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Address#1"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Annual Revenue"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Annual Sales"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Bank Name"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Business Type"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..First Order Year"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Last Order Year"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Min Payment Amount"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Min Payment Type"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Number of Employees"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Order Frequency"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Order Month"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Phone#2"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Product Line#1"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Reseller"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Reseller Bank"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Reseller Order Frequency"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Reseller Order Month"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Reseller Type"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Year Opened"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Carrier Tracking Number#1"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Customer PO Number#1"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Reseller Sales Orders"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Sales Order Line#1"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Sales Order Number#1"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Sales Channel"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Sales Reason"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Sales Reason Type"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Sales Reasons"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Carrier Tracking Number#2"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Customer PO Number#2"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Sales Order Line#2"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Sales Order Number#2"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Sales Orders"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Sales Territory"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Sales Territory Country"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Sales Territory Group"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Sales Territory Region"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Scenario"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Ship Date.Calendar"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Ship Date.Calendar Quarter of Year"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Ship Date.Calendar Semester of Year"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Ship Date.Calendar Year"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Ship Date.Date"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Ship Date.Day Name"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Ship Date.Day of Month"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Ship Date.Day of Week"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Ship Date.Day of Year"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Ship Date.Fiscal"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Ship Date.Fiscal Quarter of Year"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Ship Date.Fiscal Semester of Year"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Ship Date.Fiscal Year"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Ship Date.Month of Year"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Ship Date.Week of Year"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Source Currency"
+      },
+      {
+        "name": "presentationTable:Adventure Works DW..Source Currency Code"
+      }
+    ],
+    "hideIfTrue": {
+      "expressionTemplate": "VALUEOF(NQ_SESSION.%1) ",
+      "expressionObjects": [
+        "variable:initb1.var1"
+      ]
+    }
+    "permissions": {
+    }
+  }
+}

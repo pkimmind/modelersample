@@ -1,0 +1,231 @@
+{
+  "logicalTable": {
+    "name": "Scenario",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "KEY0#385",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#385"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#385",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#385"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#297",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#297"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Scenario",
+        "writeable": false,
+        "descriptorColumn": "Scenario - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Scenario"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Scenario - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Scenario - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Scenario",
+              "isPrimary": "true",
+              "columns": [
+                "Scenario"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Scenario",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "KEY0#385",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#385"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#385",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#385"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#297",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#297"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Scenario",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Scenario"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Scenario - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Scenario - Member Key"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Scenario.Scenario"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Scenario",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "Scenario",
+      "levels": [
+        {
+          "name": "Scenario",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Scenario",
+          "keys": [
+            {
+              "name": "Scenario - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "Scenario - Member Key"
+              ]
+            },
+            {
+              "name": "Scenario",
+              "columns": [
+                "Scenario"
+              ]
+            }
+          ],
+          "columns": [
+            "KEY0#385",
+            "MEMBER_VALUE#385",
+            "NAME#297",
+            "Scenario",
+            "Scenario - Member Key"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Scenario",
+        "levels": [
+          {
+            "name": "Scenario"
+          }
+        ]
+      }
+    }
+  }
+}

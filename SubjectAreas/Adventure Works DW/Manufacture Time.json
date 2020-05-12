@@ -1,0 +1,99 @@
+{
+  "presentationTable": {
+    "name": "Manufacture Time",
+    "presentationColumns": [
+      {
+        "name": "[Product].[Manufacture Time].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Manufacture Time.[Product].[Manufacture Time].[(All)]"
+      },
+      {
+        "name": "Category#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Manufacture Time.Category#1"
+      },
+      {
+        "name": "Days to Manufacture#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Manufacture Time.Days to Manufacture#1"
+      },
+      {
+        "name": "KEY0#235",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Manufacture Time.KEY0#235"
+      },
+      {
+        "name": "KEY0#236",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Manufacture Time.KEY0#236"
+      },
+      {
+        "name": "KEY0#237",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Manufacture Time.KEY0#237"
+      },
+      {
+        "name": "MEMBER_VALUE#235",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Manufacture Time.MEMBER_VALUE#235"
+      },
+      {
+        "name": "MEMBER_VALUE#236",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Manufacture Time.MEMBER_VALUE#236"
+      },
+      {
+        "name": "MEMBER_VALUE#237",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Manufacture Time.MEMBER_VALUE#237"
+      },
+      {
+        "name": "NAME#187",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Manufacture Time.NAME#187"
+      },
+      {
+        "name": "NAME#188",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Manufacture Time.NAME#188"
+      },
+      {
+        "name": "Subcategory",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Manufacture Time.Subcategory"
+      },
+      {
+        "name": "TRAN0#11",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Manufacture Time.TRAN0#11"
+      },
+      {
+        "name": "TRAN1#11",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Manufacture Time.TRAN1#11"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Manufacture Time",
+        "levels": [
+          {
+            "name": "[Product].[Manufacture Time].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Product].[Manufacture Time].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Manufacture Time.[Product].[Manufacture Time].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Days to Manufacture",
+            "displayColumns": [
+              {
+                "name": "Days to Manufacture#1",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Manufacture Time.Days to Manufacture#1"
+              }
+            ]
+          },
+          {
+            "name": "Subcategory",
+            "displayColumns": [
+              {
+                "name": "Subcategory",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Manufacture Time.Subcategory"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

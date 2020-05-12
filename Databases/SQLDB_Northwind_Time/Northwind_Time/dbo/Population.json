@@ -1,0 +1,38 @@
+{
+  "physicalTable": {
+    "name": "Population",
+    "sourceType": "SELECT",
+    "caching": {
+    },
+    "selectStatements": [
+      {
+        "databaseType": "DEFAULT",
+        "query": "select e.City as City, e.Region as Region, e.Country as Country, sum(Quantity) * 11 as Population
+from Employees e, Orders o, OrderDetails od
+where e.EmployeeID = o.EmployeeID and od.OrderID = o.OrderID
+group by e.City, e.Region, e.Country"
+      }
+    ],
+    "physicalColumns": [
+      {
+        "name": "City",
+        "dataType": "CHAR",
+        "length": 15
+      },
+      {
+        "name": "Region",
+        "dataType": "CHAR",
+        "length": 15
+      },
+      {
+        "name": "Country",
+        "dataType": "CHAR",
+        "length": 15
+      },
+      {
+        "name": "Population",
+        "dataType": "INT"
+      }
+    ]
+  }
+}

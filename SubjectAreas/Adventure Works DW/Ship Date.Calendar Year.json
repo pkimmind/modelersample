@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "Ship Date.Calendar Year",
+    "presentationColumns": [
+      {
+        "name": "[Ship Date].[Calendar Year].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Year.[Ship Date].[Calendar Year].[(All)]"
+      },
+      {
+        "name": "Calendar Year#8",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Year.Calendar Year#8"
+      },
+      {
+        "name": "KEY0#396",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Year.KEY0#396"
+      },
+      {
+        "name": "KEY0#397",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Year.KEY0#397"
+      },
+      {
+        "name": "MEMBER_VALUE#396",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Year.MEMBER_VALUE#396"
+      },
+      {
+        "name": "MEMBER_VALUE#397",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Year.MEMBER_VALUE#397"
+      },
+      {
+        "name": "NAME#306",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Year.NAME#306"
+      },
+      {
+        "name": "NAME#307",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Year.NAME#307"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Ship Date.Calendar Year",
+        "levels": [
+          {
+            "name": "[Ship Date].[Calendar Year].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Ship Date].[Calendar Year].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Year.[Ship Date].[Calendar Year].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Calendar Year",
+            "displayColumns": [
+              {
+                "name": "Calendar Year#8",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Year.Calendar Year#8"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

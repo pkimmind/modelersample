@@ -1,0 +1,70 @@
+{
+  "presentationTable": {
+    "name": "Source Currency Code",
+    "presentationColumns": [
+      {
+        "name": "[Source Currency].[Source Currency Code].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Source Currency Code.[Source Currency].[Source Currency Code].[(All)]"
+      },
+      {
+        "name": "KEY0#426",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Source Currency Code.KEY0#426"
+      },
+      {
+        "name": "KEY0#427",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Source Currency Code.KEY0#427"
+      },
+      {
+        "name": "MEMBER_VALUE#426",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Source Currency Code.MEMBER_VALUE#426"
+      },
+      {
+        "name": "MEMBER_VALUE#427",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Source Currency Code.MEMBER_VALUE#427"
+      },
+      {
+        "name": "NAME#329",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Source Currency Code.NAME#329"
+      },
+      {
+        "name": "NAME#330",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Source Currency Code.NAME#330"
+      },
+      {
+        "name": "Source Currency Code",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Source Currency Code.Source Currency Code"
+      },
+      {
+        "name": "Source Currency#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Source Currency Code.Source Currency#1"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Source Currency Code",
+        "levels": [
+          {
+            "name": "[Source Currency].[Source Currency Code].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Source Currency].[Source Currency Code].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Source Currency Code.[Source Currency].[Source Currency Code].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Source Currency Code",
+            "displayColumns": [
+              {
+                "name": "Source Currency Code",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Source Currency Code.Source Currency Code"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

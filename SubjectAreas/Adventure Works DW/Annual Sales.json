@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Annual Sales",
+    "presentationColumns": [
+      {
+        "name": "[Reseller].[Annual Sales].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Annual Sales.[Reseller].[Annual Sales].[(All)]"
+      },
+      {
+        "name": "Annual Sales",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Annual Sales.Annual Sales"
+      },
+      {
+        "name": "KEY0#304",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Annual Sales.KEY0#304"
+      },
+      {
+        "name": "KEY0#305",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Annual Sales.KEY0#305"
+      },
+      {
+        "name": "MEMBER_VALUE#304",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Annual Sales.MEMBER_VALUE#304"
+      },
+      {
+        "name": "MEMBER_VALUE#305",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Annual Sales.MEMBER_VALUE#305"
+      },
+      {
+        "name": "NAME#242",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Annual Sales.NAME#242"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Annual Sales",
+        "levels": [
+          {
+            "name": "[Reseller].[Annual Sales].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Reseller].[Annual Sales].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Annual Sales.[Reseller].[Annual Sales].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Annual Sales",
+            "displayColumns": [
+              {
+                "name": "Annual Sales",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Annual Sales.Annual Sales"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

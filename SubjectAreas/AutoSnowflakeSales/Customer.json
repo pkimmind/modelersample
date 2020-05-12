@@ -1,0 +1,23 @@
+{
+  "presentationTable": {
+    "name": "Customer",
+    "presentationColumns": [
+      {
+        "name": "CustomerID",
+        "sourceLogicalColumn": "logicalColumn:AutoSnowflakeSales.Customer.CustomerID"
+      },
+      {
+        "name": "CompanyName",
+        "sourceLogicalColumn": "logicalColumn:AutoSnowflakeSales.Customer.CompanyName"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:AutoSnowflakeSales.Customer.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:AutoSnowflakeSales.Customer.QtySold"
+      }
+    ]
+  }
+}

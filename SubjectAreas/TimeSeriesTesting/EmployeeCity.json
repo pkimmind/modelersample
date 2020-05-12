@@ -1,0 +1,27 @@
+{
+  "presentationTable": {
+    "name": "EmployeeCity",
+    "presentationColumns": [
+      {
+        "name": "City",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.EmployeeCity.City"
+      },
+      {
+        "name": "Region",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.EmployeeCity.Region"
+      },
+      {
+        "name": "Country",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.EmployeeCity.Country"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.EmployeeCity.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.EmployeeCity.QtySold"
+      }
+    ]
+  }
+}

@@ -1,0 +1,676 @@
+{
+  "logicalTable": {
+    "name": "Customer",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "Country",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:FoodMart...Sales.Country"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "State Province",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:FoodMart...Sales.State Province"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "City",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:FoodMart...Sales.City"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Name",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:FoodMart...Sales.Name"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Gender",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:FoodMart...Sales.Gender"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Marital Status",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:FoodMart...Sales.Marital Status"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Education",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:FoodMart...Sales.Education"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Yearly Income",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:FoodMart...Sales.Yearly Income"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Member Card",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:FoodMart...Sales.Member Card"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Name",
+              "isPrimary": "true",
+              "columns": [
+                "Name"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Sales",
+        "logicalTableRef": "Customer",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "Country",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:FoodMart...Sales.Country"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "State Province",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:FoodMart...Sales.State Province"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "City",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:FoodMart...Sales.City"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Name",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:FoodMart...Sales.Name"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Gender",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:FoodMart...Sales.Gender"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Marital Status",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:FoodMart...Sales.Marital Status"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Education",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:FoodMart...Sales.Education"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Yearly Income",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:FoodMart...Sales.Yearly Income"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Member Card",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:FoodMart...Sales.Member Card"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Sales",
+            "joins": [
+            ]
+          }
+        ]
+      },
+    ],
+    "dimension": {
+      "name": "Customer",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "All",
+      "levels": [
+        {
+          "name": "All",
+          "memberCount": 1,
+          "levelConst": "All",
+          "childLevels": [
+            {
+              "name": "Country",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Country",
+              "keys": [
+                {
+                  "name": "Country",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Country"
+                  ]
+                }
+              ],
+              "childLevels": [
+                {
+                  "name": "State",
+                  "isGTA": false,
+                  "memberCount": 1,
+                  "levelConst": "State",
+                  "keys": [
+                    {
+                      "name": "State Province",
+                      "isPrimary": "true",
+                      "columns": [
+                        "State Province"
+                      ]
+                    }
+                  ],
+                  "childLevels": [
+                    {
+                      "name": "City",
+                      "isGTA": false,
+                      "memberCount": 1,
+                      "levelConst": "City",
+                      "keys": [
+                        {
+                          "name": "City",
+                          "isPrimary": "true",
+                          "columns": [
+                            "City"
+                          ]
+                        }
+                      ],
+                      "childLevels": [
+                        {
+                          "name": "Customer Name",
+                          "isGTA": false,
+                          "memberCount": 1,
+                          "levelConst": "Customer Name",
+                          "keys": [
+                            {
+                              "name": "Name",
+                              "isPrimary": "true",
+                              "columns": [
+                                "Name"
+                              ]
+                            }
+                          ],
+                          "columns": [
+                            "Name",
+                            "Gender",
+                            "Marital Status",
+                            "Education",
+                            "Yearly Income",
+                            "Member Card"
+                          ]
+                        }
+                      ],
+                      "columns": [
+                        "City"
+                      ]
+                    }
+                  ],
+                  "columns": [
+                    "State Province"
+                  ]
+                }
+              ],
+              "columns": [
+                "Country"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Country",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Country",
+          "keys": [
+            {
+              "name": "Country",
+              "isPrimary": "true",
+              "columns": [
+                "Country"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "State",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "State",
+              "keys": [
+                {
+                  "name": "State Province",
+                  "isPrimary": "true",
+                  "columns": [
+                    "State Province"
+                  ]
+                }
+              ],
+              "childLevels": [
+                {
+                  "name": "City",
+                  "isGTA": false,
+                  "memberCount": 1,
+                  "levelConst": "City",
+                  "keys": [
+                    {
+                      "name": "City",
+                      "isPrimary": "true",
+                      "columns": [
+                        "City"
+                      ]
+                    }
+                  ],
+                  "childLevels": [
+                    {
+                      "name": "Customer Name",
+                      "isGTA": false,
+                      "memberCount": 1,
+                      "levelConst": "Customer Name",
+                      "keys": [
+                        {
+                          "name": "Name",
+                          "isPrimary": "true",
+                          "columns": [
+                            "Name"
+                          ]
+                        }
+                      ],
+                      "columns": [
+                        "Name",
+                        "Gender",
+                        "Marital Status",
+                        "Education",
+                        "Yearly Income",
+                        "Member Card"
+                      ]
+                    }
+                  ],
+                  "columns": [
+                    "City"
+                  ]
+                }
+              ],
+              "columns": [
+                "State Province"
+              ]
+            }
+          ],
+          "columns": [
+            "Country"
+          ]
+        },
+        {
+          "name": "State",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "State",
+          "keys": [
+            {
+              "name": "State Province",
+              "isPrimary": "true",
+              "columns": [
+                "State Province"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "City",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "City",
+              "keys": [
+                {
+                  "name": "City",
+                  "isPrimary": "true",
+                  "columns": [
+                    "City"
+                  ]
+                }
+              ],
+              "childLevels": [
+                {
+                  "name": "Customer Name",
+                  "isGTA": false,
+                  "memberCount": 1,
+                  "levelConst": "Customer Name",
+                  "keys": [
+                    {
+                      "name": "Name",
+                      "isPrimary": "true",
+                      "columns": [
+                        "Name"
+                      ]
+                    }
+                  ],
+                  "columns": [
+                    "Name",
+                    "Gender",
+                    "Marital Status",
+                    "Education",
+                    "Yearly Income",
+                    "Member Card"
+                  ]
+                }
+              ],
+              "columns": [
+                "City"
+              ]
+            }
+          ],
+          "columns": [
+            "State Province"
+          ]
+        },
+        {
+          "name": "City",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "City",
+          "keys": [
+            {
+              "name": "City",
+              "isPrimary": "true",
+              "columns": [
+                "City"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Customer Name",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Customer Name",
+              "keys": [
+                {
+                  "name": "Name",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Name"
+                  ]
+                }
+              ],
+              "columns": [
+                "Name",
+                "Gender",
+                "Marital Status",
+                "Education",
+                "Yearly Income",
+                "Member Card"
+              ]
+            }
+          ],
+          "columns": [
+            "City"
+          ]
+        },
+        {
+          "name": "Customer Name",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Customer Name",
+          "keys": [
+            {
+              "name": "Name",
+              "isPrimary": "true",
+              "columns": [
+                "Name"
+              ]
+            }
+          ],
+          "columns": [
+            "Name",
+            "Gender",
+            "Marital Status",
+            "Education",
+            "Yearly Income",
+            "Member Card"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Customer",
+        "levels": [
+          {
+            "name": "All",
+            "childLevels": [
+              {
+                "name": "Country",
+                "childLevels": [
+                  {
+                    "name": "State",
+                    "childLevels": [
+                      {
+                        "name": "City",
+                        "childLevels": [
+                          {
+                            "name": "Customer Name"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Country",
+            "childLevels": [
+              {
+                "name": "State",
+                "childLevels": [
+                  {
+                    "name": "City",
+                    "childLevels": [
+                      {
+                        "name": "Customer Name"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "State",
+            "childLevels": [
+              {
+                "name": "City",
+                "childLevels": [
+                  {
+                    "name": "Customer Name"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "City",
+            "childLevels": [
+              {
+                "name": "Customer Name"
+              }
+            ]
+          },
+          {
+            "name": "Customer Name"
+          }
+        ]
+      }
+    }
+  }
+}

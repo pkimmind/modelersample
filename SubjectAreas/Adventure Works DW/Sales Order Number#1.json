@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Sales Order Number#1",
+    "presentationColumns": [
+      {
+        "name": "[Reseller Sales Order Details].[Sales Order Number].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Number#1.[Reseller Sales Order Details].[Sales Order Number].[(All)]"
+      },
+      {
+        "name": "KEY0#353",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Number#1.KEY0#353"
+      },
+      {
+        "name": "KEY0#354",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Number#1.KEY0#354"
+      },
+      {
+        "name": "MEMBER_VALUE#353",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Number#1.MEMBER_VALUE#353"
+      },
+      {
+        "name": "MEMBER_VALUE#354",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Number#1.MEMBER_VALUE#354"
+      },
+      {
+        "name": "NAME#279",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Number#1.NAME#279"
+      },
+      {
+        "name": "Sales Order Number#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Number#1.Sales Order Number#3"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Sales Order Number#1",
+        "levels": [
+          {
+            "name": "[Reseller Sales Order Details].[Sales Order Number].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Reseller Sales Order Details].[Sales Order Number].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Number#1.[Reseller Sales Order Details].[Sales Order Number].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Sales Order Number",
+            "displayColumns": [
+              {
+                "name": "Sales Order Number#3",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Number#1.Sales Order Number#3"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

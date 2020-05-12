@@ -1,0 +1,140 @@
+{
+  "presentationTable": {
+    "name": "Product Model Categories",
+    "presentationColumns": [
+      {
+        "name": "[Product].[Product Model Categories].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.[Product].[Product Model Categories].[(All)]"
+      },
+      {
+        "name": "Category#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.Category#4"
+      },
+      {
+        "name": "Category#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.Category#5"
+      },
+      {
+        "name": "KEY0#250",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.KEY0#250"
+      },
+      {
+        "name": "KEY0#251",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.KEY0#251"
+      },
+      {
+        "name": "KEY0#252",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.KEY0#252"
+      },
+      {
+        "name": "KEY0#253",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.KEY0#253"
+      },
+      {
+        "name": "MEMBER_VALUE#250",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.MEMBER_VALUE#250"
+      },
+      {
+        "name": "MEMBER_VALUE#251",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.MEMBER_VALUE#251"
+      },
+      {
+        "name": "MEMBER_VALUE#252",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.MEMBER_VALUE#252"
+      },
+      {
+        "name": "MEMBER_VALUE#253",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.MEMBER_VALUE#253"
+      },
+      {
+        "name": "Model",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.Model"
+      },
+      {
+        "name": "NAME#199",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.NAME#199"
+      },
+      {
+        "name": "NAME#200",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.NAME#200"
+      },
+      {
+        "name": "NAME#201",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.NAME#201"
+      },
+      {
+        "name": "Product Line#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.Product Line#2"
+      },
+      {
+        "name": "Subcategory#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.Subcategory#5"
+      },
+      {
+        "name": "Subcategory#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.Subcategory#6"
+      },
+      {
+        "name": "TRAN0#16",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.TRAN0#16"
+      },
+      {
+        "name": "TRAN0#17",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.TRAN0#17"
+      },
+      {
+        "name": "TRAN1#16",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.TRAN1#16"
+      },
+      {
+        "name": "TRAN1#17",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.TRAN1#17"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Product Model Categories",
+        "levels": [
+          {
+            "name": "[Product].[Product Model Categories].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Product].[Product Model Categories].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.[Product].[Product Model Categories].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Category",
+            "displayColumns": [
+              {
+                "name": "Category#4",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.Category#4"
+              }
+            ]
+          },
+          {
+            "name": "Subcategory",
+            "displayColumns": [
+              {
+                "name": "Subcategory#5",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.Subcategory#5"
+              }
+            ]
+          },
+          {
+            "name": "Model",
+            "displayColumns": [
+              {
+                "name": "Model",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.Model"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

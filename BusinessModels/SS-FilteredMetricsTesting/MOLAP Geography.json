@@ -1,0 +1,253 @@
+{
+  "logicalTable": {
+    "name": "MOLAP Geography",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "Store Country",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:FoodMart...Sales.Store Country"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Store State",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:FoodMart...Sales.Store State"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Store State",
+              "isPrimary": "true",
+              "columns": [
+                "Store State",
+                "Store Country"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Sales",
+        "logicalTableRef": "MOLAP Geography",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "Store Country",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:FoodMart...Sales.Store Country"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Store State",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:FoodMart...Sales.Store State"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Sales",
+            "joins": [
+            ]
+          }
+        ]
+      },
+    ],
+    "dimension": {
+      "name": "MOLAP Geography",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "All",
+      "levels": [
+        {
+          "name": "All",
+          "memberCount": 1,
+          "levelConst": "All",
+          "childLevels": [
+            {
+              "name": "Country",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Country",
+              "keys": [
+                {
+                  "name": "Store Country",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Store Country"
+                  ]
+                }
+              ],
+              "childLevels": [
+                {
+                  "name": "State",
+                  "isGTA": false,
+                  "memberCount": 1,
+                  "levelConst": "State",
+                  "keys": [
+                    {
+                      "name": "Store State",
+                      "isPrimary": "true",
+                      "columns": [
+                        "Store State",
+                        "Store Country"
+                      ]
+                    }
+                  ],
+                  "columns": [
+                    "Store State"
+                  ]
+                }
+              ],
+              "columns": [
+                "Store Country"
+              ]
+            }
+          ],
+          "columns": [
+            "Revenue",
+            "QtySold",
+            "Basket Count",
+            "Basket Count by All Cross Sell",
+            "Likelihood of Buying",
+            "Revenue by All Cross Sell",
+            "Likelihood of Buying by $",
+            "Category Country Revenue",
+            "Category Qtr Revenue",
+            "% of Category Country Revenue",
+            "% of Category Qtr Revenue",
+            "Population",
+            "All Product Time Population",
+            "All Product Country Time Population",
+            "% of Country Population",
+            "Revenue Development Index"
+          ]
+        },
+        {
+          "name": "Country",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Country",
+          "keys": [
+            {
+              "name": "Store Country",
+              "isPrimary": "true",
+              "columns": [
+                "Store Country"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "State",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "State",
+              "keys": [
+                {
+                  "name": "Store State",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Store State",
+                    "Store Country"
+                  ]
+                }
+              ],
+              "columns": [
+                "Store State"
+              ]
+            }
+          ],
+          "columns": [
+            "Store Country"
+          ]
+        },
+        {
+          "name": "State",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "State",
+          "keys": [
+            {
+              "name": "Store State",
+              "isPrimary": "true",
+              "columns": [
+                "Store State",
+                "Store Country"
+              ]
+            }
+          ],
+          "columns": [
+            "Store State"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "MOLAP Geography",
+        "levels": [
+          {
+            "name": "All",
+            "childLevels": [
+              {
+                "name": "Country",
+                "childLevels": [
+                  {
+                    "name": "State"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Country",
+            "childLevels": [
+              {
+                "name": "State"
+              }
+            ]
+          },
+          {
+            "name": "State"
+          }
+        ]
+      }
+    }
+  }
+}

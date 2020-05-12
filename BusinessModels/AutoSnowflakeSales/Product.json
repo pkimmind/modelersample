@@ -1,0 +1,358 @@
+{
+  "logicalTable": {
+    "name": "Product",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "ProductID",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Products",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.ProductID"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "ProductName",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Products",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.ProductName"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "SupplierID",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Products",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.SupplierID"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "CategoryID",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Products",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.CategoryID"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "QuantityPerUnit",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Products",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.QuantityPerUnit"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "UnitPrice",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Products",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.UnitPrice"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "UnitsInStock",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Products",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.UnitsInStock"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "ReorderLevel",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Products",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.ReorderLevel"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Discontinued",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Products",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.Discontinued"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Revenue",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:AutoSnowflakeSales.SalesFacts.Revenue"
+              ]
+            }
+          },
+        ]
+      {
+        "name": "QtySold",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:AutoSnowflakeSales.SalesFacts.QtySold"
+              ]
+            }
+          },
+        ]
+      {
+        "name": "UnitsOnOrder",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Products",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.UnitsOnOrder"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "ProductID",
+              "isPrimary": "true",
+              "columns": [
+                "ProductID"
+              ]
+            },
+            {
+              "name": "ProductName",
+              "columns": [
+                "ProductName"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Products",
+        "logicalTableRef": "Product",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "ProductID",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.ProductID"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "ProductName",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.ProductName"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "SupplierID",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.SupplierID"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "CategoryID",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.CategoryID"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "QuantityPerUnit",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.QuantityPerUnit"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "UnitPrice",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.UnitPrice"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "UnitsInStock",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.UnitsInStock"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "ReorderLevel",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.ReorderLevel"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Discontinued",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.Discontinued"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "UnitsOnOrder",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.UnitsOnOrder"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Products",
+            "joins": [
+            ]
+          }
+        ]
+      },
+    ]
+  }
+}

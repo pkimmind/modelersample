@@ -1,0 +1,506 @@
+{
+  "logicalTable": {
+    "name": "Postal Code#1",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Geography].[Postal Code].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Geography].[Postal Code].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Geography].[Postal Code].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Geography].[Postal Code].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Geography].[Postal Code].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "City#7",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.City#7"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#198",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#198"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#199",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#199"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY1#22",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY1#22"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#198",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#198"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#199",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#199"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#160",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#160"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#161",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#161"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Postal Code - Member Key#3",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Postal Code - Member Key#3"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Postal Code#5",
+        "writeable": false,
+        "descriptorColumn": "Postal Code - Member Key#3",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Postal Code#5"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Postal Code#1",
+              "isPrimary": "true",
+              "columns": [
+                "[Geography].[Postal Code].[(All)]",
+                "Postal Code#5"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Postal Code#1",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "Postal Code - Member Key#3",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Postal Code - Member Key#3"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Postal Code#5",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Postal Code#5"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Geography].[Postal Code].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Geography].[Postal Code].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Geography].[Postal Code].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Geography].[Postal Code].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "City#7",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.City#7"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#198",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#198"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#199",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#199"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY1#22",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY1#22"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#198",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#198"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#199",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#199"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#160",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#160"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#161",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#161"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Postal Code#1.Postal Code"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Postal Code#1",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "[Geography].[Postal Code].[(All)]",
+      "levels": [
+        {
+          "name": "[Geography].[Postal Code].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Geography].[Postal Code].[(All)]",
+          "keys": [
+            {
+              "name": "[Geography].[Postal Code].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Geography].[Postal Code].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Geography].[Postal Code].[(All)]",
+              "columns": [
+                "[Geography].[Postal Code].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Postal Code",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Postal Code",
+              "keys": [
+                {
+                  "name": "Postal Code - Member Key#3",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Postal Code - Member Key#3"
+                  ]
+                },
+                {
+                  "name": "Postal Code",
+                  "columns": [
+                    "Postal Code#5"
+                  ]
+                }
+              ],
+              "columns": [
+                "City#7",
+                "KEY0#199",
+                "KEY1#22",
+                "MEMBER_VALUE#199",
+                "NAME#161",
+                "Postal Code - Member Key#3",
+                "Postal Code#5"
+              ]
+            }
+          ],
+          "columns": [
+            "[Geography].[Postal Code].[(All)]",
+            "[Geography].[Postal Code].[(All)] - Member Key",
+            "KEY0#198",
+            "MEMBER_VALUE#198",
+            "NAME#160"
+          ]
+        },
+        {
+          "name": "Postal Code",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Postal Code",
+          "keys": [
+            {
+              "name": "Postal Code - Member Key#3",
+              "isPrimary": "true",
+              "columns": [
+                "Postal Code - Member Key#3"
+              ]
+            },
+            {
+              "name": "Postal Code",
+              "columns": [
+                "Postal Code#5"
+              ]
+            }
+          ],
+          "columns": [
+            "City#7",
+            "KEY0#199",
+            "KEY1#22",
+            "MEMBER_VALUE#199",
+            "NAME#161",
+            "Postal Code - Member Key#3",
+            "Postal Code#5"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Postal Code#1",
+        "levels": [
+          {
+            "name": "[Geography].[Postal Code].[(All)]",
+            "childLevels": [
+              {
+                "name": "Postal Code"
+              }
+            ]
+          },
+          {
+            "name": "Postal Code"
+          }
+        ]
+      }
+    }
+  }
+}

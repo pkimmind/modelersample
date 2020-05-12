@@ -1,0 +1,78 @@
+{
+  "presentationTable": {
+    "name": "Subcategory",
+    "presentationColumns": [
+      {
+        "name": "[Product].[Subcategory].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Subcategory.[Product].[Subcategory].[(All)]"
+      },
+      {
+        "name": "Category#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Subcategory.Category#6"
+      },
+      {
+        "name": "KEY0#276",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Subcategory.KEY0#276"
+      },
+      {
+        "name": "KEY0#277",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Subcategory.KEY0#277"
+      },
+      {
+        "name": "MEMBER_VALUE#276",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Subcategory.MEMBER_VALUE#276"
+      },
+      {
+        "name": "MEMBER_VALUE#277",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Subcategory.MEMBER_VALUE#277"
+      },
+      {
+        "name": "NAME#217",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Subcategory.NAME#217"
+      },
+      {
+        "name": "NAME#218",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Subcategory.NAME#218"
+      },
+      {
+        "name": "Subcategory#9",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Subcategory.Subcategory#9"
+      },
+      {
+        "name": "TRAN0#19",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Subcategory.TRAN0#19"
+      },
+      {
+        "name": "TRAN1#19",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Subcategory.TRAN1#19"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Subcategory",
+        "levels": [
+          {
+            "name": "[Product].[Subcategory].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Product].[Subcategory].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Subcategory.[Product].[Subcategory].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Subcategory",
+            "displayColumns": [
+              {
+                "name": "Subcategory#9",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Subcategory.Subcategory#9"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

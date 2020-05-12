@@ -1,0 +1,31 @@
+{
+  "presentationTable": {
+    "name": "SupplierCity",
+    "presentationColumns": [
+      {
+        "name": "City",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SupplierCity.City"
+      },
+      {
+        "name": "Region",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SupplierCity.Region"
+      },
+      {
+        "name": "Country",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SupplierCity.Country"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SupplierCity.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SupplierCity.QtySold"
+      },
+      {
+        "name": "CityShare",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SupplierCity.CityShare"
+      }
+    ]
+  }
+}

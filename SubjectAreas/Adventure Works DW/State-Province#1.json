@@ -1,0 +1,74 @@
+{
+  "presentationTable": {
+    "name": "State-Province#1",
+    "presentationColumns": [
+      {
+        "name": "[Geography].[State-Province].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.State-Province#1.[Geography].[State-Province].[(All)]"
+      },
+      {
+        "name": "Country#7",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.State-Province#1.Country#7"
+      },
+      {
+        "name": "KEY0#200",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.State-Province#1.KEY0#200"
+      },
+      {
+        "name": "KEY0#201",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.State-Province#1.KEY0#201"
+      },
+      {
+        "name": "KEY1#23",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.State-Province#1.KEY1#23"
+      },
+      {
+        "name": "MEMBER_VALUE#200",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.State-Province#1.MEMBER_VALUE#200"
+      },
+      {
+        "name": "MEMBER_VALUE#201",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.State-Province#1.MEMBER_VALUE#201"
+      },
+      {
+        "name": "NAME#162",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.State-Province#1.NAME#162"
+      },
+      {
+        "name": "NAME#163",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.State-Province#1.NAME#163"
+      },
+      {
+        "name": "State-Province#7",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.State-Province#1.State-Province#7"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "State-Province#1",
+        "levels": [
+          {
+            "name": "[Geography].[State-Province].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Geography].[State-Province].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.State-Province#1.[Geography].[State-Province].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "State-Province",
+            "displayColumns": [
+              {
+                "name": "State-Province#7",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.State-Province#1.State-Province#7"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

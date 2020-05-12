@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "First Order Year",
+    "presentationColumns": [
+      {
+        "name": "[Reseller].[First Order Year].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.First Order Year.[Reseller].[First Order Year].[(All)]"
+      },
+      {
+        "name": "First Order Year",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.First Order Year.First Order Year"
+      },
+      {
+        "name": "KEY0#310",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.First Order Year.KEY0#310"
+      },
+      {
+        "name": "KEY0#311",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.First Order Year.KEY0#311"
+      },
+      {
+        "name": "MEMBER_VALUE#310",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.First Order Year.MEMBER_VALUE#310"
+      },
+      {
+        "name": "MEMBER_VALUE#311",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.First Order Year.MEMBER_VALUE#311"
+      },
+      {
+        "name": "NAME#245",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.First Order Year.NAME#245"
+      },
+      {
+        "name": "NAME#246",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.First Order Year.NAME#246"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "First Order Year",
+        "levels": [
+          {
+            "name": "[Reseller].[First Order Year].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Reseller].[First Order Year].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.First Order Year.[Reseller].[First Order Year].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "First Order Year",
+            "displayColumns": [
+              {
+                "name": "First Order Year",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.First Order Year.First Order Year"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

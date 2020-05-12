@@ -1,0 +1,90 @@
+{
+  "presentationTable": {
+    "name": "Delivery Date.Date",
+    "presentationColumns": [
+      {
+        "name": "[Delivery Date].[Date].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Date.[Delivery Date].[Date].[(All)]"
+      },
+      {
+        "name": "Date#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Date.Date#4"
+      },
+      {
+        "name": "Day Name#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Date.Day Name#5"
+      },
+      {
+        "name": "Day of Month#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Date.Day of Month#5"
+      },
+      {
+        "name": "Day of Week#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Date.Day of Week#5"
+      },
+      {
+        "name": "Day of Year#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Date.Day of Year#5"
+      },
+      {
+        "name": "KEY0#106",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Date.KEY0#106"
+      },
+      {
+        "name": "KEY0#107",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Date.KEY0#107"
+      },
+      {
+        "name": "MEMBER_VALUE#106",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Date.MEMBER_VALUE#106"
+      },
+      {
+        "name": "MEMBER_VALUE#107",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Date.MEMBER_VALUE#107"
+      },
+      {
+        "name": "Month Name#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Date.Month Name#4"
+      },
+      {
+        "name": "NAME#87",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Date.NAME#87"
+      },
+      {
+        "name": "NAME#88",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Date.NAME#88"
+      },
+      {
+        "name": "Week of Year#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Date.Week of Year#5"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Delivery Date.Date",
+        "levels": [
+          {
+            "name": "[Delivery Date].[Date].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Delivery Date].[Date].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Date.[Delivery Date].[Date].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Date",
+            "displayColumns": [
+              {
+                "name": "Date#4",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Date.Date#4"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

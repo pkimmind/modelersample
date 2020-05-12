@@ -1,0 +1,55 @@
+{
+  "presentationTable": {
+    "name": "Product",
+    "presentationColumns": [
+      {
+        "name": "ProductID",
+        "sourceLogicalColumn": "logicalColumn:AutoSnowflakeSales.Product.ProductID"
+      },
+      {
+        "name": "ProductName",
+        "sourceLogicalColumn": "logicalColumn:AutoSnowflakeSales.Product.ProductName"
+      },
+      {
+        "name": "SupplierID",
+        "sourceLogicalColumn": "logicalColumn:AutoSnowflakeSales.Product.SupplierID"
+      },
+      {
+        "name": "CategoryID",
+        "sourceLogicalColumn": "logicalColumn:AutoSnowflakeSales.Product.CategoryID"
+      },
+      {
+        "name": "QuantityPerUnit",
+        "sourceLogicalColumn": "logicalColumn:AutoSnowflakeSales.Product.QuantityPerUnit"
+      },
+      {
+        "name": "UnitPrice",
+        "sourceLogicalColumn": "logicalColumn:AutoSnowflakeSales.Product.UnitPrice"
+      },
+      {
+        "name": "UnitsInStock",
+        "sourceLogicalColumn": "logicalColumn:AutoSnowflakeSales.Product.UnitsInStock"
+      },
+      {
+        "name": "ReorderLevel",
+        "sourceLogicalColumn": "logicalColumn:AutoSnowflakeSales.Product.ReorderLevel"
+      },
+      {
+        "name": "Discontinued",
+        "sourceLogicalColumn": "logicalColumn:AutoSnowflakeSales.Product.Discontinued"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:AutoSnowflakeSales.Product.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:AutoSnowflakeSales.Product.QtySold"
+      },
+      {
+        "name": "UnitsOnOrder",
+        "sourceLogicalColumn": "logicalColumn:AutoSnowflakeSales.Product.UnitsOnOrder"
+      }
+    ]
+  }
+}

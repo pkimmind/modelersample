@@ -1,0 +1,80 @@
+{
+  "database": {
+    "name": "BadRecurisveDB",
+    "type": "Oracle10gR2",
+    "databaseType": 46,
+    "features": [
+      {
+        "name": "LENGTH_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "RAND_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "PERF_PREFER_NO_COMMON_QUERY_FACTORING",
+        "value": false
+      },
+      {
+        "name": "FRACTIONAL_SECOND_PRECISION",
+        "value": "0X0",
+      },
+      {
+        "name": "MAX_BULK_FETCH_BUFFER_SIZE",
+        "value": "0X50000",
+      },
+      {
+        "name": "DEFAULT_BULK_FETCH_ROW_COUNT",
+        "value": "0X64",
+      }
+    ],
+    "connectionPools": [
+      {
+        "name": "BadRecurisveVar1",
+        "user": "northwind",
+        "connectionTimeout": 5,
+        "connectionTimeoutUnit": "MINUTES",
+        "maxConnDiff": 10,
+        "maxConnections": 10,
+        "connection": "biserver-dev.us.oracle.com:1521/orcl",
+        "type": "Default",
+        "requiresFullyQualifedTableNames": false,
+        "multithreaded": false,
+        "isCloseAfterEveryRequest": false,
+        "outputType": "xml",
+        "ignoreFirstLine": false,
+        "bulkInsertBufferSize": 131072,
+        "tempTablePrefix": "TT",
+        "transactionBoundary": 1000,
+        "xmlaUseSession": false,
+        "isSiebelJDBSecured": false
+      },
+      {
+        "name": "BadRecursiveVar2",
+        "user": "northwind",
+        "connectionTimeout": 5,
+        "connectionTimeoutUnit": "MINUTES",
+        "maxConnDiff": 10,
+        "maxConnections": 10,
+        "connection": "biserver-dev.us.oracle.com:1521/orcl",
+        "type": "Default",
+        "requiresFullyQualifedTableNames": false,
+        "multithreaded": false,
+        "isCloseAfterEveryRequest": false,
+        "outputType": "xml",
+        "ignoreFirstLine": false,
+        "bulkInsertBufferSize": 131072,
+        "tempTablePrefix": "TT",
+        "transactionBoundary": 1000,
+        "xmlaUseSession": false,
+        "isSiebelJDBSecured": false,
+        "runBeforeQueryScripts": {
+          "Value": "select 'valueof(NQ_SESSION.BADRECURSIVEVAR)' from dual",
+        }
+      }
+    ]
+    "joins": [
+    ]
+  }
+}

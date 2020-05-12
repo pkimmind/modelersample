@@ -1,0 +1,2188 @@
+{
+  "logicalTable": {
+    "name": "Delivery Date.Calendar",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Delivery Date].[Calendar].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Delivery Date].[Calendar].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Delivery Date].[Calendar].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Delivery Date].[Calendar].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Delivery Date].[Calendar].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Calendar Quarter - Member Key#1",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Calendar Quarter - Member Key#1"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Calendar Quarter of Year#2",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Calendar Quarter of Year#2"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Calendar Quarter#3",
+        "writeable": false,
+        "descriptorColumn": "Calendar Quarter - Member Key#1",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Calendar Quarter#3"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Calendar Quarter#4",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Calendar Quarter#4"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Calendar Semester - Member Key#1",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Calendar Semester - Member Key#1"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Calendar Semester of Year#2",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Calendar Semester of Year#2"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Calendar Semester#2",
+        "writeable": false,
+        "descriptorColumn": "Calendar Semester - Member Key#1",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Calendar Semester#2"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Calendar Semester#3",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Calendar Semester#3"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Calendar Year - Member Key#2",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Calendar Year - Member Key#2"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Calendar Year#3",
+        "writeable": false,
+        "descriptorColumn": "Calendar Year - Member Key#2",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Calendar Year#3"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Calendar Year#4",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Calendar Year#4"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Date - Member Key#3",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Date - Member Key#3"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Date#3",
+        "writeable": false,
+        "descriptorColumn": "Date - Member Key#3",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Date#3"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Day Name#4",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Day Name#4"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Day of Month#4",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Day of Month#4"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Day of Week#4",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Day of Week#4"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Day of Year#4",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Day of Year#4"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Fiscal Quarter#2",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Fiscal Quarter#2"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#94",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#94"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#95",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#95"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#96",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#96"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#97",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#97"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#98",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#98"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#99",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#99"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY1#12",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY1#12"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY1#13",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY1#13"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY1#14",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY1#14"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#94",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#94"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#95",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#95"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#96",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#96"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#97",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#97"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#98",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#98"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#99",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#99"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Month - Member Key#2",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Month - Member Key#2"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Month Name#3",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Month Name#3"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Month of Year#3",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Month of Year#3"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Month#2",
+        "writeable": false,
+        "descriptorColumn": "Month - Member Key#2",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Month#2"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#77",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#77"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#78",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#78"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#79",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#79"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#80",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#80"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#81",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#81"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#82",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#82"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Week of Year#4",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Week of Year#4"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Delivery Date.Calendar",
+              "isPrimary": "true",
+              "columns": [
+                "[Delivery Date].[Calendar].[(All)]",
+                "Calendar Year#3",
+                "Calendar Semester#2",
+                "Calendar Quarter#3",
+                "Month#2",
+                "Date#3"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Delivery Date.Calendar",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "Calendar Semester - Member Key#1",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Calendar Semester - Member Key#1"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Calendar Semester of Year#2",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Calendar Semester of Year#2"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Calendar Semester#2",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Calendar Semester#2"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Calendar Semester#3",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Calendar Semester#3"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Calendar Year - Member Key#2",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Calendar Year - Member Key#2"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Calendar Year#3",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Calendar Year#3"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Calendar Year#4",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Calendar Year#4"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Date - Member Key#3",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Date - Member Key#3"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Date#3",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Date#3"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Day Name#4",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Day Name#4"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Day of Month#4",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Day of Month#4"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Day of Week#4",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Day of Week#4"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Day of Year#4",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Day of Year#4"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Fiscal Quarter#2",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Fiscal Quarter#2"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#94",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#94"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#95",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#95"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#96",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#96"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#97",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#97"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#98",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#98"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#99",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#99"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY1#12",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY1#12"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY1#13",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY1#13"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY1#14",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY1#14"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#94",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#94"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#95",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#95"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#96",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#96"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#97",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#97"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#98",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#98"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#99",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#99"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Month - Member Key#2",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Month - Member Key#2"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Month Name#3",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Month Name#3"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Month of Year#3",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Month of Year#3"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Month#2",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Month#2"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#77",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#77"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#78",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#78"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#79",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#79"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#80",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#80"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#81",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#81"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#82",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#82"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Week of Year#4",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Week of Year#4"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Delivery Date].[Calendar].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Delivery Date].[Calendar].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Delivery Date].[Calendar].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Delivery Date].[Calendar].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Calendar Quarter - Member Key#1",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Calendar Quarter - Member Key#1"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Calendar Quarter of Year#2",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Calendar Quarter of Year#2"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Calendar Quarter#3",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Calendar Quarter#3"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Calendar Quarter#4",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Calendar Quarter#4"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Delivery Date.Calendar.Date"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Delivery Date.Calendar",
+      "isTimeDim": "true",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "[Delivery Date].[Calendar].[(All)]",
+      "levels": [
+        {
+          "name": "[Delivery Date].[Calendar].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Delivery Date].[Calendar].[(All)]",
+          "keys": [
+            {
+              "name": "[Delivery Date].[Calendar].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Delivery Date].[Calendar].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Delivery Date].[Calendar].[(All)]",
+              "columns": [
+                "[Delivery Date].[Calendar].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Calendar Year",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Calendar Year",
+              "keys": [
+                {
+                  "name": "Calendar Year - Member Key#2",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Calendar Year - Member Key#2"
+                  ]
+                },
+                {
+                  "name": "Calendar Year",
+                  "columns": [
+                    "Calendar Year#3"
+                  ]
+                }
+              ],
+              "childLevels": [
+                {
+                  "name": "Calendar Semester",
+                  "isGTA": false,
+                  "memberCount": 1,
+                  "levelConst": "Calendar Semester",
+                  "keys": [
+                    {
+                      "name": "Calendar Semester - Member Key#1",
+                      "isPrimary": "true",
+                      "columns": [
+                        "Calendar Semester - Member Key#1"
+                      ]
+                    },
+                    {
+                      "name": "Calendar Semester",
+                      "columns": [
+                        "Calendar Semester#2"
+                      ]
+                    }
+                  ],
+                  "childLevels": [
+                    {
+                      "name": "Calendar Quarter",
+                      "isGTA": false,
+                      "memberCount": 1,
+                      "levelConst": "Calendar Quarter",
+                      "keys": [
+                        {
+                          "name": "Calendar Quarter - Member Key#1",
+                          "isPrimary": "true",
+                          "columns": [
+                            "Calendar Quarter - Member Key#1"
+                          ]
+                        },
+                        {
+                          "name": "Calendar Quarter",
+                          "columns": [
+                            "Calendar Quarter#3"
+                          ]
+                        }
+                      ],
+                      "childLevels": [
+                        {
+                          "name": "Month",
+                          "isGTA": false,
+                          "memberCount": 1,
+                          "levelConst": "Month",
+                          "keys": [
+                            {
+                              "name": "Month - Member Key#2",
+                              "isPrimary": "true",
+                              "columns": [
+                                "Month - Member Key#2"
+                              ]
+                            },
+                            {
+                              "name": "Month",
+                              "columns": [
+                                "Month#2"
+                              ]
+                            }
+                          ],
+                          "childLevels": [
+                            {
+                              "name": "Date",
+                              "isGTA": false,
+                              "memberCount": 1,
+                              "levelConst": "Date",
+                              "keys": [
+                                {
+                                  "name": "Date - Member Key#3",
+                                  "isPrimary": "true",
+                                  "columns": [
+                                    "Date - Member Key#3"
+                                  ]
+                                },
+                                {
+                                  "name": "Date",
+                                  "columns": [
+                                    "Date#3"
+                                  ]
+                                }
+                              ],
+                              "columns": [
+                                "Date - Member Key#3",
+                                "Date#3",
+                                "Day Name#4",
+                                "Day of Month#4",
+                                "Day of Week#4",
+                                "Day of Year#4",
+                                "KEY0#99",
+                                "MEMBER_VALUE#99",
+                                "Month Name#3",
+                                "NAME#82",
+                                "Week of Year#4"
+                              ]
+                            }
+                          ],
+                          "columns": [
+                            "Calendar Quarter#4",
+                            "KEY0#98",
+                            "KEY1#14",
+                            "MEMBER_VALUE#98",
+                            "Month - Member Key#2",
+                            "Month of Year#3",
+                            "Month#2",
+                            "NAME#81"
+                          ]
+                        }
+                      ],
+                      "columns": [
+                        "Calendar Quarter - Member Key#1",
+                        "Calendar Quarter of Year#2",
+                        "Calendar Quarter#3",
+                        "Calendar Semester of Year#2",
+                        "Calendar Semester#3",
+                        "Fiscal Quarter#2",
+                        "KEY0#97",
+                        "KEY1#13",
+                        "MEMBER_VALUE#97",
+                        "NAME#80"
+                      ]
+                    }
+                  ],
+                  "columns": [
+                    "Calendar Semester - Member Key#1",
+                    "Calendar Semester#2",
+                    "Calendar Year#4",
+                    "KEY0#96",
+                    "KEY1#12",
+                    "MEMBER_VALUE#96",
+                    "NAME#79"
+                  ]
+                }
+              ],
+              "columns": [
+                "Calendar Year - Member Key#2",
+                "Calendar Year#3",
+                "KEY0#95",
+                "MEMBER_VALUE#95",
+                "NAME#78"
+              ]
+            }
+          ],
+          "columns": [
+            "[Delivery Date].[Calendar].[(All)]",
+            "[Delivery Date].[Calendar].[(All)] - Member Key",
+            "KEY0#94",
+            "MEMBER_VALUE#94",
+            "NAME#77"
+          ]
+        },
+        {
+          "name": "Calendar Year",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Calendar Year",
+          "keys": [
+            {
+              "name": "Calendar Year - Member Key#2",
+              "isPrimary": "true",
+              "columns": [
+                "Calendar Year - Member Key#2"
+              ]
+            },
+            {
+              "name": "Calendar Year",
+              "columns": [
+                "Calendar Year#3"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Calendar Semester",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Calendar Semester",
+              "keys": [
+                {
+                  "name": "Calendar Semester - Member Key#1",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Calendar Semester - Member Key#1"
+                  ]
+                },
+                {
+                  "name": "Calendar Semester",
+                  "columns": [
+                    "Calendar Semester#2"
+                  ]
+                }
+              ],
+              "childLevels": [
+                {
+                  "name": "Calendar Quarter",
+                  "isGTA": false,
+                  "memberCount": 1,
+                  "levelConst": "Calendar Quarter",
+                  "keys": [
+                    {
+                      "name": "Calendar Quarter - Member Key#1",
+                      "isPrimary": "true",
+                      "columns": [
+                        "Calendar Quarter - Member Key#1"
+                      ]
+                    },
+                    {
+                      "name": "Calendar Quarter",
+                      "columns": [
+                        "Calendar Quarter#3"
+                      ]
+                    }
+                  ],
+                  "childLevels": [
+                    {
+                      "name": "Month",
+                      "isGTA": false,
+                      "memberCount": 1,
+                      "levelConst": "Month",
+                      "keys": [
+                        {
+                          "name": "Month - Member Key#2",
+                          "isPrimary": "true",
+                          "columns": [
+                            "Month - Member Key#2"
+                          ]
+                        },
+                        {
+                          "name": "Month",
+                          "columns": [
+                            "Month#2"
+                          ]
+                        }
+                      ],
+                      "childLevels": [
+                        {
+                          "name": "Date",
+                          "isGTA": false,
+                          "memberCount": 1,
+                          "levelConst": "Date",
+                          "keys": [
+                            {
+                              "name": "Date - Member Key#3",
+                              "isPrimary": "true",
+                              "columns": [
+                                "Date - Member Key#3"
+                              ]
+                            },
+                            {
+                              "name": "Date",
+                              "columns": [
+                                "Date#3"
+                              ]
+                            }
+                          ],
+                          "columns": [
+                            "Date - Member Key#3",
+                            "Date#3",
+                            "Day Name#4",
+                            "Day of Month#4",
+                            "Day of Week#4",
+                            "Day of Year#4",
+                            "KEY0#99",
+                            "MEMBER_VALUE#99",
+                            "Month Name#3",
+                            "NAME#82",
+                            "Week of Year#4"
+                          ]
+                        }
+                      ],
+                      "columns": [
+                        "Calendar Quarter#4",
+                        "KEY0#98",
+                        "KEY1#14",
+                        "MEMBER_VALUE#98",
+                        "Month - Member Key#2",
+                        "Month of Year#3",
+                        "Month#2",
+                        "NAME#81"
+                      ]
+                    }
+                  ],
+                  "columns": [
+                    "Calendar Quarter - Member Key#1",
+                    "Calendar Quarter of Year#2",
+                    "Calendar Quarter#3",
+                    "Calendar Semester of Year#2",
+                    "Calendar Semester#3",
+                    "Fiscal Quarter#2",
+                    "KEY0#97",
+                    "KEY1#13",
+                    "MEMBER_VALUE#97",
+                    "NAME#80"
+                  ]
+                }
+              ],
+              "columns": [
+                "Calendar Semester - Member Key#1",
+                "Calendar Semester#2",
+                "Calendar Year#4",
+                "KEY0#96",
+                "KEY1#12",
+                "MEMBER_VALUE#96",
+                "NAME#79"
+              ]
+            }
+          ],
+          "columns": [
+            "Calendar Year - Member Key#2",
+            "Calendar Year#3",
+            "KEY0#95",
+            "MEMBER_VALUE#95",
+            "NAME#78"
+          ]
+        },
+        {
+          "name": "Calendar Semester",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Calendar Semester",
+          "keys": [
+            {
+              "name": "Calendar Semester - Member Key#1",
+              "isPrimary": "true",
+              "columns": [
+                "Calendar Semester - Member Key#1"
+              ]
+            },
+            {
+              "name": "Calendar Semester",
+              "columns": [
+                "Calendar Semester#2"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Calendar Quarter",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Calendar Quarter",
+              "keys": [
+                {
+                  "name": "Calendar Quarter - Member Key#1",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Calendar Quarter - Member Key#1"
+                  ]
+                },
+                {
+                  "name": "Calendar Quarter",
+                  "columns": [
+                    "Calendar Quarter#3"
+                  ]
+                }
+              ],
+              "childLevels": [
+                {
+                  "name": "Month",
+                  "isGTA": false,
+                  "memberCount": 1,
+                  "levelConst": "Month",
+                  "keys": [
+                    {
+                      "name": "Month - Member Key#2",
+                      "isPrimary": "true",
+                      "columns": [
+                        "Month - Member Key#2"
+                      ]
+                    },
+                    {
+                      "name": "Month",
+                      "columns": [
+                        "Month#2"
+                      ]
+                    }
+                  ],
+                  "childLevels": [
+                    {
+                      "name": "Date",
+                      "isGTA": false,
+                      "memberCount": 1,
+                      "levelConst": "Date",
+                      "keys": [
+                        {
+                          "name": "Date - Member Key#3",
+                          "isPrimary": "true",
+                          "columns": [
+                            "Date - Member Key#3"
+                          ]
+                        },
+                        {
+                          "name": "Date",
+                          "columns": [
+                            "Date#3"
+                          ]
+                        }
+                      ],
+                      "columns": [
+                        "Date - Member Key#3",
+                        "Date#3",
+                        "Day Name#4",
+                        "Day of Month#4",
+                        "Day of Week#4",
+                        "Day of Year#4",
+                        "KEY0#99",
+                        "MEMBER_VALUE#99",
+                        "Month Name#3",
+                        "NAME#82",
+                        "Week of Year#4"
+                      ]
+                    }
+                  ],
+                  "columns": [
+                    "Calendar Quarter#4",
+                    "KEY0#98",
+                    "KEY1#14",
+                    "MEMBER_VALUE#98",
+                    "Month - Member Key#2",
+                    "Month of Year#3",
+                    "Month#2",
+                    "NAME#81"
+                  ]
+                }
+              ],
+              "columns": [
+                "Calendar Quarter - Member Key#1",
+                "Calendar Quarter of Year#2",
+                "Calendar Quarter#3",
+                "Calendar Semester of Year#2",
+                "Calendar Semester#3",
+                "Fiscal Quarter#2",
+                "KEY0#97",
+                "KEY1#13",
+                "MEMBER_VALUE#97",
+                "NAME#80"
+              ]
+            }
+          ],
+          "columns": [
+            "Calendar Semester - Member Key#1",
+            "Calendar Semester#2",
+            "Calendar Year#4",
+            "KEY0#96",
+            "KEY1#12",
+            "MEMBER_VALUE#96",
+            "NAME#79"
+          ]
+        },
+        {
+          "name": "Calendar Quarter",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Calendar Quarter",
+          "keys": [
+            {
+              "name": "Calendar Quarter - Member Key#1",
+              "isPrimary": "true",
+              "columns": [
+                "Calendar Quarter - Member Key#1"
+              ]
+            },
+            {
+              "name": "Calendar Quarter",
+              "columns": [
+                "Calendar Quarter#3"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Month",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Month",
+              "keys": [
+                {
+                  "name": "Month - Member Key#2",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Month - Member Key#2"
+                  ]
+                },
+                {
+                  "name": "Month",
+                  "columns": [
+                    "Month#2"
+                  ]
+                }
+              ],
+              "childLevels": [
+                {
+                  "name": "Date",
+                  "isGTA": false,
+                  "memberCount": 1,
+                  "levelConst": "Date",
+                  "keys": [
+                    {
+                      "name": "Date - Member Key#3",
+                      "isPrimary": "true",
+                      "columns": [
+                        "Date - Member Key#3"
+                      ]
+                    },
+                    {
+                      "name": "Date",
+                      "columns": [
+                        "Date#3"
+                      ]
+                    }
+                  ],
+                  "columns": [
+                    "Date - Member Key#3",
+                    "Date#3",
+                    "Day Name#4",
+                    "Day of Month#4",
+                    "Day of Week#4",
+                    "Day of Year#4",
+                    "KEY0#99",
+                    "MEMBER_VALUE#99",
+                    "Month Name#3",
+                    "NAME#82",
+                    "Week of Year#4"
+                  ]
+                }
+              ],
+              "columns": [
+                "Calendar Quarter#4",
+                "KEY0#98",
+                "KEY1#14",
+                "MEMBER_VALUE#98",
+                "Month - Member Key#2",
+                "Month of Year#3",
+                "Month#2",
+                "NAME#81"
+              ]
+            }
+          ],
+          "columns": [
+            "Calendar Quarter - Member Key#1",
+            "Calendar Quarter of Year#2",
+            "Calendar Quarter#3",
+            "Calendar Semester of Year#2",
+            "Calendar Semester#3",
+            "Fiscal Quarter#2",
+            "KEY0#97",
+            "KEY1#13",
+            "MEMBER_VALUE#97",
+            "NAME#80"
+          ]
+        },
+        {
+          "name": "Month",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Month",
+          "keys": [
+            {
+              "name": "Month - Member Key#2",
+              "isPrimary": "true",
+              "columns": [
+                "Month - Member Key#2"
+              ]
+            },
+            {
+              "name": "Month",
+              "columns": [
+                "Month#2"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Date",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Date",
+              "keys": [
+                {
+                  "name": "Date - Member Key#3",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Date - Member Key#3"
+                  ]
+                },
+                {
+                  "name": "Date",
+                  "columns": [
+                    "Date#3"
+                  ]
+                }
+              ],
+              "columns": [
+                "Date - Member Key#3",
+                "Date#3",
+                "Day Name#4",
+                "Day of Month#4",
+                "Day of Week#4",
+                "Day of Year#4",
+                "KEY0#99",
+                "MEMBER_VALUE#99",
+                "Month Name#3",
+                "NAME#82",
+                "Week of Year#4"
+              ]
+            }
+          ],
+          "columns": [
+            "Calendar Quarter#4",
+            "KEY0#98",
+            "KEY1#14",
+            "MEMBER_VALUE#98",
+            "Month - Member Key#2",
+            "Month of Year#3",
+            "Month#2",
+            "NAME#81"
+          ]
+        },
+        {
+          "name": "Date",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Date",
+          "keys": [
+            {
+              "name": "Date - Member Key#3",
+              "isPrimary": "true",
+              "columns": [
+                "Date - Member Key#3"
+              ]
+            },
+            {
+              "name": "Date",
+              "columns": [
+                "Date#3"
+              ]
+            }
+          ],
+          "columns": [
+            "Date - Member Key#3",
+            "Date#3",
+            "Day Name#4",
+            "Day of Month#4",
+            "Day of Week#4",
+            "Day of Year#4",
+            "KEY0#99",
+            "MEMBER_VALUE#99",
+            "Month Name#3",
+            "NAME#82",
+            "Week of Year#4"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Delivery Date.Calendar",
+        "levels": [
+          {
+            "name": "[Delivery Date].[Calendar].[(All)]",
+            "childLevels": [
+              {
+                "name": "Calendar Year",
+                "childLevels": [
+                  {
+                    "name": "Calendar Semester",
+                    "childLevels": [
+                      {
+                        "name": "Calendar Quarter",
+                        "childLevels": [
+                          {
+                            "name": "Month",
+                            "childLevels": [
+                              {
+                                "name": "Date"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Calendar Year",
+            "childLevels": [
+              {
+                "name": "Calendar Semester",
+                "childLevels": [
+                  {
+                    "name": "Calendar Quarter",
+                    "childLevels": [
+                      {
+                        "name": "Month",
+                        "childLevels": [
+                          {
+                            "name": "Date"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Calendar Semester",
+            "childLevels": [
+              {
+                "name": "Calendar Quarter",
+                "childLevels": [
+                  {
+                    "name": "Month",
+                    "childLevels": [
+                      {
+                        "name": "Date"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Calendar Quarter",
+            "childLevels": [
+              {
+                "name": "Month",
+                "childLevels": [
+                  {
+                    "name": "Date"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Month",
+            "childLevels": [
+              {
+                "name": "Date"
+              }
+            ]
+          },
+          {
+            "name": "Date"
+          }
+        ]
+      }
+    }
+  }
+}

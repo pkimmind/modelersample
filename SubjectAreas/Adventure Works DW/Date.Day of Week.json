@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Date.Day of Week",
+    "presentationColumns": [
+      {
+        "name": "[Date].[Day of Week].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day of Week.[Date].[Day of Week].[(All)]"
+      },
+      {
+        "name": "Day of Week#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day of Week.Day of Week#2"
+      },
+      {
+        "name": "KEY0#74",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day of Week.KEY0#74"
+      },
+      {
+        "name": "KEY0#75",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day of Week.KEY0#75"
+      },
+      {
+        "name": "MEMBER_VALUE#74",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day of Week.MEMBER_VALUE#74"
+      },
+      {
+        "name": "MEMBER_VALUE#75",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day of Week.MEMBER_VALUE#75"
+      },
+      {
+        "name": "NAME#62",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day of Week.NAME#62"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Date.Day of Week",
+        "levels": [
+          {
+            "name": "[Date].[Day of Week].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Date].[Day of Week].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day of Week.[Date].[Day of Week].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Day of Week",
+            "displayColumns": [
+              {
+                "name": "Day of Week#2",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day of Week.Day of Week#2"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

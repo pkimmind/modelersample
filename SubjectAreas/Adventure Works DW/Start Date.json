@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "Start Date",
+    "presentationColumns": [
+      {
+        "name": "[Employee].[Start Date].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date.[Employee].[Start Date].[(All)]"
+      },
+      {
+        "name": "KEY0#181",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date.KEY0#181"
+      },
+      {
+        "name": "KEY0#182",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date.KEY0#182"
+      },
+      {
+        "name": "MEMBER_VALUE#181",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date.MEMBER_VALUE#181"
+      },
+      {
+        "name": "MEMBER_VALUE#182",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date.MEMBER_VALUE#182"
+      },
+      {
+        "name": "NAME#145",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date.NAME#145"
+      },
+      {
+        "name": "NAME#146",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date.NAME#146"
+      },
+      {
+        "name": "Start Date#7",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date.Start Date#7"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Start Date",
+        "levels": [
+          {
+            "name": "[Employee].[Start Date].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Employee].[Start Date].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date.[Employee].[Start Date].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Start Date",
+            "displayColumns": [
+              {
+                "name": "Start Date#7",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date.Start Date#7"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

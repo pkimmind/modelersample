@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Delivery Date.Calendar Semester of Year",
+    "presentationColumns": [
+      {
+        "name": "[Delivery Date].[Calendar Semester of Year].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Semester of Year.[Delivery Date].[Calendar Semester of Year].[(All)]"
+      },
+      {
+        "name": "Calendar Semester of Year#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Semester of Year.Calendar Semester of Year#3"
+      },
+      {
+        "name": "KEY0#102",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Semester of Year.KEY0#102"
+      },
+      {
+        "name": "KEY0#103",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Semester of Year.KEY0#103"
+      },
+      {
+        "name": "MEMBER_VALUE#102",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Semester of Year.MEMBER_VALUE#102"
+      },
+      {
+        "name": "MEMBER_VALUE#103",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Semester of Year.MEMBER_VALUE#103"
+      },
+      {
+        "name": "NAME#84",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Semester of Year.NAME#84"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Delivery Date.Calendar Semester of Year",
+        "levels": [
+          {
+            "name": "[Delivery Date].[Calendar Semester of Year].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Delivery Date].[Calendar Semester of Year].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Semester of Year.[Delivery Date].[Calendar Semester of Year].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Calendar Semester of Year",
+            "displayColumns": [
+              {
+                "name": "Calendar Semester of Year#3",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Semester of Year.Calendar Semester of Year#3"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

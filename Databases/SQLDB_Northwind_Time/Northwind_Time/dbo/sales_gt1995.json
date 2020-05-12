@@ -1,0 +1,41 @@
+{
+  "physicalTable": {
+    "name": "sales_gt1995",
+    "description": "External Name:A
+",
+    "caching": {
+    },
+    "physicalColumns": [
+      {
+        "name": "row_wid",
+        "dataType": "DOUBLE",
+        "length": 10
+      },
+      {
+        "name": "cal_year",
+        "dataType": "DOUBLE",
+        "length": 10
+      },
+      {
+        "name": "cal_qtr",
+        "dataType": "DOUBLE",
+        "length": 10
+      },
+      {
+        "name": "cal_month",
+        "dataType": "DOUBLE",
+        "length": 10
+      },
+      {
+        "name": "calendar_datetime",
+        "dataType": "DATETIME",
+        "length": 23
+      },
+      {
+        "name": "qtysold",
+        "dataType": "INT",
+        "length": 10
+      }
+    ]
+  }
+}

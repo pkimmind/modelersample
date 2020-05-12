@@ -1,0 +1,413 @@
+{
+  "logicalTable": {
+    "name": "Number of Children At Home",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Customer].[Number of Children At Home].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Customer].[Number of Children At Home].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Customer].[Number of Children At Home].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Customer].[Number of Children At Home].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Customer].[Number of Children At Home].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#42",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#42"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#43",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#43"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#42",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#42"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#43",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#43"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#36",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#36"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Number of Children At Home - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Number of Children At Home - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Number of Children At Home#2",
+        "writeable": false,
+        "descriptorColumn": "Number of Children At Home - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Number of Children At Home#2"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Number of Children At Home",
+              "isPrimary": "true",
+              "columns": [
+                "[Customer].[Number of Children At Home].[(All)]",
+                "Number of Children At Home#2"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Number of Children At Home",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "[Customer].[Number of Children At Home].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Customer].[Number of Children At Home].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Customer].[Number of Children At Home].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Customer].[Number of Children At Home].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#42",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#42"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#43",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#43"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#42",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#42"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#43",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#43"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#36",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#36"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Number of Children At Home - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Number of Children At Home - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Number of Children At Home#2",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Number of Children At Home#2"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Number of Children At Home.Number of Children At Home"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Number of Children At Home",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "[Customer].[Number of Children At Home].[(All)]",
+      "levels": [
+        {
+          "name": "[Customer].[Number of Children At Home].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Customer].[Number of Children At Home].[(All)]",
+          "keys": [
+            {
+              "name": "[Customer].[Number of Children At Home].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Customer].[Number of Children At Home].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Customer].[Number of Children At Home].[(All)]",
+              "columns": [
+                "[Customer].[Number of Children At Home].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Number of Children At Home",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Number of Children At Home",
+              "keys": [
+                {
+                  "name": "Number of Children At Home - Member Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Number of Children At Home - Member Key"
+                  ]
+                },
+                {
+                  "name": "Number of Children At Home",
+                  "columns": [
+                    "Number of Children At Home#2"
+                  ]
+                }
+              ],
+              "columns": [
+                "KEY0#43",
+                "MEMBER_VALUE#43",
+                "Number of Children At Home - Member Key",
+                "Number of Children At Home#2"
+              ]
+            }
+          ],
+          "columns": [
+            "[Customer].[Number of Children At Home].[(All)]",
+            "[Customer].[Number of Children At Home].[(All)] - Member Key",
+            "KEY0#42",
+            "MEMBER_VALUE#42",
+            "NAME#36"
+          ]
+        },
+        {
+          "name": "Number of Children At Home",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Number of Children At Home",
+          "keys": [
+            {
+              "name": "Number of Children At Home - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "Number of Children At Home - Member Key"
+              ]
+            },
+            {
+              "name": "Number of Children At Home",
+              "columns": [
+                "Number of Children At Home#2"
+              ]
+            }
+          ],
+          "columns": [
+            "KEY0#43",
+            "MEMBER_VALUE#43",
+            "Number of Children At Home - Member Key",
+            "Number of Children At Home#2"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Number of Children At Home",
+        "levels": [
+          {
+            "name": "[Customer].[Number of Children At Home].[(All)]",
+            "childLevels": [
+              {
+                "name": "Number of Children At Home"
+              }
+            ]
+          },
+          {
+            "name": "Number of Children At Home"
+          }
+        ]
+      }
+    }
+  }
+}

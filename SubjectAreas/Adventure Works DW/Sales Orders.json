@@ -1,0 +1,83 @@
+{
+  "presentationTable": {
+    "name": "Sales Orders",
+    "presentationColumns": [
+      {
+        "name": "[Sales Summary Order Details].[Sales Orders].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Orders.[Sales Summary Order Details].[Sales Orders].[(All)]"
+      },
+      {
+        "name": "KEY0#372",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Orders.KEY0#372"
+      },
+      {
+        "name": "KEY0#373",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Orders.KEY0#373"
+      },
+      {
+        "name": "KEY0#374",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Orders.KEY0#374"
+      },
+      {
+        "name": "MEMBER_VALUE#372",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Orders.MEMBER_VALUE#372"
+      },
+      {
+        "name": "MEMBER_VALUE#373",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Orders.MEMBER_VALUE#373"
+      },
+      {
+        "name": "MEMBER_VALUE#374",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Orders.MEMBER_VALUE#374"
+      },
+      {
+        "name": "NAME#290",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Orders.NAME#290"
+      },
+      {
+        "name": "Order Line#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Orders.Order Line#2"
+      },
+      {
+        "name": "Order Number#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Orders.Order Number#2"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Sales Orders",
+        "levels": [
+          {
+            "name": "[Sales Summary Order Details].[Sales Orders].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Sales Summary Order Details].[Sales Orders].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Orders.[Sales Summary Order Details].[Sales Orders].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Order Number",
+            "displayColumns": [
+              {
+                "name": "Order Number#2",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Orders.Order Number#2"
+              }
+            ]
+          },
+          {
+            "name": "Order Line",
+            "displayColumns": [
+              {
+                "name": "Order Line#2",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Orders.Order Line#2"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

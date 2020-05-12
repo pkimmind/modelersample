@@ -1,0 +1,27 @@
+{
+  "presentationTable": {
+    "name": "SupplierRegion",
+    "presentationColumns": [
+      {
+        "name": "Country",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SupplierRegion.Country"
+      },
+      {
+        "name": "Region",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SupplierRegion.Region"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SupplierRegion.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SupplierRegion.QtySold"
+      },
+      {
+        "name": "RegionShare",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SupplierRegion.RegionShare"
+      }
+    ]
+  }
+}

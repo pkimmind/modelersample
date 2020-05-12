@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "Start Date#2",
+    "presentationColumns": [
+      {
+        "name": "[Promotion].[Start Date].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date#2.[Promotion].[Start Date].[(All)]"
+      },
+      {
+        "name": "KEY0#298",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date#2.KEY0#298"
+      },
+      {
+        "name": "KEY0#299",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date#2.KEY0#299"
+      },
+      {
+        "name": "MEMBER_VALUE#298",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date#2.MEMBER_VALUE#298"
+      },
+      {
+        "name": "MEMBER_VALUE#299",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date#2.MEMBER_VALUE#299"
+      },
+      {
+        "name": "NAME#238",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date#2.NAME#238"
+      },
+      {
+        "name": "NAME#239",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date#2.NAME#239"
+      },
+      {
+        "name": "Start Date#14",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date#2.Start Date#14"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Start Date#2",
+        "levels": [
+          {
+            "name": "[Promotion].[Start Date].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Promotion].[Start Date].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date#2.[Promotion].[Start Date].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Start Date",
+            "displayColumns": [
+              {
+                "name": "Start Date#14",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date#2.Start Date#14"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

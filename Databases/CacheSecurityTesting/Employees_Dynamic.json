@@ -1,0 +1,22 @@
+{
+  "physicalTable": {
+    "name": "Employees_Dynamic",
+    "sourceType": "SELECT",
+    "caching": {
+      "expiryTime": 1,
+      "expiryUnit": "DAYS"
+    },
+    "selectStatements": [
+      {
+        "databaseType": "DEFAULT",
+        "query": "select case when upper('valueof(NQ_SESSION.USER)') = 'WEBLOGIC' then  2 * employeeid   else employeeid   end  as employeeidVariable from employees"
+      }
+    ],
+    "physicalColumns": [
+      {
+        "name": "employeeidVariable",
+        "dataType": "INT"
+      }
+    ]
+  }
+}

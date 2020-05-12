@@ -1,0 +1,142 @@
+{
+  "logicalTable": {
+    "name": "Year",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "Year",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Orders",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": " EXTRACT( YEAR  FROM %1)",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.OrderDate"
+          ]
+        }
+              }
+            },
+            {
+              "logicalTableSource": "Year",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": " EXTRACT( YEAR  FROM %1)",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.OrderDate"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Revenue",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:AutoSnowflakeSales.SalesFacts.Revenue"
+              ]
+            }
+          },
+        ]
+      {
+        "name": "PlanRevenue",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:AutoSnowflakeSales.SalesFacts.PlanRevenue"
+              ]
+            }
+          },
+        ]
+      {
+        "name": "QtySold",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:AutoSnowflakeSales.SalesFacts.QtySold"
+              ]
+            }
+          },
+        ]
+    ],
+    "keys": [
+            {
+              "name": "Year",
+              "isPrimary": "true",
+              "columns": [
+                "Year"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Orders",
+        "isDistinct": "true",
+        "logicalTableRef": "Year",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "Year",
+                  "logicalExpression": {
+                    "expressionTemplate": " EXTRACT( YEAR  FROM %1)",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.OrderDate"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Orders",
+            "joins": [
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Year",
+        "logicalTableRef": "Year",
+        "description": "Required to handle the many-to-many physical join between the physical orders and salesplan tables.",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "Year",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Year.Year"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Year",
+            "joins": [
+            ]
+          }
+        ]
+      },
+    ]
+  }
+}

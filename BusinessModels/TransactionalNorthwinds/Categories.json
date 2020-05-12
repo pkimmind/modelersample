@@ -1,0 +1,316 @@
+{
+  "logicalTable": {
+    "name": "Categories",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "CategoryID",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Categories",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Categories.CategoryID"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "CategoryName",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Categories",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Categories.CategoryName"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Description",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Categories",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Categories.Description"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "PK__Categorie__Categ__01E85449",
+              "isPrimary": "true",
+              "columns": [
+                "CategoryID"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Categories",
+        "logicalTableRef": "Categories",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "CategoryID",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Categories.CategoryID"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "CategoryName",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Categories.CategoryName"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Description",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Categories.Description"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Categories",
+            "joins": [
+            ]
+          }
+        ]
+      },
+    ],
+    "dimension": {
+      "name": "Product Dimension",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "levels": [
+        {
+          "name": "Suppliers",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Suppliers",
+          "keys": [
+            {
+              "name": "SupplierID",
+              "isPrimary": "true",
+              "columns": [
+                "SupplierID"
+              ]
+            },
+            {
+              "name": "CompanyName",
+              "columns": [
+                "CompanyName"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Products",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Products",
+              "keys": [
+                {
+                  "name": "ProductID",
+                  "isPrimary": "true",
+                  "columns": [
+                    "ProductID"
+                  ]
+                },
+                {
+                  "name": "ProductName",
+                  "columns": [
+                    "ProductName"
+                  ]
+                }
+              ],
+              "columns": [
+                "ProductID",
+                "ProductName",
+                "SupplierID",
+                "CategoryID",
+                "QuantityPerUnit",
+                "UnitPrice",
+                "UnitsInStock",
+                "UnitsOnOrder",
+                "ReorderLevel",
+                "Discontinued"
+              ]
+            }
+          ],
+          "columns": [
+            "SupplierID",
+            "CompanyName",
+            "ContactName",
+            "ContactTitle",
+            "Address",
+            "City",
+            "Region",
+            "PostalCode",
+            "Country",
+            "Phone",
+            "Fax"
+          ]
+        },
+        {
+          "name": "Products",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Products",
+          "keys": [
+            {
+              "name": "ProductID",
+              "isPrimary": "true",
+              "columns": [
+                "ProductID"
+              ]
+            },
+            {
+              "name": "ProductName",
+              "columns": [
+                "ProductName"
+              ]
+            }
+          ],
+          "columns": [
+            "ProductID",
+            "ProductName",
+            "SupplierID",
+            "CategoryID",
+            "QuantityPerUnit",
+            "UnitPrice",
+            "UnitsInStock",
+            "UnitsOnOrder",
+            "ReorderLevel",
+            "Discontinued"
+          ]
+        },
+        {
+          "name": "Categories",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Categories",
+          "keys": [
+            {
+              "name": "CategoryID",
+              "isPrimary": "true",
+              "columns": [
+                "CategoryID"
+              ]
+            },
+            {
+              "name": "CategoryName",
+              "columns": [
+                "CategoryName"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Products",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Products",
+              "keys": [
+                {
+                  "name": "ProductID",
+                  "isPrimary": "true",
+                  "columns": [
+                    "ProductID"
+                  ]
+                },
+                {
+                  "name": "ProductName",
+                  "columns": [
+                    "ProductName"
+                  ]
+                }
+              ],
+              "columns": [
+                "ProductID",
+                "ProductName",
+                "SupplierID",
+                "CategoryID",
+                "QuantityPerUnit",
+                "UnitPrice",
+                "UnitsInStock",
+                "UnitsOnOrder",
+                "ReorderLevel",
+                "Discontinued"
+              ]
+            }
+          ],
+          "columns": [
+            "CategoryID",
+            "CategoryName",
+            "Description"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Product Dimension",
+        "levels": [
+          {
+            "name": "Suppliers",
+            "childLevels": [
+              {
+                "name": "Products"
+              }
+            ]
+          },
+          {
+            "name": "Products"
+          },
+          {
+            "name": "Categories",
+            "childLevels": [
+              {
+                "name": "Products"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

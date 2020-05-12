@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Source Currency",
+    "presentationColumns": [
+      {
+        "name": "[Source Currency].[Source Currency].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Source Currency.[Source Currency].[Source Currency].[(All)]"
+      },
+      {
+        "name": "KEY0#424",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Source Currency.KEY0#424"
+      },
+      {
+        "name": "KEY0#425",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Source Currency.KEY0#425"
+      },
+      {
+        "name": "MEMBER_VALUE#424",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Source Currency.MEMBER_VALUE#424"
+      },
+      {
+        "name": "MEMBER_VALUE#425",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Source Currency.MEMBER_VALUE#425"
+      },
+      {
+        "name": "NAME#328",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Source Currency.NAME#328"
+      },
+      {
+        "name": "Source Currency",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Source Currency.Source Currency"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Source Currency",
+        "levels": [
+          {
+            "name": "[Source Currency].[Source Currency].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Source Currency].[Source Currency].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Source Currency.[Source Currency].[Source Currency].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Source Currency",
+            "displayColumns": [
+              {
+                "name": "Source Currency",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Source Currency.Source Currency"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

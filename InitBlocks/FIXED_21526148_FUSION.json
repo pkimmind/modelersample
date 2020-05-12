@@ -1,0 +1,23 @@
+{
+  "initBlock": {
+    "name": "FIXED_21526148_FUSION",
+    "type": "SESSION",
+    "isEnabled": false,
+    "refreshPeriod": 86400,
+    "connectionPool": "connectionPool:SQLDB_Northwind.Northwind Init Block Connections",
+    "selectStatements": [
+      {
+        "databaseType": "DEFAULT",
+        "query": "select 'TEST_21526148____FUSION', employeeid from employees;"
+      }
+    ],
+    "targetVariables": [
+      {
+        "name": "TEST_21526148____FUSION",
+"Expr": {
+  "expressionTemplate": "1",
+}
+      }
+    ]
+  }
+}

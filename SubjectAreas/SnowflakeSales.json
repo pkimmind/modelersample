@@ -1,0 +1,89 @@
+{
+  "subjectArea": {
+    "name": "SnowflakeSales",
+    "sourceBusinessModel": "businessModel:SnowflakeSales",
+    "alternateNames": [
+      "SnowflakeAlias"
+    ],
+    "implicitFactColumn": "logicalColumn:SnowflakeSales.SalesFacts.Revenue",
+    "tableOrder": [
+      {
+        "name": "presentationTable:SnowflakeSales..Sales"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales..Product"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales..Supplier"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales..Category"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales..Category2"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales..SupplierCity"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales..SupplierRegion"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales..SupplierCountry"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales..Shipper"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales..Employee"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales..EmployeeCity"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales..EmployeeRegion"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales..EmployeeCountry"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales..Week"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales..Qtr"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales..Year"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales..Site"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales..Customer"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales..Day"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales..Cross Sell"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales..MultiDimShareBases"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales..StockTicker"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales..MOLAP Geography"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales..MOLAP Facts"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales..Sales2"
+      }
+    ],
+    "permissions": {
+    }
+  }
+}

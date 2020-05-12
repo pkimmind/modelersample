@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Number of Cars Owned",
+    "presentationColumns": [
+      {
+        "name": "[Customer].[Number of Cars Owned].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Cars Owned.[Customer].[Number of Cars Owned].[(All)]"
+      },
+      {
+        "name": "KEY0#40",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Cars Owned.KEY0#40"
+      },
+      {
+        "name": "KEY0#41",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Cars Owned.KEY0#41"
+      },
+      {
+        "name": "MEMBER_VALUE#40",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Cars Owned.MEMBER_VALUE#40"
+      },
+      {
+        "name": "MEMBER_VALUE#41",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Cars Owned.MEMBER_VALUE#41"
+      },
+      {
+        "name": "NAME#35",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Cars Owned.NAME#35"
+      },
+      {
+        "name": "Number of Cars Owned#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Cars Owned.Number of Cars Owned#2"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Number of Cars Owned",
+        "levels": [
+          {
+            "name": "[Customer].[Number of Cars Owned].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Customer].[Number of Cars Owned].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Cars Owned.[Customer].[Number of Cars Owned].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Number of Cars Owned",
+            "displayColumns": [
+              {
+                "name": "Number of Cars Owned#2",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Cars Owned.Number of Cars Owned#2"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

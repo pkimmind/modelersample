@@ -1,0 +1,23 @@
+{
+  "presentationTable": {
+    "name": "Category2",
+    "presentationColumns": [
+      {
+        "name": "CategoryID",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Category.CategoryID"
+      },
+      {
+        "name": "CategoryName",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Category.CategoryName"
+      },
+      {
+        "name": "Description",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Category.Description"
+      },
+      {
+        "name": "CategoryIDNonKeyDuplicate",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Category.CategoryIDNonKeyDuplicate"
+      }
+    ]
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "logicalTable": {
+    "name": "NUMBER_1E9",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "COL_ROWNUM",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "NUMBER_1E9",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:NumberTest..NORTHWIND.NUMBER_1E9.COL_ROWNUM"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "COL_ROWNUM_1E9",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "NUMBER_1E9",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:NumberTest..NORTHWIND.NUMBER_1E9.COL_ROWNUM_1E9"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "COL_ROWNUM_1EMINUS9",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "NUMBER_1E9",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:NumberTest..NORTHWIND.NUMBER_1E9.COL_ROWNUM_1EMINUS9"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "COL_ROWNUM_MINUS1E9",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "NUMBER_1E9",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:NumberTest..NORTHWIND.NUMBER_1E9.COL_ROWNUM_MINUS1E9"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "NUMBER_1E9_Key",
+              "isPrimary": "true",
+              "columns": [
+                "COL_ROWNUM"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "NUMBER_1E9",
+        "logicalTableRef": "NUMBER_1E9",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "COL_ROWNUM",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:NumberTest..NORTHWIND.NUMBER_1E9.COL_ROWNUM"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "COL_ROWNUM_1E9",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:NumberTest..NORTHWIND.NUMBER_1E9.COL_ROWNUM_1E9"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "COL_ROWNUM_1EMINUS9",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:NumberTest..NORTHWIND.NUMBER_1E9.COL_ROWNUM_1EMINUS9"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "COL_ROWNUM_MINUS1E9",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:NumberTest..NORTHWIND.NUMBER_1E9.COL_ROWNUM_MINUS1E9"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "NUMBER_1E9",
+            "joins": [
+            ]
+          }
+        ]
+      },
+    ]
+  }
+}

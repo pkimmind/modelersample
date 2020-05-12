@@ -1,0 +1,74 @@
+{
+  "presentationTable": {
+    "name": "City",
+    "presentationColumns": [
+      {
+        "name": "[Customer].[City].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City.[Customer].[City].[(All)]"
+      },
+      {
+        "name": "City",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City.City"
+      },
+      {
+        "name": "KEY0#14",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City.KEY0#14"
+      },
+      {
+        "name": "KEY0#15",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City.KEY0#15"
+      },
+      {
+        "name": "KEY1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City.KEY1"
+      },
+      {
+        "name": "MEMBER_VALUE#14",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City.MEMBER_VALUE#14"
+      },
+      {
+        "name": "MEMBER_VALUE#15",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City.MEMBER_VALUE#15"
+      },
+      {
+        "name": "NAME#11",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City.NAME#11"
+      },
+      {
+        "name": "NAME#12",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City.NAME#12"
+      },
+      {
+        "name": "State-Province",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City.State-Province"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "City",
+        "levels": [
+          {
+            "name": "[Customer].[City].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Customer].[City].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City.[Customer].[City].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "City",
+            "displayColumns": [
+              {
+                "name": "City",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City.City"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

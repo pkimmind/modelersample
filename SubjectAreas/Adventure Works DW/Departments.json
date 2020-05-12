@@ -1,0 +1,74 @@
+{
+  "presentationTable": {
+    "name": "Departments",
+    "presentationColumns": [
+      {
+        "name": "Department Level 01",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Departments.Department Level 01"
+      },
+      {
+        "name": "Department Level 02",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Departments.Department Level 02"
+      },
+      {
+        "name": "Departments",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Departments.Departments"
+      },
+      {
+        "name": "Departments#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Departments.Departments#1"
+      },
+      {
+        "name": "KEY0#132",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Departments.KEY0#132"
+      },
+      {
+        "name": "KEY0#133",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Departments.KEY0#133"
+      },
+      {
+        "name": "MEMBER_VALUE#132",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Departments.MEMBER_VALUE#132"
+      },
+      {
+        "name": "MEMBER_VALUE#133",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Departments.MEMBER_VALUE#133"
+      },
+      {
+        "name": "NAME#107",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Departments.NAME#107"
+      },
+      {
+        "name": "NAME#108",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Departments.NAME#108"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Departments",
+        "levels": [
+          {
+            "name": "Department Level 01",
+            "displayColumns": [
+              {
+                "name": "Department Level 01",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Departments.Department Level 01"
+              }
+            ]
+          },
+          {
+            "name": "Department Level 02",
+            "displayColumns": [
+              {
+                "name": "Department Level 02",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Departments.Department Level 02"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,413 @@
+{
+  "logicalTable": {
+    "name": "Email Address#1",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Employee].[Email Address].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Employee].[Email Address].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Email Address].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Employee].[Email Address].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Email Address].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Email Address - Member Key#1",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Email Address - Member Key#1"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Email Address#3",
+        "writeable": false,
+        "descriptorColumn": "Email Address - Member Key#1",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Email Address#3"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#143",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#143"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#144",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#144"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#143",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#143"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#144",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#144"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#115",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#115"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Email Address#1",
+              "isPrimary": "true",
+              "columns": [
+                "[Employee].[Email Address].[(All)]",
+                "Email Address#3"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Email Address#1",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "[Employee].[Email Address].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Email Address].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Employee].[Email Address].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Email Address].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Email Address - Member Key#1",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Email Address - Member Key#1"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Email Address#3",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Email Address#3"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#143",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#143"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#144",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#144"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#143",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#143"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#144",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#144"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#115",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#115"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Email Address#1.Email Address"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Email Address#1",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "[Employee].[Email Address].[(All)]",
+      "levels": [
+        {
+          "name": "[Employee].[Email Address].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Employee].[Email Address].[(All)]",
+          "keys": [
+            {
+              "name": "[Employee].[Email Address].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Employee].[Email Address].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Employee].[Email Address].[(All)]",
+              "columns": [
+                "[Employee].[Email Address].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Email Address",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Email Address",
+              "keys": [
+                {
+                  "name": "Email Address - Member Key#1",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Email Address - Member Key#1"
+                  ]
+                },
+                {
+                  "name": "Email Address",
+                  "columns": [
+                    "Email Address#3"
+                  ]
+                }
+              ],
+              "columns": [
+                "Email Address - Member Key#1",
+                "Email Address#3",
+                "KEY0#144",
+                "MEMBER_VALUE#144"
+              ]
+            }
+          ],
+          "columns": [
+            "[Employee].[Email Address].[(All)]",
+            "[Employee].[Email Address].[(All)] - Member Key",
+            "KEY0#143",
+            "MEMBER_VALUE#143",
+            "NAME#115"
+          ]
+        },
+        {
+          "name": "Email Address",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Email Address",
+          "keys": [
+            {
+              "name": "Email Address - Member Key#1",
+              "isPrimary": "true",
+              "columns": [
+                "Email Address - Member Key#1"
+              ]
+            },
+            {
+              "name": "Email Address",
+              "columns": [
+                "Email Address#3"
+              ]
+            }
+          ],
+          "columns": [
+            "Email Address - Member Key#1",
+            "Email Address#3",
+            "KEY0#144",
+            "MEMBER_VALUE#144"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Email Address#1",
+        "levels": [
+          {
+            "name": "[Employee].[Email Address].[(All)]",
+            "childLevels": [
+              {
+                "name": "Email Address"
+              }
+            ]
+          },
+          {
+            "name": "Email Address"
+          }
+        ]
+      }
+    }
+  }
+}

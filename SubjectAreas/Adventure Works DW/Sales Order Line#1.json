@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Sales Order Line#1",
+    "presentationColumns": [
+      {
+        "name": "[Reseller Sales Order Details].[Sales Order Line].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Line#1.[Reseller Sales Order Details].[Sales Order Line].[(All)]"
+      },
+      {
+        "name": "KEY0#351",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Line#1.KEY0#351"
+      },
+      {
+        "name": "KEY0#352",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Line#1.KEY0#352"
+      },
+      {
+        "name": "MEMBER_VALUE#351",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Line#1.MEMBER_VALUE#351"
+      },
+      {
+        "name": "MEMBER_VALUE#352",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Line#1.MEMBER_VALUE#352"
+      },
+      {
+        "name": "NAME#278",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Line#1.NAME#278"
+      },
+      {
+        "name": "Sales Order Line#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Line#1.Sales Order Line#3"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Sales Order Line#1",
+        "levels": [
+          {
+            "name": "[Reseller Sales Order Details].[Sales Order Line].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Reseller Sales Order Details].[Sales Order Line].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Line#1.[Reseller Sales Order Details].[Sales Order Line].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Sales Order Line",
+            "displayColumns": [
+              {
+                "name": "Sales Order Line#3",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Line#1.Sales Order Line#3"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

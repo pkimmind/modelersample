@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "Ship Date.Fiscal Year",
+    "presentationColumns": [
+      {
+        "name": "[Ship Date].[Fiscal Year].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Fiscal Year.[Ship Date].[Fiscal Year].[(All)]"
+      },
+      {
+        "name": "Fiscal Year#8",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Fiscal Year.Fiscal Year#8"
+      },
+      {
+        "name": "KEY0#418",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Fiscal Year.KEY0#418"
+      },
+      {
+        "name": "KEY0#419",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Fiscal Year.KEY0#419"
+      },
+      {
+        "name": "MEMBER_VALUE#418",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Fiscal Year.MEMBER_VALUE#418"
+      },
+      {
+        "name": "MEMBER_VALUE#419",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Fiscal Year.MEMBER_VALUE#419"
+      },
+      {
+        "name": "NAME#323",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Fiscal Year.NAME#323"
+      },
+      {
+        "name": "NAME#324",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Fiscal Year.NAME#324"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Ship Date.Fiscal Year",
+        "levels": [
+          {
+            "name": "[Ship Date].[Fiscal Year].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Ship Date].[Fiscal Year].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Fiscal Year.[Ship Date].[Fiscal Year].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Fiscal Year",
+            "displayColumns": [
+              {
+                "name": "Fiscal Year#8",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Fiscal Year.Fiscal Year#8"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

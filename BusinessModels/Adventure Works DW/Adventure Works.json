@@ -1,0 +1,1693 @@
+{
+  "logicalTable": {
+    "name": "Adventure Works",
+    "type": "FACT",
+    "logicalColumns": [
+      {
+        "name": "Amount",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Amount"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Average Rate",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Average Rate"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Average Sales Amount",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Average Sales Amount"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Average Unit Price",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Average Unit Price"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Customer Count",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Customer Count"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Discount Amount",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Discount Amount"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Discount Percentage",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Discount Percentage"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "End of Day Rate",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.End of Day Rate"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Expense to Revenue Ratio",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Expense to Revenue Ratio"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Extended Amount",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Extended Amount"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Freight Cost",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Freight Cost"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Gross Profit",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Gross Profit"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Gross Profit Margin",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Gross Profit Margin"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Growth in Customer Base",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Growth in Customer Base"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Internet Average Sales Amount",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Internet Average Sales Amount"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Internet Average Unit Price",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Internet Average Unit Price"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Internet Extended Amount",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Internet Extended Amount"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Internet Freight Cost",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Internet Freight Cost"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Internet Gross Profit",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Internet Gross Profit"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Internet Gross Profit Margin",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Internet Gross Profit Margin"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Internet Order Count",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Internet Order Count"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Internet Order Quantity",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Internet Order Quantity"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Internet Ratio to All Products",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Internet Ratio to All Products"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Internet Ratio to Parent Product",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Internet Ratio to Parent Product"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Internet Sales Amount",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Internet Sales Amount"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Internet Standard Product Cost",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Internet Standard Product Cost"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Internet Tax Amount",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Internet Tax Amount"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Internet Total Product Cost",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Internet Total Product Cost"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Order Count",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Order Count"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Order Quantity",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Order Quantity"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Ratio to All Products",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Ratio to All Products"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Ratio to Parent Product",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Ratio to Parent Product"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Reseller Average Sales Amount",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Reseller Average Sales Amount"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Reseller Average Unit Price",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Reseller Average Unit Price"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Reseller Extended Amount",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Reseller Extended Amount"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Reseller Freight Cost",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Reseller Freight Cost"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Reseller Gross Profit",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Reseller Gross Profit"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Reseller Gross Profit Margin",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Reseller Gross Profit Margin"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Reseller Order Count",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Reseller Order Count"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Reseller Order Quantity",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Reseller Order Quantity"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Reseller Ratio to All Products",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Reseller Ratio to All Products"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Reseller Ratio to Parent Product",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Reseller Ratio to Parent Product"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Reseller Sales Amount",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Reseller Sales Amount"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Reseller Standard Product Cost",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Reseller Standard Product Cost"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Reseller Tax Amount",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Reseller Tax Amount"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Reseller Total Product Cost",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Reseller Total Product Cost"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Sales Amount",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Sales Amount"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Sales Amount Quota",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Sales Amount Quota"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Standard Product Cost",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Standard Product Cost"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Tax Amount",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Tax Amount"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Total Product Cost",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Total Product Cost"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Adventure Works",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "Ratio to All Products",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Ratio to All Products"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Ratio to Parent Product",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Ratio to Parent Product"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Reseller Average Sales Amount",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Reseller Average Sales Amount"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Reseller Average Unit Price",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Reseller Average Unit Price"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Reseller Extended Amount",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Reseller Extended Amount"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Reseller Freight Cost",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Reseller Freight Cost"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Reseller Gross Profit",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Reseller Gross Profit"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Reseller Gross Profit Margin",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Reseller Gross Profit Margin"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Reseller Order Count",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Reseller Order Count"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Reseller Order Quantity",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Reseller Order Quantity"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Reseller Ratio to All Products",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Reseller Ratio to All Products"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Reseller Ratio to Parent Product",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Reseller Ratio to Parent Product"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Reseller Sales Amount",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Reseller Sales Amount"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Reseller Standard Product Cost",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Reseller Standard Product Cost"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Reseller Tax Amount",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Reseller Tax Amount"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Reseller Total Product Cost",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Reseller Total Product Cost"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Sales Amount",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Sales Amount"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Sales Amount Quota",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Sales Amount Quota"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Standard Product Cost",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Standard Product Cost"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Tax Amount",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Tax Amount"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Total Product Cost",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Total Product Cost"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Amount",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Amount"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Average Rate",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Average Rate"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Average Sales Amount",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Average Sales Amount"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Average Unit Price",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Average Unit Price"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Customer Count",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Customer Count"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Discount Amount",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Discount Amount"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Discount Percentage",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Discount Percentage"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "End of Day Rate",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.End of Day Rate"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Expense to Revenue Ratio",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Expense to Revenue Ratio"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Extended Amount",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Extended Amount"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Freight Cost",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Freight Cost"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Gross Profit",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Gross Profit"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Gross Profit Margin",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Gross Profit Margin"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Growth in Customer Base",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Growth in Customer Base"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Internet Average Sales Amount",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Internet Average Sales Amount"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Internet Average Unit Price",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Internet Average Unit Price"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Internet Extended Amount",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Internet Extended Amount"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Internet Freight Cost",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Internet Freight Cost"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Internet Gross Profit",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Internet Gross Profit"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Internet Gross Profit Margin",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Internet Gross Profit Margin"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Internet Order Count",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Internet Order Count"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Internet Order Quantity",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Internet Order Quantity"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Internet Ratio to All Products",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Internet Ratio to All Products"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Internet Ratio to Parent Product",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Internet Ratio to Parent Product"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Internet Sales Amount",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Internet Sales Amount"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Internet Standard Product Cost",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Internet Standard Product Cost"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Internet Tax Amount",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Internet Tax Amount"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Internet Total Product Cost",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Internet Total Product Cost"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Order Count",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Order Count"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Order Quantity",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Order Quantity"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1, %2, %3, %4, %5, %6, %7, %8, %9, %10, %11, %12, %13, %14, %15, %16, %17, %18, %19, %20, %21, %22, %23, %24, %25, %26, %27, %28, %29, %30, %31, %32, %33, %34, %35, %36, %37, %38, %39, %40, %41, %42, %43, %44, %45, %46, %47, %48, %49, %50, %51, %52, %53, %54, %55, %56, %57, %58, %59, %60, %61, %62, %63, %64, %65, %66, %67, %68, %69, %70, %71, %72, %73, %74, %75, %76, %77, %78, %79, %80, %81, %82, %83, %84, %85, %86, %87, %88, %89, %90, %91, %92, %93, %94, %95, %96, %97, %98, %99, %100, %101, %102, %103, %104, %105, %106, %107, %108, %109, %110, %111, %112, %113, %114, %115, %116, %117, %118, %119, %120, %121, %122, %123, %124, %125, %126, %127, %128, %129, %130, %131, %132, %133, %134, %135, %136, %137, %138, %139, %140, %141, %142, %143, %144, %145, %146, %147, %148, %149, %150, %151, %152, %153, %154, %155, %156, %157, %158, %159, %160, %161, %162, %163, %164, %165, %166, %167, %168, %169, %170, %171, %172, %173, %174, %175, %176, %177, %178, %179, %180, %181, %182, %183, %184)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Account.Account",
+    "logicalLevel:Adventure Works DW.Account Number.Account Number",
+    "logicalLevel:Adventure Works DW.Account Type.Account Type",
+    "logicalLevel:Adventure Works DW.Accounts.Account Level 06",
+    "logicalLevel:Adventure Works DW.Address.Address",
+    "logicalLevel:Adventure Works DW.City.City",
+    "logicalLevel:Adventure Works DW.Commute Distance.Commute Distance",
+    "logicalLevel:Adventure Works DW.Country.Country",
+    "logicalLevel:Adventure Works DW.Customer.Customer",
+    "logicalLevel:Adventure Works DW.Customer Geography.Customer",
+    "logicalLevel:Adventure Works DW.Date of First Purchase.Date of First Purchase",
+    "logicalLevel:Adventure Works DW.Education.Education",
+    "logicalLevel:Adventure Works DW.Email Address.Email Address",
+    "logicalLevel:Adventure Works DW.Gender.Gender",
+    "logicalLevel:Adventure Works DW.Home Owner.Home Owner",
+    "logicalLevel:Adventure Works DW.Marital Status.Marital Status",
+    "logicalLevel:Adventure Works DW.Number of Cars Owned.Number of Cars Owned",
+    "logicalLevel:Adventure Works DW.Number of Children At Home.Number of Children At Home",
+    "logicalLevel:Adventure Works DW.Occupation.Occupation",
+    "logicalLevel:Adventure Works DW.Phone.Phone",
+    "logicalLevel:Adventure Works DW.Postal Code.Postal Code",
+    "logicalLevel:Adventure Works DW.State-Province.State-Province",
+    "logicalLevel:Adventure Works DW.Total Children.Total Children",
+    "logicalLevel:Adventure Works DW.Yearly Income.Yearly Income",
+    "logicalLevel:Adventure Works DW.Date.Calendar.Date",
+    "logicalLevel:Adventure Works DW.Date.Calendar Quarter of Year.Calendar Quarter of Year",
+    "logicalLevel:Adventure Works DW.Date.Calendar Semester of Year.Calendar Semester of Year",
+    "logicalLevel:Adventure Works DW.Date.Calendar Year.Calendar Year",
+    "logicalLevel:Adventure Works DW.Date.Date.Date",
+    "logicalLevel:Adventure Works DW.Date.Day Name.Day Name",
+    "logicalLevel:Adventure Works DW.Date.Day of Month.Day of Month",
+    "logicalLevel:Adventure Works DW.Date.Day of Week.Day of Week",
+    "logicalLevel:Adventure Works DW.Date.Day of Year.Day of Year",
+    "logicalLevel:Adventure Works DW.Date.Fiscal.Date",
+    "logicalLevel:Adventure Works DW.Date.Fiscal Quarter of Year.Fiscal Quarter of Year",
+    "logicalLevel:Adventure Works DW.Date.Fiscal Semester of Year.Fiscal Semester of Year",
+    "logicalLevel:Adventure Works DW.Date.Fiscal Year.Fiscal Year",
+    "logicalLevel:Adventure Works DW.Date.Month of Year.Month of Year",
+    "logicalLevel:Adventure Works DW.Date.Week of Year.Week of Year",
+    "logicalLevel:Adventure Works DW.Delivery Date.Calendar.Date",
+    "logicalLevel:Adventure Works DW.Delivery Date.Calendar Quarter of Year.Calendar Quarter of Year",
+    "logicalLevel:Adventure Works DW.Delivery Date.Calendar Semester of Year.Calendar Semester of Year",
+    "logicalLevel:Adventure Works DW.Delivery Date.Calendar Year.Calendar Year",
+    "logicalLevel:Adventure Works DW.Delivery Date.Date.Date",
+    "logicalLevel:Adventure Works DW.Delivery Date.Day Name.Day Name",
+    "logicalLevel:Adventure Works DW.Delivery Date.Day of Month.Day of Month",
+    "logicalLevel:Adventure Works DW.Delivery Date.Day of Week.Day of Week",
+    "logicalLevel:Adventure Works DW.Delivery Date.Day of Year.Day of Year",
+    "logicalLevel:Adventure Works DW.Delivery Date.Fiscal.Date",
+    "logicalLevel:Adventure Works DW.Delivery Date.Fiscal Quarter of Year.Fiscal Quarter of Year",
+    "logicalLevel:Adventure Works DW.Delivery Date.Fiscal Semester of Year.Fiscal Semester of Year",
+    "logicalLevel:Adventure Works DW.Delivery Date.Fiscal Year.Fiscal Year",
+    "logicalLevel:Adventure Works DW.Delivery Date.Month of Year.Month of Year",
+    "logicalLevel:Adventure Works DW.Delivery Date.Week of Year.Week of Year",
+    "logicalLevel:Adventure Works DW.Departments.Department Level 02",
+    "logicalLevel:Adventure Works DW.Destination Currency.Destination Currency",
+    "logicalLevel:Adventure Works DW.Destination Currency Code.Destination Currency Code",
+    "logicalLevel:Adventure Works DW.Base Rate.Base Rate",
+    "logicalLevel:Adventure Works DW.Birth Date.Birth Date",
+    "logicalLevel:Adventure Works DW.Department Name.Department Name",
+    "logicalLevel:Adventure Works DW.Email Address#1.Email Address",
+    "logicalLevel:Adventure Works DW.Emergency Contact Name.Emergency Contact Name",
+    "logicalLevel:Adventure Works DW.Emergency Contact Phone.Emergency Contact Phone",
+    "logicalLevel:Adventure Works DW.Employee.Employee",
+    "logicalLevel:Adventure Works DW.Employee Department.Employee",
+    "logicalLevel:Adventure Works DW.Employees.Employee Level 06",
+    "logicalLevel:Adventure Works DW.End Date.End Date",
+    "logicalLevel:Adventure Works DW.Gender#1.Gender",
+    "logicalLevel:Adventure Works DW.Hire Date.Hire Date",
+    "logicalLevel:Adventure Works DW.Hire Year.Hire Year",
+    "logicalLevel:Adventure Works DW.Marital Status#1.Marital Status",
+    "logicalLevel:Adventure Works DW.Pay Frequency.Pay Frequency",
+    "logicalLevel:Adventure Works DW.Phone#1.Phone",
+    "logicalLevel:Adventure Works DW.Salaried Flag.Salaried Flag",
+    "logicalLevel:Adventure Works DW.Sales Person Flag.Sales Person Flag",
+    "logicalLevel:Adventure Works DW.Sick Leave Hours.Sick Leave Hours",
+    "logicalLevel:Adventure Works DW.Start Date.Start Date",
+    "logicalLevel:Adventure Works DW.Status.Status",
+    "logicalLevel:Adventure Works DW.Title.Title",
+    "logicalLevel:Adventure Works DW.Vacation Hours.Vacation Hours",
+    "logicalLevel:Adventure Works DW.City#1.City",
+    "logicalLevel:Adventure Works DW.Country#1.Country",
+    "logicalLevel:Adventure Works DW.Geography.Postal Code",
+    "logicalLevel:Adventure Works DW.Postal Code#1.Postal Code",
+    "logicalLevel:Adventure Works DW.State-Province#1.State-Province",
+    "logicalLevel:Adventure Works DW.Carrier Tracking Number.Carrier Tracking Number",
+    "logicalLevel:Adventure Works DW.Customer PO Number.Customer PO Number",
+    "logicalLevel:Adventure Works DW.Internet Sales Orders.Order Line",
+    "logicalLevel:Adventure Works DW.Sales Order Line.Sales Order Line",
+    "logicalLevel:Adventure Works DW.Sales Order Number.Sales Order Number",
+    "logicalLevel:Adventure Works DW.Currency Code.Currency Code",
+    "logicalLevel:Adventure Works DW.Organizations.Organization Level 04",
+    "logicalLevel:Adventure Works DW.Category.Category",
+    "logicalLevel:Adventure Works DW.Class.Class",
+    "logicalLevel:Adventure Works DW.Color.Color",
+    "logicalLevel:Adventure Works DW.Days to Manufacture.Days to Manufacture",
+    "logicalLevel:Adventure Works DW.Dealer Price.Dealer Price",
+    "logicalLevel:Adventure Works DW.End Date#1.End Date",
+    "logicalLevel:Adventure Works DW.Large Photo.Large Photo",
+    "logicalLevel:Adventure Works DW.List Price.List Price",
+    "logicalLevel:Adventure Works DW.Manufacture Time.Subcategory",
+    "logicalLevel:Adventure Works DW.Model Name.Model Name",
+    "logicalLevel:Adventure Works DW.Product.Product",
+    "logicalLevel:Adventure Works DW.Product Categories.Product",
+    "logicalLevel:Adventure Works DW.Product Key.Product Key",
+    "logicalLevel:Adventure Works DW.Product Line.Product Line",
+    "logicalLevel:Adventure Works DW.Product Model Categories.Model",
+    "logicalLevel:Adventure Works DW.Product Model Lines.Model",
+    "logicalLevel:Adventure Works DW.Reorder Point.Reorder Point",
+    "logicalLevel:Adventure Works DW.Safety Stock Level.Safety Stock Level",
+    "logicalLevel:Adventure Works DW.Size.Size",
+    "logicalLevel:Adventure Works DW.Size Range.Size Range",
+    "logicalLevel:Adventure Works DW.Standard Cost.Standard Cost",
+    "logicalLevel:Adventure Works DW.Start Date#1.Start Date",
+    "logicalLevel:Adventure Works DW.Status#1.Status",
+    "logicalLevel:Adventure Works DW.Stock Level.Product",
+    "logicalLevel:Adventure Works DW.Style.Style",
+    "logicalLevel:Adventure Works DW.Subcategory.Subcategory",
+    "logicalLevel:Adventure Works DW.Weight.Weight",
+    "logicalLevel:Adventure Works DW.Discount Percent.Discount Percent",
+    "logicalLevel:Adventure Works DW.End Date#2.End Date",
+    "logicalLevel:Adventure Works DW.Max Quantity.Max Quantity",
+    "logicalLevel:Adventure Works DW.Min Quantity.Min Quantity",
+    "logicalLevel:Adventure Works DW.Promotion.Promotion",
+    "logicalLevel:Adventure Works DW.Promotion Category.Promotion Category",
+    "logicalLevel:Adventure Works DW.Promotion Type.Promotion Type",
+    "logicalLevel:Adventure Works DW.Promotions.Promotion",
+    "logicalLevel:Adventure Works DW.Start Date#2.Start Date",
+    "logicalLevel:Adventure Works DW.Address#1.Address",
+    "logicalLevel:Adventure Works DW.Annual Revenue.Annual Revenue",
+    "logicalLevel:Adventure Works DW.Annual Sales.Annual Sales",
+    "logicalLevel:Adventure Works DW.Bank Name.Bank Name",
+    "logicalLevel:Adventure Works DW.Business Type.Business Type",
+    "logicalLevel:Adventure Works DW.First Order Year.First Order Year",
+    "logicalLevel:Adventure Works DW.Last Order Year.Last Order Year",
+    "logicalLevel:Adventure Works DW.Min Payment Amount.Min Payment Amount",
+    "logicalLevel:Adventure Works DW.Min Payment Type.Min Payment Type",
+    "logicalLevel:Adventure Works DW.Number of Employees.Number of Employees",
+    "logicalLevel:Adventure Works DW.Order Frequency.Order Frequency",
+    "logicalLevel:Adventure Works DW.Order Month.Order Month",
+    "logicalLevel:Adventure Works DW.Phone#2.Phone",
+    "logicalLevel:Adventure Works DW.Product Line#1.Product Line",
+    "logicalLevel:Adventure Works DW.Reseller.Reseller",
+    "logicalLevel:Adventure Works DW.Reseller Bank.Reseller",
+    "logicalLevel:Adventure Works DW.Reseller Order Frequency.Reseller",
+    "logicalLevel:Adventure Works DW.Reseller Order Month.Reseller",
+    "logicalLevel:Adventure Works DW.Reseller Type.Reseller",
+    "logicalLevel:Adventure Works DW.Year Opened.Year Opened",
+    "logicalLevel:Adventure Works DW.Carrier Tracking Number#1.Carrier Tracking Number",
+    "logicalLevel:Adventure Works DW.Customer PO Number#1.Customer PO Number",
+    "logicalLevel:Adventure Works DW.Reseller Sales Orders.Order Line",
+    "logicalLevel:Adventure Works DW.Sales Order Line#1.Sales Order Line",
+    "logicalLevel:Adventure Works DW.Sales Order Number#1.Sales Order Number",
+    "logicalLevel:Adventure Works DW.Sales Channel.Sales Channel",
+    "logicalLevel:Adventure Works DW.Sales Reason.Sales Reason",
+    "logicalLevel:Adventure Works DW.Sales Reason Type.Sales Reason Type",
+    "logicalLevel:Adventure Works DW.Sales Reasons.Sales Reason",
+    "logicalLevel:Adventure Works DW.Carrier Tracking Number#2.Carrier Tracking Number",
+    "logicalLevel:Adventure Works DW.Customer PO Number#2.Customer PO Number",
+    "logicalLevel:Adventure Works DW.Sales Order Line#2.Sales Order Line",
+    "logicalLevel:Adventure Works DW.Sales Order Number#2.Sales Order Number",
+    "logicalLevel:Adventure Works DW.Sales Orders.Order Line",
+    "logicalLevel:Adventure Works DW.Sales Territory.Region",
+    "logicalLevel:Adventure Works DW.Sales Territory Country.Sales Territory Country",
+    "logicalLevel:Adventure Works DW.Sales Territory Group.Sales Territory Group",
+    "logicalLevel:Adventure Works DW.Sales Territory Region.Sales Territory Region",
+    "logicalLevel:Adventure Works DW.Scenario.Scenario",
+    "logicalLevel:Adventure Works DW.Ship Date.Calendar.Date",
+    "logicalLevel:Adventure Works DW.Ship Date.Calendar Quarter of Year.Calendar Quarter of Year",
+    "logicalLevel:Adventure Works DW.Ship Date.Calendar Semester of Year.Calendar Semester of Year",
+    "logicalLevel:Adventure Works DW.Ship Date.Calendar Year.Calendar Year",
+    "logicalLevel:Adventure Works DW.Ship Date.Date.Date",
+    "logicalLevel:Adventure Works DW.Ship Date.Day Name.Day Name",
+    "logicalLevel:Adventure Works DW.Ship Date.Day of Month.Day of Month",
+    "logicalLevel:Adventure Works DW.Ship Date.Day of Week.Day of Week",
+    "logicalLevel:Adventure Works DW.Ship Date.Day of Year.Day of Year",
+    "logicalLevel:Adventure Works DW.Ship Date.Fiscal.Date",
+    "logicalLevel:Adventure Works DW.Ship Date.Fiscal Quarter of Year.Fiscal Quarter of Year",
+    "logicalLevel:Adventure Works DW.Ship Date.Fiscal Semester of Year.Fiscal Semester of Year",
+    "logicalLevel:Adventure Works DW.Ship Date.Fiscal Year.Fiscal Year",
+    "logicalLevel:Adventure Works DW.Ship Date.Month of Year.Month of Year",
+    "logicalLevel:Adventure Works DW.Ship Date.Week of Year.Week of Year",
+    "logicalLevel:Adventure Works DW.Source Currency.Source Currency",
+    "logicalLevel:Adventure Works DW.Source Currency Code.Source Currency Code"
+  ]
+}
+      },
+    ]
+  }
+}

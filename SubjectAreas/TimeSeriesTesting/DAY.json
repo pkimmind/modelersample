@@ -1,0 +1,283 @@
+{
+  "presentationTable": {
+    "name": "DAY",
+    "localization": {
+      "localizationKey": "DAY",
+      "nameVariable": "VALUEOF(NQ_SESSION.CN_SnowflakeSales_W_DAY_D)"
+    },
+    "presentationColumns": [
+      {
+        "name": "DATASOURCE_NUM_ID",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.DATASOURCE_NUM_ID"
+      },
+      {
+        "name": "INTEGRATION_ID",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.INTEGRATION_ID"
+      },
+      {
+        "name": "ROW_WID",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.ROW_WID"
+      },
+      {
+        "name": "CALENDAR_DATETIME",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.CALENDAR_DATETIME"
+      },
+      {
+        "name": "CAL_HALF",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.CAL_HALF"
+      },
+      {
+        "name": "CAL_MONTH",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.CAL_MONTH"
+      },
+      {
+        "name": "CAL_QTR",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.CAL_QTR"
+      },
+      {
+        "name": "CAL_TRIMESTER",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.CAL_TRIMESTER"
+      },
+      {
+        "name": "CAL_WEEK",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.CAL_WEEK"
+      },
+      {
+        "name": "CAL_YEAR",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.CAL_YEAR"
+      },
+      {
+        "name": "DATETIME_KEY",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.DATETIME_KEY"
+      },
+      {
+        "name": "DAY_AGO_DT",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.DAY_AGO_DT"
+      },
+      {
+        "name": "DAY_AGO_KEY",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.DAY_AGO_KEY"
+      },
+      {
+        "name": "DAY_AGO_WID",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.DAY_AGO_WID"
+      },
+      {
+        "name": "DAY_DT",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.DAY_DT"
+      },
+      {
+        "name": "DAY_OF_MONTH",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.DAY_OF_MONTH"
+      },
+      {
+        "name": "DAY_OF_WEEK",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.DAY_OF_WEEK"
+      },
+      {
+        "name": "DAY_OF_YEAR",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.DAY_OF_YEAR"
+      },
+      {
+        "name": "FSCL_DAY_OF_MONTH",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.FSCL_DAY_OF_MONTH"
+      },
+      {
+        "name": "FSCL_DAY_OF_WEEK",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.FSCL_DAY_OF_WEEK"
+      },
+      {
+        "name": "FSCL_DAY_OF_YEAR",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.FSCL_DAY_OF_YEAR"
+      },
+      {
+        "name": "FSCL_HALF",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.FSCL_HALF"
+      },
+      {
+        "name": "FSCL_MONTH",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.FSCL_MONTH"
+      },
+      {
+        "name": "FSCL_QTR",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.FSCL_QTR"
+      },
+      {
+        "name": "FSCL_TRIMESTER",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.FSCL_TRIMESTER"
+      },
+      {
+        "name": "FSCL_WEEK",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.FSCL_WEEK"
+      },
+      {
+        "name": "FSCL_YEAR",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.FSCL_YEAR"
+      },
+      {
+        "name": "HALF_AGO_DT",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.HALF_AGO_DT"
+      },
+      {
+        "name": "HALF_AGO_KEY",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.HALF_AGO_KEY"
+      },
+      {
+        "name": "HALF_AGO_WID",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.HALF_AGO_WID"
+      },
+      {
+        "name": "JULIAN_DAY_NUM",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.JULIAN_DAY_NUM"
+      },
+      {
+        "name": "JULIAN_MONTH_NUM",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.JULIAN_MONTH_NUM"
+      },
+      {
+        "name": "JULIAN_QTR_NUM",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.JULIAN_QTR_NUM"
+      },
+      {
+        "name": "JULIAN_TER_NUM",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.JULIAN_TER_NUM"
+      },
+      {
+        "name": "JULIAN_WEEK_NUM",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.JULIAN_WEEK_NUM"
+      },
+      {
+        "name": "JULIAN_YEAR_NUM",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.JULIAN_YEAR_NUM"
+      },
+      {
+        "name": "MONTH_AGO_DT",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.MONTH_AGO_DT"
+      },
+      {
+        "name": "MONTH_AGO_KEY",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.MONTH_AGO_KEY"
+      },
+      {
+        "name": "MONTH_AGO_WID",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.MONTH_AGO_WID"
+      },
+      {
+        "name": "PERIOD_KEY",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.PERIOD_KEY"
+      },
+      {
+        "name": "QUARTER_AGO_DT",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.QUARTER_AGO_DT"
+      },
+      {
+        "name": "QUARTER_AGO_KEY",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.QUARTER_AGO_KEY"
+      },
+      {
+        "name": "QUARTER_AGO_WID",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.QUARTER_AGO_WID"
+      },
+      {
+        "name": "TRIMESTER_AGO_DT",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.TRIMESTER_AGO_DT"
+      },
+      {
+        "name": "TRIMESTER_AGO_KEY",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.TRIMESTER_AGO_KEY"
+      },
+      {
+        "name": "TRIMESTER_AGO_WID",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.TRIMESTER_AGO_WID"
+      },
+      {
+        "name": "WEEK_AGO_DT",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.WEEK_AGO_DT"
+      },
+      {
+        "name": "WEEK_AGO_KEY",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.WEEK_AGO_KEY"
+      },
+      {
+        "name": "WEEK_AGO_WID",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.WEEK_AGO_WID"
+      },
+      {
+        "name": "YEAR_AGO_DT",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.YEAR_AGO_DT"
+      },
+      {
+        "name": "YEAR_AGO_KEY",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.YEAR_AGO_KEY"
+      },
+      {
+        "name": "YEAR_AGO_WID",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.YEAR_AGO_WID"
+      },
+      {
+        "name": "DAY_NAME",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.DAY_NAME"
+      },
+      {
+        "name": "MONTH_NAME",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.MONTH_NAME"
+      },
+      {
+        "name": "PER_NAME_FSCL_HALF",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.PER_NAME_FSCL_HALF"
+      },
+      {
+        "name": "PER_NAME_HALF",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.PER_NAME_HALF"
+      },
+      {
+        "name": "PER_NAME_FSCL_MNTH",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.PER_NAME_FSCL_MNTH"
+      },
+      {
+        "name": "PER_NAME_MONTH",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.PER_NAME_MONTH"
+      },
+      {
+        "name": "PER_NAME_FSCL_QTR",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.PER_NAME_FSCL_QTR"
+      },
+      {
+        "name": "PER_NAME_QTR",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.PER_NAME_QTR"
+      },
+      {
+        "name": "PER_NAME_FSCL_TER",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.PER_NAME_FSCL_TER"
+      },
+      {
+        "name": "PER_NAME_TER",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.PER_NAME_TER"
+      },
+      {
+        "name": "PER_NAME_FSCL_WEEK",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.PER_NAME_FSCL_WEEK"
+      },
+      {
+        "name": "PER_NAME_WEEK",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.PER_NAME_WEEK"
+      },
+      {
+        "name": "PER_NAME_FSCL_YEAR",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.PER_NAME_FSCL_YEAR"
+      },
+      {
+        "name": "PER_NAME_YEAR",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.PER_NAME_YEAR"
+      },
+      {
+        "name": "FSC_FST_DAY_KEY",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.FSC_FST_DAY_KEY"
+      },
+      {
+        "name": "cal_month_name",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.W_DAY_D.cal_month_name"
+      }
+    ]
+  }
+}

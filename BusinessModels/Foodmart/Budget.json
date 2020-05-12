@@ -1,0 +1,54 @@
+{
+  "logicalTable": {
+    "name": "Budget",
+    "type": "FACT",
+    "logicalColumns": [
+      {
+        "name": "Amount",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Budget",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:FoodMart...Budget.Amount"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Budget",
+        "logicalTableRef": "Budget",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "Amount",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:FoodMart...Budget.Amount"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Budget",
+            "joins": [
+            ]
+          }
+        ]
+      },
+    ]
+  }
+}

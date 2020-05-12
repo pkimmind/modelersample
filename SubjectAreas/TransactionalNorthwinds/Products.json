@@ -1,0 +1,47 @@
+{
+  "presentationTable": {
+    "name": "Products",
+    "presentationColumns": [
+      {
+        "name": "ProductID",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Products.ProductID"
+      },
+      {
+        "name": "ProductName",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Products.ProductName"
+      },
+      {
+        "name": "SupplierID",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Products.SupplierID"
+      },
+      {
+        "name": "CategoryID",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Products.CategoryID"
+      },
+      {
+        "name": "QuantityPerUnit",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Products.QuantityPerUnit"
+      },
+      {
+        "name": "UnitPrice",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Products.UnitPrice"
+      },
+      {
+        "name": "UnitsInStock",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Products.UnitsInStock"
+      },
+      {
+        "name": "UnitsOnOrder",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Products.UnitsOnOrder"
+      },
+      {
+        "name": "ReorderLevel",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Products.ReorderLevel"
+      },
+      {
+        "name": "Discontinued",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Products.Discontinued"
+      }
+    ]
+  }
+}

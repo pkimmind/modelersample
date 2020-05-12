@@ -1,0 +1,230 @@
+{
+  "presentationTable": {
+    "name": "Date.Calendar",
+    "presentationColumns": [
+      {
+        "name": "[Date].[Calendar].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.[Date].[Calendar].[(All)]"
+      },
+      {
+        "name": "Calendar Quarter",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.Calendar Quarter"
+      },
+      {
+        "name": "Calendar Quarter of Year",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.Calendar Quarter of Year"
+      },
+      {
+        "name": "Calendar Quarter#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.Calendar Quarter#1"
+      },
+      {
+        "name": "Calendar Semester",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.Calendar Semester"
+      },
+      {
+        "name": "Calendar Semester of Year",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.Calendar Semester of Year"
+      },
+      {
+        "name": "Calendar Semester#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.Calendar Semester#1"
+      },
+      {
+        "name": "Calendar Year",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.Calendar Year"
+      },
+      {
+        "name": "Calendar Year#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.Calendar Year#1"
+      },
+      {
+        "name": "Date",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.Date"
+      },
+      {
+        "name": "Day Name",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.Day Name"
+      },
+      {
+        "name": "Day of Month",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.Day of Month"
+      },
+      {
+        "name": "Day of Week",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.Day of Week"
+      },
+      {
+        "name": "Day of Year",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.Day of Year"
+      },
+      {
+        "name": "Fiscal Quarter",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.Fiscal Quarter"
+      },
+      {
+        "name": "KEY0#56",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.KEY0#56"
+      },
+      {
+        "name": "KEY0#57",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.KEY0#57"
+      },
+      {
+        "name": "KEY0#58",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.KEY0#58"
+      },
+      {
+        "name": "KEY0#59",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.KEY0#59"
+      },
+      {
+        "name": "KEY0#60",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.KEY0#60"
+      },
+      {
+        "name": "KEY0#61",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.KEY0#61"
+      },
+      {
+        "name": "KEY1#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.KEY1#6"
+      },
+      {
+        "name": "KEY1#7",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.KEY1#7"
+      },
+      {
+        "name": "KEY1#8",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.KEY1#8"
+      },
+      {
+        "name": "MEMBER_VALUE#56",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.MEMBER_VALUE#56"
+      },
+      {
+        "name": "MEMBER_VALUE#57",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.MEMBER_VALUE#57"
+      },
+      {
+        "name": "MEMBER_VALUE#58",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.MEMBER_VALUE#58"
+      },
+      {
+        "name": "MEMBER_VALUE#59",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.MEMBER_VALUE#59"
+      },
+      {
+        "name": "MEMBER_VALUE#60",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.MEMBER_VALUE#60"
+      },
+      {
+        "name": "MEMBER_VALUE#61",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.MEMBER_VALUE#61"
+      },
+      {
+        "name": "Month",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.Month"
+      },
+      {
+        "name": "Month Name",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.Month Name"
+      },
+      {
+        "name": "Month of Year",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.Month of Year"
+      },
+      {
+        "name": "NAME#47",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.NAME#47"
+      },
+      {
+        "name": "NAME#48",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.NAME#48"
+      },
+      {
+        "name": "NAME#49",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.NAME#49"
+      },
+      {
+        "name": "NAME#50",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.NAME#50"
+      },
+      {
+        "name": "NAME#51",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.NAME#51"
+      },
+      {
+        "name": "NAME#52",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.NAME#52"
+      },
+      {
+        "name": "Week of Year",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.Week of Year"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Date.Calendar",
+        "levels": [
+          {
+            "name": "[Date].[Calendar].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Date].[Calendar].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.[Date].[Calendar].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Calendar Year",
+            "displayColumns": [
+              {
+                "name": "Calendar Year",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.Calendar Year"
+              }
+            ]
+          },
+          {
+            "name": "Calendar Semester",
+            "displayColumns": [
+              {
+                "name": "Calendar Semester",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.Calendar Semester"
+              }
+            ]
+          },
+          {
+            "name": "Calendar Quarter",
+            "displayColumns": [
+              {
+                "name": "Calendar Quarter",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.Calendar Quarter"
+              }
+            ]
+          },
+          {
+            "name": "Month",
+            "displayColumns": [
+              {
+                "name": "Month",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.Month"
+              }
+            ]
+          },
+          {
+            "name": "Date",
+            "displayColumns": [
+              {
+                "name": "Date",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.Date"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

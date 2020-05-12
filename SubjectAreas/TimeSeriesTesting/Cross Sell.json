@@ -1,0 +1,56 @@
+{
+  "presentationTable": {
+    "name": "Cross Sell",
+    "presentationColumns": [
+      {
+        "name": "CategoryName",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Cross Sell Product.CategoryName"
+      },
+      {
+        "name": "ProductName",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Cross Sell Product.ProductName"
+      },
+      {
+        "name": "UnitPrice",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Cross Sell Product.UnitPrice"
+      },
+      {
+        "name": "UnitsInStock",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Cross Sell Product.UnitsInStock"
+      },
+      {
+        "name": "ProductID",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Cross Sell Product.ProductID"
+      },
+      {
+        "name": "Basket Count",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.Basket Count"
+      },
+      {
+        "name": "Likelihood of Buying",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.Likelihood of Buying",
+        "alternateNames": [
+          "% of Line Item Count by All Cross Sell"
+        ]
+      },
+      {
+        "name": "Likelihood of Buying by $",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.Likelihood of Buying by $",
+        "alternateNames": [
+          "% of Revenue by All Cross Product"
+        ]
+      },
+      {
+        "name": "Basket Count by All Cross Sell",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.Basket Count by All Cross Sell"
+      },
+      {
+        "name": "Revenue by All Cross Sell",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.Revenue by All Cross Sell",
+        "alternateNames": [
+          "Revenue by All Cross Product"
+        ]
+      }
+    ]
+  }
+}

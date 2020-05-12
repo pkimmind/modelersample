@@ -1,0 +1,23 @@
+{
+  "presentationTable": {
+    "name": "Customer",
+    "presentationColumns": [
+      {
+        "name": "CustomerID",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.Customer.CustomerID"
+      },
+      {
+        "name": "CompanyName",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.Customer.CompanyName"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.Customer.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.Customer.QtySold"
+      }
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "Date of First Purchase",
+    "presentationColumns": [
+      {
+        "name": "[Customer].[Date of First Purchase].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date of First Purchase.[Customer].[Date of First Purchase].[(All)]"
+      },
+      {
+        "name": "Date of First Purchase#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date of First Purchase.Date of First Purchase#2"
+      },
+      {
+        "name": "KEY0#28",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date of First Purchase.KEY0#28"
+      },
+      {
+        "name": "KEY0#29",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date of First Purchase.KEY0#29"
+      },
+      {
+        "name": "MEMBER_VALUE#28",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date of First Purchase.MEMBER_VALUE#28"
+      },
+      {
+        "name": "MEMBER_VALUE#29",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date of First Purchase.MEMBER_VALUE#29"
+      },
+      {
+        "name": "NAME#24",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date of First Purchase.NAME#24"
+      },
+      {
+        "name": "NAME#25",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date of First Purchase.NAME#25"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Date of First Purchase",
+        "levels": [
+          {
+            "name": "[Customer].[Date of First Purchase].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Customer].[Date of First Purchase].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date of First Purchase.[Customer].[Date of First Purchase].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Date of First Purchase",
+            "displayColumns": [
+              {
+                "name": "Date of First Purchase#2",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date of First Purchase.Date of First Purchase#2"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

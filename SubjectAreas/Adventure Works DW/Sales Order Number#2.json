@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Sales Order Number#2",
+    "presentationColumns": [
+      {
+        "name": "[Sales Summary Order Details].[Sales Order Number].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Number#2.[Sales Summary Order Details].[Sales Order Number].[(All)]"
+      },
+      {
+        "name": "KEY0#370",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Number#2.KEY0#370"
+      },
+      {
+        "name": "KEY0#371",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Number#2.KEY0#371"
+      },
+      {
+        "name": "MEMBER_VALUE#370",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Number#2.MEMBER_VALUE#370"
+      },
+      {
+        "name": "MEMBER_VALUE#371",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Number#2.MEMBER_VALUE#371"
+      },
+      {
+        "name": "NAME#289",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Number#2.NAME#289"
+      },
+      {
+        "name": "Sales Order Number#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Number#2.Sales Order Number#4"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Sales Order Number#2",
+        "levels": [
+          {
+            "name": "[Sales Summary Order Details].[Sales Order Number].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Sales Summary Order Details].[Sales Order Number].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Number#2.[Sales Summary Order Details].[Sales Order Number].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Sales Order Number",
+            "displayColumns": [
+              {
+                "name": "Sales Order Number#4",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Number#2.Sales Order Number#4"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

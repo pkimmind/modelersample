@@ -1,0 +1,90 @@
+{
+  "presentationTable": {
+    "name": "Ship Date.Date",
+    "presentationColumns": [
+      {
+        "name": "[Ship Date].[Date].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Date.[Ship Date].[Date].[(All)]"
+      },
+      {
+        "name": "Date#7",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Date.Date#7"
+      },
+      {
+        "name": "Day Name#9",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Date.Day Name#9"
+      },
+      {
+        "name": "Day of Month#9",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Date.Day of Month#9"
+      },
+      {
+        "name": "Day of Week#9",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Date.Day of Week#9"
+      },
+      {
+        "name": "Day of Year#9",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Date.Day of Year#9"
+      },
+      {
+        "name": "KEY0#398",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Date.KEY0#398"
+      },
+      {
+        "name": "KEY0#399",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Date.KEY0#399"
+      },
+      {
+        "name": "MEMBER_VALUE#398",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Date.MEMBER_VALUE#398"
+      },
+      {
+        "name": "MEMBER_VALUE#399",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Date.MEMBER_VALUE#399"
+      },
+      {
+        "name": "Month Name#7",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Date.Month Name#7"
+      },
+      {
+        "name": "NAME#308",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Date.NAME#308"
+      },
+      {
+        "name": "NAME#309",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Date.NAME#309"
+      },
+      {
+        "name": "Week of Year#9",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Date.Week of Year#9"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Ship Date.Date",
+        "levels": [
+          {
+            "name": "[Ship Date].[Date].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Ship Date].[Date].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Date.[Ship Date].[Date].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Date",
+            "displayColumns": [
+              {
+                "name": "Date#7",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Date.Date#7"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

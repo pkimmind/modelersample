@@ -1,0 +1,444 @@
+{
+  "logicalTable": {
+    "name": "Max Quantity",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Promotion].[Max Quantity].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Promotion].[Max Quantity].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Promotion].[Max Quantity].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Promotion].[Max Quantity].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Promotion].[Max Quantity].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#284",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#284"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#285",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#285"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Max Quantity",
+        "writeable": false,
+        "descriptorColumn": "Max Quantity - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Max Quantity"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Max Quantity - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Max Quantity - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#284",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#284"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#285",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#285"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#225",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#225"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#226",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#226"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Max Quantity",
+              "isPrimary": "true",
+              "columns": [
+                "[Promotion].[Max Quantity].[(All)]",
+                "Max Quantity"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Max Quantity",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "[Promotion].[Max Quantity].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Promotion].[Max Quantity].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Promotion].[Max Quantity].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Promotion].[Max Quantity].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#284",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#284"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#285",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#285"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Max Quantity",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Max Quantity"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Max Quantity - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Max Quantity - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#284",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#284"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#285",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#285"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#225",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#225"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#226",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#226"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Max Quantity.Max Quantity"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Max Quantity",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "[Promotion].[Max Quantity].[(All)]",
+      "levels": [
+        {
+          "name": "[Promotion].[Max Quantity].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Promotion].[Max Quantity].[(All)]",
+          "keys": [
+            {
+              "name": "[Promotion].[Max Quantity].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Promotion].[Max Quantity].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Promotion].[Max Quantity].[(All)]",
+              "columns": [
+                "[Promotion].[Max Quantity].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Max Quantity",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Max Quantity",
+              "keys": [
+                {
+                  "name": "Max Quantity - Member Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Max Quantity - Member Key"
+                  ]
+                },
+                {
+                  "name": "Max Quantity",
+                  "columns": [
+                    "Max Quantity"
+                  ]
+                }
+              ],
+              "columns": [
+                "KEY0#285",
+                "Max Quantity",
+                "Max Quantity - Member Key",
+                "MEMBER_VALUE#285",
+                "NAME#226"
+              ]
+            }
+          ],
+          "columns": [
+            "[Promotion].[Max Quantity].[(All)]",
+            "[Promotion].[Max Quantity].[(All)] - Member Key",
+            "KEY0#284",
+            "MEMBER_VALUE#284",
+            "NAME#225"
+          ]
+        },
+        {
+          "name": "Max Quantity",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Max Quantity",
+          "keys": [
+            {
+              "name": "Max Quantity - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "Max Quantity - Member Key"
+              ]
+            },
+            {
+              "name": "Max Quantity",
+              "columns": [
+                "Max Quantity"
+              ]
+            }
+          ],
+          "columns": [
+            "KEY0#285",
+            "Max Quantity",
+            "Max Quantity - Member Key",
+            "MEMBER_VALUE#285",
+            "NAME#226"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Max Quantity",
+        "levels": [
+          {
+            "name": "[Promotion].[Max Quantity].[(All)]",
+            "childLevels": [
+              {
+                "name": "Max Quantity"
+              }
+            ]
+          },
+          {
+            "name": "Max Quantity"
+          }
+        ]
+      }
+    }
+  }
+}

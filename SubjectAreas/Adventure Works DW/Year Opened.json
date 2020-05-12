@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Year Opened",
+    "presentationColumns": [
+      {
+        "name": "[Reseller].[Year Opened].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Year Opened.[Reseller].[Year Opened].[(All)]"
+      },
+      {
+        "name": "KEY0#342",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Year Opened.KEY0#342"
+      },
+      {
+        "name": "KEY0#343",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Year Opened.KEY0#343"
+      },
+      {
+        "name": "MEMBER_VALUE#342",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Year Opened.MEMBER_VALUE#342"
+      },
+      {
+        "name": "MEMBER_VALUE#343",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Year Opened.MEMBER_VALUE#343"
+      },
+      {
+        "name": "NAME#273",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Year Opened.NAME#273"
+      },
+      {
+        "name": "Year Opened#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Year Opened.Year Opened#5"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Year Opened",
+        "levels": [
+          {
+            "name": "[Reseller].[Year Opened].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Reseller].[Year Opened].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Year Opened.[Reseller].[Year Opened].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Year Opened",
+            "displayColumns": [
+              {
+                "name": "Year Opened#5",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Year Opened.Year Opened#5"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

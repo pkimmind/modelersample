@@ -1,0 +1,88 @@
+{
+  "cubeTable": {
+    "name": "Budget",
+    "extName": "Budget",
+    "caching": {
+    },
+    "memberReference": "Default",
+    "DBMap": [
+      {
+        "name": "DEFAULT",
+        "value": "Budget"
+      }
+    ],
+    "columns": [
+      {
+        "name": "Amount",
+        "extName": "Amount",
+        "aggrType": "sum",
+        "dataType": "DOUBLE",
+        "dimPropType": "uda"
+      },
+      {
+        "name": "Year",
+        "extName": "Year",
+        "dataType": "VARCHAR",
+        "length": 10,
+        "dimPropType": "none",
+        "physicalLevelRef": "Year"
+      },
+      {
+        "name": "Quarter",
+        "extName": "Quarter",
+        "dataType": "VARCHAR",
+        "length": 10,
+        "dimPropType": "none",
+        "physicalLevelRef": "Quarter"
+      },
+      {
+        "name": "Month",
+        "extName": "Month",
+        "dataType": "VARCHAR",
+        "length": 10,
+        "dimPropType": "none",
+        "physicalLevelRef": "Month"
+      },
+      {
+        "name": "Store Country",
+        "extName": "Store Country",
+        "dataType": "VARCHAR",
+        "length": 30,
+        "dimPropType": "none",
+        "physicalLevelRef": "Store Country"
+      },
+      {
+        "name": "Store State",
+        "extName": "Store State",
+        "dataType": "VARCHAR",
+        "length": 20,
+        "dimPropType": "none",
+        "physicalLevelRef": "Store State"
+      },
+      {
+        "name": "Store City",
+        "extName": "Store City",
+        "dataType": "VARCHAR",
+        "length": 30,
+        "dimPropType": "none",
+        "physicalLevelRef": "Store City"
+      },
+      {
+        "name": "Store Name",
+        "extName": "Store Name",
+        "dataType": "VARCHAR",
+        "length": 20,
+        "dimPropType": "none",
+        "physicalLevelRef": "Store Name"
+      },
+      {
+        "name": "Category Description",
+        "extName": "Category Description",
+        "dataType": "VARCHAR",
+        "length": 30,
+        "dimPropType": "none",
+        "physicalLevelRef": "Category Description"
+      }
+    ]
+  }
+}

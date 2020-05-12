@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "Base Rate",
+    "presentationColumns": [
+      {
+        "name": "[Employee].[Base Rate].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Base Rate.[Employee].[Base Rate].[(All)]"
+      },
+      {
+        "name": "Base Rate",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Base Rate.Base Rate"
+      },
+      {
+        "name": "KEY0#137",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Base Rate.KEY0#137"
+      },
+      {
+        "name": "KEY0#138",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Base Rate.KEY0#138"
+      },
+      {
+        "name": "MEMBER_VALUE#137",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Base Rate.MEMBER_VALUE#137"
+      },
+      {
+        "name": "MEMBER_VALUE#138",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Base Rate.MEMBER_VALUE#138"
+      },
+      {
+        "name": "NAME#111",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Base Rate.NAME#111"
+      },
+      {
+        "name": "NAME#112",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Base Rate.NAME#112"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Base Rate",
+        "levels": [
+          {
+            "name": "[Employee].[Base Rate].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Employee].[Base Rate].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Base Rate.[Employee].[Base Rate].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Base Rate",
+            "displayColumns": [
+              {
+                "name": "Base Rate",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Base Rate.Base Rate"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

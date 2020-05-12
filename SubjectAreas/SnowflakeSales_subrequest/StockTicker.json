@@ -1,0 +1,31 @@
+{
+  "presentationTable": {
+    "name": "StockTicker",
+    "presentationColumns": [
+      {
+        "name": "Company Name",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.StockTicker.Company Name"
+      },
+      {
+        "name": "Symbol",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.StockTicker.Symbol"
+      },
+      {
+        "name": "Last",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.StockTicker.Last"
+      },
+      {
+        "name": "Change",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.StockTicker.Change"
+      },
+      {
+        "name": "% Change",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.StockTicker.% Change"
+      },
+      {
+        "name": "Volume",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.StockTicker.Volume"
+      }
+    ]
+  }
+}

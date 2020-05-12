@@ -1,0 +1,27 @@
+{
+  "presentationTable": {
+    "name": "OrderDetails",
+    "presentationColumns": [
+      {
+        "name": "OrderID",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.OrderDetails.OrderID"
+      },
+      {
+        "name": "ProductID",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.OrderDetails.ProductID"
+      },
+      {
+        "name": "UnitPrice",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.OrderDetails.UnitPrice"
+      },
+      {
+        "name": "Quantity",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.OrderDetails.Quantity"
+      },
+      {
+        "name": "Discount",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.OrderDetails.Discount"
+      }
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "Commute Distance",
+    "presentationColumns": [
+      {
+        "name": "[Customer].[Commute Distance].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Commute Distance.[Customer].[Commute Distance].[(All)]"
+      },
+      {
+        "name": "Commute Distance",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Commute Distance.Commute Distance"
+      },
+      {
+        "name": "Commute Distance Sort",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Commute Distance.Commute Distance Sort"
+      },
+      {
+        "name": "KEY0#16",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Commute Distance.KEY0#16"
+      },
+      {
+        "name": "KEY0#17",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Commute Distance.KEY0#17"
+      },
+      {
+        "name": "MEMBER_VALUE#16",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Commute Distance.MEMBER_VALUE#16"
+      },
+      {
+        "name": "MEMBER_VALUE#17",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Commute Distance.MEMBER_VALUE#17"
+      },
+      {
+        "name": "NAME#13",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Commute Distance.NAME#13"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Commute Distance",
+        "levels": [
+          {
+            "name": "[Customer].[Commute Distance].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Customer].[Commute Distance].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Commute Distance.[Customer].[Commute Distance].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Commute Distance",
+            "displayColumns": [
+              {
+                "name": "Commute Distance",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Commute Distance.Commute Distance"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

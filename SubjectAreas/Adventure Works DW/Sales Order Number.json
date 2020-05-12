@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Sales Order Number",
+    "presentationColumns": [
+      {
+        "name": "[Internet Sales Order Details].[Sales Order Number].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Number.[Internet Sales Order Details].[Sales Order Number].[(All)]"
+      },
+      {
+        "name": "KEY0#211",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Number.KEY0#211"
+      },
+      {
+        "name": "KEY0#212",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Number.KEY0#212"
+      },
+      {
+        "name": "MEMBER_VALUE#211",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Number.MEMBER_VALUE#211"
+      },
+      {
+        "name": "MEMBER_VALUE#212",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Number.MEMBER_VALUE#212"
+      },
+      {
+        "name": "NAME#169",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Number.NAME#169"
+      },
+      {
+        "name": "Sales Order Number#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Number.Sales Order Number#1"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Sales Order Number",
+        "levels": [
+          {
+            "name": "[Internet Sales Order Details].[Sales Order Number].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Internet Sales Order Details].[Sales Order Number].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Number.[Internet Sales Order Details].[Sales Order Number].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Sales Order Number",
+            "displayColumns": [
+              {
+                "name": "Sales Order Number#1",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Number.Sales Order Number#1"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

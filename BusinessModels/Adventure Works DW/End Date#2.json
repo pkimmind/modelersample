@@ -1,0 +1,444 @@
+{
+  "logicalTable": {
+    "name": "End Date#2",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Promotion].[End Date].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Promotion].[End Date].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Promotion].[End Date].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Promotion].[End Date].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Promotion].[End Date].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "End Date - Member Key#2",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.End Date - Member Key#2"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "End Date#12",
+        "writeable": false,
+        "descriptorColumn": "End Date - Member Key#2",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.End Date#12"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#282",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#282"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#283",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#283"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#282",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#282"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#283",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#283"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#223",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#223"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#224",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#224"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "End Date#2",
+              "isPrimary": "true",
+              "columns": [
+                "[Promotion].[End Date].[(All)]",
+                "End Date#12"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "End Date#2",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "[Promotion].[End Date].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Promotion].[End Date].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Promotion].[End Date].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Promotion].[End Date].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "End Date - Member Key#2",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.End Date - Member Key#2"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "End Date#12",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.End Date#12"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#282",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#282"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#283",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#283"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#282",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#282"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#283",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#283"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#223",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#223"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#224",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#224"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.End Date#2.End Date"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "End Date#2",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "[Promotion].[End Date].[(All)]",
+      "levels": [
+        {
+          "name": "[Promotion].[End Date].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Promotion].[End Date].[(All)]",
+          "keys": [
+            {
+              "name": "[Promotion].[End Date].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Promotion].[End Date].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Promotion].[End Date].[(All)]",
+              "columns": [
+                "[Promotion].[End Date].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "End Date",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "End Date",
+              "keys": [
+                {
+                  "name": "End Date - Member Key#2",
+                  "isPrimary": "true",
+                  "columns": [
+                    "End Date - Member Key#2"
+                  ]
+                },
+                {
+                  "name": "End Date",
+                  "columns": [
+                    "End Date#12"
+                  ]
+                }
+              ],
+              "columns": [
+                "End Date - Member Key#2",
+                "End Date#12",
+                "KEY0#283",
+                "MEMBER_VALUE#283",
+                "NAME#224"
+              ]
+            }
+          ],
+          "columns": [
+            "[Promotion].[End Date].[(All)]",
+            "[Promotion].[End Date].[(All)] - Member Key",
+            "KEY0#282",
+            "MEMBER_VALUE#282",
+            "NAME#223"
+          ]
+        },
+        {
+          "name": "End Date",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "End Date",
+          "keys": [
+            {
+              "name": "End Date - Member Key#2",
+              "isPrimary": "true",
+              "columns": [
+                "End Date - Member Key#2"
+              ]
+            },
+            {
+              "name": "End Date",
+              "columns": [
+                "End Date#12"
+              ]
+            }
+          ],
+          "columns": [
+            "End Date - Member Key#2",
+            "End Date#12",
+            "KEY0#283",
+            "MEMBER_VALUE#283",
+            "NAME#224"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "End Date#2",
+        "levels": [
+          {
+            "name": "[Promotion].[End Date].[(All)]",
+            "childLevels": [
+              {
+                "name": "End Date"
+              }
+            ]
+          },
+          {
+            "name": "End Date"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,413 @@
+{
+  "logicalTable": {
+    "name": "Account Type",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Account].[Account Type].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Account].[Account Type].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Account].[Account Type].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Account].[Account Type].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Account].[Account Type].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Account Type - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Account Type - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Account Type#1",
+        "writeable": false,
+        "descriptorColumn": "Account Type - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Account Type#1"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#4",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#4"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#5",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#5"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#4",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#4"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#5",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#5"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#3",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#3"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Account Type",
+              "isPrimary": "true",
+              "columns": [
+                "[Account].[Account Type].[(All)]",
+                "Account Type#1"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Account Type",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "[Account].[Account Type].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Account].[Account Type].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Account].[Account Type].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Account].[Account Type].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Account Type - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Account Type - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Account Type#1",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Account Type#1"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#4",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#4"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#5",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#5"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#4",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#4"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#5",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#5"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#3",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#3"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Account Type.Account Type"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Account Type",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "[Account].[Account Type].[(All)]",
+      "levels": [
+        {
+          "name": "[Account].[Account Type].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Account].[Account Type].[(All)]",
+          "keys": [
+            {
+              "name": "[Account].[Account Type].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Account].[Account Type].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Account].[Account Type].[(All)]",
+              "columns": [
+                "[Account].[Account Type].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Account Type",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Account Type",
+              "keys": [
+                {
+                  "name": "Account Type - Member Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Account Type - Member Key"
+                  ]
+                },
+                {
+                  "name": "Account Type",
+                  "columns": [
+                    "Account Type#1"
+                  ]
+                }
+              ],
+              "columns": [
+                "Account Type - Member Key",
+                "Account Type#1",
+                "KEY0#5",
+                "MEMBER_VALUE#5"
+              ]
+            }
+          ],
+          "columns": [
+            "[Account].[Account Type].[(All)]",
+            "[Account].[Account Type].[(All)] - Member Key",
+            "KEY0#4",
+            "MEMBER_VALUE#4",
+            "NAME#3"
+          ]
+        },
+        {
+          "name": "Account Type",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Account Type",
+          "keys": [
+            {
+              "name": "Account Type - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "Account Type - Member Key"
+              ]
+            },
+            {
+              "name": "Account Type",
+              "columns": [
+                "Account Type#1"
+              ]
+            }
+          ],
+          "columns": [
+            "Account Type - Member Key",
+            "Account Type#1",
+            "KEY0#5",
+            "MEMBER_VALUE#5"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Account Type",
+        "levels": [
+          {
+            "name": "[Account].[Account Type].[(All)]",
+            "childLevels": [
+              {
+                "name": "Account Type"
+              }
+            ]
+          },
+          {
+            "name": "Account Type"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "presentationTable": {
+    "name": "Product",
+    "presentationColumns": [
+      {
+        "name": "ProductID",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Product.ProductID"
+      },
+      {
+        "name": "ProductName",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Product.ProductName"
+      },
+      {
+        "name": "SupplierID",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Product.SupplierID"
+      },
+      {
+        "name": "CategoryID",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Product.CategoryID"
+      },
+      {
+        "name": "QuantityPerUnit",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Product.QuantityPerUnit"
+      },
+      {
+        "name": "UnitPrice",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Product.UnitPrice"
+      },
+      {
+        "name": "UnitsInStock",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Product.UnitsInStock"
+      },
+      {
+        "name": "ReorderLevel",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Product.ReorderLevel"
+      },
+      {
+        "name": "Discontinued",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Product.Discontinued"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Product.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Product.QtySold"
+      },
+      {
+        "name": "UnitsOnOrder",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.Product.UnitsOnOrder"
+      }
+    ]
+  }
+}

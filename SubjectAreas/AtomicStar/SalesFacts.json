@@ -1,0 +1,51 @@
+{
+  "presentationTable": {
+    "name": "SalesFacts",
+    "presentationColumns": [
+      {
+        "name": "ShipVia",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.SalesFacts.ShipVia"
+      },
+      {
+        "name": "Year",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.SalesFacts.Year"
+      },
+      {
+        "name": "Week",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.SalesFacts.Week"
+      },
+      {
+        "name": "EmployeeID",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.SalesFacts.EmployeeID"
+      },
+      {
+        "name": "ProductID",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.SalesFacts.ProductID"
+      },
+      {
+        "name": "CustomerID",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.SalesFacts.CustomerID"
+      },
+      {
+        "name": "SiteID",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.SalesFacts.SiteID"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.SalesFacts.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.SalesFacts.QtySold"
+      },
+      {
+        "name": "PlanRevenue",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.SalesPlan.PlanRevenue"
+      },
+      {
+        "name": "RevenueShare",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.SalesFacts.RevenueShare"
+      }
+    ]
+  }
+}

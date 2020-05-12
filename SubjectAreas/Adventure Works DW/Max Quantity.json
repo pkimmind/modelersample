@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "Max Quantity",
+    "presentationColumns": [
+      {
+        "name": "[Promotion].[Max Quantity].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Max Quantity.[Promotion].[Max Quantity].[(All)]"
+      },
+      {
+        "name": "KEY0#284",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Max Quantity.KEY0#284"
+      },
+      {
+        "name": "KEY0#285",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Max Quantity.KEY0#285"
+      },
+      {
+        "name": "Max Quantity",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Max Quantity.Max Quantity"
+      },
+      {
+        "name": "MEMBER_VALUE#284",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Max Quantity.MEMBER_VALUE#284"
+      },
+      {
+        "name": "MEMBER_VALUE#285",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Max Quantity.MEMBER_VALUE#285"
+      },
+      {
+        "name": "NAME#225",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Max Quantity.NAME#225"
+      },
+      {
+        "name": "NAME#226",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Max Quantity.NAME#226"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Max Quantity",
+        "levels": [
+          {
+            "name": "[Promotion].[Max Quantity].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Promotion].[Max Quantity].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Max Quantity.[Promotion].[Max Quantity].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Max Quantity",
+            "displayColumns": [
+              {
+                "name": "Max Quantity",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Max Quantity.Max Quantity"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

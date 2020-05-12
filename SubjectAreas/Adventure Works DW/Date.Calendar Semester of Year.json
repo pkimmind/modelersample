@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Date.Calendar Semester of Year",
+    "presentationColumns": [
+      {
+        "name": "[Date].[Calendar Semester of Year].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar Semester of Year.[Date].[Calendar Semester of Year].[(All)]"
+      },
+      {
+        "name": "Calendar Semester of Year#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar Semester of Year.Calendar Semester of Year#1"
+      },
+      {
+        "name": "KEY0#64",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar Semester of Year.KEY0#64"
+      },
+      {
+        "name": "KEY0#65",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar Semester of Year.KEY0#65"
+      },
+      {
+        "name": "MEMBER_VALUE#64",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar Semester of Year.MEMBER_VALUE#64"
+      },
+      {
+        "name": "MEMBER_VALUE#65",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar Semester of Year.MEMBER_VALUE#65"
+      },
+      {
+        "name": "NAME#54",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar Semester of Year.NAME#54"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Date.Calendar Semester of Year",
+        "levels": [
+          {
+            "name": "[Date].[Calendar Semester of Year].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Date].[Calendar Semester of Year].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar Semester of Year.[Date].[Calendar Semester of Year].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Calendar Semester of Year",
+            "displayColumns": [
+              {
+                "name": "Calendar Semester of Year#1",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar Semester of Year.Calendar Semester of Year#1"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

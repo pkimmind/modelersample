@@ -1,0 +1,166 @@
+{
+  "cubeTable": {
+    "name": "Sales",
+    "extName": "Sales",
+    "caching": {
+    },
+    "memberReference": "Default",
+    "DBMap": [
+      {
+        "name": "DEFAULT",
+        "value": "Sales"
+      }
+    ],
+    "columns": [
+      {
+        "name": "Year",
+        "extName": "Year",
+        "dataType": "VARCHAR",
+        "length": 8,
+        "dimPropType": "none",
+        "physicalLevelRef": "Year"
+      },
+      {
+        "name": "Quarter",
+        "extName": "Quarter",
+        "dataType": "VARCHAR",
+        "length": 10,
+        "dimPropType": "none",
+        "physicalLevelRef": "Quarter"
+      },
+      {
+        "name": "Store Country",
+        "extName": "Store Country",
+        "dataType": "VARCHAR",
+        "length": 10,
+        "dimPropType": "none",
+        "physicalLevelRef": "Store Country"
+      },
+      {
+        "name": "Store State",
+        "extName": "Store State",
+        "dataType": "VARCHAR",
+        "length": 10,
+        "dimPropType": "none",
+        "physicalLevelRef": "Store State"
+      },
+      {
+        "name": "Unit Sales",
+        "extName": "Unit Sales",
+        "aggrType": "sum",
+        "dataType": "DOUBLE",
+        "dimPropType": "uda"
+      },
+      {
+        "name": "Profit",
+        "extName": "Profit",
+        "aggrType": "sum",
+        "dataType": "DOUBLE",
+        "dimPropType": "uda"
+      },
+      {
+        "name": "Store Sqft",
+        "extName": "Store Sqft",
+        "dataType": "DOUBLE",
+        "dimPropType": "uda",
+        "physicalLevelRef": "Store Name"
+      },
+      {
+        "name": "Store Name",
+        "extName": "Store Name",
+        "dataType": "VARCHAR",
+        "length": 10,
+        "dimPropType": "none",
+        "physicalLevelRef": "Store Name"
+      },
+      {
+        "name": "Country",
+        "extName": "Country",
+        "dataType": "VARCHAR",
+        "length": 255,
+        "dimPropType": "none",
+        "physicalLevelRef": "Country"
+      },
+      {
+        "name": "State Province",
+        "extName": "State Province",
+        "dataType": "VARCHAR",
+        "length": 20,
+        "dimPropType": "none",
+        "physicalLevelRef": "State Province"
+      },
+      {
+        "name": "City",
+        "extName": "City",
+        "dataType": "VARCHAR",
+        "length": 10,
+        "dimPropType": "none",
+        "physicalLevelRef": "City"
+      },
+      {
+        "name": "Name",
+        "extName": "Name",
+        "dataType": "VARCHAR",
+        "length": 40,
+        "dimPropType": "none",
+        "physicalLevelRef": "Name"
+      },
+      {
+        "name": "Gender",
+        "extName": "Gender",
+        "dataType": "VARCHAR",
+        "length": 30,
+        "dimPropType": "uda",
+        "physicalLevelRef": "Name"
+      },
+      {
+        "name": "Marital Status",
+        "extName": "Marital Status",
+        "dataType": "VARCHAR",
+        "length": 30,
+        "dimPropType": "uda",
+        "physicalLevelRef": "Name"
+      },
+      {
+        "name": "Education",
+        "extName": "Education",
+        "dataType": "VARCHAR",
+        "length": 30,
+        "dimPropType": "uda",
+        "physicalLevelRef": "Name"
+      },
+      {
+        "name": "Yearly Income",
+        "extName": "Yearly Income",
+        "dataType": "VARCHAR",
+        "length": 30,
+        "dimPropType": "uda",
+        "physicalLevelRef": "Name"
+      },
+      {
+        "name": "Member Card",
+        "extName": "Member Card",
+        "dataType": "VARCHAR",
+        "length": 50,
+        "dimPropType": "uda",
+        "physicalLevelRef": "Name"
+      },
+      {
+        "name": "Store Manager",
+        "extName": "Store Manager",
+        "dataType": "VARCHAR",
+        "length": 30,
+        "dimPropType": "uda",
+        "physicalLevelRef": "Store Name"
+      },
+      {
+        "name": "Store City",
+        "extName": "Store City",
+        "dataType": "VARCHAR",
+        "length": 30,
+        "dimPropType": "none",
+        "physicalLevelRef": "Store City"
+      }
+    ]
+  }
+}

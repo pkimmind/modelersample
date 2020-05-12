@@ -1,0 +1,445 @@
+{
+  "logicalTable": {
+    "name": "Date.Fiscal Year",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Date].[Fiscal Year].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Date].[Fiscal Year].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Date].[Fiscal Year].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Date].[Fiscal Year].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Date].[Fiscal Year].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Fiscal Year - Member Key#1",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Fiscal Year - Member Key#1"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Fiscal Year#2",
+        "writeable": false,
+        "descriptorColumn": "Fiscal Year - Member Key#1",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Fiscal Year#2"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#88",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#88"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#89",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#89"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#88",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#88"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#89",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#89"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#72",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#72"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#73",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#73"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Date.Fiscal Year",
+              "isPrimary": "true",
+              "columns": [
+                "[Date].[Fiscal Year].[(All)]",
+                "Fiscal Year#2"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Date.Fiscal Year",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "[Date].[Fiscal Year].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Date].[Fiscal Year].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Date].[Fiscal Year].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Date].[Fiscal Year].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Fiscal Year - Member Key#1",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Fiscal Year - Member Key#1"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Fiscal Year#2",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Fiscal Year#2"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#88",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#88"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#89",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#89"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#88",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#88"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#89",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#89"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#72",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#72"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#73",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#73"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Date.Fiscal Year.Fiscal Year"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Date.Fiscal Year",
+      "isTimeDim": "true",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "[Date].[Fiscal Year].[(All)]",
+      "levels": [
+        {
+          "name": "[Date].[Fiscal Year].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Date].[Fiscal Year].[(All)]",
+          "keys": [
+            {
+              "name": "[Date].[Fiscal Year].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Date].[Fiscal Year].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Date].[Fiscal Year].[(All)]",
+              "columns": [
+                "[Date].[Fiscal Year].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Fiscal Year",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Fiscal Year",
+              "keys": [
+                {
+                  "name": "Fiscal Year - Member Key#1",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Fiscal Year - Member Key#1"
+                  ]
+                },
+                {
+                  "name": "Fiscal Year",
+                  "columns": [
+                    "Fiscal Year#2"
+                  ]
+                }
+              ],
+              "columns": [
+                "Fiscal Year - Member Key#1",
+                "Fiscal Year#2",
+                "KEY0#89",
+                "MEMBER_VALUE#89",
+                "NAME#73"
+              ]
+            }
+          ],
+          "columns": [
+            "[Date].[Fiscal Year].[(All)]",
+            "[Date].[Fiscal Year].[(All)] - Member Key",
+            "KEY0#88",
+            "MEMBER_VALUE#88",
+            "NAME#72"
+          ]
+        },
+        {
+          "name": "Fiscal Year",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Fiscal Year",
+          "keys": [
+            {
+              "name": "Fiscal Year - Member Key#1",
+              "isPrimary": "true",
+              "columns": [
+                "Fiscal Year - Member Key#1"
+              ]
+            },
+            {
+              "name": "Fiscal Year",
+              "columns": [
+                "Fiscal Year#2"
+              ]
+            }
+          ],
+          "columns": [
+            "Fiscal Year - Member Key#1",
+            "Fiscal Year#2",
+            "KEY0#89",
+            "MEMBER_VALUE#89",
+            "NAME#73"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Date.Fiscal Year",
+        "levels": [
+          {
+            "name": "[Date].[Fiscal Year].[(All)]",
+            "childLevels": [
+              {
+                "name": "Fiscal Year"
+              }
+            ]
+          },
+          {
+            "name": "Fiscal Year"
+          }
+        ]
+      }
+    }
+  }
+}

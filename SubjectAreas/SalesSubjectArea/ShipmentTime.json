@@ -1,0 +1,29 @@
+{
+  "presentationTable": {
+    "name": "ShipmentTime",
+    "alternateNames": [
+      "Time"
+    ],
+    "presentationColumns": [
+      {
+        "name": "Week",
+        "sourceLogicalColumn": "logicalColumn:Sales.ShipmentTime.Week",
+        "alternateNames": [
+          "ShipWeek"
+        ]
+      },
+      {
+        "name": "Level",
+        "sourceLogicalColumn": "logicalColumn:Sales.ShipmentTime.Level"
+      },
+      {
+        "name": "Qtr",
+        "sourceLogicalColumn": "logicalColumn:Sales.ShipmentTime.Qtr"
+      },
+      {
+        "name": "Year",
+        "sourceLogicalColumn": "logicalColumn:Sales.ShipmentTime.Year"
+      }
+    ]
+  }
+}

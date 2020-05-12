@@ -1,0 +1,29 @@
+{
+  "businessModel": {
+    "name": "AtomicStar",
+    "disable": false,
+    "joins": [
+      {
+        "name": "Relationship_2004:2782970794517",
+        "leftTable": "logicalTable:AtomicStar.Product",
+        "rightTable": "logicalTable:AtomicStar.Product",
+        "type": "INNER",
+        "cardinality": "ONETOMANY"
+      },
+      {
+        "name": "Relationship_2004:2785970794529",
+        "leftTable": "logicalTable:AtomicStar.ShipmentTime",
+        "rightTable": "logicalTable:AtomicStar.ShipmentTime",
+        "type": "INNER",
+        "cardinality": "ONETOMANY"
+      },
+      {
+        "name": "Relationship_2004:2788970794540",
+        "leftTable": "logicalTable:AtomicStar.Employee",
+        "rightTable": "logicalTable:AtomicStar.Employee",
+        "type": "INNER",
+        "cardinality": "ONETOMANY"
+      }
+    }
+  }
+}

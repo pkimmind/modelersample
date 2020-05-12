@@ -1,0 +1,84 @@
+{
+  "physicalTable": {
+    "name": "prod",
+    "caching": {
+    },
+    "physicalColumns": [
+      {
+        "name": "PRODKEY",
+        "dataType": "INT",
+        "length": 10
+      },
+      {
+        "name": "PRODDESC",
+        "dataType": "CHAR",
+        "length": 255
+      },
+      {
+        "name": "category",
+        "dataType": "CHAR",
+        "length": 100
+      },
+      {
+        "name": "manufacturer",
+        "dataType": "CHAR",
+        "length": 100
+      },
+      {
+        "name": "brand",
+        "dataType": "CHAR",
+        "length": 100
+      },
+      {
+        "name": "subbrand",
+        "dataType": "CHAR",
+        "length": 100
+      },
+      {
+        "name": "packing",
+        "dataType": "CHAR",
+        "length": 100
+      },
+      {
+        "name": "diapersize",
+        "dataType": "CHAR",
+        "length": 100
+      },
+      {
+        "name": "segment",
+        "dataType": "CHAR",
+        "length": 100
+      },
+      {
+        "name": "prodcount",
+        "dataType": "INT",
+        "length": 10
+      },
+      {
+        "name": "gender",
+        "dataType": "CHAR",
+        "length": 100
+      },
+      {
+        "name": "upc",
+        "dataType": "DOUBLE",
+        "length": 15
+      },
+      {
+        "name": "deal",
+        "dataType": "CHAR",
+        "length": 100
+      },
+      {
+        "name": "PRODLEVEL",
+        "dataType": "CHAR",
+        "length": 255
+      },
+      {
+        "name": "BRIDGE",
+        "dataType": "CHAR",
+        "length": 255
+      }
+    ]
+  }
+}

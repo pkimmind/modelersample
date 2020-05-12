@@ -1,0 +1,21 @@
+{
+  "presentationTable": {
+    "name": "Products",
+    "description": "Products table description",
+    "presentationColumns": [
+      {
+        "name": "Family",
+        "sourceLogicalColumn": "logicalColumn:Interop.Products.Family",
+        "description": "Family column description"
+      },
+      {
+        "name": "sku",
+        "sourceLogicalColumn": "logicalColumn:Interop.Products.sku"
+      },
+      {
+        "name": "Ounces",
+        "sourceLogicalColumn": "logicalColumn:Interop.Products.Ounces"
+      }
+    ]
+  }
+}

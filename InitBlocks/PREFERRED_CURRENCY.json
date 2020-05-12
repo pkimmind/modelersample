@@ -1,0 +1,15 @@
+{
+  "initBlock": {
+    "name": "PREFERRED_CURRENCY",
+    "type": "SESSION",
+    "refreshPeriod": 86400,
+    "targetVariables": [
+      {
+        "name": "PREFERRED_CURRENCY",
+"Expr": {
+  "expressionTemplate": "'LOCAL_CURRENCY'",
+}
+      }
+    ]
+  }
+}

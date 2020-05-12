@@ -1,0 +1,27 @@
+{
+  "presentationTable": {
+    "name": "Shipper",
+    "presentationColumns": [
+      {
+        "name": "ShipperID",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Shipper.ShipperID"
+      },
+      {
+        "name": "CompanyName",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Shipper.CompanyName"
+      },
+      {
+        "name": "Phone",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Shipper.Phone"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Shipper.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Shipper.QtySold"
+      }
+    ]
+  }
+}

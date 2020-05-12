@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Safety Stock Level",
+    "presentationColumns": [
+      {
+        "name": "[Product].[Safety Stock Level].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Safety Stock Level.[Product].[Safety Stock Level].[(All)]"
+      },
+      {
+        "name": "KEY0#259",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Safety Stock Level.KEY0#259"
+      },
+      {
+        "name": "KEY0#260",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Safety Stock Level.KEY0#260"
+      },
+      {
+        "name": "MEMBER_VALUE#259",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Safety Stock Level.MEMBER_VALUE#259"
+      },
+      {
+        "name": "MEMBER_VALUE#260",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Safety Stock Level.MEMBER_VALUE#260"
+      },
+      {
+        "name": "NAME#205",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Safety Stock Level.NAME#205"
+      },
+      {
+        "name": "Safety Stock Level#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Safety Stock Level.Safety Stock Level#2"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Safety Stock Level",
+        "levels": [
+          {
+            "name": "[Product].[Safety Stock Level].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Product].[Safety Stock Level].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Safety Stock Level.[Product].[Safety Stock Level].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Safety Stock Level",
+            "displayColumns": [
+              {
+                "name": "Safety Stock Level#2",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Safety Stock Level.Safety Stock Level#2"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

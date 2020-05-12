@@ -1,0 +1,23 @@
+{
+  "presentationTable": {
+    "name": "EmployeeRegion",
+    "presentationColumns": [
+      {
+        "name": "Region",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.EmployeeRegion.Region"
+      },
+      {
+        "name": "Country",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.EmployeeRegion.Country"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.EmployeeRegion.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.EmployeeRegion.QtySold"
+      }
+    ]
+  }
+}

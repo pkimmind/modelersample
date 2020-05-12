@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Ship Date.Calendar Semester of Year",
+    "presentationColumns": [
+      {
+        "name": "[Ship Date].[Calendar Semester of Year].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Semester of Year.[Ship Date].[Calendar Semester of Year].[(All)]"
+      },
+      {
+        "name": "Calendar Semester of Year#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Semester of Year.Calendar Semester of Year#5"
+      },
+      {
+        "name": "KEY0#394",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Semester of Year.KEY0#394"
+      },
+      {
+        "name": "KEY0#395",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Semester of Year.KEY0#395"
+      },
+      {
+        "name": "MEMBER_VALUE#394",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Semester of Year.MEMBER_VALUE#394"
+      },
+      {
+        "name": "MEMBER_VALUE#395",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Semester of Year.MEMBER_VALUE#395"
+      },
+      {
+        "name": "NAME#305",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Semester of Year.NAME#305"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Ship Date.Calendar Semester of Year",
+        "levels": [
+          {
+            "name": "[Ship Date].[Calendar Semester of Year].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Ship Date].[Calendar Semester of Year].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Semester of Year.[Ship Date].[Calendar Semester of Year].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Calendar Semester of Year",
+            "displayColumns": [
+              {
+                "name": "Calendar Semester of Year#5",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Semester of Year.Calendar Semester of Year#5"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

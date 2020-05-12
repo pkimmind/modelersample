@@ -1,0 +1,83 @@
+{
+  "logicalTable": {
+    "name": "Facts",
+    "type": "FACT",
+    "logicalColumns": [
+      {
+        "name": "PROFIT",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "INTOP_C02",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:INFOCUBE...INTOP_C02.PROFIT"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "SALES",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "INTOP_C02",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:INFOCUBE...INTOP_C02.SALES"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "INTOP_C02",
+        "logicalTableRef": "Facts",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "PROFIT",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:INFOCUBE...INTOP_C02.PROFIT"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "SALES",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:INFOCUBE...INTOP_C02.SALES"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "INTOP_C02",
+            "joins": [
+            ]
+          }
+        ]
+      },
+    ]
+  }
+}

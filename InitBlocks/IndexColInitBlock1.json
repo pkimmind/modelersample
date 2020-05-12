@@ -1,0 +1,17 @@
+{
+  "initBlock": {
+    "name": "IndexColInitBlock1",
+    "type": "SESSION",
+    "isRowWiseCacheEnabled": false,
+    "refreshPeriod": 86400,
+    "connectionPool": "connectionPool:SQLDB_Northwind.Northwind Init Block Connections",
+    "selectStatements": [
+      {
+        "databaseType": "DEFAULT",
+        "query": "select 'LIST_OF_INDICES', employeeid from Employees"
+      }
+    ],
+    "targetVariables": [
+    ]
+  }
+}

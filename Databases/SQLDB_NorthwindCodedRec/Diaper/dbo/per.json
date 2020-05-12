@@ -1,0 +1,64 @@
+{
+  "physicalTable": {
+    "name": "per",
+    "caching": {
+    },
+    "physicalColumns": [
+      {
+        "name": "PERKEY",
+        "dataType": "INT",
+        "length": 10
+      },
+      {
+        "name": "M4DATE",
+        "dataType": "CHAR",
+        "length": 255
+      },
+      {
+        "name": "PERLEVEL",
+        "dataType": "CHAR",
+        "length": 255
+      },
+      {
+        "name": "ABBREV",
+        "dataType": "CHAR",
+        "length": 255
+      },
+      {
+        "name": "PERMONTH",
+        "dataType": "CHAR",
+        "length": 255
+      },
+      {
+        "name": "PERYEAR",
+        "dataType": "DOUBLE",
+        "length": 15
+      },
+      {
+        "name": "PERIOD_N",
+        "dataType": "DOUBLE",
+        "length": 15
+      },
+      {
+        "name": "SEQ",
+        "dataType": "DOUBLE",
+        "length": 15
+      },
+      {
+        "name": "QUADWK",
+        "dataType": "DOUBLE",
+        "length": 15
+      },
+      {
+        "name": "PERWEEK",
+        "dataType": "INT",
+        "length": 10
+      },
+      {
+        "name": "FUTURE",
+        "dataType": "SMALLINT",
+        "length": 5
+      }
+    ]
+  }
+}

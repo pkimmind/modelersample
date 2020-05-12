@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "Date.Fiscal Year",
+    "presentationColumns": [
+      {
+        "name": "[Date].[Fiscal Year].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal Year.[Date].[Fiscal Year].[(All)]"
+      },
+      {
+        "name": "Fiscal Year#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal Year.Fiscal Year#2"
+      },
+      {
+        "name": "KEY0#88",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal Year.KEY0#88"
+      },
+      {
+        "name": "KEY0#89",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal Year.KEY0#89"
+      },
+      {
+        "name": "MEMBER_VALUE#88",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal Year.MEMBER_VALUE#88"
+      },
+      {
+        "name": "MEMBER_VALUE#89",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal Year.MEMBER_VALUE#89"
+      },
+      {
+        "name": "NAME#72",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal Year.NAME#72"
+      },
+      {
+        "name": "NAME#73",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal Year.NAME#73"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Date.Fiscal Year",
+        "levels": [
+          {
+            "name": "[Date].[Fiscal Year].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Date].[Fiscal Year].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal Year.[Date].[Fiscal Year].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Fiscal Year",
+            "displayColumns": [
+              {
+                "name": "Fiscal Year#2",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal Year.Fiscal Year#2"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

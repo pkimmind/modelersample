@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "Min Payment Type",
+    "presentationColumns": [
+      {
+        "name": "[Reseller].[Min Payment Type].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Payment Type.[Reseller].[Min Payment Type].[(All)]"
+      },
+      {
+        "name": "KEY0#316",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Payment Type.KEY0#316"
+      },
+      {
+        "name": "KEY0#317",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Payment Type.KEY0#317"
+      },
+      {
+        "name": "MEMBER_VALUE#316",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Payment Type.MEMBER_VALUE#316"
+      },
+      {
+        "name": "MEMBER_VALUE#317",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Payment Type.MEMBER_VALUE#317"
+      },
+      {
+        "name": "Min Payment Type",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Payment Type.Min Payment Type"
+      },
+      {
+        "name": "NAME#251",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Payment Type.NAME#251"
+      },
+      {
+        "name": "NAME#252",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Payment Type.NAME#252"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Min Payment Type",
+        "levels": [
+          {
+            "name": "[Reseller].[Min Payment Type].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Reseller].[Min Payment Type].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Payment Type.[Reseller].[Min Payment Type].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Min Payment Type",
+            "displayColumns": [
+              {
+                "name": "Min Payment Type",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Payment Type.Min Payment Type"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "presentationTable": {
+    "name": "Employee",
+    "presentationColumns": [
+      {
+        "name": "EmployeeID",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.Employee.EmployeeID"
+      },
+      {
+        "name": "LastName",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.Employee.LastName"
+      },
+      {
+        "name": "FirstName",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.Employee.FirstName"
+      },
+      {
+        "name": "Title",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.Employee.Title"
+      },
+      {
+        "name": "TitleOfCourtesy",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.Employee.TitleOfCourtesy"
+      },
+      {
+        "name": "BirthDate",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.Employee.BirthDate"
+      },
+      {
+        "name": "HireDate",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.Employee.HireDate"
+      },
+      {
+        "name": "PostalCode",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.Employee.PostalCode"
+      },
+      {
+        "name": "Address",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.Employee.Address"
+      },
+      {
+        "name": "HomePhone",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.Employee.HomePhone"
+      },
+      {
+        "name": "Extension",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.Employee.Extension"
+      },
+      {
+        "name": "Notes",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.Employee.Notes"
+      },
+      {
+        "name": "ReportsTo",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.Employee.ReportsTo"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.Employee.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.Employee.QtySold"
+      },
+      {
+        "name": "Country",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.Employee.Country"
+      },
+      {
+        "name": "Region",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.Employee.Region"
+      },
+      {
+        "name": "City",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.Employee.City"
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "presentationTable": {
+    "name": "SupplierRegion",
+    "presentationColumns": [
+      {
+        "name": "Country",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SupplierRegion.Country"
+      },
+      {
+        "name": "Region",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SupplierRegion.Region"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SupplierRegion.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SupplierRegion.QtySold"
+      },
+      {
+        "name": "RegionShare",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SupplierRegion.RegionShare"
+      }
+    ]
+  }
+}

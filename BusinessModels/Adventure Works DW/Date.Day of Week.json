@@ -1,0 +1,414 @@
+{
+  "logicalTable": {
+    "name": "Date.Day of Week",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Date].[Day of Week].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Date].[Day of Week].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Date].[Day of Week].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Date].[Day of Week].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Date].[Day of Week].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Day of Week - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Day of Week - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Day of Week#2",
+        "writeable": false,
+        "descriptorColumn": "Day of Week - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Day of Week#2"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#74",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#74"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#75",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#75"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#74",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#74"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#75",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#75"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#62",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#62"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Date.Day of Week",
+              "isPrimary": "true",
+              "columns": [
+                "[Date].[Day of Week].[(All)]",
+                "Day of Week#2"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Date.Day of Week",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "[Date].[Day of Week].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Date].[Day of Week].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Date].[Day of Week].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Date].[Day of Week].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Day of Week - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Day of Week - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Day of Week#2",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Day of Week#2"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#74",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#74"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#75",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#75"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#74",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#74"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#75",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#75"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#62",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#62"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Date.Day of Week.Day of Week"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Date.Day of Week",
+      "isTimeDim": "true",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "[Date].[Day of Week].[(All)]",
+      "levels": [
+        {
+          "name": "[Date].[Day of Week].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Date].[Day of Week].[(All)]",
+          "keys": [
+            {
+              "name": "[Date].[Day of Week].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Date].[Day of Week].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Date].[Day of Week].[(All)]",
+              "columns": [
+                "[Date].[Day of Week].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Day of Week",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Day of Week",
+              "keys": [
+                {
+                  "name": "Day of Week - Member Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Day of Week - Member Key"
+                  ]
+                },
+                {
+                  "name": "Day of Week",
+                  "columns": [
+                    "Day of Week#2"
+                  ]
+                }
+              ],
+              "columns": [
+                "Day of Week - Member Key",
+                "Day of Week#2",
+                "KEY0#75",
+                "MEMBER_VALUE#75"
+              ]
+            }
+          ],
+          "columns": [
+            "[Date].[Day of Week].[(All)]",
+            "[Date].[Day of Week].[(All)] - Member Key",
+            "KEY0#74",
+            "MEMBER_VALUE#74",
+            "NAME#62"
+          ]
+        },
+        {
+          "name": "Day of Week",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Day of Week",
+          "keys": [
+            {
+              "name": "Day of Week - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "Day of Week - Member Key"
+              ]
+            },
+            {
+              "name": "Day of Week",
+              "columns": [
+                "Day of Week#2"
+              ]
+            }
+          ],
+          "columns": [
+            "Day of Week - Member Key",
+            "Day of Week#2",
+            "KEY0#75",
+            "MEMBER_VALUE#75"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Date.Day of Week",
+        "levels": [
+          {
+            "name": "[Date].[Day of Week].[(All)]",
+            "childLevels": [
+              {
+                "name": "Day of Week"
+              }
+            ]
+          },
+          {
+            "name": "Day of Week"
+          }
+        ]
+      }
+    }
+  }
+}

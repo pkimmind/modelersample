@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "End Date#2",
+    "presentationColumns": [
+      {
+        "name": "[Promotion].[End Date].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.End Date#2.[Promotion].[End Date].[(All)]"
+      },
+      {
+        "name": "End Date#12",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.End Date#2.End Date#12"
+      },
+      {
+        "name": "KEY0#282",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.End Date#2.KEY0#282"
+      },
+      {
+        "name": "KEY0#283",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.End Date#2.KEY0#283"
+      },
+      {
+        "name": "MEMBER_VALUE#282",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.End Date#2.MEMBER_VALUE#282"
+      },
+      {
+        "name": "MEMBER_VALUE#283",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.End Date#2.MEMBER_VALUE#283"
+      },
+      {
+        "name": "NAME#223",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.End Date#2.NAME#223"
+      },
+      {
+        "name": "NAME#224",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.End Date#2.NAME#224"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "End Date#2",
+        "levels": [
+          {
+            "name": "[Promotion].[End Date].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Promotion].[End Date].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.End Date#2.[Promotion].[End Date].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "End Date",
+            "displayColumns": [
+              {
+                "name": "End Date#12",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.End Date#2.End Date#12"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "Delivery Date.Fiscal Year",
+    "presentationColumns": [
+      {
+        "name": "[Delivery Date].[Fiscal Year].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal Year.[Delivery Date].[Fiscal Year].[(All)]"
+      },
+      {
+        "name": "Fiscal Year#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal Year.Fiscal Year#5"
+      },
+      {
+        "name": "KEY0#126",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal Year.KEY0#126"
+      },
+      {
+        "name": "KEY0#127",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal Year.KEY0#127"
+      },
+      {
+        "name": "MEMBER_VALUE#126",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal Year.MEMBER_VALUE#126"
+      },
+      {
+        "name": "MEMBER_VALUE#127",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal Year.MEMBER_VALUE#127"
+      },
+      {
+        "name": "NAME#102",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal Year.NAME#102"
+      },
+      {
+        "name": "NAME#103",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal Year.NAME#103"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Delivery Date.Fiscal Year",
+        "levels": [
+          {
+            "name": "[Delivery Date].[Fiscal Year].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Delivery Date].[Fiscal Year].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal Year.[Delivery Date].[Fiscal Year].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Fiscal Year",
+            "displayColumns": [
+              {
+                "name": "Fiscal Year#5",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal Year.Fiscal Year#5"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

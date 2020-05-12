@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Email Address#1",
+    "presentationColumns": [
+      {
+        "name": "[Employee].[Email Address].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Email Address#1.[Employee].[Email Address].[(All)]"
+      },
+      {
+        "name": "Email Address#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Email Address#1.Email Address#3"
+      },
+      {
+        "name": "KEY0#143",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Email Address#1.KEY0#143"
+      },
+      {
+        "name": "KEY0#144",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Email Address#1.KEY0#144"
+      },
+      {
+        "name": "MEMBER_VALUE#143",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Email Address#1.MEMBER_VALUE#143"
+      },
+      {
+        "name": "MEMBER_VALUE#144",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Email Address#1.MEMBER_VALUE#144"
+      },
+      {
+        "name": "NAME#115",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Email Address#1.NAME#115"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Email Address#1",
+        "levels": [
+          {
+            "name": "[Employee].[Email Address].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Employee].[Email Address].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Email Address#1.[Employee].[Email Address].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Email Address",
+            "displayColumns": [
+              {
+                "name": "Email Address#3",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Email Address#1.Email Address#3"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

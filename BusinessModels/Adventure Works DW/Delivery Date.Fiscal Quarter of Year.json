@@ -1,0 +1,414 @@
+{
+  "logicalTable": {
+    "name": "Delivery Date.Fiscal Quarter of Year",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Delivery Date].[Fiscal Quarter of Year].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Delivery Date].[Fiscal Quarter of Year].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Delivery Date].[Fiscal Quarter of Year].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Delivery Date].[Fiscal Quarter of Year].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Delivery Date].[Fiscal Quarter of Year].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Fiscal Quarter of Year - Member Key#1",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Fiscal Quarter of Year - Member Key#1"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Fiscal Quarter of Year#3",
+        "writeable": false,
+        "descriptorColumn": "Fiscal Quarter of Year - Member Key#1",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Fiscal Quarter of Year#3"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#122",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#122"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#123",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#123"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#122",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#122"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#123",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#123"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#100",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#100"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Delivery Date.Fiscal Quarter of Year",
+              "isPrimary": "true",
+              "columns": [
+                "[Delivery Date].[Fiscal Quarter of Year].[(All)]",
+                "Fiscal Quarter of Year#3"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Delivery Date.Fiscal Quarter of Year",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "[Delivery Date].[Fiscal Quarter of Year].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Delivery Date].[Fiscal Quarter of Year].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Delivery Date].[Fiscal Quarter of Year].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Delivery Date].[Fiscal Quarter of Year].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Fiscal Quarter of Year - Member Key#1",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Fiscal Quarter of Year - Member Key#1"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Fiscal Quarter of Year#3",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Fiscal Quarter of Year#3"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#122",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#122"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#123",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#123"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#122",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#122"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#123",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#123"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#100",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#100"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Delivery Date.Fiscal Quarter of Year.Fiscal Quarter of Year"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Delivery Date.Fiscal Quarter of Year",
+      "isTimeDim": "true",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "[Delivery Date].[Fiscal Quarter of Year].[(All)]",
+      "levels": [
+        {
+          "name": "[Delivery Date].[Fiscal Quarter of Year].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Delivery Date].[Fiscal Quarter of Year].[(All)]",
+          "keys": [
+            {
+              "name": "[Delivery Date].[Fiscal Quarter of Year].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Delivery Date].[Fiscal Quarter of Year].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Delivery Date].[Fiscal Quarter of Year].[(All)]",
+              "columns": [
+                "[Delivery Date].[Fiscal Quarter of Year].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Fiscal Quarter of Year",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Fiscal Quarter of Year",
+              "keys": [
+                {
+                  "name": "Fiscal Quarter of Year - Member Key#1",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Fiscal Quarter of Year - Member Key#1"
+                  ]
+                },
+                {
+                  "name": "Fiscal Quarter of Year",
+                  "columns": [
+                    "Fiscal Quarter of Year#3"
+                  ]
+                }
+              ],
+              "columns": [
+                "Fiscal Quarter of Year - Member Key#1",
+                "Fiscal Quarter of Year#3",
+                "KEY0#123",
+                "MEMBER_VALUE#123"
+              ]
+            }
+          ],
+          "columns": [
+            "[Delivery Date].[Fiscal Quarter of Year].[(All)]",
+            "[Delivery Date].[Fiscal Quarter of Year].[(All)] - Member Key",
+            "KEY0#122",
+            "MEMBER_VALUE#122",
+            "NAME#100"
+          ]
+        },
+        {
+          "name": "Fiscal Quarter of Year",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Fiscal Quarter of Year",
+          "keys": [
+            {
+              "name": "Fiscal Quarter of Year - Member Key#1",
+              "isPrimary": "true",
+              "columns": [
+                "Fiscal Quarter of Year - Member Key#1"
+              ]
+            },
+            {
+              "name": "Fiscal Quarter of Year",
+              "columns": [
+                "Fiscal Quarter of Year#3"
+              ]
+            }
+          ],
+          "columns": [
+            "Fiscal Quarter of Year - Member Key#1",
+            "Fiscal Quarter of Year#3",
+            "KEY0#123",
+            "MEMBER_VALUE#123"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Delivery Date.Fiscal Quarter of Year",
+        "levels": [
+          {
+            "name": "[Delivery Date].[Fiscal Quarter of Year].[(All)]",
+            "childLevels": [
+              {
+                "name": "Fiscal Quarter of Year"
+              }
+            ]
+          },
+          {
+            "name": "Fiscal Quarter of Year"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Large Photo",
+    "presentationColumns": [
+      {
+        "name": "[Product].[Large Photo].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Large Photo.[Product].[Large Photo].[(All)]"
+      },
+      {
+        "name": "KEY0#231",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Large Photo.KEY0#231"
+      },
+      {
+        "name": "KEY0#232",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Large Photo.KEY0#232"
+      },
+      {
+        "name": "Large Photo",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Large Photo.Large Photo"
+      },
+      {
+        "name": "MEMBER_VALUE#231",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Large Photo.MEMBER_VALUE#231"
+      },
+      {
+        "name": "MEMBER_VALUE#232",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Large Photo.MEMBER_VALUE#232"
+      },
+      {
+        "name": "NAME#185",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Large Photo.NAME#185"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Large Photo",
+        "levels": [
+          {
+            "name": "[Product].[Large Photo].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Product].[Large Photo].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Large Photo.[Product].[Large Photo].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Large Photo",
+            "displayColumns": [
+              {
+                "name": "Large Photo",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Large Photo.Large Photo"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

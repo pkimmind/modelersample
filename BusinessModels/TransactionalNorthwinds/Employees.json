@@ -1,0 +1,872 @@
+{
+  "logicalTable": {
+    "name": "Employees",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "EmployeeID",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.EmployeeID"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "LastName",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.LastName"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "FirstName",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.FirstName"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Title",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.Title"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "TitleOfCourtesy",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.TitleOfCourtesy"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "BirthDate",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.BirthDate"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "HireDate",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.HireDate"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Address",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.Address"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "City",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.City"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Region",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.Region"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "PostalCode",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.PostalCode"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Country",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.Country"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "HomePhone",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.HomePhone"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Extension",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.Extension"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Notes",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.Notes"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "ReportsTo",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.ReportsTo"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "PK__Employees__Emplo__15EF4CF6",
+              "isPrimary": "true",
+              "columns": [
+                "EmployeeID"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Employees",
+        "logicalTableRef": "Employees",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "EmployeeID",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.EmployeeID"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "LastName",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.LastName"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "FirstName",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.FirstName"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Title",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.Title"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "TitleOfCourtesy",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.TitleOfCourtesy"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "BirthDate",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.BirthDate"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "HireDate",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.HireDate"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Address",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.Address"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "City",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.City"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Region",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.Region"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "PostalCode",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.PostalCode"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Country",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.Country"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "HomePhone",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.HomePhone"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Extension",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.Extension"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Notes",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.Notes"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "ReportsTo",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.ReportsTo"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Employees",
+            "joins": [
+            ]
+          }
+        ]
+      },
+    ],
+    "dimension": {
+      "name": "Orders Dimension",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "levels": [
+        {
+          "name": "Customers",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Customers",
+          "keys": [
+            {
+              "name": "CustomerID",
+              "isPrimary": "true",
+              "columns": [
+                "CustomerID"
+              ]
+            },
+            {
+              "name": "CompanyName",
+              "columns": [
+                "CompanyName"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Sites",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Sites",
+              "keys": [
+                {
+                  "name": "Sites_Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "SiteID",
+                    "CustomerID"
+                  ]
+                }
+              ],
+              "childLevels": [
+                {
+                  "name": "Orders",
+                  "isGTA": false,
+                  "memberCount": 1,
+                  "levelConst": "Orders",
+                  "keys": [
+                    {
+                      "name": "OrderID",
+                      "isPrimary": "true",
+                      "columns": [
+                        "OrderID"
+                      ]
+                    }
+                  ],
+                  "columns": [
+                    "OrderID",
+                    "CustomerID",
+                    "SiteID",
+                    "EmployeeID",
+                    "OrderDate",
+                    "RequiredDate",
+                    "ShippedDate",
+                    "ShipVia",
+                    "Freight",
+                    "ShipName",
+                    "ShipAddress",
+                    "ShipCity",
+                    "ShipRegion",
+                    "ShipPostalCode",
+                    "ShipCountry"
+                  ]
+                }
+              ],
+              "columns": [
+                "SiteID",
+                "CustomerID",
+                "SiteName",
+                "ContactName",
+                "ContactTitle",
+                "Address",
+                "City",
+                "Region",
+                "PostalCode",
+                "Country",
+                "Phone",
+                "Fax"
+              ]
+            }
+          ],
+          "columns": [
+            "CustomerID",
+            "CompanyName"
+          ]
+        },
+        {
+          "name": "Sites",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Sites",
+          "keys": [
+            {
+              "name": "Sites_Key",
+              "isPrimary": "true",
+              "columns": [
+                "SiteID",
+                "CustomerID"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Orders",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Orders",
+              "keys": [
+                {
+                  "name": "OrderID",
+                  "isPrimary": "true",
+                  "columns": [
+                    "OrderID"
+                  ]
+                }
+              ],
+              "columns": [
+                "OrderID",
+                "CustomerID",
+                "SiteID",
+                "EmployeeID",
+                "OrderDate",
+                "RequiredDate",
+                "ShippedDate",
+                "ShipVia",
+                "Freight",
+                "ShipName",
+                "ShipAddress",
+                "ShipCity",
+                "ShipRegion",
+                "ShipPostalCode",
+                "ShipCountry"
+              ]
+            }
+          ],
+          "columns": [
+            "SiteID",
+            "CustomerID",
+            "SiteName",
+            "ContactName",
+            "ContactTitle",
+            "Address",
+            "City",
+            "Region",
+            "PostalCode",
+            "Country",
+            "Phone",
+            "Fax"
+          ]
+        },
+        {
+          "name": "Orders",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Orders",
+          "keys": [
+            {
+              "name": "OrderID",
+              "isPrimary": "true",
+              "columns": [
+                "OrderID"
+              ]
+            }
+          ],
+          "columns": [
+            "OrderID",
+            "CustomerID",
+            "SiteID",
+            "EmployeeID",
+            "OrderDate",
+            "RequiredDate",
+            "ShippedDate",
+            "ShipVia",
+            "Freight",
+            "ShipName",
+            "ShipAddress",
+            "ShipCity",
+            "ShipRegion",
+            "ShipPostalCode",
+            "ShipCountry"
+          ]
+        },
+        {
+          "name": "Employees",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Employees",
+          "keys": [
+            {
+              "name": "EmployeeID",
+              "isPrimary": "true",
+              "columns": [
+                "EmployeeID"
+              ]
+            },
+            {
+              "name": "Employee_Name",
+              "columns": [
+                "LastName",
+                "FirstName"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Orders",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Orders",
+              "keys": [
+                {
+                  "name": "OrderID",
+                  "isPrimary": "true",
+                  "columns": [
+                    "OrderID"
+                  ]
+                }
+              ],
+              "columns": [
+                "OrderID",
+                "CustomerID",
+                "SiteID",
+                "EmployeeID",
+                "OrderDate",
+                "RequiredDate",
+                "ShippedDate",
+                "ShipVia",
+                "Freight",
+                "ShipName",
+                "ShipAddress",
+                "ShipCity",
+                "ShipRegion",
+                "ShipPostalCode",
+                "ShipCountry"
+              ]
+            }
+          ],
+          "columns": [
+            "EmployeeID",
+            "LastName",
+            "FirstName",
+            "Title",
+            "TitleOfCourtesy",
+            "BirthDate",
+            "HireDate",
+            "Address",
+            "City",
+            "Region",
+            "PostalCode",
+            "Country",
+            "HomePhone",
+            "Extension",
+            "Notes",
+            "ReportsTo"
+          ]
+        },
+        {
+          "name": "Shippers",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Shippers",
+          "keys": [
+            {
+              "name": "ShipperID",
+              "isPrimary": "true",
+              "columns": [
+                "ShipperID"
+              ]
+            },
+            {
+              "name": "CompanyName",
+              "columns": [
+                "CompanyName"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Orders",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Orders",
+              "keys": [
+                {
+                  "name": "OrderID",
+                  "isPrimary": "true",
+                  "columns": [
+                    "OrderID"
+                  ]
+                }
+              ],
+              "columns": [
+                "OrderID",
+                "CustomerID",
+                "SiteID",
+                "EmployeeID",
+                "OrderDate",
+                "RequiredDate",
+                "ShippedDate",
+                "ShipVia",
+                "Freight",
+                "ShipName",
+                "ShipAddress",
+                "ShipCity",
+                "ShipRegion",
+                "ShipPostalCode",
+                "ShipCountry"
+              ]
+            }
+          ],
+          "columns": [
+            "ShipperID",
+            "CompanyName",
+            "Phone"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Orders Dimension",
+        "levels": [
+          {
+            "name": "Customers",
+            "childLevels": [
+              {
+                "name": "Sites",
+                "childLevels": [
+                  {
+                    "name": "Orders"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Sites",
+            "childLevels": [
+              {
+                "name": "Orders"
+              }
+            ]
+          },
+          {
+            "name": "Orders"
+          },
+          {
+            "name": "Employees",
+            "childLevels": [
+              {
+                "name": "Orders"
+              }
+            ]
+          },
+          {
+            "name": "Shippers",
+            "childLevels": [
+              {
+                "name": "Orders"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

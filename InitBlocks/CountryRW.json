@@ -1,0 +1,16 @@
+{
+  "initBlock": {
+    "name": "CountryRW",
+    "type": "SESSION",
+    "refreshPeriod": 86400,
+    "connectionPool": "connectionPool:SQLDB_Northwind.Northwind Init Block Connections",
+    "selectStatements": [
+      {
+        "databaseType": "DEFAULT",
+        "query": "select distinct 'COUNTRYRW', country from employees"
+      }
+    ],
+    "targetVariables": [
+    ]
+  }
+}

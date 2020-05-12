@@ -1,0 +1,23 @@
+{
+  "presentationTable": {
+    "name": "EmployeeRegion",
+    "presentationColumns": [
+      {
+        "name": "Region",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.EmployeeRegion.Region"
+      },
+      {
+        "name": "Country",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.EmployeeRegion.Country"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.EmployeeRegion.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.EmployeeRegion.QtySold"
+      }
+    ]
+  }
+}

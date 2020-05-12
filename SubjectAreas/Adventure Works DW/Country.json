@@ -1,0 +1,74 @@
+{
+  "presentationTable": {
+    "name": "Country",
+    "presentationColumns": [
+      {
+        "name": "[Customer].[Country].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Country.[Customer].[Country].[(All)]"
+      },
+      {
+        "name": "Country",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Country.Country"
+      },
+      {
+        "name": "KEY0#18",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Country.KEY0#18"
+      },
+      {
+        "name": "KEY0#19",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Country.KEY0#19"
+      },
+      {
+        "name": "MEMBER_VALUE#18",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Country.MEMBER_VALUE#18"
+      },
+      {
+        "name": "MEMBER_VALUE#19",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Country.MEMBER_VALUE#19"
+      },
+      {
+        "name": "NAME#14",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Country.NAME#14"
+      },
+      {
+        "name": "NAME#15",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Country.NAME#15"
+      },
+      {
+        "name": "TRAN0",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Country.TRAN0"
+      },
+      {
+        "name": "TRAN1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Country.TRAN1"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Country",
+        "levels": [
+          {
+            "name": "[Customer].[Country].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Customer].[Country].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Country.[Customer].[Country].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Country",
+            "displayColumns": [
+              {
+                "name": "Country",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Country.Country"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

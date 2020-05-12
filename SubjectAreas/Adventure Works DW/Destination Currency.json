@@ -1,0 +1,37 @@
+{
+  "presentationTable": {
+    "name": "Destination Currency",
+    "presentationColumns": [
+      {
+        "name": "Destination Currency",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Destination Currency.Destination Currency"
+      },
+      {
+        "name": "KEY0#134",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Destination Currency.KEY0#134"
+      },
+      {
+        "name": "MEMBER_VALUE#134",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Destination Currency.MEMBER_VALUE#134"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Destination Currency",
+        "levels": [
+          {
+            "name": "Destination Currency",
+            "displayColumns": [
+              {
+                "name": "Destination Currency",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Destination Currency.Destination Currency"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "physicalTable": {
+    "name": "W_WEEK_D",
+    "description": "External Name:????
+",
+    "caching": {
+    },
+    "physicalColumns": [
+      {
+        "name": "ROW_WID",
+        "dataType": "DOUBLE",
+        "length": 10
+      },
+      {
+        "name": "WEEK_KEY",
+        "dataType": "DOUBLE",
+        "length": 15
+      },
+      {
+        "name": "WK_END_CAL_DT_WID",
+        "dataType": "DOUBLE",
+        "length": 10
+      },
+      {
+        "name": "WK_END_CAL_DT_KEY",
+        "dataType": "DOUBLE",
+        "length": 15
+      },
+      {
+        "name": "WK_STRT_CAL_DT_WID",
+        "dataType": "DOUBLE",
+        "length": 10
+      },
+      {
+        "name": "WK_STRT_CAL_DT_KEY",
+        "dataType": "DOUBLE",
+        "length": 15
+      },
+      {
+        "name": "CAL_WEEK",
+        "dataType": "TINYINT",
+        "length": 2
+      },
+      {
+        "name": "CAL_YEAR",
+        "dataType": "SMALLINT",
+        "length": 4
+      },
+      {
+        "name": "WK_END_CAL_DT",
+        "dataType": "DATETIME",
+        "length": 23
+      },
+      {
+        "name": "WK_START_CAL_DT",
+        "dataType": "DATETIME",
+        "length": 23
+      },
+      {
+        "name": "year_wid",
+        "dataType": "DOUBLE",
+        "length": 10
+      }
+    ]
+  }
+}

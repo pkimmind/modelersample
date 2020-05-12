@@ -1,0 +1,24 @@
+{
+  "physicalTable": {
+    "name": "RowWisedProducts",
+    "sourceType": "SELECT",
+    "caching": {
+      "expiryTime": 1,
+      "expiryUnit": "DAYS"
+    },
+    "selectStatements": [
+      {
+        "databaseType": "DEFAULT",
+        "query": "select ProductName as ProductName from products
+where ProductName in (VALUELISTOF(NQ_SESSION.CacheRwVars))"
+      }
+    ],
+    "physicalColumns": [
+      {
+        "name": "ProductName",
+        "dataType": "VARCHAR",
+        "length": 100
+      }
+    ]
+  }
+}

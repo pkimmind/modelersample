@@ -1,0 +1,126 @@
+{
+  "presentationTable": {
+    "name": "Reseller",
+    "presentationColumns": [
+      {
+        "name": "[Reseller].[Reseller].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller.[Reseller].[Reseller].[(All)]"
+      },
+      {
+        "name": "Address#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller.Address#4"
+      },
+      {
+        "name": "Annual Revenue#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller.Annual Revenue#1"
+      },
+      {
+        "name": "Annual Sales#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller.Annual Sales#1"
+      },
+      {
+        "name": "Bank Name#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller.Bank Name#1"
+      },
+      {
+        "name": "Business Type#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller.Business Type#1"
+      },
+      {
+        "name": "First Order Year#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller.First Order Year#1"
+      },
+      {
+        "name": "KEY0#328",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller.KEY0#328"
+      },
+      {
+        "name": "KEY0#329",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller.KEY0#329"
+      },
+      {
+        "name": "Last Order Year#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller.Last Order Year#1"
+      },
+      {
+        "name": "MEMBER_VALUE#328",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller.MEMBER_VALUE#328"
+      },
+      {
+        "name": "MEMBER_VALUE#329",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller.MEMBER_VALUE#329"
+      },
+      {
+        "name": "Min Payment Amount#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller.Min Payment Amount#1"
+      },
+      {
+        "name": "Min Payment Type#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller.Min Payment Type#1"
+      },
+      {
+        "name": "NAME#261",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller.NAME#261"
+      },
+      {
+        "name": "NAME#262",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller.NAME#262"
+      },
+      {
+        "name": "Number of Employees#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller.Number of Employees#1"
+      },
+      {
+        "name": "Order Frequency#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller.Order Frequency#1"
+      },
+      {
+        "name": "Order Month#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller.Order Month#1"
+      },
+      {
+        "name": "Phone#12",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller.Phone#12"
+      },
+      {
+        "name": "Product Line#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller.Product Line#6"
+      },
+      {
+        "name": "Reseller",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller.Reseller"
+      },
+      {
+        "name": "Year Opened",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller.Year Opened"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Reseller",
+        "levels": [
+          {
+            "name": "[Reseller].[Reseller].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Reseller].[Reseller].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller.[Reseller].[Reseller].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Reseller",
+            "displayColumns": [
+              {
+                "name": "Reseller",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller.Reseller"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

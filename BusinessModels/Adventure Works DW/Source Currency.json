@@ -1,0 +1,413 @@
+{
+  "logicalTable": {
+    "name": "Source Currency",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Source Currency].[Source Currency].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Source Currency].[Source Currency].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Source Currency].[Source Currency].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Source Currency].[Source Currency].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Source Currency].[Source Currency].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#424",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#424"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#425",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#425"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#424",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#424"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#425",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#425"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#328",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#328"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Source Currency",
+        "writeable": false,
+        "descriptorColumn": "Source Currency - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Source Currency"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Source Currency - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Source Currency - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Source Currency",
+              "isPrimary": "true",
+              "columns": [
+                "[Source Currency].[Source Currency].[(All)]",
+                "Source Currency"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Source Currency",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "[Source Currency].[Source Currency].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Source Currency].[Source Currency].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Source Currency].[Source Currency].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Source Currency].[Source Currency].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#424",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#424"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#425",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#425"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#424",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#424"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#425",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#425"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#328",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#328"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Source Currency",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Source Currency"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Source Currency - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Source Currency - Member Key"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Source Currency.Source Currency"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Source Currency",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "[Source Currency].[Source Currency].[(All)]",
+      "levels": [
+        {
+          "name": "[Source Currency].[Source Currency].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Source Currency].[Source Currency].[(All)]",
+          "keys": [
+            {
+              "name": "[Source Currency].[Source Currency].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Source Currency].[Source Currency].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Source Currency].[Source Currency].[(All)]",
+              "columns": [
+                "[Source Currency].[Source Currency].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Source Currency",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Source Currency",
+              "keys": [
+                {
+                  "name": "Source Currency - Member Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Source Currency - Member Key"
+                  ]
+                },
+                {
+                  "name": "Source Currency",
+                  "columns": [
+                    "Source Currency"
+                  ]
+                }
+              ],
+              "columns": [
+                "KEY0#425",
+                "MEMBER_VALUE#425",
+                "Source Currency",
+                "Source Currency - Member Key"
+              ]
+            }
+          ],
+          "columns": [
+            "[Source Currency].[Source Currency].[(All)]",
+            "[Source Currency].[Source Currency].[(All)] - Member Key",
+            "KEY0#424",
+            "MEMBER_VALUE#424",
+            "NAME#328"
+          ]
+        },
+        {
+          "name": "Source Currency",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Source Currency",
+          "keys": [
+            {
+              "name": "Source Currency - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "Source Currency - Member Key"
+              ]
+            },
+            {
+              "name": "Source Currency",
+              "columns": [
+                "Source Currency"
+              ]
+            }
+          ],
+          "columns": [
+            "KEY0#425",
+            "MEMBER_VALUE#425",
+            "Source Currency",
+            "Source Currency - Member Key"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Source Currency",
+        "levels": [
+          {
+            "name": "[Source Currency].[Source Currency].[(All)]",
+            "childLevels": [
+              {
+                "name": "Source Currency"
+              }
+            ]
+          },
+          {
+            "name": "Source Currency"
+          }
+        ]
+      }
+    }
+  }
+}

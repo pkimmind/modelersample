@@ -1,0 +1,70 @@
+{
+  "presentationTable": {
+    "name": "Model Name",
+    "presentationColumns": [
+      {
+        "name": "[Product].[Model Name].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Model Name.[Product].[Model Name].[(All)]"
+      },
+      {
+        "name": "KEY0#238",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Model Name.KEY0#238"
+      },
+      {
+        "name": "KEY0#239",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Model Name.KEY0#239"
+      },
+      {
+        "name": "MEMBER_VALUE#238",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Model Name.MEMBER_VALUE#238"
+      },
+      {
+        "name": "MEMBER_VALUE#239",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Model Name.MEMBER_VALUE#239"
+      },
+      {
+        "name": "Model Name",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Model Name.Model Name"
+      },
+      {
+        "name": "NAME#189",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Model Name.NAME#189"
+      },
+      {
+        "name": "Product Line",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Model Name.Product Line"
+      },
+      {
+        "name": "Subcategory#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Model Name.Subcategory#1"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Model Name",
+        "levels": [
+          {
+            "name": "[Product].[Model Name].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Product].[Model Name].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Model Name.[Product].[Model Name].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Model Name",
+            "displayColumns": [
+              {
+                "name": "Model Name",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Model Name.Model Name"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

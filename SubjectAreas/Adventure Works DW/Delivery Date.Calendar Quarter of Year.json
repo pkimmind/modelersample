@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Delivery Date.Calendar Quarter of Year",
+    "presentationColumns": [
+      {
+        "name": "[Delivery Date].[Calendar Quarter of Year].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Quarter of Year.[Delivery Date].[Calendar Quarter of Year].[(All)]"
+      },
+      {
+        "name": "Calendar Quarter of Year#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Quarter of Year.Calendar Quarter of Year#3"
+      },
+      {
+        "name": "KEY0#100",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Quarter of Year.KEY0#100"
+      },
+      {
+        "name": "KEY0#101",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Quarter of Year.KEY0#101"
+      },
+      {
+        "name": "MEMBER_VALUE#100",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Quarter of Year.MEMBER_VALUE#100"
+      },
+      {
+        "name": "MEMBER_VALUE#101",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Quarter of Year.MEMBER_VALUE#101"
+      },
+      {
+        "name": "NAME#83",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Quarter of Year.NAME#83"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Delivery Date.Calendar Quarter of Year",
+        "levels": [
+          {
+            "name": "[Delivery Date].[Calendar Quarter of Year].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Delivery Date].[Calendar Quarter of Year].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Quarter of Year.[Delivery Date].[Calendar Quarter of Year].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Calendar Quarter of Year",
+            "displayColumns": [
+              {
+                "name": "Calendar Quarter of Year#3",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Quarter of Year.Calendar Quarter of Year#3"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

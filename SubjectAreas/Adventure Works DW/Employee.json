@@ -1,0 +1,162 @@
+{
+  "presentationTable": {
+    "name": "Employee",
+    "presentationColumns": [
+      {
+        "name": "[Employee].[Employee].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.[Employee].[Employee].[(All)]"
+      },
+      {
+        "name": "Base Rate#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.Base Rate#1"
+      },
+      {
+        "name": "Birth Date#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.Birth Date#3"
+      },
+      {
+        "name": "Department Name#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.Department Name#1"
+      },
+      {
+        "name": "Email Address#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.Email Address#4"
+      },
+      {
+        "name": "Emergency Contact Name#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.Emergency Contact Name#1"
+      },
+      {
+        "name": "Emergency Contact Phone#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.Emergency Contact Phone#1"
+      },
+      {
+        "name": "Employee",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.Employee"
+      },
+      {
+        "name": "Employees",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.Employees"
+      },
+      {
+        "name": "End Date",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.End Date"
+      },
+      {
+        "name": "Gender#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.Gender#3"
+      },
+      {
+        "name": "Hire Date",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.Hire Date"
+      },
+      {
+        "name": "Hire Year",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.Hire Year"
+      },
+      {
+        "name": "KEY0#149",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.KEY0#149"
+      },
+      {
+        "name": "KEY0#150",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.KEY0#150"
+      },
+      {
+        "name": "Login ID",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.Login ID"
+      },
+      {
+        "name": "Manager SSN",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.Manager SSN"
+      },
+      {
+        "name": "Marital Status#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.Marital Status#3"
+      },
+      {
+        "name": "MEMBER_VALUE#149",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.MEMBER_VALUE#149"
+      },
+      {
+        "name": "MEMBER_VALUE#150",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.MEMBER_VALUE#150"
+      },
+      {
+        "name": "NAME#118",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.NAME#118"
+      },
+      {
+        "name": "NAME#119",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.NAME#119"
+      },
+      {
+        "name": "Pay Frequency",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.Pay Frequency"
+      },
+      {
+        "name": "Phone#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.Phone#3"
+      },
+      {
+        "name": "Salaried Flag",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.Salaried Flag"
+      },
+      {
+        "name": "Sales Person Flag",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.Sales Person Flag"
+      },
+      {
+        "name": "Sick Leave Hours",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.Sick Leave Hours"
+      },
+      {
+        "name": "SSN",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.SSN"
+      },
+      {
+        "name": "Start Date",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.Start Date"
+      },
+      {
+        "name": "Status",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.Status"
+      },
+      {
+        "name": "Title",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.Title"
+      },
+      {
+        "name": "Vacation Hours",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.Vacation Hours"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Employee",
+        "levels": [
+          {
+            "name": "[Employee].[Employee].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Employee].[Employee].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.[Employee].[Employee].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Employee",
+            "displayColumns": [
+              {
+                "name": "Employee",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.Employee"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

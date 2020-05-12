@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "Currency Code",
+    "presentationColumns": [
+      {
+        "name": "[Organization].[Currency Code].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Currency Code.[Organization].[Currency Code].[(All)]"
+      },
+      {
+        "name": "Currency Code",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Currency Code.Currency Code"
+      },
+      {
+        "name": "KEY0#213",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Currency Code.KEY0#213"
+      },
+      {
+        "name": "KEY0#214",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Currency Code.KEY0#214"
+      },
+      {
+        "name": "MEMBER_VALUE#213",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Currency Code.MEMBER_VALUE#213"
+      },
+      {
+        "name": "MEMBER_VALUE#214",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Currency Code.MEMBER_VALUE#214"
+      },
+      {
+        "name": "NAME#170",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Currency Code.NAME#170"
+      },
+      {
+        "name": "NAME#171",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Currency Code.NAME#171"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Currency Code",
+        "levels": [
+          {
+            "name": "[Organization].[Currency Code].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Organization].[Currency Code].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Currency Code.[Organization].[Currency Code].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Currency Code",
+            "displayColumns": [
+              {
+                "name": "Currency Code",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Currency Code.Currency Code"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

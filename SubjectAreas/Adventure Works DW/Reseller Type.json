@@ -1,0 +1,147 @@
+{
+  "presentationTable": {
+    "name": "Reseller Type",
+    "presentationColumns": [
+      {
+        "name": "[Reseller].[Reseller Type].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Type.[Reseller].[Reseller Type].[(All)]"
+      },
+      {
+        "name": "Address#8",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Type.Address#8"
+      },
+      {
+        "name": "Annual Revenue#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Type.Annual Revenue#5"
+      },
+      {
+        "name": "Annual Sales#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Type.Annual Sales#5"
+      },
+      {
+        "name": "Bank Name#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Type.Bank Name#6"
+      },
+      {
+        "name": "Business Type#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Type.Business Type#5"
+      },
+      {
+        "name": "Business Type#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Type.Business Type#6"
+      },
+      {
+        "name": "First Order Year#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Type.First Order Year#5"
+      },
+      {
+        "name": "KEY0#339",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Type.KEY0#339"
+      },
+      {
+        "name": "KEY0#340",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Type.KEY0#340"
+      },
+      {
+        "name": "KEY0#341",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Type.KEY0#341"
+      },
+      {
+        "name": "Last Order Year#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Type.Last Order Year#5"
+      },
+      {
+        "name": "MEMBER_VALUE#339",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Type.MEMBER_VALUE#339"
+      },
+      {
+        "name": "MEMBER_VALUE#340",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Type.MEMBER_VALUE#340"
+      },
+      {
+        "name": "MEMBER_VALUE#341",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Type.MEMBER_VALUE#341"
+      },
+      {
+        "name": "Min Payment Amount#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Type.Min Payment Amount#5"
+      },
+      {
+        "name": "Min Payment Type#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Type.Min Payment Type#5"
+      },
+      {
+        "name": "NAME#271",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Type.NAME#271"
+      },
+      {
+        "name": "NAME#272",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Type.NAME#272"
+      },
+      {
+        "name": "Number of Employees#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Type.Number of Employees#5"
+      },
+      {
+        "name": "Order Frequency#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Type.Order Frequency#6"
+      },
+      {
+        "name": "Order Month#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Type.Order Month#6"
+      },
+      {
+        "name": "Phone#16",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Type.Phone#16"
+      },
+      {
+        "name": "Product Line#10",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Type.Product Line#10"
+      },
+      {
+        "name": "Reseller#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Type.Reseller#4"
+      },
+      {
+        "name": "Year Opened#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Type.Year Opened#4"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Reseller Type",
+        "levels": [
+          {
+            "name": "[Reseller].[Reseller Type].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Reseller].[Reseller Type].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Type.[Reseller].[Reseller Type].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Business Type",
+            "displayColumns": [
+              {
+                "name": "Business Type#5",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Type.Business Type#5"
+              }
+            ]
+          },
+          {
+            "name": "Reseller",
+            "displayColumns": [
+              {
+                "name": "Reseller#4",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Type.Reseller#4"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

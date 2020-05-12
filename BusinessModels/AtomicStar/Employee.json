@@ -1,0 +1,869 @@
+{
+  "logicalTable": {
+    "name": "Employee",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "EmployeeID",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.EmployeeID"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "LastName",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.LastName"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "FirstName",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.FirstName"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Title",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.Title"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "TitleOfCourtesy",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.TitleOfCourtesy"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "BirthDate",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.BirthDate"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "HireDate",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.HireDate"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Address",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.Address"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "City",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.City"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Region",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.Region"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "PostalCode",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.PostalCode"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Country",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees_Country.Country"
+          ]
+        }
+              }
+            },
+            {
+              "logicalTableSource": "Employee_Country",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees_Country.Country"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "HomePhone",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.HomePhone"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Extension",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.Extension"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Notes",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.Notes"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "ReportsTo",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.ReportsTo"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Employee_Key",
+              "isPrimary": "true",
+              "columns": [
+                "EmployeeID"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Employees",
+        "logicalTableRef": "Employee",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "EmployeeID",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.EmployeeID"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "LastName",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.LastName"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "FirstName",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.FirstName"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Title",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.Title"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "TitleOfCourtesy",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.TitleOfCourtesy"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "BirthDate",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.BirthDate"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "HireDate",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.HireDate"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Address",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.Address"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "City",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.City"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Region",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.Region"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "PostalCode",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.PostalCode"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Country",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.Country"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "HomePhone",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.HomePhone"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Extension",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.Extension"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Notes",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.Notes"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "ReportsTo",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.ReportsTo"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Employees",
+            "joins": [
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Employee_Country",
+        "logicalTableRef": "Employee",
+        "description": "Required to handle the many-to-many physical join between the physical employees and salesplan tables.",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "Country",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees_Country.Country"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Employees_Country",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:AtomicStar.Employee.Country"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Employee",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "Country",
+      "levels": [
+        {
+          "name": "Country",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Country",
+          "keys": [
+            {
+              "name": "Country_Key",
+              "isPrimary": "true",
+              "columns": [
+                "Country"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Region",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Region",
+              "keys": [
+                {
+                  "name": "Region_Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Region",
+                    "Country"
+                  ]
+                }
+              ],
+              "childLevels": [
+                {
+                  "name": "City",
+                  "isGTA": false,
+                  "memberCount": 1,
+                  "levelConst": "City",
+                  "keys": [
+                    {
+                      "name": "City_Key",
+                      "isPrimary": "true",
+                      "columns": [
+                        "City",
+                        "Region"
+                      ]
+                    }
+                  ],
+                  "childLevels": [
+                    {
+                      "name": "Employee",
+                      "isGTA": false,
+                      "memberCount": 9,
+                      "levelConst": "Employee",
+                      "keys": [
+                        {
+                          "name": "Employee_Key",
+                          "isPrimary": "true",
+                          "columns": [
+                            "EmployeeID"
+                          ]
+                        },
+                        {
+                          "name": "Employee_Name",
+                          "columns": [
+                            "LastName",
+                            "FirstName"
+                          ]
+                        }
+                      ],
+                      "columns": [
+                        "EmployeeID",
+                        "LastName",
+                        "FirstName",
+                        "Title",
+                        "TitleOfCourtesy",
+                        "BirthDate",
+                        "HireDate",
+                        "Address",
+                        "PostalCode",
+                        "HomePhone",
+                        "Extension",
+                        "Notes",
+                        "ReportsTo"
+                      ]
+                    }
+                  ],
+                  "columns": [
+                    "City"
+                  ]
+                }
+              ],
+              "columns": [
+                "Region"
+              ]
+            }
+          ],
+          "columns": [
+            "Country"
+          ]
+        },
+        {
+          "name": "Region",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Region",
+          "keys": [
+            {
+              "name": "Region_Key",
+              "isPrimary": "true",
+              "columns": [
+                "Region",
+                "Country"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "City",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "City",
+              "keys": [
+                {
+                  "name": "City_Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "City",
+                    "Region"
+                  ]
+                }
+              ],
+              "childLevels": [
+                {
+                  "name": "Employee",
+                  "isGTA": false,
+                  "memberCount": 9,
+                  "levelConst": "Employee",
+                  "keys": [
+                    {
+                      "name": "Employee_Key",
+                      "isPrimary": "true",
+                      "columns": [
+                        "EmployeeID"
+                      ]
+                    },
+                    {
+                      "name": "Employee_Name",
+                      "columns": [
+                        "LastName",
+                        "FirstName"
+                      ]
+                    }
+                  ],
+                  "columns": [
+                    "EmployeeID",
+                    "LastName",
+                    "FirstName",
+                    "Title",
+                    "TitleOfCourtesy",
+                    "BirthDate",
+                    "HireDate",
+                    "Address",
+                    "PostalCode",
+                    "HomePhone",
+                    "Extension",
+                    "Notes",
+                    "ReportsTo"
+                  ]
+                }
+              ],
+              "columns": [
+                "City"
+              ]
+            }
+          ],
+          "columns": [
+            "Region"
+          ]
+        },
+        {
+          "name": "City",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "City",
+          "keys": [
+            {
+              "name": "City_Key",
+              "isPrimary": "true",
+              "columns": [
+                "City",
+                "Region"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Employee",
+              "isGTA": false,
+              "memberCount": 9,
+              "levelConst": "Employee",
+              "keys": [
+                {
+                  "name": "Employee_Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "EmployeeID"
+                  ]
+                },
+                {
+                  "name": "Employee_Name",
+                  "columns": [
+                    "LastName",
+                    "FirstName"
+                  ]
+                }
+              ],
+              "columns": [
+                "EmployeeID",
+                "LastName",
+                "FirstName",
+                "Title",
+                "TitleOfCourtesy",
+                "BirthDate",
+                "HireDate",
+                "Address",
+                "PostalCode",
+                "HomePhone",
+                "Extension",
+                "Notes",
+                "ReportsTo"
+              ]
+            }
+          ],
+          "columns": [
+            "City"
+          ]
+        },
+        {
+          "name": "Employee",
+          "isGTA": false,
+          "memberCount": 9,
+          "levelConst": "Employee",
+          "keys": [
+            {
+              "name": "Employee_Key",
+              "isPrimary": "true",
+              "columns": [
+                "EmployeeID"
+              ]
+            },
+            {
+              "name": "Employee_Name",
+              "columns": [
+                "LastName",
+                "FirstName"
+              ]
+            }
+          ],
+          "columns": [
+            "EmployeeID",
+            "LastName",
+            "FirstName",
+            "Title",
+            "TitleOfCourtesy",
+            "BirthDate",
+            "HireDate",
+            "Address",
+            "PostalCode",
+            "HomePhone",
+            "Extension",
+            "Notes",
+            "ReportsTo"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Employee",
+        "levels": [
+          {
+            "name": "Country",
+            "childLevels": [
+              {
+                "name": "Region",
+                "childLevels": [
+                  {
+                    "name": "City",
+                    "childLevels": [
+                      {
+                        "name": "Employee"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Region",
+            "childLevels": [
+              {
+                "name": "City",
+                "childLevels": [
+                  {
+                    "name": "Employee"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "City",
+            "childLevels": [
+              {
+                "name": "Employee"
+              }
+            ]
+          },
+          {
+            "name": "Employee"
+          }
+        ]
+      }
+    }
+  }
+}

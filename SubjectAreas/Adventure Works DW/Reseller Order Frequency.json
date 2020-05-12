@@ -1,0 +1,151 @@
+{
+  "presentationTable": {
+    "name": "Reseller Order Frequency",
+    "presentationColumns": [
+      {
+        "name": "[Reseller].[Reseller Order Frequency].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Frequency.[Reseller].[Reseller Order Frequency].[(All)]"
+      },
+      {
+        "name": "Address#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Frequency.Address#6"
+      },
+      {
+        "name": "Annual Revenue#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Frequency.Annual Revenue#3"
+      },
+      {
+        "name": "Annual Sales#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Frequency.Annual Sales#3"
+      },
+      {
+        "name": "Bank Name#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Frequency.Bank Name#4"
+      },
+      {
+        "name": "Business Type#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Frequency.Business Type#3"
+      },
+      {
+        "name": "First Order Year#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Frequency.First Order Year#3"
+      },
+      {
+        "name": "KEY0#333",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Frequency.KEY0#333"
+      },
+      {
+        "name": "KEY0#334",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Frequency.KEY0#334"
+      },
+      {
+        "name": "KEY0#335",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Frequency.KEY0#335"
+      },
+      {
+        "name": "Last Order Year#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Frequency.Last Order Year#3"
+      },
+      {
+        "name": "MEMBER_VALUE#333",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Frequency.MEMBER_VALUE#333"
+      },
+      {
+        "name": "MEMBER_VALUE#334",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Frequency.MEMBER_VALUE#334"
+      },
+      {
+        "name": "MEMBER_VALUE#335",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Frequency.MEMBER_VALUE#335"
+      },
+      {
+        "name": "Min Payment Amount#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Frequency.Min Payment Amount#3"
+      },
+      {
+        "name": "Min Payment Type#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Frequency.Min Payment Type#3"
+      },
+      {
+        "name": "NAME#265",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Frequency.NAME#265"
+      },
+      {
+        "name": "NAME#266",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Frequency.NAME#266"
+      },
+      {
+        "name": "NAME#267",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Frequency.NAME#267"
+      },
+      {
+        "name": "Number of Employees#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Frequency.Number of Employees#3"
+      },
+      {
+        "name": "Order Frequency#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Frequency.Order Frequency#3"
+      },
+      {
+        "name": "Order Frequency#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Frequency.Order Frequency#4"
+      },
+      {
+        "name": "Order Month#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Frequency.Order Month#3"
+      },
+      {
+        "name": "Phone#14",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Frequency.Phone#14"
+      },
+      {
+        "name": "Product Line#8",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Frequency.Product Line#8"
+      },
+      {
+        "name": "Reseller#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Frequency.Reseller#2"
+      },
+      {
+        "name": "Year Opened#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Frequency.Year Opened#2"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Reseller Order Frequency",
+        "levels": [
+          {
+            "name": "[Reseller].[Reseller Order Frequency].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Reseller].[Reseller Order Frequency].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Frequency.[Reseller].[Reseller Order Frequency].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Order Frequency",
+            "displayColumns": [
+              {
+                "name": "Order Frequency#3",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Frequency.Order Frequency#3"
+              }
+            ]
+          },
+          {
+            "name": "Reseller",
+            "displayColumns": [
+              {
+                "name": "Reseller#2",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Frequency.Reseller#2"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

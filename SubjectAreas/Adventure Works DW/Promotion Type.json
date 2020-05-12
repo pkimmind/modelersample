@@ -1,0 +1,74 @@
+{
+  "presentationTable": {
+    "name": "Promotion Type",
+    "presentationColumns": [
+      {
+        "name": "[Promotion].[Promotion Type].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion Type.[Promotion].[Promotion Type].[(All)]"
+      },
+      {
+        "name": "KEY0#292",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion Type.KEY0#292"
+      },
+      {
+        "name": "KEY0#293",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion Type.KEY0#293"
+      },
+      {
+        "name": "MEMBER_VALUE#292",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion Type.MEMBER_VALUE#292"
+      },
+      {
+        "name": "MEMBER_VALUE#293",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion Type.MEMBER_VALUE#293"
+      },
+      {
+        "name": "NAME#232",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion Type.NAME#232"
+      },
+      {
+        "name": "NAME#233",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion Type.NAME#233"
+      },
+      {
+        "name": "Promotion Type#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion Type.Promotion Type#1"
+      },
+      {
+        "name": "TRAN0#22",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion Type.TRAN0#22"
+      },
+      {
+        "name": "TRAN1#22",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion Type.TRAN1#22"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Promotion Type",
+        "levels": [
+          {
+            "name": "[Promotion].[Promotion Type].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Promotion].[Promotion Type].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion Type.[Promotion].[Promotion Type].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Promotion Type",
+            "displayColumns": [
+              {
+                "name": "Promotion Type#1",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion Type.Promotion Type#1"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

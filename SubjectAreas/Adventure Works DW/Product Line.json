@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "Product Line",
+    "presentationColumns": [
+      {
+        "name": "[Product].[Product Line].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Line.[Product].[Product Line].[(All)]"
+      },
+      {
+        "name": "KEY0#248",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Line.KEY0#248"
+      },
+      {
+        "name": "KEY0#249",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Line.KEY0#249"
+      },
+      {
+        "name": "MEMBER_VALUE#248",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Line.MEMBER_VALUE#248"
+      },
+      {
+        "name": "MEMBER_VALUE#249",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Line.MEMBER_VALUE#249"
+      },
+      {
+        "name": "NAME#197",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Line.NAME#197"
+      },
+      {
+        "name": "NAME#198",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Line.NAME#198"
+      },
+      {
+        "name": "Product Line#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Line.Product Line#1"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Product Line",
+        "levels": [
+          {
+            "name": "[Product].[Product Line].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Product].[Product Line].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Line.[Product].[Product Line].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Product Line",
+            "displayColumns": [
+              {
+                "name": "Product Line#1",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Line.Product Line#1"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

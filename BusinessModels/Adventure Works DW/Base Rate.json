@@ -1,0 +1,444 @@
+{
+  "logicalTable": {
+    "name": "Base Rate",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Employee].[Base Rate].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Employee].[Base Rate].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Base Rate].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Employee].[Base Rate].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Base Rate].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Base Rate",
+        "writeable": false,
+        "descriptorColumn": "Base Rate - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Base Rate"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Base Rate - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Base Rate - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#137",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#137"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#138",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#138"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#137",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#137"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#138",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#138"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#111",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#111"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#112",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#112"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Base Rate",
+              "isPrimary": "true",
+              "columns": [
+                "[Employee].[Base Rate].[(All)]",
+                "Base Rate"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Base Rate",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "[Employee].[Base Rate].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Base Rate].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Employee].[Base Rate].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Base Rate].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Base Rate",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Base Rate"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Base Rate - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Base Rate - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#137",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#137"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#138",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#138"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#137",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#137"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#138",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#138"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#111",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#111"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#112",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#112"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Base Rate.Base Rate"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Base Rate",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "[Employee].[Base Rate].[(All)]",
+      "levels": [
+        {
+          "name": "[Employee].[Base Rate].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Employee].[Base Rate].[(All)]",
+          "keys": [
+            {
+              "name": "[Employee].[Base Rate].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Employee].[Base Rate].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Employee].[Base Rate].[(All)]",
+              "columns": [
+                "[Employee].[Base Rate].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Base Rate",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Base Rate",
+              "keys": [
+                {
+                  "name": "Base Rate - Member Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Base Rate - Member Key"
+                  ]
+                },
+                {
+                  "name": "Base Rate",
+                  "columns": [
+                    "Base Rate"
+                  ]
+                }
+              ],
+              "columns": [
+                "Base Rate",
+                "Base Rate - Member Key",
+                "KEY0#138",
+                "MEMBER_VALUE#138",
+                "NAME#112"
+              ]
+            }
+          ],
+          "columns": [
+            "[Employee].[Base Rate].[(All)]",
+            "[Employee].[Base Rate].[(All)] - Member Key",
+            "KEY0#137",
+            "MEMBER_VALUE#137",
+            "NAME#111"
+          ]
+        },
+        {
+          "name": "Base Rate",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Base Rate",
+          "keys": [
+            {
+              "name": "Base Rate - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "Base Rate - Member Key"
+              ]
+            },
+            {
+              "name": "Base Rate",
+              "columns": [
+                "Base Rate"
+              ]
+            }
+          ],
+          "columns": [
+            "Base Rate",
+            "Base Rate - Member Key",
+            "KEY0#138",
+            "MEMBER_VALUE#138",
+            "NAME#112"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Base Rate",
+        "levels": [
+          {
+            "name": "[Employee].[Base Rate].[(All)]",
+            "childLevels": [
+              {
+                "name": "Base Rate"
+              }
+            ]
+          },
+          {
+            "name": "Base Rate"
+          }
+        ]
+      }
+    }
+  }
+}

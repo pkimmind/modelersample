@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Emergency Contact Name",
+    "presentationColumns": [
+      {
+        "name": "[Employee].[Emergency Contact Name].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Emergency Contact Name.[Employee].[Emergency Contact Name].[(All)]"
+      },
+      {
+        "name": "Emergency Contact Name",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Emergency Contact Name.Emergency Contact Name"
+      },
+      {
+        "name": "KEY0#145",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Emergency Contact Name.KEY0#145"
+      },
+      {
+        "name": "KEY0#146",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Emergency Contact Name.KEY0#146"
+      },
+      {
+        "name": "MEMBER_VALUE#145",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Emergency Contact Name.MEMBER_VALUE#145"
+      },
+      {
+        "name": "MEMBER_VALUE#146",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Emergency Contact Name.MEMBER_VALUE#146"
+      },
+      {
+        "name": "NAME#116",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Emergency Contact Name.NAME#116"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Emergency Contact Name",
+        "levels": [
+          {
+            "name": "[Employee].[Emergency Contact Name].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Employee].[Emergency Contact Name].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Emergency Contact Name.[Employee].[Emergency Contact Name].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Emergency Contact Name",
+            "displayColumns": [
+              {
+                "name": "Emergency Contact Name",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Emergency Contact Name.Emergency Contact Name"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

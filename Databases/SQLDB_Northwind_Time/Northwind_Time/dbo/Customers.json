@@ -1,0 +1,24 @@
+{
+  "physicalTable": {
+    "name": "Customers",
+    "caching": {
+    },
+    "physicalColumns": [
+      {
+        "name": "CustomerID",
+        "dataType": "CHAR",
+        "length": 5
+      },
+      {
+        "name": "CompanyName",
+        "dataType": "VARCHAR",
+        "length": 50
+      },
+      {
+        "name": "Ticker",
+        "dataType": "CHAR",
+        "length": 10
+      }
+    ]
+  }
+}

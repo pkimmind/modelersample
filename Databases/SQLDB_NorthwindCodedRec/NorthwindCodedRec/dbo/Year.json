@@ -1,0 +1,21 @@
+{
+  "physicalTable": {
+    "name": "Year",
+    "description": "If we change the database type to SQLServer65, then the following SQL should be used instead: select distinct datepart(year, orderdate) from orders",
+    "sourceType": "SELECT",
+    "caching": {
+    },
+    "selectStatements": [
+      {
+        "databaseType": "DEFAULT",
+        "query": "select distinct {fn year(OrderDate)} as year from Orders"
+      }
+    ],
+    "physicalColumns": [
+      {
+        "name": "Year",
+        "dataType": "SMALLINT"
+      }
+    ]
+  }
+}

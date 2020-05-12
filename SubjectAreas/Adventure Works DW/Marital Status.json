@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "Marital Status",
+    "presentationColumns": [
+      {
+        "name": "[Customer].[Marital Status].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Marital Status.[Customer].[Marital Status].[(All)]"
+      },
+      {
+        "name": "KEY0#38",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Marital Status.KEY0#38"
+      },
+      {
+        "name": "KEY0#39",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Marital Status.KEY0#39"
+      },
+      {
+        "name": "Marital Status#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Marital Status.Marital Status#2"
+      },
+      {
+        "name": "MEMBER_VALUE#38",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Marital Status.MEMBER_VALUE#38"
+      },
+      {
+        "name": "MEMBER_VALUE#39",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Marital Status.MEMBER_VALUE#39"
+      },
+      {
+        "name": "NAME#33",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Marital Status.NAME#33"
+      },
+      {
+        "name": "NAME#34",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Marital Status.NAME#34"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Marital Status",
+        "levels": [
+          {
+            "name": "[Customer].[Marital Status].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Customer].[Marital Status].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Marital Status.[Customer].[Marital Status].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Marital Status",
+            "displayColumns": [
+              {
+                "name": "Marital Status#2",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Marital Status.Marital Status#2"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

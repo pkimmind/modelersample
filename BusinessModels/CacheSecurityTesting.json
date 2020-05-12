@@ -1,0 +1,43 @@
+{
+  "businessModel": {
+    "name": "CacheSecurityTesting",
+    "disable": false,
+    "joins": [
+      {
+        "name": "CacheSecurityTesting:Relationship_2004:91921274515869",
+        "leftTable": "logicalTable:CacheSecurityTesting.Employees_Country",
+        "rightTable": "logicalTable:CacheSecurityTesting.Employees_Country",
+        "type": "INNER",
+        "cardinality": "ZEROTOMANY"
+      },
+      {
+        "name": "CacheSecurityTesting:Relationship_2004:90371274513972",
+        "leftTable": "logicalTable:CacheSecurityTesting.Employees_Dynamic",
+        "rightTable": "logicalTable:CacheSecurityTesting.Employees_Dynamic",
+        "type": "INNER",
+        "cardinality": "MANYTOONE"
+      },
+      {
+        "name": "CacheSecurityTesting:Relationship_2004:90991274514750",
+        "leftTable": "logicalTable:CacheSecurityTesting.SalesPlan",
+        "rightTable": "logicalTable:CacheSecurityTesting.SalesPlan",
+        "type": "INNER",
+        "cardinality": "MANYTOONE"
+      },
+      {
+        "name": "RelationshipEmployeesEmployees_Dynamic_Non_VPD",
+        "leftTable": "logicalTable:CacheSecurityTesting.Employees_Dynamic_Non_VPD",
+        "rightTable": "logicalTable:CacheSecurityTesting.Employees_Dynamic_Non_VPD",
+        "type": "INNER",
+        "cardinality": "MANYTOONE"
+      },
+      {
+        "name": "CacheSecurityTesting:Relationship_2004:91891274515858",
+        "leftTable": "logicalTable:CacheSecurityTesting.Employees",
+        "rightTable": "logicalTable:CacheSecurityTesting.Employees",
+        "type": "INNER",
+        "cardinality": "ZEROTOMANY"
+      }
+    }
+  }
+}

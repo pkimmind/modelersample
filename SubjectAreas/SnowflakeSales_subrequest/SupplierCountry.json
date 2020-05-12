@@ -1,0 +1,19 @@
+{
+  "presentationTable": {
+    "name": "SupplierCountry",
+    "presentationColumns": [
+      {
+        "name": "Country",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.SupplierCountry.Country"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.SupplierCountry.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.SupplierCountry.QtySold"
+      }
+    ]
+  }
+}

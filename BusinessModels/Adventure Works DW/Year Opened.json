@@ -1,0 +1,413 @@
+{
+  "logicalTable": {
+    "name": "Year Opened",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Reseller].[Year Opened].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Reseller].[Year Opened].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Reseller].[Year Opened].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Reseller].[Year Opened].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Reseller].[Year Opened].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#342",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#342"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#343",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#343"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#342",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#342"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#343",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#343"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#273",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#273"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Year Opened - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Year Opened - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Year Opened#5",
+        "writeable": false,
+        "descriptorColumn": "Year Opened - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Year Opened#5"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Year Opened",
+              "isPrimary": "true",
+              "columns": [
+                "[Reseller].[Year Opened].[(All)]",
+                "Year Opened#5"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Year Opened",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "[Reseller].[Year Opened].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Reseller].[Year Opened].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Reseller].[Year Opened].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Reseller].[Year Opened].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#342",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#342"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#343",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#343"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#342",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#342"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#343",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#343"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#273",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#273"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Year Opened - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Year Opened - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Year Opened#5",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Year Opened#5"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Year Opened.Year Opened"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Year Opened",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "[Reseller].[Year Opened].[(All)]",
+      "levels": [
+        {
+          "name": "[Reseller].[Year Opened].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Reseller].[Year Opened].[(All)]",
+          "keys": [
+            {
+              "name": "[Reseller].[Year Opened].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Reseller].[Year Opened].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Reseller].[Year Opened].[(All)]",
+              "columns": [
+                "[Reseller].[Year Opened].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Year Opened",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Year Opened",
+              "keys": [
+                {
+                  "name": "Year Opened - Member Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Year Opened - Member Key"
+                  ]
+                },
+                {
+                  "name": "Year Opened",
+                  "columns": [
+                    "Year Opened#5"
+                  ]
+                }
+              ],
+              "columns": [
+                "KEY0#343",
+                "MEMBER_VALUE#343",
+                "Year Opened - Member Key",
+                "Year Opened#5"
+              ]
+            }
+          ],
+          "columns": [
+            "[Reseller].[Year Opened].[(All)]",
+            "[Reseller].[Year Opened].[(All)] - Member Key",
+            "KEY0#342",
+            "MEMBER_VALUE#342",
+            "NAME#273"
+          ]
+        },
+        {
+          "name": "Year Opened",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Year Opened",
+          "keys": [
+            {
+              "name": "Year Opened - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "Year Opened - Member Key"
+              ]
+            },
+            {
+              "name": "Year Opened",
+              "columns": [
+                "Year Opened#5"
+              ]
+            }
+          ],
+          "columns": [
+            "KEY0#343",
+            "MEMBER_VALUE#343",
+            "Year Opened - Member Key",
+            "Year Opened#5"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Year Opened",
+        "levels": [
+          {
+            "name": "[Reseller].[Year Opened].[(All)]",
+            "childLevels": [
+              {
+                "name": "Year Opened"
+              }
+            ]
+          },
+          {
+            "name": "Year Opened"
+          }
+        ]
+      }
+    }
+  }
+}

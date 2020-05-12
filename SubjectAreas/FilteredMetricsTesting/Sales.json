@@ -1,0 +1,127 @@
+{
+  "presentationTable": {
+    "name": "Sales",
+    "presentationColumns": [
+      {
+        "name": "ShipVia",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.ShipVia"
+      },
+      {
+        "name": "EmployeeID",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.EmployeeID"
+      },
+      {
+        "name": "ProductID",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.ProductID"
+      },
+      {
+        "name": "CustomerID",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.CustomerID"
+      },
+      {
+        "name": "SiteID",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.SiteID"
+      },
+      {
+        "name": "PlanRevenue",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesPlan.PlanRevenue"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.QtySold"
+      },
+      {
+        "name": "OrderDate",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.OrderDate"
+      },
+      {
+        "name": "# Orders",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.# Orders"
+      },
+      {
+        "name": "# Customers",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.# Customers"
+      },
+      {
+        "name": "MedianQtySold",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.MedianQtySold"
+      },
+      {
+        "name": "Max-CustomerID",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.Max-CustomerID"
+      },
+      {
+        "name": "Revenue-Avg-Aggregation",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.Revenue-Avg-Aggregation"
+      },
+      {
+        "name": "Discount-Max",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.Discount-Max"
+      },
+      {
+        "name": "Test-Max",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.Test-Max"
+      },
+      {
+        "name": "Discount-Min",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.Discount-Min"
+      },
+      {
+        "name": "Test-Min",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.Test-Min"
+      },
+      {
+        "name": "Test-Count",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.Test-Count"
+      },
+      {
+        "name": "Basket Count",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.Basket Count"
+      },
+      {
+        "name": "% of Category Country Revenue",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.% of Category Country Revenue"
+      },
+      {
+        "name": "YearlySales",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.YearlySales"
+      },
+      {
+        "name": "Revenue-First",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.Revenue-First"
+      },
+      {
+        "name": "Revenue-Last",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.Revenue-Last"
+      },
+      {
+        "name": "Test-NestedFilter1",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.Test-NestedFilter1"
+      },
+      {
+        "name": "Test-NestedFilter2",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.Test-NestedFilter2"
+      },
+      {
+        "name": "Test-Combination1",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.Test-Combination1"
+      },
+      {
+        "name": "Test-Combination2",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.Test-Combination2"
+      },
+      {
+        "name": "Test-Combination3",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.Test-Combination3"
+      },
+      {
+        "name": "Test-Combination4",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.Test-Combination4"
+      }
+    ]
+  }
+}

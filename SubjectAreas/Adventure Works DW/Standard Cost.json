@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Standard Cost",
+    "presentationColumns": [
+      {
+        "name": "[Product].[Standard Cost].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Standard Cost.[Product].[Standard Cost].[(All)]"
+      },
+      {
+        "name": "KEY0#265",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Standard Cost.KEY0#265"
+      },
+      {
+        "name": "KEY0#266",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Standard Cost.KEY0#266"
+      },
+      {
+        "name": "MEMBER_VALUE#265",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Standard Cost.MEMBER_VALUE#265"
+      },
+      {
+        "name": "MEMBER_VALUE#266",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Standard Cost.MEMBER_VALUE#266"
+      },
+      {
+        "name": "NAME#208",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Standard Cost.NAME#208"
+      },
+      {
+        "name": "Standard Cost#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Standard Cost.Standard Cost#2"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Standard Cost",
+        "levels": [
+          {
+            "name": "[Product].[Standard Cost].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Product].[Standard Cost].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Standard Cost.[Product].[Standard Cost].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Standard Cost",
+            "displayColumns": [
+              {
+                "name": "Standard Cost#2",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Standard Cost.Standard Cost#2"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "presentationTable": {
+    "name": "Delivery Date.Month of Year",
+    "presentationColumns": [
+      {
+        "name": "[Delivery Date].[Month of Year].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Month of Year.[Delivery Date].[Month of Year].[(All)]"
+      },
+      {
+        "name": "KEY0#128",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Month of Year.KEY0#128"
+      },
+      {
+        "name": "KEY0#129",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Month of Year.KEY0#129"
+      },
+      {
+        "name": "MEMBER_VALUE#128",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Month of Year.MEMBER_VALUE#128"
+      },
+      {
+        "name": "MEMBER_VALUE#129",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Month of Year.MEMBER_VALUE#129"
+      },
+      {
+        "name": "Month of Year#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Month of Year.Month of Year#5"
+      },
+      {
+        "name": "NAME#104",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Month of Year.NAME#104"
+      },
+      {
+        "name": "NAME#105",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Month of Year.NAME#105"
+      },
+      {
+        "name": "TRAN0#7",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Month of Year.TRAN0#7"
+      },
+      {
+        "name": "TRAN1#7",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Month of Year.TRAN1#7"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Delivery Date.Month of Year",
+        "levels": [
+          {
+            "name": "[Delivery Date].[Month of Year].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Delivery Date].[Month of Year].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Month of Year.[Delivery Date].[Month of Year].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Month of Year",
+            "displayColumns": [
+              {
+                "name": "Month of Year#5",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Month of Year.Month of Year#5"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

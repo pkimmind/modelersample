@@ -1,0 +1,357 @@
+{
+  "presentationTable": {
+    "name": "Sales",
+    "presentationColumns": [
+      {
+        "name": "PlanRevenue",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesPlan.PlanRevenue"
+      },
+      {
+        "name": "ShipVia",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.ShipVia"
+      },
+      {
+        "name": "EmployeeID",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.EmployeeID"
+      },
+      {
+        "name": "ProductID",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.ProductID"
+      },
+      {
+        "name": "CustomerID",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.CustomerID"
+      },
+      {
+        "name": "SiteID",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.SiteID"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+        "alternateNames": [
+          "Quantity"
+        ]
+      },
+      {
+        "name": "OrderDate",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.OrderDate"
+      },
+      {
+        "name": "# Orders",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.# Orders"
+      },
+      {
+        "name": "# Customers",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.# Customers"
+      },
+      {
+        "name": "MedianQtySold",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.MedianQtySold"
+      },
+      {
+        "name": "QtySold_YAgo",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.QtySold_YAgo",
+        "alternateNames": [
+          "YAgo_QtySold"
+        ]
+      },
+      {
+        "name": "QtySold_MonthAgo",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.QtySold_MonthAgo",
+        "alternateNames": [
+          "MonthAgo_QtySold"
+        ]
+      },
+      {
+        "name": "QtySold_QtrAgo",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.QtySold_QtrAgo"
+      },
+      {
+        "name": "QtySold_WeekAgo",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.QtySold_WeekAgo"
+      },
+      {
+        "name": "QtySold_DayAgo",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.QtySold_DayAgo"
+      },
+      {
+        "name": "QtySold_ZeroYAgo",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.QtySold_ZeroYAgo"
+      },
+      {
+        "name": "AGO_Measures_add",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.AGO_Measures_add"
+      },
+      {
+        "name": "Basket Count",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.Basket Count"
+      },
+      {
+        "name": "BasketCount_YAgo",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.BasketCount_YAgo"
+      },
+      {
+        "name": "AGO_Measures_Multiply",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.AGO_Measures_Multiply"
+      },
+      {
+        "name": "AGO_Measures_Divide1",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.AGO_Measures_Divide1",
+        "alternateNames": [
+          "AGO_Measures_Divide"
+        ]
+      },
+      {
+        "name": "AGO_Measures_Divide2",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.AGO_Measures_Divide2"
+      },
+      {
+        "name": "#Orders_YAgo",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.#Orders_YAgo"
+      },
+      {
+        "name": "Revenue_YAgo",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.Revenue_YAgo"
+      },
+      {
+        "name": "QtySold_YAgo_Rank",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.QtySold_YAgo_Rank"
+      },
+      {
+        "name": "QtySold_YAgo_Filter",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.QtySold_YAgo_Filter"
+      },
+      {
+        "name": "QtySold_YAgo_Filter_Time",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.QtySold_YAgo_Filter_Time"
+      },
+      {
+        "name": "% of Category Qtr Revenue",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.% of Category Qtr Revenue"
+      },
+      {
+        "name": "% of Category_Qtr_Rev_Yago",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.% of Category_Qtr_Rev_Yago",
+        "alternateNames": [
+          "% Category_Qtr_Rev_Yago"
+        ]
+      },
+      {
+        "name": "Qtysold_Yago_Case",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.Qtysold_Yago_Case"
+      },
+      {
+        "name": "Qtysold_Casepid12",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.Qtysold_Casepid12"
+      },
+      {
+        "name": "YearlySales",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.YearlySales"
+      },
+      {
+        "name": "Amt_Dim_Measure",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.Amt_Dim_Measure"
+      },
+      {
+        "name": "Revenue after Discount",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.Revenue after Discount"
+      },
+      {
+        "name": "Revenue After Discount_Yago",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.Revenue After Discount_Yago"
+      },
+      {
+        "name": "Qtysold_Case",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.Qtysold_Case"
+      },
+      {
+        "name": "QtySold_2YAgo",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.QtySold_2YAgo"
+      },
+      {
+        "name": "Qtysold_Rsum",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.Qtysold_Rsum"
+      },
+      {
+        "name": "Qtysold_Rsum_Yago",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.Qtysold_Rsum_Yago"
+      },
+      {
+        "name": "Revenue_after_Discount2",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.Revenue_after_Discount2"
+      },
+      {
+        "name": "QtySold_ToYear",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.QtySold_ToYear"
+      },
+      {
+        "name": "QtySold_ToQtr",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.QtySold_ToQtr"
+      },
+      {
+        "name": "QtySold_ToMonth",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.QtySold_ToMonth",
+        "alternateNames": [
+          "QtySold_ToMonth#1"
+        ]
+      },
+      {
+        "name": "QtySold_ToWeek",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.QtySold_ToWeek"
+      },
+      {
+        "name": "QtySold_ToDay",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.QtySold_ToDay"
+      },
+      {
+        "name": "QtySold_ToYear_Rank",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.QtySold_ToYear_Rank"
+      },
+      {
+        "name": "QtySold_ToYear_Filter",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.QtySold_ToYear_Filter"
+      },
+      {
+        "name": "QtySold_ToYear_Filter_Time",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.QtySold_ToYear_Filter_Time"
+      },
+      {
+        "name": "Qtysold_Rsum_ToYear",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.Qtysold_Rsum_ToYear"
+      },
+      {
+        "name": "ToDate_Measures_add",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.ToDate_Measures_add"
+      },
+      {
+        "name": "ToDate_Measures_Multiply",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.ToDate_Measures_Multiply"
+      },
+      {
+        "name": "ToDate_Measures_Divide1",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.ToDate_Measures_Divide1"
+      },
+      {
+        "name": "ToDate_Measures_Divide2",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.ToDate_Measures_Divide2"
+      },
+      {
+        "name": "BasketCount_ToYear",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.BasketCount_ToYear"
+      },
+      {
+        "name": "QtySold_FMonthAgo",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.QtySold_FMonthAgo"
+      },
+      {
+        "name": "QtySold_FYAgo",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.QtySold_FYAgo"
+      },
+      {
+        "name": "QtySold_FYAgo_Filter_Time",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.QtySold_FYAgo_Filter_Time"
+      },
+      {
+        "name": "Revenue_ToYear",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.Revenue_ToYear"
+      },
+      {
+        "name": "#Orders_ToYear",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.#Orders_ToYear"
+      },
+      {
+        "name": "Amt_dim_measure_yago",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.Amt_dim_measure_yago"
+      },
+      {
+        "name": "Qtysold_Toyear_Case",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.Qtysold_Toyear_Case"
+      },
+      {
+        "name": "QtySoldnotime",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.QtySoldnotime"
+      },
+      {
+        "name": "qtysoldnotime_yago",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.qtysoldnotime_yago"
+      },
+      {
+        "name": "qtysoldnotime_ytd",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.qtysoldnotime_ytd"
+      },
+      {
+        "name": "YearlySales#1",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.YearlySales"
+      },
+      {
+        "name": "yearly_QtySold",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.yearly_QtySold"
+      },
+      {
+        "name": "Category Qtr Revenue_new",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.Category Qtr Revenue_new"
+      },
+      {
+        "name": "% of Category_Qtr_Rev_Yago#1",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.% of Category_Qtr_Rev_Yago"
+      },
+      {
+        "name": "QtySold_last",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.QtySold_last"
+      },
+      {
+        "name": "Qtysold_last_yago",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.Qtysold_last_yago"
+      },
+      {
+        "name": "qtysold_yago_yago",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.qtysold_yago_yago"
+      },
+      {
+        "name": "qtysold_yago_toyear",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.qtysold_yago_toyear"
+      },
+      {
+        "name": "qtyago_revyago_yago",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.qtyago_revyago_yago"
+      },
+      {
+        "name": "Revenue_2YAgo",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.Revenue_2YAgo"
+      },
+      {
+        "name": "yago_qtyago_qtytoyear",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.yago_qtyago_qtytoyear"
+      },
+      {
+        "name": "yago_rev_qtyago",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.yago_rev_qtyago"
+      },
+      {
+        "name": "QtySold_YAgo_yago_ygao_yago",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.QtySold_YAgo_yago_ygao_yago"
+      },
+      {
+        "name": "qtysold_yago_yago_toyear",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.qtysold_yago_yago_toyear"
+      },
+      {
+        "name": "% of Category_Qtr_Rev_toyear",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.% of Category_Qtr_Rev_toyear"
+      },
+      {
+        "name": "Amt_dim_measure_toyear",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.Amt_dim_measure_toyear"
+      },
+      {
+        "name": "Revenue After Discount_toyear",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesFacts.Revenue After Discount_toyear"
+      }
+    ]
+  }
+}

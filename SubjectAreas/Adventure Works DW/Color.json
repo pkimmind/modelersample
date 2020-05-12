@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Color",
+    "presentationColumns": [
+      {
+        "name": "[Product].[Color].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Color.[Product].[Color].[(All)]"
+      },
+      {
+        "name": "Color",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Color.Color"
+      },
+      {
+        "name": "KEY0#223",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Color.KEY0#223"
+      },
+      {
+        "name": "KEY0#224",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Color.KEY0#224"
+      },
+      {
+        "name": "MEMBER_VALUE#223",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Color.MEMBER_VALUE#223"
+      },
+      {
+        "name": "MEMBER_VALUE#224",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Color.MEMBER_VALUE#224"
+      },
+      {
+        "name": "NAME#180",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Color.NAME#180"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Color",
+        "levels": [
+          {
+            "name": "[Product].[Color].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Product].[Color].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Color.[Product].[Color].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Color",
+            "displayColumns": [
+              {
+                "name": "Color",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Color.Color"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

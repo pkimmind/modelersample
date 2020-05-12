@@ -1,0 +1,150 @@
+{
+  "presentationTable": {
+    "name": "Product",
+    "presentationColumns": [
+      {
+        "name": "[Product].[Product].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product.[Product].[Product].[(All)]"
+      },
+      {
+        "name": "Class#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product.Class#1"
+      },
+      {
+        "name": "Color#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product.Color#1"
+      },
+      {
+        "name": "Days to Manufacture#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product.Days to Manufacture#2"
+      },
+      {
+        "name": "Dealer Price#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product.Dealer Price#1"
+      },
+      {
+        "name": "End Date#9",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product.End Date#9"
+      },
+      {
+        "name": "KEY0#240",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product.KEY0#240"
+      },
+      {
+        "name": "KEY0#241",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product.KEY0#241"
+      },
+      {
+        "name": "Large Photo#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product.Large Photo#1"
+      },
+      {
+        "name": "List Price#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product.List Price#1"
+      },
+      {
+        "name": "MEMBER_VALUE#240",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product.MEMBER_VALUE#240"
+      },
+      {
+        "name": "MEMBER_VALUE#241",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product.MEMBER_VALUE#241"
+      },
+      {
+        "name": "Model Name#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product.Model Name#1"
+      },
+      {
+        "name": "NAME#190",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product.NAME#190"
+      },
+      {
+        "name": "NAME#191",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product.NAME#191"
+      },
+      {
+        "name": "Product",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product.Product"
+      },
+      {
+        "name": "Product Key",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product.Product Key"
+      },
+      {
+        "name": "Reorder Point",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product.Reorder Point"
+      },
+      {
+        "name": "Safety Stock Level",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product.Safety Stock Level"
+      },
+      {
+        "name": "Size",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product.Size"
+      },
+      {
+        "name": "Size Range",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product.Size Range"
+      },
+      {
+        "name": "Standard Cost",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product.Standard Cost"
+      },
+      {
+        "name": "Start Date#8",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product.Start Date#8"
+      },
+      {
+        "name": "Status#8",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product.Status#8"
+      },
+      {
+        "name": "Style",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product.Style"
+      },
+      {
+        "name": "Subcategory#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product.Subcategory#2"
+      },
+      {
+        "name": "TRAN0#12",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product.TRAN0#12"
+      },
+      {
+        "name": "TRAN1#12",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product.TRAN1#12"
+      },
+      {
+        "name": "Weight",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product.Weight"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Product",
+        "levels": [
+          {
+            "name": "[Product].[Product].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Product].[Product].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product.[Product].[Product].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Product",
+            "displayColumns": [
+              {
+                "name": "Product",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product.Product"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

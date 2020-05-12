@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Address#1",
+    "presentationColumns": [
+      {
+        "name": "[Reseller].[Address].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Address#1.[Reseller].[Address].[(All)]"
+      },
+      {
+        "name": "Address#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Address#1.Address#3"
+      },
+      {
+        "name": "KEY0#300",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Address#1.KEY0#300"
+      },
+      {
+        "name": "KEY0#301",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Address#1.KEY0#301"
+      },
+      {
+        "name": "MEMBER_VALUE#300",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Address#1.MEMBER_VALUE#300"
+      },
+      {
+        "name": "MEMBER_VALUE#301",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Address#1.MEMBER_VALUE#301"
+      },
+      {
+        "name": "NAME#240",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Address#1.NAME#240"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Address#1",
+        "levels": [
+          {
+            "name": "[Reseller].[Address].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Reseller].[Address].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Address#1.[Reseller].[Address].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Address",
+            "displayColumns": [
+              {
+                "name": "Address#3",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Address#1.Address#3"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

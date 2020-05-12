@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Date.Week of Year",
+    "presentationColumns": [
+      {
+        "name": "[Date].[Week of Year].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Week of Year.[Date].[Week of Year].[(All)]"
+      },
+      {
+        "name": "KEY0#92",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Week of Year.KEY0#92"
+      },
+      {
+        "name": "KEY0#93",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Week of Year.KEY0#93"
+      },
+      {
+        "name": "MEMBER_VALUE#92",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Week of Year.MEMBER_VALUE#92"
+      },
+      {
+        "name": "MEMBER_VALUE#93",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Week of Year.MEMBER_VALUE#93"
+      },
+      {
+        "name": "NAME#76",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Week of Year.NAME#76"
+      },
+      {
+        "name": "Week of Year#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Week of Year.Week of Year#3"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Date.Week of Year",
+        "levels": [
+          {
+            "name": "[Date].[Week of Year].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Date].[Week of Year].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Week of Year.[Date].[Week of Year].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Week of Year",
+            "displayColumns": [
+              {
+                "name": "Week of Year#3",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Week of Year.Week of Year#3"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

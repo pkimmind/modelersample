@@ -1,0 +1,27 @@
+{
+  "presentationTable": {
+    "name": "SupplierRegion",
+    "presentationColumns": [
+      {
+        "name": "Country",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SupplierRegion.Country"
+      },
+      {
+        "name": "Region",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SupplierRegion.Region"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SupplierRegion.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SupplierRegion.QtySold"
+      },
+      {
+        "name": "RegionShare",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.SupplierRegion.RegionShare"
+      }
+    ]
+  }
+}

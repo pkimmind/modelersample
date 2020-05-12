@@ -1,0 +1,107 @@
+{
+  "presentationTable": {
+    "name": "Internet Sales Orders",
+    "presentationColumns": [
+      {
+        "name": "[Internet Sales Order Details].[Internet Sales Orders].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Internet Sales Orders.[Internet Sales Order Details].[Internet Sales Orders].[(All)]"
+      },
+      {
+        "name": "Carrier Tracking Number#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Internet Sales Orders.Carrier Tracking Number#1"
+      },
+      {
+        "name": "Customer PO Number#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Internet Sales Orders.Customer PO Number#1"
+      },
+      {
+        "name": "KEY0#206",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Internet Sales Orders.KEY0#206"
+      },
+      {
+        "name": "KEY0#207",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Internet Sales Orders.KEY0#207"
+      },
+      {
+        "name": "KEY0#208",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Internet Sales Orders.KEY0#208"
+      },
+      {
+        "name": "KEY1#24",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Internet Sales Orders.KEY1#24"
+      },
+      {
+        "name": "MEMBER_VALUE#206",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Internet Sales Orders.MEMBER_VALUE#206"
+      },
+      {
+        "name": "MEMBER_VALUE#207",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Internet Sales Orders.MEMBER_VALUE#207"
+      },
+      {
+        "name": "MEMBER_VALUE#208",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Internet Sales Orders.MEMBER_VALUE#208"
+      },
+      {
+        "name": "NAME#166",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Internet Sales Orders.NAME#166"
+      },
+      {
+        "name": "NAME#167",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Internet Sales Orders.NAME#167"
+      },
+      {
+        "name": "Order Line",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Internet Sales Orders.Order Line"
+      },
+      {
+        "name": "Order Number",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Internet Sales Orders.Order Number"
+      },
+      {
+        "name": "Sales Order Line",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Internet Sales Orders.Sales Order Line"
+      },
+      {
+        "name": "Sales Order Number",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Internet Sales Orders.Sales Order Number"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Internet Sales Orders",
+        "levels": [
+          {
+            "name": "[Internet Sales Order Details].[Internet Sales Orders].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Internet Sales Order Details].[Internet Sales Orders].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Internet Sales Orders.[Internet Sales Order Details].[Internet Sales Orders].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Order Number",
+            "displayColumns": [
+              {
+                "name": "Order Number",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Internet Sales Orders.Order Number"
+              }
+            ]
+          },
+          {
+            "name": "Order Line",
+            "displayColumns": [
+              {
+                "name": "Order Line",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Internet Sales Orders.Order Line"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

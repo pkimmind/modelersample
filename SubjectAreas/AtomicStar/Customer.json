@@ -1,0 +1,55 @@
+{
+  "presentationTable": {
+    "name": "Customer",
+    "presentationColumns": [
+      {
+        "name": "CustomerID",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Customer.CustomerID"
+      },
+      {
+        "name": "SiteID",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Customer.SiteID"
+      },
+      {
+        "name": "CompanyName",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Customer.CompanyName"
+      },
+      {
+        "name": "SiteName",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Customer.SiteName"
+      },
+      {
+        "name": "ContactName",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Customer.ContactName"
+      },
+      {
+        "name": "Address",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Customer.Address"
+      },
+      {
+        "name": "City",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Customer.City"
+      },
+      {
+        "name": "Region",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Customer.Region"
+      },
+      {
+        "name": "PostalCode",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Customer.PostalCode"
+      },
+      {
+        "name": "Country",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Customer.Country"
+      },
+      {
+        "name": "Phone",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Customer.Phone"
+      },
+      {
+        "name": "Fax",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.Customer.Fax"
+      }
+    ]
+  }
+}

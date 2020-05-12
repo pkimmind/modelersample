@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "Style",
+    "presentationColumns": [
+      {
+        "name": "[Product].[Style].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Style.[Product].[Style].[(All)]"
+      },
+      {
+        "name": "KEY0#274",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Style.KEY0#274"
+      },
+      {
+        "name": "KEY0#275",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Style.KEY0#275"
+      },
+      {
+        "name": "MEMBER_VALUE#274",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Style.MEMBER_VALUE#274"
+      },
+      {
+        "name": "MEMBER_VALUE#275",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Style.MEMBER_VALUE#275"
+      },
+      {
+        "name": "NAME#215",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Style.NAME#215"
+      },
+      {
+        "name": "NAME#216",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Style.NAME#216"
+      },
+      {
+        "name": "Style#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Style.Style#3"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Style",
+        "levels": [
+          {
+            "name": "[Product].[Style].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Product].[Style].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Style.[Product].[Style].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Style",
+            "displayColumns": [
+              {
+                "name": "Style#3",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Style.Style#3"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

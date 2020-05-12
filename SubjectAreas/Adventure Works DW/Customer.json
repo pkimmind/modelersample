@@ -1,0 +1,130 @@
+{
+  "presentationTable": {
+    "name": "Customer",
+    "presentationColumns": [
+      {
+        "name": "[Customer].[Customer].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer.[Customer].[Customer].[(All)]"
+      },
+      {
+        "name": "Address#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer.Address#1"
+      },
+      {
+        "name": "Birth Date",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer.Birth Date"
+      },
+      {
+        "name": "Commute Distance#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer.Commute Distance#1"
+      },
+      {
+        "name": "Customer",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer.Customer"
+      },
+      {
+        "name": "Date of First Purchase",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer.Date of First Purchase"
+      },
+      {
+        "name": "Education",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer.Education"
+      },
+      {
+        "name": "Email Address",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer.Email Address"
+      },
+      {
+        "name": "Gender",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer.Gender"
+      },
+      {
+        "name": "Home Owner",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer.Home Owner"
+      },
+      {
+        "name": "KEY0#20",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer.KEY0#20"
+      },
+      {
+        "name": "KEY0#21",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer.KEY0#21"
+      },
+      {
+        "name": "Marital Status",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer.Marital Status"
+      },
+      {
+        "name": "MEMBER_VALUE#20",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer.MEMBER_VALUE#20"
+      },
+      {
+        "name": "MEMBER_VALUE#21",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer.MEMBER_VALUE#21"
+      },
+      {
+        "name": "NAME#16",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer.NAME#16"
+      },
+      {
+        "name": "NAME#17",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer.NAME#17"
+      },
+      {
+        "name": "Number of Cars Owned",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer.Number of Cars Owned"
+      },
+      {
+        "name": "Number of Children At Home",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer.Number of Children At Home"
+      },
+      {
+        "name": "Occupation",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer.Occupation"
+      },
+      {
+        "name": "Phone",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer.Phone"
+      },
+      {
+        "name": "Postal Code",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer.Postal Code"
+      },
+      {
+        "name": "Total Children",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer.Total Children"
+      },
+      {
+        "name": "Yearly Income",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer.Yearly Income"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Customer",
+        "levels": [
+          {
+            "name": "[Customer].[Customer].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Customer].[Customer].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer.[Customer].[Customer].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Customer",
+            "displayColumns": [
+              {
+                "name": "Customer",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer.Customer"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

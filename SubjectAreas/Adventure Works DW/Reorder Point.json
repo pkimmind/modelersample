@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Reorder Point",
+    "presentationColumns": [
+      {
+        "name": "[Product].[Reorder Point].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reorder Point.[Product].[Reorder Point].[(All)]"
+      },
+      {
+        "name": "KEY0#257",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reorder Point.KEY0#257"
+      },
+      {
+        "name": "KEY0#258",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reorder Point.KEY0#258"
+      },
+      {
+        "name": "MEMBER_VALUE#257",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reorder Point.MEMBER_VALUE#257"
+      },
+      {
+        "name": "MEMBER_VALUE#258",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reorder Point.MEMBER_VALUE#258"
+      },
+      {
+        "name": "NAME#204",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reorder Point.NAME#204"
+      },
+      {
+        "name": "Reorder Point#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reorder Point.Reorder Point#2"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Reorder Point",
+        "levels": [
+          {
+            "name": "[Product].[Reorder Point].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Product].[Reorder Point].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reorder Point.[Product].[Reorder Point].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Reorder Point",
+            "displayColumns": [
+              {
+                "name": "Reorder Point#2",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reorder Point.Reorder Point#2"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

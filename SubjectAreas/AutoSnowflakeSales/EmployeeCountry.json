@@ -1,0 +1,23 @@
+{
+  "presentationTable": {
+    "name": "EmployeeCountry",
+    "presentationColumns": [
+      {
+        "name": "Country",
+        "sourceLogicalColumn": "logicalColumn:AutoSnowflakeSales.EmployeeCountry.Country"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:AutoSnowflakeSales.EmployeeCountry.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:AutoSnowflakeSales.EmployeeCountry.QtySold"
+      },
+      {
+        "name": "PlanRevenue",
+        "sourceLogicalColumn": "logicalColumn:AutoSnowflakeSales.EmployeeCountry.PlanRevenue"
+      }
+    ]
+  }
+}

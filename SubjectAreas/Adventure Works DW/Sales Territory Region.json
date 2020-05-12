@@ -1,0 +1,70 @@
+{
+  "presentationTable": {
+    "name": "Sales Territory Region",
+    "presentationColumns": [
+      {
+        "name": "[Sales Territory].[Sales Territory Region].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Region.[Sales Territory].[Sales Territory Region].[(All)]"
+      },
+      {
+        "name": "KEY0#383",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Region.KEY0#383"
+      },
+      {
+        "name": "KEY0#384",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Region.KEY0#384"
+      },
+      {
+        "name": "MEMBER_VALUE#383",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Region.MEMBER_VALUE#383"
+      },
+      {
+        "name": "MEMBER_VALUE#384",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Region.MEMBER_VALUE#384"
+      },
+      {
+        "name": "NAME#295",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Region.NAME#295"
+      },
+      {
+        "name": "NAME#296",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Region.NAME#296"
+      },
+      {
+        "name": "Sales Territory Country#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Region.Sales Territory Country#2"
+      },
+      {
+        "name": "Sales Territory Region",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Region.Sales Territory Region"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Sales Territory Region",
+        "levels": [
+          {
+            "name": "[Sales Territory].[Sales Territory Region].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Sales Territory].[Sales Territory Region].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Region.[Sales Territory].[Sales Territory Region].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Sales Territory Region",
+            "displayColumns": [
+              {
+                "name": "Sales Territory Region",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Region.Sales Territory Region"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

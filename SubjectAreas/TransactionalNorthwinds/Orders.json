@@ -1,0 +1,67 @@
+{
+  "presentationTable": {
+    "name": "Orders",
+    "presentationColumns": [
+      {
+        "name": "OrderID",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Orders.OrderID"
+      },
+      {
+        "name": "CustomerID",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Orders.CustomerID"
+      },
+      {
+        "name": "SiteID",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Orders.SiteID"
+      },
+      {
+        "name": "EmployeeID",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Orders.EmployeeID"
+      },
+      {
+        "name": "OrderDate",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Orders.OrderDate"
+      },
+      {
+        "name": "RequiredDate",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Orders.RequiredDate"
+      },
+      {
+        "name": "ShippedDate",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Orders.ShippedDate"
+      },
+      {
+        "name": "ShipVia",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Orders.ShipVia"
+      },
+      {
+        "name": "Freight",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Orders.Freight"
+      },
+      {
+        "name": "ShipName",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Orders.ShipName"
+      },
+      {
+        "name": "ShipAddress",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Orders.ShipAddress"
+      },
+      {
+        "name": "ShipCity",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Orders.ShipCity"
+      },
+      {
+        "name": "ShipRegion",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Orders.ShipRegion"
+      },
+      {
+        "name": "ShipPostalCode",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Orders.ShipPostalCode"
+      },
+      {
+        "name": "ShipCountry",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Orders.ShipCountry"
+      }
+    ]
+  }
+}

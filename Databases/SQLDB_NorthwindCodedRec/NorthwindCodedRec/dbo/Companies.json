@@ -1,0 +1,76 @@
+{
+  "physicalTable": {
+    "name": "Companies",
+    "isCacheable": false,
+    "caching": {
+      "enable": false
+    },
+    "physicalColumns": [
+      {
+        "name": "SiteID",
+        "dataType": "SMALLINT",
+        "length": 5
+      },
+      {
+        "name": "CompanyID",
+        "dataType": "CHAR",
+        "length": 5
+      },
+      {
+        "name": "OrganizationCode",
+        "dataType": "SMALLINT",
+        "length": 5
+      },
+      {
+        "name": "CompanyName",
+        "dataType": "CHAR",
+        "length": 40
+      },
+      {
+        "name": "ContactName",
+        "dataType": "CHAR",
+        "length": 30
+      },
+      {
+        "name": "ContactTitle",
+        "dataType": "VARCHAR",
+        "length": 30
+      },
+      {
+        "name": "Address",
+        "dataType": "VARCHAR",
+        "length": 60
+      },
+      {
+        "name": "City",
+        "dataType": "CHAR",
+        "length": 15
+      },
+      {
+        "name": "Region",
+        "dataType": "CHAR",
+        "length": 15
+      },
+      {
+        "name": "PostalCode",
+        "dataType": "CHAR",
+        "length": 10
+      },
+      {
+        "name": "Country",
+        "dataType": "CHAR",
+        "length": 15
+      },
+      {
+        "name": "Phone",
+        "dataType": "CHAR",
+        "length": 24
+      },
+      {
+        "name": "Fax",
+        "dataType": "CHAR",
+        "length": 24
+      }
+    ]
+  }
+}

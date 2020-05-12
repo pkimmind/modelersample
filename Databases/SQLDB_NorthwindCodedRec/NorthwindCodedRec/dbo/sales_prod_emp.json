@@ -1,0 +1,29 @@
+{
+  "physicalTable": {
+    "name": "sales_prod_emp",
+    "caching": {
+    },
+    "physicalColumns": [
+      {
+        "name": "ProductID",
+        "dataType": "INT",
+        "length": 10
+      },
+      {
+        "name": "EmployeeID",
+        "dataType": "SMALLINT",
+        "length": 5
+      },
+      {
+        "name": "QtySold",
+        "dataType": "INT",
+        "length": 10
+      },
+      {
+        "name": "Revenue",
+        "dataType": "DOUBLE",
+        "length": 10
+      }
+    ]
+  }
+}

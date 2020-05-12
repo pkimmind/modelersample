@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "Start Date#1",
+    "presentationColumns": [
+      {
+        "name": "[Product].[Start Date].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date#1.[Product].[Start Date].[(All)]"
+      },
+      {
+        "name": "KEY0#267",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date#1.KEY0#267"
+      },
+      {
+        "name": "KEY0#268",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date#1.KEY0#268"
+      },
+      {
+        "name": "MEMBER_VALUE#267",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date#1.MEMBER_VALUE#267"
+      },
+      {
+        "name": "MEMBER_VALUE#268",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date#1.MEMBER_VALUE#268"
+      },
+      {
+        "name": "NAME#209",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date#1.NAME#209"
+      },
+      {
+        "name": "NAME#210",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date#1.NAME#210"
+      },
+      {
+        "name": "Start Date#10",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date#1.Start Date#10"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Start Date#1",
+        "levels": [
+          {
+            "name": "[Product].[Start Date].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Product].[Start Date].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date#1.[Product].[Start Date].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Start Date",
+            "displayColumns": [
+              {
+                "name": "Start Date#10",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date#1.Start Date#10"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

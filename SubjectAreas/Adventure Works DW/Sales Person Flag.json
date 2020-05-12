@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "Sales Person Flag",
+    "presentationColumns": [
+      {
+        "name": "[Employee].[Sales Person Flag].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Person Flag.[Employee].[Sales Person Flag].[(All)]"
+      },
+      {
+        "name": "KEY0#177",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Person Flag.KEY0#177"
+      },
+      {
+        "name": "KEY0#178",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Person Flag.KEY0#178"
+      },
+      {
+        "name": "MEMBER_VALUE#177",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Person Flag.MEMBER_VALUE#177"
+      },
+      {
+        "name": "MEMBER_VALUE#178",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Person Flag.MEMBER_VALUE#178"
+      },
+      {
+        "name": "NAME#141",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Person Flag.NAME#141"
+      },
+      {
+        "name": "NAME#142",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Person Flag.NAME#142"
+      },
+      {
+        "name": "Sales Person Flag#7",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Person Flag.Sales Person Flag#7"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Sales Person Flag",
+        "levels": [
+          {
+            "name": "[Employee].[Sales Person Flag].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Employee].[Sales Person Flag].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Person Flag.[Employee].[Sales Person Flag].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Sales Person Flag",
+            "displayColumns": [
+              {
+                "name": "Sales Person Flag#7",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Person Flag.Sales Person Flag#7"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

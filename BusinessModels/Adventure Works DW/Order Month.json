@@ -1,0 +1,444 @@
+{
+  "logicalTable": {
+    "name": "Order Month",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Reseller].[Order Month].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Reseller].[Order Month].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Reseller].[Order Month].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Reseller].[Order Month].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Reseller].[Order Month].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#322",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#322"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#323",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#323"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#322",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#322"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#323",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#323"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#257",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#257"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#258",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#258"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Order Month",
+        "writeable": false,
+        "descriptorColumn": "Order Month - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Order Month"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Order Month - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Order Month - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Order Month",
+              "isPrimary": "true",
+              "columns": [
+                "[Reseller].[Order Month].[(All)]",
+                "Order Month"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Order Month",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "[Reseller].[Order Month].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Reseller].[Order Month].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Reseller].[Order Month].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Reseller].[Order Month].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#322",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#322"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#323",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#323"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#322",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#322"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#323",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#323"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#257",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#257"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#258",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#258"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Order Month",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Order Month"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Order Month - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Order Month - Member Key"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Order Month.Order Month"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Order Month",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "[Reseller].[Order Month].[(All)]",
+      "levels": [
+        {
+          "name": "[Reseller].[Order Month].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Reseller].[Order Month].[(All)]",
+          "keys": [
+            {
+              "name": "[Reseller].[Order Month].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Reseller].[Order Month].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Reseller].[Order Month].[(All)]",
+              "columns": [
+                "[Reseller].[Order Month].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Order Month",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Order Month",
+              "keys": [
+                {
+                  "name": "Order Month - Member Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Order Month - Member Key"
+                  ]
+                },
+                {
+                  "name": "Order Month",
+                  "columns": [
+                    "Order Month"
+                  ]
+                }
+              ],
+              "columns": [
+                "KEY0#323",
+                "MEMBER_VALUE#323",
+                "NAME#258",
+                "Order Month",
+                "Order Month - Member Key"
+              ]
+            }
+          ],
+          "columns": [
+            "[Reseller].[Order Month].[(All)]",
+            "[Reseller].[Order Month].[(All)] - Member Key",
+            "KEY0#322",
+            "MEMBER_VALUE#322",
+            "NAME#257"
+          ]
+        },
+        {
+          "name": "Order Month",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Order Month",
+          "keys": [
+            {
+              "name": "Order Month - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "Order Month - Member Key"
+              ]
+            },
+            {
+              "name": "Order Month",
+              "columns": [
+                "Order Month"
+              ]
+            }
+          ],
+          "columns": [
+            "KEY0#323",
+            "MEMBER_VALUE#323",
+            "NAME#258",
+            "Order Month",
+            "Order Month - Member Key"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Order Month",
+        "levels": [
+          {
+            "name": "[Reseller].[Order Month].[(All)]",
+            "childLevels": [
+              {
+                "name": "Order Month"
+              }
+            ]
+          },
+          {
+            "name": "Order Month"
+          }
+        ]
+      }
+    }
+  }
+}

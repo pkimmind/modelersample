@@ -1,0 +1,156 @@
+{
+  "logicalTable": {
+    "name": "holidays",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "holiday_name",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "holidays",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.holidays.holiday_name"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "holiday_date",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "holidays",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.holidays.holiday_date"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "holiday_id",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "holidays",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.holidays.holiday_id"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "holidays_Key#1",
+              "isPrimary": "true",
+              "columns": [
+                "holiday_id"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "holidays",
+        "logicalTableRef": "holidays",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "holiday_name",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.holidays.holiday_name"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "holiday_date",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.holidays.holiday_date"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "holiday_id",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.holidays.holiday_id"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "holidays",
+            "joins": [
+            ]
+          }
+        ]
+      },
+    ],
+    "dimension": {
+      "name": "Holiday",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "Name",
+      "levels": [
+        {
+          "name": "Name",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Name",
+          "keys": [
+            {
+              "name": "Holiday_key",
+              "isPrimary": "true",
+              "columns": [
+                "holiday_id"
+              ]
+            }
+          ],
+          "columns": [
+            "holiday_name"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Holiday",
+        "levels": [
+          {
+            "name": "Name"
+          }
+        ]
+      }
+    }
+  }
+}

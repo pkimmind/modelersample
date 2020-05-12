@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Marital Status#1",
+    "presentationColumns": [
+      {
+        "name": "[Employee].[Marital Status].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Marital Status#1.[Employee].[Marital Status].[(All)]"
+      },
+      {
+        "name": "KEY0#169",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Marital Status#1.KEY0#169"
+      },
+      {
+        "name": "KEY0#170",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Marital Status#1.KEY0#170"
+      },
+      {
+        "name": "Marital Status#10",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Marital Status#1.Marital Status#10"
+      },
+      {
+        "name": "MEMBER_VALUE#169",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Marital Status#1.MEMBER_VALUE#169"
+      },
+      {
+        "name": "MEMBER_VALUE#170",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Marital Status#1.MEMBER_VALUE#170"
+      },
+      {
+        "name": "NAME#135",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Marital Status#1.NAME#135"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Marital Status#1",
+        "levels": [
+          {
+            "name": "[Employee].[Marital Status].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Employee].[Marital Status].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Marital Status#1.[Employee].[Marital Status].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Marital Status",
+            "displayColumns": [
+              {
+                "name": "Marital Status#10",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Marital Status#1.Marital Status#10"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

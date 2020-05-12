@@ -1,0 +1,39 @@
+{
+  "cubeTable": {
+    "name": "OpaqueSales",
+    "sourceType": "SELECT",
+    "extName": "select { [Measures].[Unit Sales], [Measures].[Store Cost] } on COLUMNS, { [Time].[Year].members } on ROWS from [Sales]",
+    "isCacheable": false,
+    "caching": {
+      "enable": false
+    },
+    "memberReference": "Default",
+    "DBMap": [
+      {
+        "name": "DEFAULT",
+        "value": "select { [Measures].[Unit Sales], [Measures].[Store Cost] } on COLUMNS, { [Time].[Year].members } on ROWS from [Sales]"
+      }
+    ],
+    "columns": [
+      {
+        "name": "[Time].[Year]",
+        "extName": "[Time].[Year]",
+        "dataType": "VARCHAR",
+        "length": 4,
+        "dimPropType": "uda"
+      },
+      {
+        "name": "Unit Sales",
+        "extName": "Unit Sales",
+        "dataType": "DOUBLE",
+        "dimPropType": "uda"
+      },
+      {
+        "name": "Store Cost",
+        "extName": "Store Cost",
+        "dataType": "DOUBLE",
+        "dimPropType": "uda"
+      }
+    ]
+  }
+}

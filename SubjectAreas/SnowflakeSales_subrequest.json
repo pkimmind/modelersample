@@ -1,0 +1,86 @@
+{
+  "subjectArea": {
+    "name": "SnowflakeSales_subrequest",
+    "sourceBusinessModel": "businessModel:SnowflakeSales_subrequest",
+    "implicitFactColumn": "logicalColumn:SnowflakeSales_subrequest.SalesFacts.Revenue",
+    "tableOrder": [
+      {
+        "name": "presentationTable:SnowflakeSales_subrequest..Sales"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales_subrequest..Product"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales_subrequest..Supplier"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales_subrequest..Category"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales_subrequest..SupplierCity"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales_subrequest..SupplierRegion"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales_subrequest..SupplierCountry"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales_subrequest..Shipper"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales_subrequest..Employee"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales_subrequest..EmployeeCity"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales_subrequest..EmployeeRegion"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales_subrequest..EmployeeCountry"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales_subrequest..Week"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales_subrequest..Qtr"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales_subrequest..Year"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales_subrequest..Site"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales_subrequest..Customer"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales_subrequest..Day"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales_subrequest..Cross Sell"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales_subrequest..MultiDimShareBases"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales_subrequest..StockTicker"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales_subrequest..MOLAP Geography"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales_subrequest..MOLAP Facts"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales_subrequest..Sales2"
+      },
+      {
+        "name": "presentationTable:SnowflakeSales_subrequest..Product1"
+      }
+    ],
+    "permissions": {
+    }
+  }
+}

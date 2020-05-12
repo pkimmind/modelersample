@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Date.Day of Month",
+    "presentationColumns": [
+      {
+        "name": "[Date].[Day of Month].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day of Month.[Date].[Day of Month].[(All)]"
+      },
+      {
+        "name": "Day of Month#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day of Month.Day of Month#2"
+      },
+      {
+        "name": "KEY0#72",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day of Month.KEY0#72"
+      },
+      {
+        "name": "KEY0#73",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day of Month.KEY0#73"
+      },
+      {
+        "name": "MEMBER_VALUE#72",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day of Month.MEMBER_VALUE#72"
+      },
+      {
+        "name": "MEMBER_VALUE#73",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day of Month.MEMBER_VALUE#73"
+      },
+      {
+        "name": "NAME#61",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day of Month.NAME#61"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Date.Day of Month",
+        "levels": [
+          {
+            "name": "[Date].[Day of Month].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Date].[Day of Month].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day of Month.[Date].[Day of Month].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Day of Month",
+            "displayColumns": [
+              {
+                "name": "Day of Month#2",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day of Month.Day of Month#2"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

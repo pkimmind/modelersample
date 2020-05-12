@@ -1,0 +1,89 @@
+{
+  "physicalTable": {
+    "name": "Employees",
+    "caching": {
+    },
+    "physicalColumns": [
+      {
+        "name": "EmployeeID",
+        "dataType": "SMALLINT",
+        "length": 5
+      },
+      {
+        "name": "LastName",
+        "dataType": "CHAR",
+        "length": 20
+      },
+      {
+        "name": "FirstName",
+        "dataType": "CHAR",
+        "length": 10
+      },
+      {
+        "name": "Title",
+        "dataType": "VARCHAR",
+        "length": 30
+      },
+      {
+        "name": "TitleOfCourtesy",
+        "dataType": "VARCHAR",
+        "length": 25
+      },
+      {
+        "name": "BirthDate",
+        "dataType": "DATETIME",
+        "length": 23
+      },
+      {
+        "name": "HireDate",
+        "dataType": "DATETIME",
+        "length": 23
+      },
+      {
+        "name": "Address",
+        "dataType": "VARCHAR",
+        "length": 60
+      },
+      {
+        "name": "City",
+        "dataType": "CHAR",
+        "length": 15
+      },
+      {
+        "name": "Region",
+        "dataType": "CHAR",
+        "length": 15
+      },
+      {
+        "name": "PostalCode",
+        "dataType": "CHAR",
+        "length": 10
+      },
+      {
+        "name": "Country",
+        "dataType": "CHAR",
+        "length": 15
+      },
+      {
+        "name": "HomePhone",
+        "dataType": "CHAR",
+        "length": 24
+      },
+      {
+        "name": "Extension",
+        "dataType": "CHAR",
+        "length": 4
+      },
+      {
+        "name": "Notes",
+        "dataType": "VARCHAR",
+        "length": 255
+      },
+      {
+        "name": "ReportsTo",
+        "dataType": "SMALLINT",
+        "length": 5
+      }
+    ]
+  }
+}

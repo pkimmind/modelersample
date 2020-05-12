@@ -1,0 +1,27 @@
+{
+  "presentationTable": {
+    "name": "SalesPlan",
+    "presentationColumns": [
+      {
+        "name": "Category ID",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesPlan.Category ID"
+      },
+      {
+        "name": "Country",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesPlan.Country"
+      },
+      {
+        "name": "Year",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesPlan.Year"
+      },
+      {
+        "name": "PlanRevenue",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesPlan.PlanRevenue"
+      },
+      {
+        "name": "yearly_PlanRevenue",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SalesPlan.yearly_PlanRevenue"
+      }
+    ]
+  }
+}

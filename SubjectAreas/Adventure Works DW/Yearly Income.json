@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "Yearly Income",
+    "presentationColumns": [
+      {
+        "name": "[Customer].[Yearly Income].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Yearly Income.[Customer].[Yearly Income].[(All)]"
+      },
+      {
+        "name": "KEY0#54",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Yearly Income.KEY0#54"
+      },
+      {
+        "name": "KEY0#55",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Yearly Income.KEY0#55"
+      },
+      {
+        "name": "MEMBER_VALUE#54",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Yearly Income.MEMBER_VALUE#54"
+      },
+      {
+        "name": "MEMBER_VALUE#55",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Yearly Income.MEMBER_VALUE#55"
+      },
+      {
+        "name": "NAME#45",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Yearly Income.NAME#45"
+      },
+      {
+        "name": "NAME#46",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Yearly Income.NAME#46"
+      },
+      {
+        "name": "Yearly Income#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Yearly Income.Yearly Income#2"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Yearly Income",
+        "levels": [
+          {
+            "name": "[Customer].[Yearly Income].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Customer].[Yearly Income].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Yearly Income.[Customer].[Yearly Income].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Yearly Income",
+            "displayColumns": [
+              {
+                "name": "Yearly Income#2",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Yearly Income.Yearly Income#2"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

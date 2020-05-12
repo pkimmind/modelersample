@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Sales Order Line#2",
+    "presentationColumns": [
+      {
+        "name": "[Sales Summary Order Details].[Sales Order Line].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Line#2.[Sales Summary Order Details].[Sales Order Line].[(All)]"
+      },
+      {
+        "name": "KEY0#368",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Line#2.KEY0#368"
+      },
+      {
+        "name": "KEY0#369",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Line#2.KEY0#369"
+      },
+      {
+        "name": "MEMBER_VALUE#368",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Line#2.MEMBER_VALUE#368"
+      },
+      {
+        "name": "MEMBER_VALUE#369",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Line#2.MEMBER_VALUE#369"
+      },
+      {
+        "name": "NAME#288",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Line#2.NAME#288"
+      },
+      {
+        "name": "Sales Order Line#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Line#2.Sales Order Line#4"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Sales Order Line#2",
+        "levels": [
+          {
+            "name": "[Sales Summary Order Details].[Sales Order Line].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Sales Summary Order Details].[Sales Order Line].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Line#2.[Sales Summary Order Details].[Sales Order Line].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Sales Order Line",
+            "displayColumns": [
+              {
+                "name": "Sales Order Line#4",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Line#2.Sales Order Line#4"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

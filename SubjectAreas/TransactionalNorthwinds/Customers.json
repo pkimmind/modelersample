@@ -1,0 +1,15 @@
+{
+  "presentationTable": {
+    "name": "Customers",
+    "presentationColumns": [
+      {
+        "name": "CustomerID",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Customers.CustomerID"
+      },
+      {
+        "name": "CompanyName",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Customers.CompanyName"
+      }
+    ]
+  }
+}

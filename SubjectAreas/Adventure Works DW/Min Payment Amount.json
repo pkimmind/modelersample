@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "Min Payment Amount",
+    "presentationColumns": [
+      {
+        "name": "[Reseller].[Min Payment Amount].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Payment Amount.[Reseller].[Min Payment Amount].[(All)]"
+      },
+      {
+        "name": "KEY0#314",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Payment Amount.KEY0#314"
+      },
+      {
+        "name": "KEY0#315",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Payment Amount.KEY0#315"
+      },
+      {
+        "name": "MEMBER_VALUE#314",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Payment Amount.MEMBER_VALUE#314"
+      },
+      {
+        "name": "MEMBER_VALUE#315",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Payment Amount.MEMBER_VALUE#315"
+      },
+      {
+        "name": "Min Payment Amount",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Payment Amount.Min Payment Amount"
+      },
+      {
+        "name": "NAME#249",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Payment Amount.NAME#249"
+      },
+      {
+        "name": "NAME#250",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Payment Amount.NAME#250"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Min Payment Amount",
+        "levels": [
+          {
+            "name": "[Reseller].[Min Payment Amount].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Reseller].[Min Payment Amount].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Payment Amount.[Reseller].[Min Payment Amount].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Min Payment Amount",
+            "displayColumns": [
+              {
+                "name": "Min Payment Amount",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Payment Amount.Min Payment Amount"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

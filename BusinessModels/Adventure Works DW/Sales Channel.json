@@ -1,0 +1,413 @@
+{
+  "logicalTable": {
+    "name": "Sales Channel",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Sales Channel].[Sales Channel].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Sales Channel].[Sales Channel].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Sales Channel].[Sales Channel].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Sales Channel].[Sales Channel].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Sales Channel].[Sales Channel].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#355",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#355"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#356",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#356"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#355",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#355"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#356",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#356"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#280",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#280"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Sales Channel",
+        "writeable": false,
+        "descriptorColumn": "Sales Channel - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Sales Channel"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Sales Channel - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Sales Channel - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Sales Channel",
+              "isPrimary": "true",
+              "columns": [
+                "[Sales Channel].[Sales Channel].[(All)]",
+                "Sales Channel"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Sales Channel",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "[Sales Channel].[Sales Channel].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Sales Channel].[Sales Channel].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Sales Channel].[Sales Channel].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Sales Channel].[Sales Channel].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#355",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#355"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#356",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#356"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#355",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#355"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#356",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#356"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#280",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#280"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Sales Channel",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Sales Channel"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Sales Channel - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Sales Channel - Member Key"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Sales Channel.Sales Channel"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Sales Channel",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "[Sales Channel].[Sales Channel].[(All)]",
+      "levels": [
+        {
+          "name": "[Sales Channel].[Sales Channel].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Sales Channel].[Sales Channel].[(All)]",
+          "keys": [
+            {
+              "name": "[Sales Channel].[Sales Channel].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Sales Channel].[Sales Channel].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Sales Channel].[Sales Channel].[(All)]",
+              "columns": [
+                "[Sales Channel].[Sales Channel].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Sales Channel",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Sales Channel",
+              "keys": [
+                {
+                  "name": "Sales Channel - Member Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Sales Channel - Member Key"
+                  ]
+                },
+                {
+                  "name": "Sales Channel",
+                  "columns": [
+                    "Sales Channel"
+                  ]
+                }
+              ],
+              "columns": [
+                "KEY0#356",
+                "MEMBER_VALUE#356",
+                "Sales Channel",
+                "Sales Channel - Member Key"
+              ]
+            }
+          ],
+          "columns": [
+            "[Sales Channel].[Sales Channel].[(All)]",
+            "[Sales Channel].[Sales Channel].[(All)] - Member Key",
+            "KEY0#355",
+            "MEMBER_VALUE#355",
+            "NAME#280"
+          ]
+        },
+        {
+          "name": "Sales Channel",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Sales Channel",
+          "keys": [
+            {
+              "name": "Sales Channel - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "Sales Channel - Member Key"
+              ]
+            },
+            {
+              "name": "Sales Channel",
+              "columns": [
+                "Sales Channel"
+              ]
+            }
+          ],
+          "columns": [
+            "KEY0#356",
+            "MEMBER_VALUE#356",
+            "Sales Channel",
+            "Sales Channel - Member Key"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Sales Channel",
+        "levels": [
+          {
+            "name": "[Sales Channel].[Sales Channel].[(All)]",
+            "childLevels": [
+              {
+                "name": "Sales Channel"
+              }
+            ]
+          },
+          {
+            "name": "Sales Channel"
+          }
+        ]
+      }
+    }
+  }
+}

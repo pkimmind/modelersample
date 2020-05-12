@@ -1,0 +1,40 @@
+{
+  "cubeTable": {
+    "name": "OpaqueCubeTable",
+    "sourceType": "SELECT",
+    "extName": "select {[Measures].[0AMOUNT]} on columns, { [0COSTCENTER].members } on rows, { [0FISCPER].members } on pages from [$0CCA_C11]",
+    "isCacheable": false,
+    "caching": {
+      "enable": false
+    },
+    "memberReference": "Default",
+    "DBMap": [
+      {
+        "name": "DEFAULT",
+        "value": "select {[Measures].[0AMOUNT]} on columns, { [0COSTCENTER].members } on rows, { [0FISCPER].members } on pages from [$0CCA_C11]"
+      }
+    ],
+    "columns": [
+      {
+        "name": "[0COSTCENTER].[LEVEL01]",
+        "extName": "[0COSTCENTER].[LEVEL01]",
+        "dataType": "VARCHAR",
+        "length": 128,
+        "dimPropType": "uda"
+      },
+      {
+        "name": "[0FISCPER].[LEVEL01]",
+        "extName": "[0FISCPER].[LEVEL01]",
+        "dataType": "VARCHAR",
+        "length": 128,
+        "dimPropType": "uda"
+      },
+      {
+        "name": "Amount",
+        "extName": "Amount",
+        "dataType": "DOUBLE",
+        "dimPropType": "uda"
+      }
+    ]
+  }
+}

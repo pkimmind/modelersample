@@ -1,0 +1,724 @@
+{
+  "logicalTable": {
+    "name": "Product Model Lines",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Product].[Product Model Lines].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Product].[Product Model Lines].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Product].[Product Model Lines].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Product].[Product Model Lines].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Product].[Product Model Lines].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#254",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#254"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#255",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#255"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#256",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#256"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#254",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#254"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#255",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#255"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#256",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#256"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Model - Member Key#1",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Model - Member Key#1"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Model#1",
+        "writeable": false,
+        "descriptorColumn": "Model - Member Key#1",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Model#1"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#202",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#202"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#203",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#203"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Product Line - Member Key#1",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Product Line - Member Key#1"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Product Line#3",
+        "writeable": false,
+        "descriptorColumn": "Product Line - Member Key#1",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Product Line#3"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Product Line#4",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Product Line#4"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Subcategory#7",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Subcategory#7"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Product Model Lines",
+              "isPrimary": "true",
+              "columns": [
+                "[Product].[Product Model Lines].[(All)]",
+                "Product Line#3",
+                "Model#1"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Product Model Lines",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "[Product].[Product Model Lines].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Product].[Product Model Lines].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Product].[Product Model Lines].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Product].[Product Model Lines].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#254",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#254"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#255",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#255"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#256",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#256"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#254",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#254"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#255",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#255"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#256",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#256"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Model - Member Key#1",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Model - Member Key#1"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Model#1",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Model#1"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#202",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#202"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#203",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#203"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Product Line - Member Key#1",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Product Line - Member Key#1"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Product Line#3",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Product Line#3"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Product Line#4",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Product Line#4"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Subcategory#7",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Subcategory#7"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Product Model Lines.Model"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Product Model Lines",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "[Product].[Product Model Lines].[(All)]",
+      "levels": [
+        {
+          "name": "[Product].[Product Model Lines].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Product].[Product Model Lines].[(All)]",
+          "keys": [
+            {
+              "name": "[Product].[Product Model Lines].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Product].[Product Model Lines].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Product].[Product Model Lines].[(All)]",
+              "columns": [
+                "[Product].[Product Model Lines].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Product Line",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Product Line",
+              "keys": [
+                {
+                  "name": "Product Line - Member Key#1",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Product Line - Member Key#1"
+                  ]
+                },
+                {
+                  "name": "Product Line",
+                  "columns": [
+                    "Product Line#3"
+                  ]
+                }
+              ],
+              "childLevels": [
+                {
+                  "name": "Model",
+                  "isGTA": false,
+                  "memberCount": 1,
+                  "levelConst": "Model",
+                  "keys": [
+                    {
+                      "name": "Model - Member Key#1",
+                      "isPrimary": "true",
+                      "columns": [
+                        "Model - Member Key#1"
+                      ]
+                    },
+                    {
+                      "name": "Model",
+                      "columns": [
+                        "Model#1"
+                      ]
+                    }
+                  ],
+                  "columns": [
+                    "KEY0#256",
+                    "MEMBER_VALUE#256",
+                    "Model - Member Key#1",
+                    "Model#1",
+                    "Product Line#4",
+                    "Subcategory#7"
+                  ]
+                }
+              ],
+              "columns": [
+                "KEY0#255",
+                "MEMBER_VALUE#255",
+                "NAME#203",
+                "Product Line - Member Key#1",
+                "Product Line#3"
+              ]
+            }
+          ],
+          "columns": [
+            "[Product].[Product Model Lines].[(All)]",
+            "[Product].[Product Model Lines].[(All)] - Member Key",
+            "KEY0#254",
+            "MEMBER_VALUE#254",
+            "NAME#202"
+          ]
+        },
+        {
+          "name": "Product Line",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Product Line",
+          "keys": [
+            {
+              "name": "Product Line - Member Key#1",
+              "isPrimary": "true",
+              "columns": [
+                "Product Line - Member Key#1"
+              ]
+            },
+            {
+              "name": "Product Line",
+              "columns": [
+                "Product Line#3"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Model",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Model",
+              "keys": [
+                {
+                  "name": "Model - Member Key#1",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Model - Member Key#1"
+                  ]
+                },
+                {
+                  "name": "Model",
+                  "columns": [
+                    "Model#1"
+                  ]
+                }
+              ],
+              "columns": [
+                "KEY0#256",
+                "MEMBER_VALUE#256",
+                "Model - Member Key#1",
+                "Model#1",
+                "Product Line#4",
+                "Subcategory#7"
+              ]
+            }
+          ],
+          "columns": [
+            "KEY0#255",
+            "MEMBER_VALUE#255",
+            "NAME#203",
+            "Product Line - Member Key#1",
+            "Product Line#3"
+          ]
+        },
+        {
+          "name": "Model",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Model",
+          "keys": [
+            {
+              "name": "Model - Member Key#1",
+              "isPrimary": "true",
+              "columns": [
+                "Model - Member Key#1"
+              ]
+            },
+            {
+              "name": "Model",
+              "columns": [
+                "Model#1"
+              ]
+            }
+          ],
+          "columns": [
+            "KEY0#256",
+            "MEMBER_VALUE#256",
+            "Model - Member Key#1",
+            "Model#1",
+            "Product Line#4",
+            "Subcategory#7"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Product Model Lines",
+        "levels": [
+          {
+            "name": "[Product].[Product Model Lines].[(All)]",
+            "childLevels": [
+              {
+                "name": "Product Line",
+                "childLevels": [
+                  {
+                    "name": "Model"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Product Line",
+            "childLevels": [
+              {
+                "name": "Model"
+              }
+            ]
+          },
+          {
+            "name": "Model"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "Hire Date",
+    "presentationColumns": [
+      {
+        "name": "[Employee].[Hire Date].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Hire Date.[Employee].[Hire Date].[(All)]"
+      },
+      {
+        "name": "Hire Date#7",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Hire Date.Hire Date#7"
+      },
+      {
+        "name": "KEY0#165",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Hire Date.KEY0#165"
+      },
+      {
+        "name": "KEY0#166",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Hire Date.KEY0#166"
+      },
+      {
+        "name": "MEMBER_VALUE#165",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Hire Date.MEMBER_VALUE#165"
+      },
+      {
+        "name": "MEMBER_VALUE#166",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Hire Date.MEMBER_VALUE#166"
+      },
+      {
+        "name": "NAME#132",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Hire Date.NAME#132"
+      },
+      {
+        "name": "NAME#133",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Hire Date.NAME#133"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Hire Date",
+        "levels": [
+          {
+            "name": "[Employee].[Hire Date].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Employee].[Hire Date].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Hire Date.[Employee].[Hire Date].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Hire Date",
+            "displayColumns": [
+              {
+                "name": "Hire Date#7",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Hire Date.Hire Date#7"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

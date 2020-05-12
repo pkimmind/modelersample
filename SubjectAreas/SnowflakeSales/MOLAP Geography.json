@@ -1,0 +1,15 @@
+{
+  "presentationTable": {
+    "name": "MOLAP Geography",
+    "presentationColumns": [
+      {
+        "name": "Store Country",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.MOLAP Geography.Store Country"
+      },
+      {
+        "name": "Store State",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.MOLAP Geography.Store State"
+      }
+    ]
+  }
+}

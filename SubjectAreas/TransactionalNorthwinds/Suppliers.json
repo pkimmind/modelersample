@@ -1,0 +1,51 @@
+{
+  "presentationTable": {
+    "name": "Suppliers",
+    "presentationColumns": [
+      {
+        "name": "SupplierID",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Suppliers.SupplierID"
+      },
+      {
+        "name": "CompanyName",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Suppliers.CompanyName"
+      },
+      {
+        "name": "ContactName",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Suppliers.ContactName"
+      },
+      {
+        "name": "ContactTitle",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Suppliers.ContactTitle"
+      },
+      {
+        "name": "Address",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Suppliers.Address"
+      },
+      {
+        "name": "City",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Suppliers.City"
+      },
+      {
+        "name": "Region",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Suppliers.Region"
+      },
+      {
+        "name": "PostalCode",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Suppliers.PostalCode"
+      },
+      {
+        "name": "Country",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Suppliers.Country"
+      },
+      {
+        "name": "Phone",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Suppliers.Phone"
+      },
+      {
+        "name": "Fax",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Suppliers.Fax"
+      }
+    ]
+  }
+}

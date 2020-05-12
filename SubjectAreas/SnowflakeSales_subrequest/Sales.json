@@ -1,0 +1,116 @@
+{
+  "presentationTable": {
+    "name": "Sales",
+    "presentationColumns": [
+      {
+        "name": "ShipVia",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.SalesFacts.ShipVia"
+      },
+      {
+        "name": "EmployeeID",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.SalesFacts.EmployeeID"
+      },
+      {
+        "name": "ProductID",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.SalesFacts.ProductID"
+      },
+      {
+        "name": "CustomerID",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.SalesFacts.CustomerID"
+      },
+      {
+        "name": "SiteID",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.SalesFacts.SiteID"
+      },
+      {
+        "name": "PlanRevenue",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.SalesPlan.PlanRevenue"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.SalesFacts.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.SalesFacts.QtySold",
+        "alternateNames": [
+          "Quantity"
+        ]
+      },
+      {
+        "name": "OrderDate",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.SalesFacts.OrderDate"
+      },
+      {
+        "name": "# Orders",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.SalesFacts.# Orders"
+      },
+      {
+        "name": "# Customers",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.SalesFacts.# Customers"
+      },
+      {
+        "name": "MedianQtySold",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.SalesFacts.MedianQtySold"
+      },
+      {
+        "name": "MeasureAlias",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.SalesFacts.MeasureAlias"
+      },
+      {
+        "name": "MeasureAlias1",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.SalesFacts.MeasureAlias1"
+      },
+      {
+        "name": "NumCustomers",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.SalesFacts.NumCustomers"
+      },
+      {
+        "name": "RevenueByAllProducts",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.SalesFactsDerived.RevenueByAllProducts"
+      },
+      {
+        "name": "RevenueByAllEmployees",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.SalesFactsDerived.RevenueByAllEmployees"
+      },
+      {
+        "name": "BaseRevenue",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.SalesFactsDerived.BaseRevenue"
+      },
+      {
+        "name": "Revenue_dup",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.SalesFacts_dup.Revenue",
+        "alternateNames": [
+          "Revenue#1"
+        ]
+      },
+      {
+        "name": "QtySold_dup",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.SalesFacts_dup.QtySold",
+        "alternateNames": [
+          "QtySold#1"
+        ]
+      },
+      {
+        "name": "revenue_1",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.SalesFacts.revenue_1"
+      },
+      {
+        "name": "revenue_2",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.SalesFacts.revenue_2"
+      },
+      {
+        "name": "revenue_3",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.SalesFacts.revenue_3"
+      },
+      {
+        "name": "revenue_4",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.SalesFacts.revenue_4"
+      },
+      {
+        "name": "Cross Sell Product ID",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.SalesFacts.Cross Sell Product ID"
+      }
+    ]
+  }
+}

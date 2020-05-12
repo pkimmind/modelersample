@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "Salaried Flag",
+    "presentationColumns": [
+      {
+        "name": "[Employee].[Salaried Flag].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Salaried Flag.[Employee].[Salaried Flag].[(All)]"
+      },
+      {
+        "name": "KEY0#175",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Salaried Flag.KEY0#175"
+      },
+      {
+        "name": "KEY0#176",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Salaried Flag.KEY0#176"
+      },
+      {
+        "name": "MEMBER_VALUE#175",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Salaried Flag.MEMBER_VALUE#175"
+      },
+      {
+        "name": "MEMBER_VALUE#176",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Salaried Flag.MEMBER_VALUE#176"
+      },
+      {
+        "name": "NAME#139",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Salaried Flag.NAME#139"
+      },
+      {
+        "name": "NAME#140",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Salaried Flag.NAME#140"
+      },
+      {
+        "name": "Salaried Flag#7",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Salaried Flag.Salaried Flag#7"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Salaried Flag",
+        "levels": [
+          {
+            "name": "[Employee].[Salaried Flag].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Employee].[Salaried Flag].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Salaried Flag.[Employee].[Salaried Flag].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Salaried Flag",
+            "displayColumns": [
+              {
+                "name": "Salaried Flag#7",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Salaried Flag.Salaried Flag#7"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

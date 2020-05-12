@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Number of Children At Home",
+    "presentationColumns": [
+      {
+        "name": "[Customer].[Number of Children At Home].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Children At Home.[Customer].[Number of Children At Home].[(All)]"
+      },
+      {
+        "name": "KEY0#42",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Children At Home.KEY0#42"
+      },
+      {
+        "name": "KEY0#43",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Children At Home.KEY0#43"
+      },
+      {
+        "name": "MEMBER_VALUE#42",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Children At Home.MEMBER_VALUE#42"
+      },
+      {
+        "name": "MEMBER_VALUE#43",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Children At Home.MEMBER_VALUE#43"
+      },
+      {
+        "name": "NAME#36",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Children At Home.NAME#36"
+      },
+      {
+        "name": "Number of Children At Home#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Children At Home.Number of Children At Home#2"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Number of Children At Home",
+        "levels": [
+          {
+            "name": "[Customer].[Number of Children At Home].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Customer].[Number of Children At Home].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Children At Home.[Customer].[Number of Children At Home].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Number of Children At Home",
+            "displayColumns": [
+              {
+                "name": "Number of Children At Home#2",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Children At Home.Number of Children At Home#2"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

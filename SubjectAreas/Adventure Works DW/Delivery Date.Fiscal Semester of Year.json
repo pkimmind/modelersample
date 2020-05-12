@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Delivery Date.Fiscal Semester of Year",
+    "presentationColumns": [
+      {
+        "name": "[Delivery Date].[Fiscal Semester of Year].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal Semester of Year.[Delivery Date].[Fiscal Semester of Year].[(All)]"
+      },
+      {
+        "name": "Fiscal Semester of Year#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal Semester of Year.Fiscal Semester of Year#3"
+      },
+      {
+        "name": "KEY0#124",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal Semester of Year.KEY0#124"
+      },
+      {
+        "name": "KEY0#125",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal Semester of Year.KEY0#125"
+      },
+      {
+        "name": "MEMBER_VALUE#124",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal Semester of Year.MEMBER_VALUE#124"
+      },
+      {
+        "name": "MEMBER_VALUE#125",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal Semester of Year.MEMBER_VALUE#125"
+      },
+      {
+        "name": "NAME#101",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal Semester of Year.NAME#101"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Delivery Date.Fiscal Semester of Year",
+        "levels": [
+          {
+            "name": "[Delivery Date].[Fiscal Semester of Year].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Delivery Date].[Fiscal Semester of Year].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal Semester of Year.[Delivery Date].[Fiscal Semester of Year].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Fiscal Semester of Year",
+            "displayColumns": [
+              {
+                "name": "Fiscal Semester of Year#3",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal Semester of Year.Fiscal Semester of Year#3"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

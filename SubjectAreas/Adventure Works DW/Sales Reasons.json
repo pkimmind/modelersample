@@ -1,0 +1,91 @@
+{
+  "presentationTable": {
+    "name": "Sales Reasons",
+    "presentationColumns": [
+      {
+        "name": "[Sales Reason].[Sales Reasons].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Reasons.[Sales Reason].[Sales Reasons].[(All)]"
+      },
+      {
+        "name": "KEY0#361",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Reasons.KEY0#361"
+      },
+      {
+        "name": "KEY0#362",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Reasons.KEY0#362"
+      },
+      {
+        "name": "KEY0#363",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Reasons.KEY0#363"
+      },
+      {
+        "name": "MEMBER_VALUE#361",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Reasons.MEMBER_VALUE#361"
+      },
+      {
+        "name": "MEMBER_VALUE#362",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Reasons.MEMBER_VALUE#362"
+      },
+      {
+        "name": "MEMBER_VALUE#363",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Reasons.MEMBER_VALUE#363"
+      },
+      {
+        "name": "NAME#284",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Reasons.NAME#284"
+      },
+      {
+        "name": "NAME#285",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Reasons.NAME#285"
+      },
+      {
+        "name": "Reason Type",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Reasons.Reason Type"
+      },
+      {
+        "name": "Sales Reason Type#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Reasons.Sales Reason Type#2"
+      },
+      {
+        "name": "Sales Reason#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Reasons.Sales Reason#1"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Sales Reasons",
+        "levels": [
+          {
+            "name": "[Sales Reason].[Sales Reasons].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Sales Reason].[Sales Reasons].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Reasons.[Sales Reason].[Sales Reasons].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Reason Type",
+            "displayColumns": [
+              {
+                "name": "Reason Type",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Reasons.Reason Type"
+              }
+            ]
+          },
+          {
+            "name": "Sales Reason",
+            "displayColumns": [
+              {
+                "name": "Sales Reason#1",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Reasons.Sales Reason#1"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

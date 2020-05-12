@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Dealer Price",
+    "presentationColumns": [
+      {
+        "name": "[Product].[Dealer Price].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Dealer Price.[Product].[Dealer Price].[(All)]"
+      },
+      {
+        "name": "Dealer Price",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Dealer Price.Dealer Price"
+      },
+      {
+        "name": "KEY0#227",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Dealer Price.KEY0#227"
+      },
+      {
+        "name": "KEY0#228",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Dealer Price.KEY0#228"
+      },
+      {
+        "name": "MEMBER_VALUE#227",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Dealer Price.MEMBER_VALUE#227"
+      },
+      {
+        "name": "MEMBER_VALUE#228",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Dealer Price.MEMBER_VALUE#228"
+      },
+      {
+        "name": "NAME#182",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Dealer Price.NAME#182"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Dealer Price",
+        "levels": [
+          {
+            "name": "[Product].[Dealer Price].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Product].[Dealer Price].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Dealer Price.[Product].[Dealer Price].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Dealer Price",
+            "displayColumns": [
+              {
+                "name": "Dealer Price",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Dealer Price.Dealer Price"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

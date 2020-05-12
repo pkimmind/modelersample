@@ -1,0 +1,19 @@
+{
+  "presentationTable": {
+    "name": "holidays",
+    "presentationColumns": [
+      {
+        "name": "holiday_name",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.holidays.holiday_name"
+      },
+      {
+        "name": "holiday_date",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.holidays.holiday_date"
+      },
+      {
+        "name": "holiday_id",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.holidays.holiday_id"
+      }
+    ]
+  }
+}

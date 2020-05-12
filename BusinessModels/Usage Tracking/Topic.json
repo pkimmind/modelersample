@@ -1,0 +1,353 @@
+{
+  "logicalTable": {
+    "name": "Topic",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "Repository Name",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "S_NQ_ACCT",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.REPOSITORY_NAME"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Subject Area Name",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "S_NQ_ACCT",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.SUBJECT_AREA_NAME"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Node ID",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "S_NQ_ACCT",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.NODE_ID"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Logical SQL",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "S_NQ_ACCT",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.QUERY_TEXT"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "SAW Dashboard",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "S_NQ_ACCT",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.SAW_DASHBOARD"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "SAW Path",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "S_NQ_ACCT",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.SAW_SRC_PATH"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Query Source Code",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "S_NQ_ACCT",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.QUERY_SRC_CD"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "SAW Dashboard Page",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "S_NQ_ACCT",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.SAW_DASHBOARD_PG"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Presentation Name",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "S_NQ_ACCT",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.PRESENTATION_NAME"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Error Text",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "S_NQ_ACCT",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.ERROR_TEXT"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Run As User Name",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "S_NQ_ACCT",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.IMPERSONATOR_USER_NAME"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Logical SQL",
+              "isPrimary": "true",
+              "columns": [
+                "Logical SQL"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "S_NQ_ACCT",
+        "logicalTableRef": "Topic",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "Repository Name",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.REPOSITORY_NAME"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Subject Area Name",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.SUBJECT_AREA_NAME"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Node ID",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.NODE_ID"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Logical SQL",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.QUERY_TEXT"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "SAW Dashboard",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.SAW_DASHBOARD"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "SAW Path",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.SAW_SRC_PATH"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Query Source Code",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.QUERY_SRC_CD"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "SAW Dashboard Page",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.SAW_DASHBOARD_PG"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Presentation Name",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.PRESENTATION_NAME"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Error Text",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.ERROR_TEXT"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Run As User Name",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.IMPERSONATOR_USER_NAME"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "S_NQ_ACCT",
+            "joins": [
+            ]
+          }
+        ]
+      },
+    ]
+  }
+}

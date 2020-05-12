@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Title",
+    "presentationColumns": [
+      {
+        "name": "[Employee].[Title].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Title.[Employee].[Title].[(All)]"
+      },
+      {
+        "name": "KEY0#185",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Title.KEY0#185"
+      },
+      {
+        "name": "KEY0#186",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Title.KEY0#186"
+      },
+      {
+        "name": "MEMBER_VALUE#185",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Title.MEMBER_VALUE#185"
+      },
+      {
+        "name": "MEMBER_VALUE#186",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Title.MEMBER_VALUE#186"
+      },
+      {
+        "name": "NAME#148",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Title.NAME#148"
+      },
+      {
+        "name": "Title#8",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Title.Title#8"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Title",
+        "levels": [
+          {
+            "name": "[Employee].[Title].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Employee].[Title].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Title.[Employee].[Title].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Title",
+            "displayColumns": [
+              {
+                "name": "Title#8",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Title.Title#8"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

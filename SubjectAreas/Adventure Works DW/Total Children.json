@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Total Children",
+    "presentationColumns": [
+      {
+        "name": "[Customer].[Total Children].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Total Children.[Customer].[Total Children].[(All)]"
+      },
+      {
+        "name": "KEY0#52",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Total Children.KEY0#52"
+      },
+      {
+        "name": "KEY0#53",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Total Children.KEY0#53"
+      },
+      {
+        "name": "MEMBER_VALUE#52",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Total Children.MEMBER_VALUE#52"
+      },
+      {
+        "name": "MEMBER_VALUE#53",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Total Children.MEMBER_VALUE#53"
+      },
+      {
+        "name": "NAME#44",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Total Children.NAME#44"
+      },
+      {
+        "name": "Total Children#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Total Children.Total Children#2"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Total Children",
+        "levels": [
+          {
+            "name": "[Customer].[Total Children].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Customer].[Total Children].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Total Children.[Customer].[Total Children].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Total Children",
+            "displayColumns": [
+              {
+                "name": "Total Children#2",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Total Children.Total Children#2"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

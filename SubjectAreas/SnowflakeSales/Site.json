@@ -1,0 +1,63 @@
+{
+  "presentationTable": {
+    "name": "Site",
+    "presentationColumns": [
+      {
+        "name": "SiteID",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Site.SiteID"
+      },
+      {
+        "name": "CustomerID",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Site.CustomerID"
+      },
+      {
+        "name": "SiteName",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Site.SiteName"
+      },
+      {
+        "name": "ContactName",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Site.ContactName"
+      },
+      {
+        "name": "ContactTitle",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Site.ContactTitle"
+      },
+      {
+        "name": "Address",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Site.Address"
+      },
+      {
+        "name": "City",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Site.City"
+      },
+      {
+        "name": "Region",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Site.Region"
+      },
+      {
+        "name": "PostalCode",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Site.PostalCode"
+      },
+      {
+        "name": "Country",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Site.Country"
+      },
+      {
+        "name": "Phone",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Site.Phone"
+      },
+      {
+        "name": "Fax",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Site.Fax"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Site.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Site.QtySold"
+      }
+    ]
+  }
+}

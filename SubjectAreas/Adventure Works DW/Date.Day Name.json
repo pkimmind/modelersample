@@ -1,0 +1,74 @@
+{
+  "presentationTable": {
+    "name": "Date.Day Name",
+    "presentationColumns": [
+      {
+        "name": "[Date].[Day Name].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day Name.[Date].[Day Name].[(All)]"
+      },
+      {
+        "name": "Day Name#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day Name.Day Name#2"
+      },
+      {
+        "name": "KEY0#70",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day Name.KEY0#70"
+      },
+      {
+        "name": "KEY0#71",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day Name.KEY0#71"
+      },
+      {
+        "name": "MEMBER_VALUE#70",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day Name.MEMBER_VALUE#70"
+      },
+      {
+        "name": "MEMBER_VALUE#71",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day Name.MEMBER_VALUE#71"
+      },
+      {
+        "name": "NAME#59",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day Name.NAME#59"
+      },
+      {
+        "name": "NAME#60",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day Name.NAME#60"
+      },
+      {
+        "name": "TRAN0#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day Name.TRAN0#4"
+      },
+      {
+        "name": "TRAN1#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day Name.TRAN1#4"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Date.Day Name",
+        "levels": [
+          {
+            "name": "[Date].[Day Name].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Date].[Day Name].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day Name.[Date].[Day Name].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Day Name",
+            "displayColumns": [
+              {
+                "name": "Day Name#2",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Day Name.Day Name#2"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

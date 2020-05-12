@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Carrier Tracking Number#2",
+    "presentationColumns": [
+      {
+        "name": "[Sales Summary Order Details].[Carrier Tracking Number].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Carrier Tracking Number#2.[Sales Summary Order Details].[Carrier Tracking Number].[(All)]"
+      },
+      {
+        "name": "Carrier Tracking Number#4",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Carrier Tracking Number#2.Carrier Tracking Number#4"
+      },
+      {
+        "name": "KEY0#364",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Carrier Tracking Number#2.KEY0#364"
+      },
+      {
+        "name": "KEY0#365",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Carrier Tracking Number#2.KEY0#365"
+      },
+      {
+        "name": "MEMBER_VALUE#364",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Carrier Tracking Number#2.MEMBER_VALUE#364"
+      },
+      {
+        "name": "MEMBER_VALUE#365",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Carrier Tracking Number#2.MEMBER_VALUE#365"
+      },
+      {
+        "name": "NAME#286",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Carrier Tracking Number#2.NAME#286"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Carrier Tracking Number#2",
+        "levels": [
+          {
+            "name": "[Sales Summary Order Details].[Carrier Tracking Number].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Sales Summary Order Details].[Carrier Tracking Number].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Carrier Tracking Number#2.[Sales Summary Order Details].[Carrier Tracking Number].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Carrier Tracking Number",
+            "displayColumns": [
+              {
+                "name": "Carrier Tracking Number#4",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Carrier Tracking Number#2.Carrier Tracking Number#4"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

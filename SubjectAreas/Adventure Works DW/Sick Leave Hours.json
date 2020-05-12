@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "Sick Leave Hours",
+    "presentationColumns": [
+      {
+        "name": "[Employee].[Sick Leave Hours].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sick Leave Hours.[Employee].[Sick Leave Hours].[(All)]"
+      },
+      {
+        "name": "KEY0#179",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sick Leave Hours.KEY0#179"
+      },
+      {
+        "name": "KEY0#180",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sick Leave Hours.KEY0#180"
+      },
+      {
+        "name": "MEMBER_VALUE#179",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sick Leave Hours.MEMBER_VALUE#179"
+      },
+      {
+        "name": "MEMBER_VALUE#180",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sick Leave Hours.MEMBER_VALUE#180"
+      },
+      {
+        "name": "NAME#143",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sick Leave Hours.NAME#143"
+      },
+      {
+        "name": "NAME#144",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sick Leave Hours.NAME#144"
+      },
+      {
+        "name": "Sick Leave Hours#7",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sick Leave Hours.Sick Leave Hours#7"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Sick Leave Hours",
+        "levels": [
+          {
+            "name": "[Employee].[Sick Leave Hours].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Employee].[Sick Leave Hours].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sick Leave Hours.[Employee].[Sick Leave Hours].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Sick Leave Hours",
+            "displayColumns": [
+              {
+                "name": "Sick Leave Hours#7",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sick Leave Hours.Sick Leave Hours#7"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

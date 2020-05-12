@@ -1,0 +1,18 @@
+{
+  "initBlock": {
+    "name": "obieeinitb2",
+    "type": "SESSION",
+    "refreshPeriod": 86400,
+    "selectStatements": [
+      {
+        "databaseType": "DEFAULT",
+        "query": "select 'valueof(NQ_SESSION.obieevar1)' || 'obieeval2' from SQLDB_Northwind.Northwind.dbo.employees"
+      }
+    ],
+    "targetVariables": [
+      {
+        "name": "obieevar2"
+      }
+    ]
+  }
+}

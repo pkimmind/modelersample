@@ -1,0 +1,444 @@
+{
+  "logicalTable": {
+    "name": "Vacation Hours",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Employee].[Vacation Hours].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Employee].[Vacation Hours].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Vacation Hours].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Employee].[Vacation Hours].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Vacation Hours].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#187",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#187"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#188",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#188"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#187",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#187"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#188",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#188"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#149",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#149"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#150",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#150"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Vacation Hours - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Vacation Hours - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Vacation Hours#7",
+        "writeable": false,
+        "descriptorColumn": "Vacation Hours - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Vacation Hours#7"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Vacation Hours",
+              "isPrimary": "true",
+              "columns": [
+                "[Employee].[Vacation Hours].[(All)]",
+                "Vacation Hours#7"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Vacation Hours",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "[Employee].[Vacation Hours].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Vacation Hours].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Employee].[Vacation Hours].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Vacation Hours].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#187",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#187"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#188",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#188"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#187",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#187"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#188",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#188"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#149",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#149"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#150",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#150"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Vacation Hours - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Vacation Hours - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Vacation Hours#7",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Vacation Hours#7"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Vacation Hours.Vacation Hours"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Vacation Hours",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "[Employee].[Vacation Hours].[(All)]",
+      "levels": [
+        {
+          "name": "[Employee].[Vacation Hours].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Employee].[Vacation Hours].[(All)]",
+          "keys": [
+            {
+              "name": "[Employee].[Vacation Hours].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Employee].[Vacation Hours].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Employee].[Vacation Hours].[(All)]",
+              "columns": [
+                "[Employee].[Vacation Hours].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Vacation Hours",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Vacation Hours",
+              "keys": [
+                {
+                  "name": "Vacation Hours - Member Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Vacation Hours - Member Key"
+                  ]
+                },
+                {
+                  "name": "Vacation Hours",
+                  "columns": [
+                    "Vacation Hours#7"
+                  ]
+                }
+              ],
+              "columns": [
+                "KEY0#188",
+                "MEMBER_VALUE#188",
+                "NAME#150",
+                "Vacation Hours - Member Key",
+                "Vacation Hours#7"
+              ]
+            }
+          ],
+          "columns": [
+            "[Employee].[Vacation Hours].[(All)]",
+            "[Employee].[Vacation Hours].[(All)] - Member Key",
+            "KEY0#187",
+            "MEMBER_VALUE#187",
+            "NAME#149"
+          ]
+        },
+        {
+          "name": "Vacation Hours",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Vacation Hours",
+          "keys": [
+            {
+              "name": "Vacation Hours - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "Vacation Hours - Member Key"
+              ]
+            },
+            {
+              "name": "Vacation Hours",
+              "columns": [
+                "Vacation Hours#7"
+              ]
+            }
+          ],
+          "columns": [
+            "KEY0#188",
+            "MEMBER_VALUE#188",
+            "NAME#150",
+            "Vacation Hours - Member Key",
+            "Vacation Hours#7"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Vacation Hours",
+        "levels": [
+          {
+            "name": "[Employee].[Vacation Hours].[(All)]",
+            "childLevels": [
+              {
+                "name": "Vacation Hours"
+              }
+            ]
+          },
+          {
+            "name": "Vacation Hours"
+          }
+        ]
+      }
+    }
+  }
+}

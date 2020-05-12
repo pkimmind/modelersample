@@ -1,0 +1,74 @@
+{
+  "presentationTable": {
+    "name": "Education",
+    "presentationColumns": [
+      {
+        "name": "[Customer].[Education].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Education.[Customer].[Education].[(All)]"
+      },
+      {
+        "name": "Education#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Education.Education#2"
+      },
+      {
+        "name": "KEY0#30",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Education.KEY0#30"
+      },
+      {
+        "name": "KEY0#31",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Education.KEY0#31"
+      },
+      {
+        "name": "MEMBER_VALUE#30",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Education.MEMBER_VALUE#30"
+      },
+      {
+        "name": "MEMBER_VALUE#31",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Education.MEMBER_VALUE#31"
+      },
+      {
+        "name": "NAME#26",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Education.NAME#26"
+      },
+      {
+        "name": "NAME#27",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Education.NAME#27"
+      },
+      {
+        "name": "TRAN0#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Education.TRAN0#2"
+      },
+      {
+        "name": "TRAN1#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Education.TRAN1#2"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Education",
+        "levels": [
+          {
+            "name": "[Customer].[Education].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Customer].[Education].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Education.[Customer].[Education].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Education",
+            "displayColumns": [
+              {
+                "name": "Education#2",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Education.Education#2"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

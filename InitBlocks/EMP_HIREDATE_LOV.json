@@ -1,0 +1,16 @@
+{
+  "initBlock": {
+    "name": "EMP_HIREDATE_LOV",
+    "type": "SESSION",
+    "refreshPeriod": 86400,
+    "connectionPool": "connectionPool:SQLDB_Northwind.Northwind Init Block Connections",
+    "selectStatements": [
+      {
+        "databaseType": "DEFAULT",
+        "query": "select 'EMP_HIREDATE_LOV', hiredate from employees"
+      }
+    ],
+    "targetVariables": [
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "presentationTable": {
+    "name": "Categories",
+    "presentationColumns": [
+      {
+        "name": "CategoryID",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Categories.CategoryID"
+      },
+      {
+        "name": "CategoryName",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Categories.CategoryName"
+      },
+      {
+        "name": "Description",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Categories.Description"
+      }
+    ]
+  }
+}

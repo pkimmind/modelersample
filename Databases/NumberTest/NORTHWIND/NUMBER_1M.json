@@ -1,0 +1,28 @@
+{
+  "physicalTable": {
+    "name": "NUMBER_1M",
+    "caching": {
+    },
+    "physicalColumns": [
+      {
+        "name": "COL_ROWNUM",
+        "dataType": "INT",
+        "length": 9
+      },
+      {
+        "name": "COL_ROWNUM_1000",
+        "dataType": "NUMERIC"
+      },
+      {
+        "name": "COL_ROWNUM_MINUS1000",
+        "dataType": "NUMERIC",
+        "length": 18
+      },
+      {
+        "name": "COL_ROWNUM_MINUSONE",
+        "dataType": "NUMERIC",
+        "length": 18
+      }
+    ]
+  }
+}

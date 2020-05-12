@@ -1,0 +1,70 @@
+{
+  "presentationTable": {
+    "name": "Destination Currency Code",
+    "presentationColumns": [
+      {
+        "name": "[Destination Currency].[Destination Currency Code].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Destination Currency Code.[Destination Currency].[Destination Currency Code].[(All)]"
+      },
+      {
+        "name": "Destination Currency Code",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Destination Currency Code.Destination Currency Code"
+      },
+      {
+        "name": "Destination Currency#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Destination Currency Code.Destination Currency#1"
+      },
+      {
+        "name": "KEY0#135",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Destination Currency Code.KEY0#135"
+      },
+      {
+        "name": "KEY0#136",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Destination Currency Code.KEY0#136"
+      },
+      {
+        "name": "MEMBER_VALUE#135",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Destination Currency Code.MEMBER_VALUE#135"
+      },
+      {
+        "name": "MEMBER_VALUE#136",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Destination Currency Code.MEMBER_VALUE#136"
+      },
+      {
+        "name": "NAME#109",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Destination Currency Code.NAME#109"
+      },
+      {
+        "name": "NAME#110",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Destination Currency Code.NAME#110"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Destination Currency Code",
+        "levels": [
+          {
+            "name": "[Destination Currency].[Destination Currency Code].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Destination Currency].[Destination Currency Code].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Destination Currency Code.[Destination Currency].[Destination Currency Code].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Destination Currency Code",
+            "displayColumns": [
+              {
+                "name": "Destination Currency Code",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Destination Currency Code.Destination Currency Code"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

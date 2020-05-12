@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "Weight",
+    "presentationColumns": [
+      {
+        "name": "[Product].[Weight].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Weight.[Product].[Weight].[(All)]"
+      },
+      {
+        "name": "KEY0#278",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Weight.KEY0#278"
+      },
+      {
+        "name": "KEY0#279",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Weight.KEY0#279"
+      },
+      {
+        "name": "MEMBER_VALUE#278",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Weight.MEMBER_VALUE#278"
+      },
+      {
+        "name": "MEMBER_VALUE#279",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Weight.MEMBER_VALUE#279"
+      },
+      {
+        "name": "NAME#219",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Weight.NAME#219"
+      },
+      {
+        "name": "NAME#220",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Weight.NAME#220"
+      },
+      {
+        "name": "Weight#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Weight.Weight#3"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Weight",
+        "levels": [
+          {
+            "name": "[Product].[Weight].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Product].[Weight].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Weight.[Product].[Weight].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Weight",
+            "displayColumns": [
+              {
+                "name": "Weight#3",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Weight.Weight#3"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

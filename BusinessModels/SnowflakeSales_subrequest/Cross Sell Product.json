@@ -1,0 +1,274 @@
+{
+  "logicalTable": {
+    "name": "Cross Sell Product",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "ProductID",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Cross Sell Products",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Cross Sell Products.ProductID"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "ProductName",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Cross Sell Products",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Cross Sell Products.ProductName"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "UnitPrice",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Cross Sell Products",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Cross Sell Products.UnitPrice"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "UnitsInStock",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Cross Sell Products",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Cross Sell Products.UnitsInStock"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "CategoryName",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Cross Sell Products",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Cross Sell Categories.CategoryName"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "ProductID",
+              "isPrimary": "true",
+              "columns": [
+                "ProductID"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Cross Sell Products",
+        "logicalTableRef": "Cross Sell Product",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "ProductID",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Cross Sell Products.ProductID"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "ProductName",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Cross Sell Products.ProductName"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "UnitPrice",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Cross Sell Products.UnitPrice"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "UnitsInStock",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Cross Sell Products.UnitsInStock"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "CategoryName",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Cross Sell Categories.CategoryName"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Cross Sell Categories",
+            "joins": [
+              {
+                "type": "Inner",
+                "cardinality": " ONE TO MANY",
+                "physicalTable1Ref": "Cross Sell Categories",
+                "physicalTable2Ref": "Cross Sell Products",
+                "physicalJoinRef": "Cross Sell Products_FKey"
+              }
+            ]
+          },
+          {
+            "startNodeTableRef": "Cross Sell Products",
+            "joins": [
+              {
+                "type": "Inner",
+                "cardinality": "MANY TO ONE",
+                "physicalTable1Ref": "Cross Sell Products",
+                "physicalTable2Ref": "Cross Sell Categories",
+                "physicalJoinRef": "Cross Sell Products_FKey"
+              }
+            ]
+          }
+        ]
+      },
+    ],
+    "dimension": {
+      "name": "Cross Sell",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "All Cross Sell Products",
+      "levels": [
+        {
+          "name": "All Cross Sell Products",
+          "memberCount": 1,
+          "levelConst": "All Cross Sell Products",
+          "childLevels": [
+            {
+              "name": "Product",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Product",
+              "keys": [
+                {
+                  "name": "ProductID",
+                  "isPrimary": "true",
+                  "columns": [
+                    "ProductID"
+                  ]
+                }
+              ],
+              "columns": [
+                "ProductID"
+              ]
+            }
+          ],
+          "columns": [
+            "Basket Count by All Cross Sell",
+            "Revenue by All Cross Sell",
+            "Last",
+            "Change",
+            "% Change",
+            "Volume"
+          ]
+        },
+        {
+          "name": "Product",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Product",
+          "keys": [
+            {
+              "name": "ProductID",
+              "isPrimary": "true",
+              "columns": [
+                "ProductID"
+              ]
+            }
+          ],
+          "columns": [
+            "ProductID"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Cross Sell",
+        "levels": [
+          {
+            "name": "All Cross Sell Products",
+            "childLevels": [
+              {
+                "name": "Product"
+              }
+            ]
+          },
+          {
+            "name": "Product"
+          }
+        ]
+      }
+    }
+  }
+}

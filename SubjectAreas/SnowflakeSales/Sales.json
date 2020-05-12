@@ -1,0 +1,82 @@
+{
+  "presentationTable": {
+    "name": "Sales",
+    "presentationColumns": [
+      {
+        "name": "ShipVia",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SalesFacts.ShipVia"
+      },
+      {
+        "name": "EmployeeID",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SalesFacts.EmployeeID"
+      },
+      {
+        "name": "ProductID",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SalesFacts.ProductID"
+      },
+      {
+        "name": "CustomerID",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SalesFacts.CustomerID"
+      },
+      {
+        "name": "SiteID",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SalesFacts.SiteID"
+      },
+      {
+        "name": "PlanRevenue",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SalesPlan.PlanRevenue"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SalesFacts.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SalesFacts.QtySold",
+        "alternateNames": [
+          "Quantity"
+        ]
+      },
+      {
+        "name": "OrderDate",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SalesFacts.OrderDate"
+      },
+      {
+        "name": "# Orders",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SalesFacts.# Orders"
+      },
+      {
+        "name": "# Customers",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SalesFacts.# Customers"
+      },
+      {
+        "name": "MedianQtySold",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SalesFacts.MedianQtySold"
+      },
+      {
+        "name": "MeasureAlias",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SalesFacts.MeasureAlias"
+      },
+      {
+        "name": "MeasureAlias1",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SalesFacts.MeasureAlias1"
+      },
+      {
+        "name": "NumCustomers",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SalesFacts.NumCustomers"
+      },
+      {
+        "name": "RevenueByAllProducts",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SalesFactsDerived.RevenueByAllProducts"
+      },
+      {
+        "name": "RevenueByAllEmployees",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SalesFactsDerived.RevenueByAllEmployees"
+      },
+      {
+        "name": "BaseRevenue",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.SalesFactsDerived.BaseRevenue"
+      }
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "physicalTable": {
+    "name": "W_QTR_D",
+    "description": "External Name:????????
+",
+    "caching": {
+    },
+    "physicalColumns": [
+      {
+        "name": "ROW_WID",
+        "dataType": "DOUBLE",
+        "length": 10
+      },
+      {
+        "name": "Q_END_CAL_DT_WID",
+        "dataType": "DOUBLE",
+        "length": 10
+      },
+      {
+        "name": "Q_END_CAL_DT_KEY",
+        "dataType": "DOUBLE",
+        "length": 15
+      },
+      {
+        "name": "Q_STRT_CAL_DT_WID",
+        "dataType": "DOUBLE",
+        "length": 10
+      },
+      {
+        "name": "Q_STRT_CAL_DT_KEY",
+        "dataType": "DOUBLE",
+        "length": 15
+      },
+      {
+        "name": "HALF_AGO_WID",
+        "dataType": "DOUBLE",
+        "length": 10
+      },
+      {
+        "name": "QUARTER_AGO_WID",
+        "dataType": "DOUBLE",
+        "length": 10
+      },
+      {
+        "name": "YEAR_AGO_WID",
+        "dataType": "DOUBLE",
+        "length": 10
+      },
+      {
+        "name": "CAL_HALF",
+        "dataType": "TINYINT",
+        "length": 2
+      },
+      {
+        "name": "CAL_QTR",
+        "dataType": "TINYINT",
+        "length": 1
+      },
+      {
+        "name": "CAL_YEAR",
+        "dataType": "SMALLINT",
+        "length": 4
+      },
+      {
+        "name": "QTR_KEY",
+        "dataType": "DOUBLE",
+        "length": 15
+      },
+      {
+        "name": "JULIAN_QTR_NUM",
+        "dataType": "DOUBLE",
+        "length": 10
+      },
+      {
+        "name": "JULIAN_YEAR_NUM",
+        "dataType": "DOUBLE",
+        "length": 10
+      },
+      {
+        "name": "PER_NAME_HALF",
+        "dataType": "VARCHAR",
+        "length": 50
+      },
+      {
+        "name": "PER_NAME_QTR",
+        "dataType": "VARCHAR",
+        "length": 50
+      },
+      {
+        "name": "PER_NAME_YEAR",
+        "dataType": "VARCHAR",
+        "length": 50
+      },
+      {
+        "name": "year_wid",
+        "dataType": "DOUBLE",
+        "length": 18
+      }
+    ]
+  }
+}

@@ -1,0 +1,414 @@
+{
+  "logicalTable": {
+    "name": "Delivery Date.Day of Week",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Delivery Date].[Day of Week].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Delivery Date].[Day of Week].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Delivery Date].[Day of Week].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Delivery Date].[Day of Week].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Delivery Date].[Day of Week].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Day of Week - Member Key#1",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Day of Week - Member Key#1"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Day of Week#6",
+        "writeable": false,
+        "descriptorColumn": "Day of Week - Member Key#1",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Day of Week#6"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#112",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#112"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#113",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#113"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#112",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#112"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#113",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#113"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#92",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#92"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Delivery Date.Day of Week",
+              "isPrimary": "true",
+              "columns": [
+                "[Delivery Date].[Day of Week].[(All)]",
+                "Day of Week#6"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Delivery Date.Day of Week",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "[Delivery Date].[Day of Week].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Delivery Date].[Day of Week].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Delivery Date].[Day of Week].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Delivery Date].[Day of Week].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Day of Week - Member Key#1",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Day of Week - Member Key#1"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Day of Week#6",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Day of Week#6"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#112",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#112"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#113",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#113"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#112",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#112"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#113",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#113"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#92",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#92"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Delivery Date.Day of Week.Day of Week"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Delivery Date.Day of Week",
+      "isTimeDim": "true",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "[Delivery Date].[Day of Week].[(All)]",
+      "levels": [
+        {
+          "name": "[Delivery Date].[Day of Week].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Delivery Date].[Day of Week].[(All)]",
+          "keys": [
+            {
+              "name": "[Delivery Date].[Day of Week].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Delivery Date].[Day of Week].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Delivery Date].[Day of Week].[(All)]",
+              "columns": [
+                "[Delivery Date].[Day of Week].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Day of Week",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Day of Week",
+              "keys": [
+                {
+                  "name": "Day of Week - Member Key#1",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Day of Week - Member Key#1"
+                  ]
+                },
+                {
+                  "name": "Day of Week",
+                  "columns": [
+                    "Day of Week#6"
+                  ]
+                }
+              ],
+              "columns": [
+                "Day of Week - Member Key#1",
+                "Day of Week#6",
+                "KEY0#113",
+                "MEMBER_VALUE#113"
+              ]
+            }
+          ],
+          "columns": [
+            "[Delivery Date].[Day of Week].[(All)]",
+            "[Delivery Date].[Day of Week].[(All)] - Member Key",
+            "KEY0#112",
+            "MEMBER_VALUE#112",
+            "NAME#92"
+          ]
+        },
+        {
+          "name": "Day of Week",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Day of Week",
+          "keys": [
+            {
+              "name": "Day of Week - Member Key#1",
+              "isPrimary": "true",
+              "columns": [
+                "Day of Week - Member Key#1"
+              ]
+            },
+            {
+              "name": "Day of Week",
+              "columns": [
+                "Day of Week#6"
+              ]
+            }
+          ],
+          "columns": [
+            "Day of Week - Member Key#1",
+            "Day of Week#6",
+            "KEY0#113",
+            "MEMBER_VALUE#113"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Delivery Date.Day of Week",
+        "levels": [
+          {
+            "name": "[Delivery Date].[Day of Week].[(All)]",
+            "childLevels": [
+              {
+                "name": "Day of Week"
+              }
+            ]
+          },
+          {
+            "name": "Day of Week"
+          }
+        ]
+      }
+    }
+  }
+}

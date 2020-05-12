@@ -1,0 +1,23 @@
+{
+  "presentationTable": {
+    "name": "EmployeeCountry",
+    "presentationColumns": [
+      {
+        "name": "Country",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.EmployeeCountry.Country"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.EmployeeCountry.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.EmployeeCountry.QtySold"
+      },
+      {
+        "name": "PlanRevenue",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.EmployeeCountry.PlanRevenue"
+      }
+    ]
+  }
+}

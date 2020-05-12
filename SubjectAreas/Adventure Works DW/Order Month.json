@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "Order Month",
+    "presentationColumns": [
+      {
+        "name": "[Reseller].[Order Month].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Order Month.[Reseller].[Order Month].[(All)]"
+      },
+      {
+        "name": "KEY0#322",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Order Month.KEY0#322"
+      },
+      {
+        "name": "KEY0#323",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Order Month.KEY0#323"
+      },
+      {
+        "name": "MEMBER_VALUE#322",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Order Month.MEMBER_VALUE#322"
+      },
+      {
+        "name": "MEMBER_VALUE#323",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Order Month.MEMBER_VALUE#323"
+      },
+      {
+        "name": "NAME#257",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Order Month.NAME#257"
+      },
+      {
+        "name": "NAME#258",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Order Month.NAME#258"
+      },
+      {
+        "name": "Order Month",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Order Month.Order Month"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Order Month",
+        "levels": [
+          {
+            "name": "[Reseller].[Order Month].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Reseller].[Order Month].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Order Month.[Reseller].[Order Month].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Order Month",
+            "displayColumns": [
+              {
+                "name": "Order Month",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Order Month.Order Month"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

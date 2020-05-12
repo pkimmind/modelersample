@@ -1,0 +1,444 @@
+{
+  "logicalTable": {
+    "name": "Marital Status",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Customer].[Marital Status].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Customer].[Marital Status].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Customer].[Marital Status].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Customer].[Marital Status].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Customer].[Marital Status].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#38",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#38"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#39",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#39"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Marital Status - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Marital Status - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Marital Status#2",
+        "writeable": false,
+        "descriptorColumn": "Marital Status - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Marital Status#2"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#38",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#38"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#39",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#39"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#33",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#33"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#34",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#34"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Marital Status",
+              "isPrimary": "true",
+              "columns": [
+                "[Customer].[Marital Status].[(All)]",
+                "Marital Status#2"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Marital Status",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "[Customer].[Marital Status].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Customer].[Marital Status].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Customer].[Marital Status].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Customer].[Marital Status].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#38",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#38"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#39",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#39"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Marital Status - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Marital Status - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Marital Status#2",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Marital Status#2"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#38",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#38"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#39",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#39"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#33",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#33"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#34",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#34"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Marital Status.Marital Status"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Marital Status",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "[Customer].[Marital Status].[(All)]",
+      "levels": [
+        {
+          "name": "[Customer].[Marital Status].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Customer].[Marital Status].[(All)]",
+          "keys": [
+            {
+              "name": "[Customer].[Marital Status].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Customer].[Marital Status].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Customer].[Marital Status].[(All)]",
+              "columns": [
+                "[Customer].[Marital Status].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Marital Status",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Marital Status",
+              "keys": [
+                {
+                  "name": "Marital Status - Member Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Marital Status - Member Key"
+                  ]
+                },
+                {
+                  "name": "Marital Status",
+                  "columns": [
+                    "Marital Status#2"
+                  ]
+                }
+              ],
+              "columns": [
+                "KEY0#39",
+                "Marital Status - Member Key",
+                "Marital Status#2",
+                "MEMBER_VALUE#39",
+                "NAME#34"
+              ]
+            }
+          ],
+          "columns": [
+            "[Customer].[Marital Status].[(All)]",
+            "[Customer].[Marital Status].[(All)] - Member Key",
+            "KEY0#38",
+            "MEMBER_VALUE#38",
+            "NAME#33"
+          ]
+        },
+        {
+          "name": "Marital Status",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Marital Status",
+          "keys": [
+            {
+              "name": "Marital Status - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "Marital Status - Member Key"
+              ]
+            },
+            {
+              "name": "Marital Status",
+              "columns": [
+                "Marital Status#2"
+              ]
+            }
+          ],
+          "columns": [
+            "KEY0#39",
+            "Marital Status - Member Key",
+            "Marital Status#2",
+            "MEMBER_VALUE#39",
+            "NAME#34"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Marital Status",
+        "levels": [
+          {
+            "name": "[Customer].[Marital Status].[(All)]",
+            "childLevels": [
+              {
+                "name": "Marital Status"
+              }
+            ]
+          },
+          {
+            "name": "Marital Status"
+          }
+        ]
+      }
+    }
+  }
+}

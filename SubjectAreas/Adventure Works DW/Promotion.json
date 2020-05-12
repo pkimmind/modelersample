@@ -1,0 +1,102 @@
+{
+  "presentationTable": {
+    "name": "Promotion",
+    "presentationColumns": [
+      {
+        "name": "[Promotion].[Promotion].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion.[Promotion].[Promotion].[(All)]"
+      },
+      {
+        "name": "Discount Percent#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion.Discount Percent#1"
+      },
+      {
+        "name": "End Date#13",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion.End Date#13"
+      },
+      {
+        "name": "KEY0#288",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion.KEY0#288"
+      },
+      {
+        "name": "KEY0#289",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion.KEY0#289"
+      },
+      {
+        "name": "Max Quantity#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion.Max Quantity#1"
+      },
+      {
+        "name": "MEMBER_VALUE#288",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion.MEMBER_VALUE#288"
+      },
+      {
+        "name": "MEMBER_VALUE#289",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion.MEMBER_VALUE#289"
+      },
+      {
+        "name": "Min Quantity#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion.Min Quantity#1"
+      },
+      {
+        "name": "NAME#228",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion.NAME#228"
+      },
+      {
+        "name": "NAME#229",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion.NAME#229"
+      },
+      {
+        "name": "Promotion",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion.Promotion"
+      },
+      {
+        "name": "Promotion Category",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion.Promotion Category"
+      },
+      {
+        "name": "Promotion Type",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion.Promotion Type"
+      },
+      {
+        "name": "Start Date#12",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion.Start Date#12"
+      },
+      {
+        "name": "TRAN0#20",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion.TRAN0#20"
+      },
+      {
+        "name": "TRAN1#20",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion.TRAN1#20"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Promotion",
+        "levels": [
+          {
+            "name": "[Promotion].[Promotion].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Promotion].[Promotion].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion.[Promotion].[Promotion].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Promotion",
+            "displayColumns": [
+              {
+                "name": "Promotion",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion.Promotion"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

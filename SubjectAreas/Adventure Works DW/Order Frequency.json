@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "Order Frequency",
+    "presentationColumns": [
+      {
+        "name": "[Reseller].[Order Frequency].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Order Frequency.[Reseller].[Order Frequency].[(All)]"
+      },
+      {
+        "name": "KEY0#320",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Order Frequency.KEY0#320"
+      },
+      {
+        "name": "KEY0#321",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Order Frequency.KEY0#321"
+      },
+      {
+        "name": "MEMBER_VALUE#320",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Order Frequency.MEMBER_VALUE#320"
+      },
+      {
+        "name": "MEMBER_VALUE#321",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Order Frequency.MEMBER_VALUE#321"
+      },
+      {
+        "name": "NAME#255",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Order Frequency.NAME#255"
+      },
+      {
+        "name": "NAME#256",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Order Frequency.NAME#256"
+      },
+      {
+        "name": "Order Frequency",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Order Frequency.Order Frequency"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Order Frequency",
+        "levels": [
+          {
+            "name": "[Reseller].[Order Frequency].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Reseller].[Order Frequency].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Order Frequency.[Reseller].[Order Frequency].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Order Frequency",
+            "displayColumns": [
+              {
+                "name": "Order Frequency",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Order Frequency.Order Frequency"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

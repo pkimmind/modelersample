@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "Delivery Date.Calendar Year",
+    "presentationColumns": [
+      {
+        "name": "[Delivery Date].[Calendar Year].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Year.[Delivery Date].[Calendar Year].[(All)]"
+      },
+      {
+        "name": "Calendar Year#5",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Year.Calendar Year#5"
+      },
+      {
+        "name": "KEY0#104",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Year.KEY0#104"
+      },
+      {
+        "name": "KEY0#105",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Year.KEY0#105"
+      },
+      {
+        "name": "MEMBER_VALUE#104",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Year.MEMBER_VALUE#104"
+      },
+      {
+        "name": "MEMBER_VALUE#105",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Year.MEMBER_VALUE#105"
+      },
+      {
+        "name": "NAME#85",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Year.NAME#85"
+      },
+      {
+        "name": "NAME#86",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Year.NAME#86"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Delivery Date.Calendar Year",
+        "levels": [
+          {
+            "name": "[Delivery Date].[Calendar Year].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Delivery Date].[Calendar Year].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Year.[Delivery Date].[Calendar Year].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Calendar Year",
+            "displayColumns": [
+              {
+                "name": "Calendar Year#5",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Year.Calendar Year#5"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "Pay Frequency",
+    "presentationColumns": [
+      {
+        "name": "[Employee].[Pay Frequency].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Pay Frequency.[Employee].[Pay Frequency].[(All)]"
+      },
+      {
+        "name": "KEY0#171",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Pay Frequency.KEY0#171"
+      },
+      {
+        "name": "KEY0#172",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Pay Frequency.KEY0#172"
+      },
+      {
+        "name": "MEMBER_VALUE#171",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Pay Frequency.MEMBER_VALUE#171"
+      },
+      {
+        "name": "MEMBER_VALUE#172",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Pay Frequency.MEMBER_VALUE#172"
+      },
+      {
+        "name": "NAME#136",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Pay Frequency.NAME#136"
+      },
+      {
+        "name": "NAME#137",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Pay Frequency.NAME#137"
+      },
+      {
+        "name": "Pay Frequency#7",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Pay Frequency.Pay Frequency#7"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Pay Frequency",
+        "levels": [
+          {
+            "name": "[Employee].[Pay Frequency].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Employee].[Pay Frequency].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Pay Frequency.[Employee].[Pay Frequency].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Pay Frequency",
+            "displayColumns": [
+              {
+                "name": "Pay Frequency#7",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Pay Frequency.Pay Frequency#7"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

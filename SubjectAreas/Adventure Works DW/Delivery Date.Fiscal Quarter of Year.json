@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Delivery Date.Fiscal Quarter of Year",
+    "presentationColumns": [
+      {
+        "name": "[Delivery Date].[Fiscal Quarter of Year].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal Quarter of Year.[Delivery Date].[Fiscal Quarter of Year].[(All)]"
+      },
+      {
+        "name": "Fiscal Quarter of Year#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal Quarter of Year.Fiscal Quarter of Year#3"
+      },
+      {
+        "name": "KEY0#122",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal Quarter of Year.KEY0#122"
+      },
+      {
+        "name": "KEY0#123",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal Quarter of Year.KEY0#123"
+      },
+      {
+        "name": "MEMBER_VALUE#122",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal Quarter of Year.MEMBER_VALUE#122"
+      },
+      {
+        "name": "MEMBER_VALUE#123",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal Quarter of Year.MEMBER_VALUE#123"
+      },
+      {
+        "name": "NAME#100",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal Quarter of Year.NAME#100"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Delivery Date.Fiscal Quarter of Year",
+        "levels": [
+          {
+            "name": "[Delivery Date].[Fiscal Quarter of Year].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Delivery Date].[Fiscal Quarter of Year].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal Quarter of Year.[Delivery Date].[Fiscal Quarter of Year].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Fiscal Quarter of Year",
+            "displayColumns": [
+              {
+                "name": "Fiscal Quarter of Year#3",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal Quarter of Year.Fiscal Quarter of Year#3"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

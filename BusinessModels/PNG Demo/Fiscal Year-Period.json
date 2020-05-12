@@ -1,0 +1,173 @@
+{
+  "logicalTable": {
+    "name": "Fiscal Year/Period",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "Fiscal year/period Level 00",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "$0CCA_C11",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:PNG Demo...$0CCA_C11.Fiscal year/period Level 00"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Fiscal year/period Level 01",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "$0CCA_C11",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:PNG Demo...$0CCA_C11.Fiscal year/period Level 01"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Fiscal year/period Level 01",
+              "isPrimary": "true",
+              "columns": [
+                "Fiscal year/period Level 01"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "$0CCA_C11",
+        "logicalTableRef": "Fiscal Year/Period",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "Fiscal year/period Level 00",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:PNG Demo...$0CCA_C11.Fiscal year/period Level 00"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Fiscal year/period Level 01",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:PNG Demo...$0CCA_C11.Fiscal year/period Level 01"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "$0CCA_C11",
+            "joins": [
+            ]
+          }
+        ]
+      },
+    ],
+    "dimension": {
+      "name": "Fiscal",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "Level 00",
+      "levels": [
+        {
+          "name": "Level 00",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Level 00",
+          "keys": [
+            {
+              "name": "Fiscal year/period Level 00",
+              "isPrimary": "true",
+              "columns": [
+                "Fiscal year/period Level 00"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Level 01",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Level 01",
+              "keys": [
+                {
+                  "name": "Fiscal year/period Level 01",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Fiscal year/period Level 01"
+                  ]
+                }
+              ],
+              "columns": [
+                "Fiscal year/period Level 01"
+              ]
+            }
+          ],
+          "columns": [
+            "Fiscal year/period Level 00"
+          ]
+        },
+        {
+          "name": "Level 01",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Level 01",
+          "keys": [
+            {
+              "name": "Fiscal year/period Level 01",
+              "isPrimary": "true",
+              "columns": [
+                "Fiscal year/period Level 01"
+              ]
+            }
+          ],
+          "columns": [
+            "Fiscal year/period Level 01"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Fiscal",
+        "levels": [
+          {
+            "name": "Level 00",
+            "childLevels": [
+              {
+                "name": "Level 01"
+              }
+            ]
+          },
+          {
+            "name": "Level 01"
+          }
+        ]
+      }
+    }
+  }
+}

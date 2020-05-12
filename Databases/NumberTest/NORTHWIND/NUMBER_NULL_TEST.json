@@ -1,0 +1,23 @@
+{
+  "physicalTable": {
+    "name": "NUMBER_NULL_TEST",
+    "description": "the only different from base table is the column nullability",
+    "sourceType": "STORED_PROCEDURE",
+    "isCacheable": false,
+    "caching": {
+      "enable": false
+    },
+    "selectStatements": [
+      {
+        "databaseType": "DEFAULT",
+        "query": "select COL_NUMBER as COL_NUMBER from Number_Test_Import"
+      }
+    ],
+    "physicalColumns": [
+      {
+        "name": "COL_NUMBER",
+        "dataType": "NUMERIC"
+      }
+    ]
+  }
+}

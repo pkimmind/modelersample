@@ -1,0 +1,128 @@
+{
+  "database": {
+    "name": "SQLDB_Northwind",
+    "type": "Oracle10gR2",
+    "databaseType": 46,
+    "features": [
+      {
+        "name": "RAND_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "PERF_PREFER_NO_COMMON_QUERY_FACTORING",
+        "value": false
+      },
+      {
+        "name": "FRACTIONAL_SECOND_PRECISION",
+        "value": "0X0",
+      },
+      {
+        "name": "MAX_BULK_FETCH_BUFFER_SIZE",
+        "value": "0X50000",
+      },
+      {
+        "name": "DEFAULT_BULK_FETCH_ROW_COUNT",
+        "value": "0X64",
+      },
+      {
+        "name": "MAX_COLUMNS_IN_INDEX",
+        "value": "0X0",
+      }
+    ],
+    "connectionPools": [
+      {
+        "name": "Northwind Connections",
+        "user": "northwind",
+        "connectionTimeout": 1,
+        "connectionTimeoutUnit": "MINUTES",
+        "maxConnDiff": 10,
+        "maxConnections": 100,
+        "connection": "biserver-dev.us.oracle.com:1521/orcl",
+        "type": "OCI10G",
+        "requiresFullyQualifedTableNames": false,
+        "multithreaded": false,
+        "isCloseAfterEveryRequest": false,
+        "outputType": "xml",
+        "ignoreFirstLine": false,
+        "bulkInsertBufferSize": 32768,
+        "tempTablePrefix": "TT",
+        "transactionBoundary": 10,
+        "xmlaUseSession": false,
+        "isSiebelJDBSecured": false
+      },
+      {
+        "name": "Northwind Init Block Connections",
+        "user": "northwind",
+        "connectionTimeout": 1,
+        "connectionTimeoutUnit": "MINUTES",
+        "maxConnDiff": 10,
+        "maxConnections": 100,
+        "connection": "biserver-dev.us.oracle.com:1521/orcl",
+        "type": "OCI10G",
+        "requiresFullyQualifedTableNames": false,
+        "multithreaded": false,
+        "isCloseAfterEveryRequest": false,
+        "outputType": "xml",
+        "ignoreFirstLine": false,
+        "bulkInsertBufferSize": 32768,
+        "tempTablePrefix": "TT",
+        "transactionBoundary": 10,
+        "xmlaUseSession": false,
+        "isSiebelJDBSecured": false
+      }
+    ]
+    "joins": [
+      {
+        "join": "complex",
+        "name": "SalesPlanToCategories",
+        "cardinality": "UNKNOWN",
+        "type": "Inner",
+        "leftTable": "Categories",
+        "rightTable": "SalesPlan",
+        "complexJoinCondition": {
+  "expression": {
+    "expressionTemplate": "%1 = %2",
+    "expressionObjects": [
+      "physicalColumn:SQLDB_Northwind.Northwind.dbo.SalesPlan.CategoryID",
+      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Categories.CategoryID"
+    ]
+  }
+        }
+      },
+      {
+        "join": "complex",
+        "name": "Complex Join",
+        "cardinality": "UNKNOWN",
+        "type": "Inner",
+        "leftTable": "Year",
+        "rightTable": "Orders",
+        "complexJoinCondition": {
+  "expression": {
+    "expressionTemplate": "%1 =  EXTRACT( YEAR  FROM %2)",
+    "expressionObjects": [
+      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Year.Year",
+      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.OrderDate"
+    ]
+  }
+        }
+      },
+      {
+        "join": "complex",
+        "name": "stock_Customers",
+        "cardinality": "UNKNOWN",
+        "type": "Inner",
+        "leftTable": "Customers",
+        "rightTable": "stock",
+        "complexJoinCondition": {
+  "expression": {
+    "expressionTemplate": "%1 =  IFNULL(%2, 'NULL')",
+    "expressionObjects": [
+      "physicalColumn:Stock Quotes...stock.Symbol",
+      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Customers.Ticker"
+    ]
+  }
+        }
+      }
+    ]
+  }
+}

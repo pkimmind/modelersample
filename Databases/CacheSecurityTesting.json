@@ -1,0 +1,146 @@
+{
+  "database": {
+    "name": "CacheSecurityTesting",
+    "type": "Oracle10gR2",
+    "dbFlag": 8,
+    "databaseType": 46,
+    "features": [
+      {
+        "name": "LENGTH_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "RAND_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "MEDIAN_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "PERF_PREFER_NO_COMMON_QUERY_FACTORING",
+        "value": false
+      },
+      {
+        "name": "FRACTIONAL_SECOND_PRECISION",
+        "value": "0X0",
+      },
+      {
+        "name": "MAX_BULK_FETCH_BUFFER_SIZE",
+        "value": "0X50000",
+      },
+      {
+        "name": "DEFAULT_BULK_FETCH_ROW_COUNT",
+        "value": "0X64",
+      },
+      {
+        "name": "MAX_COLUMNS_IN_INDEX",
+        "value": "0X0",
+      }
+    ],
+    "connectionPools": [
+      {
+        "name": "Northwind Connections",
+        "user": "northwind",
+        "connectionTimeout": 1,
+        "connectionTimeoutUnit": "MINUTES",
+        "maxConnDiff": 10,
+        "maxConnections": 100,
+        "connection": "biserver-dev.us.oracle.com:1521/orcl",
+        "type": "OCI10G",
+        "requiresFullyQualifedTableNames": false,
+        "multithreaded": false,
+        "isCloseAfterEveryRequest": false,
+        "outputType": "xml",
+        "ignoreFirstLine": false,
+        "bulkInsertBufferSize": 32768,
+        "tempTablePrefix": "TT",
+        "transactionBoundary": 10,
+        "xmlaUseSession": false,
+        "isSiebelJDBSecured": false
+      }
+    ]
+    "joins": [
+      {
+        "join": "simple",
+        "name": "Employees_FKey",
+        "primaryKey": [
+          {
+            "name": "Employees_Country_Key",
+            "columns": [
+              "PhysicalColumn:SQLDB_Northwind.Northwind.dbo.Employees_Country.Country"
+            ]
+          }
+        ],
+        "foreignKey": [
+          {
+            "name": "Country",
+            "columns": [
+              "PhysicalColumn:CacheSecurityTesting...Employees.Country"
+            ]
+          }
+        ]
+      },
+      {
+        "join": "simple",
+        "name": "Employees_Dynamic_FKey",
+        "primaryKey": [
+          {
+            "name": "PK__Employees__Emplo__15EF4CF6",
+            "columns": [
+              "PhysicalColumn:CacheSecurityTesting...Employees.EmployeeID"
+            ]
+          }
+        ],
+        "foreignKey": [
+          {
+            "name": "employeeidVariable",
+            "columns": [
+              "PhysicalColumn:CacheSecurityTesting...Employees_Dynamic.employeeidVariable"
+            ]
+          }
+        ]
+      },
+      {
+        "join": "simple",
+        "name": "SalesPlan_FKey",
+        "primaryKey": [
+          {
+            "name": "Year_Key",
+            "columns": [
+              "PhysicalColumn:SQLDB_Northwind.Northwind.dbo.Year.Year"
+            ]
+          }
+        ],
+        "foreignKey": [
+          {
+            "name": "Year",
+            "columns": [
+              "PhysicalColumn:CacheSecurityTesting...SalesPlan.Year"
+            ]
+          }
+        ]
+      },
+      {
+        "join": "simple",
+        "name": "SalesPlan_FKey1",
+        "primaryKey": [
+          {
+            "name": "Employees_Country_Key",
+            "columns": [
+              "PhysicalColumn:SQLDB_Northwind.Northwind.dbo.Employees_Country.Country"
+            ]
+          }
+        ],
+        "foreignKey": [
+          {
+            "name": "Country",
+            "columns": [
+              "PhysicalColumn:CacheSecurityTesting...SalesPlan.Country"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

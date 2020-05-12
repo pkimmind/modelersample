@@ -1,0 +1,15 @@
+{
+  "businessModel": {
+    "name": "Opaque PNG Demo",
+    "disable": false,
+    "joins": [
+      {
+        "name": "Opaque PNG Demo:Logical Join#3",
+        "leftTable": "logicalTable:Opaque PNG Demo.OpaqueCubeTable",
+        "rightTable": "logicalTable:Opaque PNG Demo.OpaqueCubeTable",
+        "type": "INNER",
+        "cardinality": "ZEROTOMANY"
+      }
+    }
+  }
+}

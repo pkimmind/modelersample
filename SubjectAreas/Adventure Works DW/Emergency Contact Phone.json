@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Emergency Contact Phone",
+    "presentationColumns": [
+      {
+        "name": "[Employee].[Emergency Contact Phone].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Emergency Contact Phone.[Employee].[Emergency Contact Phone].[(All)]"
+      },
+      {
+        "name": "Emergency Contact Phone",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Emergency Contact Phone.Emergency Contact Phone"
+      },
+      {
+        "name": "KEY0#147",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Emergency Contact Phone.KEY0#147"
+      },
+      {
+        "name": "KEY0#148",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Emergency Contact Phone.KEY0#148"
+      },
+      {
+        "name": "MEMBER_VALUE#147",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Emergency Contact Phone.MEMBER_VALUE#147"
+      },
+      {
+        "name": "MEMBER_VALUE#148",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Emergency Contact Phone.MEMBER_VALUE#148"
+      },
+      {
+        "name": "NAME#117",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Emergency Contact Phone.NAME#117"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Emergency Contact Phone",
+        "levels": [
+          {
+            "name": "[Employee].[Emergency Contact Phone].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Employee].[Emergency Contact Phone].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Emergency Contact Phone.[Employee].[Emergency Contact Phone].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Emergency Contact Phone",
+            "displayColumns": [
+              {
+                "name": "Emergency Contact Phone",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Emergency Contact Phone.Emergency Contact Phone"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

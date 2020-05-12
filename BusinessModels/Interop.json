@@ -1,0 +1,36 @@
+{
+  "businessModel": {
+    "name": "Interop",
+    "disable": false,
+    "joins": [
+      {
+        "name": "Interop:Interop:Relationship_2004:2811097696355",
+        "leftTable": "logicalTable:Interop.Products",
+        "rightTable": "logicalTable:Interop.Products",
+        "type": "INNER",
+        "cardinality": "ONETOMANY"
+      },
+      {
+        "name": "Interop:Interop:Relationship_2004:2841097696381",
+        "leftTable": "logicalTable:Interop.State",
+        "rightTable": "logicalTable:Interop.State",
+        "type": "INNER",
+        "cardinality": "ONETOMANY"
+      },
+      {
+        "name": "Interop:Interop:Relationship_2004:2961097696765",
+        "leftTable": "logicalTable:Interop.Supplier",
+        "rightTable": "logicalTable:Interop.Supplier",
+        "type": "INNER",
+        "cardinality": "ONETOMANY"
+      },
+      {
+        "name": "Interop:Interop:Relationship_2004:6581103326733",
+        "leftTable": "logicalTable:Interop.Time",
+        "rightTable": "logicalTable:Interop.Time",
+        "type": "INNER",
+        "cardinality": "ONETOMANY"
+      }
+    }
+  }
+}

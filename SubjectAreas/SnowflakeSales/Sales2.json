@@ -1,0 +1,15 @@
+{
+  "presentationTable": {
+    "name": "Sales2",
+    "presentationColumns": [
+      {
+        "name": "QtySoldRankByCategory",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Product.QtySoldRankByCategory"
+      },
+      {
+        "name": "QtySoldrankByAllProducts",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales.Product.QtySoldrankByAllProducts"
+      }
+    ]
+  }
+}

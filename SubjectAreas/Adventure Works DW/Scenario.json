@@ -1,0 +1,41 @@
+{
+  "presentationTable": {
+    "name": "Scenario",
+    "presentationColumns": [
+      {
+        "name": "KEY0#385",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Scenario.KEY0#385"
+      },
+      {
+        "name": "MEMBER_VALUE#385",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Scenario.MEMBER_VALUE#385"
+      },
+      {
+        "name": "NAME#297",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Scenario.NAME#297"
+      },
+      {
+        "name": "Scenario",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Scenario.Scenario"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Scenario",
+        "levels": [
+          {
+            "name": "Scenario",
+            "displayColumns": [
+              {
+                "name": "Scenario",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Scenario.Scenario"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

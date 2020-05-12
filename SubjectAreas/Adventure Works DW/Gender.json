@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "Gender",
+    "presentationColumns": [
+      {
+        "name": "[Customer].[Gender].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Gender.[Customer].[Gender].[(All)]"
+      },
+      {
+        "name": "Gender#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Gender.Gender#2"
+      },
+      {
+        "name": "KEY0#34",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Gender.KEY0#34"
+      },
+      {
+        "name": "KEY0#35",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Gender.KEY0#35"
+      },
+      {
+        "name": "MEMBER_VALUE#34",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Gender.MEMBER_VALUE#34"
+      },
+      {
+        "name": "MEMBER_VALUE#35",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Gender.MEMBER_VALUE#35"
+      },
+      {
+        "name": "NAME#29",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Gender.NAME#29"
+      },
+      {
+        "name": "NAME#30",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Gender.NAME#30"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Gender",
+        "levels": [
+          {
+            "name": "[Customer].[Gender].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Customer].[Gender].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Gender.[Customer].[Gender].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Gender",
+            "displayColumns": [
+              {
+                "name": "Gender#2",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Gender.Gender#2"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

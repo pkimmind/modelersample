@@ -1,0 +1,27 @@
+{
+  "initBlock": {
+    "name": "Test Lazy Init Block 3F",
+    "type": "SESSION",
+    "refreshPeriod": 86400,
+    "connectionPool": "connectionPool:SQLDB_Northwind.Northwind Init Block Connections",
+    "description": "Dependencies:
+3A depends on 3B, 3C, 3D
+3B depends on 3E, 3F
+3G depends on 3D
+Only 3A, 3B, 3C, 3G are deferred.",
+    "selectStatements": [
+      {
+        "databaseType": "DEFAULT",
+        "query": "select 'value_3F' from employees"
+      }
+    ],
+    "targetVariables": [
+      {
+        "name": "variable_3F",
+"Expr": {
+  "expressionTemplate": "'default_3F'",
+}
+      }
+    ]
+  }
+}

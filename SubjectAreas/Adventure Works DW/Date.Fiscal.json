@@ -1,0 +1,226 @@
+{
+  "presentationTable": {
+    "name": "Date.Fiscal",
+    "presentationColumns": [
+      {
+        "name": "[Date].[Fiscal].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.[Date].[Fiscal].[(All)]"
+      },
+      {
+        "name": "Calendar Quarter#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.Calendar Quarter#2"
+      },
+      {
+        "name": "Date#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.Date#2"
+      },
+      {
+        "name": "Day Name#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.Day Name#3"
+      },
+      {
+        "name": "Day of Month#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.Day of Month#3"
+      },
+      {
+        "name": "Day of Week#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.Day of Week#3"
+      },
+      {
+        "name": "Day of Year#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.Day of Year#3"
+      },
+      {
+        "name": "Fiscal Quarter of Year",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.Fiscal Quarter of Year"
+      },
+      {
+        "name": "Fiscal Quarter#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.Fiscal Quarter#1"
+      },
+      {
+        "name": "Fiscal Semester",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.Fiscal Semester"
+      },
+      {
+        "name": "Fiscal Semester of Year",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.Fiscal Semester of Year"
+      },
+      {
+        "name": "Fiscal Semester#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.Fiscal Semester#1"
+      },
+      {
+        "name": "Fiscal Year",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.Fiscal Year"
+      },
+      {
+        "name": "Fiscal Year#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.Fiscal Year#1"
+      },
+      {
+        "name": "KEY0#78",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.KEY0#78"
+      },
+      {
+        "name": "KEY0#79",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.KEY0#79"
+      },
+      {
+        "name": "KEY0#80",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.KEY0#80"
+      },
+      {
+        "name": "KEY0#81",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.KEY0#81"
+      },
+      {
+        "name": "KEY0#82",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.KEY0#82"
+      },
+      {
+        "name": "KEY0#83",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.KEY0#83"
+      },
+      {
+        "name": "KEY1#10",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.KEY1#10"
+      },
+      {
+        "name": "KEY1#11",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.KEY1#11"
+      },
+      {
+        "name": "KEY1#9",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.KEY1#9"
+      },
+      {
+        "name": "MEMBER_VALUE#78",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.MEMBER_VALUE#78"
+      },
+      {
+        "name": "MEMBER_VALUE#79",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.MEMBER_VALUE#79"
+      },
+      {
+        "name": "MEMBER_VALUE#80",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.MEMBER_VALUE#80"
+      },
+      {
+        "name": "MEMBER_VALUE#81",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.MEMBER_VALUE#81"
+      },
+      {
+        "name": "MEMBER_VALUE#82",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.MEMBER_VALUE#82"
+      },
+      {
+        "name": "MEMBER_VALUE#83",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.MEMBER_VALUE#83"
+      },
+      {
+        "name": "Month Name#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.Month Name#2"
+      },
+      {
+        "name": "Month of Year#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.Month of Year#1"
+      },
+      {
+        "name": "Month#1",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.Month#1"
+      },
+      {
+        "name": "NAME#64",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.NAME#64"
+      },
+      {
+        "name": "NAME#65",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.NAME#65"
+      },
+      {
+        "name": "NAME#66",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.NAME#66"
+      },
+      {
+        "name": "NAME#67",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.NAME#67"
+      },
+      {
+        "name": "NAME#68",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.NAME#68"
+      },
+      {
+        "name": "NAME#69",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.NAME#69"
+      },
+      {
+        "name": "Week of Year#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.Week of Year#2"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Date.Fiscal",
+        "levels": [
+          {
+            "name": "[Date].[Fiscal].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Date].[Fiscal].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.[Date].[Fiscal].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Fiscal Year",
+            "displayColumns": [
+              {
+                "name": "Fiscal Year",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.Fiscal Year"
+              }
+            ]
+          },
+          {
+            "name": "Fiscal Semester",
+            "displayColumns": [
+              {
+                "name": "Fiscal Semester",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.Fiscal Semester"
+              }
+            ]
+          },
+          {
+            "name": "Fiscal Quarter",
+            "displayColumns": [
+              {
+                "name": "Fiscal Quarter#1",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.Fiscal Quarter#1"
+              }
+            ]
+          },
+          {
+            "name": "Month",
+            "displayColumns": [
+              {
+                "name": "Month#1",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.Month#1"
+              }
+            ]
+          },
+          {
+            "name": "Date",
+            "displayColumns": [
+              {
+                "name": "Date#2",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.Date#2"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

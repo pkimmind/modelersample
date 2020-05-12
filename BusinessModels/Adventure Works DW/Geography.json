@@ -1,0 +1,1552 @@
+{
+  "logicalTable": {
+    "name": "Geography",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Geography].[Geography].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Geography].[Geography].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Geography].[Geography].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Geography].[Geography].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Geography].[Geography].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "City - Member Key#3",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.City - Member Key#3"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "City#5",
+        "writeable": false,
+        "descriptorColumn": "City - Member Key#3",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.City#5"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "City#6",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.City#6"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Country - Member Key#3",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Country - Member Key#3"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Country#5",
+        "writeable": false,
+        "descriptorColumn": "Country - Member Key#3",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Country#5"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Country#6",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Country#6"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#193",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#193"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#194",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#194"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#195",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#195"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#196",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#196"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#197",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#197"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY1#19",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY1#19"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY1#20",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY1#20"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY1#21",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY1#21"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#193",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#193"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#194",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#194"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#195",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#195"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#196",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#196"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#197",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#197"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#155",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#155"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#156",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#156"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#157",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#157"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#158",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#158"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#159",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#159"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Postal Code - Member Key#2",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Postal Code - Member Key#2"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Postal Code#4",
+        "writeable": false,
+        "descriptorColumn": "Postal Code - Member Key#2",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Postal Code#4"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "State-Province - Member Key#2",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.State-Province - Member Key#2"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "State-Province#5",
+        "writeable": false,
+        "descriptorColumn": "State-Province - Member Key#2",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.State-Province#5"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "State-Province#6",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.State-Province#6"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "TRAN0#9",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.TRAN0#9"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "TRAN1#9",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.TRAN1#9"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Geography",
+              "isPrimary": "true",
+              "columns": [
+                "[Geography].[Geography].[(All)]",
+                "Country#5",
+                "State-Province#5",
+                "City#5",
+                "Postal Code#4"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Geography",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "[Geography].[Geography].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Geography].[Geography].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Geography].[Geography].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Geography].[Geography].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "City - Member Key#3",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.City - Member Key#3"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "City#5",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.City#5"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "City#6",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.City#6"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Country - Member Key#3",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Country - Member Key#3"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Country#5",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Country#5"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Country#6",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Country#6"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#193",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#193"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#194",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#194"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#195",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#195"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#196",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#196"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#197",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#197"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY1#19",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY1#19"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY1#20",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY1#20"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY1#21",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY1#21"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#193",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#193"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#194",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#194"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#195",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#195"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#196",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#196"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#197",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#197"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#155",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#155"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#156",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#156"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#157",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#157"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#158",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#158"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#159",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#159"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Postal Code - Member Key#2",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Postal Code - Member Key#2"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Postal Code#4",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Postal Code#4"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "State-Province - Member Key#2",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.State-Province - Member Key#2"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "State-Province#5",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.State-Province#5"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "State-Province#6",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.State-Province#6"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "TRAN0#9",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.TRAN0#9"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "TRAN1#9",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.TRAN1#9"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Geography.Postal Code"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Geography",
+      "isValueBased": false,
+      "isRagged": false,
+      "defaultRootLevelRef": "[Geography].[Geography].[(All)]",
+      "levels": [
+        {
+          "name": "[Geography].[Geography].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Geography].[Geography].[(All)]",
+          "keys": [
+            {
+              "name": "[Geography].[Geography].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Geography].[Geography].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Geography].[Geography].[(All)]",
+              "columns": [
+                "[Geography].[Geography].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Country",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Country",
+              "keys": [
+                {
+                  "name": "Country - Member Key#3",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Country - Member Key#3"
+                  ]
+                },
+                {
+                  "name": "Country",
+                  "columns": [
+                    "Country#5"
+                  ]
+                }
+              ],
+              "childLevels": [
+                {
+                  "name": "State-Province",
+                  "isGTA": false,
+                  "memberCount": 1,
+                  "levelConst": "State-Province",
+                  "keys": [
+                    {
+                      "name": "State-Province - Member Key#2",
+                      "isPrimary": "true",
+                      "columns": [
+                        "State-Province - Member Key#2"
+                      ]
+                    },
+                    {
+                      "name": "State-Province",
+                      "columns": [
+                        "State-Province#5"
+                      ]
+                    }
+                  ],
+                  "childLevels": [
+                    {
+                      "name": "City",
+                      "isGTA": false,
+                      "memberCount": 1,
+                      "levelConst": "City",
+                      "keys": [
+                        {
+                          "name": "City - Member Key#3",
+                          "isPrimary": "true",
+                          "columns": [
+                            "City - Member Key#3"
+                          ]
+                        },
+                        {
+                          "name": "City",
+                          "columns": [
+                            "City#5"
+                          ]
+                        }
+                      ],
+                      "childLevels": [
+                        {
+                          "name": "Postal Code",
+                          "isGTA": false,
+                          "memberCount": 1,
+                          "levelConst": "Postal Code",
+                          "keys": [
+                            {
+                              "name": "Postal Code - Member Key#2",
+                              "isPrimary": "true",
+                              "columns": [
+                                "Postal Code - Member Key#2"
+                              ]
+                            },
+                            {
+                              "name": "Postal Code",
+                              "columns": [
+                                "Postal Code#4"
+                              ]
+                            }
+                          ],
+                          "columns": [
+                            "City#6",
+                            "KEY0#197",
+                            "KEY1#21",
+                            "MEMBER_VALUE#197",
+                            "NAME#159",
+                            "Postal Code - Member Key#2",
+                            "Postal Code#4"
+                          ]
+                        }
+                      ],
+                      "columns": [
+                        "City - Member Key#3",
+                        "City#5",
+                        "KEY0#196",
+                        "KEY1#20",
+                        "MEMBER_VALUE#196",
+                        "NAME#158",
+                        "State-Province#6"
+                      ]
+                    }
+                  ],
+                  "columns": [
+                    "Country#6",
+                    "KEY0#195",
+                    "KEY1#19",
+                    "MEMBER_VALUE#195",
+                    "NAME#157",
+                    "State-Province - Member Key#2",
+                    "State-Province#5"
+                  ]
+                }
+              ],
+              "columns": [
+                "Country - Member Key#3",
+                "Country#5",
+                "KEY0#194",
+                "MEMBER_VALUE#194",
+                "NAME#156",
+                "TRAN0#9",
+                "TRAN1#9"
+              ]
+            }
+          ],
+          "columns": [
+            "[Geography].[Geography].[(All)]",
+            "[Geography].[Geography].[(All)] - Member Key",
+            "KEY0#193",
+            "MEMBER_VALUE#193",
+            "NAME#155"
+          ]
+        },
+        {
+          "name": "Country",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Country",
+          "keys": [
+            {
+              "name": "Country - Member Key#3",
+              "isPrimary": "true",
+              "columns": [
+                "Country - Member Key#3"
+              ]
+            },
+            {
+              "name": "Country",
+              "columns": [
+                "Country#5"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "State-Province",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "State-Province",
+              "keys": [
+                {
+                  "name": "State-Province - Member Key#2",
+                  "isPrimary": "true",
+                  "columns": [
+                    "State-Province - Member Key#2"
+                  ]
+                },
+                {
+                  "name": "State-Province",
+                  "columns": [
+                    "State-Province#5"
+                  ]
+                }
+              ],
+              "childLevels": [
+                {
+                  "name": "City",
+                  "isGTA": false,
+                  "memberCount": 1,
+                  "levelConst": "City",
+                  "keys": [
+                    {
+                      "name": "City - Member Key#3",
+                      "isPrimary": "true",
+                      "columns": [
+                        "City - Member Key#3"
+                      ]
+                    },
+                    {
+                      "name": "City",
+                      "columns": [
+                        "City#5"
+                      ]
+                    }
+                  ],
+                  "childLevels": [
+                    {
+                      "name": "Postal Code",
+                      "isGTA": false,
+                      "memberCount": 1,
+                      "levelConst": "Postal Code",
+                      "keys": [
+                        {
+                          "name": "Postal Code - Member Key#2",
+                          "isPrimary": "true",
+                          "columns": [
+                            "Postal Code - Member Key#2"
+                          ]
+                        },
+                        {
+                          "name": "Postal Code",
+                          "columns": [
+                            "Postal Code#4"
+                          ]
+                        }
+                      ],
+                      "columns": [
+                        "City#6",
+                        "KEY0#197",
+                        "KEY1#21",
+                        "MEMBER_VALUE#197",
+                        "NAME#159",
+                        "Postal Code - Member Key#2",
+                        "Postal Code#4"
+                      ]
+                    }
+                  ],
+                  "columns": [
+                    "City - Member Key#3",
+                    "City#5",
+                    "KEY0#196",
+                    "KEY1#20",
+                    "MEMBER_VALUE#196",
+                    "NAME#158",
+                    "State-Province#6"
+                  ]
+                }
+              ],
+              "columns": [
+                "Country#6",
+                "KEY0#195",
+                "KEY1#19",
+                "MEMBER_VALUE#195",
+                "NAME#157",
+                "State-Province - Member Key#2",
+                "State-Province#5"
+              ]
+            }
+          ],
+          "columns": [
+            "Country - Member Key#3",
+            "Country#5",
+            "KEY0#194",
+            "MEMBER_VALUE#194",
+            "NAME#156",
+            "TRAN0#9",
+            "TRAN1#9"
+          ]
+        },
+        {
+          "name": "State-Province",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "State-Province",
+          "keys": [
+            {
+              "name": "State-Province - Member Key#2",
+              "isPrimary": "true",
+              "columns": [
+                "State-Province - Member Key#2"
+              ]
+            },
+            {
+              "name": "State-Province",
+              "columns": [
+                "State-Province#5"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "City",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "City",
+              "keys": [
+                {
+                  "name": "City - Member Key#3",
+                  "isPrimary": "true",
+                  "columns": [
+                    "City - Member Key#3"
+                  ]
+                },
+                {
+                  "name": "City",
+                  "columns": [
+                    "City#5"
+                  ]
+                }
+              ],
+              "childLevels": [
+                {
+                  "name": "Postal Code",
+                  "isGTA": false,
+                  "memberCount": 1,
+                  "levelConst": "Postal Code",
+                  "keys": [
+                    {
+                      "name": "Postal Code - Member Key#2",
+                      "isPrimary": "true",
+                      "columns": [
+                        "Postal Code - Member Key#2"
+                      ]
+                    },
+                    {
+                      "name": "Postal Code",
+                      "columns": [
+                        "Postal Code#4"
+                      ]
+                    }
+                  ],
+                  "columns": [
+                    "City#6",
+                    "KEY0#197",
+                    "KEY1#21",
+                    "MEMBER_VALUE#197",
+                    "NAME#159",
+                    "Postal Code - Member Key#2",
+                    "Postal Code#4"
+                  ]
+                }
+              ],
+              "columns": [
+                "City - Member Key#3",
+                "City#5",
+                "KEY0#196",
+                "KEY1#20",
+                "MEMBER_VALUE#196",
+                "NAME#158",
+                "State-Province#6"
+              ]
+            }
+          ],
+          "columns": [
+            "Country#6",
+            "KEY0#195",
+            "KEY1#19",
+            "MEMBER_VALUE#195",
+            "NAME#157",
+            "State-Province - Member Key#2",
+            "State-Province#5"
+          ]
+        },
+        {
+          "name": "City",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "City",
+          "keys": [
+            {
+              "name": "City - Member Key#3",
+              "isPrimary": "true",
+              "columns": [
+                "City - Member Key#3"
+              ]
+            },
+            {
+              "name": "City",
+              "columns": [
+                "City#5"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Postal Code",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Postal Code",
+              "keys": [
+                {
+                  "name": "Postal Code - Member Key#2",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Postal Code - Member Key#2"
+                  ]
+                },
+                {
+                  "name": "Postal Code",
+                  "columns": [
+                    "Postal Code#4"
+                  ]
+                }
+              ],
+              "columns": [
+                "City#6",
+                "KEY0#197",
+                "KEY1#21",
+                "MEMBER_VALUE#197",
+                "NAME#159",
+                "Postal Code - Member Key#2",
+                "Postal Code#4"
+              ]
+            }
+          ],
+          "columns": [
+            "City - Member Key#3",
+            "City#5",
+            "KEY0#196",
+            "KEY1#20",
+            "MEMBER_VALUE#196",
+            "NAME#158",
+            "State-Province#6"
+          ]
+        },
+        {
+          "name": "Postal Code",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Postal Code",
+          "keys": [
+            {
+              "name": "Postal Code - Member Key#2",
+              "isPrimary": "true",
+              "columns": [
+                "Postal Code - Member Key#2"
+              ]
+            },
+            {
+              "name": "Postal Code",
+              "columns": [
+                "Postal Code#4"
+              ]
+            }
+          ],
+          "columns": [
+            "City#6",
+            "KEY0#197",
+            "KEY1#21",
+            "MEMBER_VALUE#197",
+            "NAME#159",
+            "Postal Code - Member Key#2",
+            "Postal Code#4"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Geography",
+        "levels": [
+          {
+            "name": "[Geography].[Geography].[(All)]",
+            "childLevels": [
+              {
+                "name": "Country",
+                "childLevels": [
+                  {
+                    "name": "State-Province",
+                    "childLevels": [
+                      {
+                        "name": "City",
+                        "childLevels": [
+                          {
+                            "name": "Postal Code"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Country",
+            "childLevels": [
+              {
+                "name": "State-Province",
+                "childLevels": [
+                  {
+                    "name": "City",
+                    "childLevels": [
+                      {
+                        "name": "Postal Code"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "State-Province",
+            "childLevels": [
+              {
+                "name": "City",
+                "childLevels": [
+                  {
+                    "name": "Postal Code"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "City",
+            "childLevels": [
+              {
+                "name": "Postal Code"
+              }
+            ]
+          },
+          {
+            "name": "Postal Code"
+          }
+        ]
+      }
+    }
+  }
+}

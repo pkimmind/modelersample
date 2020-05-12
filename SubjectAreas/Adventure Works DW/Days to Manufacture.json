@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Days to Manufacture",
+    "presentationColumns": [
+      {
+        "name": "[Product].[Days to Manufacture].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Days to Manufacture.[Product].[Days to Manufacture].[(All)]"
+      },
+      {
+        "name": "Days to Manufacture",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Days to Manufacture.Days to Manufacture"
+      },
+      {
+        "name": "KEY0#225",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Days to Manufacture.KEY0#225"
+      },
+      {
+        "name": "KEY0#226",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Days to Manufacture.KEY0#226"
+      },
+      {
+        "name": "MEMBER_VALUE#225",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Days to Manufacture.MEMBER_VALUE#225"
+      },
+      {
+        "name": "MEMBER_VALUE#226",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Days to Manufacture.MEMBER_VALUE#226"
+      },
+      {
+        "name": "NAME#181",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Days to Manufacture.NAME#181"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Days to Manufacture",
+        "levels": [
+          {
+            "name": "[Product].[Days to Manufacture].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Product].[Days to Manufacture].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Days to Manufacture.[Product].[Days to Manufacture].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Days to Manufacture",
+            "displayColumns": [
+              {
+                "name": "Days to Manufacture",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Days to Manufacture.Days to Manufacture"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

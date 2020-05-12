@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Min Quantity",
+    "presentationColumns": [
+      {
+        "name": "[Promotion].[Min Quantity].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Quantity.[Promotion].[Min Quantity].[(All)]"
+      },
+      {
+        "name": "KEY0#286",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Quantity.KEY0#286"
+      },
+      {
+        "name": "KEY0#287",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Quantity.KEY0#287"
+      },
+      {
+        "name": "MEMBER_VALUE#286",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Quantity.MEMBER_VALUE#286"
+      },
+      {
+        "name": "MEMBER_VALUE#287",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Quantity.MEMBER_VALUE#287"
+      },
+      {
+        "name": "Min Quantity",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Quantity.Min Quantity"
+      },
+      {
+        "name": "NAME#227",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Quantity.NAME#227"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Min Quantity",
+        "levels": [
+          {
+            "name": "[Promotion].[Min Quantity].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Promotion].[Min Quantity].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Quantity.[Promotion].[Min Quantity].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Min Quantity",
+            "displayColumns": [
+              {
+                "name": "Min Quantity",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Quantity.Min Quantity"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

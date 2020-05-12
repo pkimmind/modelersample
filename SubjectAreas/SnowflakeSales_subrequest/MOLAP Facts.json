@@ -1,0 +1,15 @@
+{
+  "presentationTable": {
+    "name": "MOLAP Facts",
+    "presentationColumns": [
+      {
+        "name": "Unit Sales",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.MOLAP Facts.Unit Sales"
+      },
+      {
+        "name": "Profit",
+        "sourceLogicalColumn": "logicalColumn:SnowflakeSales_subrequest.MOLAP Facts.Profit"
+      }
+    ]
+  }
+}

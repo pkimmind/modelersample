@@ -1,0 +1,19 @@
+{
+  "presentationTable": {
+    "name": "ShipmentTime",
+    "presentationColumns": [
+      {
+        "name": "Week",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.ShipmentTime.Week"
+      },
+      {
+        "name": "Qtr",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.ShipmentTime.Qtr"
+      },
+      {
+        "name": "Year",
+        "sourceLogicalColumn": "logicalColumn:AtomicStar.ShipmentTime.Year"
+      }
+    ]
+  }
+}

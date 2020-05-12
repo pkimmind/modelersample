@@ -1,0 +1,32 @@
+{
+  "presentationTable": {
+    "name": "Qtr",
+    "alternateNames": [
+      "ShipQtr"
+    ],
+    "presentationColumns": [
+      {
+        "name": "Year",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.Qtr.Year",
+        "alternateNames": [
+          "ShipYear"
+        ]
+      },
+      {
+        "name": "Qtr",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.Qtr.Qtr",
+        "alternateNames": [
+          "ShipQtr"
+        ]
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.Qtr.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.Qtr.QtySold"
+      }
+    ]
+  }
+}

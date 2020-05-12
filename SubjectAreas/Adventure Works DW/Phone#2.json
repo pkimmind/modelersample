@@ -1,0 +1,62 @@
+{
+  "presentationTable": {
+    "name": "Phone#2",
+    "presentationColumns": [
+      {
+        "name": "[Reseller].[Phone].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Phone#2.[Reseller].[Phone].[(All)]"
+      },
+      {
+        "name": "KEY0#324",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Phone#2.KEY0#324"
+      },
+      {
+        "name": "KEY0#325",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Phone#2.KEY0#325"
+      },
+      {
+        "name": "MEMBER_VALUE#324",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Phone#2.MEMBER_VALUE#324"
+      },
+      {
+        "name": "MEMBER_VALUE#325",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Phone#2.MEMBER_VALUE#325"
+      },
+      {
+        "name": "NAME#259",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Phone#2.NAME#259"
+      },
+      {
+        "name": "Phone#11",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Phone#2.Phone#11"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Phone#2",
+        "levels": [
+          {
+            "name": "[Reseller].[Phone].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Reseller].[Phone].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Phone#2.[Reseller].[Phone].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Phone",
+            "displayColumns": [
+              {
+                "name": "Phone#11",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Phone#2.Phone#11"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

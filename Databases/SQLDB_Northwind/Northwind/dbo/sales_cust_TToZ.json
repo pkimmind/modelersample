@@ -1,0 +1,24 @@
+{
+  "physicalTable": {
+    "name": "sales_cust_TToZ",
+    "caching": {
+    },
+    "physicalColumns": [
+      {
+        "name": "CustomerID",
+        "dataType": "CHAR",
+        "length": 5
+      },
+      {
+        "name": "QtySold",
+        "dataType": "INT",
+        "length": 10
+      },
+      {
+        "name": "Revenue",
+        "dataType": "DOUBLE",
+        "length": 19
+      }
+    ]
+  }
+}

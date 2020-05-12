@@ -1,0 +1,54 @@
+{
+  "logicalTable": {
+    "name": "Facts",
+    "type": "FACT",
+    "logicalColumns": [
+      {
+        "name": "Amount",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "OpaqueCubeTable",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:PNG Demo...OpaqueCubeTable.Amount"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "OpaqueCubeTable",
+        "logicalTableRef": "Facts",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "Amount",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:PNG Demo...OpaqueCubeTable.Amount"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "OpaqueCubeTable",
+            "joins": [
+            ]
+          }
+        ]
+      },
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "physicalTable": {
+    "name": "holidays",
+    "description": "External Name:R
+",
+    "caching": {
+    },
+    "physicalColumns": [
+      {
+        "name": "holiday_name",
+        "dataType": "VARCHAR",
+        "length": 50
+      },
+      {
+        "name": "holiday_date",
+        "dataType": "DATETIME",
+        "length": 23
+      },
+      {
+        "name": "holiday_id",
+        "dataType": "DOUBLE",
+        "length": 10
+      }
+    ]
+  }
+}

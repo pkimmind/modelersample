@@ -1,0 +1,31 @@
+{
+  "physicalTable": {
+    "name": "sales_month_cust_HToT",
+    "description": "External Name:?
+",
+    "caching": {
+    },
+    "physicalColumns": [
+      {
+        "name": "Cal_year",
+        "dataType": "DOUBLE",
+        "length": 18
+      },
+      {
+        "name": "Cal_month",
+        "dataType": "DOUBLE",
+        "length": 18
+      },
+      {
+        "name": "CustomerID",
+        "dataType": "CHAR",
+        "length": 5
+      },
+      {
+        "name": "QtySold",
+        "dataType": "INT",
+        "length": 10
+      }
+    ]
+  }
+}

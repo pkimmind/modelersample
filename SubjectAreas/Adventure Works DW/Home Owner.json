@@ -1,0 +1,66 @@
+{
+  "presentationTable": {
+    "name": "Home Owner",
+    "presentationColumns": [
+      {
+        "name": "[Customer].[Home Owner].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Home Owner.[Customer].[Home Owner].[(All)]"
+      },
+      {
+        "name": "Home Owner#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Home Owner.Home Owner#2"
+      },
+      {
+        "name": "KEY0#36",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Home Owner.KEY0#36"
+      },
+      {
+        "name": "KEY0#37",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Home Owner.KEY0#37"
+      },
+      {
+        "name": "MEMBER_VALUE#36",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Home Owner.MEMBER_VALUE#36"
+      },
+      {
+        "name": "MEMBER_VALUE#37",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Home Owner.MEMBER_VALUE#37"
+      },
+      {
+        "name": "NAME#31",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Home Owner.NAME#31"
+      },
+      {
+        "name": "NAME#32",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Home Owner.NAME#32"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Home Owner",
+        "levels": [
+          {
+            "name": "[Customer].[Home Owner].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Customer].[Home Owner].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Home Owner.[Customer].[Home Owner].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Home Owner",
+            "displayColumns": [
+              {
+                "name": "Home Owner#2",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Home Owner.Home Owner#2"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "presentationTable": {
+    "name": "Delivery Date.Day Name",
+    "presentationColumns": [
+      {
+        "name": "[Delivery Date].[Day Name].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Day Name.[Delivery Date].[Day Name].[(All)]"
+      },
+      {
+        "name": "Day Name#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Day Name.Day Name#6"
+      },
+      {
+        "name": "KEY0#108",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Day Name.KEY0#108"
+      },
+      {
+        "name": "KEY0#109",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Day Name.KEY0#109"
+      },
+      {
+        "name": "MEMBER_VALUE#108",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Day Name.MEMBER_VALUE#108"
+      },
+      {
+        "name": "MEMBER_VALUE#109",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Day Name.MEMBER_VALUE#109"
+      },
+      {
+        "name": "NAME#89",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Day Name.NAME#89"
+      },
+      {
+        "name": "NAME#90",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Day Name.NAME#90"
+      },
+      {
+        "name": "TRAN0#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Day Name.TRAN0#6"
+      },
+      {
+        "name": "TRAN1#6",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Day Name.TRAN1#6"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Delivery Date.Day Name",
+        "levels": [
+          {
+            "name": "[Delivery Date].[Day Name].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Delivery Date].[Day Name].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Day Name.[Delivery Date].[Day Name].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Day Name",
+            "displayColumns": [
+              {
+                "name": "Day Name#6",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Day Name.Day Name#6"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

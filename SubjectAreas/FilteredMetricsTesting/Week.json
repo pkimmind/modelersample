@@ -1,0 +1,27 @@
+{
+  "presentationTable": {
+    "name": "Week",
+    "presentationColumns": [
+      {
+        "name": "Year",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.Week.Year"
+      },
+      {
+        "name": "Qtr",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.Week.Qtr"
+      },
+      {
+        "name": "Week",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.Week.Week"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.Week.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.Week.QtySold"
+      }
+    ]
+  }
+}

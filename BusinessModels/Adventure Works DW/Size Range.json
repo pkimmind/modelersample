@@ -1,0 +1,413 @@
+{
+  "logicalTable": {
+    "name": "Size Range",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Product].[Size Range].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Product].[Size Range].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Product].[Size Range].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Product].[Size Range].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Product].[Size Range].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#263",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#263"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#264",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#264"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#263",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#263"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#264",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#264"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#207",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#207"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Size Range - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Size Range - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Size Range#2",
+        "writeable": false,
+        "descriptorColumn": "Size Range - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Size Range#2"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Size Range",
+              "isPrimary": "true",
+              "columns": [
+                "[Product].[Size Range].[(All)]",
+                "Size Range#2"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Size Range",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "[Product].[Size Range].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Product].[Size Range].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Product].[Size Range].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Product].[Size Range].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#263",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#263"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#264",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#264"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#263",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#263"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#264",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#264"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#207",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#207"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Size Range - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Size Range - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Size Range#2",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Size Range#2"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Size Range.Size Range"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Size Range",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "[Product].[Size Range].[(All)]",
+      "levels": [
+        {
+          "name": "[Product].[Size Range].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Product].[Size Range].[(All)]",
+          "keys": [
+            {
+              "name": "[Product].[Size Range].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Product].[Size Range].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Product].[Size Range].[(All)]",
+              "columns": [
+                "[Product].[Size Range].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Size Range",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Size Range",
+              "keys": [
+                {
+                  "name": "Size Range - Member Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Size Range - Member Key"
+                  ]
+                },
+                {
+                  "name": "Size Range",
+                  "columns": [
+                    "Size Range#2"
+                  ]
+                }
+              ],
+              "columns": [
+                "KEY0#264",
+                "MEMBER_VALUE#264",
+                "Size Range - Member Key",
+                "Size Range#2"
+              ]
+            }
+          ],
+          "columns": [
+            "[Product].[Size Range].[(All)]",
+            "[Product].[Size Range].[(All)] - Member Key",
+            "KEY0#263",
+            "MEMBER_VALUE#263",
+            "NAME#207"
+          ]
+        },
+        {
+          "name": "Size Range",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Size Range",
+          "keys": [
+            {
+              "name": "Size Range - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "Size Range - Member Key"
+              ]
+            },
+            {
+              "name": "Size Range",
+              "columns": [
+                "Size Range#2"
+              ]
+            }
+          ],
+          "columns": [
+            "KEY0#264",
+            "MEMBER_VALUE#264",
+            "Size Range - Member Key",
+            "Size Range#2"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Size Range",
+        "levels": [
+          {
+            "name": "[Product].[Size Range].[(All)]",
+            "childLevels": [
+              {
+                "name": "Size Range"
+              }
+            ]
+          },
+          {
+            "name": "Size Range"
+          }
+        ]
+      }
+    }
+  }
+}

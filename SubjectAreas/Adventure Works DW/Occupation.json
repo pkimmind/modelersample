@@ -1,0 +1,74 @@
+{
+  "presentationTable": {
+    "name": "Occupation",
+    "presentationColumns": [
+      {
+        "name": "[Customer].[Occupation].[(All)]",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Occupation.[Customer].[Occupation].[(All)]"
+      },
+      {
+        "name": "KEY0#44",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Occupation.KEY0#44"
+      },
+      {
+        "name": "KEY0#45",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Occupation.KEY0#45"
+      },
+      {
+        "name": "MEMBER_VALUE#44",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Occupation.MEMBER_VALUE#44"
+      },
+      {
+        "name": "MEMBER_VALUE#45",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Occupation.MEMBER_VALUE#45"
+      },
+      {
+        "name": "NAME#37",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Occupation.NAME#37"
+      },
+      {
+        "name": "NAME#38",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Occupation.NAME#38"
+      },
+      {
+        "name": "Occupation#2",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Occupation.Occupation#2"
+      },
+      {
+        "name": "TRAN0#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Occupation.TRAN0#3"
+      },
+      {
+        "name": "TRAN1#3",
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Occupation.TRAN1#3"
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Occupation",
+        "levels": [
+          {
+            "name": "[Customer].[Occupation].[(All)]",
+            "displayColumns": [
+              {
+                "name": "[Customer].[Occupation].[(All)]",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Occupation.[Customer].[Occupation].[(All)]"
+              }
+            ]
+          },
+          {
+            "name": "Occupation",
+            "displayColumns": [
+              {
+                "name": "Occupation#2",
+                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Occupation.Occupation#2"
+              }
+            ]
+          }
+        ],
+        "customDisplayProperties": [
+        ]
+      }
+    ]
+  }
+}

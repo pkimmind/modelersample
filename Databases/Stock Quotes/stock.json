@@ -1,0 +1,39 @@
+{
+  "physicalTable": {
+    "name": "stock",
+    "caching": {
+    },
+    "physicalColumns": [
+      {
+        "name": "Symbol",
+        "dataType": "VARCHAR",
+        "length": 8
+      },
+      {
+        "name": "Last",
+        "dataType": "VARCHAR",
+        "length": 32
+      },
+      {
+        "name": "Change",
+        "dataType": "VARCHAR",
+        "length": 32
+      },
+      {
+        "name": "% Change",
+        "dataType": "VARCHAR",
+        "length": 32
+      },
+      {
+        "name": "Volume",
+        "dataType": "VARCHAR",
+        "length": 32
+      },
+      {
+        "name": "Company Name",
+        "dataType": "VARCHAR",
+        "length": 64
+      }
+    ]
+  }
+}

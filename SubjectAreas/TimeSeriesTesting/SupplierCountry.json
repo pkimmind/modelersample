@@ -1,0 +1,19 @@
+{
+  "presentationTable": {
+    "name": "SupplierCountry",
+    "presentationColumns": [
+      {
+        "name": "Country",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SupplierCountry.Country"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SupplierCountry.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:SS- Time Series.SupplierCountry.QtySold"
+      }
+    ]
+  }
+}

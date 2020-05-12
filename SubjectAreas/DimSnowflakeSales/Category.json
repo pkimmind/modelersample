@@ -1,0 +1,31 @@
+{
+  "presentationTable": {
+    "name": "Category",
+    "presentationColumns": [
+      {
+        "name": "CategoryID",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.Category.CategoryID"
+      },
+      {
+        "name": "CategoryName",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.Category.CategoryName"
+      },
+      {
+        "name": "Description",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.Category.Description"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.Category.Revenue"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.Category.QtySold"
+      },
+      {
+        "name": "PlanRevenue",
+        "sourceLogicalColumn": "logicalColumn:DimSnowflakeSales.Category.PlanRevenue"
+      }
+    ]
+  }
+}

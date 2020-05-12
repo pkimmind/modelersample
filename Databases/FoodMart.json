@@ -1,0 +1,70 @@
+{
+  "database": {
+    "name": "FoodMart",
+    "type": "AnalysisServices2005",
+    "databaseType": 41,
+    "features": [
+      {
+        "name": "DATE_LITERAL_SUPPORTED",
+        "value": false
+      },
+      {
+        "name": "IN_SUPPORTED",
+      },
+      {
+        "name": "MAX_COLUMNS_IN_GROUP_BY",
+        "value": 32
+      },
+      {
+        "name": "MAX_BULK_FETCH_BUFFER_SIZE",
+        "value": "0X50000",
+      },
+      {
+        "name": "DEFAULT_BULK_FETCH_ROW_COUNT",
+        "value": "0X64",
+      }
+    ],
+    "connectionPools": [
+      {
+        "name": "Connection Pool",
+        "user": "sa",
+        "connectionTimeoutUnit": "WHENQUERYCOMPLETES",
+        "maxConnDiff": 10,
+        "maxConnections": 6,
+        "connection": "http://slc10noq.us.oracle.com/olap16/msmdpump.dll",
+        "type": "XMLA",
+        "requiresFullyQualifedTableNames": false,
+        "multithreaded": false,
+        "outputType": "xml",
+        "ignoreFirstLine": false,
+        "bulkInsertBufferSize": 0,
+        "transactionBoundary": 0,
+        "xmlaInfo": "SLC10NOQ\MSSQLSERVER16",
+        "xmlaCatalog": "FoodMart 2000",
+        "xmlaUseSession": false,
+        "isSiebelJDBSecured": false
+      }
+    ]
+    "joins": [
+      {
+        "join": "complex",
+        "name": "Quarter_Sales",
+        "cardinality": "UNKNOWN",
+        "type": "Inner",
+        "leftTable": "Sales",
+        "rightTable": "Quarter",
+        "complexJoinCondition": {
+  "expression": {
+    "expressionTemplate": "%1 =  CAST (%2 AS INTEGER ) - 2 AND %3 = %4",
+    "expressionObjects": [
+      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Quarter.YEAR_NUM",
+      "physicalCubeColumn:FoodMart...Sales.Year",
+      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Quarter.QTR",
+      "physicalCubeColumn:FoodMart...Sales.Quarter"
+    ]
+  }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "physicalTable": {
+    "name": "SalesPlan",
+    "caching": {
+    },
+    "physicalColumns": [
+      {
+        "name": "CategoryID",
+        "dataType": "SMALLINT",
+        "length": 5
+      },
+      {
+        "name": "Country",
+        "dataType": "CHAR",
+        "length": 15
+      },
+      {
+        "name": "Year",
+        "dataType": "SMALLINT",
+        "length": 5
+      },
+      {
+        "name": "Revenue",
+        "dataType": "DOUBLE",
+        "length": 19
+      }
+    ]
+  }
+}

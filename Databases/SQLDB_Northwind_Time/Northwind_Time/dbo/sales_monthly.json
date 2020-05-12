@@ -1,0 +1,46 @@
+{
+  "physicalTable": {
+    "name": "sales_monthly",
+    "description": "External Name:??
+",
+    "caching": {
+    },
+    "physicalColumns": [
+      {
+        "name": "Mon_DateID",
+        "dataType": "DOUBLE",
+        "length": 10
+      },
+      {
+        "name": "Year",
+        "dataType": "DOUBLE",
+        "length": 18
+      },
+      {
+        "name": "Month",
+        "dataType": "DOUBLE",
+        "length": 18
+      },
+      {
+        "name": "CustomerID",
+        "dataType": "CHAR",
+        "length": 5
+      },
+      {
+        "name": "SiteID",
+        "dataType": "SMALLINT",
+        "length": 5
+      },
+      {
+        "name": "ProductId",
+        "dataType": "INT",
+        "length": 10
+      },
+      {
+        "name": "Mon_Quantity",
+        "dataType": "INT",
+        "length": 10
+      }
+    ]
+  }
+}

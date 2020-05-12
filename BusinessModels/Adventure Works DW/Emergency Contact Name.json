@@ -1,0 +1,413 @@
+{
+  "logicalTable": {
+    "name": "Emergency Contact Name",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "[Employee].[Emergency Contact Name].[(All)]",
+        "writeable": false,
+        "descriptorColumn": "[Employee].[Emergency Contact Name].[(All)] - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Emergency Contact Name].[(All)]"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "[Employee].[Emergency Contact Name].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Emergency Contact Name].[(All)] - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Emergency Contact Name",
+        "writeable": false,
+        "descriptorColumn": "Emergency Contact Name - Member Key",
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Emergency Contact Name"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Emergency Contact Name - Member Key",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.Emergency Contact Name - Member Key"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#145",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#145"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "KEY0#146",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#146"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#145",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#145"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#146",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#146"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "NAME#116",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#116"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "Emergency Contact Name",
+              "isPrimary": "true",
+              "columns": [
+                "[Employee].[Emergency Contact Name].[(All)]",
+                "Emergency Contact Name"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "Adventure Works",
+        "logicalTableRef": "Emergency Contact Name",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "[Employee].[Emergency Contact Name].[(All)]",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Emergency Contact Name].[(All)]"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "[Employee].[Emergency Contact Name].[(All)] - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Emergency Contact Name].[(All)] - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Emergency Contact Name",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Emergency Contact Name"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "Emergency Contact Name - Member Key",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.Emergency Contact Name - Member Key"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#145",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#145"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "KEY0#146",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#146"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#145",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#145"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "MEMBER_VALUE#146",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#146"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "NAME#116",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#116"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "Adventure Works",
+            "joins": [
+            ]
+          }
+        ],
+"GroupBy": {
+  "expressionTemplate": " GROUPBYLEVEL(%1)",
+  "expressionObjects": [
+    "logicalLevel:Adventure Works DW.Emergency Contact Name.Emergency Contact Name"
+  ]
+}
+      },
+    ],
+    "dimension": {
+      "name": "Emergency Contact Name",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "[Employee].[Emergency Contact Name].[(All)]",
+      "levels": [
+        {
+          "name": "[Employee].[Emergency Contact Name].[(All)]",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "[Employee].[Emergency Contact Name].[(All)]",
+          "keys": [
+            {
+              "name": "[Employee].[Emergency Contact Name].[(All)] - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "[Employee].[Emergency Contact Name].[(All)] - Member Key"
+              ]
+            },
+            {
+              "name": "[Employee].[Emergency Contact Name].[(All)]",
+              "columns": [
+                "[Employee].[Emergency Contact Name].[(All)]"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Emergency Contact Name",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Emergency Contact Name",
+              "keys": [
+                {
+                  "name": "Emergency Contact Name - Member Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "Emergency Contact Name - Member Key"
+                  ]
+                },
+                {
+                  "name": "Emergency Contact Name",
+                  "columns": [
+                    "Emergency Contact Name"
+                  ]
+                }
+              ],
+              "columns": [
+                "Emergency Contact Name",
+                "Emergency Contact Name - Member Key",
+                "KEY0#146",
+                "MEMBER_VALUE#146"
+              ]
+            }
+          ],
+          "columns": [
+            "[Employee].[Emergency Contact Name].[(All)]",
+            "[Employee].[Emergency Contact Name].[(All)] - Member Key",
+            "KEY0#145",
+            "MEMBER_VALUE#145",
+            "NAME#116"
+          ]
+        },
+        {
+          "name": "Emergency Contact Name",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Emergency Contact Name",
+          "keys": [
+            {
+              "name": "Emergency Contact Name - Member Key",
+              "isPrimary": "true",
+              "columns": [
+                "Emergency Contact Name - Member Key"
+              ]
+            },
+            {
+              "name": "Emergency Contact Name",
+              "columns": [
+                "Emergency Contact Name"
+              ]
+            }
+          ],
+          "columns": [
+            "Emergency Contact Name",
+            "Emergency Contact Name - Member Key",
+            "KEY0#146",
+            "MEMBER_VALUE#146"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Emergency Contact Name",
+        "levels": [
+          {
+            "name": "[Employee].[Emergency Contact Name].[(All)]",
+            "childLevels": [
+              {
+                "name": "Emergency Contact Name"
+              }
+            ]
+          },
+          {
+            "name": "Emergency Contact Name"
+          }
+        ]
+      }
+    }
+  }
+}

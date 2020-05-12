@@ -1,0 +1,71 @@
+{
+  "presentationTable": {
+    "name": "Employees",
+    "presentationColumns": [
+      {
+        "name": "EmployeeID",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Employees.EmployeeID"
+      },
+      {
+        "name": "LastName",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Employees.LastName"
+      },
+      {
+        "name": "FirstName",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Employees.FirstName"
+      },
+      {
+        "name": "Title",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Employees.Title"
+      },
+      {
+        "name": "TitleOfCourtesy",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Employees.TitleOfCourtesy"
+      },
+      {
+        "name": "BirthDate",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Employees.BirthDate"
+      },
+      {
+        "name": "HireDate",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Employees.HireDate"
+      },
+      {
+        "name": "Address",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Employees.Address"
+      },
+      {
+        "name": "City",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Employees.City"
+      },
+      {
+        "name": "Region",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Employees.Region"
+      },
+      {
+        "name": "PostalCode",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Employees.PostalCode"
+      },
+      {
+        "name": "Country",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Employees.Country"
+      },
+      {
+        "name": "HomePhone",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Employees.HomePhone"
+      },
+      {
+        "name": "Extension",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Employees.Extension"
+      },
+      {
+        "name": "Notes",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Employees.Notes"
+      },
+      {
+        "name": "ReportsTo",
+        "sourceLogicalColumn": "logicalColumn:TransactionalNorthwinds.Employees.ReportsTo"
+      }
+    ]
+  }
+}

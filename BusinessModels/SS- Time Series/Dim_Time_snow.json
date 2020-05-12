@@ -1,0 +1,741 @@
+{
+  "logicalTable": {
+    "name": "Dim_Time_snow",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "CALENDAR_DATETIME",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "W_TimeSnow_Alias",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.W_DAY_D_Alias.CALENDAR_DATETIME"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "day_ROW_WID",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "W_TimeSnow_Alias",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.W_DAY_D_Alias.ROW_WID"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "CAL_MONTH",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "W_TimeSnow_Alias",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.W_MONTH_D_alias.CAL_MONTH"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "month_ROW_WID",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "W_TimeSnow_Alias",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.W_MONTH_D_alias.ROW_WID"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "CAL_QTR",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "W_TimeSnow_Alias",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.W_MONTH_D_alias.CAL_QTR"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "qtr_ROW_WID",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "W_TimeSnow_Alias",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.W_QTR_D_alias.ROW_WID"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "CAL_YEAR",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "W_TimeSnow_Alias",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.W_Year_D_Alias.CAL_YEAR"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "year_ROW_WID",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "W_TimeSnow_Alias",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.W_Year_D_Alias.ROW_WID"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "CAL_WEEK",
+        "writeable": false,
+        "logicalColumnSource": [
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "W_TimeSnow_Alias",
+              "physicalExpression": {
+        "physicalExpression": {
+          "expressionTemplate": "%1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.W_DAY_D_Alias.CAL_WEEK"
+          ]
+        }
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    "keys": [
+            {
+              "name": "ROW_WID",
+              "isPrimary": "true",
+              "columns": [
+                "day_ROW_WID"
+              ]
+            }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "W_TimeSnow_Alias",
+        "logicalTableRef": "Dim_Time_snow",
+        "mappings": [
+          "columnMappings": [
+            {
+              "logicalColumn": "CALENDAR_DATETIME",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.W_DAY_D_Alias.CALENDAR_DATETIME"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "day_ROW_WID",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.W_DAY_D_Alias.ROW_WID"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "CAL_MONTH",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.W_MONTH_D_alias.CAL_MONTH"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "month_ROW_WID",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.W_MONTH_D_alias.ROW_WID"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "CAL_QTR",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.W_MONTH_D_alias.CAL_QTR"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "qtr_ROW_WID",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.W_QTR_D_alias.ROW_WID"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "CAL_YEAR",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.W_Year_D_Alias.CAL_YEAR"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "year_ROW_WID",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.W_Year_D_Alias.ROW_WID"
+                    ]
+                  }
+            },
+            {
+              "logicalColumn": "CAL_WEEK",
+                  "logicalExpression": {
+                    "expressionTemplate": "%1",
+                    "expressionObjects": [
+                      "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.W_DAY_D_Alias.CAL_WEEK"
+                    ]
+                  }
+            },
+          },
+        },
+        "physicalJoinOverrides": [
+          {
+            "startNodeTableRef": "W_DAY_D_Alias",
+            "joins": [
+              {
+                "type": "Inner",
+                "cardinality": "MANY TO ONE",
+                "physicalTable1Ref": "W_DAY_D_Alias",
+                "physicalTable2Ref": "W_MONTH_D_alias",
+                "physicalJoinRef": "W_DAY_D_Alias_FKey"
+              }
+            ]
+          },
+          {
+            "startNodeTableRef": "W_MONTH_D_alias",
+            "joins": [
+              {
+                "type": "Inner",
+                "cardinality": " ONE TO MANY",
+                "physicalTable1Ref": "W_MONTH_D_alias",
+                "physicalTable2Ref": "W_DAY_D_Alias",
+                "physicalJoinRef": "W_DAY_D_Alias_FKey"
+              }
+              {
+                "type": "Inner",
+                "cardinality": "MANY TO ONE",
+                "physicalTable1Ref": "W_MONTH_D_alias",
+                "physicalTable2Ref": "W_QTR_D_alias",
+                "physicalJoinRef": "W_MONTH_D_alias_FKey"
+              }
+            ]
+          },
+          {
+            "startNodeTableRef": "W_QTR_D_alias",
+            "joins": [
+              {
+                "type": "Inner",
+                "cardinality": " ONE TO MANY",
+                "physicalTable1Ref": "W_QTR_D_alias",
+                "physicalTable2Ref": "W_MONTH_D_alias",
+                "physicalJoinRef": "W_MONTH_D_alias_FKey"
+              }
+              {
+                "type": "Inner",
+                "cardinality": "MANY TO ONE",
+                "physicalTable1Ref": "W_QTR_D_alias",
+                "physicalTable2Ref": "W_Year_D_Alias",
+                "physicalJoinRef": "W_QTR_D_alias_FKey"
+              }
+            ]
+          },
+          {
+            "startNodeTableRef": "W_Year_D_Alias",
+            "joins": [
+              {
+                "type": "Inner",
+                "cardinality": " ONE TO MANY",
+                "physicalTable1Ref": "W_Year_D_Alias",
+                "physicalTable2Ref": "W_QTR_D_alias",
+                "physicalJoinRef": "W_QTR_D_alias_FKey"
+              }
+            ]
+          }
+        ]
+      },
+    ],
+    "dimension": {
+      "name": "Time_Snow",
+      "isTimeDim": "true",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "defaultRootLevelRef": "Total Time",
+      "levels": [
+        {
+          "name": "Total Time",
+          "memberCount": 1,
+          "levelConst": "Total Time",
+          "childLevels": [
+            {
+              "name": "Year",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Year",
+              "keys": [
+                {
+                  "name": "year_ROW_WID",
+                  "isPrimary": "true",
+                  "columns": [
+                    "year_ROW_WID"
+                  ]
+                }
+              ],
+              "childLevels": [
+                {
+                  "name": "Month",
+                  "isGTA": false,
+                  "memberCount": 1,
+                  "levelConst": "Month",
+                  "keys": [
+                    {
+                      "name": "month_ROW_WID",
+                      "isPrimary": "true",
+                      "columns": [
+                        "month_ROW_WID"
+                      ]
+                    }
+                  ],
+                  "childLevels": [
+                    {
+                      "name": "Day",
+                      "isGTA": false,
+                      "memberCount": 1,
+                      "levelConst": "Day",
+                      "keys": [
+                        {
+                          "name": "day_ROW_WID",
+                          "isPrimary": "true",
+                          "columns": [
+                            "day_ROW_WID"
+                          ]
+                        }
+                      ],
+                      "columns": [
+                        "CALENDAR_DATETIME",
+                        "day_ROW_WID"
+                      ]
+                    }
+                  ],
+                  "columns": [
+                    "CAL_MONTH",
+                    "month_ROW_WID"
+                  ]
+                },
+                {
+                  "name": "Quarter",
+                  "isGTA": false,
+                  "memberCount": 1,
+                  "levelConst": "Quarter",
+                  "keys": [
+                    {
+                      "name": "Qtr_Key",
+                      "isPrimary": "true",
+                      "columns": [
+                        "CAL_QTR",
+                        "CAL_YEAR"
+                      ]
+                    }
+                  ],
+                  "childLevels": [
+                    {
+                      "name": "Day",
+                      "isGTA": false,
+                      "memberCount": 1,
+                      "levelConst": "Day",
+                      "keys": [
+                        {
+                          "name": "day_ROW_WID",
+                          "isPrimary": "true",
+                          "columns": [
+                            "day_ROW_WID"
+                          ]
+                        }
+                      ],
+                      "columns": [
+                        "CALENDAR_DATETIME",
+                        "day_ROW_WID"
+                      ]
+                    }
+                  ],
+                  "columns": [
+                    "CAL_QTR"
+                  ]
+                }
+              ],
+              "columns": [
+                "CAL_YEAR",
+                "year_ROW_WID"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Year",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Year",
+          "keys": [
+            {
+              "name": "year_ROW_WID",
+              "isPrimary": "true",
+              "columns": [
+                "year_ROW_WID"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Month",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Month",
+              "keys": [
+                {
+                  "name": "month_ROW_WID",
+                  "isPrimary": "true",
+                  "columns": [
+                    "month_ROW_WID"
+                  ]
+                }
+              ],
+              "childLevels": [
+                {
+                  "name": "Day",
+                  "isGTA": false,
+                  "memberCount": 1,
+                  "levelConst": "Day",
+                  "keys": [
+                    {
+                      "name": "day_ROW_WID",
+                      "isPrimary": "true",
+                      "columns": [
+                        "day_ROW_WID"
+                      ]
+                    }
+                  ],
+                  "columns": [
+                    "CALENDAR_DATETIME",
+                    "day_ROW_WID"
+                  ]
+                }
+              ],
+              "columns": [
+                "CAL_MONTH",
+                "month_ROW_WID"
+              ]
+            },
+            {
+              "name": "Quarter",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Quarter",
+              "keys": [
+                {
+                  "name": "Qtr_Key",
+                  "isPrimary": "true",
+                  "columns": [
+                    "CAL_QTR",
+                    "CAL_YEAR"
+                  ]
+                }
+              ],
+              "childLevels": [
+                {
+                  "name": "Day",
+                  "isGTA": false,
+                  "memberCount": 1,
+                  "levelConst": "Day",
+                  "keys": [
+                    {
+                      "name": "day_ROW_WID",
+                      "isPrimary": "true",
+                      "columns": [
+                        "day_ROW_WID"
+                      ]
+                    }
+                  ],
+                  "columns": [
+                    "CALENDAR_DATETIME",
+                    "day_ROW_WID"
+                  ]
+                }
+              ],
+              "columns": [
+                "CAL_QTR"
+              ]
+            }
+          ],
+          "columns": [
+            "CAL_YEAR",
+            "year_ROW_WID"
+          ]
+        },
+        {
+          "name": "Month",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Month",
+          "keys": [
+            {
+              "name": "month_ROW_WID",
+              "isPrimary": "true",
+              "columns": [
+                "month_ROW_WID"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Day",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Day",
+              "keys": [
+                {
+                  "name": "day_ROW_WID",
+                  "isPrimary": "true",
+                  "columns": [
+                    "day_ROW_WID"
+                  ]
+                }
+              ],
+              "columns": [
+                "CALENDAR_DATETIME",
+                "day_ROW_WID"
+              ]
+            }
+          ],
+          "columns": [
+            "CAL_MONTH",
+            "month_ROW_WID"
+          ]
+        },
+        {
+          "name": "Day",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Day",
+          "keys": [
+            {
+              "name": "day_ROW_WID",
+              "isPrimary": "true",
+              "columns": [
+                "day_ROW_WID"
+              ]
+            }
+          ],
+          "columns": [
+            "CALENDAR_DATETIME",
+            "day_ROW_WID"
+          ]
+        },
+        {
+          "name": "Quarter",
+          "isGTA": false,
+          "memberCount": 1,
+          "levelConst": "Quarter",
+          "keys": [
+            {
+              "name": "Qtr_Key",
+              "isPrimary": "true",
+              "columns": [
+                "CAL_QTR",
+                "CAL_YEAR"
+              ]
+            }
+          ],
+          "childLevels": [
+            {
+              "name": "Day",
+              "isGTA": false,
+              "memberCount": 1,
+              "levelConst": "Day",
+              "keys": [
+                {
+                  "name": "day_ROW_WID",
+                  "isPrimary": "true",
+                  "columns": [
+                    "day_ROW_WID"
+                  ]
+                }
+              ],
+              "columns": [
+                "CALENDAR_DATETIME",
+                "day_ROW_WID"
+              ]
+            }
+          ],
+          "columns": [
+            "CAL_QTR"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Time_Snow",
+        "levels": [
+          {
+            "name": "Total Time",
+            "childLevels": [
+              {
+                "name": "Year",
+                "childLevels": [
+                  {
+                    "name": "Month",
+                    "childLevels": [
+                      {
+                        "name": "Day"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Quarter",
+                    "childLevels": [
+                      {
+                        "name": "Day"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Year",
+            "childLevels": [
+              {
+                "name": "Month",
+                "childLevels": [
+                  {
+                    "name": "Day"
+                  }
+                ]
+              },
+              {
+                "name": "Quarter",
+                "childLevels": [
+                  {
+                    "name": "Day"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Month",
+            "childLevels": [
+              {
+                "name": "Day"
+              }
+            ]
+          },
+          {
+            "name": "Day"
+          },
+          {
+            "name": "Quarter",
+            "childLevels": [
+              {
+                "name": "Day"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

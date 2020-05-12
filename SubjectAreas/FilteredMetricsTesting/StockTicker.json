@@ -1,0 +1,31 @@
+{
+  "presentationTable": {
+    "name": "StockTicker",
+    "presentationColumns": [
+      {
+        "name": "Company Name",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.StockTicker.Company Name"
+      },
+      {
+        "name": "Symbol",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.StockTicker.Symbol"
+      },
+      {
+        "name": "Last",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.StockTicker.Last"
+      },
+      {
+        "name": "Change",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.StockTicker.Change"
+      },
+      {
+        "name": "% Change",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.StockTicker.% Change"
+      },
+      {
+        "name": "Volume",
+        "sourceLogicalColumn": "logicalColumn:SS-FilteredMetricsTesting.StockTicker.Volume"
+      }
+    ]
+  }
+}
