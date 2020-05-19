@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Year Opened",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Reseller].[Year Opened].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Year Opened.[Reseller].[Year Opened].[(All)]"
       },
@@ -31,14 +30,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Year Opened.Year Opened#5"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Year Opened",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Reseller].[Year Opened].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Reseller].[Year Opened].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Year Opened.[Reseller].[Year Opened].[(All)]"
               }
@@ -46,15 +42,12 @@
           },
           {
             "name": "Year Opened",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Year Opened#5",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Year Opened.Year Opened#5"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

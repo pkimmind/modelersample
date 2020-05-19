@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Customer Geography",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Customer].[Customer Geography].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer Geography.[Customer].[Customer Geography].[(All)]"
       },
@@ -195,14 +194,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer Geography.Yearly Income#1"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Customer Geography",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Customer].[Customer Geography].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Customer].[Customer Geography].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer Geography.[Customer].[Customer Geography].[(All)]"
               }
@@ -210,8 +206,7 @@
           },
           {
             "name": "Country",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Country#1",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer Geography.Country#1"
               }
@@ -219,8 +214,7 @@
           },
           {
             "name": "State-Province",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "State-Province#1",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer Geography.State-Province#1"
               }
@@ -228,8 +222,7 @@
           },
           {
             "name": "City",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "City#1",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer Geography.City#1"
               }
@@ -237,8 +230,7 @@
           },
           {
             "name": "Postal Code",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Postal Code#1",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer Geography.Postal Code#1"
               }
@@ -246,15 +238,12 @@
           },
           {
             "name": "Customer",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Customer#1",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer Geography.Customer#1"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "City#1",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Geography].[City].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City#1.[Geography].[City].[(All)]"
       },
@@ -43,14 +42,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City#1.State-Province#4"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "City#1",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Geography].[City].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Geography].[City].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City#1.[Geography].[City].[(All)]"
               }
@@ -58,15 +54,12 @@
           },
           {
             "name": "City",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "City#4",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City#1.City#4"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Stock Level",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Product].[Stock Level].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.[Product].[Stock Level].[(All)]"
       },
@@ -131,14 +130,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.Weight#2"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Stock Level",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Product].[Stock Level].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Product].[Stock Level].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.[Product].[Stock Level].[(All)]"
               }
@@ -146,8 +142,7 @@
           },
           {
             "name": "Safety Stock Level",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Safety Stock Level#3",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.Safety Stock Level#3"
               }
@@ -155,15 +150,12 @@
           },
           {
             "name": "Product",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Product#2",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.Product#2"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

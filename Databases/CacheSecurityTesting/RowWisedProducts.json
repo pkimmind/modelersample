@@ -3,6 +3,7 @@
     "name": "RowWisedProducts",
     "sourceType": "SELECT",
     "caching": {
+      "enable": true,
       "expiryTime": 1,
       "expiryUnit": "DAYS"
     },
@@ -13,11 +14,11 @@
 where ProductName in (VALUELISTOF(NQ_SESSION.CacheRwVars))"
       }
     ],
-    "physicalColumns": [
-      {
+    "physicalColumns": [ {
         "name": "ProductName",
         "dataType": "VARCHAR",
-        "length": 100
+        "length": 100,
+        "nullable": true
       }
     ]
   }

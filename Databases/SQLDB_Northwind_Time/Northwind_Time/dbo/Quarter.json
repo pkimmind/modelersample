@@ -4,6 +4,7 @@
     "description": "Example with different physical SQL for different database types.",
     "sourceType": "SELECT",
     "caching": {
+      "enable": true
     },
     "selectStatements": [
       {
@@ -82,19 +83,21 @@ datepart(quarter, OrderDate) as QTR_NUM
 from Orders"
       }
     ],
-    "physicalColumns": [
-      {
+    "physicalColumns": [ {
         "name": "YEAR_NUM",
-        "dataType": "SMALLINT"
+        "dataType": "SMALLINT",
+        "nullable": true
       },
       {
         "name": "QTR",
         "dataType": "VARCHAR",
-        "length": 5
+        "length": 5,
+        "nullable": true
       },
       {
         "name": "QTR_NUM",
-        "dataType": "SMALLINT"
+        "dataType": "SMALLINT",
+        "nullable": true
       }
     ]
   }

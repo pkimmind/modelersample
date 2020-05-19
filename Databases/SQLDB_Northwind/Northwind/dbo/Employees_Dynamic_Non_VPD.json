@@ -3,6 +3,7 @@
     "name": "Employees_Dynamic_Non_VPD",
     "sourceType": "SELECT",
     "caching": {
+      "enable": true,
       "expiryTime": 1,
       "expiryUnit": "DAYS"
     },
@@ -12,10 +13,10 @@
         "query": "select case when upper('valueof(NQ_SESSION.USER)') = 'WEBLOGIC' then  2 * employeeid   else employeeid   end  as employeeidVariable from employees"
       }
     ],
-    "physicalColumns": [
-      {
+    "physicalColumns": [ {
         "name": "employeeidVariable",
-        "dataType": "INT"
+        "dataType": "INT",
+        "nullable": true
       }
     ]
   }

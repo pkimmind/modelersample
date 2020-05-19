@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Employees_Country",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "EmployeeCountry",
         "sourceLogicalColumn": "logicalColumn:CacheSecurityTesting.Employees_Country.EmployeeCountry"
       },
@@ -11,17 +10,11 @@
         "sourceLogicalColumn": "logicalColumn:CacheSecurityTesting.Employees_Country.Revenue"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Employees",
-        "levels": [
-          {
-            "name": "All Employees",
-            "displayColumns": [
-            ]
+        "levels": [ {
+            "name": "All Employees"
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

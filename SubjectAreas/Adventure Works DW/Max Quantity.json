@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Max Quantity",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Promotion].[Max Quantity].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Max Quantity.[Promotion].[Max Quantity].[(All)]"
       },
@@ -35,14 +34,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Max Quantity.NAME#226"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Max Quantity",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Promotion].[Max Quantity].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Promotion].[Max Quantity].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Max Quantity.[Promotion].[Max Quantity].[(All)]"
               }
@@ -50,15 +46,12 @@
           },
           {
             "name": "Max Quantity",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Max Quantity",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Max Quantity.Max Quantity"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

@@ -2,12 +2,13 @@
   "physicalTable": {
     "name": "geog",
     "caching": {
+      "enable": true
     },
-    "physicalColumns": [
-      {
+    "physicalColumns": [ {
         "name": "GEOGKEY",
         "dataType": "INT",
-        "length": 10
+        "length": 10,
+        "nullable": true
       },
       {
         "name": "GEOGDESC",

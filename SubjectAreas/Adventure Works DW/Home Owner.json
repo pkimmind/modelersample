@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Home Owner",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Customer].[Home Owner].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Home Owner.[Customer].[Home Owner].[(All)]"
       },
@@ -35,14 +34,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Home Owner.NAME#32"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Home Owner",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Customer].[Home Owner].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Customer].[Home Owner].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Home Owner.[Customer].[Home Owner].[(All)]"
               }
@@ -50,15 +46,12 @@
           },
           {
             "name": "Home Owner",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Home Owner#2",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Home Owner.Home Owner#2"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

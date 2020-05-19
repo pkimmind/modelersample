@@ -4,6 +4,7 @@
     "description": "If we change the database type to SQLServer65, then the following SQL should be used instead: select distinct datepart(year, orderdate) from orders",
     "sourceType": "SELECT",
     "caching": {
+      "enable": true
     },
     "selectStatements": [
       {
@@ -11,10 +12,10 @@
         "query": "select distinct {fn year(OrderDate)} as year from Orders"
       }
     ],
-    "physicalColumns": [
-      {
+    "physicalColumns": [ {
         "name": "Year",
-        "dataType": "SMALLINT"
+        "dataType": "SMALLINT",
+        "nullable": true
       }
     ]
   }

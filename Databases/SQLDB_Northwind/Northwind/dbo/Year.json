@@ -4,6 +4,7 @@
     "description": "Example with different physical SQL for different database types.",
     "sourceType": "SELECT",
     "caching": {
+      "enable": true
     },
     "selectStatements": [
       {
@@ -59,10 +60,10 @@
         "query": "select distinct {fn year(OrderDate)} as year from Orders"
       }
     ],
-    "physicalColumns": [
-      {
+    "physicalColumns": [ {
         "name": "Year",
-        "dataType": "SMALLINT"
+        "dataType": "SMALLINT",
+        "nullable": true
       }
     ]
   }

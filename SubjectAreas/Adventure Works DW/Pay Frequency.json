@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Pay Frequency",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Employee].[Pay Frequency].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Pay Frequency.[Employee].[Pay Frequency].[(All)]"
       },
@@ -35,14 +34,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Pay Frequency.Pay Frequency#7"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Pay Frequency",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Employee].[Pay Frequency].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Employee].[Pay Frequency].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Pay Frequency.[Employee].[Pay Frequency].[(All)]"
               }
@@ -50,15 +46,12 @@
           },
           {
             "name": "Pay Frequency",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Pay Frequency#7",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Pay Frequency.Pay Frequency#7"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

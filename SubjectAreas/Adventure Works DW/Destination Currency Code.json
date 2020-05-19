@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Destination Currency Code",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Destination Currency].[Destination Currency Code].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Destination Currency Code.[Destination Currency].[Destination Currency Code].[(All)]"
       },
@@ -39,14 +38,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Destination Currency Code.NAME#110"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Destination Currency Code",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Destination Currency].[Destination Currency Code].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Destination Currency].[Destination Currency Code].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Destination Currency Code.[Destination Currency].[Destination Currency Code].[(All)]"
               }
@@ -54,15 +50,12 @@
           },
           {
             "name": "Destination Currency Code",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Destination Currency Code",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Destination Currency Code.Destination Currency Code"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Scenario",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "KEY0#385",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Scenario.KEY0#385"
       },
@@ -19,21 +18,16 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Scenario.Scenario"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Scenario",
-        "levels": [
-          {
+        "levels": [ {
             "name": "Scenario",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Scenario",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Scenario.Scenario"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

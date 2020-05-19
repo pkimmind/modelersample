@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Reseller",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Reseller].[Reseller].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller.[Reseller].[Reseller].[(All)]"
       },
@@ -95,14 +94,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller.Year Opened"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Reseller",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Reseller].[Reseller].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Reseller].[Reseller].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller.[Reseller].[Reseller].[(All)]"
               }
@@ -110,15 +106,12 @@
           },
           {
             "name": "Reseller",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Reseller",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller.Reseller"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

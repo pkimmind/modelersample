@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Carrier Tracking Number#2",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Sales Summary Order Details].[Carrier Tracking Number].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Carrier Tracking Number#2.[Sales Summary Order Details].[Carrier Tracking Number].[(All)]"
       },
@@ -31,14 +30,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Carrier Tracking Number#2.NAME#286"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Carrier Tracking Number#2",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Sales Summary Order Details].[Carrier Tracking Number].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Sales Summary Order Details].[Carrier Tracking Number].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Carrier Tracking Number#2.[Sales Summary Order Details].[Carrier Tracking Number].[(All)]"
               }
@@ -46,15 +42,12 @@
           },
           {
             "name": "Carrier Tracking Number",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Carrier Tracking Number#4",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Carrier Tracking Number#2.Carrier Tracking Number#4"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

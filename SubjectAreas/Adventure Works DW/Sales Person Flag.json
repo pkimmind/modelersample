@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Sales Person Flag",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Employee].[Sales Person Flag].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Person Flag.[Employee].[Sales Person Flag].[(All)]"
       },
@@ -35,14 +34,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Person Flag.Sales Person Flag#7"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Sales Person Flag",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Employee].[Sales Person Flag].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Employee].[Sales Person Flag].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Person Flag.[Employee].[Sales Person Flag].[(All)]"
               }
@@ -50,15 +46,12 @@
           },
           {
             "name": "Sales Person Flag",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Sales Person Flag#7",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Person Flag.Sales Person Flag#7"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

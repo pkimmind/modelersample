@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Phone",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Customer].[Phone].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Phone.[Customer].[Phone].[(All)]"
       },
@@ -31,14 +30,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Phone.Phone#2"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Phone",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Customer].[Phone].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Customer].[Phone].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Phone.[Customer].[Phone].[(All)]"
               }
@@ -46,15 +42,12 @@
           },
           {
             "name": "Phone",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Phone#2",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Phone.Phone#2"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

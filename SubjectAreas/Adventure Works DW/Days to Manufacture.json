@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Days to Manufacture",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Product].[Days to Manufacture].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Days to Manufacture.[Product].[Days to Manufacture].[(All)]"
       },
@@ -31,14 +30,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Days to Manufacture.NAME#181"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Days to Manufacture",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Product].[Days to Manufacture].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Product].[Days to Manufacture].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Days to Manufacture.[Product].[Days to Manufacture].[(All)]"
               }
@@ -46,15 +42,12 @@
           },
           {
             "name": "Days to Manufacture",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Days to Manufacture",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Days to Manufacture.Days to Manufacture"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

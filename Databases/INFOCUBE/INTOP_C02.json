@@ -3,21 +3,23 @@
     "name": "INTOP_C02",
     "extName": "$INTOP_C02",
     "caching": {
+      "enable": true
     },
     "memberReference": "Default",
+    "isMemberAliasUnique": true,
     "DBMap": [
       {
         "name": "DEFAULT",
         "value": "$INTOP_C02"
       }
     ],
-    "columns": [
-      {
+    "columns": [ {
         "name": "COGS",
         "extName": "COGS",
         "aggrType": "sum",
         "dataType": "DOUBLE",
         "length": 128,
+        "nullable": true,
         "dimPropType": "uda"
       },
       {
@@ -26,6 +28,7 @@
         "aggrType": "sum",
         "dataType": "DOUBLE",
         "length": 128,
+        "nullable": true,
         "dimPropType": "uda"
       },
       {
@@ -34,6 +37,7 @@
         "aggrType": "sum",
         "dataType": "DOUBLE",
         "length": 128,
+        "nullable": true,
         "dimPropType": "uda"
       },
       {
@@ -42,6 +46,7 @@
         "aggrType": "sum",
         "dataType": "DOUBLE",
         "length": 128,
+        "nullable": true,
         "dimPropType": "uda"
       },
       {
@@ -50,6 +55,7 @@
         "aggrType": "sum",
         "dataType": "DOUBLE",
         "length": 128,
+        "nullable": true,
         "dimPropType": "uda"
       },
       {
@@ -58,6 +64,7 @@
         "aggrType": "sum",
         "dataType": "DOUBLE",
         "length": 128,
+        "nullable": true,
         "dimPropType": "uda"
       },
       {
@@ -66,6 +73,7 @@
         "aggrType": "sum",
         "dataType": "DOUBLE",
         "length": 128,
+        "nullable": true,
         "dimPropType": "uda"
       },
       {
@@ -74,6 +82,7 @@
         "aggrType": "sum",
         "dataType": "DOUBLE",
         "length": 128,
+        "nullable": true,
         "dimPropType": "uda"
       },
       {
@@ -82,6 +91,7 @@
         "aggrType": "sum",
         "dataType": "DOUBLE",
         "length": 128,
+        "nullable": true,
         "dimPropType": "uda"
       },
       {
@@ -90,6 +100,7 @@
         "aggrType": "sum",
         "dataType": "DOUBLE",
         "length": 128,
+        "nullable": true,
         "dimPropType": "uda"
       },
       {
@@ -98,6 +109,7 @@
         "aggrType": "sum",
         "dataType": "DOUBLE",
         "length": 128,
+        "nullable": true,
         "dimPropType": "uda"
       },
       {
@@ -105,544 +117,544 @@
         "extName": "LEVEL00",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "none",
-        "physicalLevelRef": "LEVEL00-0"
+        "nullable": true,
+        "dimPropType": "none"
       },
       {
         "name": "[2SKU]#2",
         "extName": "[2SKU]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL00-0"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[1SKU]#2",
         "extName": "[1SKU]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL00-0"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[2CAFFEIN]#2",
         "extName": "[2CAFFEIN]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL00-0"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[1CAFFEIN]#2",
         "extName": "[1CAFFEIN]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL00-0"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[2OUNCES]#2",
         "extName": "[2OUNCES]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL00-0"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[1OUNCES]#2",
         "extName": "[1OUNCES]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL00-0"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[2PKGTYPE]#2",
         "extName": "[2PKGTYPE]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL00-0"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[1PKGTYPE]#2",
         "extName": "[1PKGTYPE]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL00-0"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[2SKUCODE]#2",
         "extName": "[2SKUCODE]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL00-0"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[1SKUCODE]#2",
         "extName": "[1SKUCODE]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL00-0"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[2SKUINTRDT]#2",
         "extName": "[2SKUINTRDT]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL00-0"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "sku",
         "extName": "LEVEL01",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "none",
-        "physicalLevelRef": "LEVEL01-1"
+        "nullable": true,
+        "dimPropType": "none"
       },
       {
         "name": "[2SKU]#3",
         "extName": "[2SKU]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL01-1"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[1SKU]#3",
         "extName": "[1SKU]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL01-1"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[2CAFFEIN]#3",
         "extName": "[2CAFFEIN]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL01-1"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[1CAFFEIN]#3",
         "extName": "[1CAFFEIN]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL01-1"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[2OUNCES]#3",
         "extName": "[2OUNCES]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL01-1"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "OUNCES",
         "extName": "1OUNCES",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL01-1"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[2PKGTYPE]#3",
         "extName": "[2PKGTYPE]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL01-1"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[1PKGTYPE]#3",
         "extName": "[1PKGTYPE]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL01-1"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[2SKUCODE]#3",
         "extName": "[2SKUCODE]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL01-1"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[1SKUCODE]#3",
         "extName": "[1SKUCODE]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL01-1"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[2SKUINTRDT]#3",
         "extName": "[2SKUINTRDT]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL01-1"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "LEVEL00#3",
         "extName": "LEVEL00",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "none",
-        "physicalLevelRef": "LEVEL00"
+        "nullable": true,
+        "dimPropType": "none"
       },
       {
         "name": "[2STATE_MKT]",
         "extName": "[2STATE_MKT]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL00"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[1STATE_MKT]",
         "extName": "[1STATE_MKT]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL00"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[2MKT_SIZE]",
         "extName": "[2MKT_SIZE]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL00"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[1MKT_SIZE]",
         "extName": "[1MKT_SIZE]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL00"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[2MKT_TYPE]",
         "extName": "[2MKT_TYPE]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL00"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[1MKT_TYPE]",
         "extName": "[1MKT_TYPE]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL00"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[2POPULATIO]",
         "extName": "[2POPULATIO]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL00"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[1POPULATIO]",
         "extName": "[1POPULATIO]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL00"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "STATE_MKT",
         "extName": "LEVEL01",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "none",
-        "physicalLevelRef": "LEVEL01"
+        "nullable": true,
+        "dimPropType": "none"
       },
       {
         "name": "[2STATE_MKT]#1",
         "extName": "[2STATE_MKT]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL01"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[1STATE_MKT]#1",
         "extName": "[1STATE_MKT]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL01"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[2MKT_SIZE]#1",
         "extName": "[2MKT_SIZE]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL01"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[1MKT_SIZE]#1",
         "extName": "[1MKT_SIZE]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL01"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[2MKT_TYPE]#1",
         "extName": "[2MKT_TYPE]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL01"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[1MKT_TYPE]#1",
         "extName": "[1MKT_TYPE]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL01"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[2POPULATIO]#1",
         "extName": "[2POPULATIO]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL01"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[1POPULATIO]#1",
         "extName": "[1POPULATIO]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL01"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "LEVEL00#6",
         "extName": "LEVEL00",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "none",
-        "physicalLevelRef": "LEVEL00"
+        "nullable": true,
+        "dimPropType": "none"
       },
       {
         "name": "[2SUPP_NAME]",
         "extName": "[2SUPP_NAME]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL00"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[1SUPP_NAME]",
         "extName": "[1SUPP_NAME]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL00"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[2ADDRESS]",
         "extName": "[2ADDRESS]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL00"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[1ADDRESS]",
         "extName": "[1ADDRESS]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL00"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[2CITY]",
         "extName": "[2CITY]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL00"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[1CITY]",
         "extName": "[1CITY]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL00"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[2STATE]",
         "extName": "[2STATE]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL00"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[1STATE]",
         "extName": "[1STATE]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL00"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[2ZIP]",
         "extName": "[2ZIP]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL00"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[1ZIP]",
         "extName": "[1ZIP]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL00"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "SUPP_NAME",
         "extName": "LEVEL01",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "none",
-        "physicalLevelRef": "LEVEL01"
+        "nullable": true,
+        "dimPropType": "none"
       },
       {
         "name": "[2SUPP_NAME]#1",
         "extName": "[2SUPP_NAME]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL01"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[1SUPP_NAME]#1",
         "extName": "[1SUPP_NAME]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL01"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[2ADDRESS]#1",
         "extName": "[2ADDRESS]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL01"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[1ADDRESS]#1",
         "extName": "[1ADDRESS]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL01"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[2CITY]#1",
         "extName": "[2CITY]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL01"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[1CITY]#1",
         "extName": "[1CITY]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL01"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[2STATE]#1",
         "extName": "[2STATE]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL01"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[1STATE]#1",
         "extName": "[1STATE]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL01"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[2ZIP]#1",
         "extName": "[2ZIP]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL01"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "[1ZIP]#1",
         "extName": "[1ZIP]",
         "dataType": "VARCHAR",
         "length": 128,
-        "dimPropType": "uda",
-        "physicalLevelRef": "LEVEL01"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "0CALYEAR:LEVEL00",
         "extName": "LEVEL00",
         "dataType": "VARCHAR",
         "length": 10,
-        "dimPropType": "none",
-        "physicalLevelRef": "LEVEL00"
+        "nullable": true,
+        "dimPropType": "none"
       },
       {
         "name": "Year",
         "extName": "LEVEL01",
         "dataType": "VARCHAR",
         "length": 10,
-        "dimPropType": "none",
-        "physicalLevelRef": "LEVEL01"
+        "nullable": true,
+        "dimPropType": "none"
       },
       {
         "name": "0CALQUARTER:Level00",
         "extName": "LEVEL00",
         "dataType": "VARCHAR",
         "length": 10,
-        "dimPropType": "none",
-        "physicalLevelRef": "LEVEL00"
+        "nullable": true,
+        "dimPropType": "none"
       },
       {
         "name": "Quarter",
         "extName": "LEVEL01",
         "dataType": "VARCHAR",
         "length": 10,
-        "dimPropType": "none",
-        "physicalLevelRef": "LEVEL01"
+        "nullable": true,
+        "dimPropType": "none"
       }
     ]
   }

@@ -5,11 +5,11 @@
     "caching": {
       "enable": false
     },
-    "physicalColumns": [
-      {
+    "physicalColumns": [ {
         "name": "c1",
         "dataType": "CHAR",
-        "length": 15
+        "length": 15,
+        "nullable": true
       }
     ]
   }

@@ -2,27 +2,31 @@
   "physicalTable": {
     "name": "sales_prod_emp",
     "caching": {
+      "enable": true
     },
-    "physicalColumns": [
-      {
+    "physicalColumns": [ {
         "name": "ProductID",
         "dataType": "INT",
-        "length": 10
+        "length": 10,
+        "nullable": true
       },
       {
         "name": "EmployeeID",
         "dataType": "SMALLINT",
-        "length": 5
+        "length": 5,
+        "nullable": true
       },
       {
         "name": "QtySold",
         "dataType": "INT",
-        "length": 10
+        "length": 10,
+        "nullable": true
       },
       {
         "name": "Revenue",
         "dataType": "DOUBLE",
-        "length": 10
+        "length": 10,
+        "nullable": true
       }
     ]
   }

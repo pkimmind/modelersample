@@ -4,22 +4,25 @@
     "description": "External Name:????
 ",
     "caching": {
+      "enable": true
     },
-    "physicalColumns": [
-      {
+    "physicalColumns": [ {
         "name": "DATASOURCE_NUM_ID",
         "dataType": "DOUBLE",
-        "length": 10
+        "length": 10,
+        "nullable": true
       },
       {
         "name": "INTEGRATION_ID",
         "dataType": "VARCHAR",
-        "length": 30
+        "length": 30,
+        "nullable": true
       },
       {
         "name": "ROW_WID",
         "dataType": "DOUBLE",
-        "length": 10
+        "length": 10,
+        "nullable": true
       },
       {
         "name": "CALENDAR_DATETIME",
@@ -59,7 +62,8 @@
       {
         "name": "DATETIME_KEY",
         "dataType": "DOUBLE",
-        "length": 15
+        "length": 15,
+        "nullable": true
       },
       {
         "name": "DAY_AGO_DT",

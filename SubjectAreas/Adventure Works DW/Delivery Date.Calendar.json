@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Delivery Date.Calendar",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Delivery Date].[Calendar].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar.[Delivery Date].[Calendar].[(All)]"
       },
@@ -163,14 +162,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar.Week of Year#4"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Delivery Date.Calendar",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Delivery Date].[Calendar].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Delivery Date].[Calendar].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar.[Delivery Date].[Calendar].[(All)]"
               }
@@ -178,8 +174,7 @@
           },
           {
             "name": "Calendar Year",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Calendar Year#3",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar.Calendar Year#3"
               }
@@ -187,8 +182,7 @@
           },
           {
             "name": "Calendar Semester",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Calendar Semester#2",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar.Calendar Semester#2"
               }
@@ -196,8 +190,7 @@
           },
           {
             "name": "Calendar Quarter",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Calendar Quarter#3",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar.Calendar Quarter#3"
               }
@@ -205,8 +198,7 @@
           },
           {
             "name": "Month",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Month#2",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar.Month#2"
               }
@@ -214,15 +206,12 @@
           },
           {
             "name": "Date",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Date#3",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar.Date#3"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

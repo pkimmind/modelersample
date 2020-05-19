@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Order Month",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Reseller].[Order Month].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Order Month.[Reseller].[Order Month].[(All)]"
       },
@@ -35,14 +34,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Order Month.Order Month"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Order Month",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Reseller].[Order Month].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Reseller].[Order Month].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Order Month.[Reseller].[Order Month].[(All)]"
               }
@@ -50,15 +46,12 @@
           },
           {
             "name": "Order Month",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Order Month",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Order Month.Order Month"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

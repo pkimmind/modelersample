@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Order Frequency",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Reseller].[Order Frequency].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Order Frequency.[Reseller].[Order Frequency].[(All)]"
       },
@@ -35,14 +34,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Order Frequency.Order Frequency"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Order Frequency",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Reseller].[Order Frequency].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Reseller].[Order Frequency].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Order Frequency.[Reseller].[Order Frequency].[(All)]"
               }
@@ -50,15 +46,12 @@
           },
           {
             "name": "Order Frequency",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Order Frequency",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Order Frequency.Order Frequency"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

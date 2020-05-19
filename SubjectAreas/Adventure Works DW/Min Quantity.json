@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Min Quantity",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Promotion].[Min Quantity].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Quantity.[Promotion].[Min Quantity].[(All)]"
       },
@@ -31,14 +30,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Quantity.NAME#227"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Min Quantity",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Promotion].[Min Quantity].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Promotion].[Min Quantity].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Quantity.[Promotion].[Min Quantity].[(All)]"
               }
@@ -46,15 +42,12 @@
           },
           {
             "name": "Min Quantity",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Min Quantity",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Quantity.Min Quantity"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

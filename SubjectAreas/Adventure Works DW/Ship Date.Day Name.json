@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Ship Date.Day Name",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Ship Date].[Day Name].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Day Name.[Ship Date].[Day Name].[(All)]"
       },
@@ -43,14 +42,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Day Name.TRAN1#26"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Ship Date.Day Name",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Ship Date].[Day Name].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Ship Date].[Day Name].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Day Name.[Ship Date].[Day Name].[(All)]"
               }
@@ -58,15 +54,12 @@
           },
           {
             "name": "Day Name",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Day Name#10",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Day Name.Day Name#10"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

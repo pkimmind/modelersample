@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Base Rate",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Employee].[Base Rate].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Base Rate.[Employee].[Base Rate].[(All)]"
       },
@@ -35,14 +34,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Base Rate.NAME#112"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Base Rate",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Employee].[Base Rate].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Employee].[Base Rate].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Base Rate.[Employee].[Base Rate].[(All)]"
               }
@@ -50,15 +46,12 @@
           },
           {
             "name": "Base Rate",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Base Rate",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Base Rate.Base Rate"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

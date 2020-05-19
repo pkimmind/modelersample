@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Birth Date",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Employee].[Birth Date].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Birth Date.[Employee].[Birth Date].[(All)]"
       },
@@ -31,14 +30,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Birth Date.NAME#113"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Birth Date",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Employee].[Birth Date].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Employee].[Birth Date].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Birth Date.[Employee].[Birth Date].[(All)]"
               }
@@ -46,15 +42,12 @@
           },
           {
             "name": "Birth Date",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Birth Date#2",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Birth Date.Birth Date#2"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

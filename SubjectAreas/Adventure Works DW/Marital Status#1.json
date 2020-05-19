@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Marital Status#1",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Employee].[Marital Status].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Marital Status#1.[Employee].[Marital Status].[(All)]"
       },
@@ -31,14 +30,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Marital Status#1.NAME#135"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Marital Status#1",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Employee].[Marital Status].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Employee].[Marital Status].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Marital Status#1.[Employee].[Marital Status].[(All)]"
               }
@@ -46,15 +42,12 @@
           },
           {
             "name": "Marital Status",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Marital Status#10",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Marital Status#1.Marital Status#10"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

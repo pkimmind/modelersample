@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "State-Province",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Customer].[State-Province].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.State-Province.[Customer].[State-Province].[(All)]"
       },
@@ -43,14 +42,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.State-Province.State-Province#3"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "State-Province",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Customer].[State-Province].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Customer].[State-Province].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.State-Province.[Customer].[State-Province].[(All)]"
               }
@@ -58,15 +54,12 @@
           },
           {
             "name": "State-Province",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "State-Province#3",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.State-Province.State-Province#3"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

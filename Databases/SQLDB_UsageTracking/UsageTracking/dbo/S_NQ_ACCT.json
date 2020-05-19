@@ -2,9 +2,9 @@
   "physicalTable": {
     "name": "S_NQ_ACCT",
     "caching": {
+      "enable": true
     },
-    "physicalColumns": [
-      {
+    "physicalColumns": [ {
         "name": "USER_NAME",
         "dataType": "VARCHAR",
         "length": 128
@@ -97,7 +97,8 @@
       {
         "name": "CACHE_IND_FLG",
         "dataType": "CHAR",
-        "length": 1
+        "length": 1,
+        "nullable": true
       },
       {
         "name": "QUERY_SRC_CD",
@@ -145,7 +146,8 @@
       {
         "name": "ID",
         "dataType": "VARCHAR",
-        "length": 50
+        "length": 50,
+        "nullable": true
       },
       {
         "name": "QUERY_BLOB",

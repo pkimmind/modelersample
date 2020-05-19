@@ -3,16 +3,17 @@
     "name": "Budget",
     "extName": "Budget",
     "caching": {
+      "enable": true
     },
     "memberReference": "Default",
+    "isMemberAliasUnique": true,
     "DBMap": [
       {
         "name": "DEFAULT",
         "value": "Budget"
       }
     ],
-    "columns": [
-      {
+    "columns": [ {
         "name": "Amount",
         "extName": "Amount",
         "aggrType": "sum",
@@ -24,64 +25,61 @@
         "extName": "Year",
         "dataType": "VARCHAR",
         "length": 10,
-        "dimPropType": "none",
-        "physicalLevelRef": "Year"
+        "nullable": true,
+        "dimPropType": "none"
       },
       {
         "name": "Quarter",
         "extName": "Quarter",
         "dataType": "VARCHAR",
         "length": 10,
-        "dimPropType": "none",
-        "physicalLevelRef": "Quarter"
+        "nullable": true,
+        "dimPropType": "none"
       },
       {
         "name": "Month",
         "extName": "Month",
         "dataType": "VARCHAR",
         "length": 10,
-        "dimPropType": "none",
-        "physicalLevelRef": "Month"
+        "nullable": true,
+        "dimPropType": "none"
       },
       {
         "name": "Store Country",
         "extName": "Store Country",
         "dataType": "VARCHAR",
         "length": 30,
-        "dimPropType": "none",
-        "physicalLevelRef": "Store Country"
+        "dimPropType": "none"
       },
       {
         "name": "Store State",
         "extName": "Store State",
         "dataType": "VARCHAR",
         "length": 20,
-        "dimPropType": "none",
-        "physicalLevelRef": "Store State"
+        "dimPropType": "none"
       },
       {
         "name": "Store City",
         "extName": "Store City",
         "dataType": "VARCHAR",
         "length": 30,
-        "dimPropType": "none",
-        "physicalLevelRef": "Store City"
+        "nullable": true,
+        "dimPropType": "none"
       },
       {
         "name": "Store Name",
         "extName": "Store Name",
         "dataType": "VARCHAR",
         "length": 20,
-        "dimPropType": "none",
-        "physicalLevelRef": "Store Name"
+        "nullable": true,
+        "dimPropType": "none"
       },
       {
         "name": "Category Description",
         "extName": "Category Description",
         "dataType": "VARCHAR",
         "length": 30,
-        "dimPropType": "none",
-        "physicalLevelRef": "Category Description"
+        "dimPropType": "none"
       }
     ]
   }

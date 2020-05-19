@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Customer",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Customer].[Customer].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer.[Customer].[Customer].[(All)]"
       },
@@ -99,14 +98,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer.Yearly Income"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Customer",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Customer].[Customer].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Customer].[Customer].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer.[Customer].[Customer].[(All)]"
               }
@@ -114,15 +110,12 @@
           },
           {
             "name": "Customer",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Customer",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer.Customer"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

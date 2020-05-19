@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Business Type",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Reseller].[Business Type].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Business Type.[Reseller].[Business Type].[(All)]"
       },
@@ -31,14 +30,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Business Type.NAME#244"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Business Type",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Reseller].[Business Type].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Reseller].[Business Type].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Business Type.[Reseller].[Business Type].[(All)]"
               }
@@ -46,15 +42,12 @@
           },
           {
             "name": "Business Type",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Business Type",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Business Type.Business Type"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

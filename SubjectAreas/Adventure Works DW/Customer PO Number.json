@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Customer PO Number",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Internet Sales Order Details].[Customer PO Number].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer PO Number.[Internet Sales Order Details].[Customer PO Number].[(All)]"
       },
@@ -31,14 +30,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer PO Number.NAME#165"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Customer PO Number",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Internet Sales Order Details].[Customer PO Number].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Internet Sales Order Details].[Customer PO Number].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer PO Number.[Internet Sales Order Details].[Customer PO Number].[(All)]"
               }
@@ -46,15 +42,12 @@
           },
           {
             "name": "Customer PO Number",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Customer PO Number",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer PO Number.Customer PO Number"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

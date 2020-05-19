@@ -3,52 +3,54 @@
     "name": "Sales",
     "extName": "Sales",
     "caching": {
+      "enable": true
     },
     "memberReference": "Default",
+    "isMemberAliasUnique": true,
     "DBMap": [
       {
         "name": "DEFAULT",
         "value": "Sales"
       }
     ],
-    "columns": [
-      {
+    "columns": [ {
         "name": "Year",
         "extName": "Year",
         "dataType": "VARCHAR",
         "length": 8,
-        "dimPropType": "none",
-        "physicalLevelRef": "Year"
+        "nullable": true,
+        "dimPropType": "none"
       },
       {
         "name": "Quarter",
         "extName": "Quarter",
         "dataType": "VARCHAR",
         "length": 10,
-        "dimPropType": "none",
-        "physicalLevelRef": "Quarter"
+        "nullable": true,
+        "dimPropType": "none"
       },
       {
         "name": "Store Country",
         "extName": "Store Country",
         "dataType": "VARCHAR",
         "length": 10,
-        "dimPropType": "none",
-        "physicalLevelRef": "Store Country"
+        "nullable": true,
+        "dimPropType": "none"
       },
       {
         "name": "Store State",
         "extName": "Store State",
         "dataType": "VARCHAR",
         "length": 10,
-        "dimPropType": "none",
-        "physicalLevelRef": "Store State"
+        "nullable": true,
+        "dimPropType": "none"
       },
       {
         "name": "Unit Sales",
         "extName": "Unit Sales",
         "aggrType": "sum",
         "dataType": "DOUBLE",
+        "nullable": true,
         "dimPropType": "uda"
       },
       {
@@ -62,104 +64,94 @@
         "name": "Store Sqft",
         "extName": "Store Sqft",
         "dataType": "DOUBLE",
-        "dimPropType": "uda",
-        "physicalLevelRef": "Store Name"
+        "dimPropType": "uda"
       },
       {
         "name": "Store Name",
         "extName": "Store Name",
         "dataType": "VARCHAR",
         "length": 10,
-        "dimPropType": "none",
-        "physicalLevelRef": "Store Name"
+        "nullable": true,
+        "dimPropType": "none"
       },
       {
         "name": "Country",
         "extName": "Country",
         "dataType": "VARCHAR",
         "length": 255,
-        "dimPropType": "none",
-        "physicalLevelRef": "Country"
+        "dimPropType": "none"
       },
       {
         "name": "State Province",
         "extName": "State Province",
         "dataType": "VARCHAR",
         "length": 20,
-        "dimPropType": "none",
-        "physicalLevelRef": "State Province"
+        "dimPropType": "none"
       },
       {
         "name": "City",
         "extName": "City",
         "dataType": "VARCHAR",
         "length": 10,
-        "dimPropType": "none",
-        "physicalLevelRef": "City"
+        "dimPropType": "none"
       },
       {
         "name": "Name",
         "extName": "Name",
         "dataType": "VARCHAR",
         "length": 40,
-        "dimPropType": "none",
-        "physicalLevelRef": "Name"
+        "dimPropType": "none"
       },
       {
         "name": "Gender",
         "extName": "Gender",
         "dataType": "VARCHAR",
         "length": 30,
-        "dimPropType": "uda",
-        "physicalLevelRef": "Name"
+        "dimPropType": "uda"
       },
       {
         "name": "Marital Status",
         "extName": "Marital Status",
         "dataType": "VARCHAR",
         "length": 30,
-        "dimPropType": "uda",
-        "physicalLevelRef": "Name"
+        "dimPropType": "uda"
       },
       {
         "name": "Education",
         "extName": "Education",
         "dataType": "VARCHAR",
         "length": 30,
-        "dimPropType": "uda",
-        "physicalLevelRef": "Name"
+        "dimPropType": "uda"
       },
       {
         "name": "Yearly Income",
         "extName": "Yearly Income",
         "dataType": "VARCHAR",
         "length": 30,
-        "dimPropType": "uda",
-        "physicalLevelRef": "Name"
+        "dimPropType": "uda"
       },
       {
         "name": "Member Card",
         "extName": "Member Card",
         "dataType": "VARCHAR",
         "length": 50,
-        "dimPropType": "uda",
-        "physicalLevelRef": "Name"
+        "dimPropType": "uda"
       },
       {
         "name": "Store Manager",
         "extName": "Store Manager",
         "dataType": "VARCHAR",
         "length": 30,
-        "dimPropType": "uda",
-        "physicalLevelRef": "Store Name"
+        "nullable": true,
+        "dimPropType": "uda"
       },
       {
         "name": "Store City",
         "extName": "Store City",
         "dataType": "VARCHAR",
         "length": 30,
-        "dimPropType": "none",
-        "physicalLevelRef": "Store City"
+        "nullable": true,
+        "dimPropType": "none"
       }
     ]
   }

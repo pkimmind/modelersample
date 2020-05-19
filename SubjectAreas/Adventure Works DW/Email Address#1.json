@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Email Address#1",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Employee].[Email Address].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Email Address#1.[Employee].[Email Address].[(All)]"
       },
@@ -31,14 +30,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Email Address#1.NAME#115"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Email Address#1",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Employee].[Email Address].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Employee].[Email Address].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Email Address#1.[Employee].[Email Address].[(All)]"
               }
@@ -46,15 +42,12 @@
           },
           {
             "name": "Email Address",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Email Address#3",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Email Address#1.Email Address#3"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

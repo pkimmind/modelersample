@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Hire Date",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Employee].[Hire Date].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Hire Date.[Employee].[Hire Date].[(All)]"
       },
@@ -35,14 +34,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Hire Date.NAME#133"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Hire Date",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Employee].[Hire Date].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Employee].[Hire Date].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Hire Date.[Employee].[Hire Date].[(All)]"
               }
@@ -50,15 +46,12 @@
           },
           {
             "name": "Hire Date",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Hire Date#7",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Hire Date.Hire Date#7"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Product Model Categories",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Product].[Product Model Categories].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.[Product].[Product Model Categories].[(All)]"
       },
@@ -91,14 +90,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.TRAN1#17"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Product Model Categories",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Product].[Product Model Categories].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Product].[Product Model Categories].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.[Product].[Product Model Categories].[(All)]"
               }
@@ -106,8 +102,7 @@
           },
           {
             "name": "Category",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Category#4",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.Category#4"
               }
@@ -115,8 +110,7 @@
           },
           {
             "name": "Subcategory",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Subcategory#5",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.Subcategory#5"
               }
@@ -124,15 +118,12 @@
           },
           {
             "name": "Model",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Model",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.Model"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

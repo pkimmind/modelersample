@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Sick Leave Hours",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Employee].[Sick Leave Hours].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sick Leave Hours.[Employee].[Sick Leave Hours].[(All)]"
       },
@@ -35,14 +34,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sick Leave Hours.Sick Leave Hours#7"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Sick Leave Hours",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Employee].[Sick Leave Hours].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Employee].[Sick Leave Hours].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sick Leave Hours.[Employee].[Sick Leave Hours].[(All)]"
               }
@@ -50,15 +46,12 @@
           },
           {
             "name": "Sick Leave Hours",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Sick Leave Hours#7",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sick Leave Hours.Sick Leave Hours#7"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

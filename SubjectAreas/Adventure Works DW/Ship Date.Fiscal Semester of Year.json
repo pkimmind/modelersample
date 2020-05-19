@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Ship Date.Fiscal Semester of Year",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Ship Date].[Fiscal Semester of Year].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Fiscal Semester of Year.[Ship Date].[Fiscal Semester of Year].[(All)]"
       },
@@ -31,14 +30,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Fiscal Semester of Year.NAME#322"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Ship Date.Fiscal Semester of Year",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Ship Date].[Fiscal Semester of Year].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Ship Date].[Fiscal Semester of Year].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Fiscal Semester of Year.[Ship Date].[Fiscal Semester of Year].[(All)]"
               }
@@ -46,15 +42,12 @@
           },
           {
             "name": "Fiscal Semester of Year",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Fiscal Semester of Year#5",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Fiscal Semester of Year.Fiscal Semester of Year#5"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

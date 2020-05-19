@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Employees",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Employee].[Employees].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.[Employee].[Employees].[(All)]"
       },
@@ -599,14 +598,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Vacation Hours#6"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Employees",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Employee].[Employees].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Employee].[Employees].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.[Employee].[Employees].[(All)]"
               }
@@ -614,8 +610,7 @@
           },
           {
             "name": "Employee Level 02",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Employee Level 02",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Employee Level 02"
               }
@@ -623,8 +618,7 @@
           },
           {
             "name": "Employee Level 03",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Employee Level 03",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Employee Level 03"
               }
@@ -632,8 +626,7 @@
           },
           {
             "name": "Employee Level 04",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Employee Level 04",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Employee Level 04"
               }
@@ -641,8 +634,7 @@
           },
           {
             "name": "Employee Level 05",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Employee Level 05",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Employee Level 05"
               }
@@ -650,15 +642,12 @@
           },
           {
             "name": "Employee Level 06",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Employee Level 06",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Employee Level 06"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

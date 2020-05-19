@@ -2,12 +2,12 @@
   "physicalTable": {
     "name": "S_NQ_EPT",
     "isCacheable": false,
+    "isCacheEventTable": true,
     "caching": {
       "enable": false
     },
     "pollFreq": "6000",
-    "physicalColumns": [
-      {
+    "physicalColumns": [ {
         "name": "CATALOG_NAME",
         "dataType": "VARCHAR",
         "length": 120
@@ -30,17 +30,20 @@
       {
         "name": "TABLE_NAME",
         "dataType": "VARCHAR",
-        "length": 120
+        "length": 120,
+        "nullable": true
       },
       {
         "name": "UPDATE_TS",
         "dataType": "DATETIME",
-        "length": 120
+        "length": 120,
+        "nullable": true
       },
       {
         "name": "UPDATE_TYPE",
         "dataType": "DOUBLE",
-        "length": 10
+        "length": 10,
+        "nullable": true
       }
     ]
   }

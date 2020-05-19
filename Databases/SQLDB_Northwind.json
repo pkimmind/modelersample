@@ -14,23 +14,22 @@
       },
       {
         "name": "FRACTIONAL_SECOND_PRECISION",
-        "value": "0X0",
+        "value": "0X0"
       },
       {
         "name": "MAX_BULK_FETCH_BUFFER_SIZE",
-        "value": "0X50000",
+        "value": "0X50000"
       },
       {
         "name": "DEFAULT_BULK_FETCH_ROW_COUNT",
-        "value": "0X64",
+        "value": "0X64"
       },
       {
         "name": "MAX_COLUMNS_IN_INDEX",
-        "value": "0X0",
+        "value": "0X0"
       }
     ],
-    "connectionPools": [
-      {
+    "connectionPools": [ {
         "name": "Northwind Connections",
         "user": "northwind",
         "connectionTimeout": 1,
@@ -40,6 +39,7 @@
         "connection": "biserver-dev.us.oracle.com:1521/orcl",
         "type": "OCI10G",
         "requiresFullyQualifedTableNames": false,
+        "isSharedLogin": true,
         "multithreaded": false,
         "isCloseAfterEveryRequest": false,
         "outputType": "xml",
@@ -48,6 +48,7 @@
         "tempTablePrefix": "TT",
         "transactionBoundary": 10,
         "xmlaUseSession": false,
+        "supportParams": true,
         "isSiebelJDBSecured": false
       },
       {
@@ -60,6 +61,7 @@
         "connection": "biserver-dev.us.oracle.com:1521/orcl",
         "type": "OCI10G",
         "requiresFullyQualifedTableNames": false,
+        "isSharedLogin": true,
         "multithreaded": false,
         "isCloseAfterEveryRequest": false,
         "outputType": "xml",
@@ -68,25 +70,26 @@
         "tempTablePrefix": "TT",
         "transactionBoundary": 10,
         "xmlaUseSession": false,
+        "supportParams": true,
         "isSiebelJDBSecured": false
       }
-    ]
+    ],
     "joins": [
       {
         "join": "complex",
         "name": "SalesPlanToCategories",
         "cardinality": "UNKNOWN",
         "type": "Inner",
-        "leftTable": "Categories",
-        "rightTable": "SalesPlan",
+        "leftTable": "SQLDB_Northwind.Northwind.dbo.Categories",
+        "rightTable": "SQLDB_Northwind.Northwind.dbo.SalesPlan",
         "complexJoinCondition": {
-  "expression": {
-    "expressionTemplate": "%1 = %2",
-    "expressionObjects": [
-      "physicalColumn:SQLDB_Northwind.Northwind.dbo.SalesPlan.CategoryID",
-      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Categories.CategoryID"
-    ]
-  }
+          "expression": {
+            "expressionTemplate": "%1 = %2",
+            "expressionObjects": [
+              "physicalColumn:SQLDB_Northwind.Northwind.dbo.SalesPlan.CategoryID",
+              "physicalColumn:SQLDB_Northwind.Northwind.dbo.Categories.CategoryID"
+            ]
+          }
         }
       },
       {
@@ -94,16 +97,16 @@
         "name": "Complex Join",
         "cardinality": "UNKNOWN",
         "type": "Inner",
-        "leftTable": "Year",
-        "rightTable": "Orders",
+        "leftTable": "SQLDB_Northwind.Northwind.dbo.Year",
+        "rightTable": "SQLDB_Northwind.Northwind.dbo.Orders",
         "complexJoinCondition": {
-  "expression": {
-    "expressionTemplate": "%1 =  EXTRACT( YEAR  FROM %2)",
-    "expressionObjects": [
-      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Year.Year",
-      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.OrderDate"
-    ]
-  }
+          "expression": {
+            "expressionTemplate": "%1 =  EXTRACT( YEAR  FROM %2)",
+            "expressionObjects": [
+              "physicalColumn:SQLDB_Northwind.Northwind.dbo.Year.Year",
+              "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.OrderDate"
+            ]
+          }
         }
       },
       {
@@ -111,16 +114,16 @@
         "name": "stock_Customers",
         "cardinality": "UNKNOWN",
         "type": "Inner",
-        "leftTable": "Customers",
-        "rightTable": "stock",
+        "leftTable": "SQLDB_Northwind.Northwind.dbo.Customers",
+        "rightTable": "Stock Quotes...stock",
         "complexJoinCondition": {
-  "expression": {
-    "expressionTemplate": "%1 =  IFNULL(%2, 'NULL')",
-    "expressionObjects": [
-      "physicalColumn:Stock Quotes...stock.Symbol",
-      "physicalColumn:SQLDB_Northwind.Northwind.dbo.Customers.Ticker"
-    ]
-  }
+          "expression": {
+            "expressionTemplate": "%1 =  IFNULL(%2, 'NULL')",
+            "expressionObjects": [
+              "physicalColumn:Stock Quotes...stock.Symbol",
+              "physicalColumn:SQLDB_Northwind.Northwind.dbo.Customers.Ticker"
+            ]
+          }
         }
       }
     ]

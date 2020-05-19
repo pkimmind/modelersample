@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Number of Cars Owned",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Customer].[Number of Cars Owned].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Cars Owned.[Customer].[Number of Cars Owned].[(All)]"
       },
@@ -31,14 +30,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Cars Owned.Number of Cars Owned#2"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Number of Cars Owned",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Customer].[Number of Cars Owned].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Customer].[Number of Cars Owned].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Cars Owned.[Customer].[Number of Cars Owned].[(All)]"
               }
@@ -46,15 +42,12 @@
           },
           {
             "name": "Number of Cars Owned",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Number of Cars Owned#2",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Cars Owned.Number of Cars Owned#2"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

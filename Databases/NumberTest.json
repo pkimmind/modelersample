@@ -218,23 +218,22 @@
       },
       {
         "name": "FRACTIONAL_SECOND_PRECISION",
-        "value": "0X0",
+        "value": "0X0"
       },
       {
         "name": "MAX_BULK_FETCH_BUFFER_SIZE",
-        "value": "0X50000",
+        "value": "0X50000"
       },
       {
         "name": "DEFAULT_BULK_FETCH_ROW_COUNT",
-        "value": "0X64",
+        "value": "0X64"
       },
       {
         "name": "MAX_COLUMNS_IN_INDEX",
-        "value": "0X0",
+        "value": "0X0"
       }
     ],
-    "connectionPools": [
-      {
+    "connectionPools": [ {
         "name": "Connection Pool",
         "user": "northwind",
         "connectionTimeout": 5,
@@ -244,6 +243,7 @@
         "connection": "biserver-dev.us.oracle.com:1521/orcl",
         "type": "Default",
         "requiresFullyQualifedTableNames": false,
+        "isSharedLogin": true,
         "multithreaded": false,
         "isCloseAfterEveryRequest": false,
         "outputType": "xml",
@@ -252,6 +252,7 @@
         "tempTablePrefix": "TT",
         "transactionBoundary": 1000,
         "xmlaUseSession": false,
+        "supportParams": true,
         "isSiebelJDBSecured": false
       },
       {
@@ -264,6 +265,7 @@
         "connection": "biserver-dev:1521/ORCL",
         "type": "Default",
         "requiresFullyQualifedTableNames": false,
+        "isSharedLogin": true,
         "multithreaded": false,
         "isCloseAfterEveryRequest": false,
         "outputType": "xml",
@@ -272,22 +274,25 @@
         "tempTablePrefix": "TT",
         "transactionBoundary": 1000,
         "xmlaUseSession": false,
+        "supportParams": true,
         "isSiebelJDBSecured": false,
         "runOnConnectScripts": {
-          "Value": "select 1 from valueof(NQ_SESSION.TABLE_3)",
+          "isEnabled": true,
+          "Value": "select 1 from valueof(NQ_SESSION.TABLE_3)"
         }
         "runBeforeQueryScripts": {
-          "Value": "select 1 from valueof(NQ_SESSION.TABLE_2)",
+          "isEnabled": true,
+          "Value": "select 1 from valueof(NQ_SESSION.TABLE_2)"
         }
         "runAfterQueryScripts": {
-          "Value": "select 1 from valueof(NQ_SESSION.TABLE_1)",
+          "isEnabled": true,
+          "Value": "select 1 from valueof(NQ_SESSION.TABLE_1)"
         }
         "runOnDisconnectScripts": {
-          "Value": "select 1 from valueof(NQ_SESSION.TABLE_2)",
+          "isEnabled": true,
+          "Value": "select 1 from valueof(NQ_SESSION.TABLE_2)"
         }
       }
-    ]
-    "joins": [
     ]
   }
 }

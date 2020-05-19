@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Ship Date.Month of Year",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Ship Date].[Month of Year].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Month of Year.[Ship Date].[Month of Year].[(All)]"
       },
@@ -43,14 +42,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Month of Year.TRAN1#27"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Ship Date.Month of Year",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Ship Date].[Month of Year].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Ship Date].[Month of Year].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Month of Year.[Ship Date].[Month of Year].[(All)]"
               }
@@ -58,15 +54,12 @@
           },
           {
             "name": "Month of Year",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Month of Year#8",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Month of Year.Month of Year#8"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

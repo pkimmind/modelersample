@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Ship Date.Fiscal Year",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Ship Date].[Fiscal Year].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Fiscal Year.[Ship Date].[Fiscal Year].[(All)]"
       },
@@ -35,14 +34,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Fiscal Year.NAME#324"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Ship Date.Fiscal Year",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Ship Date].[Fiscal Year].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Ship Date].[Fiscal Year].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Fiscal Year.[Ship Date].[Fiscal Year].[(All)]"
               }
@@ -50,15 +46,12 @@
           },
           {
             "name": "Fiscal Year",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Fiscal Year#8",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Fiscal Year.Fiscal Year#8"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

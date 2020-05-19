@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Product Model Lines",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Product].[Product Model Lines].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Lines.[Product].[Product Model Lines].[(All)]"
       },
@@ -55,14 +54,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Lines.Subcategory#7"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Product Model Lines",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Product].[Product Model Lines].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Product].[Product Model Lines].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Lines.[Product].[Product Model Lines].[(All)]"
               }
@@ -70,8 +66,7 @@
           },
           {
             "name": "Product Line",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Product Line#3",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Lines.Product Line#3"
               }
@@ -79,15 +74,12 @@
           },
           {
             "name": "Model",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Model#1",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Lines.Model#1"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

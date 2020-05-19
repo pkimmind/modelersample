@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Number of Employees",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Reseller].[Number of Employees].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Employees.[Reseller].[Number of Employees].[(All)]"
       },
@@ -35,14 +34,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Employees.Number of Employees"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Number of Employees",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Reseller].[Number of Employees].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Reseller].[Number of Employees].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Employees.[Reseller].[Number of Employees].[(All)]"
               }
@@ -50,15 +46,12 @@
           },
           {
             "name": "Number of Employees",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Number of Employees",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Employees.Number of Employees"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

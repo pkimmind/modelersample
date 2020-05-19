@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Total Children",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Customer].[Total Children].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Total Children.[Customer].[Total Children].[(All)]"
       },
@@ -31,14 +30,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Total Children.Total Children#2"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Total Children",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Customer].[Total Children].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Customer].[Total Children].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Total Children.[Customer].[Total Children].[(All)]"
               }
@@ -46,15 +42,12 @@
           },
           {
             "name": "Total Children",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Total Children#2",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Total Children.Total Children#2"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

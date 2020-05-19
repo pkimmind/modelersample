@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Country#1",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Geography].[Country].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Country#1.[Geography].[Country].[(All)]"
       },
@@ -43,14 +42,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Country#1.TRAN1#8"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Country#1",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Geography].[Country].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Geography].[Country].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Country#1.[Geography].[Country].[(All)]"
               }
@@ -58,15 +54,12 @@
           },
           {
             "name": "Country",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Country#4",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Country#1.Country#4"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

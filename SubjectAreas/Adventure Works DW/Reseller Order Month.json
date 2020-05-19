@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Reseller Order Month",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Reseller].[Reseller Order Month].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Month.[Reseller].[Reseller Order Month].[(All)]"
       },
@@ -111,14 +110,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Month.Year Opened#3"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Reseller Order Month",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Reseller].[Reseller Order Month].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Reseller].[Reseller Order Month].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Month.[Reseller].[Reseller Order Month].[(All)]"
               }
@@ -126,8 +122,7 @@
           },
           {
             "name": "Order Month",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Order Month#4",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Month.Order Month#4"
               }
@@ -135,15 +130,12 @@
           },
           {
             "name": "Reseller",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Reseller#3",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Month.Reseller#3"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

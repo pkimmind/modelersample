@@ -2,25 +2,29 @@
   "physicalTable": {
     "name": "Orders",
     "caching": {
+      "enable": true
     },
-    "physicalColumns": [
-      {
+    "physicalColumns": [ {
         "name": "OrderID",
         "dataType": "INT",
-        "length": 10
+        "length": 10,
+        "nullable": true
       },
       {
         "name": "CustomerID",
         "dataType": "CHAR",
-        "length": 5
+        "length": 5,
+        "nullable": true
       },
       {
         "name": "SiteID",
-        "dataType": "SMALLINT"
+        "dataType": "SMALLINT",
+        "nullable": true
       },
       {
         "name": "EmployeeID",
-        "dataType": "SMALLINT"
+        "dataType": "SMALLINT",
+        "nullable": true
       },
       {
         "name": "OrderDate",
@@ -40,12 +44,14 @@
       {
         "name": "ShipVia",
         "dataType": "SMALLINT",
-        "length": 5
+        "length": 5,
+        "nullable": true
       },
       {
         "name": "Freight",
         "dataType": "DOUBLE",
-        "length": 10
+        "length": 10,
+        "nullable": true
       },
       {
         "name": "ShipName",

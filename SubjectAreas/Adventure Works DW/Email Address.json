@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Email Address",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Customer].[Email Address].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Email Address.[Customer].[Email Address].[(All)]"
       },
@@ -31,14 +30,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Email Address.NAME#28"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Email Address",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Customer].[Email Address].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Customer].[Email Address].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Email Address.[Customer].[Email Address].[(All)]"
               }
@@ -46,15 +42,12 @@
           },
           {
             "name": "Email Address",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Email Address#2",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Email Address.Email Address#2"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

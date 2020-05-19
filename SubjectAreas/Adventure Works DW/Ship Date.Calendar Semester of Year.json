@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Ship Date.Calendar Semester of Year",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Ship Date].[Calendar Semester of Year].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Semester of Year.[Ship Date].[Calendar Semester of Year].[(All)]"
       },
@@ -31,14 +30,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Semester of Year.NAME#305"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Ship Date.Calendar Semester of Year",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Ship Date].[Calendar Semester of Year].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Ship Date].[Calendar Semester of Year].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Semester of Year.[Ship Date].[Calendar Semester of Year].[(All)]"
               }
@@ -46,15 +42,12 @@
           },
           {
             "name": "Calendar Semester of Year",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Calendar Semester of Year#5",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Semester of Year.Calendar Semester of Year#5"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

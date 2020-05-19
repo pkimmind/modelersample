@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Hire Year",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Employee].[Hire Year].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Hire Year.[Employee].[Hire Year].[(All)]"
       },
@@ -31,14 +30,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Hire Year.NAME#134"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Hire Year",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Employee].[Hire Year].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Employee].[Hire Year].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Hire Year.[Employee].[Hire Year].[(All)]"
               }
@@ -46,15 +42,12 @@
           },
           {
             "name": "Hire Year",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Hire Year#7",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Hire Year.Hire Year#7"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

@@ -2,17 +2,19 @@
   "physicalTable": {
     "name": "Shippers",
     "caching": {
+      "enable": true
     },
-    "physicalColumns": [
-      {
+    "physicalColumns": [ {
         "name": "ShipperID",
         "dataType": "SMALLINT",
-        "length": 5
+        "length": 5,
+        "nullable": true
       },
       {
         "name": "CompanyName",
         "dataType": "VARCHAR",
-        "length": 40
+        "length": 40,
+        "nullable": true
       },
       {
         "name": "Phone",

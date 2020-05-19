@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Currency Code",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Organization].[Currency Code].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Currency Code.[Organization].[Currency Code].[(All)]"
       },
@@ -35,14 +34,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Currency Code.NAME#171"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Currency Code",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Organization].[Currency Code].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Organization].[Currency Code].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Currency Code.[Organization].[Currency Code].[(All)]"
               }
@@ -50,15 +46,12 @@
           },
           {
             "name": "Currency Code",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Currency Code",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Currency Code.Currency Code"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

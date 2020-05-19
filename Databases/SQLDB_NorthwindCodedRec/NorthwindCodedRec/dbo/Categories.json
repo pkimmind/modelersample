@@ -2,17 +2,19 @@
   "physicalTable": {
     "name": "Categories",
     "caching": {
+      "enable": true
     },
-    "physicalColumns": [
-      {
+    "physicalColumns": [ {
         "name": "CategoryID",
         "dataType": "SMALLINT",
-        "length": 5
+        "length": 5,
+        "nullable": true
       },
       {
         "name": "CategoryName",
         "dataType": "VARCHAR",
-        "length": 15
+        "length": 15,
+        "nullable": true
       },
       {
         "name": "Description",

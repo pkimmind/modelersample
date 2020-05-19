@@ -2,12 +2,13 @@
   "physicalTable": {
     "name": "per",
     "caching": {
+      "enable": true
     },
-    "physicalColumns": [
-      {
+    "physicalColumns": [ {
         "name": "PERKEY",
         "dataType": "INT",
-        "length": 10
+        "length": 10,
+        "nullable": true
       },
       {
         "name": "M4DATE",

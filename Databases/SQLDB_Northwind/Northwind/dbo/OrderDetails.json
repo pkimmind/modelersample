@@ -2,32 +2,37 @@
   "physicalTable": {
     "name": "OrderDetails",
     "caching": {
+      "enable": true
     },
-    "physicalColumns": [
-      {
+    "physicalColumns": [ {
         "name": "OrderID",
         "dataType": "INT",
-        "length": 10
+        "length": 10,
+        "nullable": true
       },
       {
         "name": "ProductID",
         "dataType": "INT",
-        "length": 10
+        "length": 10,
+        "nullable": true
       },
       {
         "name": "UnitPrice",
         "dataType": "DOUBLE",
-        "length": 10
+        "length": 10,
+        "nullable": true
       },
       {
         "name": "Quantity",
         "dataType": "SMALLINT",
-        "length": 5
+        "length": 5,
+        "nullable": true
       },
       {
         "name": "Discount",
         "dataType": "DOUBLE",
-        "length": 15
+        "length": 15,
+        "nullable": true
       }
     ]
   }

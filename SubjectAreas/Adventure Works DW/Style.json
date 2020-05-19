@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Style",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Product].[Style].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Style.[Product].[Style].[(All)]"
       },
@@ -35,14 +34,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Style.Style#3"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Style",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Product].[Style].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Product].[Style].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Style.[Product].[Style].[(All)]"
               }
@@ -50,15 +46,12 @@
           },
           {
             "name": "Style",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Style#3",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Style.Style#3"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

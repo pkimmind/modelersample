@@ -2,12 +2,13 @@
   "physicalTable": {
     "name": "prod",
     "caching": {
+      "enable": true
     },
-    "physicalColumns": [
-      {
+    "physicalColumns": [ {
         "name": "PRODKEY",
         "dataType": "INT",
-        "length": 10
+        "length": 10,
+        "nullable": true
       },
       {
         "name": "PRODDESC",

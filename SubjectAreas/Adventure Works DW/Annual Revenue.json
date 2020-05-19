@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Annual Revenue",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Reseller].[Annual Revenue].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Annual Revenue.[Reseller].[Annual Revenue].[(All)]"
       },
@@ -31,14 +30,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Annual Revenue.NAME#241"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Annual Revenue",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Reseller].[Annual Revenue].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Reseller].[Annual Revenue].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Annual Revenue.[Reseller].[Annual Revenue].[(All)]"
               }
@@ -46,15 +42,12 @@
           },
           {
             "name": "Annual Revenue",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Annual Revenue",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Annual Revenue.Annual Revenue"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

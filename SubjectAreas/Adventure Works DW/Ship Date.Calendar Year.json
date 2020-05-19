@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Ship Date.Calendar Year",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Ship Date].[Calendar Year].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Year.[Ship Date].[Calendar Year].[(All)]"
       },
@@ -35,14 +34,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Year.NAME#307"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Ship Date.Calendar Year",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Ship Date].[Calendar Year].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Ship Date].[Calendar Year].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Year.[Ship Date].[Calendar Year].[(All)]"
               }
@@ -50,15 +46,12 @@
           },
           {
             "name": "Calendar Year",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Calendar Year#8",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar Year.Calendar Year#8"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

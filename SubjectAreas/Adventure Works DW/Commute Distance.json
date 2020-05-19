@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Commute Distance",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Customer].[Commute Distance].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Commute Distance.[Customer].[Commute Distance].[(All)]"
       },
@@ -35,14 +34,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Commute Distance.NAME#13"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Commute Distance",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Customer].[Commute Distance].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Customer].[Commute Distance].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Commute Distance.[Customer].[Commute Distance].[(All)]"
               }
@@ -50,15 +46,12 @@
           },
           {
             "name": "Commute Distance",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Commute Distance",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Commute Distance.Commute Distance"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

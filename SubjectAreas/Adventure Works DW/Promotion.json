@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Promotion",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Promotion].[Promotion].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion.[Promotion].[Promotion].[(All)]"
       },
@@ -71,14 +70,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion.TRAN1#20"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Promotion",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Promotion].[Promotion].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Promotion].[Promotion].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion.[Promotion].[Promotion].[(All)]"
               }
@@ -86,15 +82,12 @@
           },
           {
             "name": "Promotion",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Promotion",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion.Promotion"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

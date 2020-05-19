@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Bank Name",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Reseller].[Bank Name].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Bank Name.[Reseller].[Bank Name].[(All)]"
       },
@@ -31,14 +30,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Bank Name.NAME#243"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Bank Name",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Reseller].[Bank Name].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Reseller].[Bank Name].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Bank Name.[Reseller].[Bank Name].[(All)]"
               }
@@ -46,15 +42,12 @@
           },
           {
             "name": "Bank Name",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Bank Name",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Bank Name.Bank Name"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

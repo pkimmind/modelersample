@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Delivery Date.Day of Week",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Delivery Date].[Day of Week].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Day of Week.[Delivery Date].[Day of Week].[(All)]"
       },
@@ -31,14 +30,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Day of Week.NAME#92"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Delivery Date.Day of Week",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Delivery Date].[Day of Week].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Delivery Date].[Day of Week].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Day of Week.[Delivery Date].[Day of Week].[(All)]"
               }
@@ -46,15 +42,12 @@
           },
           {
             "name": "Day of Week",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Day of Week#6",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Day of Week.Day of Week#6"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

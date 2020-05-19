@@ -506,103 +506,102 @@
       },
       {
         "name": "CONVERT_BINARY_BITMASK",
-        "value": "0X0",
+        "value": "0X0"
       },
       {
         "name": "CONVERT_BIT_BITMASK",
-        "value": "0X0",
+        "value": "0X0"
       },
       {
         "name": "CONVERT_CHAR_BITMASK",
-        "value": "0X0",
+        "value": "0X0"
       },
       {
         "name": "CONVERT_DECIMAL_BITMASK",
-        "value": "0X0",
+        "value": "0X0"
       },
       {
         "name": "CONVERT_DOUBLE_BITMASK",
-        "value": "0X0",
+        "value": "0X0"
       },
       {
         "name": "CONVERT_FLOAT_BITMASK",
-        "value": "0X0",
+        "value": "0X0"
       },
       {
         "name": "CONVERT_INTEGER_BITMASK",
-        "value": "0X0",
+        "value": "0X0"
       },
       {
         "name": "CONVERT_LONG_VAR_BINARY_BITMASK",
-        "value": "0X0",
+        "value": "0X0"
       },
       {
         "name": "CONVERT_LONG_VAR_CHAR_BITMASK",
-        "value": "0X0",
+        "value": "0X0"
       },
       {
         "name": "CONVERT_NUMERIC_BITMASK",
-        "value": "0X0",
+        "value": "0X0"
       },
       {
         "name": "CONVERT_REAL_BITMASK",
-        "value": "0X0",
+        "value": "0X0"
       },
       {
         "name": "CONVERT_SMALL_INT_BITMASK",
-        "value": "0X0",
+        "value": "0X0"
       },
       {
         "name": "CONVERT_TIMESTAMP_BITMASK",
-        "value": "0X0",
+        "value": "0X0"
       },
       {
         "name": "CONVERT_TINY_INT_BITMASK",
-        "value": "0X0",
+        "value": "0X0"
       },
       {
         "name": "CONVERT_VAR_BINARY_BITMASK",
-        "value": "0X0",
+        "value": "0X0"
       },
       {
         "name": "CONVERT_VAR_CHAR_BITMASK",
-        "value": "0X0",
+        "value": "0X0"
       },
       {
         "name": "FRACTIONAL_SECOND_PRECISION",
-        "value": "0X0",
+        "value": "0X0"
       },
       {
         "name": "MAX_ENTRIES_PER_IN_LIST",
-        "value": "0X0",
+        "value": "0X0"
       },
       {
         "name": "MAX_PARAMETERS_PER_DRIVE_JOIN",
-        "value": "0X0",
+        "value": "0X0"
       },
       {
         "name": "MAX_QUERIES_PER_DRIVE_JOIN",
-        "value": "0X0",
+        "value": "0X0"
       },
       {
         "name": "MAX_BULK_FETCH_BUFFER_SIZE",
-        "value": "0X50000",
+        "value": "0X50000"
       },
       {
         "name": "DEFAULT_BULK_FETCH_ROW_COUNT",
-        "value": "0X64",
+        "value": "0X64"
       },
       {
         "name": "COMMENT_START",
-        "value": "",
+        "value": ""
       },
       {
         "name": "COMMENT_END",
-        "value": "",
+        "value": ""
       }
     ],
-    "connectionPools": [
-      {
+    "connectionPools": [ {
         "name": "ConnectionPool",
         "user": "nwuser",
         "connectionTimeout": 5,
@@ -612,6 +611,7 @@
         "connection": "DRIVER=valueof(NQ_SESSION.SQLSERVERDRIVER);SERVER=slc03qeh;PORT=1433;DATABASE=Northwind",
         "type": "ODBC350",
         "requiresFullyQualifedTableNames": false,
+        "isSharedLogin": true,
         "multithreaded": false,
         "isCloseAfterEveryRequest": false,
         "outputType": "xml",
@@ -620,10 +620,9 @@
         "tempTablePrefix": "TT",
         "transactionBoundary": 1000,
         "xmlaUseSession": false,
+        "supportParams": true,
         "isSiebelJDBSecured": false
       }
-    ]
-    "joins": [
     ]
   }
 }

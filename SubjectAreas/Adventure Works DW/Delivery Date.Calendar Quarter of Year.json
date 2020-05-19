@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Delivery Date.Calendar Quarter of Year",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Delivery Date].[Calendar Quarter of Year].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Quarter of Year.[Delivery Date].[Calendar Quarter of Year].[(All)]"
       },
@@ -31,14 +30,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Quarter of Year.NAME#83"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Delivery Date.Calendar Quarter of Year",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Delivery Date].[Calendar Quarter of Year].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Delivery Date].[Calendar Quarter of Year].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Quarter of Year.[Delivery Date].[Calendar Quarter of Year].[(All)]"
               }
@@ -46,15 +42,12 @@
           },
           {
             "name": "Calendar Quarter of Year",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Calendar Quarter of Year#3",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Quarter of Year.Calendar Quarter of Year#3"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

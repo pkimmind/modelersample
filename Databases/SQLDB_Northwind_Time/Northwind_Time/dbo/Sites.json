@@ -2,22 +2,25 @@
   "physicalTable": {
     "name": "Sites",
     "caching": {
+      "enable": true
     },
-    "physicalColumns": [
-      {
+    "physicalColumns": [ {
         "name": "SiteID",
         "dataType": "SMALLINT",
-        "length": 5
+        "length": 5,
+        "nullable": true
       },
       {
         "name": "CustomerID",
         "dataType": "CHAR",
-        "length": 5
+        "length": 5,
+        "nullable": true
       },
       {
         "name": "SiteName",
         "dataType": "VARCHAR",
-        "length": 40
+        "length": 40,
+        "nullable": true
       },
       {
         "name": "ContactName",

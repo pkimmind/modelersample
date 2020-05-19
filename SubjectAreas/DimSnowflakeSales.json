@@ -1,6 +1,7 @@
 {
   "subjectArea": {
     "name": "DimSnowflakeSales",
+    "exportLogicalKeys": true,
     "sourceBusinessModel": "businessModel:DimSnowflakeSales",
     "description": "SnowflakeSales + QtySoldNoTime measure which uses dimension-specific aggregation rules to avoid summing over time.",
     "tableOrder": [

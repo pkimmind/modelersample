@@ -5,26 +5,29 @@
     "caching": {
       "enable": false
     },
-    "physicalColumns": [
-      {
+    "physicalColumns": [ {
         "name": "SiteID",
         "dataType": "SMALLINT",
-        "length": 5
+        "length": 5,
+        "nullable": true
       },
       {
         "name": "CompanyID",
         "dataType": "CHAR",
-        "length": 5
+        "length": 5,
+        "nullable": true
       },
       {
         "name": "OrganizationCode",
         "dataType": "SMALLINT",
-        "length": 5
+        "length": 5,
+        "nullable": true
       },
       {
         "name": "CompanyName",
         "dataType": "CHAR",
-        "length": 40
+        "length": 40,
+        "nullable": true
       },
       {
         "name": "ContactName",

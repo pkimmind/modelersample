@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Sales Channel",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Sales Channel].[Sales Channel].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Channel.[Sales Channel].[Sales Channel].[(All)]"
       },
@@ -31,14 +30,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Channel.Sales Channel"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Sales Channel",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Sales Channel].[Sales Channel].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Sales Channel].[Sales Channel].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Channel.[Sales Channel].[Sales Channel].[(All)]"
               }
@@ -46,15 +42,12 @@
           },
           {
             "name": "Sales Channel",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Sales Channel",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Channel.Sales Channel"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

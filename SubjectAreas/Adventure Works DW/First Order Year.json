@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "First Order Year",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Reseller].[First Order Year].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.First Order Year.[Reseller].[First Order Year].[(All)]"
       },
@@ -35,14 +34,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.First Order Year.NAME#246"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "First Order Year",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Reseller].[First Order Year].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Reseller].[First Order Year].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.First Order Year.[Reseller].[First Order Year].[(All)]"
               }
@@ -50,15 +46,12 @@
           },
           {
             "name": "First Order Year",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "First Order Year",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.First Order Year.First Order Year"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

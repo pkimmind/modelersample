@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Emergency Contact Name",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Employee].[Emergency Contact Name].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Emergency Contact Name.[Employee].[Emergency Contact Name].[(All)]"
       },
@@ -31,14 +30,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Emergency Contact Name.NAME#116"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Emergency Contact Name",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Employee].[Emergency Contact Name].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Employee].[Emergency Contact Name].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Emergency Contact Name.[Employee].[Emergency Contact Name].[(All)]"
               }
@@ -46,15 +42,12 @@
           },
           {
             "name": "Emergency Contact Name",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Emergency Contact Name",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Emergency Contact Name.Emergency Contact Name"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

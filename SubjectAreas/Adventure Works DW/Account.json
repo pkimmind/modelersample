@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Account",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Account].[Account].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account.[Account].[Account].[(All)]"
       },
@@ -55,14 +54,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account.UNARY_OPERATOR"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Account",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Account].[Account].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Account].[Account].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account.[Account].[Account].[(All)]"
               }
@@ -70,15 +66,12 @@
           },
           {
             "name": "Account",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Account",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account.Account"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

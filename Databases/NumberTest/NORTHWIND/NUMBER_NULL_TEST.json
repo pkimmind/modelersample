@@ -13,10 +13,10 @@
         "query": "select COL_NUMBER as COL_NUMBER from Number_Test_Import"
       }
     ],
-    "physicalColumns": [
-      {
+    "physicalColumns": [ {
         "name": "COL_NUMBER",
-        "dataType": "NUMERIC"
+        "dataType": "NUMERIC",
+        "nullable": true
       }
     ]
   }

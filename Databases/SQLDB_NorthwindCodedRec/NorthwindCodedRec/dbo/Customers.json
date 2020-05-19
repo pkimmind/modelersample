@@ -2,12 +2,13 @@
   "physicalTable": {
     "name": "Customers",
     "caching": {
+      "enable": true
     },
-    "physicalColumns": [
-      {
+    "physicalColumns": [ {
         "name": "CustomerID",
         "dataType": "CHAR",
-        "length": 5
+        "length": 5,
+        "nullable": true
       },
       {
         "name": "CompanyName",
@@ -16,29 +17,35 @@
       },
       {
         "name": "MyInt",
-        "dataType": "INT"
+        "dataType": "INT",
+        "nullable": true
       },
       {
         "name": "MyDouble",
-        "dataType": "DOUBLE"
+        "dataType": "DOUBLE",
+        "nullable": true
       },
       {
         "name": "MyFloat",
-        "dataType": "FLOAT"
+        "dataType": "FLOAT",
+        "nullable": true
       },
       {
         "name": "MyVarBinary",
         "dataType": "VARBINARY",
-        "length": 15
+        "length": 15,
+        "nullable": true
       },
       {
         "name": "MyVarChar",
         "dataType": "VARCHAR",
-        "length": 15
+        "length": 15,
+        "nullable": true
       },
       {
         "name": "MyTime",
-        "dataType": "TIME"
+        "dataType": "TIME",
+        "nullable": true
       }
     ]
   }

@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Product Categories",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Product].[Product Categories].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Categories.[Product].[Product Categories].[(All)]"
       },
@@ -171,14 +170,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Categories.Weight#1"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Product Categories",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Product].[Product Categories].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Product].[Product Categories].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Categories.[Product].[Product Categories].[(All)]"
               }
@@ -186,8 +182,7 @@
           },
           {
             "name": "Category",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Category#2",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Categories.Category#2"
               }
@@ -195,8 +190,7 @@
           },
           {
             "name": "Subcategory",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Subcategory#3",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Categories.Subcategory#3"
               }
@@ -204,15 +198,12 @@
           },
           {
             "name": "Product",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Product#1",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Categories.Product#1"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

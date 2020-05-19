@@ -4,12 +4,13 @@
     "description": "External Name:????
 ",
     "caching": {
+      "enable": true
     },
-    "physicalColumns": [
-      {
+    "physicalColumns": [ {
         "name": "ROW_WID",
         "dataType": "DOUBLE",
-        "length": 10
+        "length": 10,
+        "nullable": true
       },
       {
         "name": "WEEK_KEY",

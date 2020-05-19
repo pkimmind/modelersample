@@ -2,13 +2,14 @@
   "physicalTable": {
     "name": "Customers",
     "caching": {
+      "enable": true
     },
       "dynamicName": "variable:Test Block.CustomersSamplingTable",
-    "physicalColumns": [
-      {
+    "physicalColumns": [ {
         "name": "CustomerID",
         "dataType": "CHAR",
-        "length": 5
+        "length": 5,
+        "nullable": true
       },
       {
         "name": "CompanyName",
@@ -18,7 +19,8 @@
       {
         "name": "Ticker",
         "dataType": "CHAR",
-        "length": 10
+        "length": 10,
+        "nullable": true
       }
     ]
   }

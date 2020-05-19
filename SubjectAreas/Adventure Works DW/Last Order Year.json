@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Last Order Year",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Reseller].[Last Order Year].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Last Order Year.[Reseller].[Last Order Year].[(All)]"
       },
@@ -35,14 +34,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Last Order Year.NAME#248"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Last Order Year",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Reseller].[Last Order Year].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Reseller].[Last Order Year].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Last Order Year.[Reseller].[Last Order Year].[(All)]"
               }
@@ -50,15 +46,12 @@
           },
           {
             "name": "Last Order Year",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Last Order Year",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Last Order Year.Last Order Year"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

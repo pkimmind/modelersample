@@ -14,15 +14,14 @@
       },
       {
         "name": "MAX_BULK_FETCH_BUFFER_SIZE",
-        "value": "0X50000",
+        "value": "0X50000"
       },
       {
         "name": "DEFAULT_BULK_FETCH_ROW_COUNT",
-        "value": "0X64",
+        "value": "0X64"
       }
     ],
-    "connectionPools": [
-      {
+    "connectionPools": [ {
         "name": "Connection Pool",
         "user": "SAMPLE",
         "connectionTimeout": 5,
@@ -32,6 +31,7 @@
         "connection": "http://64.181.196.35:8001/sap/bw/xml/soap/xmla",
         "type": "XMLA",
         "requiresFullyQualifedTableNames": false,
+        "isSharedLogin": true,
         "multithreaded": false,
         "isCloseAfterEveryRequest": false,
         "outputType": "xml",
@@ -41,10 +41,9 @@
         "xmlaInfo": "default",
         "xmlaCatalog": "$INFOCUBE",
         "xmlaUseSession": false,
+        "supportParams": true,
         "isSiebelJDBSecured": false
       }
-    ]
-    "joins": [
     ]
   }
 }

@@ -2,9 +2,9 @@
   "physicalTable": {
     "name": "stock",
     "caching": {
+      "enable": true
     },
-    "physicalColumns": [
-      {
+    "physicalColumns": [ {
         "name": "Symbol",
         "dataType": "VARCHAR",
         "length": 8

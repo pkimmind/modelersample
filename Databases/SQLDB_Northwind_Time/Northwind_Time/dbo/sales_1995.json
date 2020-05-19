@@ -4,9 +4,9 @@
     "description": "External Name:A
 ",
     "caching": {
+      "enable": true
     },
-    "physicalColumns": [
-      {
+    "physicalColumns": [ {
         "name": "row_wid",
         "dataType": "DOUBLE",
         "length": 10
@@ -34,7 +34,8 @@
       {
         "name": "qtysold",
         "dataType": "INT",
-        "length": 10
+        "length": 10,
+        "nullable": true
       }
     ]
   }

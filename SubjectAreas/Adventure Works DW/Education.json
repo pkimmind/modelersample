@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Education",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Customer].[Education].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Education.[Customer].[Education].[(All)]"
       },
@@ -43,14 +42,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Education.TRAN1#2"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Education",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Customer].[Education].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Customer].[Education].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Education.[Customer].[Education].[(All)]"
               }
@@ -58,15 +54,12 @@
           },
           {
             "name": "Education",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Education#2",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Education.Education#2"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

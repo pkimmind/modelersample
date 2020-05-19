@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Sales Reason Type",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Sales Reason].[Sales Reason Type].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Reason Type.[Sales Reason].[Sales Reason Type].[(All)]"
       },
@@ -31,14 +30,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Reason Type.Sales Reason Type#1"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Sales Reason Type",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Sales Reason].[Sales Reason Type].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Sales Reason].[Sales Reason Type].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Reason Type.[Sales Reason].[Sales Reason Type].[(All)]"
               }
@@ -46,15 +42,12 @@
           },
           {
             "name": "Sales Reason Type",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Sales Reason Type#1",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Reason Type.Sales Reason Type#1"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

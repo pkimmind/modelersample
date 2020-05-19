@@ -2,22 +2,25 @@
   "physicalTable": {
     "name": "Employees",
     "caching": {
+      "enable": true
     },
-    "physicalColumns": [
-      {
+    "physicalColumns": [ {
         "name": "EmployeeID",
         "dataType": "SMALLINT",
-        "length": 5
+        "length": 5,
+        "nullable": true
       },
       {
         "name": "LastName",
         "dataType": "CHAR",
-        "length": 20
+        "length": 20,
+        "nullable": true
       },
       {
         "name": "FirstName",
         "dataType": "CHAR",
-        "length": 10
+        "length": 10,
+        "nullable": true
       },
       {
         "name": "Title",

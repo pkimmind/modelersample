@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Color",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Product].[Color].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Color.[Product].[Color].[(All)]"
       },
@@ -31,14 +30,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Color.NAME#180"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Color",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Product].[Color].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Product].[Color].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Color.[Product].[Color].[(All)]"
               }
@@ -46,15 +42,12 @@
           },
           {
             "name": "Color",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Color",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Color.Color"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

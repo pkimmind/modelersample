@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Sales Orders",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Sales Summary Order Details].[Sales Orders].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Orders.[Sales Summary Order Details].[Sales Orders].[(All)]"
       },
@@ -43,14 +42,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Orders.Order Number#2"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Sales Orders",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Sales Summary Order Details].[Sales Orders].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Sales Summary Order Details].[Sales Orders].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Orders.[Sales Summary Order Details].[Sales Orders].[(All)]"
               }
@@ -58,8 +54,7 @@
           },
           {
             "name": "Order Number",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Order Number#2",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Orders.Order Number#2"
               }
@@ -67,15 +62,12 @@
           },
           {
             "name": "Order Line",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Order Line#2",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Orders.Order Line#2"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

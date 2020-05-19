@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Min Payment Amount",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Reseller].[Min Payment Amount].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Payment Amount.[Reseller].[Min Payment Amount].[(All)]"
       },
@@ -35,14 +34,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Payment Amount.NAME#250"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Min Payment Amount",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Reseller].[Min Payment Amount].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Reseller].[Min Payment Amount].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Payment Amount.[Reseller].[Min Payment Amount].[(All)]"
               }
@@ -50,15 +46,12 @@
           },
           {
             "name": "Min Payment Amount",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Min Payment Amount",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Payment Amount.Min Payment Amount"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

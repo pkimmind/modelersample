@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Salaried Flag",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Employee].[Salaried Flag].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Salaried Flag.[Employee].[Salaried Flag].[(All)]"
       },
@@ -35,14 +34,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Salaried Flag.Salaried Flag#7"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Salaried Flag",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Employee].[Salaried Flag].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Employee].[Salaried Flag].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Salaried Flag.[Employee].[Salaried Flag].[(All)]"
               }
@@ -50,15 +46,12 @@
           },
           {
             "name": "Salaried Flag",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Salaried Flag#7",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Salaried Flag.Salaried Flag#7"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

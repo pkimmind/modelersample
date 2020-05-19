@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Delivery Date.Fiscal",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Delivery Date].[Fiscal].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal.[Delivery Date].[Fiscal].[(All)]"
       },
@@ -159,14 +158,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal.Week of Year#6"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Delivery Date.Fiscal",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Delivery Date].[Fiscal].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Delivery Date].[Fiscal].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal.[Delivery Date].[Fiscal].[(All)]"
               }
@@ -174,8 +170,7 @@
           },
           {
             "name": "Fiscal Year",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Fiscal Year#3",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal.Fiscal Year#3"
               }
@@ -183,8 +178,7 @@
           },
           {
             "name": "Fiscal Semester",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Fiscal Semester#2",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal.Fiscal Semester#2"
               }
@@ -192,8 +186,7 @@
           },
           {
             "name": "Fiscal Quarter",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Fiscal Quarter#3",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal.Fiscal Quarter#3"
               }
@@ -201,8 +194,7 @@
           },
           {
             "name": "Month",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Month#3",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal.Month#3"
               }
@@ -210,15 +202,12 @@
           },
           {
             "name": "Date",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Date#5",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Fiscal.Date#5"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

@@ -5,22 +5,21 @@
     "databaseType": 69,
     "features": [
       {
-        "name": "TIMESTAMP_ADD_SUPPORTED",
+        "name": "TIMESTAMP_ADD_SUPPORTED"
       },
       {
-        "name": "TIMESTAMP_DIFF_SUPPORTED",
+        "name": "TIMESTAMP_DIFF_SUPPORTED"
       },
       {
         "name": "MAX_BULK_FETCH_BUFFER_SIZE",
-        "value": "0X50000",
+        "value": "0X50000"
       },
       {
         "name": "DEFAULT_BULK_FETCH_ROW_COUNT",
-        "value": "0X64",
+        "value": "0X64"
       }
     ],
-    "connectionPools": [
-      {
+    "connectionPools": [ {
         "name": "Connection Pool",
         "user": "sa",
         "connectionTimeout": 5,
@@ -30,6 +29,7 @@
         "connection": "http://slc10noq.us.oracle.com/olap16/msmdpump.dll",
         "type": "XMLA",
         "requiresFullyQualifedTableNames": false,
+        "isSharedLogin": true,
         "multithreaded": false,
         "isCloseAfterEveryRequest": false,
         "outputType": "xml",
@@ -39,10 +39,9 @@
         "xmlaInfo": "SLC10NOQ\MSSQLSERVER16",
         "xmlaCatalog": "Adventure Works DW",
         "xmlaUseSession": false,
+        "supportParams": true,
         "isSiebelJDBSecured": false
       }
-    ]
-    "joins": [
     ]
   }
 }

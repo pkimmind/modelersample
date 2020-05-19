@@ -8,14 +8,14 @@
       "enable": false
     },
     "memberReference": "Default",
+    "isMemberAliasUnique": true,
     "DBMap": [
       {
         "name": "DEFAULT",
         "value": "select {[Measures].[0AMOUNT]} on columns, { [0COSTCENTER].members } on rows, { [0FISCPER].members } on pages from [$0CCA_C11]"
       }
     ],
-    "columns": [
-      {
+    "columns": [ {
         "name": "[0COSTCENTER].[LEVEL01]",
         "extName": "[0COSTCENTER].[LEVEL01]",
         "dataType": "VARCHAR",

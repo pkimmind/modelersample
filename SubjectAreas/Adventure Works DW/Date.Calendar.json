@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Date.Calendar",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Date].[Calendar].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.[Date].[Calendar].[(All)]"
       },
@@ -163,14 +162,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.Week of Year"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Date.Calendar",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Date].[Calendar].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Date].[Calendar].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.[Date].[Calendar].[(All)]"
               }
@@ -178,8 +174,7 @@
           },
           {
             "name": "Calendar Year",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Calendar Year",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.Calendar Year"
               }
@@ -187,8 +182,7 @@
           },
           {
             "name": "Calendar Semester",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Calendar Semester",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.Calendar Semester"
               }
@@ -196,8 +190,7 @@
           },
           {
             "name": "Calendar Quarter",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Calendar Quarter",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.Calendar Quarter"
               }
@@ -205,8 +198,7 @@
           },
           {
             "name": "Month",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Month",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.Month"
               }
@@ -214,15 +206,12 @@
           },
           {
             "name": "Date",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Date",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Calendar.Date"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

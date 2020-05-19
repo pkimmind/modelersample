@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Source Currency",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Source Currency].[Source Currency].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Source Currency.[Source Currency].[Source Currency].[(All)]"
       },
@@ -31,14 +30,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Source Currency.Source Currency"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Source Currency",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Source Currency].[Source Currency].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Source Currency].[Source Currency].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Source Currency.[Source Currency].[Source Currency].[(All)]"
               }
@@ -46,15 +42,12 @@
           },
           {
             "name": "Source Currency",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Source Currency",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Source Currency.Source Currency"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

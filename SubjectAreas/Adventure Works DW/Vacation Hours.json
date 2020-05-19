@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Vacation Hours",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Employee].[Vacation Hours].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Vacation Hours.[Employee].[Vacation Hours].[(All)]"
       },
@@ -35,14 +34,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Vacation Hours.Vacation Hours#7"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Vacation Hours",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Employee].[Vacation Hours].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Employee].[Vacation Hours].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Vacation Hours.[Employee].[Vacation Hours].[(All)]"
               }
@@ -50,15 +46,12 @@
           },
           {
             "name": "Vacation Hours",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Vacation Hours#7",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Vacation Hours.Vacation Hours#7"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

@@ -4,9 +4,9 @@
     "description": "External Name:?
 ",
     "caching": {
+      "enable": true
     },
-    "physicalColumns": [
-      {
+    "physicalColumns": [ {
         "name": "Cal_year",
         "dataType": "DOUBLE",
         "length": 18
@@ -24,7 +24,8 @@
       {
         "name": "QtySold",
         "dataType": "INT",
-        "length": 10
+        "length": 10,
+        "nullable": true
       }
     ]
   }

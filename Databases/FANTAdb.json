@@ -10,15 +10,14 @@
       },
       {
         "name": "FRACTIONAL_SECOND_PRECISION",
-        "value": "0X0",
+        "value": "0X0"
       },
       {
         "name": "MAX_BULK_FETCH_BUFFER_SIZE",
-        "value": "0X50000",
+        "value": "0X50000"
       }
     ],
-    "connectionPools": [
-      {
+    "connectionPools": [ {
         "name": "FantaConnPool",
         "user": "weblogic",
         "connectionTimeout": 5,
@@ -28,6 +27,7 @@
         "connection": "biserver-dev.us.oracle.com:1521/orcl",
         "type": "OCI10G",
         "requiresFullyQualifedTableNames": false,
+        "isSharedLogin": true,
         "multithreaded": false,
         "isCloseAfterEveryRequest": false,
         "outputType": "xml",
@@ -36,9 +36,10 @@
         "tempTablePrefix": "TT",
         "transactionBoundary": 1000,
         "xmlaUseSession": false,
+        "supportParams": true,
         "isSiebelJDBSecured": false
       }
-    ]
+    ],
     "joins": [
       {
         "join": "simple",

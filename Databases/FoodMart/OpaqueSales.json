@@ -8,14 +8,14 @@
       "enable": false
     },
     "memberReference": "Default",
+    "isMemberAliasUnique": true,
     "DBMap": [
       {
         "name": "DEFAULT",
         "value": "select { [Measures].[Unit Sales], [Measures].[Store Cost] } on COLUMNS, { [Time].[Year].members } on ROWS from [Sales]"
       }
     ],
-    "columns": [
-      {
+    "columns": [ {
         "name": "[Time].[Year]",
         "extName": "[Time].[Year]",
         "dataType": "VARCHAR",

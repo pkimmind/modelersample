@@ -2,27 +2,31 @@
   "physicalTable": {
     "name": "Products",
     "caching": {
+      "enable": true
     },
-    "physicalColumns": [
-      {
+    "physicalColumns": [ {
         "name": "ProductID",
         "dataType": "INT",
-        "length": 10
+        "length": 10,
+        "nullable": true
       },
       {
         "name": "ProductName",
         "dataType": "CHAR",
-        "length": 40
+        "length": 40,
+        "nullable": true
       },
       {
         "name": "SupplierID",
         "dataType": "CHAR",
-        "length": 5
+        "length": 5,
+        "nullable": true
       },
       {
         "name": "CategoryID",
         "dataType": "SMALLINT",
-        "length": 5
+        "length": 5,
+        "nullable": true
       },
       {
         "name": "QuantityPerUnit",
@@ -32,27 +36,32 @@
       {
         "name": "UnitPrice",
         "dataType": "DOUBLE",
-        "length": 10
+        "length": 10,
+        "nullable": true
       },
       {
         "name": "UnitsInStock",
         "dataType": "INT",
-        "length": 10
+        "length": 10,
+        "nullable": true
       },
       {
         "name": "UnitsOnOrder",
         "dataType": "INT",
-        "length": 10
+        "length": 10,
+        "nullable": true
       },
       {
         "name": "ReorderLevel",
         "dataType": "INT",
-        "length": 10
+        "length": 10,
+        "nullable": true
       },
       {
         "name": "Discontinued",
         "dataType": "BIT",
-        "length": 1
+        "length": 1,
+        "nullable": true
       }
     ]
   }

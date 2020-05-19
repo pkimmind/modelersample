@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Geography",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Geography].[Geography].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.[Geography].[Geography].[(All)]"
       },
@@ -115,14 +114,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.TRAN1#9"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Geography",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Geography].[Geography].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Geography].[Geography].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.[Geography].[Geography].[(All)]"
               }
@@ -130,8 +126,7 @@
           },
           {
             "name": "Country",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Country#5",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.Country#5"
               }
@@ -139,8 +134,7 @@
           },
           {
             "name": "State-Province",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "State-Province#5",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.State-Province#5"
               }
@@ -148,8 +142,7 @@
           },
           {
             "name": "City",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "City#5",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.City#5"
               }
@@ -157,15 +150,12 @@
           },
           {
             "name": "Postal Code",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Postal Code#4",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.Postal Code#4"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

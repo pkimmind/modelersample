@@ -3,6 +3,7 @@
     "name": "Population",
     "sourceType": "SELECT",
     "caching": {
+      "enable": true
     },
     "selectStatements": [
       {
@@ -13,8 +14,7 @@ where e.EmployeeID = o.EmployeeID and od.OrderID = o.OrderID
 group by e.City, e.Region, e.Country"
       }
     ],
-    "physicalColumns": [
-      {
+    "physicalColumns": [ {
         "name": "City",
         "dataType": "CHAR",
         "length": 15
@@ -31,7 +31,8 @@ group by e.City, e.Region, e.Country"
       },
       {
         "name": "Population",
-        "dataType": "INT"
+        "dataType": "INT",
+        "nullable": true
       }
     ]
   }

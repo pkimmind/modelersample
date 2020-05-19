@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Sales Territory Country",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Sales Territory].[Sales Territory Country].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Country.[Sales Territory].[Sales Territory Country].[(All)]"
       },
@@ -35,14 +34,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Country.Sales Territory Group#1"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Sales Territory Country",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Sales Territory].[Sales Territory Country].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Sales Territory].[Sales Territory Country].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Country.[Sales Territory].[Sales Territory Country].[(All)]"
               }
@@ -50,15 +46,12 @@
           },
           {
             "name": "Sales Territory Country",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Sales Territory Country#1",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Country.Sales Territory Country#1"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

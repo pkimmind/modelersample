@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Address#1",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Reseller].[Address].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Address#1.[Reseller].[Address].[(All)]"
       },
@@ -31,14 +30,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Address#1.NAME#240"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Address#1",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Reseller].[Address].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Reseller].[Address].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Address#1.[Reseller].[Address].[(All)]"
               }
@@ -46,15 +42,12 @@
           },
           {
             "name": "Address",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Address#3",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Address#1.Address#3"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

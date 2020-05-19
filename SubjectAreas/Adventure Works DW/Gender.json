@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Gender",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Customer].[Gender].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Gender.[Customer].[Gender].[(All)]"
       },
@@ -35,14 +34,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Gender.NAME#30"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Gender",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Customer].[Gender].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Customer].[Gender].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Gender.[Customer].[Gender].[(All)]"
               }
@@ -50,15 +46,12 @@
           },
           {
             "name": "Gender",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Gender#2",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Gender.Gender#2"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

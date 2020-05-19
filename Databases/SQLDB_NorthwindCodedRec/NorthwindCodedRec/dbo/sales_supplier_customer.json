@@ -2,21 +2,24 @@
   "physicalTable": {
     "name": "sales_supplier_customer",
     "caching": {
+      "enable": true
     },
-    "physicalColumns": [
-      {
+    "physicalColumns": [ {
         "name": "SupplierID",
-        "dataType": "SMALLINT"
+        "dataType": "SMALLINT",
+        "nullable": true
       },
       {
         "name": "CustomerID",
         "dataType": "CHAR",
-        "length": 5
+        "length": 5,
+        "nullable": true
       },
       {
         "name": "QtySold",
         "dataType": "INT",
-        "length": 10
+        "length": 10,
+        "nullable": true
       }
     ]
   }

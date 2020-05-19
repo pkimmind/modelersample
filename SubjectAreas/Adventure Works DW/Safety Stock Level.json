@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Safety Stock Level",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Product].[Safety Stock Level].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Safety Stock Level.[Product].[Safety Stock Level].[(All)]"
       },
@@ -31,14 +30,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Safety Stock Level.Safety Stock Level#2"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Safety Stock Level",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Product].[Safety Stock Level].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Product].[Safety Stock Level].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Safety Stock Level.[Product].[Safety Stock Level].[(All)]"
               }
@@ -46,15 +42,12 @@
           },
           {
             "name": "Safety Stock Level",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Safety Stock Level#2",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Safety Stock Level.Safety Stock Level#2"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

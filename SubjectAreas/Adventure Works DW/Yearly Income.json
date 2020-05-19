@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Yearly Income",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Customer].[Yearly Income].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Yearly Income.[Customer].[Yearly Income].[(All)]"
       },
@@ -35,14 +34,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Yearly Income.Yearly Income#2"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Yearly Income",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Customer].[Yearly Income].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Customer].[Yearly Income].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Yearly Income.[Customer].[Yearly Income].[(All)]"
               }
@@ -50,15 +46,12 @@
           },
           {
             "name": "Yearly Income",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Yearly Income#2",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Yearly Income.Yearly Income#2"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

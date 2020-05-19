@@ -2,17 +2,19 @@
   "physicalTable": {
     "name": "Suppliers",
     "caching": {
+      "enable": true
     },
-    "physicalColumns": [
-      {
+    "physicalColumns": [ {
         "name": "SupplierID",
         "dataType": "SMALLINT",
-        "length": 5
+        "length": 5,
+        "nullable": true
       },
       {
         "name": "CompanyName",
         "dataType": "CHAR",
-        "length": 40
+        "length": 40,
+        "nullable": true
       },
       {
         "name": "ContactName",

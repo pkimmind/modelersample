@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "State-Province#1",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Geography].[State-Province].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.State-Province#1.[Geography].[State-Province].[(All)]"
       },
@@ -43,14 +42,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.State-Province#1.State-Province#7"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "State-Province#1",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Geography].[State-Province].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Geography].[State-Province].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.State-Province#1.[Geography].[State-Province].[(All)]"
               }
@@ -58,15 +54,12 @@
           },
           {
             "name": "State-Province",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "State-Province#7",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.State-Province#1.State-Province#7"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

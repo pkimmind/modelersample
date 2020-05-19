@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Employee",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Employee].[Employee].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.[Employee].[Employee].[(All)]"
       },
@@ -131,14 +130,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.Vacation Hours"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Employee",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Employee].[Employee].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Employee].[Employee].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.[Employee].[Employee].[(All)]"
               }
@@ -146,15 +142,12 @@
           },
           {
             "name": "Employee",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Employee",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee.Employee"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

@@ -18,19 +18,18 @@
       },
       {
         "name": "FRACTIONAL_SECOND_PRECISION",
-        "value": "0X0",
+        "value": "0X0"
       },
       {
         "name": "MAX_BULK_FETCH_BUFFER_SIZE",
-        "value": "0X50000",
+        "value": "0X50000"
       },
       {
         "name": "DEFAULT_BULK_FETCH_ROW_COUNT",
-        "value": "0X64",
+        "value": "0X64"
       }
     ],
-    "connectionPools": [
-      {
+    "connectionPools": [ {
         "name": "BadRecurisveVar1",
         "user": "northwind",
         "connectionTimeout": 5,
@@ -40,6 +39,7 @@
         "connection": "biserver-dev.us.oracle.com:1521/orcl",
         "type": "Default",
         "requiresFullyQualifedTableNames": false,
+        "isSharedLogin": true,
         "multithreaded": false,
         "isCloseAfterEveryRequest": false,
         "outputType": "xml",
@@ -48,6 +48,7 @@
         "tempTablePrefix": "TT",
         "transactionBoundary": 1000,
         "xmlaUseSession": false,
+        "supportParams": true,
         "isSiebelJDBSecured": false
       },
       {
@@ -60,6 +61,7 @@
         "connection": "biserver-dev.us.oracle.com:1521/orcl",
         "type": "Default",
         "requiresFullyQualifedTableNames": false,
+        "isSharedLogin": true,
         "multithreaded": false,
         "isCloseAfterEveryRequest": false,
         "outputType": "xml",
@@ -68,13 +70,13 @@
         "tempTablePrefix": "TT",
         "transactionBoundary": 1000,
         "xmlaUseSession": false,
+        "supportParams": true,
         "isSiebelJDBSecured": false,
         "runBeforeQueryScripts": {
-          "Value": "select 'valueof(NQ_SESSION.BADRECURSIVEVAR)' from dual",
+          "isEnabled": true,
+          "Value": "select 'valueof(NQ_SESSION.BADRECURSIVEVAR)' from dual"
         }
       }
-    ]
-    "joins": [
     ]
   }
 }

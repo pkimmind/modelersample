@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Start Date#1",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Product].[Start Date].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date#1.[Product].[Start Date].[(All)]"
       },
@@ -35,14 +34,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date#1.Start Date#10"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Start Date#1",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Product].[Start Date].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Product].[Start Date].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date#1.[Product].[Start Date].[(All)]"
               }
@@ -50,15 +46,12 @@
           },
           {
             "name": "Start Date",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Start Date#10",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date#1.Start Date#10"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

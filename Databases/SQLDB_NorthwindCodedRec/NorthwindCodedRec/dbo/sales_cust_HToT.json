@@ -2,22 +2,25 @@
   "physicalTable": {
     "name": "sales_cust_HToT",
     "caching": {
+      "enable": true
     },
-    "physicalColumns": [
-      {
+    "physicalColumns": [ {
         "name": "CompanyID",
         "dataType": "CHAR",
-        "length": 5
+        "length": 5,
+        "nullable": true
       },
       {
         "name": "QtySold",
         "dataType": "INT",
-        "length": 10
+        "length": 10,
+        "nullable": true
       },
       {
         "name": "Revenue",
         "dataType": "DOUBLE",
-        "length": 19
+        "length": 19,
+        "nullable": true
       }
     ]
   }

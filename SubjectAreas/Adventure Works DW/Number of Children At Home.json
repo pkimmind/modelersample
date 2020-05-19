@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Number of Children At Home",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Customer].[Number of Children At Home].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Children At Home.[Customer].[Number of Children At Home].[(All)]"
       },
@@ -31,14 +30,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Children At Home.Number of Children At Home#2"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Number of Children At Home",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Customer].[Number of Children At Home].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Customer].[Number of Children At Home].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Children At Home.[Customer].[Number of Children At Home].[(All)]"
               }
@@ -46,15 +42,12 @@
           },
           {
             "name": "Number of Children At Home",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Number of Children At Home#2",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Children At Home.Number of Children At Home#2"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Country",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Customer].[Country].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Country.[Customer].[Country].[(All)]"
       },
@@ -43,14 +42,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Country.TRAN1"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Country",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Customer].[Country].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Customer].[Country].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Country.[Customer].[Country].[(All)]"
               }
@@ -58,15 +54,12 @@
           },
           {
             "name": "Country",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Country",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Country.Country"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

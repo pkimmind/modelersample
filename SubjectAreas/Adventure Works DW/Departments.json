@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Departments",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "Department Level 01",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Departments.Department Level 01"
       },
@@ -43,14 +42,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Departments.NAME#108"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Departments",
-        "levels": [
-          {
+        "levels": [ {
             "name": "Department Level 01",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Department Level 01",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Departments.Department Level 01"
               }
@@ -58,15 +54,12 @@
           },
           {
             "name": "Department Level 02",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Department Level 02",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Departments.Department Level 02"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

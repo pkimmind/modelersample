@@ -26,23 +26,22 @@
       },
       {
         "name": "FRACTIONAL_SECOND_PRECISION",
-        "value": "0X0",
+        "value": "0X0"
       },
       {
         "name": "MAX_BULK_FETCH_BUFFER_SIZE",
-        "value": "0X50000",
+        "value": "0X50000"
       },
       {
         "name": "DEFAULT_BULK_FETCH_ROW_COUNT",
-        "value": "0X64",
+        "value": "0X64"
       },
       {
         "name": "MAX_COLUMNS_IN_INDEX",
-        "value": "0X0",
+        "value": "0X0"
       }
     ],
-    "connectionPools": [
-      {
+    "connectionPools": [ {
         "name": "NorthwindCodedRec Connections",
         "user": "northwindcr",
         "connectionTimeout": 5,
@@ -52,6 +51,7 @@
         "connection": "biserver-dev.us.oracle.com:1521/orcl",
         "type": "OCI10G",
         "requiresFullyQualifedTableNames": false,
+        "isSharedLogin": true,
         "multithreaded": false,
         "isCloseAfterEveryRequest": false,
         "outputType": "xml",
@@ -60,6 +60,7 @@
         "tempTablePrefix": "TT",
         "transactionBoundary": 10,
         "xmlaUseSession": false,
+        "supportParams": true,
         "isSiebelJDBSecured": false
       },
       {
@@ -72,6 +73,7 @@
         "connection": "biserver-dev.us.oracle.com:1521/orcl",
         "type": "OCI10G",
         "requiresFullyQualifedTableNames": false,
+        "isSharedLogin": true,
         "multithreaded": false,
         "isCloseAfterEveryRequest": false,
         "outputType": "xml",
@@ -80,25 +82,26 @@
         "tempTablePrefix": "TT",
         "transactionBoundary": 10,
         "xmlaUseSession": false,
+        "supportParams": true,
         "isSiebelJDBSecured": false
       }
-    ]
+    ],
     "joins": [
       {
         "join": "complex",
         "name": "CR_SalesPlanToCategories",
         "cardinality": "UNKNOWN",
         "type": "Inner",
-        "leftTable": "SalesPlan",
-        "rightTable": "Categories",
+        "leftTable": "SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SalesPlan",
+        "rightTable": "SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Categories",
         "complexJoinCondition": {
-  "expression": {
-    "expressionTemplate": "%1 = %2",
-    "expressionObjects": [
-      "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SalesPlan.CategoryID",
-      "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Categories.CategoryID"
-    ]
-  }
+          "expression": {
+            "expressionTemplate": "%1 = %2",
+            "expressionObjects": [
+              "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SalesPlan.CategoryID",
+              "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Categories.CategoryID"
+            ]
+          }
         }
       },
       {
@@ -106,16 +109,16 @@
         "name": "supplierid_commpanyid_complexjoin",
         "cardinality": "UNKNOWN",
         "type": "Inner",
-        "leftTable": "sales_supplier_customer",
-        "rightTable": "SupplierCompanies",
+        "leftTable": "SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.sales_supplier_customer",
+        "rightTable": "SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies",
         "complexJoinCondition": {
-  "expression": {
-    "expressionTemplate": " CAST (%1 AS CHARACTER ( 30 )) = %2",
-    "expressionObjects": [
-      "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.sales_supplier_customer.SupplierID",
-      "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies.CompanyID"
-    ]
-  }
+          "expression": {
+            "expressionTemplate": " CAST (%1 AS CHARACTER ( 30 )) = %2",
+            "expressionObjects": [
+              "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.sales_supplier_customer.SupplierID",
+              "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies.CompanyID"
+            ]
+          }
         }
       }
     ]

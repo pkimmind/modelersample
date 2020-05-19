@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Title",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Employee].[Title].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Title.[Employee].[Title].[(All)]"
       },
@@ -31,14 +30,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Title.Title#8"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Title",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Employee].[Title].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Employee].[Title].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Title.[Employee].[Title].[(All)]"
               }
@@ -46,15 +42,12 @@
           },
           {
             "name": "Title",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Title#8",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Title.Title#8"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

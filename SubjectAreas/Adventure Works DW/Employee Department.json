@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Employee Department",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Employee].[Employee Department].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee Department.[Employee].[Employee Department].[(All)]"
       },
@@ -155,14 +154,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee Department.Vacation Hours#1"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Employee Department",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Employee].[Employee Department].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Employee].[Employee Department].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee Department.[Employee].[Employee Department].[(All)]"
               }
@@ -170,8 +166,7 @@
           },
           {
             "name": "Department",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Department",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee Department.Department"
               }
@@ -179,8 +174,7 @@
           },
           {
             "name": "Title",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Title#1",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee Department.Title#1"
               }
@@ -188,15 +182,12 @@
           },
           {
             "name": "Employee",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Employee#1",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee Department.Employee#1"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

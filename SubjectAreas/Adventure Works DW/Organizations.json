@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Organizations",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "Currency Code#1",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.Currency Code#1"
       },
@@ -115,14 +114,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.UNARY_OPERATOR#9"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Organizations",
-        "levels": [
-          {
+        "levels": [ {
             "name": "Organization Level 01",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Organization Level 01",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.Organization Level 01"
               }
@@ -130,8 +126,7 @@
           },
           {
             "name": "Organization Level 02",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Organization Level 02",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.Organization Level 02"
               }
@@ -139,8 +134,7 @@
           },
           {
             "name": "Organization Level 03",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Organization Level 03",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.Organization Level 03"
               }
@@ -148,15 +142,12 @@
           },
           {
             "name": "Organization Level 04",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Organization Level 04",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.Organization Level 04"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

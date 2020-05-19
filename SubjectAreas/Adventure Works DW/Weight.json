@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Weight",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Product].[Weight].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Weight.[Product].[Weight].[(All)]"
       },
@@ -35,14 +34,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Weight.Weight#3"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Weight",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Product].[Weight].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Product].[Weight].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Weight.[Product].[Weight].[(All)]"
               }
@@ -50,15 +46,12 @@
           },
           {
             "name": "Weight",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Weight#3",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Weight.Weight#3"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

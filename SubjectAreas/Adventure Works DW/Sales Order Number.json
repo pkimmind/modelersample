@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "Sales Order Number",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Internet Sales Order Details].[Sales Order Number].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Number.[Internet Sales Order Details].[Sales Order Number].[(All)]"
       },
@@ -31,14 +30,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Number.Sales Order Number#1"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "Sales Order Number",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Internet Sales Order Details].[Sales Order Number].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Internet Sales Order Details].[Sales Order Number].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Number.[Internet Sales Order Details].[Sales Order Number].[(All)]"
               }
@@ -46,15 +42,12 @@
           },
           {
             "name": "Sales Order Number",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "Sales Order Number#1",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Number.Sales Order Number#1"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]

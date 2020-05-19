@@ -1,8 +1,7 @@
 {
   "presentationTable": {
     "name": "City",
-    "presentationColumns": [
-      {
+    "presentationColumns": [ {
         "name": "[Customer].[City].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City.[Customer].[City].[(All)]"
       },
@@ -43,14 +42,11 @@
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City.State-Province"
       }
     ],
-    "hierarchies": [
-      {
+    "hierarchies": [ {
         "name": "City",
-        "levels": [
-          {
+        "levels": [ {
             "name": "[Customer].[City].[(All)]",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "[Customer].[City].[(All)]",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City.[Customer].[City].[(All)]"
               }
@@ -58,15 +54,12 @@
           },
           {
             "name": "City",
-            "displayColumns": [
-              {
+            "displayColumns": [ {
                 "name": "City",
                 "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City.City"
               }
             ]
           }
-        ],
-        "customDisplayProperties": [
         ]
       }
     ]
