@@ -1,0 +1,301 @@
+{
+  "logicalTable": {
+    "name": "Standard Cost",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "[Product].[Standard Cost].[(All)]",
+        "descriptorColumn": "[Product].[Standard Cost].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Product].[Standard Cost].[(All)]"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "[Product].[Standard Cost].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Product].[Standard Cost].[(All)] - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#265",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#265"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#266",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#266"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#265",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#265"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#266",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#266"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#208",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#208"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Standard Cost - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Standard Cost - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Standard Cost#2",
+        "descriptorColumn": "Standard Cost - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Standard Cost#2"
+                ]
+              },
+            }
+          }
+        ]
+      }
+    ],
+    "keys": [ {
+        "name": "Standard Cost",
+        "isPrimary": "true",
+        "columns": [
+          "[Product].[Standard Cost].[(All)]",
+          "Standard Cost#2"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Adventure Works",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:Adventure Works DW...Adventure Works"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:Adventure Works DW.Standard Cost.Standard Cost"
+          ]
+        }
+      },
+    ],
+    "dimension": {
+      "name": "Standard Cost",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/9eacda46-0c68-1000-8c4a-822330c20000.xml#m9eacda47-0c68-1000-8c4a-822330c20000"      "levels": [
+        {
+          "name": "[Product].[Standard Cost].[(All)]",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "[Product].[Standard Cost].[(All)]",
+          "keys": [ {
+        "name": "[Product].[Standard Cost].[(All)] - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "[Product].[Standard Cost].[(All)] - Member Key"
+        ]
+      },
+      {
+        "name": "[Product].[Standard Cost].[(All)]",
+        "isForDrillDown": true,
+        "columns": [
+          "[Product].[Standard Cost].[(All)]"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Standard Cost",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Standard Cost",
+              "keys": [ {
+            "name": "Standard Cost - Member Key",
+            "isPrimary": "true",
+            "columns": [
+              "Standard Cost - Member Key"
+            ]
+          },
+          {
+            "name": "Standard Cost",
+            "isForDrillDown": true,
+            "columns": [
+              "Standard Cost#2"
+            ]
+          }
+              ],
+              "columns": [
+                "KEY0#266",
+                "MEMBER_VALUE#266",
+                "Standard Cost - Member Key",
+                "Standard Cost#2"
+              ]
+            }
+          ],
+          "columns": [
+            "[Product].[Standard Cost].[(All)]",
+            "[Product].[Standard Cost].[(All)] - Member Key",
+            "KEY0#265",
+            "MEMBER_VALUE#265",
+            "NAME#208"
+          ]
+        },
+        {
+          "name": "Standard Cost",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Standard Cost",
+          "keys": [ {
+        "name": "Standard Cost - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "Standard Cost - Member Key"
+        ]
+      },
+      {
+        "name": "Standard Cost",
+        "isForDrillDown": true,
+        "columns": [
+          "Standard Cost#2"
+        ]
+      }
+          ],
+          "columns": [
+            "KEY0#266",
+            "MEMBER_VALUE#266",
+            "Standard Cost - Member Key",
+            "Standard Cost#2"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Standard Cost",
+        "levels": [
+          {
+            "name": "[Product].[Standard Cost].[(All)]",
+            "childLevels": [
+              {
+                "name": "Standard Cost"
+              }
+            ]
+          },
+          {
+            "name": "Standard Cost"
+          }
+        ]
+      }
+    }
+  }
+}

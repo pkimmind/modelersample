@@ -1,0 +1,96 @@
+{
+  "logicalTable": {
+    "name": "NUMBER_1E124",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "COL_ROWNUM",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "NUMBER_1E124",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:NumberTest..NORTHWIND.NUMBER_1E124.COL_ROWNUM"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "COL_ROWNUM_1E124",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "NUMBER_1E124",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:NumberTest..NORTHWIND.NUMBER_1E124.COL_ROWNUM_1E124"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "COL_ROWNUM_1EMINUS124",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "NUMBER_1E124",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:NumberTest..NORTHWIND.NUMBER_1E124.COL_ROWNUM_1EMINUS124"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "COL_ROWNUM_MINUS1E124",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "NUMBER_1E124",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:NumberTest..NORTHWIND.NUMBER_1E124.COL_ROWNUM_MINUS1E124"
+                ]
+              },
+            }
+          }
+        ]
+      }
+    ],
+    "keys": [ {
+        "name": "NUMBER_1E124_Key",
+        "isPrimary": "true",
+        "columns": [
+          "COL_ROWNUM"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "NUMBER_1E124",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:NumberTest..NORTHWIND.NUMBER_1E124"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        }
+      },
+    ]
+  }
+}

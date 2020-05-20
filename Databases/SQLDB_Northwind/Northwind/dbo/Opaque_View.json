@@ -9,8 +9,7 @@
     "selectStatements": [
       {
         "databaseType": "DEFAULT",
-        "query": "select (case VALUEOF(0, NQ_SESSION.variable_1A) when 'value_1A' then 'value_1A' else 'NO_VALUE' end) Column1 from dual
-"
+        "query": "select (case VALUEOF(0, NQ_SESSION.variable_1A) when 'value_1A' then 'value_1A' else 'NO_VALUE' end) Column1 from dual\n"
       }
     ],
     "physicalColumns": [ {

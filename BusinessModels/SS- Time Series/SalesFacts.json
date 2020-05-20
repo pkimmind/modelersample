@@ -1,0 +1,3144 @@
+{
+  "logicalTable": {
+    "name": "SalesFacts",
+    "type": "FACT",
+    "logicalColumns": [ {
+        "name": "ShipVia",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.Orders.ShipVia"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Cross Sell Orders",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.Orders.ShipVia"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Order Header",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.Orders.ShipVia"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "EmployeeID",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": " CAST (%1 AS SMALLINT )",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.Orders.EmployeeID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_prod_emp",
+              "physicalExpression": {
+                "expressionTemplate": " CAST (%1 AS SMALLINT )",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.Orders.EmployeeID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Cross Sell Orders",
+              "physicalExpression": {
+                "expressionTemplate": " CAST (%1 AS SMALLINT )",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.Orders.EmployeeID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Order Header",
+              "physicalExpression": {
+                "expressionTemplate": " CAST (%1 AS SMALLINT )",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.Orders.EmployeeID"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "ProductID",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.ProductId"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_prod_emp",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.ProductId"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Cross Sell Orders",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.ProductId"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_monthly",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.ProductId"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "CustomerID",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.CustomerID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_supplier_customer",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.CustomerID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_AToH",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.CustomerID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_HToT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.CustomerID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_TToZ",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.CustomerID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Cross Sell Orders",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.CustomerID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Order Header",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.CustomerID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_monthly",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.CustomerID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_month_cust_AToH",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.CustomerID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_month_cust_HToT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.CustomerID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_month_cust_TToZ",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.CustomerID"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "SiteID",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.SiteID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Cross Sell Orders",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.SiteID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Order Header",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.SiteID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_monthly",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.SiteID"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "DateID",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.Orders.DateID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Cross Sell Orders",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.Orders.DateID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Order Header",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.Orders.DateID"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "OrderDate",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.Orders.OrderDate"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Cross Sell Orders",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.Orders.OrderDate"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Order Header",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.Orders.OrderDate"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Revenue",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1 * %2",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.UnitPrice",
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_prod_emp",
+              "physicalExpression": {
+                "expressionTemplate": "%1 * %2",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.UnitPrice",
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_AToH",
+              "physicalExpression": {
+                "expressionTemplate": "%1 * %2",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.UnitPrice",
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_HToT",
+              "physicalExpression": {
+                "expressionTemplate": "%1 * %2",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.UnitPrice",
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_TToZ",
+              "physicalExpression": {
+                "expressionTemplate": "%1 * %2",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.UnitPrice",
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Cross Sell Orders",
+              "physicalExpression": {
+                "expressionTemplate": "%1 * %2",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.UnitPrice",
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.Quantity"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      }
+  }
+}
+ {
+        "name": "QtySold",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_prod_emp",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_supplier_customer",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_AToH",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_HToT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_TToZ",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Cross Sell Orders",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_monthly",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_month_cust_AToH",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_month_cust_HToT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_month_cust_TToZ",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_1995",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_gt1995",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_lt1995",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      }
+  }
+}
+ {
+        "name": "Cross Sell Product ID",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [            {
+              "logicalTableSource": "Cross Sell Orders",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.Cross Sell OrderDetails.ProductID"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Basket Count",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.OrderID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Cross Sell Orders",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.OrderID"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      }
+  }
+}
+ {
+        "name": "Basket Count by All Cross Sell",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.Basket Count"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "Likelihood of Buying",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " CASE  WHEN %1 = 0 THEN  NULL  ELSE 100.0d * %2 / %1 END ",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.Basket Count by All Cross Sell",
+                "logicalColumn:SS- Time Series.SalesFacts.Basket Count"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "Revenue by All Cross Sell",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.Revenue"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "Likelihood of Buying by $",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " CASE  WHEN %1 = 0 THEN  NULL  ELSE 100.0d * %2 / %1 END ",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.Revenue by All Cross Sell",
+                "logicalColumn:SS- Time Series.SalesFacts.Revenue"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "Category Country Revenue",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.Revenue"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "Category Qtr Revenue",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.Revenue"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "% of Category Country Revenue",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " CASE  WHEN %1 = 0 THEN  NULL  ELSE 100.0d * %2 / %1 END ",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.Category Country Revenue",
+                "logicalColumn:SS- Time Series.SalesFacts.Revenue"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "% of Category Qtr Revenue",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " CASE  WHEN %1 = 0 THEN  NULL  ELSE 100.0d * %2 / %1 END ",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.Category Qtr Revenue",
+                "logicalColumn:SS- Time Series.SalesFacts.Revenue"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "Population",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [            {
+              "logicalTableSource": "Population",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.Population.Population"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      }
+  }
+}
+ {
+        "name": "All Product Time Population",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.Population"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "All Product Country Time Population",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.Population"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "% of Country Population",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " CASE  WHEN %1 = 0 THEN  NULL  ELSE 100.0d * %2 / %1 END ",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.All Product Country Time Population",
+                "logicalColumn:SS- Time Series.SalesFacts.All Product Time Population"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "Revenue Development Index",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " CASE  WHEN %1 = 0 THEN  NULL  ELSE 1.0d * %2 / %1 END ",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.% of Country Population",
+                "logicalColumn:SS- Time Series.SalesFacts.% of Category Country Revenue"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "# Orders",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.Orders.OrderID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Order Header",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.Orders.OrderID"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      },
+{
+  "": {
+    "name": "OvAggRule_2054:19291235451391",
+ logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/8001eba8-07f5-0000-714b-e31d00000000.xml#m8001eba8-07f5-0000-714b-e31d00000000">
+"Expr": {
+  "expressionTemplate": " COUNT(%1)",
+  "expressionObjects": [
+    "logicalColumn:SS- Time Series.SalesFacts.# Orders"
+  ]
+}
+  }
+}
+  }
+}
+ {
+        "name": "# Customers",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.Orders.CustomerID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_supplier_customer",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.Orders.CustomerID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Order Header",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.Orders.CustomerID"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      },
+{
+  "": {
+    "name": "OvAggRule_2054:19301235451391",
+ logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/8001eb9c-07f5-0000-714b-e31d00000000.xml#m8001eb9c-07f5-0000-714b-e31d00000000">
+"Expr": {
+  "expressionTemplate": " COUNT(DISTINCT %1)",
+  "expressionObjects": [
+    "logicalColumn:SS- Time Series.SalesFacts.# Customers"
+  ]
+}
+  }
+}
+{
+  "": {
+    "name": "OvAggRule_2054:19311235451391",
+ logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/8001eba8-07f5-0000-714b-e31d00000000.xml#m8001eba8-07f5-0000-714b-e31d00000000">
+"Expr": {
+  "expressionTemplate": " COUNT(DISTINCT %1)",
+  "expressionObjects": [
+    "logicalColumn:SS- Time Series.SalesFacts.# Customers"
+  ]
+}
+  }
+}
+  }
+}
+ {
+        "name": "MedianQtySold",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_prod_emp",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_supplier_customer",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_AToH",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_HToT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_TToZ",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Cross Sell Orders",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.Quantity"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      }
+  }
+}
+ {
+        "name": "QtySold_YAgo",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO(%1, %2, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "QtySold_MonthAgo",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO(%1, %2, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalLevel:SS- Time Series.Time.Month"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "QtySold_QtrAgo",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO(%1, %2, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalLevel:SS- Time Series.Time.Quarter"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "QtySold_WeekAgo",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO(%1, %2, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalLevel:SS- Time Series.Time.Week"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "QtySold_DayAgo",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO(%1, %2, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalLevel:SS- Time Series.Time.Day"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "QtySold_ZeroYAgo",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO(%1, %2, 0)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "AGO_Measures_add",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO(%1 + %2, %3, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalColumn:SS- Time Series.SalesFacts.Basket Count",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "BasketCount_YAgo",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO(%1, %2, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.Basket Count",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "AGO_Measures_Multiply",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO(%1 * %2, %3, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalColumn:SS- Time Series.SalesFacts.Basket Count",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "AGO_Measures_Divide1",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO(%1 / %2, %3, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalColumn:SS- Time Series.SalesFacts.Basket Count",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "AGO_Measures_Divide2",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO(%1 / %2, %3, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.Revenue",
+                "logicalColumn:SS- Time Series.SalesFacts.# Orders",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "#Orders_YAgo",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO(%1, %2, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.# Orders",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "Revenue_YAgo",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO(%1, %2, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.Revenue",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "QtySold_YAgo_Rank",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO( RANK(%1), %2, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "QtySold_YAgo_Filter",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO( FILTER(%1 USING %2 IN (1, 2)), %3, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalColumn:SS- Time Series.SalesFacts.ProductID",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "QtySold_YAgo_Filter_Time",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO( FILTER(%1 USING %2 = 1995), %3, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalColumn:SS- Time Series.W_DAY_D.CAL_YEAR",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "% of Category_Qtr_Rev_Yago",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO(%1, %2, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.% of Category Qtr Revenue",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "Qtysold_Yago_Case",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO(%1, %2, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.Qtysold_Case",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "Qtysold_Casepid12",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " CASE  WHEN %1 IN (1, 2) THEN %2 ELSE 0 END ",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.ProductID",
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "YearlySales",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "Amt_Dim_Measure",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1 * %2",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.Quantity",
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.UnitPrice"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Cross Sell Orders",
+              "physicalExpression": {
+                "expressionTemplate": "%1 * %2",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.Quantity",
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.UnitPrice"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      }
+  }
+}
+ {
+        "name": "Amt_dim_measure_yago",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO(%1, %2, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.Amt_Dim_Measure",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "Revenue after Discount",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1 * %2 - %3",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.Quantity",
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.UnitPrice",
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.Discount"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      }
+  }
+}
+ {
+        "name": "Discount",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.Discount"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "UnitPrice",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.UnitPrice"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Revenue After Discount_Yago",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO(%1, %2, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.Revenue after Discount",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "Qtysold_Case",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": " CASE  WHEN %1 < 100 THEN %1 ELSE 0 END ",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.Quantity"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      }
+  }
+}
+ {
+        "name": "QtySold_2YAgo",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO(%1, %2, 2)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "QtySold_Month_end",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_prod_emp",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_supplier_customer",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_AToH",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_HToT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_TToZ",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Cross Sell Orders",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_monthly",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_month_cust_AToH",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_month_cust_HToT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_month_cust_TToZ",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [          "dimension": "logicalTable:SS- Time Series.Time",
+          "aggregateExpression": {
+            "expressionTemplate": " LAST(%1)",
+            "expressionObjects": [
+              "logicalColumn:SS- Time Series.SalesFacts.QtySold_Month_end"
+            ]
+          },
+        ],
+      }
+  }
+}
+ {
+        "name": "Qtysold_Rsum",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " RSUM(%1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "Qtysold_Rsum_Yago",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO( RSUM(%1), %2, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "Revenue_after_Discount2",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1 * %2 - %3",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.UnitPrice",
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.Quantity",
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.Discount"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Cross Sell Orders",
+              "physicalExpression": {
+                "expressionTemplate": "%1 * %2 - %3",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.UnitPrice",
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.Quantity",
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.Discount"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      }
+  }
+}
+ {
+        "name": "QtySold_ToYear",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " TODATE(%1, %2)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "QtySold_ToQtr",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " TODATE(%1, %2)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalLevel:SS- Time Series.Time.Quarter"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "QtySold_ToMonth",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " TODATE(%1, %2)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalLevel:SS- Time Series.Time.Month"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "QtySold_ToWeek",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " TODATE(%1, %2)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalLevel:SS- Time Series.Time.Week"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "QtySold_ToDay",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " TODATE(%1, %2)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalLevel:SS- Time Series.Time.Day"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "QtySold_ToYear_Rank",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " TODATE( RANK(%1), %2)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "QtySold_ToYear_Filter",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " TODATE( FILTER(%1 USING %2 IN (1, 2)), %3)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalColumn:SS- Time Series.Product.ProductID",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "QtySold_ToYear_Filter_Time",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " TODATE( FILTER(%1 USING %2 = 1995), %3)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalColumn:SS- Time Series.W_DAY_D.CAL_YEAR",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "Qtysold_Rsum_ToYear",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " TODATE( RSUM(%1), %2)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "ToDate_Measures_add",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " TODATE(%1 + %2, %3)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalColumn:SS- Time Series.SalesFacts.Basket Count",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "ToDate_Measures_Multiply",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " TODATE(%1 * %2, %3)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalColumn:SS- Time Series.SalesFacts.Basket Count",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "ToDate_Measures_Divide1",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " TODATE(%1 / %2, %3)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalColumn:SS- Time Series.SalesFacts.Basket Count",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "ToDate_Measures_Divide2",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " TODATE(%1 / %2, %3)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.Revenue",
+                "logicalColumn:SS- Time Series.SalesFacts.# Orders",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "BasketCount_ToYear",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " TODATE(%1, %2)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.Basket Count",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "QtySold_FMonthAgo",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO(%1, %2, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalLevel:SS- Time Series.Time.Fiscal Month"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "QtySold_FYAgo",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO(%1, %2, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalLevel:SS- Time Series.Time.Fiscal Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "QtySold_FYAgo_Filter",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO( FILTER(%1 USING %2 IN (1, 2)), %3, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalColumn:SS- Time Series.SalesFacts.ProductID",
+                "logicalLevel:SS- Time Series.Time.Fiscal Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "QtySold_FYAgo_Filter_Time",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO( FILTER(%1 USING %2 = 1996), %3, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalColumn:SS- Time Series.W_DAY_D.FSCL_YEAR",
+                "logicalLevel:SS- Time Series.Time.Fiscal Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "Revenue_ToYear",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " TODATE(%1, %2)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.Revenue",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "#Orders_ToYear",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " TODATE(%1, %2)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.# Orders",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "Qtysold_Toyear_Case",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " TODATE(%1, %2)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.Qtysold_Case",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "QtySoldnotime",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_supplier_customer.QtySold"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_prod_emp",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_supplier_customer.QtySold"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_supplier_customer",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_supplier_customer.QtySold"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_AToH",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_supplier_customer.QtySold"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_HToT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_supplier_customer.QtySold"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_TToZ",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_supplier_customer.QtySold"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [          "dimension": "logicalTable:SS- Time Series.Time",
+          "aggregateExpression": {
+            "expressionTemplate": " MAX(%1)",
+            "expressionObjects": [
+              "logicalColumn:SS- Time Series.SalesFacts.QtySoldnotime"
+            ]
+          },
+        ],
+      }
+  }
+}
+ {
+        "name": "qtysoldnotime_yago",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO(%1, %2, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySoldnotime",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "qtysoldnotime_ytd",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " TODATE(%1, %2)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySoldnotime",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "yearly_QtySold",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_prod_emp",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_supplier_customer",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_AToH",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_HToT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_TToZ",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Cross Sell Orders",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_monthly",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_month_cust_AToH",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_month_cust_HToT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_month_cust_TToZ",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      }
+  }
+}
+ {
+        "name": "Category Qtr Revenue_new",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.Revenue"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "QtySold_last",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_prod_emp",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_supplier_customer",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_AToH",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_HToT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_TToZ",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Cross Sell Orders",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_monthly",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_month_cust_AToH",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_month_cust_HToT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_month_cust_TToZ",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly.Mon_Quantity"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [          "dimension": "logicalTable:SS- Time Series.Time",
+          "aggregateExpression": {
+            "expressionTemplate": " LAST(%1)",
+            "expressionObjects": [
+              "logicalColumn:SS- Time Series.SalesFacts.QtySold_last"
+            ]
+          },
+        ],
+      }
+  }
+}
+ {
+        "name": "Qtysold_last_yago",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO(%1, %2, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold_last",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "qtysold_yago_yago",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO( AGO(%1, %2, 1), %2, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "qtysold_yago_monthago",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO( AGO(%1, %2, 1), %3, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalLevel:SS- Time Series.Time.Month",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "qtysold_yago_toyear",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO( TODATE(%1, %2), %2, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "qtysold_to_toyear",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " TODATE( TODATE(%1, %2), %2)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "qtysold_yago_tomonth",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO( TODATE(%1, %2), %3, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalLevel:SS- Time Series.Time.Month",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "qtyago_revyago_yago",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO(%1 + %2, %3, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold_YAgo",
+                "logicalColumn:SS- Time Series.SalesFacts.Revenue_YAgo",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "Revenue_2YAgo",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO(%1, %2, 2)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.Revenue",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "yago_revyago_qtymon",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO(%1 + %2, %3, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.Revenue_YAgo",
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold_MonthAgo",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "yago_qtyago_qtytoyear",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO(%1 + %2, %3, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold_YAgo",
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold_ToYear",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "yago_rev_qtyago",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO(%1 / %2, %3, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.Revenue_YAgo",
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold_YAgo",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "QtySold_YAgo_yago_ygao_yago",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO( AGO( AGO( AGO(%1, %2, 1), %2, 1), %2, 1), %2, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "qtysold_yago_yago_toyear",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " AGO( AGO( TODATE(%1, %2), %2, 1), %2, 1)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "qtysold_toyear_yago_toyear",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " TODATE( AGO( TODATE(%1, %2), %2, 1), %2)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.QtySold",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "% of Category_Qtr_Rev_toyear",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " TODATE(%1, %2)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.% of Category Qtr Revenue",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "Amt_dim_measure_toyear",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " TODATE(%1, %2)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.Amt_Dim_Measure",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "Revenue After Discount_toyear",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " TODATE(%1, %2)",
+              "expressionObjects": [
+                "logicalColumn:SS- Time Series.SalesFacts.Revenue after Discount",
+                "logicalLevel:SS- Time Series.Time.Year"
+              ]
+            },
+          },
+        ]
+    ],
+    "keys": [ {
+        "name": "SalesFacts_Key",
+        "isPrimary": "true",
+        "columns": [
+          "ShipVia",
+          "EmployeeID",
+          "ProductID",
+          "CustomerID",
+          "SiteID",
+          "OrderDate"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Sales Transactions",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind_Time.Northwind_Time.dbo.Orders",
+            "physicalTable:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails"
+          ],
+          "logicalTableSourceJoins": [
+            {
+              "leftTable": "SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails",
+              "rightTable": "SQLDB_Northwind_Time.Northwind_Time.dbo.Orders",
+              "joinType": "Inner",
+              "physicalJoinRef": "SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.FK__OrderDeta__Order__1EC48A19"
+            },
+            {
+              "leftTable": "SQLDB_Northwind_Time.Northwind_Time.dbo.Orders",
+              "rightTable": "SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails",
+              "joinType": "Inner",
+              "physicalJoinRef": "SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.FK__OrderDeta__Order__1EC48A19"
+            }
+          ],
+        }
+      },
+      {
+        "name": "sales_prod_emp",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_prod_emp"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYCOLUMN(%1, %2)",
+          "expressionObjects": [
+            "logicalColumn:SS- Time Series.Employee.EmployeeID",
+            "logicalColumn:SS- Time Series.Product.ProductID"
+          ]
+        }
+      },
+      {
+        "name": "sales_supplier_customer",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_supplier_customer"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYCOLUMN(%1, %2)",
+          "expressionObjects": [
+            "logicalColumn:SS- Time Series.Customer.CustomerID",
+            "logicalColumn:SS- Time Series.Supplier.SupplierID"
+          ]
+        }
+      },
+      {
+        "name": "sales_cust_AToH",
+        "disable": true,
+        "canCombine": true,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_cust_AToH"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYCOLUMN(%1)",
+          "expressionObjects": [
+            "logicalColumn:SS- Time Series.Customer.CustomerID"
+          ]
+        },
+        "dataFragmentation": {
+          "expressionTemplate": "%1 BETWEEN 'A' AND 'GZZZZZZ'",
+          "expressionObjects": [
+            "logicalColumn:SS- Time Series.Customer.CustomerID"
+          ]
+        }
+      },
+      {
+        "name": "sales_cust_HToT",
+        "disable": true,
+        "canCombine": true,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_cust_HToT"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYCOLUMN(%1)",
+          "expressionObjects": [
+            "logicalColumn:SS- Time Series.Customer.CustomerID"
+          ]
+        },
+        "dataFragmentation": {
+          "expressionTemplate": "%1 BETWEEN 'H' AND 'SZZZZZZ'",
+          "expressionObjects": [
+            "logicalColumn:SS- Time Series.Customer.CustomerID"
+          ]
+        }
+      },
+      {
+        "name": "sales_cust_TToZ",
+        "disable": true,
+        "canCombine": true,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_cust_TToZ"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYCOLUMN(%1)",
+          "expressionObjects": [
+            "logicalColumn:SS- Time Series.Customer.CustomerID"
+          ]
+        },
+        "dataFragmentation": {
+          "expressionTemplate": "%1 BETWEEN 'T' AND 'ZZZZZZZZZZZZZZZ'",
+          "expressionObjects": [
+            "logicalColumn:SS- Time Series.Customer.CustomerID"
+          ]
+        }
+      },
+      {
+        "name": "Cross Sell Orders",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind_Time.Northwind_Time.dbo.Orders",
+            "physicalTable:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails",
+            "physicalTable:SQLDB_Northwind_Time.Northwind_Time.dbo.Cross Sell OrderDetails"
+          ],
+          "logicalTableSourceJoins": [
+            {
+              "leftTable": "SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails",
+              "rightTable": "SQLDB_Northwind_Time.Northwind_Time.dbo.Orders",
+              "joinType": "Inner",
+              "cardinality": "MANY TO ONE",
+              "physicalJoinRef": "SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.FK__OrderDeta__Order__1EC48A19"
+            },
+            {
+              "leftTable": "SQLDB_Northwind_Time.Northwind_Time.dbo.Orders",
+              "rightTable": "SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails",
+              "joinType": "Inner",
+              "cardinality": " ONE TO MANY",
+              "physicalJoinRef": "SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.FK__OrderDeta__Order__1EC48A19"
+              "leftTable": "SQLDB_Northwind_Time.Northwind_Time.dbo.Orders",
+              "rightTable": "SQLDB_Northwind_Time.Northwind_Time.dbo.Cross Sell Orders",
+              "joinType": "Inner",
+              "cardinality": "MANY TO ONE",
+              "physicalJoinRef": "SQLDB_Northwind_Time.Northwind_Time.dbo.Orders.Orders_FKey"
+            },
+            {
+              "leftTable": "SQLDB_Northwind_Time.Northwind_Time.dbo.Cross Sell OrderDetails",
+              "rightTable": "SQLDB_Northwind_Time.Northwind_Time.dbo.Cross Sell Orders",
+              "joinType": "Inner",
+              "cardinality": "MANY TO ONE",
+              "physicalJoinRef": "SQLDB_Northwind_Time.Northwind_Time.dbo.Cross Sell OrderDetails.Cross Sell OrderDetails_FKey"
+            },
+            {
+              "leftTable": "SQLDB_Northwind_Time.Northwind_Time.dbo.Cross Sell Orders",
+              "rightTable": "SQLDB_Northwind_Time.Northwind_Time.dbo.Orders",
+              "joinType": "Inner",
+              "cardinality": " ONE TO MANY",
+              "physicalJoinRef": "SQLDB_Northwind_Time.Northwind_Time.dbo.Orders.Orders_FKey"
+              "leftTable": "SQLDB_Northwind_Time.Northwind_Time.dbo.Cross Sell Orders",
+              "rightTable": "SQLDB_Northwind_Time.Northwind_Time.dbo.Cross Sell OrderDetails",
+              "joinType": "Inner",
+              "cardinality": " ONE TO MANY",
+              "physicalJoinRef": "SQLDB_Northwind_Time.Northwind_Time.dbo.Cross Sell OrderDetails.Cross Sell OrderDetails_FKey"
+            }
+          ],
+        },
+        "WhereClause": {
+          "expressionTemplate": "%1 <> %2",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.OrderDetails.ProductID",
+            "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.Cross Sell OrderDetails.ProductID"
+          ]
+        }
+      },
+      {
+        "name": "Population",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind_Time.Northwind_Time.dbo.Population"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:SS- Time Series.Employee.City"
+          ]
+        }
+      },
+      {
+        "name": "Order Header",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind_Time.Northwind_Time.dbo.Orders"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1, %2, %3)",
+          "expressionObjects": [
+            "logicalLevel:SS- Time Series.Customer.Site",
+            "logicalLevel:SS- Time Series.Employee.Employee",
+            "logicalLevel:SS- Time Series.Shipper.Shipper"
+          ]
+        }
+      },
+      {
+        "name": "sales_monthly",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_monthly"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:SS- Time Series.Time.Month"
+          ]
+        }
+      },
+      {
+        "name": "sales_month_cust_AToH",
+        "disable": true,
+        "canCombine": true,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_month_cust_AToH"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1, %2)",
+          "expressionObjects": [
+            "logicalLevel:SS- Time Series.Customer.Customer",
+            "logicalLevel:SS- Time Series.Time.Month"
+          ]
+        },
+        "dataFragmentation": {
+          "expressionTemplate": "%1 BETWEEN 'A' AND 'GZZZZZZ'",
+          "expressionObjects": [
+            "logicalColumn:SS- Time Series.Customer.CustomerID"
+          ]
+        }
+      },
+      {
+        "name": "sales_month_cust_HToT",
+        "disable": true,
+        "canCombine": true,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_month_cust_HToT"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1, %2)",
+          "expressionObjects": [
+            "logicalLevel:SS- Time Series.Customer.Customer",
+            "logicalLevel:SS- Time Series.Time.Month"
+          ]
+        },
+        "dataFragmentation": {
+          "expressionTemplate": "%1 BETWEEN 'H' AND 'SZZZZZZ'",
+          "expressionObjects": [
+            "logicalColumn:SS- Time Series.Customer.CustomerID"
+          ]
+        }
+      },
+      {
+        "name": "sales_month_cust_TToZ",
+        "disable": true,
+        "canCombine": true,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_month_cust_TToZ"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1, %2)",
+          "expressionObjects": [
+            "logicalLevel:SS- Time Series.Customer.Customer",
+            "logicalLevel:SS- Time Series.Time.Month"
+          ]
+        },
+        "dataFragmentation": {
+          "expressionTemplate": "%1 BETWEEN 'T' AND 'ZZZZZZZZZZZZZZZ'",
+          "expressionObjects": [
+            "logicalColumn:SS- Time Series.Customer.CustomerID"
+          ]
+        }
+      },
+      {
+        "name": "sales_1995",
+        "disable": true,
+        "canCombine": true,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_1995"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:SS- Time Series.Time.Day"
+          ]
+        },
+        "dataFragmentation": {
+          "expressionTemplate": "%1 = 1995",
+          "expressionObjects": [
+            "logicalColumn:SS- Time Series.W_DAY_D.CAL_YEAR"
+          ]
+        }
+      },
+      {
+        "name": "sales_gt1995",
+        "disable": true,
+        "canCombine": true,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_gt1995"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:SS- Time Series.Time.Day"
+          ]
+        },
+        "dataFragmentation": {
+          "expressionTemplate": "%1 > 1995",
+          "expressionObjects": [
+            "logicalColumn:SS- Time Series.W_DAY_D.CAL_YEAR"
+          ]
+        }
+      },
+      {
+        "name": "sales_lt1995",
+        "disable": true,
+        "canCombine": true,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind_Time.Northwind_Time.dbo.sales_lt1995"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:SS- Time Series.Time.Day"
+          ]
+        },
+        "dataFragmentation": {
+          "expressionTemplate": "%1 < 1995",
+          "expressionObjects": [
+            "logicalColumn:SS- Time Series.W_DAY_D.CAL_YEAR"
+          ]
+        }
+      },
+    ],
+    "dimension": {
+      "name": "Cross Sell",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/8001e6ff-07e3-0000-714b-e31d00000000.xml#m8001e94d-07e9-0000-714b-e31d00000000"      "levels": [
+        {
+          "name": "All Cross Sell Products",
+          "isGTA": true,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "All Cross Sell Products",
+          "childLevels": [
+            {
+              "name": "Product",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Product",
+              "keys": [ {
+            "name": "ProductID",
+            "isPrimary": "true",
+            "isForDrillDown": true,
+            "columns": [
+              "ProductID"
+            ]
+          }
+              ],
+              "columns": [
+                "ProductID"
+              ]
+            }
+          ],
+          "columns": [
+            "Basket Count by All Cross Sell",
+            "Revenue by All Cross Sell"
+          ]
+        },
+        {
+          "name": "Product",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Product",
+          "keys": [ {
+        "name": "ProductID",
+        "isPrimary": "true",
+        "isForDrillDown": true,
+        "columns": [
+          "ProductID"
+        ]
+      }
+          ],
+          "columns": [
+            "ProductID"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Cross Sell",
+        "levels": [
+          {
+            "name": "All Cross Sell Products",
+            "childLevels": [
+              {
+                "name": "Product"
+              }
+            ]
+          },
+          {
+            "name": "Product"
+          }
+        ]
+      }
+    }
+  }
+}

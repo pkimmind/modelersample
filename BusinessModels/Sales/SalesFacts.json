@@ -1,0 +1,528 @@
+{
+  "logicalTable": {
+    "name": "SalesFacts",
+    "description": "This table is the logical fact table. We currently only support \nlogical schemas with one fact table. Note however that multiple \nphysical fact tables could be underneath that one logical fact table \nas in this sample repository.",
+    "type": "FACT",
+    "logicalColumns": [ {
+        "name": "ShipVia",
+        "description": "My Description for col Ship VIa (Haward)",
+        "sortBy": "QtySold",
+        "descriptorColumn": "ProductID",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "SalesTransactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.ShipVia"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Week",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "SalesTransactions",
+              "physicalExpression": {
+                "expressionTemplate": " EXTRACT( WEEK_OF_YEAR  FROM %1)",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.OrderDate"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "EmployeeID",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "SalesTransactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_prod_emp.EmployeeID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Sales Product Employee",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_prod_emp.EmployeeID"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "ProductID",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "SalesTransactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_prod_emp.ProductID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Sales Product Employee",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_prod_emp.ProductID"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "CustomerID",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "SalesTransactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_supplier_customer.CustomerID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Sales Customer A to H",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_supplier_customer.CustomerID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Sales Customer H To T",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_supplier_customer.CustomerID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Sales Customer T to Z",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_supplier_customer.CustomerID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Sales Supplier Customer",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_supplier_customer.CustomerID"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "QtySold",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "SalesTransactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_supplier_customer.QtySold"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Sales Product Employee",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_supplier_customer.QtySold"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Sales Customer A to H",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_supplier_customer.QtySold"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Sales Customer H To T",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_supplier_customer.QtySold"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Sales Customer T to Z",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_supplier_customer.QtySold"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Sales Supplier Customer",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_supplier_customer.QtySold"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      }
+  }
+}
+ {
+        "name": "Revenue",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "SalesTransactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_cust_TToZ.Revenue"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Sales Product Employee",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_cust_TToZ.Revenue"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Sales Customer A to H",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_cust_TToZ.Revenue"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Sales Customer H To T",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_cust_TToZ.Revenue"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Sales Customer T to Z",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_cust_TToZ.Revenue"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      }
+  }
+}
+ {
+        "name": "PlanRevenue",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [            {
+              "logicalTableSource": "Sales Plan",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.SalesPlan.Revenue"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      }
+  }
+}
+ {
+        "name": "SiteID",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "SalesTransactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.SiteID"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Year",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "SalesTransactions",
+              "physicalExpression": {
+                "expressionTemplate": " EXTRACT( YEAR  FROM %1)",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.OrderDate"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Sales Plan",
+              "physicalExpression": {
+                "expressionTemplate": " EXTRACT( YEAR  FROM %1)",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.OrderDate"
+                ]
+              },
+            }
+          }
+        ]
+      }
+    ],
+    "keys": [ {
+        "name": "Sales_Key",
+        "isPrimary": "true",
+        "columns": [
+          "ShipVia",
+          "Week",
+          "EmployeeID",
+          "ProductID",
+          "CustomerID",
+          "SiteID",
+          "Year"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "SalesTransactions",
+        "description": "Transactional fact sources have no specified levels in their content filter. \nNote that transaction sources should have a physical mapping \nexpression definition for all foreign key columns. These mapping expressions \nexplicitly specify join relationships with related levels.\n",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.OrderDetails",
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.Orders"
+          ],
+          "logicalTableSourceJoins": [
+            {
+              "leftTable": "SQLDB_Northwind.Northwind.dbo.OrderDetails",
+              "rightTable": "SQLDB_Northwind.Northwind.dbo.Orders",
+              "joinType": "Inner",
+              "physicalJoinRef": "SQLDB_Northwind.Northwind.dbo.OrderDetails.FK__OrderDeta__Order__1EC48A19"
+            },
+            {
+              "leftTable": "SQLDB_Northwind.Northwind.dbo.Orders",
+              "rightTable": "SQLDB_Northwind.Northwind.dbo.OrderDetails",
+              "joinType": "Inner",
+              "physicalJoinRef": "SQLDB_Northwind.Northwind.dbo.OrderDetails.FK__OrderDeta__Order__1EC48A19"
+            }
+          ],
+        }
+      },
+      {
+        "name": "Sales Product Employee",
+        "description": "Note that both the product and employee levels have foreign key \ntranslations to this agrgegate table. These foreign key relationships \nare used to generate physical join relationships.",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.sales_prod_emp"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYCOLUMN(%1, %2)",
+          "expressionObjects": [
+            "logicalColumn:Sales.Employee.EmployeeID",
+            "logicalColumn:Sales.Product.ProductID"
+          ]
+        }
+      },
+      {
+        "name": "Sales Customer A to H",
+        "canCombine": true,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.sales_cust_AToH"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYCOLUMN(%1)",
+          "expressionObjects": [
+            "logicalColumn:Sales.Customer.CustomerID"
+          ]
+        },
+        "dataFragmentation": {
+          "expressionTemplate": "%1 >= 'A' AND %1 < 'H'",
+          "expressionObjects": [
+            "logicalColumn:Sales.Customer.CustomerID"
+          ]
+        }
+      },
+      {
+        "name": "Sales Customer H To T",
+        "canCombine": true,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.sales_cust_HToT"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:Sales.Customer.Customer"
+          ]
+        },
+        "dataFragmentation": {
+          "expressionTemplate": "%1 >= 'H' AND %1 < 'T'",
+          "expressionObjects": [
+            "logicalColumn:Sales.Customer.CustomerID"
+          ]
+        }
+      },
+      {
+        "name": "Sales Customer T to Z",
+        "canCombine": true,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.sales_cust_TToZ"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:Sales.Customer.Customer"
+          ]
+        },
+        "dataFragmentation": {
+          "expressionTemplate": "%1 >= 'T' AND %1 < 'ZZZZZZZZZZZZZZZ'",
+          "expressionObjects": [
+            "logicalColumn:Sales.Customer.CustomerID"
+          ]
+        }
+      },
+      {
+        "name": "Sales Supplier Customer",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.sales_supplier_customer"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1, %2)",
+          "expressionObjects": [
+            "logicalLevel:Sales.Customer.Customer",
+            "logicalLevel:Sales.Product.Supplier"
+          ]
+        }
+      },
+      {
+        "name": "Sales Plan",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.SalesPlan"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1, %2, %3)",
+          "expressionObjects": [
+            "logicalLevel:Sales.Employee.Country",
+            "logicalLevel:Sales.Product.Category",
+            "logicalLevel:Sales.Time.Year"
+          ]
+        }
+      },
+    ]
+  }
+}

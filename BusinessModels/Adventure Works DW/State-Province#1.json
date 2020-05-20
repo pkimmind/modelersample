@@ -1,0 +1,358 @@
+{
+  "logicalTable": {
+    "name": "State-Province#1",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "[Geography].[State-Province].[(All)]",
+        "descriptorColumn": "[Geography].[State-Province].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Geography].[State-Province].[(All)]"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "[Geography].[State-Province].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Geography].[State-Province].[(All)] - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Country#7",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Country#7"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#200",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#200"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#201",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#201"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY1#23",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY1#23"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#200",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#200"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#201",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#201"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#162",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#162"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#163",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#163"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "State-Province - Member Key#3",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.State-Province - Member Key#3"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "State-Province#7",
+        "descriptorColumn": "State-Province - Member Key#3",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.State-Province#7"
+                ]
+              },
+            }
+          }
+        ]
+      }
+    ],
+    "keys": [ {
+        "name": "State-Province#1",
+        "isPrimary": "true",
+        "columns": [
+          "[Geography].[State-Province].[(All)]",
+          "State-Province#7"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Adventure Works",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:Adventure Works DW...Adventure Works"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:Adventure Works DW.State-Province#1.State-Province"
+          ]
+        }
+      },
+    ],
+    "dimension": {
+      "name": "State-Province#1",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/9eac8be0-0c68-1000-8c4a-822330c20000.xml#m9eac8be1-0c68-1000-8c4a-822330c20000"      "levels": [
+        {
+          "name": "[Geography].[State-Province].[(All)]",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "[Geography].[State-Province].[(All)]",
+          "keys": [ {
+        "name": "[Geography].[State-Province].[(All)] - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "[Geography].[State-Province].[(All)] - Member Key"
+        ]
+      },
+      {
+        "name": "[Geography].[State-Province].[(All)]",
+        "isForDrillDown": true,
+        "columns": [
+          "[Geography].[State-Province].[(All)]"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "State-Province",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "State-Province",
+              "keys": [ {
+            "name": "State-Province - Member Key#3",
+            "isPrimary": "true",
+            "columns": [
+              "State-Province - Member Key#3"
+            ]
+          },
+          {
+            "name": "State-Province",
+            "isForDrillDown": true,
+            "columns": [
+              "State-Province#7"
+            ]
+          }
+              ],
+              "columns": [
+                "Country#7",
+                "KEY0#201",
+                "KEY1#23",
+                "MEMBER_VALUE#201",
+                "NAME#163",
+                "State-Province - Member Key#3",
+                "State-Province#7"
+              ]
+            }
+          ],
+          "columns": [
+            "[Geography].[State-Province].[(All)]",
+            "[Geography].[State-Province].[(All)] - Member Key",
+            "KEY0#200",
+            "MEMBER_VALUE#200",
+            "NAME#162"
+          ]
+        },
+        {
+          "name": "State-Province",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "State-Province",
+          "keys": [ {
+        "name": "State-Province - Member Key#3",
+        "isPrimary": "true",
+        "columns": [
+          "State-Province - Member Key#3"
+        ]
+      },
+      {
+        "name": "State-Province",
+        "isForDrillDown": true,
+        "columns": [
+          "State-Province#7"
+        ]
+      }
+          ],
+          "columns": [
+            "Country#7",
+            "KEY0#201",
+            "KEY1#23",
+            "MEMBER_VALUE#201",
+            "NAME#163",
+            "State-Province - Member Key#3",
+            "State-Province#7"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "State-Province#1",
+        "levels": [
+          {
+            "name": "[Geography].[State-Province].[(All)]",
+            "childLevels": [
+              {
+                "name": "State-Province"
+              }
+            ]
+          },
+          {
+            "name": "State-Province"
+          }
+        ]
+      }
+    }
+  }
+}

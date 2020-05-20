@@ -1,0 +1,302 @@
+{
+  "logicalTable": {
+    "name": "Delivery Date.Day of Month",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "[Delivery Date].[Day of Month].[(All)]",
+        "descriptorColumn": "[Delivery Date].[Day of Month].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Delivery Date].[Day of Month].[(All)]"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "[Delivery Date].[Day of Month].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Delivery Date].[Day of Month].[(All)] - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Day of Month - Member Key#1",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Day of Month - Member Key#1"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Day of Month#6",
+        "descriptorColumn": "Day of Month - Member Key#1",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Day of Month#6"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#110",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#110"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#111",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#111"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#110",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#110"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#111",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#111"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#91",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#91"
+                ]
+              },
+            }
+          }
+        ]
+      }
+    ],
+    "keys": [ {
+        "name": "Delivery Date.Day of Month",
+        "isPrimary": "true",
+        "columns": [
+          "[Delivery Date].[Day of Month].[(All)]",
+          "Day of Month#6"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Adventure Works",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:Adventure Works DW...Adventure Works"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:Adventure Works DW.Delivery Date.Day of Month.Day of Month"
+          ]
+        }
+      },
+    ],
+    "dimension": {
+      "name": "Delivery Date.Day of Month",
+      "isTimeDim": "true",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/9eabefed-0c68-1000-8c4a-822330c20000.xml#m9eabefee-0c68-1000-8c4a-822330c20000"      "levels": [
+        {
+          "name": "[Delivery Date].[Day of Month].[(All)]",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "[Delivery Date].[Day of Month].[(All)]",
+          "keys": [ {
+        "name": "[Delivery Date].[Day of Month].[(All)] - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "[Delivery Date].[Day of Month].[(All)] - Member Key"
+        ]
+      },
+      {
+        "name": "[Delivery Date].[Day of Month].[(All)]",
+        "isForDrillDown": true,
+        "columns": [
+          "[Delivery Date].[Day of Month].[(All)]"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Day of Month",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Day of Month",
+              "keys": [ {
+            "name": "Day of Month - Member Key#1",
+            "isPrimary": "true",
+            "columns": [
+              "Day of Month - Member Key#1"
+            ]
+          },
+          {
+            "name": "Day of Month",
+            "isForDrillDown": true,
+            "columns": [
+              "Day of Month#6"
+            ]
+          }
+              ],
+              "columns": [
+                "Day of Month - Member Key#1",
+                "Day of Month#6",
+                "KEY0#111",
+                "MEMBER_VALUE#111"
+              ]
+            }
+          ],
+          "columns": [
+            "[Delivery Date].[Day of Month].[(All)]",
+            "[Delivery Date].[Day of Month].[(All)] - Member Key",
+            "KEY0#110",
+            "MEMBER_VALUE#110",
+            "NAME#91"
+          ]
+        },
+        {
+          "name": "Day of Month",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Day of Month",
+          "keys": [ {
+        "name": "Day of Month - Member Key#1",
+        "isPrimary": "true",
+        "columns": [
+          "Day of Month - Member Key#1"
+        ]
+      },
+      {
+        "name": "Day of Month",
+        "isForDrillDown": true,
+        "columns": [
+          "Day of Month#6"
+        ]
+      }
+          ],
+          "columns": [
+            "Day of Month - Member Key#1",
+            "Day of Month#6",
+            "KEY0#111",
+            "MEMBER_VALUE#111"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Delivery Date.Day of Month",
+        "levels": [
+          {
+            "name": "[Delivery Date].[Day of Month].[(All)]",
+            "childLevels": [
+              {
+                "name": "Day of Month"
+              }
+            ]
+          },
+          {
+            "name": "Day of Month"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -8,10 +8,7 @@
     "selectStatements": [
       {
         "databaseType": "DEFAULT",
-        "query": "select e.City as City, e.Region as Region, e.Country as Country, sum(Quantity) * 11 as Population
-from Employees e, Orders o, OrderDetails od
-where e.EmployeeID = o.EmployeeID and od.OrderID = o.OrderID
-group by e.City, e.Region, e.Country"
+        "query": "select e.City as City, e.Region as Region, e.Country as Country, sum(Quantity) * 11 as Population\nfrom Employees e, Orders o, OrderDetails od\nwhere e.EmployeeID = o.EmployeeID and od.OrderID = o.OrderID\ngroup by e.City, e.Region, e.Country"
       }
     ],
     "physicalColumns": [ {

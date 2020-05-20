@@ -1,0 +1,301 @@
+{
+  "logicalTable": {
+    "name": "Sales Order Line#1",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "[Reseller Sales Order Details].[Sales Order Line].[(All)]",
+        "descriptorColumn": "[Reseller Sales Order Details].[Sales Order Line].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Reseller Sales Order Details].[Sales Order Line].[(All)]"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "[Reseller Sales Order Details].[Sales Order Line].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Reseller Sales Order Details].[Sales Order Line].[(All)] - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#351",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#351"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#352",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#352"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#351",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#351"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#352",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#352"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#278",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#278"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Sales Order Line - Member Key#1",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Sales Order Line - Member Key#1"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Sales Order Line#3",
+        "descriptorColumn": "Sales Order Line - Member Key#1",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Sales Order Line#3"
+                ]
+              },
+            }
+          }
+        ]
+      }
+    ],
+    "keys": [ {
+        "name": "Sales Order Line#1",
+        "isPrimary": "true",
+        "columns": [
+          "[Reseller Sales Order Details].[Sales Order Line].[(All)]",
+          "Sales Order Line#3"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Adventure Works",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:Adventure Works DW...Adventure Works"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:Adventure Works DW.Sales Order Line#1.Sales Order Line"
+          ]
+        }
+      },
+    ],
+    "dimension": {
+      "name": "Sales Order Line#1",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/9ead4fc3-0c68-1000-8c4a-822330c20000.xml#m9ead4fc4-0c68-1000-8c4a-822330c20000"      "levels": [
+        {
+          "name": "[Reseller Sales Order Details].[Sales Order Line].[(All)]",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "[Reseller Sales Order Details].[Sales Order Line].[(All)]",
+          "keys": [ {
+        "name": "[Reseller Sales Order Details].[Sales Order Line].[(All)] - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "[Reseller Sales Order Details].[Sales Order Line].[(All)] - Member Key"
+        ]
+      },
+      {
+        "name": "[Reseller Sales Order Details].[Sales Order Line].[(All)]",
+        "isForDrillDown": true,
+        "columns": [
+          "[Reseller Sales Order Details].[Sales Order Line].[(All)]"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Sales Order Line",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Sales Order Line",
+              "keys": [ {
+            "name": "Sales Order Line - Member Key#1",
+            "isPrimary": "true",
+            "columns": [
+              "Sales Order Line - Member Key#1"
+            ]
+          },
+          {
+            "name": "Sales Order Line",
+            "isForDrillDown": true,
+            "columns": [
+              "Sales Order Line#3"
+            ]
+          }
+              ],
+              "columns": [
+                "KEY0#352",
+                "MEMBER_VALUE#352",
+                "Sales Order Line - Member Key#1",
+                "Sales Order Line#3"
+              ]
+            }
+          ],
+          "columns": [
+            "[Reseller Sales Order Details].[Sales Order Line].[(All)]",
+            "[Reseller Sales Order Details].[Sales Order Line].[(All)] - Member Key",
+            "KEY0#351",
+            "MEMBER_VALUE#351",
+            "NAME#278"
+          ]
+        },
+        {
+          "name": "Sales Order Line",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Sales Order Line",
+          "keys": [ {
+        "name": "Sales Order Line - Member Key#1",
+        "isPrimary": "true",
+        "columns": [
+          "Sales Order Line - Member Key#1"
+        ]
+      },
+      {
+        "name": "Sales Order Line",
+        "isForDrillDown": true,
+        "columns": [
+          "Sales Order Line#3"
+        ]
+      }
+          ],
+          "columns": [
+            "KEY0#352",
+            "MEMBER_VALUE#352",
+            "Sales Order Line - Member Key#1",
+            "Sales Order Line#3"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Sales Order Line#1",
+        "levels": [
+          {
+            "name": "[Reseller Sales Order Details].[Sales Order Line].[(All)]",
+            "childLevels": [
+              {
+                "name": "Sales Order Line"
+              }
+            ]
+          },
+          {
+            "name": "Sales Order Line"
+          }
+        ]
+      }
+    }
+  }
+}

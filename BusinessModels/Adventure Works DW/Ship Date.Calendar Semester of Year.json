@@ -1,0 +1,302 @@
+{
+  "logicalTable": {
+    "name": "Ship Date.Calendar Semester of Year",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "[Ship Date].[Calendar Semester of Year].[(All)]",
+        "descriptorColumn": "[Ship Date].[Calendar Semester of Year].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Ship Date].[Calendar Semester of Year].[(All)]"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "[Ship Date].[Calendar Semester of Year].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Ship Date].[Calendar Semester of Year].[(All)] - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Calendar Semester of Year - Member Key#2",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Calendar Semester of Year - Member Key#2"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Calendar Semester of Year#5",
+        "descriptorColumn": "Calendar Semester of Year - Member Key#2",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Calendar Semester of Year#5"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#394",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#394"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#395",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#395"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#394",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#394"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#395",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#395"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#305",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#305"
+                ]
+              },
+            }
+          }
+        ]
+      }
+    ],
+    "keys": [ {
+        "name": "Ship Date.Calendar Semester of Year",
+        "isPrimary": "true",
+        "columns": [
+          "[Ship Date].[Calendar Semester of Year].[(All)]",
+          "Calendar Semester of Year#5"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Adventure Works",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:Adventure Works DW...Adventure Works"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:Adventure Works DW.Ship Date.Calendar Semester of Year.Calendar Semester of Year"
+          ]
+        }
+      },
+    ],
+    "dimension": {
+      "name": "Ship Date.Calendar Semester of Year",
+      "isTimeDim": "true",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/9ead9c93-0c68-1000-8c4a-822330c20000.xml#m9ead9c94-0c68-1000-8c4a-822330c20000"      "levels": [
+        {
+          "name": "[Ship Date].[Calendar Semester of Year].[(All)]",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "[Ship Date].[Calendar Semester of Year].[(All)]",
+          "keys": [ {
+        "name": "[Ship Date].[Calendar Semester of Year].[(All)] - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "[Ship Date].[Calendar Semester of Year].[(All)] - Member Key"
+        ]
+      },
+      {
+        "name": "[Ship Date].[Calendar Semester of Year].[(All)]",
+        "isForDrillDown": true,
+        "columns": [
+          "[Ship Date].[Calendar Semester of Year].[(All)]"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Calendar Semester of Year",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Calendar Semester of Year",
+              "keys": [ {
+            "name": "Calendar Semester of Year - Member Key#2",
+            "isPrimary": "true",
+            "columns": [
+              "Calendar Semester of Year - Member Key#2"
+            ]
+          },
+          {
+            "name": "Calendar Semester of Year",
+            "isForDrillDown": true,
+            "columns": [
+              "Calendar Semester of Year#5"
+            ]
+          }
+              ],
+              "columns": [
+                "Calendar Semester of Year - Member Key#2",
+                "Calendar Semester of Year#5",
+                "KEY0#395",
+                "MEMBER_VALUE#395"
+              ]
+            }
+          ],
+          "columns": [
+            "[Ship Date].[Calendar Semester of Year].[(All)]",
+            "[Ship Date].[Calendar Semester of Year].[(All)] - Member Key",
+            "KEY0#394",
+            "MEMBER_VALUE#394",
+            "NAME#305"
+          ]
+        },
+        {
+          "name": "Calendar Semester of Year",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Calendar Semester of Year",
+          "keys": [ {
+        "name": "Calendar Semester of Year - Member Key#2",
+        "isPrimary": "true",
+        "columns": [
+          "Calendar Semester of Year - Member Key#2"
+        ]
+      },
+      {
+        "name": "Calendar Semester of Year",
+        "isForDrillDown": true,
+        "columns": [
+          "Calendar Semester of Year#5"
+        ]
+      }
+          ],
+          "columns": [
+            "Calendar Semester of Year - Member Key#2",
+            "Calendar Semester of Year#5",
+            "KEY0#395",
+            "MEMBER_VALUE#395"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Ship Date.Calendar Semester of Year",
+        "levels": [
+          {
+            "name": "[Ship Date].[Calendar Semester of Year].[(All)]",
+            "childLevels": [
+              {
+                "name": "Calendar Semester of Year"
+              }
+            ]
+          },
+          {
+            "name": "Calendar Semester of Year"
+          }
+        ]
+      }
+    }
+  }
+}

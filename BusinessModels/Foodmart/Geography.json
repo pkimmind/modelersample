@@ -1,0 +1,518 @@
+{
+  "logicalTable": {
+    "name": "Geography",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "Store Country",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart...Budget.Store Country"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Budget",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart...Budget.Store Country"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Store State",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart...Budget.Store State"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Budget",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart...Budget.Store State"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Store Name",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart...Budget.Store Name"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Budget",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart...Budget.Store Name"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Store Sqft",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart...Sales.Store Sqft"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Store Manager",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart...Sales.Store Manager"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Store City",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart...Budget.Store City"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Budget",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart...Budget.Store City"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "CountryAlias",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " INDEXCOL(0, %1)",
+              "expressionObjects": [
+                "logicalColumn:Foodmart.Geography.Store Country"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "CountryAliasAlias",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:Foodmart.Geography.CountryAlias"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "CountryAliasAlias1",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " INDEXCOL(1, %1, %2)",
+              "expressionObjects": [
+                "logicalColumn:Foodmart.Geography.Store State",
+                "logicalColumn:Foodmart.Geography.CountryAlias"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "CountryAliasAlias2",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " INDEXCOL(0,  CASE  WHEN 0 > 1 THEN %1 ELSE %2 END )",
+              "expressionObjects": [
+                "logicalColumn:Foodmart.Geography.Store State",
+                "logicalColumn:Foodmart.Geography.CountryAliasAlias1"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "SessionVarAlias",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " INDEXCOL( VALUEOF(NQ_SESSION.%1), %2, %3, %4)",
+              "expressionObjects": [
+                "variable:IndexColInitBlock.INDEXCOLINDEX",
+                "logicalColumn:Foodmart.Geography.Store Country",
+                "logicalColumn:Foodmart.Geography.Store State",
+                "logicalColumn:Foodmart.Geography.Store City"
+              ]
+            },
+          },
+        ]
+    ],
+    "keys": [ {
+        "name": "Store State",
+        "isPrimary": "true",
+        "columns": [
+          "Store Name"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Sales",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:FoodMart...Sales"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        }
+      },
+      {
+        "name": "Budget",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:FoodMart...Budget"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        }
+      },
+    ],
+    "dimension": {
+      "name": "Geography",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/80000d9f-07e3-0000-714b-e31d00000000.xml#m80000dc5-07e9-0000-714b-e31d00000000"      "levels": [
+        {
+          "name": "Country",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Country",
+          "keys": [ {
+        "name": "Store Country",
+        "isPrimary": "true",
+        "isForDrillDown": true,
+        "columns": [
+          "Store Country"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "State",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "State",
+              "keys": [ {
+            "name": "Store State",
+            "isPrimary": "true",
+            "isForDrillDown": true,
+            "columns": [
+              "Store State"
+            ]
+          }
+              ],
+              "childLevels": [
+                {
+                  "name": "Store City",
+                  "isGTA": false,
+                  "isFDUC": true,
+                  "memberCount": 1,
+                  "levelConst": "Store City",
+                  "keys": [ {
+                "name": "Store City",
+                "isPrimary": "true",
+                "isForDrillDown": true,
+                "columns": [
+                  "Store City"
+                ]
+              }
+                  ],
+                  "childLevels": [
+                    {
+                      "name": "Store",
+                      "isGTA": false,
+                      "isFDUC": true,
+                      "memberCount": 1,
+                      "levelConst": "Store",
+                      "keys": [ {
+                    "name": "Store Name",
+                    "isPrimary": "true",
+                    "isForDrillDown": true,
+                    "columns": [
+                      "Store Name"
+                    ]
+                  }
+                      ],
+                      "columns": [
+                        "Store Name",
+                        "Store Sqft",
+                        "Store Manager"
+                      ]
+                    }
+                  ],
+                  "columns": [
+                    "Store City"
+                  ]
+                }
+              ],
+              "columns": [
+                "Store State"
+              ]
+            }
+          ],
+          "columns": [
+            "Store Country"
+          ]
+        },
+        {
+          "name": "State",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "State",
+          "keys": [ {
+        "name": "Store State",
+        "isPrimary": "true",
+        "isForDrillDown": true,
+        "columns": [
+          "Store State"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Store City",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Store City",
+              "keys": [ {
+            "name": "Store City",
+            "isPrimary": "true",
+            "isForDrillDown": true,
+            "columns": [
+              "Store City"
+            ]
+          }
+              ],
+              "childLevels": [
+                {
+                  "name": "Store",
+                  "isGTA": false,
+                  "isFDUC": true,
+                  "memberCount": 1,
+                  "levelConst": "Store",
+                  "keys": [ {
+                "name": "Store Name",
+                "isPrimary": "true",
+                "isForDrillDown": true,
+                "columns": [
+                  "Store Name"
+                ]
+              }
+                  ],
+                  "columns": [
+                    "Store Name",
+                    "Store Sqft",
+                    "Store Manager"
+                  ]
+                }
+              ],
+              "columns": [
+                "Store City"
+              ]
+            }
+          ],
+          "columns": [
+            "Store State"
+          ]
+        },
+        {
+          "name": "Store City",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Store City",
+          "keys": [ {
+        "name": "Store City",
+        "isPrimary": "true",
+        "isForDrillDown": true,
+        "columns": [
+          "Store City"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Store",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Store",
+              "keys": [ {
+            "name": "Store Name",
+            "isPrimary": "true",
+            "isForDrillDown": true,
+            "columns": [
+              "Store Name"
+            ]
+          }
+              ],
+              "columns": [
+                "Store Name",
+                "Store Sqft",
+                "Store Manager"
+              ]
+            }
+          ],
+          "columns": [
+            "Store City"
+          ]
+        },
+        {
+          "name": "Store",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Store",
+          "keys": [ {
+        "name": "Store Name",
+        "isPrimary": "true",
+        "isForDrillDown": true,
+        "columns": [
+          "Store Name"
+        ]
+      }
+          ],
+          "columns": [
+            "Store Name",
+            "Store Sqft",
+            "Store Manager"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Geography",
+        "levels": [
+          {
+            "name": "Country",
+            "childLevels": [
+              {
+                "name": "State",
+                "childLevels": [
+                  {
+                    "name": "Store City",
+                    "childLevels": [
+                      {
+                        "name": "Store"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "State",
+            "childLevels": [
+              {
+                "name": "Store City",
+                "childLevels": [
+                  {
+                    "name": "Store"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Store City",
+            "childLevels": [
+              {
+                "name": "Store"
+              }
+            ]
+          },
+          {
+            "name": "Store"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,1629 @@
+{
+  "logicalTable": {
+    "name": "Delivery Date.Fiscal",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "[Delivery Date].[Fiscal].[(All)]",
+        "descriptorColumn": "[Delivery Date].[Fiscal].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Delivery Date].[Fiscal].[(All)]"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "[Delivery Date].[Fiscal].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Delivery Date].[Fiscal].[(All)] - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Calendar Quarter#5",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Calendar Quarter#5"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Date - Member Key#5",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Date - Member Key#5"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Date#5",
+        "descriptorColumn": "Date - Member Key#5",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Date#5"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Day Name#7",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Day Name#7"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Day of Month#7",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Day of Month#7"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Day of Week#7",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Day of Week#7"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Day of Year#7",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Day of Year#7"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Fiscal Quarter - Member Key#1",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Fiscal Quarter - Member Key#1"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Fiscal Quarter of Year#2",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Fiscal Quarter of Year#2"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Fiscal Quarter#3",
+        "descriptorColumn": "Fiscal Quarter - Member Key#1",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Fiscal Quarter#3"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Fiscal Semester - Member Key#1",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Fiscal Semester - Member Key#1"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Fiscal Semester of Year#2",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Fiscal Semester of Year#2"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Fiscal Semester#2",
+        "descriptorColumn": "Fiscal Semester - Member Key#1",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Fiscal Semester#2"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Fiscal Semester#3",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Fiscal Semester#3"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Fiscal Year - Member Key#2",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Fiscal Year - Member Key#2"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Fiscal Year#3",
+        "descriptorColumn": "Fiscal Year - Member Key#2",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Fiscal Year#3"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Fiscal Year#4",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Fiscal Year#4"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#116",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#116"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#117",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#117"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#118",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#118"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#119",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#119"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#120",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#120"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#121",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#121"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY1#15",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY1#15"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY1#16",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY1#16"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY1#17",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY1#17"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#116",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#116"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#117",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#117"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#118",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#118"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#119",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#119"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#120",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#120"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#121",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#121"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Month - Member Key#3",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Month - Member Key#3"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Month Name#5",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Month Name#5"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Month of Year#4",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Month of Year#4"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Month#3",
+        "descriptorColumn": "Month - Member Key#3",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Month#3"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#94",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#94"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#95",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#95"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#96",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#96"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#97",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#97"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#98",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#98"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#99",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#99"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Week of Year#6",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Week of Year#6"
+                ]
+              },
+            }
+          }
+        ]
+      }
+    ],
+    "keys": [ {
+        "name": "Delivery Date.Fiscal",
+        "isPrimary": "true",
+        "columns": [
+          "[Delivery Date].[Fiscal].[(All)]",
+          "Fiscal Year#3",
+          "Fiscal Semester#2",
+          "Fiscal Quarter#3",
+          "Month#3",
+          "Date#5"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Adventure Works",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:Adventure Works DW...Adventure Works"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:Adventure Works DW.Delivery Date.Fiscal.Date"
+          ]
+        }
+      },
+    ],
+    "dimension": {
+      "name": "Delivery Date.Fiscal",
+      "isTimeDim": "true",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/9eabf09e-0c68-1000-8c4a-822330c20000.xml#m9eabf09f-0c68-1000-8c4a-822330c20000"      "levels": [
+        {
+          "name": "[Delivery Date].[Fiscal].[(All)]",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "[Delivery Date].[Fiscal].[(All)]",
+          "keys": [ {
+        "name": "[Delivery Date].[Fiscal].[(All)] - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "[Delivery Date].[Fiscal].[(All)] - Member Key"
+        ]
+      },
+      {
+        "name": "[Delivery Date].[Fiscal].[(All)]",
+        "isForDrillDown": true,
+        "columns": [
+          "[Delivery Date].[Fiscal].[(All)]"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Fiscal Year",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Fiscal Year",
+              "keys": [ {
+            "name": "Fiscal Year - Member Key#2",
+            "isPrimary": "true",
+            "columns": [
+              "Fiscal Year - Member Key#2"
+            ]
+          },
+          {
+            "name": "Fiscal Year",
+            "isForDrillDown": true,
+            "columns": [
+              "Fiscal Year#3"
+            ]
+          }
+              ],
+              "childLevels": [
+                {
+                  "name": "Fiscal Semester",
+                  "isGTA": false,
+                  "isFDUC": true,
+                  "memberCount": 1,
+                  "levelConst": "Fiscal Semester",
+                  "keys": [ {
+                "name": "Fiscal Semester - Member Key#1",
+                "isPrimary": "true",
+                "columns": [
+                  "Fiscal Semester - Member Key#1"
+                ]
+              },
+              {
+                "name": "Fiscal Semester",
+                "isForDrillDown": true,
+                "columns": [
+                  "Fiscal Semester#2"
+                ]
+              }
+                  ],
+                  "childLevels": [
+                    {
+                      "name": "Fiscal Quarter",
+                      "isGTA": false,
+                      "isFDUC": true,
+                      "memberCount": 1,
+                      "levelConst": "Fiscal Quarter",
+                      "keys": [ {
+                    "name": "Fiscal Quarter - Member Key#1",
+                    "isPrimary": "true",
+                    "columns": [
+                      "Fiscal Quarter - Member Key#1"
+                    ]
+                  },
+                  {
+                    "name": "Fiscal Quarter",
+                    "isForDrillDown": true,
+                    "columns": [
+                      "Fiscal Quarter#3"
+                    ]
+                  }
+                      ],
+                      "childLevels": [
+                        {
+                          "name": "Month",
+                          "isGTA": false,
+                          "isFDUC": true,
+                          "memberCount": 1,
+                          "levelConst": "Month",
+                          "keys": [ {
+                        "name": "Month - Member Key#3",
+                        "isPrimary": "true",
+                        "columns": [
+                          "Month - Member Key#3"
+                        ]
+                      },
+                      {
+                        "name": "Month",
+                        "isForDrillDown": true,
+                        "columns": [
+                          "Month#3"
+                        ]
+                      }
+                          ],
+                          "childLevels": [
+                            {
+                              "name": "Date",
+                              "isGTA": false,
+                              "isFDUC": true,
+                              "memberCount": 1,
+                              "levelConst": "Date",
+                              "keys": [ {
+                            "name": "Date - Member Key#5",
+                            "isPrimary": "true",
+                            "columns": [
+                              "Date - Member Key#5"
+                            ]
+                          },
+                          {
+                            "name": "Date",
+                            "isForDrillDown": true,
+                            "columns": [
+                              "Date#5"
+                            ]
+                          }
+                              ],
+                              "columns": [
+                                "Date - Member Key#5",
+                                "Date#5",
+                                "Day Name#7",
+                                "Day of Month#7",
+                                "Day of Week#7",
+                                "Day of Year#7",
+                                "KEY0#121",
+                                "MEMBER_VALUE#121",
+                                "Month Name#5",
+                                "NAME#99",
+                                "Week of Year#6"
+                              ]
+                            }
+                          ],
+                          "columns": [
+                            "Calendar Quarter#5",
+                            "KEY0#120",
+                            "KEY1#17",
+                            "MEMBER_VALUE#120",
+                            "Month - Member Key#3",
+                            "Month of Year#4",
+                            "Month#3",
+                            "NAME#98"
+                          ]
+                        }
+                      ],
+                      "columns": [
+                        "Fiscal Quarter - Member Key#1",
+                        "Fiscal Quarter of Year#2",
+                        "Fiscal Quarter#3",
+                        "Fiscal Semester of Year#2",
+                        "Fiscal Semester#3",
+                        "KEY0#119",
+                        "KEY1#16",
+                        "MEMBER_VALUE#119",
+                        "NAME#97"
+                      ]
+                    }
+                  ],
+                  "columns": [
+                    "Fiscal Semester - Member Key#1",
+                    "Fiscal Semester#2",
+                    "Fiscal Year#4",
+                    "KEY0#118",
+                    "KEY1#15",
+                    "MEMBER_VALUE#118",
+                    "NAME#96"
+                  ]
+                }
+              ],
+              "columns": [
+                "Fiscal Year - Member Key#2",
+                "Fiscal Year#3",
+                "KEY0#117",
+                "MEMBER_VALUE#117",
+                "NAME#95"
+              ]
+            }
+          ],
+          "columns": [
+            "[Delivery Date].[Fiscal].[(All)]",
+            "[Delivery Date].[Fiscal].[(All)] - Member Key",
+            "KEY0#116",
+            "MEMBER_VALUE#116",
+            "NAME#94"
+          ]
+        },
+        {
+          "name": "Fiscal Year",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Fiscal Year",
+          "keys": [ {
+        "name": "Fiscal Year - Member Key#2",
+        "isPrimary": "true",
+        "columns": [
+          "Fiscal Year - Member Key#2"
+        ]
+      },
+      {
+        "name": "Fiscal Year",
+        "isForDrillDown": true,
+        "columns": [
+          "Fiscal Year#3"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Fiscal Semester",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Fiscal Semester",
+              "keys": [ {
+            "name": "Fiscal Semester - Member Key#1",
+            "isPrimary": "true",
+            "columns": [
+              "Fiscal Semester - Member Key#1"
+            ]
+          },
+          {
+            "name": "Fiscal Semester",
+            "isForDrillDown": true,
+            "columns": [
+              "Fiscal Semester#2"
+            ]
+          }
+              ],
+              "childLevels": [
+                {
+                  "name": "Fiscal Quarter",
+                  "isGTA": false,
+                  "isFDUC": true,
+                  "memberCount": 1,
+                  "levelConst": "Fiscal Quarter",
+                  "keys": [ {
+                "name": "Fiscal Quarter - Member Key#1",
+                "isPrimary": "true",
+                "columns": [
+                  "Fiscal Quarter - Member Key#1"
+                ]
+              },
+              {
+                "name": "Fiscal Quarter",
+                "isForDrillDown": true,
+                "columns": [
+                  "Fiscal Quarter#3"
+                ]
+              }
+                  ],
+                  "childLevels": [
+                    {
+                      "name": "Month",
+                      "isGTA": false,
+                      "isFDUC": true,
+                      "memberCount": 1,
+                      "levelConst": "Month",
+                      "keys": [ {
+                    "name": "Month - Member Key#3",
+                    "isPrimary": "true",
+                    "columns": [
+                      "Month - Member Key#3"
+                    ]
+                  },
+                  {
+                    "name": "Month",
+                    "isForDrillDown": true,
+                    "columns": [
+                      "Month#3"
+                    ]
+                  }
+                      ],
+                      "childLevels": [
+                        {
+                          "name": "Date",
+                          "isGTA": false,
+                          "isFDUC": true,
+                          "memberCount": 1,
+                          "levelConst": "Date",
+                          "keys": [ {
+                        "name": "Date - Member Key#5",
+                        "isPrimary": "true",
+                        "columns": [
+                          "Date - Member Key#5"
+                        ]
+                      },
+                      {
+                        "name": "Date",
+                        "isForDrillDown": true,
+                        "columns": [
+                          "Date#5"
+                        ]
+                      }
+                          ],
+                          "columns": [
+                            "Date - Member Key#5",
+                            "Date#5",
+                            "Day Name#7",
+                            "Day of Month#7",
+                            "Day of Week#7",
+                            "Day of Year#7",
+                            "KEY0#121",
+                            "MEMBER_VALUE#121",
+                            "Month Name#5",
+                            "NAME#99",
+                            "Week of Year#6"
+                          ]
+                        }
+                      ],
+                      "columns": [
+                        "Calendar Quarter#5",
+                        "KEY0#120",
+                        "KEY1#17",
+                        "MEMBER_VALUE#120",
+                        "Month - Member Key#3",
+                        "Month of Year#4",
+                        "Month#3",
+                        "NAME#98"
+                      ]
+                    }
+                  ],
+                  "columns": [
+                    "Fiscal Quarter - Member Key#1",
+                    "Fiscal Quarter of Year#2",
+                    "Fiscal Quarter#3",
+                    "Fiscal Semester of Year#2",
+                    "Fiscal Semester#3",
+                    "KEY0#119",
+                    "KEY1#16",
+                    "MEMBER_VALUE#119",
+                    "NAME#97"
+                  ]
+                }
+              ],
+              "columns": [
+                "Fiscal Semester - Member Key#1",
+                "Fiscal Semester#2",
+                "Fiscal Year#4",
+                "KEY0#118",
+                "KEY1#15",
+                "MEMBER_VALUE#118",
+                "NAME#96"
+              ]
+            }
+          ],
+          "columns": [
+            "Fiscal Year - Member Key#2",
+            "Fiscal Year#3",
+            "KEY0#117",
+            "MEMBER_VALUE#117",
+            "NAME#95"
+          ]
+        },
+        {
+          "name": "Fiscal Semester",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Fiscal Semester",
+          "keys": [ {
+        "name": "Fiscal Semester - Member Key#1",
+        "isPrimary": "true",
+        "columns": [
+          "Fiscal Semester - Member Key#1"
+        ]
+      },
+      {
+        "name": "Fiscal Semester",
+        "isForDrillDown": true,
+        "columns": [
+          "Fiscal Semester#2"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Fiscal Quarter",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Fiscal Quarter",
+              "keys": [ {
+            "name": "Fiscal Quarter - Member Key#1",
+            "isPrimary": "true",
+            "columns": [
+              "Fiscal Quarter - Member Key#1"
+            ]
+          },
+          {
+            "name": "Fiscal Quarter",
+            "isForDrillDown": true,
+            "columns": [
+              "Fiscal Quarter#3"
+            ]
+          }
+              ],
+              "childLevels": [
+                {
+                  "name": "Month",
+                  "isGTA": false,
+                  "isFDUC": true,
+                  "memberCount": 1,
+                  "levelConst": "Month",
+                  "keys": [ {
+                "name": "Month - Member Key#3",
+                "isPrimary": "true",
+                "columns": [
+                  "Month - Member Key#3"
+                ]
+              },
+              {
+                "name": "Month",
+                "isForDrillDown": true,
+                "columns": [
+                  "Month#3"
+                ]
+              }
+                  ],
+                  "childLevels": [
+                    {
+                      "name": "Date",
+                      "isGTA": false,
+                      "isFDUC": true,
+                      "memberCount": 1,
+                      "levelConst": "Date",
+                      "keys": [ {
+                    "name": "Date - Member Key#5",
+                    "isPrimary": "true",
+                    "columns": [
+                      "Date - Member Key#5"
+                    ]
+                  },
+                  {
+                    "name": "Date",
+                    "isForDrillDown": true,
+                    "columns": [
+                      "Date#5"
+                    ]
+                  }
+                      ],
+                      "columns": [
+                        "Date - Member Key#5",
+                        "Date#5",
+                        "Day Name#7",
+                        "Day of Month#7",
+                        "Day of Week#7",
+                        "Day of Year#7",
+                        "KEY0#121",
+                        "MEMBER_VALUE#121",
+                        "Month Name#5",
+                        "NAME#99",
+                        "Week of Year#6"
+                      ]
+                    }
+                  ],
+                  "columns": [
+                    "Calendar Quarter#5",
+                    "KEY0#120",
+                    "KEY1#17",
+                    "MEMBER_VALUE#120",
+                    "Month - Member Key#3",
+                    "Month of Year#4",
+                    "Month#3",
+                    "NAME#98"
+                  ]
+                }
+              ],
+              "columns": [
+                "Fiscal Quarter - Member Key#1",
+                "Fiscal Quarter of Year#2",
+                "Fiscal Quarter#3",
+                "Fiscal Semester of Year#2",
+                "Fiscal Semester#3",
+                "KEY0#119",
+                "KEY1#16",
+                "MEMBER_VALUE#119",
+                "NAME#97"
+              ]
+            }
+          ],
+          "columns": [
+            "Fiscal Semester - Member Key#1",
+            "Fiscal Semester#2",
+            "Fiscal Year#4",
+            "KEY0#118",
+            "KEY1#15",
+            "MEMBER_VALUE#118",
+            "NAME#96"
+          ]
+        },
+        {
+          "name": "Fiscal Quarter",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Fiscal Quarter",
+          "keys": [ {
+        "name": "Fiscal Quarter - Member Key#1",
+        "isPrimary": "true",
+        "columns": [
+          "Fiscal Quarter - Member Key#1"
+        ]
+      },
+      {
+        "name": "Fiscal Quarter",
+        "isForDrillDown": true,
+        "columns": [
+          "Fiscal Quarter#3"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Month",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Month",
+              "keys": [ {
+            "name": "Month - Member Key#3",
+            "isPrimary": "true",
+            "columns": [
+              "Month - Member Key#3"
+            ]
+          },
+          {
+            "name": "Month",
+            "isForDrillDown": true,
+            "columns": [
+              "Month#3"
+            ]
+          }
+              ],
+              "childLevels": [
+                {
+                  "name": "Date",
+                  "isGTA": false,
+                  "isFDUC": true,
+                  "memberCount": 1,
+                  "levelConst": "Date",
+                  "keys": [ {
+                "name": "Date - Member Key#5",
+                "isPrimary": "true",
+                "columns": [
+                  "Date - Member Key#5"
+                ]
+              },
+              {
+                "name": "Date",
+                "isForDrillDown": true,
+                "columns": [
+                  "Date#5"
+                ]
+              }
+                  ],
+                  "columns": [
+                    "Date - Member Key#5",
+                    "Date#5",
+                    "Day Name#7",
+                    "Day of Month#7",
+                    "Day of Week#7",
+                    "Day of Year#7",
+                    "KEY0#121",
+                    "MEMBER_VALUE#121",
+                    "Month Name#5",
+                    "NAME#99",
+                    "Week of Year#6"
+                  ]
+                }
+              ],
+              "columns": [
+                "Calendar Quarter#5",
+                "KEY0#120",
+                "KEY1#17",
+                "MEMBER_VALUE#120",
+                "Month - Member Key#3",
+                "Month of Year#4",
+                "Month#3",
+                "NAME#98"
+              ]
+            }
+          ],
+          "columns": [
+            "Fiscal Quarter - Member Key#1",
+            "Fiscal Quarter of Year#2",
+            "Fiscal Quarter#3",
+            "Fiscal Semester of Year#2",
+            "Fiscal Semester#3",
+            "KEY0#119",
+            "KEY1#16",
+            "MEMBER_VALUE#119",
+            "NAME#97"
+          ]
+        },
+        {
+          "name": "Month",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Month",
+          "keys": [ {
+        "name": "Month - Member Key#3",
+        "isPrimary": "true",
+        "columns": [
+          "Month - Member Key#3"
+        ]
+      },
+      {
+        "name": "Month",
+        "isForDrillDown": true,
+        "columns": [
+          "Month#3"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Date",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Date",
+              "keys": [ {
+            "name": "Date - Member Key#5",
+            "isPrimary": "true",
+            "columns": [
+              "Date - Member Key#5"
+            ]
+          },
+          {
+            "name": "Date",
+            "isForDrillDown": true,
+            "columns": [
+              "Date#5"
+            ]
+          }
+              ],
+              "columns": [
+                "Date - Member Key#5",
+                "Date#5",
+                "Day Name#7",
+                "Day of Month#7",
+                "Day of Week#7",
+                "Day of Year#7",
+                "KEY0#121",
+                "MEMBER_VALUE#121",
+                "Month Name#5",
+                "NAME#99",
+                "Week of Year#6"
+              ]
+            }
+          ],
+          "columns": [
+            "Calendar Quarter#5",
+            "KEY0#120",
+            "KEY1#17",
+            "MEMBER_VALUE#120",
+            "Month - Member Key#3",
+            "Month of Year#4",
+            "Month#3",
+            "NAME#98"
+          ]
+        },
+        {
+          "name": "Date",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Date",
+          "keys": [ {
+        "name": "Date - Member Key#5",
+        "isPrimary": "true",
+        "columns": [
+          "Date - Member Key#5"
+        ]
+      },
+      {
+        "name": "Date",
+        "isForDrillDown": true,
+        "columns": [
+          "Date#5"
+        ]
+      }
+          ],
+          "columns": [
+            "Date - Member Key#5",
+            "Date#5",
+            "Day Name#7",
+            "Day of Month#7",
+            "Day of Week#7",
+            "Day of Year#7",
+            "KEY0#121",
+            "MEMBER_VALUE#121",
+            "Month Name#5",
+            "NAME#99",
+            "Week of Year#6"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Delivery Date.Fiscal",
+        "levels": [
+          {
+            "name": "[Delivery Date].[Fiscal].[(All)]",
+            "childLevels": [
+              {
+                "name": "Fiscal Year",
+                "childLevels": [
+                  {
+                    "name": "Fiscal Semester",
+                    "childLevels": [
+                      {
+                        "name": "Fiscal Quarter",
+                        "childLevels": [
+                          {
+                            "name": "Month",
+                            "childLevels": [
+                              {
+                                "name": "Date"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Fiscal Year",
+            "childLevels": [
+              {
+                "name": "Fiscal Semester",
+                "childLevels": [
+                  {
+                    "name": "Fiscal Quarter",
+                    "childLevels": [
+                      {
+                        "name": "Month",
+                        "childLevels": [
+                          {
+                            "name": "Date"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Fiscal Semester",
+            "childLevels": [
+              {
+                "name": "Fiscal Quarter",
+                "childLevels": [
+                  {
+                    "name": "Month",
+                    "childLevels": [
+                      {
+                        "name": "Date"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Fiscal Quarter",
+            "childLevels": [
+              {
+                "name": "Month",
+                "childLevels": [
+                  {
+                    "name": "Date"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Month",
+            "childLevels": [
+              {
+                "name": "Date"
+              }
+            ]
+          },
+          {
+            "name": "Date"
+          }
+        ]
+      }
+    }
+  }
+}

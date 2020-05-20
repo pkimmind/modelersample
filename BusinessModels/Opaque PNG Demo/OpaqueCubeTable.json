@@ -1,0 +1,63 @@
+{
+  "logicalTable": {
+    "name": "OpaqueCubeTable",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "[0COSTCENTER].[LEVEL01]",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "OpaqueCubeTable",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:PNG Demo...OpaqueCubeTable.[0COSTCENTER].[LEVEL01]"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "[0FISCPER].[LEVEL01]",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "OpaqueCubeTable",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:PNG Demo...OpaqueCubeTable.[0FISCPER].[LEVEL01]"
+                ]
+              },
+            }
+          }
+        ]
+      }
+    ],
+    "keys": [ {
+        "name": "[0COSTCENTER].[LEVEL01]",
+        "isPrimary": "true",
+        "columns": [
+          "[0COSTCENTER].[LEVEL01]",
+          "[0FISCPER].[LEVEL01]"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "OpaqueCubeTable",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:PNG Demo...OpaqueCubeTable"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        }
+      },
+    ]
+  }
+}

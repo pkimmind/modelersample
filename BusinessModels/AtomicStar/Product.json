@@ -1,0 +1,1160 @@
+{
+  "logicalTable": {
+    "name": "Product",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "ProductID",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-SupplierCompanies",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Products.ProductID"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "ProductName",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-SupplierCompanies",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Products.ProductName"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "SupplierID",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-SupplierCompanies",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies.CompanyID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies.CompanyID"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "QuantityPerUnit",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-SupplierCompanies",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Products.QuantityPerUnit"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "UnitPrice",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-SupplierCompanies",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Products.UnitPrice"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "UnitsInStock",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-SupplierCompanies",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Products.UnitsInStock"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "UnitsOnOrder",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-SupplierCompanies",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Products.UnitsOnOrder"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "ReorderLevel",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-SupplierCompanies",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Products.ReorderLevel"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Discontinued",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-SupplierCompanies",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Products.Discontinued"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "CategoryID",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [            {
+              "logicalTableSource": "Categories",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Categories.CategoryID"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "CategoryName",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [            {
+              "logicalTableSource": "Categories",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Categories.CategoryName"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Description",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [            {
+              "logicalTableSource": "Categories",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Categories.Description"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "CompanyName",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-SupplierCompanies",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies.CompanyName"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies.CompanyName"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "ContactName",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-SupplierCompanies",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies.ContactName"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies.ContactName"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "ContactTitle",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-SupplierCompanies",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies.ContactTitle"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies.ContactTitle"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Address",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-SupplierCompanies",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies.Address"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies.Address"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "City",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-SupplierCompanies",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies.City"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies.City"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Region",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-SupplierCompanies",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies.Region"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies.Region"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "PostalCode",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-SupplierCompanies",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies.PostalCode"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies.PostalCode"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Country",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-SupplierCompanies",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies.Country"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies.Country"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Phone",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-SupplierCompanies",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies.Phone"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies.Phone"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Fax",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-SupplierCompanies",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies.Fax"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies.Fax"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "CountryRevenue",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:AtomicStar.SalesFacts.Revenue"
+              ]
+            },
+          },
+        ]
+    ],
+    "keys": [ {
+        "name": "PK__Products__Produc__089551D8",
+        "isPrimary": "true",
+        "columns": [
+          "ProductID"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Products-SupplierCompanies",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Products",
+            "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies"
+          ],
+          "logicalTableSourceJoins": [
+            {
+              "leftTable": "SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies",
+              "rightTable": "SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Products",
+              "joinType": "Inner",
+              "physicalJoinRef": "SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Products.Supplier Company To Product"
+            },
+            {
+              "leftTable": "SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Products",
+              "rightTable": "SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies",
+              "joinType": "Inner",
+              "physicalJoinRef": "SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Products.Supplier Company To Product"
+            }
+          ],
+        },
+        "WhereClause": {
+          "expressionTemplate": "%1 = 0",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies.OrganizationCode"
+          ]
+        }
+      },
+      {
+        "name": "Categories",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Categories"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:AtomicStar.Product.Category"
+          ]
+        }
+      },
+      {
+        "name": "Suppliers",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "WhereClause": {
+          "expressionTemplate": "%1 = 0",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies.OrganizationCode"
+          ]
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:AtomicStar.Product.Supplier"
+          ]
+        }
+      },
+    ],
+    "dimension": {
+      "name": "Product",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+      "levels": [
+        {
+          "name": "Category",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Category",
+          "keys": [ {
+        "name": "CategoryID",
+        "isPrimary": "true",
+        "isForDrillDown": true,
+        "columns": [
+          "CategoryID"
+        ]
+      },
+      {
+        "name": "CategoryName",
+        "isForDrillDown": true,
+        "columns": [
+          "CategoryName"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Product",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 77,
+              "levelConst": "Product",
+              "keys": [ {
+            "name": "ProductID",
+            "isPrimary": "true",
+            "isForDrillDown": true,
+            "columns": [
+              "ProductID"
+            ]
+          },
+          {
+            "name": "ProductName",
+            "isForDrillDown": true,
+            "columns": [
+              "ProductName"
+            ]
+          }
+              ],
+              "columns": [
+                "ProductID",
+                "ProductName",
+                "QuantityPerUnit",
+                "UnitPrice",
+                "UnitsInStock",
+                "UnitsOnOrder",
+                "ReorderLevel",
+                "Discontinued"
+              ]
+            }
+          ],
+          "columns": [
+            "CategoryID",
+            "CategoryName",
+            "Description"
+          ]
+        },
+        {
+          "name": "Product",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 77,
+          "levelConst": "Product",
+          "keys": [ {
+        "name": "ProductID",
+        "isPrimary": "true",
+        "isForDrillDown": true,
+        "columns": [
+          "ProductID"
+        ]
+      },
+      {
+        "name": "ProductName",
+        "isForDrillDown": true,
+        "columns": [
+          "ProductName"
+        ]
+      }
+          ],
+          "columns": [
+            "ProductID",
+            "ProductName",
+            "QuantityPerUnit",
+            "UnitPrice",
+            "UnitsInStock",
+            "UnitsOnOrder",
+            "ReorderLevel",
+            "Discontinued"
+          ]
+        },
+        {
+          "name": "Country",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Country",
+          "keys": [ {
+        "name": "Country_Key",
+        "isPrimary": "true",
+        "isForDrillDown": true,
+        "columns": [
+          "Country"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Region",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Region",
+              "keys": [ {
+            "name": "Region_Key",
+            "isPrimary": "true",
+            "isForDrillDown": true,
+            "columns": [
+              "Region",
+              "Country"
+            ]
+          }
+              ],
+              "childLevels": [
+                {
+                  "name": "City",
+                  "isGTA": false,
+                  "isFDUC": true,
+                  "memberCount": 1,
+                  "levelConst": "City",
+                  "keys": [ {
+                "name": "City_Key",
+                "isPrimary": "true",
+                "isForDrillDown": true,
+                "columns": [
+                  "City",
+                  "Country"
+                ]
+              }
+                  ],
+                  "childLevels": [
+                    {
+                      "name": "Supplier",
+                      "isGTA": false,
+                      "isFDUC": true,
+                      "memberCount": 29,
+                      "levelConst": "Supplier",
+                      "keys": [ {
+                    "name": "SupplierID",
+                    "isPrimary": "true",
+                    "isForDrillDown": true,
+                    "columns": [
+                      "SupplierID"
+                    ]
+                  },
+                  {
+                    "name": "CompanyName",
+                    "isForDrillDown": true,
+                    "columns": [
+                      "CompanyName"
+                    ]
+                  }
+                      ],
+                      "childLevels": [
+                        {
+                          "name": "Product",
+                          "isGTA": false,
+                          "isFDUC": true,
+                          "memberCount": 77,
+                          "levelConst": "Product",
+                          "keys": [ {
+                        "name": "ProductID",
+                        "isPrimary": "true",
+                        "isForDrillDown": true,
+                        "columns": [
+                          "ProductID"
+                        ]
+                      },
+                      {
+                        "name": "ProductName",
+                        "isForDrillDown": true,
+                        "columns": [
+                          "ProductName"
+                        ]
+                      }
+                          ],
+                          "columns": [
+                            "ProductID",
+                            "ProductName",
+                            "QuantityPerUnit",
+                            "UnitPrice",
+                            "UnitsInStock",
+                            "UnitsOnOrder",
+                            "ReorderLevel",
+                            "Discontinued"
+                          ]
+                        }
+                      ],
+                      "columns": [
+                        "SupplierID",
+                        "CompanyName",
+                        "ContactName",
+                        "ContactTitle",
+                        "Address",
+                        "PostalCode",
+                        "Phone",
+                        "Fax"
+                      ]
+                    }
+                  ],
+                  "columns": [
+                    "City"
+                  ]
+                }
+              ],
+              "columns": [
+                "Region"
+              ]
+            }
+          ],
+          "columns": [
+            "Country",
+            "CountryRevenue"
+          ]
+        },
+        {
+          "name": "Region",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Region",
+          "keys": [ {
+        "name": "Region_Key",
+        "isPrimary": "true",
+        "isForDrillDown": true,
+        "columns": [
+          "Region",
+          "Country"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "City",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "City",
+              "keys": [ {
+            "name": "City_Key",
+            "isPrimary": "true",
+            "isForDrillDown": true,
+            "columns": [
+              "City",
+              "Country"
+            ]
+          }
+              ],
+              "childLevels": [
+                {
+                  "name": "Supplier",
+                  "isGTA": false,
+                  "isFDUC": true,
+                  "memberCount": 29,
+                  "levelConst": "Supplier",
+                  "keys": [ {
+                "name": "SupplierID",
+                "isPrimary": "true",
+                "isForDrillDown": true,
+                "columns": [
+                  "SupplierID"
+                ]
+              },
+              {
+                "name": "CompanyName",
+                "isForDrillDown": true,
+                "columns": [
+                  "CompanyName"
+                ]
+              }
+                  ],
+                  "childLevels": [
+                    {
+                      "name": "Product",
+                      "isGTA": false,
+                      "isFDUC": true,
+                      "memberCount": 77,
+                      "levelConst": "Product",
+                      "keys": [ {
+                    "name": "ProductID",
+                    "isPrimary": "true",
+                    "isForDrillDown": true,
+                    "columns": [
+                      "ProductID"
+                    ]
+                  },
+                  {
+                    "name": "ProductName",
+                    "isForDrillDown": true,
+                    "columns": [
+                      "ProductName"
+                    ]
+                  }
+                      ],
+                      "columns": [
+                        "ProductID",
+                        "ProductName",
+                        "QuantityPerUnit",
+                        "UnitPrice",
+                        "UnitsInStock",
+                        "UnitsOnOrder",
+                        "ReorderLevel",
+                        "Discontinued"
+                      ]
+                    }
+                  ],
+                  "columns": [
+                    "SupplierID",
+                    "CompanyName",
+                    "ContactName",
+                    "ContactTitle",
+                    "Address",
+                    "PostalCode",
+                    "Phone",
+                    "Fax"
+                  ]
+                }
+              ],
+              "columns": [
+                "City"
+              ]
+            }
+          ],
+          "columns": [
+            "Region"
+          ]
+        },
+        {
+          "name": "City",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "City",
+          "keys": [ {
+        "name": "City_Key",
+        "isPrimary": "true",
+        "isForDrillDown": true,
+        "columns": [
+          "City",
+          "Country"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Supplier",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 29,
+              "levelConst": "Supplier",
+              "keys": [ {
+            "name": "SupplierID",
+            "isPrimary": "true",
+            "isForDrillDown": true,
+            "columns": [
+              "SupplierID"
+            ]
+          },
+          {
+            "name": "CompanyName",
+            "isForDrillDown": true,
+            "columns": [
+              "CompanyName"
+            ]
+          }
+              ],
+              "childLevels": [
+                {
+                  "name": "Product",
+                  "isGTA": false,
+                  "isFDUC": true,
+                  "memberCount": 77,
+                  "levelConst": "Product",
+                  "keys": [ {
+                "name": "ProductID",
+                "isPrimary": "true",
+                "isForDrillDown": true,
+                "columns": [
+                  "ProductID"
+                ]
+              },
+              {
+                "name": "ProductName",
+                "isForDrillDown": true,
+                "columns": [
+                  "ProductName"
+                ]
+              }
+                  ],
+                  "columns": [
+                    "ProductID",
+                    "ProductName",
+                    "QuantityPerUnit",
+                    "UnitPrice",
+                    "UnitsInStock",
+                    "UnitsOnOrder",
+                    "ReorderLevel",
+                    "Discontinued"
+                  ]
+                }
+              ],
+              "columns": [
+                "SupplierID",
+                "CompanyName",
+                "ContactName",
+                "ContactTitle",
+                "Address",
+                "PostalCode",
+                "Phone",
+                "Fax"
+              ]
+            }
+          ],
+          "columns": [
+            "City"
+          ]
+        },
+        {
+          "name": "Supplier",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 29,
+          "levelConst": "Supplier",
+          "keys": [ {
+        "name": "SupplierID",
+        "isPrimary": "true",
+        "isForDrillDown": true,
+        "columns": [
+          "SupplierID"
+        ]
+      },
+      {
+        "name": "CompanyName",
+        "isForDrillDown": true,
+        "columns": [
+          "CompanyName"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Product",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 77,
+              "levelConst": "Product",
+              "keys": [ {
+            "name": "ProductID",
+            "isPrimary": "true",
+            "isForDrillDown": true,
+            "columns": [
+              "ProductID"
+            ]
+          },
+          {
+            "name": "ProductName",
+            "isForDrillDown": true,
+            "columns": [
+              "ProductName"
+            ]
+          }
+              ],
+              "columns": [
+                "ProductID",
+                "ProductName",
+                "QuantityPerUnit",
+                "UnitPrice",
+                "UnitsInStock",
+                "UnitsOnOrder",
+                "ReorderLevel",
+                "Discontinued"
+              ]
+            }
+          ],
+          "columns": [
+            "SupplierID",
+            "CompanyName",
+            "ContactName",
+            "ContactTitle",
+            "Address",
+            "PostalCode",
+            "Phone",
+            "Fax"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Product",
+        "levels": [
+          {
+            "name": "Category",
+            "childLevels": [
+              {
+                "name": "Product"
+              }
+            ]
+          },
+          {
+            "name": "Product"
+          },
+          {
+            "name": "Country",
+            "childLevels": [
+              {
+                "name": "Region",
+                "childLevels": [
+                  {
+                    "name": "City",
+                    "childLevels": [
+                      {
+                        "name": "Supplier",
+                        "childLevels": [
+                          {
+                            "name": "Product"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Region",
+            "childLevels": [
+              {
+                "name": "City",
+                "childLevels": [
+                  {
+                    "name": "Supplier",
+                    "childLevels": [
+                      {
+                        "name": "Product"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "City",
+            "childLevels": [
+              {
+                "name": "Supplier",
+                "childLevels": [
+                  {
+                    "name": "Product"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Supplier",
+            "childLevels": [
+              {
+                "name": "Product"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

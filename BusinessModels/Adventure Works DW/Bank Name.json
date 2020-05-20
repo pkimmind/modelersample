@@ -1,0 +1,301 @@
+{
+  "logicalTable": {
+    "name": "Bank Name",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "[Reseller].[Bank Name].[(All)]",
+        "descriptorColumn": "[Reseller].[Bank Name].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Reseller].[Bank Name].[(All)]"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "[Reseller].[Bank Name].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Reseller].[Bank Name].[(All)] - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Bank Name",
+        "descriptorColumn": "Bank Name - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Bank Name"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Bank Name - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Bank Name - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#306",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#306"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#307",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#307"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#306",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#306"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#307",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#307"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#243",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#243"
+                ]
+              },
+            }
+          }
+        ]
+      }
+    ],
+    "keys": [ {
+        "name": "Bank Name",
+        "isPrimary": "true",
+        "columns": [
+          "[Reseller].[Bank Name].[(All)]",
+          "Bank Name"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Adventure Works",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:Adventure Works DW...Adventure Works"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:Adventure Works DW.Bank Name.Bank Name"
+          ]
+        }
+      },
+    ],
+    "dimension": {
+      "name": "Bank Name",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/9ead024d-0c68-1000-8c4a-822330c20000.xml#m9ead024e-0c68-1000-8c4a-822330c20000"      "levels": [
+        {
+          "name": "[Reseller].[Bank Name].[(All)]",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "[Reseller].[Bank Name].[(All)]",
+          "keys": [ {
+        "name": "[Reseller].[Bank Name].[(All)] - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "[Reseller].[Bank Name].[(All)] - Member Key"
+        ]
+      },
+      {
+        "name": "[Reseller].[Bank Name].[(All)]",
+        "isForDrillDown": true,
+        "columns": [
+          "[Reseller].[Bank Name].[(All)]"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Bank Name",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Bank Name",
+              "keys": [ {
+            "name": "Bank Name - Member Key",
+            "isPrimary": "true",
+            "columns": [
+              "Bank Name - Member Key"
+            ]
+          },
+          {
+            "name": "Bank Name",
+            "isForDrillDown": true,
+            "columns": [
+              "Bank Name"
+            ]
+          }
+              ],
+              "columns": [
+                "Bank Name",
+                "Bank Name - Member Key",
+                "KEY0#307",
+                "MEMBER_VALUE#307"
+              ]
+            }
+          ],
+          "columns": [
+            "[Reseller].[Bank Name].[(All)]",
+            "[Reseller].[Bank Name].[(All)] - Member Key",
+            "KEY0#306",
+            "MEMBER_VALUE#306",
+            "NAME#243"
+          ]
+        },
+        {
+          "name": "Bank Name",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Bank Name",
+          "keys": [ {
+        "name": "Bank Name - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "Bank Name - Member Key"
+        ]
+      },
+      {
+        "name": "Bank Name",
+        "isForDrillDown": true,
+        "columns": [
+          "Bank Name"
+        ]
+      }
+          ],
+          "columns": [
+            "Bank Name",
+            "Bank Name - Member Key",
+            "KEY0#307",
+            "MEMBER_VALUE#307"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Bank Name",
+        "levels": [
+          {
+            "name": "[Reseller].[Bank Name].[(All)]",
+            "childLevels": [
+              {
+                "name": "Bank Name"
+              }
+            ]
+          },
+          {
+            "name": "Bank Name"
+          }
+        ]
+      }
+    }
+  }
+}

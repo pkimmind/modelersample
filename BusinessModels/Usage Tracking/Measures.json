@@ -1,0 +1,535 @@
+{
+  "logicalTable": {
+    "name": "Measures",
+    "type": "FACT",
+    "logicalColumns": [ {
+        "name": "Avg Row Count",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "S_NQ_ACCT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.ROW_COUNT"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      }
+  }
+}
+ {
+        "name": "Avg Compile Time in Secs",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "S_NQ_ACCT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.COMPILE_TIME_SEC"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      }
+  }
+}
+ {
+        "name": "Total Num dB Queries",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "S_NQ_ACCT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.NUM_DB_QUERY"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      }
+  }
+}
+ {
+        "name": "Total Time Spent in dB",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "S_NQ_ACCT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.CUM_DB_TIME_SEC"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      }
+  }
+}
+ {
+        "name": "Total Row Count in dB",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "S_NQ_ACCT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.CUM_NUM_DB_ROW"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      }
+  }
+}
+ {
+        "name": "Success Flag",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "S_NQ_ACCT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.SUCCESS_FLG"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "User Name",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "S_NQ_ACCT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.USER_NAME"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Avg Num dB Queries",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "S_NQ_ACCT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.NUM_DB_QUERY"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      }
+  }
+}
+ {
+        "name": "Total Time in Secs",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "S_NQ_ACCT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.TOTAL_TIME_SEC"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      }
+  }
+}
+ {
+        "name": "StartHourMin",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "S_NQ_ACCT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.START_HOUR_MIN"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "QueryText",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "S_NQ_ACCT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.QUERY_TEXT"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Total Row Count",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "S_NQ_ACCT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.ROW_COUNT"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      }
+  }
+}
+ {
+        "name": "Total Num Queries",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "S_NQ_ACCT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.SUCCESS_FLG"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      }
+  }
+}
+ {
+        "name": "End DateTime",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "S_NQ_ACCT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.END_TS"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Start DateTime",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "S_NQ_ACCT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.START_TS"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "End Date",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "S_NQ_ACCT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.END_DT"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "EndHourMin",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "S_NQ_ACCT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.END_HOUR_MIN"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Start Date",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "S_NQ_ACCT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.START_DT"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Number of Cache Entries Inserted",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "S_NQ_ACCT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.NUM_CACHE_INSERTED"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      }
+  }
+}
+ {
+        "name": "Number of Cache Hits",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "S_NQ_ACCT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.NUM_CACHE_HITS"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      }
+  }
+}
+ {
+        "name": "Avg Total Time in Secs",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "S_NQ_ACCT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.TOTAL_TIME_SEC"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      }
+  }
+}
+ {
+        "name": "Total Compile Time in Secs",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "S_NQ_ACCT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT.COMPILE_TIME_SEC"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      }
+  }
+}
+    ],
+    "keys": [ {
+        "name": "QueryText",
+        "isPrimary": "true",
+        "columns": [
+          "User Name",
+          "QueryText",
+          "End DateTime",
+          "Start DateTime"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "S_NQ_ACCT",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_UsageTracking.UsageTracking.dbo.S_NQ_ACCT"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        }
+      },
+    ]
+  }
+}

@@ -1,0 +1,301 @@
+{
+  "logicalTable": {
+    "name": "Account Number",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "[Account].[Account Number].[(All)]",
+        "descriptorColumn": "[Account].[Account Number].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Account].[Account Number].[(All)]"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "[Account].[Account Number].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Account].[Account Number].[(All)] - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Account Number - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Account Number - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Account Number#1",
+        "descriptorColumn": "Account Number - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Account Number#1"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#2",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#2"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#3",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#3"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#2",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#2"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#3",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#3"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#2",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#2"
+                ]
+              },
+            }
+          }
+        ]
+      }
+    ],
+    "keys": [ {
+        "name": "Account Number",
+        "isPrimary": "true",
+        "columns": [
+          "[Account].[Account Number].[(All)]",
+          "Account Number#1"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Adventure Works",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:Adventure Works DW...Adventure Works"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:Adventure Works DW.Account Number.Account Number"
+          ]
+        }
+      },
+    ],
+    "dimension": {
+      "name": "Account Number",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/9eab79d4-0c68-1000-8c4a-822330c20000.xml#m9eab79d5-0c68-1000-8c4a-822330c20000"      "levels": [
+        {
+          "name": "[Account].[Account Number].[(All)]",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "[Account].[Account Number].[(All)]",
+          "keys": [ {
+        "name": "[Account].[Account Number].[(All)] - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "[Account].[Account Number].[(All)] - Member Key"
+        ]
+      },
+      {
+        "name": "[Account].[Account Number].[(All)]",
+        "isForDrillDown": true,
+        "columns": [
+          "[Account].[Account Number].[(All)]"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Account Number",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Account Number",
+              "keys": [ {
+            "name": "Account Number - Member Key",
+            "isPrimary": "true",
+            "columns": [
+              "Account Number - Member Key"
+            ]
+          },
+          {
+            "name": "Account Number",
+            "isForDrillDown": true,
+            "columns": [
+              "Account Number#1"
+            ]
+          }
+              ],
+              "columns": [
+                "Account Number - Member Key",
+                "Account Number#1",
+                "KEY0#3",
+                "MEMBER_VALUE#3"
+              ]
+            }
+          ],
+          "columns": [
+            "[Account].[Account Number].[(All)]",
+            "[Account].[Account Number].[(All)] - Member Key",
+            "KEY0#2",
+            "MEMBER_VALUE#2",
+            "NAME#2"
+          ]
+        },
+        {
+          "name": "Account Number",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Account Number",
+          "keys": [ {
+        "name": "Account Number - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "Account Number - Member Key"
+        ]
+      },
+      {
+        "name": "Account Number",
+        "isForDrillDown": true,
+        "columns": [
+          "Account Number#1"
+        ]
+      }
+          ],
+          "columns": [
+            "Account Number - Member Key",
+            "Account Number#1",
+            "KEY0#3",
+            "MEMBER_VALUE#3"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Account Number",
+        "levels": [
+          {
+            "name": "[Account].[Account Number].[(All)]",
+            "childLevels": [
+              {
+                "name": "Account Number"
+              }
+            ]
+          },
+          {
+            "name": "Account Number"
+          }
+        ]
+      }
+    }
+  }
+}

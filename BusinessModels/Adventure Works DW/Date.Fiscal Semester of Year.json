@@ -1,0 +1,302 @@
+{
+  "logicalTable": {
+    "name": "Date.Fiscal Semester of Year",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "[Date].[Fiscal Semester of Year].[(All)]",
+        "descriptorColumn": "[Date].[Fiscal Semester of Year].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Date].[Fiscal Semester of Year].[(All)]"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "[Date].[Fiscal Semester of Year].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Date].[Fiscal Semester of Year].[(All)] - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Fiscal Semester of Year - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Fiscal Semester of Year - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Fiscal Semester of Year#1",
+        "descriptorColumn": "Fiscal Semester of Year - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Fiscal Semester of Year#1"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#86",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#86"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#87",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#87"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#86",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#86"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#87",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#87"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#71",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#71"
+                ]
+              },
+            }
+          }
+        ]
+      }
+    ],
+    "keys": [ {
+        "name": "Date.Fiscal Semester of Year",
+        "isPrimary": "true",
+        "columns": [
+          "[Date].[Fiscal Semester of Year].[(All)]",
+          "Fiscal Semester of Year#1"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Adventure Works",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:Adventure Works DW...Adventure Works"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:Adventure Works DW.Date.Fiscal Semester of Year.Fiscal Semester of Year"
+          ]
+        }
+      },
+    ],
+    "dimension": {
+      "name": "Date.Fiscal Semester of Year",
+      "isTimeDim": "true",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/9eabc984-0c68-1000-8c4a-822330c20000.xml#m9eabc985-0c68-1000-8c4a-822330c20000"      "levels": [
+        {
+          "name": "[Date].[Fiscal Semester of Year].[(All)]",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "[Date].[Fiscal Semester of Year].[(All)]",
+          "keys": [ {
+        "name": "[Date].[Fiscal Semester of Year].[(All)] - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "[Date].[Fiscal Semester of Year].[(All)] - Member Key"
+        ]
+      },
+      {
+        "name": "[Date].[Fiscal Semester of Year].[(All)]",
+        "isForDrillDown": true,
+        "columns": [
+          "[Date].[Fiscal Semester of Year].[(All)]"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Fiscal Semester of Year",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Fiscal Semester of Year",
+              "keys": [ {
+            "name": "Fiscal Semester of Year - Member Key",
+            "isPrimary": "true",
+            "columns": [
+              "Fiscal Semester of Year - Member Key"
+            ]
+          },
+          {
+            "name": "Fiscal Semester of Year",
+            "isForDrillDown": true,
+            "columns": [
+              "Fiscal Semester of Year#1"
+            ]
+          }
+              ],
+              "columns": [
+                "Fiscal Semester of Year - Member Key",
+                "Fiscal Semester of Year#1",
+                "KEY0#87",
+                "MEMBER_VALUE#87"
+              ]
+            }
+          ],
+          "columns": [
+            "[Date].[Fiscal Semester of Year].[(All)]",
+            "[Date].[Fiscal Semester of Year].[(All)] - Member Key",
+            "KEY0#86",
+            "MEMBER_VALUE#86",
+            "NAME#71"
+          ]
+        },
+        {
+          "name": "Fiscal Semester of Year",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Fiscal Semester of Year",
+          "keys": [ {
+        "name": "Fiscal Semester of Year - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "Fiscal Semester of Year - Member Key"
+        ]
+      },
+      {
+        "name": "Fiscal Semester of Year",
+        "isForDrillDown": true,
+        "columns": [
+          "Fiscal Semester of Year#1"
+        ]
+      }
+          ],
+          "columns": [
+            "Fiscal Semester of Year - Member Key",
+            "Fiscal Semester of Year#1",
+            "KEY0#87",
+            "MEMBER_VALUE#87"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Date.Fiscal Semester of Year",
+        "levels": [
+          {
+            "name": "[Date].[Fiscal Semester of Year].[(All)]",
+            "childLevels": [
+              {
+                "name": "Fiscal Semester of Year"
+              }
+            ]
+          },
+          {
+            "name": "Fiscal Semester of Year"
+          }
+        ]
+      }
+    }
+  }
+}

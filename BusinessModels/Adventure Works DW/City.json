@@ -1,0 +1,358 @@
+{
+  "logicalTable": {
+    "name": "City",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "[Customer].[City].[(All)]",
+        "descriptorColumn": "[Customer].[City].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Customer].[City].[(All)]"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "[Customer].[City].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Customer].[City].[(All)] - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "City",
+        "descriptorColumn": "City - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.City"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "City - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.City - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#14",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#14"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#15",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#15"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY1",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY1"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#14",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#14"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#15",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#15"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#11",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#11"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#12",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#12"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "State-Province",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.State-Province"
+                ]
+              },
+            }
+          }
+        ]
+      }
+    ],
+    "keys": [ {
+        "name": "City",
+        "isPrimary": "true",
+        "columns": [
+          "[Customer].[City].[(All)]",
+          "City"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Adventure Works",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:Adventure Works DW...Adventure Works"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:Adventure Works DW.City.City"
+          ]
+        }
+      },
+    ],
+    "dimension": {
+      "name": "City",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/9eab7ae4-0c68-1000-8c4a-822330c20000.xml#m9eab7ae5-0c68-1000-8c4a-822330c20000"      "levels": [
+        {
+          "name": "[Customer].[City].[(All)]",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "[Customer].[City].[(All)]",
+          "keys": [ {
+        "name": "[Customer].[City].[(All)] - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "[Customer].[City].[(All)] - Member Key"
+        ]
+      },
+      {
+        "name": "[Customer].[City].[(All)]",
+        "isForDrillDown": true,
+        "columns": [
+          "[Customer].[City].[(All)]"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "City",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "City",
+              "keys": [ {
+            "name": "City - Member Key",
+            "isPrimary": "true",
+            "columns": [
+              "City - Member Key"
+            ]
+          },
+          {
+            "name": "City",
+            "isForDrillDown": true,
+            "columns": [
+              "City"
+            ]
+          }
+              ],
+              "columns": [
+                "City",
+                "City - Member Key",
+                "KEY0#15",
+                "KEY1",
+                "MEMBER_VALUE#15",
+                "NAME#12",
+                "State-Province"
+              ]
+            }
+          ],
+          "columns": [
+            "[Customer].[City].[(All)]",
+            "[Customer].[City].[(All)] - Member Key",
+            "KEY0#14",
+            "MEMBER_VALUE#14",
+            "NAME#11"
+          ]
+        },
+        {
+          "name": "City",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "City",
+          "keys": [ {
+        "name": "City - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "City - Member Key"
+        ]
+      },
+      {
+        "name": "City",
+        "isForDrillDown": true,
+        "columns": [
+          "City"
+        ]
+      }
+          ],
+          "columns": [
+            "City",
+            "City - Member Key",
+            "KEY0#15",
+            "KEY1",
+            "MEMBER_VALUE#15",
+            "NAME#12",
+            "State-Province"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "City",
+        "levels": [
+          {
+            "name": "[Customer].[City].[(All)]",
+            "childLevels": [
+              {
+                "name": "City"
+              }
+            ]
+          },
+          {
+            "name": "City"
+          }
+        ]
+      }
+    }
+  }
+}

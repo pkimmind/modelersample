@@ -1,0 +1,673 @@
+{
+  "logicalTable": {
+    "name": "EmployeeRegion",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "Region",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Population.Region"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "City",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Population.Region"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Country",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Population.Country"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "City",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Population.Country"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Revenue",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:SnowflakeSales_subrequest.SalesFacts.Revenue"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "QtySold",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:SnowflakeSales_subrequest.SalesFacts.QtySold"
+              ]
+            },
+          },
+        ]
+    ],
+    "keys": [ {
+        "name": "Region",
+        "isPrimary": "true",
+        "columns": [
+          "Region",
+          "Country"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Employees",
+        "distinctValues": true,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.Employees"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        }
+      },
+      {
+        "name": "City",
+        "distinctValues": true,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.Population"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        }
+      },
+    ],
+    "dimension": {
+      "name": "Employee",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/5af05a34-0c78-1000-b5b8-822332560000.xml#m5af0f695-0c78-1000-b5b8-822332560000"      "levels": [
+        {
+          "name": "All Employees",
+          "isGTA": true,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "All Employees",
+          "childLevels": [
+            {
+              "name": "Country",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Country",
+              "keys": [ {
+            "name": "Country_Key",
+            "isPrimary": "true",
+            "isForDrillDown": true,
+            "columns": [
+              "Country"
+            ]
+          }
+              ],
+              "childLevels": [
+                {
+                  "name": "Region",
+                  "isGTA": false,
+                  "isFDUC": true,
+                  "memberCount": 1,
+                  "levelConst": "Region",
+                  "keys": [ {
+                "name": "Region_Key",
+                "isPrimary": "true",
+                "isForDrillDown": true,
+                "columns": [
+                  "Region",
+                  "Country"
+                ]
+              }
+                  ],
+                  "childLevels": [
+                    {
+                      "name": "City",
+                      "isGTA": false,
+                      "isFDUC": true,
+                      "memberCount": 1,
+                      "levelConst": "City",
+                      "keys": [ {
+                    "name": "City_Key",
+                    "isPrimary": "true",
+                    "isForDrillDown": true,
+                    "columns": [
+                      "City",
+                      "Region",
+                      "Country"
+                    ]
+                  }
+                      ],
+                      "childLevels": [
+                        {
+                          "name": "Employee",
+                          "isGTA": false,
+                          "isFDUC": true,
+                          "memberCount": 9,
+                          "levelConst": "Employee",
+                          "keys": [ {
+                        "name": "EmployeeID",
+                        "isPrimary": "true",
+                        "isForDrillDown": true,
+                        "columns": [
+                          "EmployeeID"
+                        ]
+                      },
+                      {
+                        "name": "FirstName_LastName",
+                        "isForDrillDown": true,
+                        "columns": [
+                          "LastName",
+                          "FirstName"
+                        ]
+                      }
+                          ],
+                          "columns": [
+                            "EmployeeID",
+                            "LastName",
+                            "FirstName",
+                            "Title",
+                            "TitleOfCourtesy",
+                            "BirthDate",
+                            "HireDate",
+                            "PostalCode",
+                            "Address",
+                            "HomePhone",
+                            "Extension",
+                            "Notes",
+                            "ReportsTo",
+                            "Revenue",
+                            "QtySold",
+                            "Country",
+                            "Region",
+                            "City"
+                          ]
+                        }
+                      ],
+                      "columns": [
+                        "City",
+                        "Region",
+                        "Country",
+                        "Revenue",
+                        "QtySold"
+                      ]
+                    }
+                  ],
+                  "columns": [
+                    "Region",
+                    "Country",
+                    "Revenue",
+                    "QtySold"
+                  ]
+                }
+              ],
+              "columns": [
+                "Category Country Revenue",
+                "All Product Country Time Population",
+                "Country",
+                "Revenue",
+                "QtySold",
+                "PlanRevenue"
+              ]
+            }
+          ],
+          "columns": [
+            "Last",
+            "Change",
+            "% Change",
+            "Volume",
+            "RevenueByAllEmployees",
+            "revenue_4"
+          ]
+        },
+        {
+          "name": "Country",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Country",
+          "keys": [ {
+        "name": "Country_Key",
+        "isPrimary": "true",
+        "isForDrillDown": true,
+        "columns": [
+          "Country"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Region",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Region",
+              "keys": [ {
+            "name": "Region_Key",
+            "isPrimary": "true",
+            "isForDrillDown": true,
+            "columns": [
+              "Region",
+              "Country"
+            ]
+          }
+              ],
+              "childLevels": [
+                {
+                  "name": "City",
+                  "isGTA": false,
+                  "isFDUC": true,
+                  "memberCount": 1,
+                  "levelConst": "City",
+                  "keys": [ {
+                "name": "City_Key",
+                "isPrimary": "true",
+                "isForDrillDown": true,
+                "columns": [
+                  "City",
+                  "Region",
+                  "Country"
+                ]
+              }
+                  ],
+                  "childLevels": [
+                    {
+                      "name": "Employee",
+                      "isGTA": false,
+                      "isFDUC": true,
+                      "memberCount": 9,
+                      "levelConst": "Employee",
+                      "keys": [ {
+                    "name": "EmployeeID",
+                    "isPrimary": "true",
+                    "isForDrillDown": true,
+                    "columns": [
+                      "EmployeeID"
+                    ]
+                  },
+                  {
+                    "name": "FirstName_LastName",
+                    "isForDrillDown": true,
+                    "columns": [
+                      "LastName",
+                      "FirstName"
+                    ]
+                  }
+                      ],
+                      "columns": [
+                        "EmployeeID",
+                        "LastName",
+                        "FirstName",
+                        "Title",
+                        "TitleOfCourtesy",
+                        "BirthDate",
+                        "HireDate",
+                        "PostalCode",
+                        "Address",
+                        "HomePhone",
+                        "Extension",
+                        "Notes",
+                        "ReportsTo",
+                        "Revenue",
+                        "QtySold",
+                        "Country",
+                        "Region",
+                        "City"
+                      ]
+                    }
+                  ],
+                  "columns": [
+                    "City",
+                    "Region",
+                    "Country",
+                    "Revenue",
+                    "QtySold"
+                  ]
+                }
+              ],
+              "columns": [
+                "Region",
+                "Country",
+                "Revenue",
+                "QtySold"
+              ]
+            }
+          ],
+          "columns": [
+            "Category Country Revenue",
+            "All Product Country Time Population",
+            "Country",
+            "Revenue",
+            "QtySold",
+            "PlanRevenue"
+          ]
+        },
+        {
+          "name": "Region",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Region",
+          "keys": [ {
+        "name": "Region_Key",
+        "isPrimary": "true",
+        "isForDrillDown": true,
+        "columns": [
+          "Region",
+          "Country"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "City",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "City",
+              "keys": [ {
+            "name": "City_Key",
+            "isPrimary": "true",
+            "isForDrillDown": true,
+            "columns": [
+              "City",
+              "Region",
+              "Country"
+            ]
+          }
+              ],
+              "childLevels": [
+                {
+                  "name": "Employee",
+                  "isGTA": false,
+                  "isFDUC": true,
+                  "memberCount": 9,
+                  "levelConst": "Employee",
+                  "keys": [ {
+                "name": "EmployeeID",
+                "isPrimary": "true",
+                "isForDrillDown": true,
+                "columns": [
+                  "EmployeeID"
+                ]
+              },
+              {
+                "name": "FirstName_LastName",
+                "isForDrillDown": true,
+                "columns": [
+                  "LastName",
+                  "FirstName"
+                ]
+              }
+                  ],
+                  "columns": [
+                    "EmployeeID",
+                    "LastName",
+                    "FirstName",
+                    "Title",
+                    "TitleOfCourtesy",
+                    "BirthDate",
+                    "HireDate",
+                    "PostalCode",
+                    "Address",
+                    "HomePhone",
+                    "Extension",
+                    "Notes",
+                    "ReportsTo",
+                    "Revenue",
+                    "QtySold",
+                    "Country",
+                    "Region",
+                    "City"
+                  ]
+                }
+              ],
+              "columns": [
+                "City",
+                "Region",
+                "Country",
+                "Revenue",
+                "QtySold"
+              ]
+            }
+          ],
+          "columns": [
+            "Region",
+            "Country",
+            "Revenue",
+            "QtySold"
+          ]
+        },
+        {
+          "name": "City",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "City",
+          "keys": [ {
+        "name": "City_Key",
+        "isPrimary": "true",
+        "isForDrillDown": true,
+        "columns": [
+          "City",
+          "Region",
+          "Country"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Employee",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 9,
+              "levelConst": "Employee",
+              "keys": [ {
+            "name": "EmployeeID",
+            "isPrimary": "true",
+            "isForDrillDown": true,
+            "columns": [
+              "EmployeeID"
+            ]
+          },
+          {
+            "name": "FirstName_LastName",
+            "isForDrillDown": true,
+            "columns": [
+              "LastName",
+              "FirstName"
+            ]
+          }
+              ],
+              "columns": [
+                "EmployeeID",
+                "LastName",
+                "FirstName",
+                "Title",
+                "TitleOfCourtesy",
+                "BirthDate",
+                "HireDate",
+                "PostalCode",
+                "Address",
+                "HomePhone",
+                "Extension",
+                "Notes",
+                "ReportsTo",
+                "Revenue",
+                "QtySold",
+                "Country",
+                "Region",
+                "City"
+              ]
+            }
+          ],
+          "columns": [
+            "City",
+            "Region",
+            "Country",
+            "Revenue",
+            "QtySold"
+          ]
+        },
+        {
+          "name": "Employee",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 9,
+          "levelConst": "Employee",
+          "keys": [ {
+        "name": "EmployeeID",
+        "isPrimary": "true",
+        "isForDrillDown": true,
+        "columns": [
+          "EmployeeID"
+        ]
+      },
+      {
+        "name": "FirstName_LastName",
+        "isForDrillDown": true,
+        "columns": [
+          "LastName",
+          "FirstName"
+        ]
+      }
+          ],
+          "columns": [
+            "EmployeeID",
+            "LastName",
+            "FirstName",
+            "Title",
+            "TitleOfCourtesy",
+            "BirthDate",
+            "HireDate",
+            "PostalCode",
+            "Address",
+            "HomePhone",
+            "Extension",
+            "Notes",
+            "ReportsTo",
+            "Revenue",
+            "QtySold",
+            "Country",
+            "Region",
+            "City"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Employee",
+        "levels": [
+          {
+            "name": "All Employees",
+            "childLevels": [
+              {
+                "name": "Country",
+                "childLevels": [
+                  {
+                    "name": "Region",
+                    "childLevels": [
+                      {
+                        "name": "City",
+                        "childLevels": [
+                          {
+                            "name": "Employee"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Country",
+            "childLevels": [
+              {
+                "name": "Region",
+                "childLevels": [
+                  {
+                    "name": "City",
+                    "childLevels": [
+                      {
+                        "name": "Employee"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Region",
+            "childLevels": [
+              {
+                "name": "City",
+                "childLevels": [
+                  {
+                    "name": "Employee"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "City",
+            "childLevels": [
+              {
+                "name": "Employee"
+              }
+            ]
+          },
+          {
+            "name": "Employee"
+          }
+        ]
+      }
+    }
+  }
+}

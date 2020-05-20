@@ -1,0 +1,301 @@
+{
+  "logicalTable": {
+    "name": "Address",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "[Customer].[Address].[(All)]",
+        "descriptorColumn": "[Customer].[Address].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Customer].[Address].[(All)]"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "[Customer].[Address].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Customer].[Address].[(All)] - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Address",
+        "descriptorColumn": "Address - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Address"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Address - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Address - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#12",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#12"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#13",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#13"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#12",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#12"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#13",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#13"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#10",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#10"
+                ]
+              },
+            }
+          }
+        ]
+      }
+    ],
+    "keys": [ {
+        "name": "Address",
+        "isPrimary": "true",
+        "columns": [
+          "[Customer].[Address].[(All)]",
+          "Address"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Adventure Works",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:Adventure Works DW...Adventure Works"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:Adventure Works DW.Address.Address"
+          ]
+        }
+      },
+    ],
+    "dimension": {
+      "name": "Address",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/9eab7abb-0c68-1000-8c4a-822330c20000.xml#m9eab7abc-0c68-1000-8c4a-822330c20000"      "levels": [
+        {
+          "name": "[Customer].[Address].[(All)]",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "[Customer].[Address].[(All)]",
+          "keys": [ {
+        "name": "[Customer].[Address].[(All)] - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "[Customer].[Address].[(All)] - Member Key"
+        ]
+      },
+      {
+        "name": "[Customer].[Address].[(All)]",
+        "isForDrillDown": true,
+        "columns": [
+          "[Customer].[Address].[(All)]"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Address",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Address",
+              "keys": [ {
+            "name": "Address - Member Key",
+            "isPrimary": "true",
+            "columns": [
+              "Address - Member Key"
+            ]
+          },
+          {
+            "name": "Address",
+            "isForDrillDown": true,
+            "columns": [
+              "Address"
+            ]
+          }
+              ],
+              "columns": [
+                "Address",
+                "Address - Member Key",
+                "KEY0#13",
+                "MEMBER_VALUE#13"
+              ]
+            }
+          ],
+          "columns": [
+            "[Customer].[Address].[(All)]",
+            "[Customer].[Address].[(All)] - Member Key",
+            "KEY0#12",
+            "MEMBER_VALUE#12",
+            "NAME#10"
+          ]
+        },
+        {
+          "name": "Address",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Address",
+          "keys": [ {
+        "name": "Address - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "Address - Member Key"
+        ]
+      },
+      {
+        "name": "Address",
+        "isForDrillDown": true,
+        "columns": [
+          "Address"
+        ]
+      }
+          ],
+          "columns": [
+            "Address",
+            "Address - Member Key",
+            "KEY0#13",
+            "MEMBER_VALUE#13"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Address",
+        "levels": [
+          {
+            "name": "[Customer].[Address].[(All)]",
+            "childLevels": [
+              {
+                "name": "Address"
+              }
+            ]
+          },
+          {
+            "name": "Address"
+          }
+        ]
+      }
+    }
+  }
+}

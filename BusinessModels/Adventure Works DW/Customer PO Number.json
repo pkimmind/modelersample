@@ -1,0 +1,301 @@
+{
+  "logicalTable": {
+    "name": "Customer PO Number",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "[Internet Sales Order Details].[Customer PO Number].[(All)]",
+        "descriptorColumn": "[Internet Sales Order Details].[Customer PO Number].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Internet Sales Order Details].[Customer PO Number].[(All)]"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "[Internet Sales Order Details].[Customer PO Number].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Internet Sales Order Details].[Customer PO Number].[(All)] - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Customer PO Number",
+        "descriptorColumn": "Customer PO Number - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Customer PO Number"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Customer PO Number - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Customer PO Number - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#204",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#204"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#205",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#205"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#204",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#204"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#205",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#205"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#165",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#165"
+                ]
+              },
+            }
+          }
+        ]
+      }
+    ],
+    "keys": [ {
+        "name": "Customer PO Number",
+        "isPrimary": "true",
+        "columns": [
+          "[Internet Sales Order Details].[Customer PO Number].[(All)]",
+          "Customer PO Number"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Adventure Works",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:Adventure Works DW...Adventure Works"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:Adventure Works DW.Customer PO Number.Customer PO Number"
+          ]
+        }
+      },
+    ],
+    "dimension": {
+      "name": "Customer PO Number",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/9eac8c26-0c68-1000-8c4a-822330c20000.xml#m9eac8c27-0c68-1000-8c4a-822330c20000"      "levels": [
+        {
+          "name": "[Internet Sales Order Details].[Customer PO Number].[(All)]",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "[Internet Sales Order Details].[Customer PO Number].[(All)]",
+          "keys": [ {
+        "name": "[Internet Sales Order Details].[Customer PO Number].[(All)] - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "[Internet Sales Order Details].[Customer PO Number].[(All)] - Member Key"
+        ]
+      },
+      {
+        "name": "[Internet Sales Order Details].[Customer PO Number].[(All)]",
+        "isForDrillDown": true,
+        "columns": [
+          "[Internet Sales Order Details].[Customer PO Number].[(All)]"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Customer PO Number",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Customer PO Number",
+              "keys": [ {
+            "name": "Customer PO Number - Member Key",
+            "isPrimary": "true",
+            "columns": [
+              "Customer PO Number - Member Key"
+            ]
+          },
+          {
+            "name": "Customer PO Number",
+            "isForDrillDown": true,
+            "columns": [
+              "Customer PO Number"
+            ]
+          }
+              ],
+              "columns": [
+                "Customer PO Number",
+                "Customer PO Number - Member Key",
+                "KEY0#205",
+                "MEMBER_VALUE#205"
+              ]
+            }
+          ],
+          "columns": [
+            "[Internet Sales Order Details].[Customer PO Number].[(All)]",
+            "[Internet Sales Order Details].[Customer PO Number].[(All)] - Member Key",
+            "KEY0#204",
+            "MEMBER_VALUE#204",
+            "NAME#165"
+          ]
+        },
+        {
+          "name": "Customer PO Number",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Customer PO Number",
+          "keys": [ {
+        "name": "Customer PO Number - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "Customer PO Number - Member Key"
+        ]
+      },
+      {
+        "name": "Customer PO Number",
+        "isForDrillDown": true,
+        "columns": [
+          "Customer PO Number"
+        ]
+      }
+          ],
+          "columns": [
+            "Customer PO Number",
+            "Customer PO Number - Member Key",
+            "KEY0#205",
+            "MEMBER_VALUE#205"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Customer PO Number",
+        "levels": [
+          {
+            "name": "[Internet Sales Order Details].[Customer PO Number].[(All)]",
+            "childLevels": [
+              {
+                "name": "Customer PO Number"
+              }
+            ]
+          },
+          {
+            "name": "Customer PO Number"
+          }
+        ]
+      }
+    }
+  }
+}

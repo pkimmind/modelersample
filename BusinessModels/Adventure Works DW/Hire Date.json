@@ -1,0 +1,320 @@
+{
+  "logicalTable": {
+    "name": "Hire Date",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "[Employee].[Hire Date].[(All)]",
+        "descriptorColumn": "[Employee].[Hire Date].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Hire Date].[(All)]"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "[Employee].[Hire Date].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Hire Date].[(All)] - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Hire Date - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Hire Date - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Hire Date#7",
+        "descriptorColumn": "Hire Date - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Hire Date#7"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#165",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#165"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#166",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#166"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#165",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#165"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#166",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#166"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#132",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#132"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#133",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#133"
+                ]
+              },
+            }
+          }
+        ]
+      }
+    ],
+    "keys": [ {
+        "name": "Hire Date",
+        "isPrimary": "true",
+        "columns": [
+          "[Employee].[Hire Date].[(All)]",
+          "Hire Date#7"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Adventure Works",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:Adventure Works DW...Adventure Works"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:Adventure Works DW.Hire Date.Hire Date"
+          ]
+        }
+      },
+    ],
+    "dimension": {
+      "name": "Hire Date",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/9eac6463-0c68-1000-8c4a-822330c20000.xml#m9eac6464-0c68-1000-8c4a-822330c20000"      "levels": [
+        {
+          "name": "[Employee].[Hire Date].[(All)]",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "[Employee].[Hire Date].[(All)]",
+          "keys": [ {
+        "name": "[Employee].[Hire Date].[(All)] - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "[Employee].[Hire Date].[(All)] - Member Key"
+        ]
+      },
+      {
+        "name": "[Employee].[Hire Date].[(All)]",
+        "isForDrillDown": true,
+        "columns": [
+          "[Employee].[Hire Date].[(All)]"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Hire Date",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Hire Date",
+              "keys": [ {
+            "name": "Hire Date - Member Key",
+            "isPrimary": "true",
+            "columns": [
+              "Hire Date - Member Key"
+            ]
+          },
+          {
+            "name": "Hire Date",
+            "isForDrillDown": true,
+            "columns": [
+              "Hire Date#7"
+            ]
+          }
+              ],
+              "columns": [
+                "Hire Date - Member Key",
+                "Hire Date#7",
+                "KEY0#166",
+                "MEMBER_VALUE#166",
+                "NAME#133"
+              ]
+            }
+          ],
+          "columns": [
+            "[Employee].[Hire Date].[(All)]",
+            "[Employee].[Hire Date].[(All)] - Member Key",
+            "KEY0#165",
+            "MEMBER_VALUE#165",
+            "NAME#132"
+          ]
+        },
+        {
+          "name": "Hire Date",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Hire Date",
+          "keys": [ {
+        "name": "Hire Date - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "Hire Date - Member Key"
+        ]
+      },
+      {
+        "name": "Hire Date",
+        "isForDrillDown": true,
+        "columns": [
+          "Hire Date#7"
+        ]
+      }
+          ],
+          "columns": [
+            "Hire Date - Member Key",
+            "Hire Date#7",
+            "KEY0#166",
+            "MEMBER_VALUE#166",
+            "NAME#133"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Hire Date",
+        "levels": [
+          {
+            "name": "[Employee].[Hire Date].[(All)]",
+            "childLevels": [
+              {
+                "name": "Hire Date"
+              }
+            ]
+          },
+          {
+            "name": "Hire Date"
+          }
+        ]
+      }
+    }
+  }
+}

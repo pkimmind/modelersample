@@ -1,0 +1,301 @@
+{
+  "logicalTable": {
+    "name": "Reorder Point",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "[Product].[Reorder Point].[(All)]",
+        "descriptorColumn": "[Product].[Reorder Point].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Product].[Reorder Point].[(All)]"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "[Product].[Reorder Point].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Product].[Reorder Point].[(All)] - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#257",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#257"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#258",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#258"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#257",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#257"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#258",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#258"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#204",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#204"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Reorder Point - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Reorder Point - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Reorder Point#2",
+        "descriptorColumn": "Reorder Point - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Reorder Point#2"
+                ]
+              },
+            }
+          }
+        ]
+      }
+    ],
+    "keys": [ {
+        "name": "Reorder Point",
+        "isPrimary": "true",
+        "columns": [
+          "[Product].[Reorder Point].[(All)]",
+          "Reorder Point#2"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Adventure Works",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:Adventure Works DW...Adventure Works"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:Adventure Works DW.Reorder Point.Reorder Point"
+          ]
+        }
+      },
+    ],
+    "dimension": {
+      "name": "Reorder Point",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/9eacd9ba-0c68-1000-8c4a-822330c20000.xml#m9eacd9bb-0c68-1000-8c4a-822330c20000"      "levels": [
+        {
+          "name": "[Product].[Reorder Point].[(All)]",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "[Product].[Reorder Point].[(All)]",
+          "keys": [ {
+        "name": "[Product].[Reorder Point].[(All)] - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "[Product].[Reorder Point].[(All)] - Member Key"
+        ]
+      },
+      {
+        "name": "[Product].[Reorder Point].[(All)]",
+        "isForDrillDown": true,
+        "columns": [
+          "[Product].[Reorder Point].[(All)]"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Reorder Point",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Reorder Point",
+              "keys": [ {
+            "name": "Reorder Point - Member Key",
+            "isPrimary": "true",
+            "columns": [
+              "Reorder Point - Member Key"
+            ]
+          },
+          {
+            "name": "Reorder Point",
+            "isForDrillDown": true,
+            "columns": [
+              "Reorder Point#2"
+            ]
+          }
+              ],
+              "columns": [
+                "KEY0#258",
+                "MEMBER_VALUE#258",
+                "Reorder Point - Member Key",
+                "Reorder Point#2"
+              ]
+            }
+          ],
+          "columns": [
+            "[Product].[Reorder Point].[(All)]",
+            "[Product].[Reorder Point].[(All)] - Member Key",
+            "KEY0#257",
+            "MEMBER_VALUE#257",
+            "NAME#204"
+          ]
+        },
+        {
+          "name": "Reorder Point",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Reorder Point",
+          "keys": [ {
+        "name": "Reorder Point - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "Reorder Point - Member Key"
+        ]
+      },
+      {
+        "name": "Reorder Point",
+        "isForDrillDown": true,
+        "columns": [
+          "Reorder Point#2"
+        ]
+      }
+          ],
+          "columns": [
+            "KEY0#258",
+            "MEMBER_VALUE#258",
+            "Reorder Point - Member Key",
+            "Reorder Point#2"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Reorder Point",
+        "levels": [
+          {
+            "name": "[Product].[Reorder Point].[(All)]",
+            "childLevels": [
+              {
+                "name": "Reorder Point"
+              }
+            ]
+          },
+          {
+            "name": "Reorder Point"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,320 @@
+{
+  "logicalTable": {
+    "name": "Product Line",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "[Product].[Product Line].[(All)]",
+        "descriptorColumn": "[Product].[Product Line].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Product].[Product Line].[(All)]"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "[Product].[Product Line].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Product].[Product Line].[(All)] - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#248",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#248"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#249",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#249"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#248",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#248"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#249",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#249"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#197",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#197"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#198",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#198"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Product Line - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Product Line - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Product Line#1",
+        "descriptorColumn": "Product Line - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Product Line#1"
+                ]
+              },
+            }
+          }
+        ]
+      }
+    ],
+    "keys": [ {
+        "name": "Product Line",
+        "isPrimary": "true",
+        "columns": [
+          "[Product].[Product Line].[(All)]",
+          "Product Line#1"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Adventure Works",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:Adventure Works DW...Adventure Works"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:Adventure Works DW.Product Line.Product Line"
+          ]
+        }
+      },
+    ],
+    "dimension": {
+      "name": "Product Line",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/9eacb454-0c68-1000-8c4a-822330c20000.xml#m9eacb455-0c68-1000-8c4a-822330c20000"      "levels": [
+        {
+          "name": "[Product].[Product Line].[(All)]",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "[Product].[Product Line].[(All)]",
+          "keys": [ {
+        "name": "[Product].[Product Line].[(All)] - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "[Product].[Product Line].[(All)] - Member Key"
+        ]
+      },
+      {
+        "name": "[Product].[Product Line].[(All)]",
+        "isForDrillDown": true,
+        "columns": [
+          "[Product].[Product Line].[(All)]"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Product Line",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Product Line",
+              "keys": [ {
+            "name": "Product Line - Member Key",
+            "isPrimary": "true",
+            "columns": [
+              "Product Line - Member Key"
+            ]
+          },
+          {
+            "name": "Product Line",
+            "isForDrillDown": true,
+            "columns": [
+              "Product Line#1"
+            ]
+          }
+              ],
+              "columns": [
+                "KEY0#249",
+                "MEMBER_VALUE#249",
+                "NAME#198",
+                "Product Line - Member Key",
+                "Product Line#1"
+              ]
+            }
+          ],
+          "columns": [
+            "[Product].[Product Line].[(All)]",
+            "[Product].[Product Line].[(All)] - Member Key",
+            "KEY0#248",
+            "MEMBER_VALUE#248",
+            "NAME#197"
+          ]
+        },
+        {
+          "name": "Product Line",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Product Line",
+          "keys": [ {
+        "name": "Product Line - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "Product Line - Member Key"
+        ]
+      },
+      {
+        "name": "Product Line",
+        "isForDrillDown": true,
+        "columns": [
+          "Product Line#1"
+        ]
+      }
+          ],
+          "columns": [
+            "KEY0#249",
+            "MEMBER_VALUE#249",
+            "NAME#198",
+            "Product Line - Member Key",
+            "Product Line#1"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Product Line",
+        "levels": [
+          {
+            "name": "[Product].[Product Line].[(All)]",
+            "childLevels": [
+              {
+                "name": "Product Line"
+              }
+            ]
+          },
+          {
+            "name": "Product Line"
+          }
+        ]
+      }
+    }
+  }
+}

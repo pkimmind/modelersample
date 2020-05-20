@@ -1,0 +1,301 @@
+{
+  "logicalTable": {
+    "name": "Department Name",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "[Employee].[Department Name].[(All)]",
+        "descriptorColumn": "[Employee].[Department Name].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Department Name].[(All)]"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "[Employee].[Department Name].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Department Name].[(All)] - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Department Name",
+        "descriptorColumn": "Department Name - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Department Name"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Department Name - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Department Name - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#141",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#141"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#142",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#142"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#141",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#141"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#142",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#142"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#114",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#114"
+                ]
+              },
+            }
+          }
+        ]
+      }
+    ],
+    "keys": [ {
+        "name": "Department Name",
+        "isPrimary": "true",
+        "columns": [
+          "[Employee].[Department Name].[(All)]",
+          "Department Name"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Adventure Works",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:Adventure Works DW...Adventure Works"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:Adventure Works DW.Department Name.Department Name"
+          ]
+        }
+      },
+    ],
+    "dimension": {
+      "name": "Department Name",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/9eac16c1-0c68-1000-8c4a-822330c20000.xml#m9eac16c2-0c68-1000-8c4a-822330c20000"      "levels": [
+        {
+          "name": "[Employee].[Department Name].[(All)]",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "[Employee].[Department Name].[(All)]",
+          "keys": [ {
+        "name": "[Employee].[Department Name].[(All)] - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "[Employee].[Department Name].[(All)] - Member Key"
+        ]
+      },
+      {
+        "name": "[Employee].[Department Name].[(All)]",
+        "isForDrillDown": true,
+        "columns": [
+          "[Employee].[Department Name].[(All)]"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Department Name",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Department Name",
+              "keys": [ {
+            "name": "Department Name - Member Key",
+            "isPrimary": "true",
+            "columns": [
+              "Department Name - Member Key"
+            ]
+          },
+          {
+            "name": "Department Name",
+            "isForDrillDown": true,
+            "columns": [
+              "Department Name"
+            ]
+          }
+              ],
+              "columns": [
+                "Department Name",
+                "Department Name - Member Key",
+                "KEY0#142",
+                "MEMBER_VALUE#142"
+              ]
+            }
+          ],
+          "columns": [
+            "[Employee].[Department Name].[(All)]",
+            "[Employee].[Department Name].[(All)] - Member Key",
+            "KEY0#141",
+            "MEMBER_VALUE#141",
+            "NAME#114"
+          ]
+        },
+        {
+          "name": "Department Name",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Department Name",
+          "keys": [ {
+        "name": "Department Name - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "Department Name - Member Key"
+        ]
+      },
+      {
+        "name": "Department Name",
+        "isForDrillDown": true,
+        "columns": [
+          "Department Name"
+        ]
+      }
+          ],
+          "columns": [
+            "Department Name",
+            "Department Name - Member Key",
+            "KEY0#142",
+            "MEMBER_VALUE#142"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Department Name",
+        "levels": [
+          {
+            "name": "[Employee].[Department Name].[(All)]",
+            "childLevels": [
+              {
+                "name": "Department Name"
+              }
+            ]
+          },
+          {
+            "name": "Department Name"
+          }
+        ]
+      }
+    }
+  }
+}

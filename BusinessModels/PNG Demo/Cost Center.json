@@ -1,0 +1,145 @@
+{
+  "logicalTable": {
+    "name": "Cost Center",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "Cost Center Level 00",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "$0CCA_C11",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:PNG Demo...$0CCA_C11.Cost Center Level 00"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Cost Center Level 01",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "$0CCA_C11",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:PNG Demo...$0CCA_C11.Cost Center Level 01"
+                ]
+              },
+            }
+          }
+        ]
+      }
+    ],
+    "keys": [ {
+        "name": "Cost Center Level 01",
+        "isPrimary": "true",
+        "columns": [
+          "Cost Center Level 01"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "$0CCA_C11",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:PNG Demo...$0CCA_C11"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        }
+      },
+    ],
+    "dimension": {
+      "name": "Cost Center",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/0000076e-07e3-0000-714b-e31d00000000.xml#m000007b0-07e9-0000-714b-e31d00000000"      "levels": [
+        {
+          "name": "Level 00",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Level 00",
+          "keys": [ {
+        "name": "Cost Center Level 00",
+        "isPrimary": "true",
+        "isForDrillDown": true,
+        "columns": [
+          "Cost Center Level 00"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Level 01",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Level 01",
+              "keys": [ {
+            "name": "Cost Center Level 01",
+            "isPrimary": "true",
+            "isForDrillDown": true,
+            "columns": [
+              "Cost Center Level 01"
+            ]
+          }
+              ],
+              "columns": [
+                "Cost Center Level 01"
+              ]
+            }
+          ],
+          "columns": [
+            "Cost Center Level 00"
+          ]
+        },
+        {
+          "name": "Level 01",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Level 01",
+          "keys": [ {
+        "name": "Cost Center Level 01",
+        "isPrimary": "true",
+        "isForDrillDown": true,
+        "columns": [
+          "Cost Center Level 01"
+        ]
+      }
+          ],
+          "columns": [
+            "Cost Center Level 01"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Cost Center",
+        "levels": [
+          {
+            "name": "Level 00",
+            "childLevels": [
+              {
+                "name": "Level 01"
+              }
+            ]
+          },
+          {
+            "name": "Level 01"
+          }
+        ]
+      }
+    }
+  }
+}

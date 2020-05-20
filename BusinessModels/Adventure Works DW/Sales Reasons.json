@@ -1,0 +1,512 @@
+{
+  "logicalTable": {
+    "name": "Sales Reasons",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "[Sales Reason].[Sales Reasons].[(All)]",
+        "descriptorColumn": "[Sales Reason].[Sales Reasons].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Sales Reason].[Sales Reasons].[(All)]"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "[Sales Reason].[Sales Reasons].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Sales Reason].[Sales Reasons].[(All)] - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#361",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#361"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#362",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#362"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#363",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#363"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#361",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#361"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#362",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#362"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#363",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#363"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#284",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#284"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#285",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#285"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Reason Type",
+        "descriptorColumn": "Reason Type - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Reason Type"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Reason Type - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Reason Type - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Sales Reason - Member Key#1",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Sales Reason - Member Key#1"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Sales Reason Type#2",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Sales Reason Type#2"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Sales Reason#1",
+        "descriptorColumn": "Sales Reason - Member Key#1",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Sales Reason#1"
+                ]
+              },
+            }
+          }
+        ]
+      }
+    ],
+    "keys": [ {
+        "name": "Sales Reasons",
+        "isPrimary": "true",
+        "columns": [
+          "[Sales Reason].[Sales Reasons].[(All)]",
+          "Reason Type",
+          "Sales Reason#1"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Adventure Works",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:Adventure Works DW...Adventure Works"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:Adventure Works DW.Sales Reasons.Sales Reason"
+          ]
+        }
+      },
+    ],
+    "dimension": {
+      "name": "Sales Reasons",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/9ead7560-0c68-1000-8c4a-822330c20000.xml#m9ead7561-0c68-1000-8c4a-822330c20000"      "levels": [
+        {
+          "name": "[Sales Reason].[Sales Reasons].[(All)]",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "[Sales Reason].[Sales Reasons].[(All)]",
+          "keys": [ {
+        "name": "[Sales Reason].[Sales Reasons].[(All)] - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "[Sales Reason].[Sales Reasons].[(All)] - Member Key"
+        ]
+      },
+      {
+        "name": "[Sales Reason].[Sales Reasons].[(All)]",
+        "isForDrillDown": true,
+        "columns": [
+          "[Sales Reason].[Sales Reasons].[(All)]"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Reason Type",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Reason Type",
+              "keys": [ {
+            "name": "Reason Type - Member Key",
+            "isPrimary": "true",
+            "columns": [
+              "Reason Type - Member Key"
+            ]
+          },
+          {
+            "name": "Reason Type",
+            "isForDrillDown": true,
+            "columns": [
+              "Reason Type"
+            ]
+          }
+              ],
+              "childLevels": [
+                {
+                  "name": "Sales Reason",
+                  "isGTA": false,
+                  "isFDUC": true,
+                  "memberCount": 1,
+                  "levelConst": "Sales Reason",
+                  "keys": [ {
+                "name": "Sales Reason - Member Key#1",
+                "isPrimary": "true",
+                "columns": [
+                  "Sales Reason - Member Key#1"
+                ]
+              },
+              {
+                "name": "Sales Reason",
+                "isForDrillDown": true,
+                "columns": [
+                  "Sales Reason#1"
+                ]
+              }
+                  ],
+                  "columns": [
+                    "KEY0#363",
+                    "MEMBER_VALUE#363",
+                    "NAME#285",
+                    "Sales Reason - Member Key#1",
+                    "Sales Reason Type#2",
+                    "Sales Reason#1"
+                  ]
+                }
+              ],
+              "columns": [
+                "KEY0#362",
+                "MEMBER_VALUE#362",
+                "Reason Type",
+                "Reason Type - Member Key"
+              ]
+            }
+          ],
+          "columns": [
+            "[Sales Reason].[Sales Reasons].[(All)]",
+            "[Sales Reason].[Sales Reasons].[(All)] - Member Key",
+            "KEY0#361",
+            "MEMBER_VALUE#361",
+            "NAME#284"
+          ]
+        },
+        {
+          "name": "Reason Type",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Reason Type",
+          "keys": [ {
+        "name": "Reason Type - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "Reason Type - Member Key"
+        ]
+      },
+      {
+        "name": "Reason Type",
+        "isForDrillDown": true,
+        "columns": [
+          "Reason Type"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Sales Reason",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Sales Reason",
+              "keys": [ {
+            "name": "Sales Reason - Member Key#1",
+            "isPrimary": "true",
+            "columns": [
+              "Sales Reason - Member Key#1"
+            ]
+          },
+          {
+            "name": "Sales Reason",
+            "isForDrillDown": true,
+            "columns": [
+              "Sales Reason#1"
+            ]
+          }
+              ],
+              "columns": [
+                "KEY0#363",
+                "MEMBER_VALUE#363",
+                "NAME#285",
+                "Sales Reason - Member Key#1",
+                "Sales Reason Type#2",
+                "Sales Reason#1"
+              ]
+            }
+          ],
+          "columns": [
+            "KEY0#362",
+            "MEMBER_VALUE#362",
+            "Reason Type",
+            "Reason Type - Member Key"
+          ]
+        },
+        {
+          "name": "Sales Reason",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Sales Reason",
+          "keys": [ {
+        "name": "Sales Reason - Member Key#1",
+        "isPrimary": "true",
+        "columns": [
+          "Sales Reason - Member Key#1"
+        ]
+      },
+      {
+        "name": "Sales Reason",
+        "isForDrillDown": true,
+        "columns": [
+          "Sales Reason#1"
+        ]
+      }
+          ],
+          "columns": [
+            "KEY0#363",
+            "MEMBER_VALUE#363",
+            "NAME#285",
+            "Sales Reason - Member Key#1",
+            "Sales Reason Type#2",
+            "Sales Reason#1"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Sales Reasons",
+        "levels": [
+          {
+            "name": "[Sales Reason].[Sales Reasons].[(All)]",
+            "childLevels": [
+              {
+                "name": "Reason Type",
+                "childLevels": [
+                  {
+                    "name": "Sales Reason"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Reason Type",
+            "childLevels": [
+              {
+                "name": "Sales Reason"
+              }
+            ]
+          },
+          {
+            "name": "Sales Reason"
+          }
+        ]
+      }
+    }
+  }
+}

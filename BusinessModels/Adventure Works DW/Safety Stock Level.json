@@ -1,0 +1,301 @@
+{
+  "logicalTable": {
+    "name": "Safety Stock Level",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "[Product].[Safety Stock Level].[(All)]",
+        "descriptorColumn": "[Product].[Safety Stock Level].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Product].[Safety Stock Level].[(All)]"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "[Product].[Safety Stock Level].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Product].[Safety Stock Level].[(All)] - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#259",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#259"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#260",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#260"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#259",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#259"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#260",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#260"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#205",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#205"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Safety Stock Level - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Safety Stock Level - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Safety Stock Level#2",
+        "descriptorColumn": "Safety Stock Level - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Safety Stock Level#2"
+                ]
+              },
+            }
+          }
+        ]
+      }
+    ],
+    "keys": [ {
+        "name": "Safety Stock Level",
+        "isPrimary": "true",
+        "columns": [
+          "[Product].[Safety Stock Level].[(All)]",
+          "Safety Stock Level#2"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Adventure Works",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:Adventure Works DW...Adventure Works"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:Adventure Works DW.Safety Stock Level.Safety Stock Level"
+          ]
+        }
+      },
+    ],
+    "dimension": {
+      "name": "Safety Stock Level",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/9eacd9dd-0c68-1000-8c4a-822330c20000.xml#m9eacd9de-0c68-1000-8c4a-822330c20000"      "levels": [
+        {
+          "name": "[Product].[Safety Stock Level].[(All)]",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "[Product].[Safety Stock Level].[(All)]",
+          "keys": [ {
+        "name": "[Product].[Safety Stock Level].[(All)] - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "[Product].[Safety Stock Level].[(All)] - Member Key"
+        ]
+      },
+      {
+        "name": "[Product].[Safety Stock Level].[(All)]",
+        "isForDrillDown": true,
+        "columns": [
+          "[Product].[Safety Stock Level].[(All)]"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Safety Stock Level",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Safety Stock Level",
+              "keys": [ {
+            "name": "Safety Stock Level - Member Key",
+            "isPrimary": "true",
+            "columns": [
+              "Safety Stock Level - Member Key"
+            ]
+          },
+          {
+            "name": "Safety Stock Level",
+            "isForDrillDown": true,
+            "columns": [
+              "Safety Stock Level#2"
+            ]
+          }
+              ],
+              "columns": [
+                "KEY0#260",
+                "MEMBER_VALUE#260",
+                "Safety Stock Level - Member Key",
+                "Safety Stock Level#2"
+              ]
+            }
+          ],
+          "columns": [
+            "[Product].[Safety Stock Level].[(All)]",
+            "[Product].[Safety Stock Level].[(All)] - Member Key",
+            "KEY0#259",
+            "MEMBER_VALUE#259",
+            "NAME#205"
+          ]
+        },
+        {
+          "name": "Safety Stock Level",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Safety Stock Level",
+          "keys": [ {
+        "name": "Safety Stock Level - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "Safety Stock Level - Member Key"
+        ]
+      },
+      {
+        "name": "Safety Stock Level",
+        "isForDrillDown": true,
+        "columns": [
+          "Safety Stock Level#2"
+        ]
+      }
+          ],
+          "columns": [
+            "KEY0#260",
+            "MEMBER_VALUE#260",
+            "Safety Stock Level - Member Key",
+            "Safety Stock Level#2"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Safety Stock Level",
+        "levels": [
+          {
+            "name": "[Product].[Safety Stock Level].[(All)]",
+            "childLevels": [
+              {
+                "name": "Safety Stock Level"
+              }
+            ]
+          },
+          {
+            "name": "Safety Stock Level"
+          }
+        ]
+      }
+    }
+  }
+}

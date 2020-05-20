@@ -8,7 +8,7 @@
     },
     "description": "My general description",
     "alternateNames": [
-      "My PT alias1"
+      "My PT alias1",
       "My PT alias2"
     ],
     "presentationColumns": [ {
@@ -58,6 +58,7 @@
     ],
     "hierarchies": [ {
         "name": "Account Number",
+        "sourceLogicalTable": "Adventure Works DW.Account Number",
         "levels": [ {
             "name": "[Account].[Account Number].[(All)]",
             "displayColumns": [ {

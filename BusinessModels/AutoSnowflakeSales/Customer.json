@@ -1,0 +1,96 @@
+{
+  "logicalTable": {
+    "name": "Customer",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "CustomerID",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Customers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Customers.CustomerID"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "CompanyName",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Customers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Customers.CompanyName"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Revenue",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:AutoSnowflakeSales.SalesFacts.Revenue"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "QtySold",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:AutoSnowflakeSales.SalesFacts.QtySold"
+              ]
+            },
+          },
+        ]
+    ],
+    "keys": [ {
+        "name": "CustomerID",
+        "isPrimary": "true",
+        "columns": [
+          "CustomerID"
+        ]
+      },
+      {
+        "name": "CompanyName",
+        "columns": [
+          "CompanyName"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Customers",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.Customers"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        }
+      },
+    ]
+  }
+}

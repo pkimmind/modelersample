@@ -1,0 +1,359 @@
+{
+  "logicalTable": {
+    "name": "Ship Date.Month of Year",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "[Ship Date].[Month of Year].[(All)]",
+        "descriptorColumn": "[Ship Date].[Month of Year].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Ship Date].[Month of Year].[(All)]"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "[Ship Date].[Month of Year].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Ship Date].[Month of Year].[(All)] - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#420",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#420"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#421",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#421"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#420",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#420"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#421",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#421"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Month of Year - Member Key#2",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Month of Year - Member Key#2"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Month of Year#8",
+        "descriptorColumn": "Month of Year - Member Key#2",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Month of Year#8"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#325",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#325"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#326",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#326"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "TRAN0#27",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.TRAN0#27"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "TRAN1#27",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.TRAN1#27"
+                ]
+              },
+            }
+          }
+        ]
+      }
+    ],
+    "keys": [ {
+        "name": "Ship Date.Month of Year",
+        "isPrimary": "true",
+        "columns": [
+          "[Ship Date].[Month of Year].[(All)]",
+          "Month of Year#8"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Adventure Works",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:Adventure Works DW...Adventure Works"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:Adventure Works DW.Ship Date.Month of Year.Month of Year"
+          ]
+        }
+      },
+    ],
+    "dimension": {
+      "name": "Ship Date.Month of Year",
+      "isTimeDim": "true",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/9eadc380-0c68-1000-8c4a-822330c20000.xml#m9eadc381-0c68-1000-8c4a-822330c20000"      "levels": [
+        {
+          "name": "[Ship Date].[Month of Year].[(All)]",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "[Ship Date].[Month of Year].[(All)]",
+          "keys": [ {
+        "name": "[Ship Date].[Month of Year].[(All)] - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "[Ship Date].[Month of Year].[(All)] - Member Key"
+        ]
+      },
+      {
+        "name": "[Ship Date].[Month of Year].[(All)]",
+        "isForDrillDown": true,
+        "columns": [
+          "[Ship Date].[Month of Year].[(All)]"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Month of Year",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Month of Year",
+              "keys": [ {
+            "name": "Month of Year - Member Key#2",
+            "isPrimary": "true",
+            "columns": [
+              "Month of Year - Member Key#2"
+            ]
+          },
+          {
+            "name": "Month of Year",
+            "isForDrillDown": true,
+            "columns": [
+              "Month of Year#8"
+            ]
+          }
+              ],
+              "columns": [
+                "KEY0#421",
+                "MEMBER_VALUE#421",
+                "Month of Year - Member Key#2",
+                "Month of Year#8",
+                "NAME#326",
+                "TRAN0#27",
+                "TRAN1#27"
+              ]
+            }
+          ],
+          "columns": [
+            "[Ship Date].[Month of Year].[(All)]",
+            "[Ship Date].[Month of Year].[(All)] - Member Key",
+            "KEY0#420",
+            "MEMBER_VALUE#420",
+            "NAME#325"
+          ]
+        },
+        {
+          "name": "Month of Year",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Month of Year",
+          "keys": [ {
+        "name": "Month of Year - Member Key#2",
+        "isPrimary": "true",
+        "columns": [
+          "Month of Year - Member Key#2"
+        ]
+      },
+      {
+        "name": "Month of Year",
+        "isForDrillDown": true,
+        "columns": [
+          "Month of Year#8"
+        ]
+      }
+          ],
+          "columns": [
+            "KEY0#421",
+            "MEMBER_VALUE#421",
+            "Month of Year - Member Key#2",
+            "Month of Year#8",
+            "NAME#326",
+            "TRAN0#27",
+            "TRAN1#27"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Ship Date.Month of Year",
+        "levels": [
+          {
+            "name": "[Ship Date].[Month of Year].[(All)]",
+            "childLevels": [
+              {
+                "name": "Month of Year"
+              }
+            ]
+          },
+          {
+            "name": "Month of Year"
+          }
+        ]
+      }
+    }
+  }
+}

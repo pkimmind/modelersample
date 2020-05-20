@@ -9,136 +9,59 @@
     "selectStatements": [
       {
         "databaseType": "SQLServer70",
-        "query": "select distinct datepart(year, OrderDate) as YEAR_NUM, 'Q' + convert(CHARACTER, 
-datepart(quarter, OrderDate)) as QTR, 
-datepart(quarter, OrderDate) as QTR_NUM from orders"
+        "query": "select distinct datepart(year, OrderDate) as YEAR_NUM, 'Q' + convert(CHARACTER, \ndatepart(quarter, OrderDate)) as QTR, \ndatepart(quarter, OrderDate) as QTR_NUM from orders"
       },
       {
         "databaseType": "DB2AS400",
-        "query": "select distinct year(OrderDate) as YEAR_NUM,
-concat('Q', CHAR(quarter(OrderDate))) as QTR,
-quarter(OrderDate) as QTR_NUM
-from Orders"
+        "query": "select distinct year(OrderDate) as YEAR_NUM,\nconcat('Q', CHAR(quarter(OrderDate))) as QTR,\nquarter(OrderDate) as QTR_NUM\nfrom Orders"
       },
       {
         "databaseType": "Oracle81",
-        "query": "select distinct TO_NUMBER(TO_CHAR(orderdate, 'yyyy'), '9999')  as YEAR_NUM,
-concat('Q', TO_CHAR(orderdate, 'Q'))  as QTR,
-TO_NUMBER(TO_CHAR(orderdate, 'Q'), '99')  as QTR_NUM
-from orders"
+        "query": "select distinct TO_NUMBER(TO_CHAR(orderdate, 'yyyy'), '9999')  as YEAR_NUM,\nconcat('Q', TO_CHAR(orderdate, 'Q'))  as QTR,\nTO_NUMBER(TO_CHAR(orderdate, 'Q'), '99')  as QTR_NUM\nfrom orders"
       },
       {
         "databaseType": "DB2V7",
-        "query": "select distinct year(OrderDate) as YEAR_NUM,
-concat('Q', CHAR(quarter(OrderDate))) as QTR,
-quarter(OrderDate) as QTR_NUM
-from Orders"
+        "query": "select distinct year(OrderDate) as YEAR_NUM,\nconcat('Q', CHAR(quarter(OrderDate))) as QTR,\nquarter(OrderDate) as QTR_NUM\nfrom Orders"
       },
       {
         "databaseType": "DB2OS390V7",
-        "query": "select distinct year(OrderDate) as YEAR_NUM,
-concat('Q', CHAR(quarter(OrderDate))) as QTR,
-quarter(OrderDate) as QTR_NUM
-from Orders"
+        "query": "select distinct year(OrderDate) as YEAR_NUM,\nconcat('Q', CHAR(quarter(OrderDate))) as QTR,\nquarter(OrderDate) as QTR_NUM\nfrom Orders"
       },
       {
         "databaseType": "Oracle9i",
-        "query": "select distinct TO_NUMBER(TO_CHAR(orderdate, 'yyyy'), '9999')  as YEAR_NUM,
-concat('Q', TO_CHAR(orderdate, 'Q'))  as QTR,
-TO_NUMBER(TO_CHAR(orderdate, 'Q'), '99')  as QTR_NUM
-from orders"
+        "query": "select distinct TO_NUMBER(TO_CHAR(orderdate, 'yyyy'), '9999')  as YEAR_NUM,\nconcat('Q', TO_CHAR(orderdate, 'Q'))  as QTR,\nTO_NUMBER(TO_CHAR(orderdate, 'Q'), '99')  as QTR_NUM\nfrom orders"
       },
       {
         "databaseType": "TeradataV2R5",
-        "query": "select distinct extract(year from OrderDate) as YEAR_NUM,
- case when extract(month from Orderdate) > 9  then 'Q4'
-          when extract(month from Orderdate) > 6  then 'Q3'
-          when extract(month from Orderdate) > 3  then 'Q2'
-          when extract(month from Orderdate) > 0  then 'Q1' end
- as QTR,
-case when extract(month from Orderdate) > 9  then 4
-          when extract(month from Orderdate) > 6  then 3
-          when extract(month from Orderdate) > 3  then 2
-          when extract(month from Orderdate) > 0  then 1 end
-as QTR_NUM
-from Orders"
+        "query": "select distinct extract(year from OrderDate) as YEAR_NUM,\n case when extract(month from Orderdate) > 9  then 'Q4'\n          when extract(month from Orderdate) > 6  then 'Q3'\n          when extract(month from Orderdate) > 3  then 'Q2'\n          when extract(month from Orderdate) > 0  then 'Q1' end\n as QTR,\ncase when extract(month from Orderdate) > 9  then 4\n          when extract(month from Orderdate) > 6  then 3\n          when extract(month from Orderdate) > 3  then 2\n          when extract(month from Orderdate) > 0  then 1 end\nas QTR_NUM\nfrom Orders"
       },
       {
         "databaseType": "TeradataV2R4",
-        "query": "select distinct 
-	extract(year from OrderDate) as YEAR_NUM,
-	case 
-	   when extract(month from OrderDate) <= 3 then 1
-	   when extract(month from OrderDate) <= 6 then 2
-	   when extract(month from OrderDate) <= 9 then 3             
-	   else 4 end as QTR_NUM,
-	'Q' || cast(QTR_NUM as character(1)) as QTR
-from Orders"
+        "query": "select distinct \n	extract(year from OrderDate) as YEAR_NUM,\n	case \n	   when extract(month from OrderDate) <= 3 then 1\n	   when extract(month from OrderDate) <= 6 then 2\n	   when extract(month from OrderDate) <= 9 then 3             \n	   else 4 end as QTR_NUM,\n	'Q' || cast(QTR_NUM as character(1)) as QTR\nfrom Orders"
       },
       {
         "databaseType": "TimesTen",
-        "query": "select distinct extract(year from OrderDate) as YEAR_NUM,
- case when extract(month from Orderdate) > 9  then 'Q4'
-          when extract(month from Orderdate) > 6  then 'Q3'
-          when extract(month from Orderdate) > 3  then 'Q2'
-          when extract(month from Orderdate) > 0  then 'Q1' end
- as QTR,
-case when extract(month from Orderdate) > 9  then 4
-          when extract(month from Orderdate) > 6  then 3
-          when extract(month from Orderdate) > 3  then 2
-          when extract(month from Orderdate) > 0  then 1 end
-as QTR_NUM
-from Orders"
+        "query": "select distinct extract(year from OrderDate) as YEAR_NUM,\n case when extract(month from Orderdate) > 9  then 'Q4'\n          when extract(month from Orderdate) > 6  then 'Q3'\n          when extract(month from Orderdate) > 3  then 'Q2'\n          when extract(month from Orderdate) > 0  then 'Q1' end\n as QTR,\ncase when extract(month from Orderdate) > 9  then 4\n          when extract(month from Orderdate) > 6  then 3\n          when extract(month from Orderdate) > 3  then 2\n          when extract(month from Orderdate) > 0  then 1 end\nas QTR_NUM\nfrom Orders"
       },
       {
         "databaseType": "InformixIDS",
-        "query": "select distinct
-        year(OrderDate) as YEAR_NUM,
-        case
-        when month(OrderDate) <= 3 then 1
-        when month(OrderDate) <= 6 then 2
-        when month(OrderDate) <= 9 then 3
-        else 4 end as QTR_NUM,
-        case
-        when month(OrderDate) <= 3 then 'Q1'
-        when month(OrderDate) <= 6 then 'Q2'
-        when month(OrderDate) <= 9 then 'Q3'
-        else 'Q4' end as QTR
-from Orders"
+        "query": "select distinct\n        year(OrderDate) as YEAR_NUM,\n        case\n        when month(OrderDate) <= 3 then 1\n        when month(OrderDate) <= 6 then 2\n        when month(OrderDate) <= 9 then 3\n        else 4 end as QTR_NUM,\n        case\n        when month(OrderDate) <= 3 then 'Q1'\n        when month(OrderDate) <= 6 then 'Q2'\n        when month(OrderDate) <= 9 then 'Q3'\n        else 'Q4' end as QTR\nfrom Orders"
       },
       {
         "databaseType": "Sybase_ASE",
-        "query": "select distinct datepart(year, OrderDate) as YEAR_NUM, 'Q' + convert(CHARACTER,
-datepart(quarter, OrderDate)) as QTR,
-datepart(quarter, OrderDate) as QTR_NUM from Orders"
+        "query": "select distinct datepart(year, OrderDate) as YEAR_NUM, 'Q' + convert(CHARACTER,\ndatepart(quarter, OrderDate)) as QTR,\ndatepart(quarter, OrderDate) as QTR_NUM from Orders"
       },
       {
         "databaseType": "Sybase_IQ",
-        "query": "select distinct datepart(year, OrderDate) as YEAR_NUM, 'Q' + convert(CHARACTER,
-datepart(quarter, OrderDate)) as QTR,
-datepart(quarter, OrderDate) as QTR_NUM from Orders"
+        "query": "select distinct datepart(year, OrderDate) as YEAR_NUM, 'Q' + convert(CHARACTER,\ndatepart(quarter, OrderDate)) as QTR,\ndatepart(quarter, OrderDate) as QTR_NUM from Orders"
       },
       {
         "databaseType": "Netezza",
-        "query": "select distinct extract(year from OrderDate) as YEAR_NUM,
- case when extract(month from Orderdate) > 9  then 'Q4'
-          when extract(month from Orderdate) > 6  then 'Q3'
-          when extract(month from Orderdate) > 3  then 'Q2'
-          when extract(month from Orderdate) > 0  then 'Q1' end
- as QTR,
-case when extract(month from Orderdate) > 9  then 4
-          when extract(month from Orderdate) > 6  then 3
-          when extract(month from Orderdate) > 3  then 2
-          when extract(month from Orderdate) > 0  then 1 end
-as QTR_NUM
-from Orders"
+        "query": "select distinct extract(year from OrderDate) as YEAR_NUM,\n case when extract(month from Orderdate) > 9  then 'Q4'\n          when extract(month from Orderdate) > 6  then 'Q3'\n          when extract(month from Orderdate) > 3  then 'Q2'\n          when extract(month from Orderdate) > 0  then 'Q1' end\n as QTR,\ncase when extract(month from Orderdate) > 9  then 4\n          when extract(month from Orderdate) > 6  then 3\n          when extract(month from Orderdate) > 3  then 2\n          when extract(month from Orderdate) > 0  then 1 end\nas QTR_NUM\nfrom Orders"
       },
       {
         "databaseType": "DEFAULT",
-        "query": "select distinct {fn year(OrderDate)} as YEAR_NUM, 
-'Q' + convert(CHARACTER, datepart(quarter, OrderDate)) as QTR,
-datepart(quarter, OrderDate) as QTR_NUM
-from Orders"
+        "query": "select distinct {fn year(OrderDate)} as YEAR_NUM, \n'Q' + convert(CHARACTER, datepart(quarter, OrderDate)) as QTR,\ndatepart(quarter, OrderDate) as QTR_NUM\nfrom Orders"
       }
     ],
     "physicalColumns": [ {

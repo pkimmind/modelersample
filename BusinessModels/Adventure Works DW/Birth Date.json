@@ -1,0 +1,301 @@
+{
+  "logicalTable": {
+    "name": "Birth Date",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "[Employee].[Birth Date].[(All)]",
+        "descriptorColumn": "[Employee].[Birth Date].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Birth Date].[(All)]"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "[Employee].[Birth Date].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Employee].[Birth Date].[(All)] - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Birth Date - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Birth Date - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Birth Date#2",
+        "descriptorColumn": "Birth Date - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Birth Date#2"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#139",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#139"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#140",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#140"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#139",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#139"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#140",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#140"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#113",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#113"
+                ]
+              },
+            }
+          }
+        ]
+      }
+    ],
+    "keys": [ {
+        "name": "Birth Date",
+        "isPrimary": "true",
+        "columns": [
+          "[Employee].[Birth Date].[(All)]",
+          "Birth Date#2"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Adventure Works",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:Adventure Works DW...Adventure Works"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:Adventure Works DW.Birth Date.Birth Date"
+          ]
+        }
+      },
+    ],
+    "dimension": {
+      "name": "Birth Date",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/9eac169e-0c68-1000-8c4a-822330c20000.xml#m9eac169f-0c68-1000-8c4a-822330c20000"      "levels": [
+        {
+          "name": "[Employee].[Birth Date].[(All)]",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "[Employee].[Birth Date].[(All)]",
+          "keys": [ {
+        "name": "[Employee].[Birth Date].[(All)] - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "[Employee].[Birth Date].[(All)] - Member Key"
+        ]
+      },
+      {
+        "name": "[Employee].[Birth Date].[(All)]",
+        "isForDrillDown": true,
+        "columns": [
+          "[Employee].[Birth Date].[(All)]"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Birth Date",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Birth Date",
+              "keys": [ {
+            "name": "Birth Date - Member Key",
+            "isPrimary": "true",
+            "columns": [
+              "Birth Date - Member Key"
+            ]
+          },
+          {
+            "name": "Birth Date",
+            "isForDrillDown": true,
+            "columns": [
+              "Birth Date#2"
+            ]
+          }
+              ],
+              "columns": [
+                "Birth Date - Member Key",
+                "Birth Date#2",
+                "KEY0#140",
+                "MEMBER_VALUE#140"
+              ]
+            }
+          ],
+          "columns": [
+            "[Employee].[Birth Date].[(All)]",
+            "[Employee].[Birth Date].[(All)] - Member Key",
+            "KEY0#139",
+            "MEMBER_VALUE#139",
+            "NAME#113"
+          ]
+        },
+        {
+          "name": "Birth Date",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Birth Date",
+          "keys": [ {
+        "name": "Birth Date - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "Birth Date - Member Key"
+        ]
+      },
+      {
+        "name": "Birth Date",
+        "isForDrillDown": true,
+        "columns": [
+          "Birth Date#2"
+        ]
+      }
+          ],
+          "columns": [
+            "Birth Date - Member Key",
+            "Birth Date#2",
+            "KEY0#140",
+            "MEMBER_VALUE#140"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Birth Date",
+        "levels": [
+          {
+            "name": "[Employee].[Birth Date].[(All)]",
+            "childLevels": [
+              {
+                "name": "Birth Date"
+              }
+            ]
+          },
+          {
+            "name": "Birth Date"
+          }
+        ]
+      }
+    }
+  }
+}

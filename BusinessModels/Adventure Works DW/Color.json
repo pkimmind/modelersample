@@ -1,0 +1,301 @@
+{
+  "logicalTable": {
+    "name": "Color",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "[Product].[Color].[(All)]",
+        "descriptorColumn": "[Product].[Color].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Product].[Color].[(All)]"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "[Product].[Color].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Product].[Color].[(All)] - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Color",
+        "descriptorColumn": "Color - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Color"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Color - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Color - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#223",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#223"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#224",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#224"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#223",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#223"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#224",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#224"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#180",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#180"
+                ]
+              },
+            }
+          }
+        ]
+      }
+    ],
+    "keys": [ {
+        "name": "Color",
+        "isPrimary": "true",
+        "columns": [
+          "[Product].[Color].[(All)]",
+          "Color"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Adventure Works",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:Adventure Works DW...Adventure Works"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:Adventure Works DW.Color.Color"
+          ]
+        }
+      },
+    ],
+    "dimension": {
+      "name": "Color",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/9eacb233-0c68-1000-8c4a-822330c20000.xml#m9eacb234-0c68-1000-8c4a-822330c20000"      "levels": [
+        {
+          "name": "[Product].[Color].[(All)]",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "[Product].[Color].[(All)]",
+          "keys": [ {
+        "name": "[Product].[Color].[(All)] - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "[Product].[Color].[(All)] - Member Key"
+        ]
+      },
+      {
+        "name": "[Product].[Color].[(All)]",
+        "isForDrillDown": true,
+        "columns": [
+          "[Product].[Color].[(All)]"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Color",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Color",
+              "keys": [ {
+            "name": "Color - Member Key",
+            "isPrimary": "true",
+            "columns": [
+              "Color - Member Key"
+            ]
+          },
+          {
+            "name": "Color",
+            "isForDrillDown": true,
+            "columns": [
+              "Color"
+            ]
+          }
+              ],
+              "columns": [
+                "Color",
+                "Color - Member Key",
+                "KEY0#224",
+                "MEMBER_VALUE#224"
+              ]
+            }
+          ],
+          "columns": [
+            "[Product].[Color].[(All)]",
+            "[Product].[Color].[(All)] - Member Key",
+            "KEY0#223",
+            "MEMBER_VALUE#223",
+            "NAME#180"
+          ]
+        },
+        {
+          "name": "Color",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Color",
+          "keys": [ {
+        "name": "Color - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "Color - Member Key"
+        ]
+      },
+      {
+        "name": "Color",
+        "isForDrillDown": true,
+        "columns": [
+          "Color"
+        ]
+      }
+          ],
+          "columns": [
+            "Color",
+            "Color - Member Key",
+            "KEY0#224",
+            "MEMBER_VALUE#224"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Color",
+        "levels": [
+          {
+            "name": "[Product].[Color].[(All)]",
+            "childLevels": [
+              {
+                "name": "Color"
+              }
+            ]
+          },
+          {
+            "name": "Color"
+          }
+        ]
+      }
+    }
+  }
+}

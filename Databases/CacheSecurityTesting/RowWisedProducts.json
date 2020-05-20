@@ -10,8 +10,7 @@
     "selectStatements": [
       {
         "databaseType": "DEFAULT",
-        "query": "select ProductName as ProductName from products
-where ProductName in (VALUELISTOF(NQ_SESSION.CacheRwVars))"
+        "query": "select ProductName as ProductName from products\nwhere ProductName in (VALUELISTOF(NQ_SESSION.CacheRwVars))"
       }
     ],
     "physicalColumns": [ {

@@ -1,0 +1,605 @@
+{
+  "logicalTable": {
+    "name": "Reseller",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "[Reseller].[Reseller].[(All)]",
+        "descriptorColumn": "[Reseller].[Reseller].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Reseller].[Reseller].[(All)]"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "[Reseller].[Reseller].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Reseller].[Reseller].[(All)] - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Address#4",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Address#4"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Annual Revenue#1",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Annual Revenue#1"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Annual Sales#1",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Annual Sales#1"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Bank Name#1",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Bank Name#1"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Business Type#1",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Business Type#1"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "First Order Year#1",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.First Order Year#1"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#328",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#328"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#329",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#329"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Last Order Year#1",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Last Order Year#1"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#328",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#328"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#329",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#329"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Min Payment Amount#1",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Min Payment Amount#1"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Min Payment Type#1",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Min Payment Type#1"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#261",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#261"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#262",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#262"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Number of Employees#1",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Number of Employees#1"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Order Frequency#1",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Order Frequency#1"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Order Month#1",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Order Month#1"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Phone#12",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Phone#12"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Product Line#6",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Product Line#6"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Reseller",
+        "descriptorColumn": "Reseller - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Reseller"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Reseller - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Reseller - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Year Opened",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Year Opened"
+                ]
+              },
+            }
+          }
+        ]
+      }
+    ],
+    "keys": [ {
+        "name": "Reseller",
+        "isPrimary": "true",
+        "columns": [
+          "[Reseller].[Reseller].[(All)]",
+          "Reseller"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Adventure Works",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:Adventure Works DW...Adventure Works"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:Adventure Works DW.Reseller.Reseller"
+          ]
+        }
+      },
+    ],
+    "dimension": {
+      "name": "Reseller",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/9ead28e1-0c68-1000-8c4a-822330c20000.xml#m9ead28e2-0c68-1000-8c4a-822330c20000"      "levels": [
+        {
+          "name": "[Reseller].[Reseller].[(All)]",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "[Reseller].[Reseller].[(All)]",
+          "keys": [ {
+        "name": "[Reseller].[Reseller].[(All)] - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "[Reseller].[Reseller].[(All)] - Member Key"
+        ]
+      },
+      {
+        "name": "[Reseller].[Reseller].[(All)]",
+        "isForDrillDown": true,
+        "columns": [
+          "[Reseller].[Reseller].[(All)]"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Reseller",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Reseller",
+              "keys": [ {
+            "name": "Reseller - Member Key",
+            "isPrimary": "true",
+            "columns": [
+              "Reseller - Member Key"
+            ]
+          },
+          {
+            "name": "Reseller",
+            "isForDrillDown": true,
+            "columns": [
+              "Reseller"
+            ]
+          }
+              ],
+              "columns": [
+                "Address#4",
+                "Annual Revenue#1",
+                "Annual Sales#1",
+                "Bank Name#1",
+                "Business Type#1",
+                "First Order Year#1",
+                "KEY0#329",
+                "Last Order Year#1",
+                "MEMBER_VALUE#329",
+                "Min Payment Amount#1",
+                "Min Payment Type#1",
+                "NAME#262",
+                "Number of Employees#1",
+                "Order Frequency#1",
+                "Order Month#1",
+                "Phone#12",
+                "Product Line#6",
+                "Reseller",
+                "Reseller - Member Key",
+                "Year Opened"
+              ]
+            }
+          ],
+          "columns": [
+            "[Reseller].[Reseller].[(All)]",
+            "[Reseller].[Reseller].[(All)] - Member Key",
+            "KEY0#328",
+            "MEMBER_VALUE#328",
+            "NAME#261"
+          ]
+        },
+        {
+          "name": "Reseller",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Reseller",
+          "keys": [ {
+        "name": "Reseller - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "Reseller - Member Key"
+        ]
+      },
+      {
+        "name": "Reseller",
+        "isForDrillDown": true,
+        "columns": [
+          "Reseller"
+        ]
+      }
+          ],
+          "columns": [
+            "Address#4",
+            "Annual Revenue#1",
+            "Annual Sales#1",
+            "Bank Name#1",
+            "Business Type#1",
+            "First Order Year#1",
+            "KEY0#329",
+            "Last Order Year#1",
+            "MEMBER_VALUE#329",
+            "Min Payment Amount#1",
+            "Min Payment Type#1",
+            "NAME#262",
+            "Number of Employees#1",
+            "Order Frequency#1",
+            "Order Month#1",
+            "Phone#12",
+            "Product Line#6",
+            "Reseller",
+            "Reseller - Member Key",
+            "Year Opened"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Reseller",
+        "levels": [
+          {
+            "name": "[Reseller].[Reseller].[(All)]",
+            "childLevels": [
+              {
+                "name": "Reseller"
+              }
+            ]
+          },
+          {
+            "name": "Reseller"
+          }
+        ]
+      }
+    }
+  }
+}

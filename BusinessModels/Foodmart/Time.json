@@ -1,0 +1,178 @@
+{
+  "logicalTable": {
+    "name": "Time",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "Year",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart...Budget.Year"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Budget",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart...Budget.Year"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Quarter",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart...Budget.Quarter"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Budget",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart...Budget.Quarter"
+                ]
+              },
+            }
+          }
+        ]
+      }
+    ],
+    "keys": [ {
+        "name": "Year",
+        "isPrimary": "true",
+        "columns": [
+          "Year",
+          "Quarter"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Sales",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:FoodMart...Sales"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        }
+      },
+      {
+        "name": "Budget",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:FoodMart...Budget"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        }
+      },
+    ],
+    "dimension": {
+      "name": "Time",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/80000d9d-07e3-0000-714b-e31d00000000.xml#m80000dc1-07e9-0000-714b-e31d00000000"      "levels": [
+        {
+          "name": "Year",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Year",
+          "keys": [ {
+        "name": "Year",
+        "isPrimary": "true",
+        "isForDrillDown": true,
+        "columns": [
+          "Year"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Quarter",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Quarter",
+              "keys": [ {
+            "name": "Quarter",
+            "isPrimary": "true",
+            "isForDrillDown": true,
+            "columns": [
+              "Year",
+              "Quarter"
+            ]
+          }
+              ],
+              "columns": [
+                "Quarter"
+              ]
+            }
+          ],
+          "columns": [
+            "Year"
+          ]
+        },
+        {
+          "name": "Quarter",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Quarter",
+          "keys": [ {
+        "name": "Quarter",
+        "isPrimary": "true",
+        "isForDrillDown": true,
+        "columns": [
+          "Year",
+          "Quarter"
+        ]
+      }
+          ],
+          "columns": [
+            "Quarter"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Time",
+        "levels": [
+          {
+            "name": "Year",
+            "childLevels": [
+              {
+                "name": "Quarter"
+              }
+            ]
+          },
+          {
+            "name": "Quarter"
+          }
+        ]
+      }
+    }
+  }
+}

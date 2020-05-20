@@ -1,0 +1,301 @@
+{
+  "logicalTable": {
+    "name": "Account Type",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "[Account].[Account Type].[(All)]",
+        "descriptorColumn": "[Account].[Account Type].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Account].[Account Type].[(All)]"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "[Account].[Account Type].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Account].[Account Type].[(All)] - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Account Type - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Account Type - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Account Type#1",
+        "descriptorColumn": "Account Type - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Account Type#1"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#4",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#4"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#5",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#5"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#4",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#4"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#5",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#5"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#3",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#3"
+                ]
+              },
+            }
+          }
+        ]
+      }
+    ],
+    "keys": [ {
+        "name": "Account Type",
+        "isPrimary": "true",
+        "columns": [
+          "[Account].[Account Type].[(All)]",
+          "Account Type#1"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Adventure Works",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:Adventure Works DW...Adventure Works"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:Adventure Works DW.Account Type.Account Type"
+          ]
+        }
+      },
+    ],
+    "dimension": {
+      "name": "Account Type",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/9eab79f7-0c68-1000-8c4a-822330c20000.xml#m9eab79f8-0c68-1000-8c4a-822330c20000"      "levels": [
+        {
+          "name": "[Account].[Account Type].[(All)]",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "[Account].[Account Type].[(All)]",
+          "keys": [ {
+        "name": "[Account].[Account Type].[(All)] - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "[Account].[Account Type].[(All)] - Member Key"
+        ]
+      },
+      {
+        "name": "[Account].[Account Type].[(All)]",
+        "isForDrillDown": true,
+        "columns": [
+          "[Account].[Account Type].[(All)]"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Account Type",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Account Type",
+              "keys": [ {
+            "name": "Account Type - Member Key",
+            "isPrimary": "true",
+            "columns": [
+              "Account Type - Member Key"
+            ]
+          },
+          {
+            "name": "Account Type",
+            "isForDrillDown": true,
+            "columns": [
+              "Account Type#1"
+            ]
+          }
+              ],
+              "columns": [
+                "Account Type - Member Key",
+                "Account Type#1",
+                "KEY0#5",
+                "MEMBER_VALUE#5"
+              ]
+            }
+          ],
+          "columns": [
+            "[Account].[Account Type].[(All)]",
+            "[Account].[Account Type].[(All)] - Member Key",
+            "KEY0#4",
+            "MEMBER_VALUE#4",
+            "NAME#3"
+          ]
+        },
+        {
+          "name": "Account Type",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Account Type",
+          "keys": [ {
+        "name": "Account Type - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "Account Type - Member Key"
+        ]
+      },
+      {
+        "name": "Account Type",
+        "isForDrillDown": true,
+        "columns": [
+          "Account Type#1"
+        ]
+      }
+          ],
+          "columns": [
+            "Account Type - Member Key",
+            "Account Type#1",
+            "KEY0#5",
+            "MEMBER_VALUE#5"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Account Type",
+        "levels": [
+          {
+            "name": "[Account].[Account Type].[(All)]",
+            "childLevels": [
+              {
+                "name": "Account Type"
+              }
+            ]
+          },
+          {
+            "name": "Account Type"
+          }
+        ]
+      }
+    }
+  }
+}

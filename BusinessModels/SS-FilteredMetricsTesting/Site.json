@@ -1,0 +1,387 @@
+{
+  "logicalTable": {
+    "name": "Site",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "SiteID",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sites",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Sites.SiteID"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "CustomerID",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sites",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Sites.CustomerID"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "SiteName",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sites",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Sites.SiteName"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "ContactName",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sites",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Sites.ContactName"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "ContactTitle",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sites",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Sites.ContactTitle"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Address",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sites",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Sites.Address"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "City",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sites",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Sites.City"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Region",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sites",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Sites.Region"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "PostalCode",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sites",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Sites.PostalCode"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Country",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sites",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Sites.Country"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Phone",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sites",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Sites.Phone"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Fax",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sites",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Sites.Fax"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Revenue",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.Revenue"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "QtySold",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:SS-FilteredMetricsTesting.SalesFacts.QtySold"
+              ]
+            },
+          },
+        ]
+    ],
+    "keys": [ {
+        "name": "Site",
+        "isPrimary": "true",
+        "columns": [
+          "SiteID",
+          "CustomerID"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Sites",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.Sites"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        }
+      },
+    ],
+    "dimension": {
+      "name": "Customer",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/80018880-07e3-0000-714b-e31d00000000.xml#m80018a88-07e9-0000-714b-e31d00000000"      "levels": [
+        {
+          "name": "Customer",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 21,
+          "levelConst": "Customer",
+          "keys": [ {
+        "name": "CustomerID",
+        "isPrimary": "true",
+        "columns": [
+          "CustomerID"
+        ]
+      },
+      {
+        "name": "CompanyName",
+        "isForDrillDown": true,
+        "columns": [
+          "CompanyName"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Site",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 91,
+              "levelConst": "Site",
+              "keys": [ {
+            "name": "Site_Key",
+            "isPrimary": "true",
+            "isForDrillDown": true,
+            "columns": [
+              "SiteID",
+              "CustomerID"
+            ]
+          }
+              ],
+              "columns": [
+                "SiteID",
+                "CustomerID",
+                "SiteName",
+                "ContactName",
+                "ContactTitle",
+                "Address",
+                "City",
+                "Region",
+                "PostalCode",
+                "Country",
+                "Phone",
+                "Fax",
+                "Revenue",
+                "QtySold"
+              ]
+            }
+          ],
+          "columns": [
+            "CustomerID",
+            "CompanyName",
+            "Revenue",
+            "QtySold",
+            "Company Name",
+            "Symbol",
+            "Last",
+            "Change",
+            "% Change",
+            "Volume"
+          ]
+        },
+        {
+          "name": "Site",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 91,
+          "levelConst": "Site",
+          "keys": [ {
+        "name": "Site_Key",
+        "isPrimary": "true",
+        "isForDrillDown": true,
+        "columns": [
+          "SiteID",
+          "CustomerID"
+        ]
+      }
+          ],
+          "columns": [
+            "SiteID",
+            "CustomerID",
+            "SiteName",
+            "ContactName",
+            "ContactTitle",
+            "Address",
+            "City",
+            "Region",
+            "PostalCode",
+            "Country",
+            "Phone",
+            "Fax",
+            "Revenue",
+            "QtySold"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Customer",
+        "levels": [
+          {
+            "name": "Customer",
+            "childLevels": [
+              {
+                "name": "Site"
+              }
+            ]
+          },
+          {
+            "name": "Site"
+          }
+        ]
+      }
+    }
+  }
+}

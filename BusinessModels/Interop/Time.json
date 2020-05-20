@@ -1,0 +1,146 @@
+{
+  "logicalTable": {
+    "name": "Time",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "Year",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "$INTOP_C02",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:INFOCUBE...INTOP_C02.Year"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Quarter",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "$INTOP_C02",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:INFOCUBE...INTOP_C02.Quarter"
+                ]
+              },
+            }
+          }
+        ]
+      }
+    ],
+    "keys": [ {
+        "name": "Year",
+        "isPrimary": "true",
+        "columns": [
+          "Year",
+          "Quarter"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "$INTOP_C02",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:INFOCUBE...INTOP_C02"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        }
+      },
+    ],
+    "dimension": {
+      "name": "Time",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/000000e1-07e3-0000-714b-e31d00000000.xml#m00000517-07e9-0000-714b-e31d00000000"      "levels": [
+        {
+          "name": "Year",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Year",
+          "keys": [ {
+        "name": "Year",
+        "isPrimary": "true",
+        "isForDrillDown": true,
+        "columns": [
+          "Year"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Quarter",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 4,
+              "levelConst": "Quarter",
+              "keys": [ {
+            "name": "Quarter",
+            "isPrimary": "true",
+            "isForDrillDown": true,
+            "columns": [
+              "Quarter"
+            ]
+          }
+              ],
+              "columns": [
+                "Quarter"
+              ]
+            }
+          ],
+          "columns": [
+            "Year"
+          ]
+        },
+        {
+          "name": "Quarter",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 4,
+          "levelConst": "Quarter",
+          "keys": [ {
+        "name": "Quarter",
+        "isPrimary": "true",
+        "isForDrillDown": true,
+        "columns": [
+          "Quarter"
+        ]
+      }
+          ],
+          "columns": [
+            "Quarter"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Time",
+        "levels": [
+          {
+            "name": "Year",
+            "childLevels": [
+              {
+                "name": "Quarter"
+              }
+            ]
+          },
+          {
+            "name": "Quarter"
+          }
+        ]
+      }
+    }
+  }
+}

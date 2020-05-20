@@ -1,0 +1,30 @@
+{
+  "businessModel": {
+    "name": "SnowflakeSales_subrequest",
+    "disable": false,
+    "description": "Logical snowflake schema w measures in the dimension to support \npercentage-type calculations.",
+    "joins": [      {
+        "name": "SnowflakeSales#1:Relationship_2004:36101047669572",
+        "leftTable": "logicalTable:SnowflakeSales_subrequest.Qtr",
+        "rightTable": "logicalTable:SnowflakeSales_subrequest.Qtr",
+        "type": "INNER",
+        "cardinality": "MANY"
+      },
+      {
+        "name": "SnowflakeSales#1:Relationship_2004:37351047677393",
+        "leftTable": "logicalTable:SnowflakeSales_subrequest.MOLAP Geography",
+        "rightTable": "logicalTable:SnowflakeSales_subrequest.MOLAP Geography",
+        "type": "INNER",
+        "cardinality": "MANY"
+      },
+      {
+        "name": "SnowflakeSales#1:Relationship_2004:3460982109883",
+        "leftTable": "logicalTable:SnowflakeSales_subrequest.Customer",
+        "rightTable": "logicalTable:SnowflakeSales_subrequest.Customer",
+        "type": "INNER",
+        "cardinality": "MANY",
+        "drivingTable": "logicalTable:SnowflakeSales_subrequest.Customer"
+      }
+    ]
+  }
+}

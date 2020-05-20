@@ -1,0 +1,74 @@
+{
+  "logicalTable": {
+    "name": "Sales",
+    "type": "FACT",
+    "logicalColumns": [ {
+        "name": "Unit Sales",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart...Sales.Unit Sales"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      }
+  }
+}
+ {
+        "name": "Profit",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart...Sales.Profit"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      }
+  }
+}
+    ],
+    "logicalTableSources": [ {
+        "name": "Sales",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:FoodMart...Sales"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        }
+      },
+    ]
+  }
+}

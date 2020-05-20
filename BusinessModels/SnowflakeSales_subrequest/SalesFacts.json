@@ -1,0 +1,1383 @@
+{
+  "logicalTable": {
+    "name": "SalesFacts",
+    "type": "FACT",
+    "logicalColumns": [ {
+        "name": "ShipVia",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.ShipVia"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Cross Sell Orders",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.ShipVia"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Order Header",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.ShipVia"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "EmployeeID",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": " CAST (%1 AS SMALLINT )",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.EmployeeID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_prod_emp",
+              "physicalExpression": {
+                "expressionTemplate": " CAST (%1 AS SMALLINT )",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.EmployeeID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Cross Sell Orders",
+              "physicalExpression": {
+                "expressionTemplate": " CAST (%1 AS SMALLINT )",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.EmployeeID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Order Header",
+              "physicalExpression": {
+                "expressionTemplate": " CAST (%1 AS SMALLINT )",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.EmployeeID"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "ProductID",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_prod_emp.ProductID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_prod_emp",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_prod_emp.ProductID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Cross Sell Orders",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_prod_emp.ProductID"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "CustomerID",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.CustomerID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_supplier_customer",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.CustomerID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_AToH",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.CustomerID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_HToT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.CustomerID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_TToZ",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.CustomerID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Cross Sell Orders",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.CustomerID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Order Header",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.CustomerID"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "SiteID",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.SiteID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Cross Sell Orders",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.SiteID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Order Header",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.SiteID"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "OrderDate",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.OrderDate"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Cross Sell Orders",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.OrderDate"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Order Header",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.OrderDate"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Revenue",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_cust_TToZ.Revenue"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_prod_emp",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_cust_TToZ.Revenue"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_AToH",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_cust_TToZ.Revenue"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_HToT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_cust_TToZ.Revenue"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_TToZ",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_cust_TToZ.Revenue"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Cross Sell Orders",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_cust_TToZ.Revenue"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      }
+  }
+}
+ {
+        "name": "QtySold",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_cust_TToZ.QtySold"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_prod_emp",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_cust_TToZ.QtySold"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_supplier_customer",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_cust_TToZ.QtySold"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_AToH",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_cust_TToZ.QtySold"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_HToT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_cust_TToZ.QtySold"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_TToZ",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_cust_TToZ.QtySold"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Cross Sell Orders",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_cust_TToZ.QtySold"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      }
+  }
+}
+ {
+        "name": "Cross Sell Product ID",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [            {
+              "logicalTableSource": "Cross Sell Orders",
+            }
+          }
+        ]
+      },
+      {
+        "name": "Basket Count",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.OrderDetails.OrderID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Cross Sell Orders",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.OrderDetails.OrderID"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      }
+  }
+}
+ {
+        "name": "Basket Count by All Cross Sell",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:SnowflakeSales_subrequest.SalesFacts.Basket Count"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "Likelihood of Buying",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " CASE  WHEN %1 = 0 THEN  NULL  ELSE 100.0d * %2 / %1 END ",
+              "expressionObjects": [
+                "logicalColumn:SnowflakeSales_subrequest.SalesFacts.Basket Count by All Cross Sell",
+                "logicalColumn:SnowflakeSales_subrequest.SalesFacts.Basket Count"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "Revenue by All Cross Sell",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:SnowflakeSales_subrequest.SalesFacts.Revenue"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "Likelihood of Buying by $",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " CASE  WHEN %1 = 0 THEN  NULL  ELSE 100.0d * %2 / %1 END ",
+              "expressionObjects": [
+                "logicalColumn:SnowflakeSales_subrequest.SalesFacts.Revenue by All Cross Sell",
+                "logicalColumn:SnowflakeSales_subrequest.SalesFacts.Revenue"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "Category Country Revenue",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:SnowflakeSales_subrequest.SalesFacts.Revenue"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "Category Qtr Revenue",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:SnowflakeSales_subrequest.SalesFacts.Revenue"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "% of Category Country Revenue",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " CASE  WHEN %1 = 0 THEN  NULL  ELSE 100.0d * %2 / %1 END ",
+              "expressionObjects": [
+                "logicalColumn:SnowflakeSales_subrequest.SalesFacts.Category Country Revenue",
+                "logicalColumn:SnowflakeSales_subrequest.SalesFacts.Revenue"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "% of Category Qtr Revenue",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " CASE  WHEN %1 = 0 THEN  NULL  ELSE 100.0d * %2 / %1 END ",
+              "expressionObjects": [
+                "logicalColumn:SnowflakeSales_subrequest.SalesFacts.Category Qtr Revenue",
+                "logicalColumn:SnowflakeSales_subrequest.SalesFacts.Revenue"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "Population",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [            {
+              "logicalTableSource": "Population",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Population.Population"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      }
+  }
+}
+ {
+        "name": "All Product Time Population",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:SnowflakeSales_subrequest.SalesFacts.Population"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "All Product Country Time Population",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:SnowflakeSales_subrequest.SalesFacts.Population"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "% of Country Population",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " CASE  WHEN %1 = 0 THEN  NULL  ELSE 100.0d * %2 / %1 END ",
+              "expressionObjects": [
+                "logicalColumn:SnowflakeSales_subrequest.SalesFacts.All Product Country Time Population",
+                "logicalColumn:SnowflakeSales_subrequest.SalesFacts.All Product Time Population"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "Revenue Development Index",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " CASE  WHEN %1 = 0 THEN  NULL  ELSE 1.0d * %2 / %1 END ",
+              "expressionObjects": [
+                "logicalColumn:SnowflakeSales_subrequest.SalesFacts.% of Country Population",
+                "logicalColumn:SnowflakeSales_subrequest.SalesFacts.% of Category Country Revenue"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "# Orders",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.OrderID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Order Header",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.OrderID"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      },
+{
+  "": {
+    "name": "OvAggRule_2054:294211371106135",
+ logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/5af144c1-0c78-1000-b5b8-822332560000.xml#m5af144c1-0c78-1000-b5b8-822332560000">
+"Expr": {
+  "expressionTemplate": " COUNT(%1)",
+  "expressionObjects": [
+    "logicalColumn:SnowflakeSales_subrequest.SalesFacts.# Orders"
+  ]
+}
+  }
+}
+  }
+}
+ {
+        "name": "# Customers",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.CustomerID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_supplier_customer",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.CustomerID"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Order Header",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.CustomerID"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      },
+{
+  "": {
+    "name": "OvAggRule_2054:294221371106135",
+ logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/5af144bb-0c78-1000-b5b8-822332560000.xml#m5af144bb-0c78-1000-b5b8-822332560000">
+"Expr": {
+  "expressionTemplate": " COUNT(DISTINCT %1)",
+  "expressionObjects": [
+    "logicalColumn:SnowflakeSales_subrequest.SalesFacts.# Customers"
+  ]
+}
+  }
+}
+{
+  "": {
+    "name": "OvAggRule_2054:294231371106135",
+ logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/5af144c1-0c78-1000-b5b8-822332560000.xml#m5af144c1-0c78-1000-b5b8-822332560000">
+"Expr": {
+  "expressionTemplate": " COUNT(DISTINCT %1)",
+  "expressionObjects": [
+    "logicalColumn:SnowflakeSales_subrequest.SalesFacts.# Customers"
+  ]
+}
+  }
+}
+  }
+}
+ {
+        "name": "MedianQtySold",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales Transactions",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_cust_TToZ.QtySold"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_prod_emp",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_cust_TToZ.QtySold"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_supplier_customer",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_cust_TToZ.QtySold"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_AToH",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_cust_TToZ.QtySold"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_HToT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_cust_TToZ.QtySold"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "sales_cust_TToZ",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_cust_TToZ.QtySold"
+                ]
+              },
+            },
+            {
+              "logicalTableSource": "Cross Sell Orders",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_cust_TToZ.QtySold"
+                ]
+              },
+            }
+          }
+        ]
+      },
+{
+  "": {
+    "name": "Measure",
+ isCommutative="false">
+      "aggregation": {
+        "rule": "BASED_ON_DIMENSION",
+        "dimensionBasedRules": [        ],
+      }
+  }
+}
+ {
+        "name": "MeasureAlias",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " INDEXCOL( VALUEOF(NQ_SESSION.%1), %2, %3, 100.1d)",
+              "expressionObjects": [
+                "variable:IndexColInitBlock.INDEXCOLINDEX",
+                "logicalColumn:SnowflakeSales_subrequest.SalesFacts.Revenue",
+                "logicalColumn:SnowflakeSales_subrequest.SalesFacts.QtySold"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "MeasureAlias1",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " INDEXCOL(1, %1, %2)",
+              "expressionObjects": [
+                "logicalColumn:SnowflakeSales_subrequest.SalesFacts.Revenue",
+                "logicalColumn:SnowflakeSales_subrequest.SalesFacts.QtySold"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "NumCustomers",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " COUNT(DISTINCT %1)",
+              "expressionObjects": [
+                "logicalColumn:SnowflakeSales_subrequest.SalesFacts.CustomerID"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "revenue_1",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " INDEXCOL( VALUEOF(NQ_SESSION.%1), %2,  CAST ( NULL  AS DOUBLE PRECISION ))",
+              "expressionObjects": [
+                "variable:DUMMY.LAN_INT",
+                "logicalColumn:SnowflakeSales.SalesFacts.Revenue"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "revenue_2",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " INDEXCOL( VALUEOF(NQ_SESSION.%1), %2,  CAST ( NULL  AS DOUBLE PRECISION ))",
+              "expressionObjects": [
+                "variable:DUMMY.LAN_INT",
+                "logicalColumn:SnowflakeSales.SalesFacts.Revenue"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "revenue_3",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " INDEXCOL( VALUEOF(NQ_SESSION.%1), %2, %3)",
+              "expressionObjects": [
+                "variable:DUMMY.LAN_INT",
+                "logicalColumn:SnowflakeSales.SalesFacts.Revenue",
+                "logicalColumn:SnowflakeSales.SalesFacts.EmployeeID"
+              ]
+            },
+          },
+        ]
+      {
+        "name": "revenue_4",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " INDEXCOL( VALUEOF(NQ_SESSION.%1), %2, %3)",
+              "expressionObjects": [
+                "variable:DUMMY.LAN_INT",
+                "logicalColumn:SnowflakeSales.SalesFacts.Revenue",
+                "logicalColumn:SnowflakeSales.SalesFacts.EmployeeID"
+              ]
+            },
+          },
+        ]
+    ],
+    "keys": [ {
+        "name": "SalesFacts_Key",
+        "isPrimary": "true",
+        "columns": [
+          "ShipVia",
+          "EmployeeID",
+          "ProductID",
+          "CustomerID",
+          "SiteID",
+          "OrderDate"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Sales Transactions",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.Orders",
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.OrderDetails"
+          ],
+          "logicalTableSourceJoins": [
+            {
+              "leftTable": "SQLDB_Northwind.Northwind.dbo.OrderDetails",
+              "rightTable": "SQLDB_Northwind.Northwind.dbo.Orders",
+              "joinType": "Inner",
+              "physicalJoinRef": "SQLDB_Northwind.Northwind.dbo.OrderDetails.FK__OrderDeta__Order__1EC48A19"
+            },
+            {
+              "leftTable": "SQLDB_Northwind.Northwind.dbo.Orders",
+              "rightTable": "SQLDB_Northwind.Northwind.dbo.OrderDetails",
+              "joinType": "Inner",
+              "physicalJoinRef": "SQLDB_Northwind.Northwind.dbo.OrderDetails.FK__OrderDeta__Order__1EC48A19"
+            }
+          ],
+        }
+      },
+      {
+        "name": "sales_prod_emp",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.sales_prod_emp"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYCOLUMN(%1, %2)",
+          "expressionObjects": [
+            "logicalColumn:SnowflakeSales_subrequest.Employee.EmployeeID",
+            "logicalColumn:SnowflakeSales_subrequest.Product.ProductID"
+          ]
+        }
+      },
+      {
+        "name": "sales_supplier_customer",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.sales_supplier_customer"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYCOLUMN(%1, %2)",
+          "expressionObjects": [
+            "logicalColumn:SnowflakeSales_subrequest.Customer.CustomerID",
+            "logicalColumn:SnowflakeSales_subrequest.Supplier.SupplierID"
+          ]
+        }
+      },
+      {
+        "name": "sales_cust_AToH",
+        "canCombine": true,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.sales_cust_AToH"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYCOLUMN(%1)",
+          "expressionObjects": [
+            "logicalColumn:SnowflakeSales_subrequest.Customer.CustomerID"
+          ]
+        },
+        "dataFragmentation": {
+          "expressionTemplate": "%1 BETWEEN 'A' AND 'GZZZZZZ'",
+          "expressionObjects": [
+            "logicalColumn:SnowflakeSales_subrequest.Customer.CustomerID"
+          ]
+        }
+      },
+      {
+        "name": "sales_cust_HToT",
+        "canCombine": true,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.sales_cust_HToT"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYCOLUMN(%1)",
+          "expressionObjects": [
+            "logicalColumn:SnowflakeSales_subrequest.Customer.CustomerID"
+          ]
+        },
+        "dataFragmentation": {
+          "expressionTemplate": "%1 BETWEEN 'H' AND 'SZZZZZZ'",
+          "expressionObjects": [
+            "logicalColumn:SnowflakeSales_subrequest.Customer.CustomerID"
+          ]
+        }
+      },
+      {
+        "name": "sales_cust_TToZ",
+        "canCombine": true,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.sales_cust_TToZ"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYCOLUMN(%1)",
+          "expressionObjects": [
+            "logicalColumn:SnowflakeSales_subrequest.Customer.CustomerID"
+          ]
+        },
+        "dataFragmentation": {
+          "expressionTemplate": "%1 BETWEEN 'T' AND 'ZZZZZZZZZZZZZZZ'",
+          "expressionObjects": [
+            "logicalColumn:SnowflakeSales_subrequest.Customer.CustomerID"
+          ]
+        }
+      },
+      {
+        "name": "Cross Sell Orders",
+        "disable": true,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.OrderDetails",
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.Orders",
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.Cross Sell OrderDetails"
+          ],
+          "logicalTableSourceJoins": [
+            {
+              "leftTable": "SQLDB_Northwind.Northwind.dbo.OrderDetails",
+              "rightTable": "SQLDB_Northwind.Northwind.dbo.Orders",
+              "joinType": "Inner",
+              "cardinality": "MANY TO ONE",
+              "physicalJoinRef": "SQLDB_Northwind.Northwind.dbo.OrderDetails.FK__OrderDeta__Order__1EC48A19"
+            },
+            {
+              "leftTable": "SQLDB_Northwind.Northwind.dbo.Orders",
+              "rightTable": "SQLDB_Northwind.Northwind.dbo.OrderDetails",
+              "joinType": "Inner",
+              "cardinality": " ONE TO MANY",
+              "physicalJoinRef": "SQLDB_Northwind.Northwind.dbo.OrderDetails.FK__OrderDeta__Order__1EC48A19"
+              "leftTable": "SQLDB_Northwind.Northwind.dbo.Orders",
+              "rightTable": "SQLDB_Northwind.Northwind.dbo.Cross Sell Orders",
+              "joinType": "Inner",
+              "cardinality": "MANY TO ONE",
+              "physicalJoinRef": "SQLDB_Northwind.Northwind.dbo.Orders.Orders_FKey"
+            },
+            {
+              "leftTable": "SQLDB_Northwind.Northwind.dbo.Cross Sell OrderDetails",
+              "rightTable": "SQLDB_Northwind.Northwind.dbo.Cross Sell Orders",
+              "joinType": "Inner",
+              "cardinality": "MANY TO ONE",
+              "physicalJoinRef": "SQLDB_Northwind.Northwind.dbo.Cross Sell OrderDetails.Cross Sell OrderDetails_FKey"
+            },
+            {
+              "leftTable": "SQLDB_Northwind.Northwind.dbo.Cross Sell Orders",
+              "rightTable": "SQLDB_Northwind.Northwind.dbo.Orders",
+              "joinType": "Inner",
+              "cardinality": " ONE TO MANY",
+              "physicalJoinRef": "SQLDB_Northwind.Northwind.dbo.Orders.Orders_FKey"
+              "leftTable": "SQLDB_Northwind.Northwind.dbo.Cross Sell Orders",
+              "rightTable": "SQLDB_Northwind.Northwind.dbo.Cross Sell OrderDetails",
+              "joinType": "Inner",
+              "cardinality": " ONE TO MANY",
+              "physicalJoinRef": "SQLDB_Northwind.Northwind.dbo.Cross Sell OrderDetails.Cross Sell OrderDetails_FKey"
+            }
+          ],
+        },
+        "WhereClause": {
+          "expressionTemplate": "%1 <> %2",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.OrderDetails.ProductID",
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Cross Sell OrderDetails.ProductID"
+          ]
+        }
+      },
+      {
+        "name": "Population",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.Population"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:SnowflakeSales_subrequest.Employee.City"
+          ]
+        }
+      },
+      {
+        "name": "Order Header",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.Orders"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1, %2, %3, %4)",
+          "expressionObjects": [
+            "logicalLevel:SnowflakeSales_subrequest.Time.Day",
+            "logicalLevel:SnowflakeSales_subrequest.Customer.Site",
+            "logicalLevel:SnowflakeSales_subrequest.Employee.Employee",
+            "logicalLevel:SnowflakeSales_subrequest.Shipper.Shipper"
+          ]
+        }
+      },
+    ],
+    "dimension": {
+      "name": "MOLAP Geography",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/5af05a37-0c78-1000-b5b8-822332560000.xml#m5af0f69c-0c78-1000-b5b8-822332560000"      "levels": [
+        {
+          "name": "All",
+          "isGTA": true,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "All",
+          "childLevels": [
+            {
+              "name": "Country",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Country",
+              "keys": [ {
+            "name": "Store Country",
+            "isPrimary": "true",
+            "isForDrillDown": true,
+            "columns": [
+              "Store Country"
+            ]
+          }
+              ],
+              "childLevels": [
+                {
+                  "name": "State",
+                  "isGTA": false,
+                  "isFDUC": true,
+                  "memberCount": 1,
+                  "levelConst": "State",
+                  "keys": [ {
+                "name": "Store State",
+                "isPrimary": "true",
+                "isForDrillDown": true,
+                "columns": [
+                  "Store State",
+                  "Store Country"
+                ]
+              }
+                  ],
+                  "columns": [
+                    "Store State"
+                  ]
+                }
+              ],
+              "columns": [
+                "Store Country"
+              ]
+            }
+          ],
+          "columns": [
+            "Revenue",
+            "QtySold",
+            "Basket Count",
+            "Basket Count by All Cross Sell",
+            "Likelihood of Buying",
+            "Revenue by All Cross Sell",
+            "Likelihood of Buying by $",
+            "Category Country Revenue",
+            "Category Qtr Revenue",
+            "% of Category Country Revenue",
+            "% of Category Qtr Revenue",
+            "Population",
+            "All Product Time Population",
+            "All Product Country Time Population",
+            "% of Country Population",
+            "Revenue Development Index",
+            "RevenueByAllProducts",
+            "RevenueByAllEmployees"
+          ]
+        },
+        {
+          "name": "Country",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Country",
+          "keys": [ {
+        "name": "Store Country",
+        "isPrimary": "true",
+        "isForDrillDown": true,
+        "columns": [
+          "Store Country"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "State",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "State",
+              "keys": [ {
+            "name": "Store State",
+            "isPrimary": "true",
+            "isForDrillDown": true,
+            "columns": [
+              "Store State",
+              "Store Country"
+            ]
+          }
+              ],
+              "columns": [
+                "Store State"
+              ]
+            }
+          ],
+          "columns": [
+            "Store Country"
+          ]
+        },
+        {
+          "name": "State",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "State",
+          "keys": [ {
+        "name": "Store State",
+        "isPrimary": "true",
+        "isForDrillDown": true,
+        "columns": [
+          "Store State",
+          "Store Country"
+        ]
+      }
+          ],
+          "columns": [
+            "Store State"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "MOLAP Geography",
+        "levels": [
+          {
+            "name": "All",
+            "childLevels": [
+              {
+                "name": "Country",
+                "childLevels": [
+                  {
+                    "name": "State"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Country",
+            "childLevels": [
+              {
+                "name": "State"
+              }
+            ]
+          },
+          {
+            "name": "State"
+          }
+        ]
+      }
+    }
+  }
+}

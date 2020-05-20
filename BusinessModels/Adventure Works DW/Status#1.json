@@ -1,0 +1,320 @@
+{
+  "logicalTable": {
+    "name": "Status#1",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "[Product].[Status].[(All)]",
+        "descriptorColumn": "[Product].[Status].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Product].[Status].[(All)]"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "[Product].[Status].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Product].[Status].[(All)] - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#269",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#269"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#270",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#270"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#269",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#269"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#270",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#270"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#211",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#211"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#212",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#212"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Status - Member Key#1",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Status - Member Key#1"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Status#10",
+        "descriptorColumn": "Status - Member Key#1",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Status#10"
+                ]
+              },
+            }
+          }
+        ]
+      }
+    ],
+    "keys": [ {
+        "name": "Status#1",
+        "isPrimary": "true",
+        "columns": [
+          "[Product].[Status].[(All)]",
+          "Status#10"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Adventure Works",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:Adventure Works DW...Adventure Works"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:Adventure Works DW.Status#1.Status"
+          ]
+        }
+      },
+    ],
+    "dimension": {
+      "name": "Status#1",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/9eacda90-0c68-1000-8c4a-822330c20000.xml#m9eacda91-0c68-1000-8c4a-822330c20000"      "levels": [
+        {
+          "name": "[Product].[Status].[(All)]",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "[Product].[Status].[(All)]",
+          "keys": [ {
+        "name": "[Product].[Status].[(All)] - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "[Product].[Status].[(All)] - Member Key"
+        ]
+      },
+      {
+        "name": "[Product].[Status].[(All)]",
+        "isForDrillDown": true,
+        "columns": [
+          "[Product].[Status].[(All)]"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Status",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Status",
+              "keys": [ {
+            "name": "Status - Member Key#1",
+            "isPrimary": "true",
+            "columns": [
+              "Status - Member Key#1"
+            ]
+          },
+          {
+            "name": "Status",
+            "isForDrillDown": true,
+            "columns": [
+              "Status#10"
+            ]
+          }
+              ],
+              "columns": [
+                "KEY0#270",
+                "MEMBER_VALUE#270",
+                "NAME#212",
+                "Status - Member Key#1",
+                "Status#10"
+              ]
+            }
+          ],
+          "columns": [
+            "[Product].[Status].[(All)]",
+            "[Product].[Status].[(All)] - Member Key",
+            "KEY0#269",
+            "MEMBER_VALUE#269",
+            "NAME#211"
+          ]
+        },
+        {
+          "name": "Status",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Status",
+          "keys": [ {
+        "name": "Status - Member Key#1",
+        "isPrimary": "true",
+        "columns": [
+          "Status - Member Key#1"
+        ]
+      },
+      {
+        "name": "Status",
+        "isForDrillDown": true,
+        "columns": [
+          "Status#10"
+        ]
+      }
+          ],
+          "columns": [
+            "KEY0#270",
+            "MEMBER_VALUE#270",
+            "NAME#212",
+            "Status - Member Key#1",
+            "Status#10"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Status#1",
+        "levels": [
+          {
+            "name": "[Product].[Status].[(All)]",
+            "childLevels": [
+              {
+                "name": "Status"
+              }
+            ]
+          },
+          {
+            "name": "Status"
+          }
+        ]
+      }
+    }
+  }
+}

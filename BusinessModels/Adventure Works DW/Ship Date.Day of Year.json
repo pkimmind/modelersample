@@ -1,0 +1,302 @@
+{
+  "logicalTable": {
+    "name": "Ship Date.Day of Year",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "[Ship Date].[Day of Year].[(All)]",
+        "descriptorColumn": "[Ship Date].[Day of Year].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Ship Date].[Day of Year].[(All)]"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "[Ship Date].[Day of Year].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Ship Date].[Day of Year].[(All)] - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Day of Year - Member Key#2",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Day of Year - Member Key#2"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Day of Year#10",
+        "descriptorColumn": "Day of Year - Member Key#2",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Day of Year#10"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#406",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#406"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#407",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#407"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#406",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#406"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#407",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#407"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#314",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#314"
+                ]
+              },
+            }
+          }
+        ]
+      }
+    ],
+    "keys": [ {
+        "name": "Ship Date.Day of Year",
+        "isPrimary": "true",
+        "columns": [
+          "[Ship Date].[Day of Year].[(All)]",
+          "Day of Year#10"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Adventure Works",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:Adventure Works DW...Adventure Works"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:Adventure Works DW.Ship Date.Day of Year.Day of Year"
+          ]
+        }
+      },
+    ],
+    "dimension": {
+      "name": "Ship Date.Day of Year",
+      "isTimeDim": "true",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": false,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/9ead9d7b-0c68-1000-8c4a-822330c20000.xml#m9ead9d7c-0c68-1000-8c4a-822330c20000"      "levels": [
+        {
+          "name": "[Ship Date].[Day of Year].[(All)]",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "[Ship Date].[Day of Year].[(All)]",
+          "keys": [ {
+        "name": "[Ship Date].[Day of Year].[(All)] - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "[Ship Date].[Day of Year].[(All)] - Member Key"
+        ]
+      },
+      {
+        "name": "[Ship Date].[Day of Year].[(All)]",
+        "isForDrillDown": true,
+        "columns": [
+          "[Ship Date].[Day of Year].[(All)]"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Day of Year",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Day of Year",
+              "keys": [ {
+            "name": "Day of Year - Member Key#2",
+            "isPrimary": "true",
+            "columns": [
+              "Day of Year - Member Key#2"
+            ]
+          },
+          {
+            "name": "Day of Year",
+            "isForDrillDown": true,
+            "columns": [
+              "Day of Year#10"
+            ]
+          }
+              ],
+              "columns": [
+                "Day of Year - Member Key#2",
+                "Day of Year#10",
+                "KEY0#407",
+                "MEMBER_VALUE#407"
+              ]
+            }
+          ],
+          "columns": [
+            "[Ship Date].[Day of Year].[(All)]",
+            "[Ship Date].[Day of Year].[(All)] - Member Key",
+            "KEY0#406",
+            "MEMBER_VALUE#406",
+            "NAME#314"
+          ]
+        },
+        {
+          "name": "Day of Year",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Day of Year",
+          "keys": [ {
+        "name": "Day of Year - Member Key#2",
+        "isPrimary": "true",
+        "columns": [
+          "Day of Year - Member Key#2"
+        ]
+      },
+      {
+        "name": "Day of Year",
+        "isForDrillDown": true,
+        "columns": [
+          "Day of Year#10"
+        ]
+      }
+          ],
+          "columns": [
+            "Day of Year - Member Key#2",
+            "Day of Year#10",
+            "KEY0#407",
+            "MEMBER_VALUE#407"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Ship Date.Day of Year",
+        "levels": [
+          {
+            "name": "[Ship Date].[Day of Year].[(All)]",
+            "childLevels": [
+              {
+                "name": "Day of Year"
+              }
+            ]
+          },
+          {
+            "name": "Day of Year"
+          }
+        ]
+      }
+    }
+  }
+}

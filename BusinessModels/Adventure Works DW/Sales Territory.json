@@ -1,0 +1,740 @@
+{
+  "logicalTable": {
+    "name": "Sales Territory",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "[Sales Territory].[Sales Territory].[(All)]",
+        "descriptorColumn": "[Sales Territory].[Sales Territory].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Sales Territory].[Sales Territory].[(All)]"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "[Sales Territory].[Sales Territory].[(All)] - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.[Sales Territory].[Sales Territory].[(All)] - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Country - Member Key#4",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Country - Member Key#4"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Country#8",
+        "descriptorColumn": "Country - Member Key#4",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Country#8"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Group",
+        "descriptorColumn": "Group - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Group"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Group - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Group - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#375",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#375"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#376",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#376"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#377",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#377"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "KEY0#378",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.KEY0#378"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#375",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#375"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#376",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#376"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#377",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#377"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "MEMBER_VALUE#378",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.MEMBER_VALUE#378"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#291",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#291"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "NAME#292",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.NAME#292"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Region",
+        "descriptorColumn": "Region - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Region"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Region - Member Key",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Region - Member Key"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Sales Territory Country",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Sales Territory Country"
+                ]
+              },
+            }
+          }
+        ]
+      },
+      {
+        "name": "Sales Territory Group",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW...Adventure Works.Sales Territory Group"
+                ]
+              },
+            }
+          }
+        ]
+      }
+    ],
+    "keys": [ {
+        "name": "Sales Territory",
+        "isPrimary": "true",
+        "columns": [
+          "[Sales Territory].[Sales Territory].[(All)]",
+          "Group",
+          "Country#8",
+          "Region"
+        ]
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Adventure Works",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:Adventure Works DW...Adventure Works"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ],
+        },
+        "dataGranularity": {
+          "expressionTemplate": " GROUPBYLEVEL(%1)",
+          "expressionObjects": [
+            "logicalLevel:Adventure Works DW.Sales Territory.Region"
+          ]
+        }
+      },
+    ],
+    "dimension": {
+      "name": "Sales Territory",
+      "isValueBased": false,
+      "isRagged": false,
+      "isSkipped": true,
+ defaultRootLevelRef="/oracle/bi/server/base/Dimension/9ead765c-0c68-1000-8c4a-822330c20000.xml#m9ead765d-0c68-1000-8c4a-822330c20000"      "levels": [
+        {
+          "name": "[Sales Territory].[Sales Territory].[(All)]",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "[Sales Territory].[Sales Territory].[(All)]",
+          "keys": [ {
+        "name": "[Sales Territory].[Sales Territory].[(All)] - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "[Sales Territory].[Sales Territory].[(All)] - Member Key"
+        ]
+      },
+      {
+        "name": "[Sales Territory].[Sales Territory].[(All)]",
+        "isForDrillDown": true,
+        "columns": [
+          "[Sales Territory].[Sales Territory].[(All)]"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Group",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Group",
+              "keys": [ {
+            "name": "Group - Member Key",
+            "isPrimary": "true",
+            "columns": [
+              "Group - Member Key"
+            ]
+          },
+          {
+            "name": "Group",
+            "isForDrillDown": true,
+            "columns": [
+              "Group"
+            ]
+          }
+              ],
+              "childLevels": [
+                {
+                  "name": "Country",
+                  "isGTA": false,
+                  "isFDUC": true,
+                  "memberCount": 1,
+                  "levelConst": "Country",
+                  "keys": [ {
+                "name": "Country - Member Key#4",
+                "isPrimary": "true",
+                "columns": [
+                  "Country - Member Key#4"
+                ]
+              },
+              {
+                "name": "Country",
+                "isForDrillDown": true,
+                "columns": [
+                  "Country#8"
+                ]
+              }
+                  ],
+                  "childLevels": [
+                    {
+                      "name": "Region",
+                      "isGTA": false,
+                      "isFDUC": true,
+                      "memberCount": 1,
+                      "levelConst": "Region",
+                      "keys": [ {
+                    "name": "Region - Member Key",
+                    "isPrimary": "true",
+                    "columns": [
+                      "Region - Member Key"
+                    ]
+                  },
+                  {
+                    "name": "Region",
+                    "isForDrillDown": true,
+                    "columns": [
+                      "Region"
+                    ]
+                  }
+                      ],
+                      "columns": [
+                        "KEY0#378",
+                        "MEMBER_VALUE#378",
+                        "NAME#292",
+                        "Region",
+                        "Region - Member Key",
+                        "Sales Territory Country"
+                      ]
+                    }
+                  ],
+                  "columns": [
+                    "Country - Member Key#4",
+                    "Country#8",
+                    "KEY0#377",
+                    "MEMBER_VALUE#377",
+                    "Sales Territory Group"
+                  ]
+                }
+              ],
+              "columns": [
+                "Group",
+                "Group - Member Key",
+                "KEY0#376",
+                "MEMBER_VALUE#376"
+              ]
+            }
+          ],
+          "columns": [
+            "[Sales Territory].[Sales Territory].[(All)]",
+            "[Sales Territory].[Sales Territory].[(All)] - Member Key",
+            "KEY0#375",
+            "MEMBER_VALUE#375",
+            "NAME#291"
+          ]
+        },
+        {
+          "name": "Group",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Group",
+          "keys": [ {
+        "name": "Group - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "Group - Member Key"
+        ]
+      },
+      {
+        "name": "Group",
+        "isForDrillDown": true,
+        "columns": [
+          "Group"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Country",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Country",
+              "keys": [ {
+            "name": "Country - Member Key#4",
+            "isPrimary": "true",
+            "columns": [
+              "Country - Member Key#4"
+            ]
+          },
+          {
+            "name": "Country",
+            "isForDrillDown": true,
+            "columns": [
+              "Country#8"
+            ]
+          }
+              ],
+              "childLevels": [
+                {
+                  "name": "Region",
+                  "isGTA": false,
+                  "isFDUC": true,
+                  "memberCount": 1,
+                  "levelConst": "Region",
+                  "keys": [ {
+                "name": "Region - Member Key",
+                "isPrimary": "true",
+                "columns": [
+                  "Region - Member Key"
+                ]
+              },
+              {
+                "name": "Region",
+                "isForDrillDown": true,
+                "columns": [
+                  "Region"
+                ]
+              }
+                  ],
+                  "columns": [
+                    "KEY0#378",
+                    "MEMBER_VALUE#378",
+                    "NAME#292",
+                    "Region",
+                    "Region - Member Key",
+                    "Sales Territory Country"
+                  ]
+                }
+              ],
+              "columns": [
+                "Country - Member Key#4",
+                "Country#8",
+                "KEY0#377",
+                "MEMBER_VALUE#377",
+                "Sales Territory Group"
+              ]
+            }
+          ],
+          "columns": [
+            "Group",
+            "Group - Member Key",
+            "KEY0#376",
+            "MEMBER_VALUE#376"
+          ]
+        },
+        {
+          "name": "Country",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Country",
+          "keys": [ {
+        "name": "Country - Member Key#4",
+        "isPrimary": "true",
+        "columns": [
+          "Country - Member Key#4"
+        ]
+      },
+      {
+        "name": "Country",
+        "isForDrillDown": true,
+        "columns": [
+          "Country#8"
+        ]
+      }
+          ],
+          "childLevels": [
+            {
+              "name": "Region",
+              "isGTA": false,
+              "isFDUC": true,
+              "memberCount": 1,
+              "levelConst": "Region",
+              "keys": [ {
+            "name": "Region - Member Key",
+            "isPrimary": "true",
+            "columns": [
+              "Region - Member Key"
+            ]
+          },
+          {
+            "name": "Region",
+            "isForDrillDown": true,
+            "columns": [
+              "Region"
+            ]
+          }
+              ],
+              "columns": [
+                "KEY0#378",
+                "MEMBER_VALUE#378",
+                "NAME#292",
+                "Region",
+                "Region - Member Key",
+                "Sales Territory Country"
+              ]
+            }
+          ],
+          "columns": [
+            "Country - Member Key#4",
+            "Country#8",
+            "KEY0#377",
+            "MEMBER_VALUE#377",
+            "Sales Territory Group"
+          ]
+        },
+        {
+          "name": "Region",
+          "isGTA": false,
+          "isFDUC": true,
+          "memberCount": 1,
+          "levelConst": "Region",
+          "keys": [ {
+        "name": "Region - Member Key",
+        "isPrimary": "true",
+        "columns": [
+          "Region - Member Key"
+        ]
+      },
+      {
+        "name": "Region",
+        "isForDrillDown": true,
+        "columns": [
+          "Region"
+        ]
+      }
+          ],
+          "columns": [
+            "KEY0#378",
+            "MEMBER_VALUE#378",
+            "NAME#292",
+            "Region",
+            "Region - Member Key",
+            "Sales Territory Country"
+          ]
+        }
+      ],
+      "hierarchy": {
+        "name": "Sales Territory",
+        "levels": [
+          {
+            "name": "[Sales Territory].[Sales Territory].[(All)]",
+            "childLevels": [
+              {
+                "name": "Group",
+                "childLevels": [
+                  {
+                    "name": "Country",
+                    "childLevels": [
+                      {
+                        "name": "Region"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Group",
+            "childLevels": [
+              {
+                "name": "Country",
+                "childLevels": [
+                  {
+                    "name": "Region"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Country",
+            "childLevels": [
+              {
+                "name": "Region"
+              }
+            ]
+          },
+          {
+            "name": "Region"
+          }
+        ]
+      }
+    }
+  }
+}
