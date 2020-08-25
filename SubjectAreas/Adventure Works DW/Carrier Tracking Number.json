@@ -35,19 +35,13 @@
         "sourceLogicalTable": "Adventure Works DW.Carrier Tracking Number",
         "levels": [ {
             "name": "[Internet Sales Order Details].[Carrier Tracking Number].[(All)]",
-            "displayColumns": [ {
-                "name": "[Internet Sales Order Details].[Carrier Tracking Number].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Carrier Tracking Number.[Internet Sales Order Details].[Carrier Tracking Number].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Carrier Tracking Number.[Internet Sales Order Details].[Carrier Tracking Number].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Carrier Tracking Number.[Internet Sales Order Details].[Carrier Tracking Number].[(All)]"
           },
           {
             "name": "Carrier Tracking Number",
-            "displayColumns": [ {
-                "name": "Carrier Tracking Number",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Carrier Tracking Number.Carrier Tracking Number"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Carrier Tracking Number.Carrier Tracking Number",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Carrier Tracking Number.Carrier Tracking Number"
           }
         ]
       }

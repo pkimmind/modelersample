@@ -1,0 +1,226 @@
+{
+  "logicalTable": {
+    "name": "Customer",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "Country",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart.Sales.Country"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "State Province",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart.Sales.State Province"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "City",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart.Sales.City"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Name",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart.Sales.Name"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Gender",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart.Sales.Gender"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Marital Status",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart.Sales.Marital Status"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Education",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart.Sales.Education"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Yearly Income",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart.Sales.Yearly Income"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Member Card",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart.Sales.Member Card"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Sales",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:FoodMart.Sales"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        }
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "All",
+      "logicalLevels": [
+        {
+          "name": "All",
+          "grandTotalLevel": true,
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1
+        },
+        {
+          "name": "Country",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "Country"
+          ],
+          "displayColumn": "Country"
+        },
+        {
+          "name": "State",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "State Province"
+          ],
+          "displayColumn": "State Province"
+        },
+        {
+          "name": "City",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "City"
+          ],
+          "displayColumn": "City"
+        },
+        {
+          "name": "Customer Name",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "Name"
+          ],
+          "displayColumn": "Name"
+        }
+      ],
+      "logicalHierarchies": [ {
+          "name": "Customer",
+          "levels": [ "All", "Country", "State", "City", "Customer Name" ]
+        }
+      ]
+    }
+  }
+}

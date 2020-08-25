@@ -1,0 +1,127 @@
+{
+  "logicalTable": {
+    "name": "Shipper",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "ShipperID",
+        "dataType": "SMALLINT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Shippers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Shippers.ShipperID"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "CompanyName",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Shippers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Shippers.CompanyName"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Phone",
+        "dataType": "CHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Shippers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Shippers.Phone"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Revenue",
+        "dataType": "UNKNOWN",
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:SnowflakeSales_subrequest.SalesFacts.Revenue"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "QtySold",
+        "dataType": "UNKNOWN",
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:SnowflakeSales_subrequest.SalesFacts.QtySold"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Shippers",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.Shippers"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        }
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "All Shippers",
+      "logicalLevels": [
+        {
+          "name": "All Shippers",
+          "grandTotalLevel": true,
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1
+        },
+        {
+          "name": "Shipper",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "ShipperID"
+          ],
+          "displayColumn": "ShipperID"
+        }
+      ],
+      "logicalHierarchies": [ {
+          "name": "Shipper",
+          "levels": [ "All Shippers", "Shipper" ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,256 @@
+{
+  "logicalTable": {
+    "name": "Occupation",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "[Customer].[Occupation].[(All)]",
+        "dataType": "VARCHAR",
+        "descriptorColumn": "[Customer].[Occupation].[(All)] - Member Key",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.[Customer].[Occupation].[(All)]"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "[Customer].[Occupation].[(All)] - Member Key",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.[Customer].[Occupation].[(All)] - Member Key"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "KEY0#44",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.KEY0#44"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "KEY0#45",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.KEY0#45"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "MEMBER_VALUE#44",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.MEMBER_VALUE#44"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "MEMBER_VALUE#45",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.MEMBER_VALUE#45"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "NAME#37",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.NAME#37"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "NAME#38",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.NAME#38"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Occupation - Member Key",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.Occupation - Member Key"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Occupation#2",
+        "dataType": "VARCHAR",
+        "descriptorColumn": "Occupation - Member Key",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.Occupation#2"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "TRAN0#3",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.TRAN0#3"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "TRAN1#3",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.TRAN1#3"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Adventure Works",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:Adventure Works DW.Adventure Works"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        },
+        "dataGranularity": [
+          "logicalLevel:Adventure Works DW.Occupation.Occupation"
+        ]
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "[Customer].[Occupation].[(All)]",
+      "logicalLevels": [
+        {
+          "name": "[Customer].[Occupation].[(All)]",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "[Customer].[Occupation].[(All)] - Member Key"
+          ]
+        },
+        {
+          "name": "Occupation",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "Occupation - Member Key"
+          ]
+        }
+      ],
+      "logicalHierarchies": [ {
+          "name": "Occupation",
+          "levels": [ "[Customer].[Occupation].[(All)]", "Occupation" ]
+        }
+      ]
+    }
+  }
+}

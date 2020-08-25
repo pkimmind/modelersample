@@ -1,0 +1,256 @@
+{
+  "logicalTable": {
+    "name": "Ship Date.Day Name",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "[Ship Date].[Day Name].[(All)]",
+        "dataType": "VARCHAR",
+        "descriptorColumn": "[Ship Date].[Day Name].[(All)] - Member Key",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.[Ship Date].[Day Name].[(All)]"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "[Ship Date].[Day Name].[(All)] - Member Key",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.[Ship Date].[Day Name].[(All)] - Member Key"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Day Name - Member Key#2",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.Day Name - Member Key#2"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Day Name#10",
+        "dataType": "VARCHAR",
+        "descriptorColumn": "Day Name - Member Key#2",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.Day Name#10"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "KEY0#400",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.KEY0#400"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "KEY0#401",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.KEY0#401"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "MEMBER_VALUE#400",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.MEMBER_VALUE#400"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "MEMBER_VALUE#401",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.MEMBER_VALUE#401"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "NAME#310",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.NAME#310"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "NAME#311",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.NAME#311"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "TRAN0#26",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.TRAN0#26"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "TRAN1#26",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.TRAN1#26"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Adventure Works",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:Adventure Works DW.Adventure Works"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        },
+        "dataGranularity": [
+          "logicalLevel:Adventure Works DW.Ship Date.Day Name.Day Name"
+        ]
+      }
+    ],
+    "hierarchyType": "TIME",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "[Ship Date].[Day Name].[(All)]",
+      "logicalLevels": [
+        {
+          "name": "[Ship Date].[Day Name].[(All)]",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "[Ship Date].[Day Name].[(All)] - Member Key"
+          ]
+        },
+        {
+          "name": "Day Name",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "Day Name - Member Key#2"
+          ]
+        }
+      ],
+      "logicalHierarchies": [ {
+          "name": "Ship Date.Day Name",
+          "levels": [ "[Ship Date].[Day Name].[(All)]", "Day Name" ]
+        }
+      ]
+    }
+  }
+}

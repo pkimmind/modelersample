@@ -1,0 +1,239 @@
+{
+  "logicalTable": {
+    "name": "Sales Reason",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "[Sales Reason].[Sales Reason].[(All)]",
+        "dataType": "VARCHAR",
+        "descriptorColumn": "[Sales Reason].[Sales Reason].[(All)] - Member Key",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.[Sales Reason].[Sales Reason].[(All)]"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "[Sales Reason].[Sales Reason].[(All)] - Member Key",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.[Sales Reason].[Sales Reason].[(All)] - Member Key"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "KEY0#357",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.KEY0#357"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "KEY0#358",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.KEY0#358"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "MEMBER_VALUE#357",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.MEMBER_VALUE#357"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "MEMBER_VALUE#358",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.MEMBER_VALUE#358"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "NAME#281",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.NAME#281"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "NAME#282",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.NAME#282"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Sales Reason",
+        "dataType": "VARCHAR",
+        "descriptorColumn": "Sales Reason - Member Key",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.Sales Reason"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Sales Reason - Member Key",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.Sales Reason - Member Key"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Sales Reason Type",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Adventure Works",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:Adventure Works DW.Adventure Works.Sales Reason Type"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Adventure Works",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:Adventure Works DW.Adventure Works"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        },
+        "dataGranularity": [
+          "logicalLevel:Adventure Works DW.Sales Reason.Sales Reason"
+        ]
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "[Sales Reason].[Sales Reason].[(All)]",
+      "logicalLevels": [
+        {
+          "name": "[Sales Reason].[Sales Reason].[(All)]",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "[Sales Reason].[Sales Reason].[(All)] - Member Key"
+          ]
+        },
+        {
+          "name": "Sales Reason",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "Sales Reason - Member Key"
+          ]
+        }
+      ],
+      "logicalHierarchies": [ {
+          "name": "Sales Reason",
+          "levels": [ "[Sales Reason].[Sales Reason].[(All)]", "Sales Reason" ]
+        }
+      ]
+    }
+  }
+}

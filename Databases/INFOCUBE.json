@@ -1,10 +1,8 @@
 {
   "database": {
     "name": "INFOCUBE",
-    "type": "SAPBW35",
-    "databaseType": 43,
-    "features": [
-      {
+    "databaseType": "SAP/BW 3.5/7.0",
+    "features": [ {
         "name": "IN_SUPPORTED",
         "value": false
       },
@@ -30,19 +28,13 @@
         "maxConnections": 10,
         "connection": "http://64.181.196.35:8001/sap/bw/xml/soap/xmla",
         "type": "XMLA",
-        "requiresFullyQualifedTableNames": false,
         "isSharedLogin": true,
-        "multithreaded": false,
-        "isCloseAfterEveryRequest": false,
         "outputType": "xml",
-        "ignoreFirstLine": false,
         "bulkInsertBufferSize": 0,
         "transactionBoundary": 0,
         "xmlaInfo": "default",
         "xmlaCatalog": "$INFOCUBE",
-        "xmlaUseSession": false,
-        "supportParams": true,
-        "isSiebelJDBSecured": false
+        "supportParams": true
       }
     ]
   }

@@ -1,0 +1,14 @@
+{
+  "presentationTable": {
+    "name": "Sales",
+    "presentationColumns": [ {
+        "name": "Unit Sales",
+        "sourceLogicalColumn": "logicalColumn:Foodmart.Sales.Unit Sales"
+      },
+      {
+        "name": "Profit",
+        "sourceLogicalColumn": "logicalColumn:Foodmart.Sales.Profit"
+      }
+    ]
+  }
+}

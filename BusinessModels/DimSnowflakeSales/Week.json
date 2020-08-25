@@ -1,0 +1,151 @@
+{
+  "logicalTable": {
+    "name": "Week",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "Year",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Orders",
+              "physicalExpression": {
+                "expressionTemplate": " EXTRACT( YEAR  FROM %1)",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.OrderDate"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Qtr",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Orders",
+              "physicalExpression": {
+                "expressionTemplate": " EXTRACT( QUARTER_OF_YEAR  FROM %1)",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.OrderDate"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Week",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Orders",
+              "physicalExpression": {
+                "expressionTemplate": " EXTRACT( WEEK_OF_YEAR  FROM %1)",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.OrderDate"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Revenue",
+        "dataType": "UNKNOWN",
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:DimSnowflakeSales.SalesFacts.Revenue"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "QtySold",
+        "dataType": "UNKNOWN",
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:DimSnowflakeSales.SalesFacts.QtySold"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Orders",
+        "distinctValues": true,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.Orders"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        }
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "Year",
+      "logicalLevels": [
+        {
+          "name": "Year",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "Year"
+          ],
+          "displayColumn": "Year"
+        },
+        {
+          "name": "Qtr",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "Year",
+            "Qtr"
+          ],
+          "displayColumn": "Year"
+        },
+        {
+          "name": "Week",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "Year",
+            "Week"
+          ],
+          "displayColumn": "Year"
+        },
+        {
+          "name": "Day",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "Day"
+          ],
+          "displayColumn": "Day"
+        }
+      ],
+      "logicalHierarchies": [ {
+          "name": "Time",
+          "levels": [ "Year", "Qtr", "Week", "Day" ]
+        }
+      ]
+    }
+  }
+}

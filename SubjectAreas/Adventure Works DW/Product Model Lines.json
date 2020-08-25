@@ -59,27 +59,18 @@
         "sourceLogicalTable": "Adventure Works DW.Product Model Lines",
         "levels": [ {
             "name": "[Product].[Product Model Lines].[(All)]",
-            "displayColumns": [ {
-                "name": "[Product].[Product Model Lines].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Lines.[Product].[Product Model Lines].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Product Model Lines.[Product].[Product Model Lines].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Product Model Lines.[Product].[Product Model Lines].[(All)]"
           },
           {
             "name": "Product Line",
-            "displayColumns": [ {
-                "name": "Product Line#3",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Lines.Product Line#3"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Product Model Lines.Product Line#3",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Product Model Lines.Product Line#3"
           },
           {
             "name": "Model",
-            "displayColumns": [ {
-                "name": "Model#1",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Lines.Model#1"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Product Model Lines.Model#1",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Product Model Lines.Model#1"
           }
         ]
       }

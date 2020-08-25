@@ -123,35 +123,23 @@
         "sourceLogicalTable": "Adventure Works DW.Promotions",
         "levels": [ {
             "name": "[Promotion].[Promotions].[(All)]",
-            "displayColumns": [ {
-                "name": "[Promotion].[Promotions].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotions.[Promotion].[Promotions].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Promotions.[Promotion].[Promotions].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Promotions.[Promotion].[Promotions].[(All)]"
           },
           {
             "name": "Category",
-            "displayColumns": [ {
-                "name": "Category#7",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotions.Category#7"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Promotions.Category#7",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Promotions.Category#7"
           },
           {
             "name": "Type",
-            "displayColumns": [ {
-                "name": "Type",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotions.Type"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Promotions.Type",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Promotions.Type"
           },
           {
             "name": "Promotion",
-            "displayColumns": [ {
-                "name": "Promotion#1",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotions.Promotion#1"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Promotions.Promotion#1",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Promotions.Promotion#1"
           }
         ]
       }

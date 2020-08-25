@@ -1,0 +1,57 @@
+{
+  "logicalTable": {
+    "name": "Supplier",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "Name",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "$INTOP_C02",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:INFOCUBE.INTOP_C02.SUPP_NAME"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "$INTOP_C02",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:INFOCUBE.INTOP_C02"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        }
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "Supplier Name",
+      "logicalLevels": [
+        {
+          "name": "Supplier Name",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "Name"
+          ],
+          "displayColumn": "Name"
+        }
+      ],
+      "logicalHierarchies": [ {
+          "name": "SupplierDim",
+          "levels": [ "Supplier Name" ]
+        }
+      ]
+    }
+  }
+}

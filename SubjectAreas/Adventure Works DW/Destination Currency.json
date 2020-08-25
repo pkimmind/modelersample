@@ -19,11 +19,8 @@
         "sourceLogicalTable": "Adventure Works DW.Destination Currency",
         "levels": [ {
             "name": "Destination Currency",
-            "displayColumns": [ {
-                "name": "Destination Currency",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Destination Currency.Destination Currency"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Destination Currency.Destination Currency",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Destination Currency.Destination Currency"
           }
         ]
       }

@@ -47,27 +47,18 @@
         "sourceLogicalTable": "Adventure Works DW.Sales Orders",
         "levels": [ {
             "name": "[Sales Summary Order Details].[Sales Orders].[(All)]",
-            "displayColumns": [ {
-                "name": "[Sales Summary Order Details].[Sales Orders].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Orders.[Sales Summary Order Details].[Sales Orders].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Sales Orders.[Sales Summary Order Details].[Sales Orders].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Sales Orders.[Sales Summary Order Details].[Sales Orders].[(All)]"
           },
           {
             "name": "Order Number",
-            "displayColumns": [ {
-                "name": "Order Number#2",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Orders.Order Number#2"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Sales Orders.Order Number#2",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Sales Orders.Order Number#2"
           },
           {
             "name": "Order Line",
-            "displayColumns": [ {
-                "name": "Order Line#2",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Orders.Order Line#2"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Sales Orders.Order Line#2",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Sales Orders.Order Line#2"
           }
         ]
       }

@@ -6,58 +6,58 @@
     "description": "SnowflakeSales + QtySoldNoTime measure which uses dimension-specific aggregation rules to avoid summing over time.",
     "tableOrder": [
       {
-        "name": "presentationTable:DimSnowflakeSales..SalesFacts"
+        "name": "presentationTable:DimSnowflakeSales.SalesFacts"
       },
       {
-        "name": "presentationTable:DimSnowflakeSales..Product"
+        "name": "presentationTable:DimSnowflakeSales.Product"
       },
       {
-        "name": "presentationTable:DimSnowflakeSales..Supplier"
+        "name": "presentationTable:DimSnowflakeSales.Supplier"
       },
       {
-        "name": "presentationTable:DimSnowflakeSales..Category"
+        "name": "presentationTable:DimSnowflakeSales.Category"
       },
       {
-        "name": "presentationTable:DimSnowflakeSales..SupplierCity"
+        "name": "presentationTable:DimSnowflakeSales.SupplierCity"
       },
       {
-        "name": "presentationTable:DimSnowflakeSales..SupplierRegion"
+        "name": "presentationTable:DimSnowflakeSales.SupplierRegion"
       },
       {
-        "name": "presentationTable:DimSnowflakeSales..SupplierCountry"
+        "name": "presentationTable:DimSnowflakeSales.SupplierCountry"
       },
       {
-        "name": "presentationTable:DimSnowflakeSales..Shipper"
+        "name": "presentationTable:DimSnowflakeSales.Shipper"
       },
       {
-        "name": "presentationTable:DimSnowflakeSales..Employee"
+        "name": "presentationTable:DimSnowflakeSales.Employee"
       },
       {
-        "name": "presentationTable:DimSnowflakeSales..EmployeeCity"
+        "name": "presentationTable:DimSnowflakeSales.EmployeeCity"
       },
       {
-        "name": "presentationTable:DimSnowflakeSales..EmployeeRegion"
+        "name": "presentationTable:DimSnowflakeSales.EmployeeRegion"
       },
       {
-        "name": "presentationTable:DimSnowflakeSales..EmployeeCountry"
+        "name": "presentationTable:DimSnowflakeSales.EmployeeCountry"
       },
       {
-        "name": "presentationTable:DimSnowflakeSales..Week"
+        "name": "presentationTable:DimSnowflakeSales.Week"
       },
       {
-        "name": "presentationTable:DimSnowflakeSales..Qtr"
+        "name": "presentationTable:DimSnowflakeSales.Qtr"
       },
       {
-        "name": "presentationTable:DimSnowflakeSales..Year"
+        "name": "presentationTable:DimSnowflakeSales.Year"
       },
       {
-        "name": "presentationTable:DimSnowflakeSales..Site"
+        "name": "presentationTable:DimSnowflakeSales.Site"
       },
       {
-        "name": "presentationTable:DimSnowflakeSales..Customer"
+        "name": "presentationTable:DimSnowflakeSales.Customer"
       },
       {
-        "name": "presentationTable:DimSnowflakeSales..Day"
+        "name": "presentationTable:DimSnowflakeSales.Day"
       }
     ],
     "permissions": [

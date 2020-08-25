@@ -39,19 +39,13 @@
         "sourceLogicalTable": "Adventure Works DW.Style",
         "levels": [ {
             "name": "[Product].[Style].[(All)]",
-            "displayColumns": [ {
-                "name": "[Product].[Style].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Style.[Product].[Style].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Style.[Product].[Style].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Style.[Product].[Style].[(All)]"
           },
           {
             "name": "Style",
-            "displayColumns": [ {
-                "name": "Style#3",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Style.Style#3"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Style.Style#3",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Style.Style#3"
           }
         ]
       }

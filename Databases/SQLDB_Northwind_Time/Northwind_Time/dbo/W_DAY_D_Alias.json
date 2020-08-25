@@ -1,9 +1,9 @@
 {
   "physicalTableAlias": {
-    "sourceTable": "physicalTable:W_DAY_D",
+    "name": "W_DAY_D_Alias",
+    "sourceTable": "physicalTable:SQLDB_Northwind_Time.Northwind_Time.dbo.W_DAY_D",
     "caching": {
       "enable": true
-    },
-    "overrideSourceCacheSetting": false
+    }
   }
 }

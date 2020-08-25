@@ -1,0 +1,113 @@
+{
+  "logicalTable": {
+    "name": "Categories",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "CategoryID",
+        "dataType": "SMALLINT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Categories",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Categories.CategoryID"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "CategoryName",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Categories",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Categories.CategoryName"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Description",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Categories",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Categories.Description"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Categories",
+        "canCombine": true,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.Categories"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        }
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "logicalLevels": [
+        {
+          "name": "Suppliers",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "SupplierID"
+          ],
+          "displayColumn": "SupplierID"
+        },
+        {
+          "name": "Products",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "ProductID"
+          ],
+          "displayColumn": "ProductID"
+        },
+        {
+          "name": "Categories",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "CategoryID"
+          ],
+          "displayColumn": "CategoryID"
+        }
+      ],
+      "logicalHierarchies": [ {
+          "name": "Product Dimension",
+          "levels": [ "Suppliers", "Products" ]
+        },
+        {
+          "name": "Product Dimension",
+          "levels": [ "Categories", "Products" ]
+        }
+      ]
+    }
+  }
+}

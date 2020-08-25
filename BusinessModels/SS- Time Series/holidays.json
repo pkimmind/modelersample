@@ -1,0 +1,91 @@
+{
+  "logicalTable": {
+    "name": "holidays",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "holiday_name",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "holidays",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.holidays.holiday_name"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "holiday_date",
+        "dataType": "DATETIME",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "holidays",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.holidays.holiday_date"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "holiday_id",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "holidays",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.holidays.holiday_id"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "holidays",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind_Time.Northwind_Time.dbo.holidays"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        }
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "Name",
+      "logicalLevels": [
+        {
+          "name": "Name",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "holiday_id"
+          ],
+          "displayColumn": "holiday_id"
+        }
+      ],
+      "logicalHierarchies": [ {
+          "name": "Holiday",
+          "levels": [ "Name" ]
+        }
+      ]
+    }
+  }
+}

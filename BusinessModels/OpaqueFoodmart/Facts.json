@@ -1,0 +1,54 @@
+{
+  "logicalTable": {
+    "name": "Facts",
+    "type": "FACT",
+    "logicalColumns": [ {
+        "name": "Unit Sales",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "OpaqueSales",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart.OpaqueSales.Unit Sales"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Store Cost",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "OpaqueSales",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart.OpaqueSales.Store Cost"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "OpaqueSales",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:FoodMart.OpaqueSales"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

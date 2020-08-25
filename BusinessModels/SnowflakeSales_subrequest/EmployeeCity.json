@@ -1,0 +1,200 @@
+{
+  "logicalTable": {
+    "name": "EmployeeCity",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "City",
+        "dataType": "CHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.City"
+                ]
+              }
+            },
+            {
+              "logicalTableSource": "City",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Population.City"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Region",
+        "dataType": "CHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.Region"
+                ]
+              }
+            },
+            {
+              "logicalTableSource": "City",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Population.Region"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Country",
+        "dataType": "CHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.Country"
+                ]
+              }
+            },
+            {
+              "logicalTableSource": "City",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Population.Country"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Revenue",
+        "dataType": "UNKNOWN",
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:SnowflakeSales_subrequest.SalesFacts.Revenue"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "QtySold",
+        "dataType": "UNKNOWN",
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:SnowflakeSales_subrequest.SalesFacts.QtySold"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Employees",
+        "distinctValues": true,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.Employees"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        }
+      },
+      {
+        "name": "City",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.Population"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        },
+        "dataGranularity": [
+          "logicalLevel:SnowflakeSales_subrequest.Employee.City"
+        ]
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "All Employees",
+      "logicalLevels": [
+        {
+          "name": "All Employees",
+          "grandTotalLevel": true,
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1
+        },
+        {
+          "name": "Country",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "Country"
+          ],
+          "displayColumn": "Country"
+        },
+        {
+          "name": "Region",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "Region",
+            "Country"
+          ],
+          "displayColumn": "Region"
+        },
+        {
+          "name": "City",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "City",
+            "Region",
+            "Country"
+          ],
+          "displayColumn": "City"
+        },
+        {
+          "name": "Employee",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 9,
+          "primaryColumns": [
+            "EmployeeID"
+          ],
+          "displayColumn": "EmployeeID"
+        }
+      ],
+      "logicalHierarchies": [ {
+          "name": "Employee",
+          "levels": [ "All Employees", "Country", "Region", "City", "Employee" ]
+        }
+      ]
+    }
+  }
+}

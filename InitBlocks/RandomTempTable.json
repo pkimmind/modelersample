@@ -1,0 +1,23 @@
+{
+  "initBlock": {
+    "name": "RandomTempTable",
+    "type": "SESSION",
+    "isDeferredExecution": true,
+    "refreshPeriod": 86400,
+    "connectionPool": "connectionPool:SQLDB_Northwind.Northwind Init Block Connections",
+    "selectStatements": [
+      {
+        "databaseType": "Oracle11g",
+        "query": "select concat( 'TempTable_', SYS_CONTEXT('USERENV', 'HOST', 15))  from DUAL;"
+      },
+      {
+        "databaseType": "DEFAULT",
+        "query": "select REPLACE(concat( 'TempTable_', SYS_CONTEXT('USERENV', 'HOST', 15)), '\\', '')  from DUAL"
+      }
+    ],
+    "variables": [ {
+        "name": "TempTable"
+      }
+    ]
+  }
+}

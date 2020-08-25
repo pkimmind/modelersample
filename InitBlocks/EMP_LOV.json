@@ -1,0 +1,15 @@
+{
+  "initBlock": {
+    "name": "EMP_LOV",
+    "type": "SESSION",
+    "isRowWiseInit": true,
+    "refreshPeriod": 86400,
+    "connectionPool": "connectionPool:SQLDB_Northwind.Northwind Init Block Connections",
+    "selectStatements": [
+      {
+        "databaseType": "DEFAULT",
+        "query": "select distinct 'EMPLOV', employeeid from employees"
+      }
+    ]
+  }
+}

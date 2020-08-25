@@ -1,0 +1,664 @@
+{
+  "logicalTable": {
+    "name": "Product",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "ProductName",
+        "dataType": "CHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-Categories-Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.ProductName"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "ProductID",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-Categories-Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.ProductID"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Description",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-Categories-Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Categories.Description"
+                ]
+              }
+            },
+            {
+              "logicalTableSource": "Categories",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Categories.Description"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "CategoryID",
+        "dataType": "SMALLINT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-Categories-Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Categories.CategoryID"
+                ]
+              }
+            },
+            {
+              "logicalTableSource": "Categories",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Categories.CategoryID"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "UnitPrice",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-Categories-Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.UnitPrice"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Level",
+        "dataType": "CHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-Categories-Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": " CAST ('' AS CHARACTER ( 8 ))"
+              }
+            },
+            {
+              "logicalTableSource": "Categories",
+              "physicalExpression": {
+                "expressionTemplate": " CAST ('' AS CHARACTER ( 8 ))"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SupplierID",
+        "dataType": "SMALLINT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-Categories-Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Suppliers.SupplierID"
+                ]
+              }
+            },
+            {
+              "logicalTableSource": "Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Suppliers.SupplierID"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "CompanyName",
+        "dataType": "CHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-Categories-Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Suppliers.CompanyName"
+                ]
+              }
+            },
+            {
+              "logicalTableSource": "Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Suppliers.CompanyName"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "ContactTitle",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-Categories-Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Suppliers.ContactTitle"
+                ]
+              }
+            },
+            {
+              "logicalTableSource": "Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Suppliers.ContactTitle"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Address",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-Categories-Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Suppliers.Address"
+                ]
+              }
+            },
+            {
+              "logicalTableSource": "Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Suppliers.Address"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "City",
+        "dataType": "CHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-Categories-Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Suppliers.City"
+                ]
+              }
+            },
+            {
+              "logicalTableSource": "Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Suppliers.City"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Region",
+        "dataType": "CHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-Categories-Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Suppliers.Region"
+                ]
+              }
+            },
+            {
+              "logicalTableSource": "Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Suppliers.Region"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "PostalCode",
+        "dataType": "CHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-Categories-Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Suppliers.PostalCode"
+                ]
+              }
+            },
+            {
+              "logicalTableSource": "Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Suppliers.PostalCode"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Country",
+        "dataType": "CHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-Categories-Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Suppliers.Country"
+                ]
+              }
+            },
+            {
+              "logicalTableSource": "Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Suppliers.Country"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Phone",
+        "dataType": "CHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-Categories-Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Suppliers.Phone"
+                ]
+              }
+            },
+            {
+              "logicalTableSource": "Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Suppliers.Phone"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Fax",
+        "dataType": "CHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-Categories-Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Suppliers.Fax"
+                ]
+              }
+            },
+            {
+              "logicalTableSource": "Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Suppliers.Fax"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "ContactName",
+        "dataType": "CHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-Categories-Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Suppliers.ContactName"
+                ]
+              }
+            },
+            {
+              "logicalTableSource": "Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Suppliers.ContactName"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "CategoryName",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-Categories-Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Categories.CategoryName"
+                ]
+              }
+            },
+            {
+              "logicalTableSource": "Categories",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Categories.CategoryName"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "QuantityPerUnit",
+        "dataType": "CHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-Categories-Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.QuantityPerUnit"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "UnitsInStock",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-Categories-Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.UnitsInStock"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "UnitsOnOrder",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-Categories-Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.UnitsOnOrder"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "ReorderLevel",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-Categories-Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.ReorderLevel"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Discontinued",
+        "dataType": "BIT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products-Categories-Suppliers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.Discontinued"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Products-Categories-Suppliers",
+        "description": "Currently, a logical classic star schema only supports one physical source for its dimension tables.",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.Products",
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.Categories",
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.Suppliers"
+          ],
+          "logicalTableSourceJoins": [
+            {
+              "leftTable": "SQLDB_Northwind.Northwind.dbo.Categories",
+              "rightTable": "SQLDB_Northwind.Northwind.dbo.Products",
+              "joinType": "Inner",
+              "physicalJoinRef": "SQLDB_Northwind.Northwind.dbo.Products.FK__Products__Catego__0A7D9A4A"
+            },
+            {
+              "leftTable": "SQLDB_Northwind.Northwind.dbo.Products",
+              "rightTable": "SQLDB_Northwind.Northwind.dbo.Categories",
+              "joinType": "Inner",
+              "physicalJoinRef": "SQLDB_Northwind.Northwind.dbo.Products.FK__Products__Catego__0A7D9A4A",
+              "leftTable": "SQLDB_Northwind.Northwind.dbo.Products",
+              "rightTable": "SQLDB_Northwind.Northwind.dbo.Suppliers",
+              "joinType": "Inner",
+              "physicalJoinRef": "SQLDB_Northwind.Northwind.dbo.Products.FK__Products__Suppli__09897611"
+            },
+            {
+              "leftTable": "SQLDB_Northwind.Northwind.dbo.Suppliers",
+              "rightTable": "SQLDB_Northwind.Northwind.dbo.Products",
+              "joinType": "Inner",
+              "physicalJoinRef": "SQLDB_Northwind.Northwind.dbo.Products.FK__Products__Suppli__09897611"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Categories",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.Categories"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        },
+        "dataGranularity": [
+          "logicalLevel:Sales.Product.Category"
+        ]
+      },
+      {
+        "name": "Suppliers",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.Suppliers"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        },
+        "dataGranularity": [
+          "logicalLevel:Sales.Product.Supplier"
+        ]
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "Category",
+      "logicalLevels": [
+        {
+          "name": "Category",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "CategoryID"
+          ],
+          "displayColumn": "CategoryID"
+        },
+        {
+          "name": "Product",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "ProductID"
+          ],
+          "displayColumn": "ProductID"
+        },
+        {
+          "name": "Country",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "Country"
+          ],
+          "displayColumn": "Country"
+        },
+        {
+          "name": "Region",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "Region",
+            "Country"
+          ],
+          "displayColumn": "Region"
+        },
+        {
+          "name": "City",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "City",
+            "Country"
+          ],
+          "displayColumn": "City"
+        },
+        {
+          "name": "Supplier",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "SupplierID"
+          ],
+          "displayColumn": "SupplierID"
+        }
+      ],
+      "logicalHierarchies": [ {
+          "name": "Product",
+          "levels": [ "Category", "Product" ]
+        },
+        {
+          "name": "Product",
+          "levels": [ "Country", "Region", "City", "Supplier", "Product" ]
+        }
+      ]
+    }
+  }
+}

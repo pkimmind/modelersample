@@ -35,19 +35,13 @@
         "sourceLogicalTable": "Adventure Works DW.Sales Order Number",
         "levels": [ {
             "name": "[Internet Sales Order Details].[Sales Order Number].[(All)]",
-            "displayColumns": [ {
-                "name": "[Internet Sales Order Details].[Sales Order Number].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Number.[Internet Sales Order Details].[Sales Order Number].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Sales Order Number.[Internet Sales Order Details].[Sales Order Number].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Sales Order Number.[Internet Sales Order Details].[Sales Order Number].[(All)]"
           },
           {
             "name": "Sales Order Number",
-            "displayColumns": [ {
-                "name": "Sales Order Number#1",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Number.Sales Order Number#1"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Sales Order Number.Sales Order Number#1",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Sales Order Number.Sales Order Number#1"
           }
         ]
       }

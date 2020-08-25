@@ -135,27 +135,18 @@
         "sourceLogicalTable": "Adventure Works DW.Stock Level",
         "levels": [ {
             "name": "[Product].[Stock Level].[(All)]",
-            "displayColumns": [ {
-                "name": "[Product].[Stock Level].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.[Product].[Stock Level].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Stock Level.[Product].[Stock Level].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Stock Level.[Product].[Stock Level].[(All)]"
           },
           {
             "name": "Safety Stock Level",
-            "displayColumns": [ {
-                "name": "Safety Stock Level#3",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.Safety Stock Level#3"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Stock Level.Safety Stock Level#3",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Stock Level.Safety Stock Level#3"
           },
           {
             "name": "Product",
-            "displayColumns": [ {
-                "name": "Product#2",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Stock Level.Product#2"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Stock Level.Product#2",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Stock Level.Product#2"
           }
         ]
       }

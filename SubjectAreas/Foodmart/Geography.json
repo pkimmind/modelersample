@@ -1,6 +1,12 @@
 {
   "presentationTable": {
     "name": "Geography",
+    "localization": {
+      "descriptionVariable": "VALUEOF(NQ_SESSION.CD_Foodmart_Geography)"
+    },
+    "alternateNames": [
+      "myAlias"
+    ],
     "presentationColumns": [ {
         "name": "Store Country",
         "sourceLogicalColumn": "logicalColumn:Foodmart.Geography.Store Country"
@@ -45,6 +51,29 @@
         "name": "SessionVarAlias",
         "sourceLogicalColumn": "logicalColumn:Foodmart.Geography.SessionVarAlias"
       }
-    ]
+    ],
+    "hierarchies": [ {
+        "name": "Geography",
+        "localization": {
+          "localizationKey": "Geography",
+          "nameVariable": "VALUEOF(NQ_SESSION.CN_Foodmart_Geography_Geography)",
+          "descriptionVariable": "VALUEOF(NQ_SESSION.CD_Foodmart_Geography_Geography)"
+        },
+        "description": "My hierarchy description",
+        "alternateNames": [
+          "myHierarchyAlias"
+        ],
+        "hideIfTrue": {
+          "expressionTemplate": "VALUEOF(%1) ",
+          "expressionObjects": [
+            "variable:Test_Float"
+          ]
+        },
+        "sourceLogicalTable": "Foodmart.Geography"
+      }
+    ],
+    "hideIfTrue": {
+      "expressionTemplate": "DATE '2020-07-04' "
+    }
   }
 }

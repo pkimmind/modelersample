@@ -115,27 +115,18 @@
         "sourceLogicalTable": "Adventure Works DW.Reseller Order Month",
         "levels": [ {
             "name": "[Reseller].[Reseller Order Month].[(All)]",
-            "displayColumns": [ {
-                "name": "[Reseller].[Reseller Order Month].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Month.[Reseller].[Reseller Order Month].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Reseller Order Month.[Reseller].[Reseller Order Month].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Reseller Order Month.[Reseller].[Reseller Order Month].[(All)]"
           },
           {
             "name": "Order Month",
-            "displayColumns": [ {
-                "name": "Order Month#4",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Month.Order Month#4"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Reseller Order Month.Order Month#4",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Reseller Order Month.Order Month#4"
           },
           {
             "name": "Reseller",
-            "displayColumns": [ {
-                "name": "Reseller#3",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Order Month.Reseller#3"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Reseller Order Month.Reseller#3",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Reseller Order Month.Reseller#3"
           }
         ]
       }

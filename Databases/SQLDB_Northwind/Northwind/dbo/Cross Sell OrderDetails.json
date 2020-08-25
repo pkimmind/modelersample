@@ -1,9 +1,9 @@
 {
   "physicalTableAlias": {
-    "sourceTable": "physicalTable:OrderDetails",
+    "name": "Cross Sell OrderDetails",
+    "sourceTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.OrderDetails",
     "caching": {
       "enable": true
-    },
-    "overrideSourceCacheSetting": false
+    }
   }
 }

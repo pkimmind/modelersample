@@ -163,51 +163,33 @@
         "sourceLogicalTable": "Adventure Works DW.Date.Fiscal",
         "levels": [ {
             "name": "[Date].[Fiscal].[(All)]",
-            "displayColumns": [ {
-                "name": "[Date].[Fiscal].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.[Date].[Fiscal].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Date.Fiscal.[Date].[Fiscal].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Date.Fiscal.[Date].[Fiscal].[(All)]"
           },
           {
             "name": "Fiscal Year",
-            "displayColumns": [ {
-                "name": "Fiscal Year",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.Fiscal Year"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Date.Fiscal.Fiscal Year",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Date.Fiscal.Fiscal Year"
           },
           {
             "name": "Fiscal Semester",
-            "displayColumns": [ {
-                "name": "Fiscal Semester",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.Fiscal Semester"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Date.Fiscal.Fiscal Semester",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Date.Fiscal.Fiscal Semester"
           },
           {
             "name": "Fiscal Quarter",
-            "displayColumns": [ {
-                "name": "Fiscal Quarter#1",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.Fiscal Quarter#1"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Date.Fiscal.Fiscal Quarter#1",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Date.Fiscal.Fiscal Quarter#1"
           },
           {
             "name": "Month",
-            "displayColumns": [ {
-                "name": "Month#1",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.Month#1"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Date.Fiscal.Month#1",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Date.Fiscal.Month#1"
           },
           {
             "name": "Date",
-            "displayColumns": [ {
-                "name": "Date#2",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal.Date#2"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Date.Fiscal.Date#2",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Date.Fiscal.Date#2"
           }
         ]
       }

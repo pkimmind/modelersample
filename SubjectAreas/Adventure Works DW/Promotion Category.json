@@ -47,19 +47,13 @@
         "sourceLogicalTable": "Adventure Works DW.Promotion Category",
         "levels": [ {
             "name": "[Promotion].[Promotion Category].[(All)]",
-            "displayColumns": [ {
-                "name": "[Promotion].[Promotion Category].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion Category.[Promotion].[Promotion Category].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Promotion Category.[Promotion].[Promotion Category].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Promotion Category.[Promotion].[Promotion Category].[(All)]"
           },
           {
             "name": "Promotion Category",
-            "displayColumns": [ {
-                "name": "Promotion Category#1",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Promotion Category.Promotion Category#1"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Promotion Category.Promotion Category#1",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Promotion Category.Promotion Category#1"
           }
         ]
       }

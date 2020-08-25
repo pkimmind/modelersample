@@ -35,19 +35,13 @@
         "sourceLogicalTable": "Adventure Works DW.Large Photo",
         "levels": [ {
             "name": "[Product].[Large Photo].[(All)]",
-            "displayColumns": [ {
-                "name": "[Product].[Large Photo].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Large Photo.[Product].[Large Photo].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Large Photo.[Product].[Large Photo].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Large Photo.[Product].[Large Photo].[(All)]"
           },
           {
             "name": "Large Photo",
-            "displayColumns": [ {
-                "name": "Large Photo",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Large Photo.Large Photo"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Large Photo.Large Photo",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Large Photo.Large Photo"
           }
         ]
       }

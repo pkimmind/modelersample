@@ -35,19 +35,13 @@
         "sourceLogicalTable": "Adventure Works DW.Department Name",
         "levels": [ {
             "name": "[Employee].[Department Name].[(All)]",
-            "displayColumns": [ {
-                "name": "[Employee].[Department Name].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Department Name.[Employee].[Department Name].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Department Name.[Employee].[Department Name].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Department Name.[Employee].[Department Name].[(All)]"
           },
           {
             "name": "Department Name",
-            "displayColumns": [ {
-                "name": "Department Name",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Department Name.Department Name"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Department Name.Department Name",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Department Name.Department Name"
           }
         ]
       }

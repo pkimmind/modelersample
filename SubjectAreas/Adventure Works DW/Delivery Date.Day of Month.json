@@ -35,19 +35,13 @@
         "sourceLogicalTable": "Adventure Works DW.Delivery Date.Day of Month",
         "levels": [ {
             "name": "[Delivery Date].[Day of Month].[(All)]",
-            "displayColumns": [ {
-                "name": "[Delivery Date].[Day of Month].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Day of Month.[Delivery Date].[Day of Month].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Delivery Date.Day of Month.[Delivery Date].[Day of Month].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Delivery Date.Day of Month.[Delivery Date].[Day of Month].[(All)]"
           },
           {
             "name": "Day of Month",
-            "displayColumns": [ {
-                "name": "Day of Month#6",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Day of Month.Day of Month#6"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Delivery Date.Day of Month.Day of Month#6",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Delivery Date.Day of Month.Day of Month#6"
           }
         ]
       }

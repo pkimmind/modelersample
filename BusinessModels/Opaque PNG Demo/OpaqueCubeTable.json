@@ -1,0 +1,54 @@
+{
+  "logicalTable": {
+    "name": "OpaqueCubeTable",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "[0COSTCENTER].[LEVEL01]",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "OpaqueCubeTable",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:PNG Demo.OpaqueCubeTable.[0COSTCENTER].[LEVEL01]"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "[0FISCPER].[LEVEL01]",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "OpaqueCubeTable",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:PNG Demo.OpaqueCubeTable.[0FISCPER].[LEVEL01]"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "OpaqueCubeTable",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:PNG Demo.OpaqueCubeTable"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

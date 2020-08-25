@@ -1,0 +1,232 @@
+{
+  "logicalTable": {
+    "name": "Products",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "ProductID",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.ProductID"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "ProductName",
+        "dataType": "CHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.ProductName"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SupplierID",
+        "dataType": "SMALLINT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.SupplierID"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "CategoryID",
+        "dataType": "SMALLINT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.CategoryID"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "QuantityPerUnit",
+        "dataType": "CHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.QuantityPerUnit"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "UnitPrice",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.UnitPrice"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "UnitsInStock",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.UnitsInStock"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "UnitsOnOrder",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.UnitsOnOrder"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "ReorderLevel",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.ReorderLevel"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Discontinued",
+        "dataType": "BIT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Products",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.Discontinued"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Products",
+        "canCombine": true,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.Products"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        }
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "logicalLevels": [
+        {
+          "name": "Suppliers",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "SupplierID"
+          ],
+          "displayColumn": "SupplierID"
+        },
+        {
+          "name": "Products",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "ProductID"
+          ],
+          "displayColumn": "ProductID"
+        },
+        {
+          "name": "Categories",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "CategoryID"
+          ],
+          "displayColumn": "CategoryID"
+        }
+      ],
+      "logicalHierarchies": [ {
+          "name": "Product Dimension",
+          "levels": [ "Suppliers", "Products" ]
+        },
+        {
+          "name": "Product Dimension",
+          "levels": [ "Categories", "Products" ]
+        }
+      ]
+    }
+  }
+}

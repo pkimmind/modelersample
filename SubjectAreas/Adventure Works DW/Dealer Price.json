@@ -35,19 +35,13 @@
         "sourceLogicalTable": "Adventure Works DW.Dealer Price",
         "levels": [ {
             "name": "[Product].[Dealer Price].[(All)]",
-            "displayColumns": [ {
-                "name": "[Product].[Dealer Price].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Dealer Price.[Product].[Dealer Price].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Dealer Price.[Product].[Dealer Price].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Dealer Price.[Product].[Dealer Price].[(All)]"
           },
           {
             "name": "Dealer Price",
-            "displayColumns": [ {
-                "name": "Dealer Price",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Dealer Price.Dealer Price"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Dealer Price.Dealer Price",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Dealer Price.Dealer Price"
           }
         ]
       }

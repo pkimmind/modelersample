@@ -63,27 +63,18 @@
         "sourceLogicalTable": "Adventure Works DW.Manufacture Time",
         "levels": [ {
             "name": "[Product].[Manufacture Time].[(All)]",
-            "displayColumns": [ {
-                "name": "[Product].[Manufacture Time].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Manufacture Time.[Product].[Manufacture Time].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Manufacture Time.[Product].[Manufacture Time].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Manufacture Time.[Product].[Manufacture Time].[(All)]"
           },
           {
             "name": "Days to Manufacture",
-            "displayColumns": [ {
-                "name": "Days to Manufacture#1",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Manufacture Time.Days to Manufacture#1"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Manufacture Time.Days to Manufacture#1",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Manufacture Time.Days to Manufacture#1"
           },
           {
             "name": "Subcategory",
-            "displayColumns": [ {
-                "name": "Subcategory",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Manufacture Time.Subcategory"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Manufacture Time.Subcategory",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Manufacture Time.Subcategory"
           }
         ]
       }

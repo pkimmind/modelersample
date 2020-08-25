@@ -39,19 +39,13 @@
         "sourceLogicalTable": "Adventure Works DW.Sales Person Flag",
         "levels": [ {
             "name": "[Employee].[Sales Person Flag].[(All)]",
-            "displayColumns": [ {
-                "name": "[Employee].[Sales Person Flag].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Person Flag.[Employee].[Sales Person Flag].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Sales Person Flag.[Employee].[Sales Person Flag].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Sales Person Flag.[Employee].[Sales Person Flag].[(All)]"
           },
           {
             "name": "Sales Person Flag",
-            "displayColumns": [ {
-                "name": "Sales Person Flag#7",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Person Flag.Sales Person Flag#7"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Sales Person Flag.Sales Person Flag#7",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Sales Person Flag.Sales Person Flag#7"
           }
         ]
       }

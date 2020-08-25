@@ -1,0 +1,315 @@
+{
+  "logicalTable": {
+    "name": "Customer",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "CustomerID",
+        "dataType": "CHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Customer-SiteCompanies",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Customers.CustomerID"
+                ]
+              }
+            },
+            {
+              "logicalTableSource": "Customer",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Customers.CustomerID"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SiteID",
+        "dataType": "SMALLINT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Customer-SiteCompanies",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.CustomerSites.SiteID"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "CompanyName",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Customer-SiteCompanies",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Customers.CompanyName"
+                ]
+              }
+            },
+            {
+              "logicalTableSource": "Customer",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Customers.CompanyName"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SiteName",
+        "dataType": "CHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Customer-SiteCompanies",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.CustomerSites.CompanyName"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "ContactName",
+        "dataType": "CHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Customer-SiteCompanies",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.CustomerSites.ContactName"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Address",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Customer-SiteCompanies",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.CustomerSites.Address"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "City",
+        "dataType": "CHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Customer-SiteCompanies",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.CustomerSites.City"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Region",
+        "dataType": "CHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Customer-SiteCompanies",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.CustomerSites.Region"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "PostalCode",
+        "dataType": "CHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Customer-SiteCompanies",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.CustomerSites.PostalCode"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Country",
+        "dataType": "CHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Customer-SiteCompanies",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.CustomerSites.Country"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Phone",
+        "dataType": "CHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Customer-SiteCompanies",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.CustomerSites.Phone"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Fax",
+        "dataType": "CHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Customer-SiteCompanies",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.CustomerSites.Fax"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Customer-SiteCompanies",
+        "canCombine": true,
+        "distinctValues": true,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Customers",
+            "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.CustomerSites"
+          ],
+          "logicalTableSourceJoins": [
+            {
+              "leftTable": "SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Customers",
+              "rightTable": "SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.CustomerSites",
+              "joinType": "Inner",
+              "physicalJoinRef": "SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.CustomerSites.Customer to CustomerSites"
+            },
+            {
+              "leftTable": "SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.CustomerSites",
+              "rightTable": "SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Customers",
+              "joinType": "Inner",
+              "physicalJoinRef": "SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.CustomerSites.Customer to CustomerSites"
+            }
+          ]
+        },
+        "dataFilter": {
+          "expressionTemplate": "%1 = 1",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.CustomerSites.OrganizationCode"
+          ]
+        },
+        "dataGranularity": [
+          "logicalLevel:AtomicStar.Customer.Site"
+        ],
+        "dataFragmentation": {
+          "expressionTemplate": "VALUEOF(Dynamic Country) ",
+          "expressionObjects": [
+            "variable:Test Dynamic Repository Variables.Dynamic Country"
+          ]
+        }
+      },
+      {
+        "name": "Customer",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Customers"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        },
+        "dataGranularity": [
+          "logicalLevel:AtomicStar.Customer.Customer"
+        ]
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "Customer",
+      "logicalLevels": [
+        {
+          "name": "Customer",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 21,
+          "primaryColumns": [
+            "CustomerID"
+          ],
+          "displayColumn": "CustomerID"
+        },
+        {
+          "name": "Site",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 91,
+          "primaryColumns": [
+            "SiteID",
+            "CustomerID"
+          ],
+          "displayColumn": "SiteID"
+        }
+      ],
+      "logicalHierarchies": [ {
+          "name": "Customer",
+          "levels": [ "Customer", "Site" ]
+        }
+      ]
+    }
+  }
+}

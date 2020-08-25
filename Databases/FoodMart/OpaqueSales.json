@@ -3,9 +3,7 @@
     "name": "OpaqueSales",
     "sourceType": "SELECT",
     "extName": "select { [Measures].[Unit Sales], [Measures].[Store Cost] } on COLUMNS, { [Time].[Year].members } on ROWS from [Sales]",
-    "isCacheable": false,
     "caching": {
-      "enable": false
     },
     "memberReference": "Default",
     "isMemberAliasUnique": true,

@@ -1,0 +1,28 @@
+{
+  "subjectArea": {
+    "name": "Sales",
+    "sourceBusinessModel": "businessModel:Sales",
+    "tableOrder": [
+      {
+        "name": "presentationTable:Sales.SalesFacts"
+      },
+      {
+        "name": "presentationTable:Sales.Product"
+      },
+      {
+        "name": "presentationTable:Sales.Customer"
+      },
+      {
+        "name": "presentationTable:Sales.ShipmentTime"
+      },
+      {
+        "name": "presentationTable:Sales.Shipper"
+      },
+      {
+        "name": "presentationTable:Sales.Employee"
+      }
+    ],
+    "permissions": [
+    ]
+  }
+}

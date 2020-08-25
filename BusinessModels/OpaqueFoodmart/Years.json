@@ -1,0 +1,37 @@
+{
+  "logicalTable": {
+    "name": "Years",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "[Time].[Year]",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "OpaqueSales",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart.OpaqueSales.[Time].[Year]"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "OpaqueSales",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:FoodMart.OpaqueSales"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

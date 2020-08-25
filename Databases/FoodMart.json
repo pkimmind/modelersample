@@ -1,10 +1,8 @@
 {
   "database": {
     "name": "FoodMart",
-    "type": "AnalysisServices2005",
-    "databaseType": 41,
-    "features": [
-      {
+    "databaseType": "Analysis Services 2005",
+    "features": [ {
         "name": "DATE_LITERAL_SUPPORTED",
         "value": false
       },
@@ -32,38 +30,28 @@
         "maxConnections": 6,
         "connection": "http://slc10noq.us.oracle.com/olap16/msmdpump.dll",
         "type": "XMLA",
-        "requiresFullyQualifedTableNames": false,
         "isSharedLogin": true,
-        "multithreaded": false,
         "isCloseAfterEveryRequest": true,
         "outputType": "xml",
-        "ignoreFirstLine": false,
         "bulkInsertBufferSize": 0,
         "transactionBoundary": 0,
         "xmlaInfo": "SLC10NOQ\\MSSQLSERVER16",
-        "xmlaCatalog": "FoodMart 2000",
-        "xmlaUseSession": false,
-        "isSiebelJDBSecured": false
+        "xmlaCatalog": "FoodMart 2000"
       }
     ],
-    "joins": [
-      {
-        "join": "complex",
+    "joins": [ {
+        "type": "COMPLEX",
         "name": "Quarter_Sales",
-        "cardinality": "UNKNOWN",
-        "type": "Inner",
-        "leftTable": "FoodMart...Sales",
-        "rightTable": "SQLDB_Northwind.Northwind.dbo.Quarter",
+        "leftTable": "physicalTable:FoodMart.Sales",
+        "rightTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Quarter",
         "complexJoinCondition": {
-          "expression": {
-            "expressionTemplate": "%1 =  CAST (%2 AS INTEGER ) - 2 AND %3 = %4",
-            "expressionObjects": [
-              "physicalColumn:SQLDB_Northwind.Northwind.dbo.Quarter.YEAR_NUM",
-              "physicalCubeColumn:FoodMart...Sales.Year",
-              "physicalColumn:SQLDB_Northwind.Northwind.dbo.Quarter.QTR",
-              "physicalCubeColumn:FoodMart...Sales.Quarter"
-            ]
-          },
+          "expressionTemplate": "%1 =  CAST (%2 AS INTEGER ) - 2 AND %3 = %4",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Quarter.YEAR_NUM",
+            "physicalCubeColumn:FoodMart.Sales.Year",
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Quarter.QTR",
+            "physicalCubeColumn:FoodMart.Sales.Quarter"
+          ]
         }
       }
     ]

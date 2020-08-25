@@ -1,0 +1,105 @@
+{
+  "logicalTable": {
+    "name": "Year",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "Year",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Orders",
+              "physicalExpression": {
+                "expressionTemplate": " EXTRACT( YEAR  FROM %1)",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.OrderDate"
+                ]
+              }
+            },
+            {
+              "logicalTableSource": "Year",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Year.Year"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Revenue",
+        "dataType": "UNKNOWN",
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:AutoSnowflakeSales.SalesFacts.Revenue"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "PlanRevenue",
+        "dataType": "UNKNOWN",
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:AutoSnowflakeSales.SalesFacts.PlanRevenue"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "QtySold",
+        "dataType": "UNKNOWN",
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:AutoSnowflakeSales.SalesFacts.QtySold"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Orders",
+        "distinctValues": true,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.Orders"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        }
+      },
+      {
+        "name": "Year",
+        "description": "Required to handle the many-to-many physical join between the physical orders and salesplan tables.",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.Year"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "initBlock": {
+    "name": "Test OBI EE Server Init Block 2",
+    "type": "SESSION",
+    "isRowWiseInit": true,
+    "isDBIndependentSQL": true,
+    "refreshPeriod": 86400,
+    "selectStatements": [
+      {
+        "databaseType": "DEFAULT",
+        "query": "SELECT 'COUNTRY_SP', country from \"SQLDB_Northwind\".\"Northwind\".\"dbo\".\"Employees\" where region is null \nunion \nSELECT 'COUNTRY_SP', country from \"SQLDB_Northwind\".\"Northwind\".\"dbo\".\"Employees\" where region is not null"
+      }
+    ],
+    "variables": [ {
+        "name": "COUNTRY_SP"
+      }
+    ]
+  }
+}

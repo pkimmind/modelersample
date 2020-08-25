@@ -35,19 +35,13 @@
         "sourceLogicalTable": "Adventure Works DW.Product Line#1",
         "levels": [ {
             "name": "[Reseller].[Product Line].[(All)]",
-            "displayColumns": [ {
-                "name": "[Reseller].[Product Line].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Line#1.[Reseller].[Product Line].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Product Line#1.[Reseller].[Product Line].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Product Line#1.[Reseller].[Product Line].[(All)]"
           },
           {
             "name": "Product Line",
-            "displayColumns": [ {
-                "name": "Product Line#5",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Line#1.Product Line#5"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Product Line#1.Product Line#5",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Product Line#1.Product Line#5"
           }
         ]
       }

@@ -35,19 +35,13 @@
         "sourceLogicalTable": "Adventure Works DW.Ship Date.Fiscal Semester of Year",
         "levels": [ {
             "name": "[Ship Date].[Fiscal Semester of Year].[(All)]",
-            "displayColumns": [ {
-                "name": "[Ship Date].[Fiscal Semester of Year].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Fiscal Semester of Year.[Ship Date].[Fiscal Semester of Year].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Ship Date.Fiscal Semester of Year.[Ship Date].[Fiscal Semester of Year].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Ship Date.Fiscal Semester of Year.[Ship Date].[Fiscal Semester of Year].[(All)]"
           },
           {
             "name": "Fiscal Semester of Year",
-            "displayColumns": [ {
-                "name": "Fiscal Semester of Year#5",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Fiscal Semester of Year.Fiscal Semester of Year#5"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Ship Date.Fiscal Semester of Year.Fiscal Semester of Year#5",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Ship Date.Fiscal Semester of Year.Fiscal Semester of Year#5"
           }
         ]
       }

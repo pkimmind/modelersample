@@ -1,0 +1,260 @@
+{
+  "logicalTable": {
+    "name": "StockTicker",
+    "type": "FACT",
+    "logicalColumns": [ {
+        "name": "Ticker Key",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "stock",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:Stock Quotes.stock.Symbol"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Company Name",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "stock",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:Stock Quotes.stock.Company Name"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Symbol",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "stock",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:Stock Quotes.stock.Symbol"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Last - Base",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "stock",
+              "physicalExpression": {
+                "expressionTemplate": " CAST (%1 AS DOUBLE PRECISION )",
+                "expressionObjects": [
+                  "physicalColumn:Stock Quotes.stock.Last"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "BASED_ON_DIMENSION",
+          "dimensionBasedRules": [ {
+              "dimension": "OTHER",
+              "rule": "AVG"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Change - Base",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "stock",
+              "physicalExpression": {
+                "expressionTemplate": " CAST (%1 AS DOUBLE PRECISION )",
+                "expressionObjects": [
+                  "physicalColumn:Stock Quotes.stock.Change"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "BASED_ON_DIMENSION",
+          "dimensionBasedRules": [ {
+              "dimension": "OTHER",
+              "rule": "MAX"
+            }
+          ]
+        }
+      },
+      {
+        "name": "% Change - Base",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "stock",
+              "physicalExpression": {
+                "expressionTemplate": " CAST ( REPLACE(%1, '%', '') AS DOUBLE PRECISION )",
+                "expressionObjects": [
+                  "physicalColumn:Stock Quotes.stock.% Change"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "BASED_ON_DIMENSION",
+          "dimensionBasedRules": [ {
+              "dimension": "OTHER",
+              "rule": "MAX"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Volume - Base",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "stock",
+              "physicalExpression": {
+                "expressionTemplate": " CASE  POSITION('Mil' IN %1) WHEN 0 THEN  CAST (%1 AS DOUBLE PRECISION ) ELSE  CAST (%1 AS DOUBLE PRECISION ) * 1000000 END ",
+                "expressionObjects": [
+                  "physicalColumn:Stock Quotes.stock.Volume"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "BASED_ON_DIMENSION",
+          "dimensionBasedRules": [ {
+              "dimension": "OTHER",
+              "rule": "AVG"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Last",
+        "dataType": "UNKNOWN",
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:SnowflakeSales_subrequest.StockTicker.Last - Base"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "Change",
+        "dataType": "UNKNOWN",
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:SnowflakeSales_subrequest.StockTicker.Change - Base"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "% Change",
+        "dataType": "UNKNOWN",
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:SnowflakeSales_subrequest.StockTicker.% Change - Base"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "Volume",
+        "dataType": "UNKNOWN",
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:SnowflakeSales_subrequest.StockTicker.Volume - Base"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "stock",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:Stock Quotes.stock"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        }
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "Customer",
+      "logicalLevels": [
+        {
+          "name": "Customer",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 21,
+          "primaryColumns": [
+            "CustomerID"
+          ]
+        },
+        {
+          "name": "Site",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 91,
+          "primaryColumns": [
+            "SiteID",
+            "CustomerID"
+          ],
+          "displayColumn": "SiteID"
+        }
+      ],
+      "logicalHierarchies": [ {
+          "name": "Customer",
+          "levels": [ "Customer", "Site" ]
+        }
+      ]
+    }
+  }
+}

@@ -47,19 +47,13 @@
         "sourceLogicalTable": "Adventure Works DW.Category",
         "levels": [ {
             "name": "[Product].[Category].[(All)]",
-            "displayColumns": [ {
-                "name": "[Product].[Category].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Category.[Product].[Category].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Category.[Product].[Category].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Category.[Product].[Category].[(All)]"
           },
           {
             "name": "Category",
-            "displayColumns": [ {
-                "name": "Category",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Category.Category"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Category.Category",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Category.Category"
           }
         ]
       }

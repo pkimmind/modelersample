@@ -35,19 +35,13 @@
         "sourceLogicalTable": "Adventure Works DW.Emergency Contact Phone",
         "levels": [ {
             "name": "[Employee].[Emergency Contact Phone].[(All)]",
-            "displayColumns": [ {
-                "name": "[Employee].[Emergency Contact Phone].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Emergency Contact Phone.[Employee].[Emergency Contact Phone].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Emergency Contact Phone.[Employee].[Emergency Contact Phone].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Emergency Contact Phone.[Employee].[Emergency Contact Phone].[(All)]"
           },
           {
             "name": "Emergency Contact Phone",
-            "displayColumns": [ {
-                "name": "Emergency Contact Phone",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Emergency Contact Phone.Emergency Contact Phone"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Emergency Contact Phone.Emergency Contact Phone",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Emergency Contact Phone.Emergency Contact Phone"
           }
         ]
       }

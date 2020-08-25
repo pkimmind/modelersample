@@ -1,0 +1,114 @@
+{
+  "logicalTable": {
+    "name": "Time",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "Year",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart.Sales.Year"
+                ]
+              }
+            },
+            {
+              "logicalTableSource": "Budget",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart.Budget.Year"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Quarter",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart.Sales.Quarter"
+                ]
+              }
+            },
+            {
+              "logicalTableSource": "Budget",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart.Budget.Quarter"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Sales",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:FoodMart.Sales"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        }
+      },
+      {
+        "name": "Budget",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:FoodMart.Budget"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        }
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "Year",
+      "logicalLevels": [
+        {
+          "name": "Year",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "Year"
+          ],
+          "displayColumn": "Year"
+        },
+        {
+          "name": "Quarter",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "Year",
+            "Quarter"
+          ],
+          "displayColumn": "Year"
+        }
+      ],
+      "logicalHierarchies": [ {
+          "name": "Time",
+          "levels": [ "Year", "Quarter" ]
+        }
+      ]
+    }
+  }
+}

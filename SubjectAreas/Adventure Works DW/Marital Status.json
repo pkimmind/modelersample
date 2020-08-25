@@ -39,19 +39,13 @@
         "sourceLogicalTable": "Adventure Works DW.Marital Status",
         "levels": [ {
             "name": "[Customer].[Marital Status].[(All)]",
-            "displayColumns": [ {
-                "name": "[Customer].[Marital Status].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Marital Status.[Customer].[Marital Status].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Marital Status.[Customer].[Marital Status].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Marital Status.[Customer].[Marital Status].[(All)]"
           },
           {
             "name": "Marital Status",
-            "displayColumns": [ {
-                "name": "Marital Status#2",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Marital Status.Marital Status#2"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Marital Status.Marital Status#2",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Marital Status.Marital Status#2"
           }
         ]
       }

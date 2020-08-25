@@ -1,0 +1,20 @@
+{
+  "initBlock": {
+    "name": "deferredSecurityInitBlock",
+    "type": "SESSION",
+    "isDeferredExecution": true,
+    "refreshPeriod": 86400,
+    "connectionPool": "connectionPool:SQLDB_Northwind.Northwind Connections",
+    "selectStatements": [
+      {
+        "databaseType": "DEFAULT",
+        "query": "select '1' from employees"
+      }
+    ],
+    "variables": [ {
+        "name": "securitySensVar",
+        "securitySensitive": true
+      }
+    ]
+  }
+}

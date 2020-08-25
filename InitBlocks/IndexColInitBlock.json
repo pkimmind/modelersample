@@ -1,0 +1,21 @@
+{
+  "initBlock": {
+    "name": "IndexColInitBlock",
+    "type": "SESSION",
+    "refreshPeriod": 86400,
+    "connectionPool": "connectionPool:SQLDB_Northwind.Northwind Init Block Connections",
+    "selectStatements": [
+      {
+        "databaseType": "DEFAULT",
+        "query": "select employeeid from employees where \"Firstname\" = (case when ':USER' = 'administrator' then 'Nancy' else 'Andrew' end)"
+      }
+    ],
+    "variables": [ {
+        "name": "INDEXCOLINDEX",
+"Expr": {
+  "expressionTemplate": "1"
+}
+      }
+    ]
+  }
+}

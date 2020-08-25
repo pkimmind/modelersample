@@ -35,19 +35,13 @@
         "sourceLogicalTable": "Adventure Works DW.Sales Reason Type",
         "levels": [ {
             "name": "[Sales Reason].[Sales Reason Type].[(All)]",
-            "displayColumns": [ {
-                "name": "[Sales Reason].[Sales Reason Type].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Reason Type.[Sales Reason].[Sales Reason Type].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Sales Reason Type.[Sales Reason].[Sales Reason Type].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Sales Reason Type.[Sales Reason].[Sales Reason Type].[(All)]"
           },
           {
             "name": "Sales Reason Type",
-            "displayColumns": [ {
-                "name": "Sales Reason Type#1",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Reason Type.Sales Reason Type#1"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Sales Reason Type.Sales Reason Type#1",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Sales Reason Type.Sales Reason Type#1"
           }
         ]
       }

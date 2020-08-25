@@ -35,19 +35,13 @@
         "sourceLogicalTable": "Adventure Works DW.Date.Week of Year",
         "levels": [ {
             "name": "[Date].[Week of Year].[(All)]",
-            "displayColumns": [ {
-                "name": "[Date].[Week of Year].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Week of Year.[Date].[Week of Year].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Date.Week of Year.[Date].[Week of Year].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Date.Week of Year.[Date].[Week of Year].[(All)]"
           },
           {
             "name": "Week of Year",
-            "displayColumns": [ {
-                "name": "Week of Year#3",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Week of Year.Week of Year#3"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Date.Week of Year.Week of Year#3",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Date.Week of Year.Week of Year#3"
           }
         ]
       }

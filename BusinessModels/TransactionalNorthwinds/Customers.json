@@ -1,0 +1,119 @@
+{
+  "logicalTable": {
+    "name": "Customers",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "CustomerID",
+        "dataType": "CHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Customers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Customers.CustomerID"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "CompanyName",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Customers",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Customers.CompanyName"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Customers",
+        "canCombine": true,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.Customers"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        }
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "logicalLevels": [
+        {
+          "name": "Customers",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "CustomerID"
+          ],
+          "displayColumn": "CustomerID"
+        },
+        {
+          "name": "Sites",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "SiteID",
+            "CustomerID"
+          ],
+          "displayColumn": "SiteID"
+        },
+        {
+          "name": "Orders",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "OrderID"
+          ],
+          "displayColumn": "OrderID"
+        },
+        {
+          "name": "Employees",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "EmployeeID"
+          ],
+          "displayColumn": "EmployeeID"
+        },
+        {
+          "name": "Shippers",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "ShipperID"
+          ],
+          "displayColumn": "ShipperID"
+        }
+      ],
+      "logicalHierarchies": [ {
+          "name": "Orders Dimension",
+          "levels": [ "Customers", "Sites", "Orders" ]
+        },
+        {
+          "name": "Orders Dimension",
+          "levels": [ "Employees", "Orders" ]
+        },
+        {
+          "name": "Orders Dimension",
+          "levels": [ "Shippers", "Orders" ]
+        }
+      ]
+    }
+  }
+}

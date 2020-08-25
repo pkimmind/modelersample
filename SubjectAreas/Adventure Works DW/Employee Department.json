@@ -159,35 +159,23 @@
         "sourceLogicalTable": "Adventure Works DW.Employee Department",
         "levels": [ {
             "name": "[Employee].[Employee Department].[(All)]",
-            "displayColumns": [ {
-                "name": "[Employee].[Employee Department].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee Department.[Employee].[Employee Department].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Employee Department.[Employee].[Employee Department].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Employee Department.[Employee].[Employee Department].[(All)]"
           },
           {
             "name": "Department",
-            "displayColumns": [ {
-                "name": "Department",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee Department.Department"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Employee Department.Department",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Employee Department.Department"
           },
           {
             "name": "Title",
-            "displayColumns": [ {
-                "name": "Title#1",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee Department.Title#1"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Employee Department.Title#1",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Employee Department.Title#1"
           },
           {
             "name": "Employee",
-            "displayColumns": [ {
-                "name": "Employee#1",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employee Department.Employee#1"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Employee Department.Employee#1",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Employee Department.Employee#1"
           }
         ]
       }

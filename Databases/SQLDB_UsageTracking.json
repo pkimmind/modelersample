@@ -1,10 +1,8 @@
 {
   "database": {
     "name": "SQLDB_UsageTracking",
-    "type": "Oracle12c",
-    "databaseType": 78,
-    "features": [
-      {
+    "databaseType": "Oracle 12c",
+    "features": [ {
         "name": "LENGTH_SUPPORTED",
         "value": false
       },
@@ -54,18 +52,12 @@
         "maxConnections": 32,
         "connection": "biserver-dev.us.oracle.com:1521/orcl",
         "type": "OCI10G",
-        "requiresFullyQualifedTableNames": false,
         "isSharedLogin": true,
-        "multithreaded": false,
-        "isCloseAfterEveryRequest": false,
         "outputType": "xml",
-        "ignoreFirstLine": false,
         "bulkInsertBufferSize": 10485760,
         "tempTablePrefix": "TT",
         "transactionBoundary": 10,
-        "xmlaUseSession": false,
-        "supportParams": true,
-        "isSiebelJDBSecured": false
+        "supportParams": true
       }
     ]
   }

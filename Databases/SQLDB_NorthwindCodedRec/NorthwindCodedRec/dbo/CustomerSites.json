@@ -1,9 +1,8 @@
 {
   "physicalTableAlias": {
-    "sourceTable": "physicalTable:Companies",
+    "name": "CustomerSites",
+    "sourceTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Companies",
     "caching": {
-      "enable": false
-    },
-    "overrideSourceCacheSetting": false
+    }
   }
 }

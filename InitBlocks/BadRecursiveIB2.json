@@ -1,0 +1,19 @@
+{
+  "initBlock": {
+    "name": "BadRecursiveIB2",
+    "type": "SESSION",
+    "isDeferredExecution": true,
+    "refreshPeriod": 86400,
+    "connectionPool": "connectionPool:BadRecurisveDB.BadRecurisveVar1",
+    "selectStatements": [
+      {
+        "databaseType": "DEFAULT",
+        "query": "select 'valueof(NQ_SESSION.BADRECURSIVEVAR2)' from dual"
+      }
+    ],
+    "variables": [ {
+        "name": "BADRECURSIVEVAR2"
+      }
+    ]
+  }
+}

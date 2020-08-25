@@ -1,0 +1,24 @@
+{
+  "initBlock": {
+    "name": "CacheRwInit",
+    "type": "SESSION",
+    "isRowWiseInit": true,
+    "refreshPeriod": 86400,
+    "connectionPool": "connectionPool:SQLDB_Northwind.Northwind Init Block Connections",
+    "selectStatements": [
+      {
+        "databaseType": "DEFAULT",
+        "query": "select 'CacheRwVars', productName from products where productid < case when  upper('valueof(NQ_SESSION.USER)') = 'WEBLOGIC' then 3 else 4 end \n"
+      }
+    ],
+    "variables": [ {
+        "name": "CacheRwVars",
+        "enableUsersToSetValue": true,
+        "securitySensitive": true,
+"Expr": {
+  "expressionTemplate": "'-1'"
+}
+      }
+    ]
+  }
+}

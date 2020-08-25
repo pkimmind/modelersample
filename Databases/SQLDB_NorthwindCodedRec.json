@@ -1,10 +1,9 @@
 {
   "database": {
     "name": "SQLDB_NorthwindCodedRec",
-    "type": "Oracle10gR2",
-    "databaseType": 46,
-    "features": [
-      {
+    "databaseType": "Oracle 10g R2",
+    "persistConnectionPool": "connectionPool:SQLDB_NorthwindCodedRec.NorthwindCodedRec Connections",
+    "features": [ {
         "name": "LENGTH_SUPPORTED",
         "value": false
       },
@@ -50,18 +49,12 @@
         "maxConnections": 8,
         "connection": "biserver-dev.us.oracle.com:1521/orcl",
         "type": "OCI10G",
-        "requiresFullyQualifedTableNames": false,
         "isSharedLogin": true,
-        "multithreaded": false,
-        "isCloseAfterEveryRequest": false,
         "outputType": "xml",
-        "ignoreFirstLine": false,
         "bulkInsertBufferSize": 32768,
         "tempTablePrefix": "TT",
         "transactionBoundary": 10,
-        "xmlaUseSession": false,
-        "supportParams": true,
-        "isSiebelJDBSecured": false
+        "supportParams": true
       },
       {
         "name": "NorthwindCodedRec Init Block Connections",
@@ -72,54 +65,263 @@
         "maxConnections": 8,
         "connection": "biserver-dev.us.oracle.com:1521/orcl",
         "type": "OCI10G",
-        "requiresFullyQualifedTableNames": false,
         "isSharedLogin": true,
-        "multithreaded": false,
-        "isCloseAfterEveryRequest": false,
         "outputType": "xml",
-        "ignoreFirstLine": false,
         "bulkInsertBufferSize": 32768,
         "tempTablePrefix": "TT",
         "transactionBoundary": 10,
-        "xmlaUseSession": false,
-        "supportParams": true,
-        "isSiebelJDBSecured": false
+        "supportParams": true
       }
     ],
-    "joins": [
-      {
-        "join": "complex",
+    "joins": [ {
+        "type": "COMPLEX",
         "name": "CR_SalesPlanToCategories",
-        "cardinality": "UNKNOWN",
-        "type": "Inner",
-        "leftTable": "SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SalesPlan",
-        "rightTable": "SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Categories",
+        "leftTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SalesPlan",
+        "rightTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Categories",
         "complexJoinCondition": {
-          "expression": {
-            "expressionTemplate": "%1 = %2",
-            "expressionObjects": [
-              "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SalesPlan.CategoryID",
-              "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Categories.CategoryID"
-            ]
-          },
+          "expressionTemplate": "%1 = %2",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SalesPlan.CategoryID",
+            "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Categories.CategoryID"
+          ]
         }
       },
       {
-        "join": "complex",
+        "type": "COMPLEX",
         "name": "supplierid_commpanyid_complexjoin",
-        "cardinality": "UNKNOWN",
-        "type": "Inner",
-        "leftTable": "SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.sales_supplier_customer",
-        "rightTable": "SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies",
+        "leftTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.sales_supplier_customer",
+        "rightTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies",
         "complexJoinCondition": {
-          "expression": {
-            "expressionTemplate": " CAST (%1 AS CHARACTER ( 30 )) = %2",
-            "expressionObjects": [
-              "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.sales_supplier_customer.SupplierID",
-              "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies.CompanyID"
-            ]
-          },
+          "expressionTemplate": " CAST (%1 AS CHARACTER ( 30 )) = %2",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.sales_supplier_customer.SupplierID",
+            "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies.CompanyID"
+          ]
         }
+      },
+      {
+        "type": "SIMPLE",
+        "name": "Employees_FKey",
+        "leftTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees_Country",
+        "rightTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees_Country.Country",
+            "rightColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.Country"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "FK__OrderDeta__Order__25319086",
+        "leftTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Orders",
+        "rightTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.OrderDetails",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Orders.OrderID",
+            "rightColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.OrderDetails.OrderID"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "FK__OrderDeta__Produ__2625B4BF",
+        "leftTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Products",
+        "rightTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.OrderDetails",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Products.ProductID",
+            "rightColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.OrderDetails.ProductID"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "FK__Orders__Employee__1E8492F7",
+        "leftTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees",
+        "rightTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Orders",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.EmployeeID",
+            "rightColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Orders.EmployeeID"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "FK__Orders__ShipVia__1F78B730",
+        "leftTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Shippers",
+        "rightTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Orders",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Shippers.ShipperID",
+            "rightColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Orders.ShipVia"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "CustomerSite To Orders",
+        "leftTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.CustomerSites",
+        "rightTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Orders",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.CustomerSites.SiteID",
+            "rightColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Orders.SiteID"
+          },
+          {
+            "leftColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.CustomerSites.CompanyID",
+            "rightColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Orders.CustomerID"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "FK__Products__Catego__09897611",
+        "leftTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Categories",
+        "rightTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Products",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Categories.CategoryID",
+            "rightColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Products.CategoryID"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "Supplier Company To Product",
+        "leftTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies",
+        "rightTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Products",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SupplierCompanies.CompanyID",
+            "rightColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Products.SupplierID"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "Customer to CustomerSites",
+        "leftTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Customers",
+        "rightTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.CustomerSites",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Customers.CustomerID",
+            "rightColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.CustomerSites.CompanyID"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "FK_Customers",
+        "leftTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Customers",
+        "rightTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.sales_cust_AToH",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Customers.CustomerID",
+            "rightColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.sales_cust_AToH.CompanyID"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "FK_Customers",
+        "leftTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Customers",
+        "rightTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.sales_cust_HToT",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Customers.CustomerID",
+            "rightColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.sales_cust_HToT.CompanyID"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "FK_Customers",
+        "leftTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Customers",
+        "rightTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.sales_cust_TToZ",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Customers.CustomerID",
+            "rightColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.sales_cust_TToZ.CompanyID"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "FK_Employees",
+        "leftTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees",
+        "rightTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.sales_prod_emp",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees.EmployeeID",
+            "rightColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.sales_prod_emp.EmployeeID"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "FK_Products",
+        "leftTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Products",
+        "rightTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.sales_prod_emp",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Products.ProductID",
+            "rightColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.sales_prod_emp.ProductID"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "FK_Customers",
+        "leftTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Customers",
+        "rightTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.sales_supplier_customer",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Customers.CustomerID",
+            "rightColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.sales_supplier_customer.CustomerID"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "SalesPlan_FKey",
+        "leftTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees_Country",
+        "rightTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SalesPlan",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Employees_Country.Country",
+            "rightColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SalesPlan.Country"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "SalesPlan_FKey1",
+        "leftTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Year",
+        "rightTable": "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SalesPlan",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Year.Year",
+            "rightColumn": "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.SalesPlan.Year"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "Per to Facts",
+        "leftTable": "physicalTable:SQLDB_NorthwindCodedRec.Diaper.dbo.per",
+        "rightTable": "physicalTable:SQLDB_NorthwindCodedRec.Diaper.dbo.facts",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_NorthwindCodedRec.Diaper.dbo.per.PERKEY",
+            "rightColumn": "physicalColumn:SQLDB_NorthwindCodedRec.Diaper.dbo.facts.PERKEY"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "Prod to Facts",
+        "leftTable": "physicalTable:SQLDB_NorthwindCodedRec.Diaper.dbo.prod",
+        "rightTable": "physicalTable:SQLDB_NorthwindCodedRec.Diaper.dbo.facts",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_NorthwindCodedRec.Diaper.dbo.prod.PRODKEY",
+            "rightColumn": "physicalColumn:SQLDB_NorthwindCodedRec.Diaper.dbo.facts.PRODKEY"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "Geog to Facts",
+        "leftTable": "physicalTable:SQLDB_NorthwindCodedRec.Diaper.dbo.geog",
+        "rightTable": "physicalTable:SQLDB_NorthwindCodedRec.Diaper.dbo.facts",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_NorthwindCodedRec.Diaper.dbo.geog.GEOGKEY",
+            "rightColumn": "physicalColumn:SQLDB_NorthwindCodedRec.Diaper.dbo.facts.MKTKEY"
+          }
+        ]
       }
     ]
   }

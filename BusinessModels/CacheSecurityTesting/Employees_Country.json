@@ -1,0 +1,106 @@
+{
+  "logicalTable": {
+    "name": "Employees_Country",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "EmployeeCountry",
+        "dataType": "CHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Employees_Country",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees_Country.Country"
+                ]
+              }
+            },
+            {
+              "logicalTableSource": "Employees",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.Country"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Revenue",
+        "dataType": "UNKNOWN",
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:CacheSecurityTesting.Sales.Revenue"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Employees_Country",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.Employees_Country"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        }
+      },
+      {
+        "name": "Employees",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.Employees"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        }
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "All Employees",
+      "logicalLevels": [
+        {
+          "name": "All Employees",
+          "grandTotalLevel": true,
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1
+        },
+        {
+          "name": "Country",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 3,
+          "primaryColumns": [
+            "EmployeeCountry"
+          ]
+        },
+        {
+          "name": "Details",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 9,
+          "primaryColumns": [
+            "EmployeeID"
+          ]
+        }
+      ],
+      "logicalHierarchies": [ {
+          "name": "Employees",
+          "levels": [ "All Employees", "Country", "Details" ]
+        }
+      ]
+    }
+  }
+}

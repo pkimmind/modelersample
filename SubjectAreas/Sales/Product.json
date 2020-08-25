@@ -1,0 +1,152 @@
+{
+  "presentationTable": {
+    "name": "Product",
+    "presentationColumns": [ {
+        "name": "ProductName",
+        "sourceLogicalColumn": "logicalColumn:Sales.Product.ProductName"
+      },
+      {
+        "name": "ProductID",
+        "sourceLogicalColumn": "logicalColumn:Sales.Product.ProductID"
+      },
+      {
+        "name": "Description",
+        "sourceLogicalColumn": "logicalColumn:Sales.Product.Description"
+      },
+      {
+        "name": "CategoryID",
+        "sourceLogicalColumn": "logicalColumn:Sales.Product.CategoryID"
+      },
+      {
+        "name": "UnitPrice",
+        "sourceLogicalColumn": "logicalColumn:Sales.Product.UnitPrice"
+      },
+      {
+        "name": "Level",
+        "sourceLogicalColumn": "logicalColumn:Sales.Product.Level"
+      },
+      {
+        "name": "SupplierID",
+        "sourceLogicalColumn": "logicalColumn:Sales.Product.SupplierID"
+      },
+      {
+        "name": "CompanyName",
+        "sourceLogicalColumn": "logicalColumn:Sales.Product.CompanyName"
+      },
+      {
+        "name": "ContactTitle",
+        "sourceLogicalColumn": "logicalColumn:Sales.Product.ContactTitle"
+      },
+      {
+        "name": "Address",
+        "sourceLogicalColumn": "logicalColumn:Sales.Product.Address"
+      },
+      {
+        "name": "City",
+        "sourceLogicalColumn": "logicalColumn:Sales.Product.City"
+      },
+      {
+        "name": "Region",
+        "sourceLogicalColumn": "logicalColumn:Sales.Product.Region"
+      },
+      {
+        "name": "PostalCode",
+        "sourceLogicalColumn": "logicalColumn:Sales.Product.PostalCode"
+      },
+      {
+        "name": "Country",
+        "sourceLogicalColumn": "logicalColumn:Sales.Product.Country"
+      },
+      {
+        "name": "Phone",
+        "sourceLogicalColumn": "logicalColumn:Sales.Product.Phone"
+      },
+      {
+        "name": "Fax",
+        "sourceLogicalColumn": "logicalColumn:Sales.Product.Fax"
+      },
+      {
+        "name": "ContactName",
+        "sourceLogicalColumn": "logicalColumn:Sales.Product.ContactName"
+      },
+      {
+        "name": "CategoryName",
+        "sourceLogicalColumn": "logicalColumn:Sales.Product.CategoryName"
+      },
+      {
+        "name": "QuantityPerUnit",
+        "sourceLogicalColumn": "logicalColumn:Sales.Product.QuantityPerUnit"
+      },
+      {
+        "name": "UnitsInStock",
+        "sourceLogicalColumn": "logicalColumn:Sales.Product.UnitsInStock"
+      },
+      {
+        "name": "UnitsOnOrder",
+        "sourceLogicalColumn": "logicalColumn:Sales.Product.UnitsOnOrder"
+      },
+      {
+        "name": "ReorderLevel",
+        "sourceLogicalColumn": "logicalColumn:Sales.Product.ReorderLevel"
+      },
+      {
+        "name": "Discontinued",
+        "sourceLogicalColumn": "logicalColumn:Sales.Product.Discontinued"
+      }
+    ],
+    "hierarchies": [ {
+        "name": "Product - Category",
+        "sourceLogicalTable": "Sales.Product",
+        "levels": [ {
+            "name": "Category",
+            "displayColumn": "Sales.Product.CategoryID",
+            "sourceLogicalLevel": "logicalColumn:Sales.Product.CategoryID",
+            "displayColumn": "Sales.Product.CategoryName",
+            "sourceLogicalLevel": "logicalColumn:Sales.Product.CategoryName"
+          },
+          {
+            "name": "Product",
+            "displayColumn": "Sales.Product.ProductName",
+            "sourceLogicalLevel": "logicalColumn:Sales.Product.ProductName",
+            "displayColumn": "Sales.Product.ProductID",
+            "sourceLogicalLevel": "logicalColumn:Sales.Product.ProductID"
+          }
+        ]
+      },
+      {
+        "name": "Product - Country",
+        "sourceLogicalTable": "Sales.Product",
+        "levels": [ {
+            "name": "Country",
+            "displayColumn": "Sales.Product.Country",
+            "sourceLogicalLevel": "logicalColumn:Sales.Product.Country"
+          },
+          {
+            "name": "Region",
+            "displayColumn": "Sales.Product.Region",
+            "sourceLogicalLevel": "logicalColumn:Sales.Product.Region"
+          },
+          {
+            "name": "City",
+            "displayColumn": "Sales.Product.City",
+            "sourceLogicalLevel": "logicalColumn:Sales.Product.City"
+          },
+          {
+            "name": "Supplier",
+            "displayColumn": "Sales.Product.SupplierID",
+            "sourceLogicalLevel": "logicalColumn:Sales.Product.SupplierID",
+            "displayColumn": "Sales.Product.CompanyName",
+            "sourceLogicalLevel": "logicalColumn:Sales.Product.CompanyName"
+          },
+          {
+            "name": "Product",
+            "displayColumn": "Sales.Product.ProductName",
+            "sourceLogicalLevel": "logicalColumn:Sales.Product.ProductName",
+            "displayColumn": "Sales.Product.ProductID",
+            "sourceLogicalLevel": "logicalColumn:Sales.Product.ProductID"
+          }
+        ]
+      }
+    ]
+  }
+}

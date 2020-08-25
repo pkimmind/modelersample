@@ -1,0 +1,22 @@
+{
+  "initBlock": {
+    "name": "DUMMY INITBLOCK",
+    "type": "SESSION",
+    "refreshPeriod": 86400,
+    "connectionPool": "connectionPool:SQLDB_Northwind.Northwind Init Block Connections",
+    "selectStatements": [
+      {
+        "databaseType": "DEFAULT",
+        "query": "select 4 from dual"
+      }
+    ],
+    "variables": [ {
+        "name": "LOGLEVEL",
+        "enableUsersToSetValue": true,
+"Expr": {
+  "expressionTemplate": "4"
+}
+      }
+    ]
+  }
+}

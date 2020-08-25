@@ -35,19 +35,13 @@
         "sourceLogicalTable": "Adventure Works DW.Source Currency",
         "levels": [ {
             "name": "[Source Currency].[Source Currency].[(All)]",
-            "displayColumns": [ {
-                "name": "[Source Currency].[Source Currency].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Source Currency.[Source Currency].[Source Currency].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Source Currency.[Source Currency].[Source Currency].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Source Currency.[Source Currency].[Source Currency].[(All)]"
           },
           {
             "name": "Source Currency",
-            "displayColumns": [ {
-                "name": "Source Currency",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Source Currency.Source Currency"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Source Currency.Source Currency",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Source Currency.Source Currency"
           }
         ]
       }

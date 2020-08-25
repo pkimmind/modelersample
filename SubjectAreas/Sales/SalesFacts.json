@@ -1,0 +1,46 @@
+{
+  "presentationTable": {
+    "name": "SalesFacts",
+    "presentationColumns": [ {
+        "name": "ShipVia",
+        "sourceLogicalColumn": "logicalColumn:Sales.SalesFacts.ShipVia"
+      },
+      {
+        "name": "Week",
+        "sourceLogicalColumn": "logicalColumn:Sales.SalesFacts.Week"
+      },
+      {
+        "name": "EmployeeID",
+        "sourceLogicalColumn": "logicalColumn:Sales.SalesFacts.EmployeeID"
+      },
+      {
+        "name": "ProductID",
+        "sourceLogicalColumn": "logicalColumn:Sales.SalesFacts.ProductID"
+      },
+      {
+        "name": "CustomerID",
+        "sourceLogicalColumn": "logicalColumn:Sales.SalesFacts.CustomerID"
+      },
+      {
+        "name": "QtySold",
+        "sourceLogicalColumn": "logicalColumn:Sales.SalesFacts.QtySold"
+      },
+      {
+        "name": "Revenue",
+        "sourceLogicalColumn": "logicalColumn:Sales.SalesFacts.Revenue"
+      },
+      {
+        "name": "PlanRevenue",
+        "sourceLogicalColumn": "logicalColumn:Sales.SalesFacts.PlanRevenue"
+      },
+      {
+        "name": "SiteID",
+        "sourceLogicalColumn": "logicalColumn:Sales.SalesFacts.SiteID"
+      },
+      {
+        "name": "Year",
+        "sourceLogicalColumn": "logicalColumn:Sales.SalesFacts.Year"
+      }
+    ]
+  }
+}

@@ -220,67 +220,38 @@
     ],
     "hierarchies": [ {
         "name": "Accounts",
-        "localization": {
-          "localizationKey": "Accounts",
-          "nameVariable": "VALUEOF(NQ_SESSION.CN_Adventure_Works_DW_Accounts_Accounts)",
-          "descriptionVariable": "VALUEOF(NQ_SESSION.CD_Adventure_Works_DW_Accounts_Accounts)"
-        },
         "sourceLogicalTable": "Adventure Works DW.Accounts",
         "levels": [ {
             "name": "Account Level 01",
-            "displayColumns": [ {
-                "name": "Account Level 01",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Accounts.Account Level 01"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Accounts.Account Level 01",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Accounts.Account Level 01"
           },
           {
             "name": "Account Level 02",
-            "displayColumns": [ {
-                "name": "Account Level 02",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Accounts.Account Level 02"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Accounts.Account Level 02",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Accounts.Account Level 02"
           },
           {
             "name": "Account Level 03",
-            "displayColumns": [ {
-                "name": "Account Level 03",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Accounts.Account Level 03"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Accounts.Account Level 03",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Accounts.Account Level 03"
           },
           {
             "name": "Account Level 04",
-            "displayColumns": [ {
-                "name": "Account Level 04",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Accounts.Account Level 04"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Accounts.Account Level 04",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Accounts.Account Level 04"
           },
           {
             "name": "Account Level 05",
-            "displayColumns": [ {
-                "name": "Account Level 05",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Accounts.Account Level 05"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Accounts.Account Level 05",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Accounts.Account Level 05"
           },
           {
             "name": "Account Level 06",
-            "displayColumns": [ {
-                "name": "Account Level 06",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Accounts.Account Level 06"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Accounts.Account Level 06",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Accounts.Account Level 06"
           }
-        ],
-"VisibilityFilter": {
-  "expressionTemplate": "VALUEOF(NQ_SESSION.%1) ",
-  "expressionObjects": [
-    "variable:initb1.var1"
-  ]
-}
+        ]
       }
     ]
   }

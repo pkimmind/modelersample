@@ -1,9 +1,14 @@
 {
   "physicalTableAlias": {
-    "sourceTable": "physicalTable:Orders",
+    "name": "Cross Sell Orders",
+    "description": "My own alias",
+    "sourceTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Orders",
     "caching": {
-      "enable": true
+      "enable": true,
+      "expiryTime": 20,
+      "expiryUnit": "SECONDS"
     },
-    "overrideSourceCacheSetting": false
+    "dynamicName": "variable:initb2.var2",
+    "overrideSourceCacheSetting": true
   }
 }

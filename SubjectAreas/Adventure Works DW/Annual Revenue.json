@@ -35,19 +35,13 @@
         "sourceLogicalTable": "Adventure Works DW.Annual Revenue",
         "levels": [ {
             "name": "[Reseller].[Annual Revenue].[(All)]",
-            "displayColumns": [ {
-                "name": "[Reseller].[Annual Revenue].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Annual Revenue.[Reseller].[Annual Revenue].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Annual Revenue.[Reseller].[Annual Revenue].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Annual Revenue.[Reseller].[Annual Revenue].[(All)]"
           },
           {
             "name": "Annual Revenue",
-            "displayColumns": [ {
-                "name": "Annual Revenue",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Annual Revenue.Annual Revenue"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Annual Revenue.Annual Revenue",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Annual Revenue.Annual Revenue"
           }
         ]
       }

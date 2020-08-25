@@ -1,0 +1,229 @@
+{
+  "logicalTable": {
+    "name": "SalesPlan",
+    "type": "FACT",
+    "logicalColumns": [ {
+        "name": "Category ID",
+        "dataType": "SMALLINT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "SalesPlan",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.SalesPlan.CategoryID"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Country",
+        "dataType": "CHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "SalesPlan",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.SalesPlan.Country"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Year",
+        "dataType": "SMALLINT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "SalesPlan",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.SalesPlan.Year"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "PlanRevenue",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "SalesPlan",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.SalesPlan.Revenue"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "BASED_ON_DIMENSION",
+          "dimensionBasedRules": [ {
+              "dimension": "OTHER",
+              "rule": "SUM"
+            }
+          ]
+        }
+      },
+      {
+        "name": "yearly_PlanRevenue",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "SalesPlan",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind_Time.Northwind_Time.dbo.SalesPlan.Revenue"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "BASED_ON_DIMENSION",
+          "dimensionBasedRules": [ {
+              "dimension": "OTHER",
+              "rule": "SUM"
+            }
+          ]
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "SalesPlan",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind_Time.Northwind_Time.dbo.SalesPlan"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        },
+        "dataGranularity": [
+          "logicalLevel:SS- Time Series.Product.Category",
+          "logicalLevel:SS- Time Series.Employee.Country"
+        ]
+      }
+    ],
+    "hierarchyType": "TIME",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "Total Time",
+      "logicalLevels": [
+        {
+          "name": "Total Time",
+          "grandTotalLevel": true,
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1
+        },
+        {
+          "name": "Year",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 32,
+          "primaryColumns": [
+            "CAL_YEAR"
+          ],
+          "displayColumn": "CAL_YEAR"
+        },
+        {
+          "name": "Quarter",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 126,
+          "primaryColumns": [
+            "CAL_QTR",
+            "CAL_YEAR"
+          ],
+          "displayColumn": "CAL_QTR"
+        },
+        {
+          "name": "Month",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 372,
+          "primaryColumns": [
+            "CAL_YEAR",
+            "CAL_MONTH"
+          ],
+          "displayColumn": "CAL_YEAR",
+          "chronologicalKey": "CAL_YEAR"
+        },
+        {
+          "name": "Day",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 11458,
+          "primaryColumns": [
+            "ROW_WID"
+          ],
+          "displayColumn": "ROW_WID",
+          "chronologicalKey": "ROW_WID"
+        },
+        {
+          "name": "Week",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1635,
+          "primaryColumns": [
+            "CAL_WEEK",
+            "CAL_YEAR"
+          ],
+          "displayColumn": "CAL_WEEK"
+        },
+        {
+          "name": "Fiscal Year",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "FSCL_YEAR"
+          ],
+          "displayColumn": "FSCL_YEAR"
+        },
+        {
+          "name": "Fiscal Qtr",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "FSCL_QTR",
+            "FSCL_YEAR"
+          ],
+          "displayColumn": "FSCL_QTR"
+        },
+        {
+          "name": "Fiscal Month",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "FSCL_MONTH",
+            "FSCL_YEAR"
+          ],
+          "displayColumn": "FSCL_MONTH"
+        }
+      ],
+      "logicalHierarchies": [ {
+          "name": "Time",
+          "levels": [ "Total Time", "Year", "Quarter", "Month", "Day" ]
+        },
+        {
+          "name": "Time",
+          "levels": [ "Total Time", "Year", "Week", "Day" ]
+        },
+        {
+          "name": "Time",
+          "levels": [ "Total Time", "Fiscal Year", "Fiscal Qtr", "Fiscal Month", "Day" ]
+        }
+      ]
+    }
+  }
+}

@@ -1,10 +1,8 @@
 {
   "database": {
     "name": "SQLDB_Northwind",
-    "type": "Oracle10gR2",
-    "databaseType": 46,
-    "features": [
-      {
+    "databaseType": "Oracle 10g R2",
+    "features": [ {
         "name": "RAND_SUPPORTED",
         "value": false
       },
@@ -38,18 +36,12 @@
         "maxConnections": 100,
         "connection": "biserver-dev.us.oracle.com:1521/orcl",
         "type": "OCI10G",
-        "requiresFullyQualifedTableNames": false,
         "isSharedLogin": true,
-        "multithreaded": false,
-        "isCloseAfterEveryRequest": false,
         "outputType": "xml",
-        "ignoreFirstLine": false,
         "bulkInsertBufferSize": 32768,
         "tempTablePrefix": "TT",
         "transactionBoundary": 10,
-        "xmlaUseSession": false,
-        "supportParams": true,
-        "isSiebelJDBSecured": false
+        "supportParams": true
       },
       {
         "name": "Northwind Init Block Connections",
@@ -60,71 +52,320 @@
         "maxConnections": 100,
         "connection": "biserver-dev.us.oracle.com:1521/orcl",
         "type": "OCI10G",
-        "requiresFullyQualifedTableNames": false,
         "isSharedLogin": true,
-        "multithreaded": false,
-        "isCloseAfterEveryRequest": false,
         "outputType": "xml",
-        "ignoreFirstLine": false,
         "bulkInsertBufferSize": 32768,
         "tempTablePrefix": "TT",
         "transactionBoundary": 10,
-        "xmlaUseSession": false,
-        "supportParams": true,
-        "isSiebelJDBSecured": false
+        "supportParams": true
       }
     ],
-    "joins": [
-      {
-        "join": "complex",
+    "joins": [ {
+        "type": "COMPLEX",
         "name": "SalesPlanToCategories",
-        "cardinality": "UNKNOWN",
-        "type": "Inner",
-        "leftTable": "SQLDB_Northwind.Northwind.dbo.Categories",
-        "rightTable": "SQLDB_Northwind.Northwind.dbo.SalesPlan",
+        "leftTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Categories",
+        "rightTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.SalesPlan",
         "complexJoinCondition": {
-          "expression": {
-            "expressionTemplate": "%1 = %2",
-            "expressionObjects": [
-              "physicalColumn:SQLDB_Northwind.Northwind.dbo.SalesPlan.CategoryID",
-              "physicalColumn:SQLDB_Northwind.Northwind.dbo.Categories.CategoryID"
-            ]
-          },
+          "expressionTemplate": "%1 = %2",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.SalesPlan.CategoryID",
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Categories.CategoryID"
+          ]
         }
       },
       {
-        "join": "complex",
+        "type": "COMPLEX",
         "name": "Complex Join",
-        "cardinality": "UNKNOWN",
-        "type": "Inner",
-        "leftTable": "SQLDB_Northwind.Northwind.dbo.Year",
-        "rightTable": "SQLDB_Northwind.Northwind.dbo.Orders",
+        "leftTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Year",
+        "rightTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Orders",
         "complexJoinCondition": {
-          "expression": {
-            "expressionTemplate": "%1 =  EXTRACT( YEAR  FROM %2)",
-            "expressionObjects": [
-              "physicalColumn:SQLDB_Northwind.Northwind.dbo.Year.Year",
-              "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.OrderDate"
-            ]
-          },
+          "expressionTemplate": "%1 =  EXTRACT( YEAR  FROM %2)",
+          "expressionObjects": [
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Year.Year",
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.OrderDate"
+          ]
         }
       },
       {
-        "join": "complex",
+        "type": "COMPLEX",
         "name": "stock_Customers",
-        "cardinality": "UNKNOWN",
-        "type": "Inner",
-        "leftTable": "SQLDB_Northwind.Northwind.dbo.Customers",
-        "rightTable": "Stock Quotes...stock",
+        "leftTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Customers",
+        "rightTable": "physicalTable:Stock Quotes.stock",
         "complexJoinCondition": {
-          "expression": {
-            "expressionTemplate": "%1 =  IFNULL(%2, 'NULL')",
-            "expressionObjects": [
-              "physicalColumn:Stock Quotes...stock.Symbol",
-              "physicalColumn:SQLDB_Northwind.Northwind.dbo.Customers.Ticker"
-            ]
-          },
+          "expressionTemplate": "%1 =  IFNULL(%2, 'NULL')",
+          "expressionObjects": [
+            "physicalColumn:Stock Quotes.stock.Symbol",
+            "physicalColumn:SQLDB_Northwind.Northwind.dbo.Customers.Ticker"
+          ]
         }
+      },
+      {
+        "type": "SIMPLE",
+        "name": "Employees_FKey",
+        "leftTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Employees_Country",
+        "rightTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Employees",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees_Country.Country",
+            "rightColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.Country"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "FK__OrderDeta__Order__1EC48A19",
+        "leftTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Orders",
+        "rightTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.OrderDetails",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.OrderID",
+            "rightColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.OrderDetails.OrderID"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "FK__OrderDeta__Produ__1FB8AE52",
+        "leftTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Products",
+        "rightTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.OrderDetails",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.ProductID",
+            "rightColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.OrderDetails.ProductID"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "FK__Orders__Employee__23494814",
+        "leftTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Employees",
+        "rightTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Orders",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.EmployeeID",
+            "rightColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.EmployeeID"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "FK__Orders__ShipVia__243D6C4D",
+        "leftTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Shippers",
+        "rightTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Orders",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Shippers.ShipperID",
+            "rightColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.ShipVia"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "fk",
+        "leftTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Sites",
+        "rightTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Orders",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Sites.SiteID",
+            "rightColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.SiteID"
+          },
+          {
+            "leftColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Sites.CustomerID",
+            "rightColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.CustomerID"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "Orders_FKey",
+        "leftTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Cross Sell Orders",
+        "rightTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Orders",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Cross Sell Orders.OrderID",
+            "rightColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.OrderID"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "FK__Products__Catego__0A7D9A4A",
+        "leftTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Categories",
+        "rightTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Products",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Categories.CategoryID",
+            "rightColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.CategoryID"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "FK__Products__Suppli__09897611",
+        "leftTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Suppliers",
+        "rightTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Products",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Suppliers.SupplierID",
+            "rightColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.SupplierID"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "FK__sales_cus__Custo__369C13AA",
+        "leftTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Customers",
+        "rightTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.sales_cust_AToH",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Customers.CustomerID",
+            "rightColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_cust_AToH.CustomerID"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "FK__sales_cus__Custo__3D491139",
+        "leftTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Customers",
+        "rightTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.sales_cust_HToT",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Customers.CustomerID",
+            "rightColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_cust_HToT.CustomerID"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "FK__sales_cus__Custo__43F60EC8",
+        "leftTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Customers",
+        "rightTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.sales_cust_TToZ",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Customers.CustomerID",
+            "rightColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_cust_TToZ.CustomerID"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "FK__sales_pro__Emplo__2942188C",
+        "leftTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Employees",
+        "rightTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.sales_prod_emp",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees.EmployeeID",
+            "rightColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_prod_emp.EmployeeID"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "FK__sales_pro__Produ__284DF453",
+        "leftTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Products",
+        "rightTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.sales_prod_emp",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Products.ProductID",
+            "rightColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_prod_emp.ProductID"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "FK__sales_sup__Custo__31D75E8D",
+        "leftTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Customers",
+        "rightTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.sales_supplier_customer",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Customers.CustomerID",
+            "rightColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_supplier_customer.CustomerID"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "FK__sales_sup__Suppl__30E33A54",
+        "leftTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Suppliers",
+        "rightTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.sales_supplier_customer",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Suppliers.SupplierID",
+            "rightColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.sales_supplier_customer.SupplierID"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "SalesPlan_FKey",
+        "leftTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Year",
+        "rightTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.SalesPlan",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Year.Year",
+            "rightColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.SalesPlan.Year"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "SalesPlan_FKey1",
+        "leftTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Employees_Country",
+        "rightTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.SalesPlan",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees_Country.Country",
+            "rightColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.SalesPlan.Country"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "FK__Sites__CustomerI__1C9C4A85",
+        "leftTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Customers",
+        "rightTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Sites",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Customers.CustomerID",
+            "rightColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Sites.CustomerID"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "Cross Sell OrderDetails_FKey",
+        "leftTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Cross Sell Orders",
+        "rightTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Cross Sell OrderDetails",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Cross Sell Orders.OrderID",
+            "rightColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Cross Sell OrderDetails.OrderID"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "Cross Sell OrderDetails_FKey1",
+        "leftTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Cross Sell Products",
+        "rightTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Cross Sell OrderDetails",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Cross Sell Products.ProductID",
+            "rightColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Cross Sell OrderDetails.ProductID"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "Cross Sell Products_FKey",
+        "leftTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Cross Sell Categories",
+        "rightTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Cross Sell Products",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Cross Sell Categories.CategoryID",
+            "rightColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Cross Sell Products.CategoryID"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "Quarter_FKey",
+        "leftTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Year",
+        "rightTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Quarter",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Year.Year",
+            "rightColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Quarter.YEAR_NUM"
+          }
+        ]
+      },
+      {
+        "type": "SIMPLE",
+        "name": "Employees_Dynamic_FKey",
+        "leftTable": "physicalTable:CacheSecurityTesting.Employees",
+        "rightTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Employees_Dynamic_Non_VPD",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:CacheSecurityTesting.Employees.EmployeeID",
+            "rightColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees_Dynamic_Non_VPD.employeeidVariable"
+          }
+        ]
       }
     ]
   }

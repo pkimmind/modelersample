@@ -1,0 +1,144 @@
+{
+  "logicalTable": {
+    "name": "Cross Sell Product",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "ProductID",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Cross Sell Products",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Cross Sell Products.ProductID"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "ProductName",
+        "dataType": "CHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Cross Sell Products",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Cross Sell Products.ProductName"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "UnitPrice",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Cross Sell Products",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Cross Sell Products.UnitPrice"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "UnitsInStock",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Cross Sell Products",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Cross Sell Products.UnitsInStock"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "CategoryName",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Cross Sell Products",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Cross Sell Categories.CategoryName"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Cross Sell Products",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.Cross Sell Products",
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.Cross Sell Categories"
+          ],
+          "logicalTableSourceJoins": [
+            {
+              "leftTable": "SQLDB_Northwind.Northwind.dbo.Cross Sell Categories",
+              "rightTable": "SQLDB_Northwind.Northwind.dbo.Cross Sell Products",
+              "joinType": "Inner",
+              "cardinality": " ONE TO MANY",
+              "physicalJoinRef": "SQLDB_Northwind.Northwind.dbo.Cross Sell Products.Cross Sell Products_FKey"
+            },
+            {
+              "leftTable": "SQLDB_Northwind.Northwind.dbo.Cross Sell Products",
+              "rightTable": "SQLDB_Northwind.Northwind.dbo.Cross Sell Categories",
+              "joinType": "Inner",
+              "cardinality": "MANY TO ONE",
+              "physicalJoinRef": "SQLDB_Northwind.Northwind.dbo.Cross Sell Products.Cross Sell Products_FKey"
+            }
+          ]
+        }
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "All Cross Sell Products",
+      "logicalLevels": [
+        {
+          "name": "All Cross Sell Products",
+          "grandTotalLevel": true,
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1
+        },
+        {
+          "name": "Product",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "ProductID"
+          ],
+          "displayColumn": "ProductID"
+        }
+      ],
+      "logicalHierarchies": [ {
+          "name": "Cross Sell",
+          "levels": [ "All Cross Sell Products", "Product" ]
+        }
+      ]
+    }
+  }
+}

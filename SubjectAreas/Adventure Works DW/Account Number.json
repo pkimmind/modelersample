@@ -1,16 +1,6 @@
 {
   "presentationTable": {
     "name": "Account Number",
-    "localization": {
-      "localizationKey": "Account Number",
-      "nameVariable": "VALUEOF(NQ_SESSION.CN_Adventure_Works_DW_Account_Number)",
-      "descriptionVariable": "VALUEOF(NQ_SESSION.CD_Adventure_Works_DW_Account_Number)"
-    },
-    "description": "My general description",
-    "alternateNames": [
-      "My PT alias1",
-      "My PT alias2"
-    ],
     "presentationColumns": [ {
         "name": "[Account].[Account Number].[(All)]",
         "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account Number.[Account].[Account Number].[(All)]"
@@ -21,23 +11,7 @@
       },
       {
         "name": "KEY0#2",
-        "localization": {
-          "localizationKey": "KEY0#2",
-          "nameVariable": "VALUEOF(NQ_SESSION.CN_Adventure_Works_DW_Account_Number_KEY0#2)",
-          "descriptionVariable": "VALUEOF(NQ_SESSION.CD_Adventure_Works_DW_Account_Number_KEY0#2)"
-        },
-        "useLogicalName": false,
-        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account Number.KEY0#2",
-        "description": "My General Column Description",
-        "alternateNames": [
-          "My Alias1"
-        ],
-        "hideIfTrue": {
-          "expressionTemplate": "VALUEOF(Dynamic Region) ",
-          "expressionObjects": [
-            "variable:Test Dynamic Repository Variables.Dynamic Region"
-          ]
-        }
+        "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account Number.KEY0#2"
       },
       {
         "name": "KEY0#3",
@@ -61,28 +35,16 @@
         "sourceLogicalTable": "Adventure Works DW.Account Number",
         "levels": [ {
             "name": "[Account].[Account Number].[(All)]",
-            "displayColumns": [ {
-                "name": "[Account].[Account Number].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account Number.[Account].[Account Number].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Account Number.[Account].[Account Number].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Account Number.[Account].[Account Number].[(All)]"
           },
           {
             "name": "Account Number",
-            "displayColumns": [ {
-                "name": "Account Number#1",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account Number.Account Number#1"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Account Number.Account Number#1",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Account Number.Account Number#1"
           }
         ]
       }
-    ],
-    "hideIfTrue": {
-      "expressionTemplate": "VALUEOF(Dynamic Region) ",
-      "expressionObjects": [
-        "variable:Test Dynamic Repository Variables.Dynamic Region"
-      ]
-    }
+    ]
   }
 }

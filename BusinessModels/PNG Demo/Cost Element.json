@@ -1,0 +1,83 @@
+{
+  "logicalTable": {
+    "name": "Cost Element",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "Cost Element Level 00",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "$0CCA_C11",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:PNG Demo.$0CCA_C11.Cost Element Level 00"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Cost Element Level 01",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "$0CCA_C11",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:PNG Demo.$0CCA_C11.Cost Element Level 01"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "$0CCA_C11",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:PNG Demo.$0CCA_C11"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        }
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "Level 00",
+      "logicalLevels": [
+        {
+          "name": "Level 00",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "Cost Element Level 00"
+          ],
+          "displayColumn": "Cost Element Level 00"
+        },
+        {
+          "name": "Level 01",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "Cost Element Level 01"
+          ],
+          "displayColumn": "Cost Element Level 01"
+        }
+      ],
+      "logicalHierarchies": [ {
+          "name": "Cost Element",
+          "levels": [ "Level 00", "Level 01" ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "physicalTable": {
+    "name": "MyT1",
+    "sourceType": "TABLE",
+    "isCacheEventTable": true,
+    "caching": {
+    },
+    "eventPollingFrequency": "600",
+    "physicalColumns": [ {
+        "name": "CATALOG_NAME",
+        "dataType": "VARCHAR",
+        "length": 10,
+        "nullable": true
+      },
+      {
+        "name": "CATALOG_NAME#1",
+        "dataType": "VARCHAR",
+        "length": 120
+      },
+      {
+        "name": "DATABASE_NAME",
+        "dataType": "VARCHAR",
+        "length": 120
+      },
+      {
+        "name": "OTHER_RESERVED",
+        "dataType": "VARCHAR",
+        "length": 120
+      },
+      {
+        "name": "SCHEMA_NAME",
+        "dataType": "VARCHAR",
+        "length": 120
+      },
+      {
+        "name": "TABLE_NAME",
+        "dataType": "VARCHAR",
+        "length": 120,
+        "nullable": true
+      },
+      {
+        "name": "UPDATE_TS",
+        "dataType": "DATETIME",
+        "length": 120,
+        "nullable": true
+      },
+      {
+        "name": "UPDATE_TYPE",
+        "dataType": "DOUBLE",
+        "length": 10,
+        "nullable": true
+      }
+    ]
+  }
+}

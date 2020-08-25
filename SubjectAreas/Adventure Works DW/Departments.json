@@ -47,19 +47,13 @@
         "sourceLogicalTable": "Adventure Works DW.Departments",
         "levels": [ {
             "name": "Department Level 01",
-            "displayColumns": [ {
-                "name": "Department Level 01",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Departments.Department Level 01"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Departments.Department Level 01",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Departments.Department Level 01"
           },
           {
             "name": "Department Level 02",
-            "displayColumns": [ {
-                "name": "Department Level 02",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Departments.Department Level 02"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Departments.Department Level 02",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Departments.Department Level 02"
           }
         ]
       }

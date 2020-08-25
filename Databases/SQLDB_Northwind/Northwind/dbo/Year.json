@@ -29,11 +29,11 @@
       },
       {
         "databaseType": "TeradataV2R5",
-        "query": "select distinct extract(year from OrderDate) as year from Orders"
+        "query": "select distinct extract(year from OrderDate) as \"year\" from Orders"
       },
       {
         "databaseType": "TeradataV2R4",
-        "query": "select distinct extract(year from OrderDate) as year from Orders"
+        "query": "select distinct extract(year from OrderDate) as \"year\" from Orders"
       },
       {
         "databaseType": "TimesTen",

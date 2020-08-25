@@ -35,19 +35,13 @@
         "sourceLogicalTable": "Adventure Works DW.Business Type",
         "levels": [ {
             "name": "[Reseller].[Business Type].[(All)]",
-            "displayColumns": [ {
-                "name": "[Reseller].[Business Type].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Business Type.[Reseller].[Business Type].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Business Type.[Reseller].[Business Type].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Business Type.[Reseller].[Business Type].[(All)]"
           },
           {
             "name": "Business Type",
-            "displayColumns": [ {
-                "name": "Business Type",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Business Type.Business Type"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Business Type.Business Type",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Business Type.Business Type"
           }
         ]
       }

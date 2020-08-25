@@ -1,0 +1,164 @@
+{
+  "logicalTable": {
+    "name": "ShipmentTime",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "Week",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "ShipmentTimeSource",
+              "physicalExpression": {
+                "expressionTemplate": " EXTRACT( WEEK_OF_YEAR  FROM %1)",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Orders.OrderDate"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Qtr",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "ShipmentTimeSource",
+              "physicalExpression": {
+                "expressionTemplate": " EXTRACT( QUARTER_OF_YEAR  FROM %1)",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Orders.OrderDate"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Year",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "ShipmentTimeSource",
+              "physicalExpression": {
+                "expressionTemplate": " EXTRACT( YEAR  FROM %1)",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Orders.OrderDate"
+                ]
+              }
+            },
+            {
+              "logicalTableSource": "Year",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Year.Year"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "ShipmentTimeSource",
+        "distinctValues": true,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Orders"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        }
+      },
+      {
+        "name": "Year",
+        "description": "Required to handle the many-to-many physical join between the physical orders and salesplan tables.",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_NorthwindCodedRec.NorthwindCodedRec.dbo.Year"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        },
+        "dataGranularity": [
+          "logicalLevel:AtomicStar.Time.Year"
+        ]
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "Year",
+      "logicalLevels": [
+        {
+          "name": "Year",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "Year"
+          ],
+          "displayColumn": "Year"
+        },
+        {
+          "name": "Qtr",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "Qtr",
+            "Year"
+          ],
+          "displayColumn": "Qtr"
+        },
+        {
+          "name": "Week",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "Week",
+            "Year"
+          ],
+          "displayColumn": "Week"
+        },
+        {
+          "name": "Week#1",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1
+        },
+        {
+          "name": "Qtr#1",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "Qtr",
+            "Year"
+          ],
+          "displayColumn": "Qtr"
+        }
+      ],
+      "logicalHierarchies": [ {
+          "name": "Time",
+          "levels": [ "Year", "Qtr", "Week" ]
+        },
+        {
+          "name": "Time",
+          "levels": [ "Year", "Qtr", "Week#1" ]
+        },
+        {
+          "name": "Time",
+          "levels": [ "Qtr#1", "Week#1" ]
+        },
+        {
+          "name": "Time",
+          "levels": [ "Qtr#1", "Week" ]
+        }
+      ]
+    }
+  }
+}

@@ -35,19 +35,13 @@
         "sourceLogicalTable": "Adventure Works DW.Reorder Point",
         "levels": [ {
             "name": "[Product].[Reorder Point].[(All)]",
-            "displayColumns": [ {
-                "name": "[Product].[Reorder Point].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reorder Point.[Product].[Reorder Point].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Reorder Point.[Product].[Reorder Point].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Reorder Point.[Product].[Reorder Point].[(All)]"
           },
           {
             "name": "Reorder Point",
-            "displayColumns": [ {
-                "name": "Reorder Point#2",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reorder Point.Reorder Point#2"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Reorder Point.Reorder Point#2",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Reorder Point.Reorder Point#2"
           }
         ]
       }

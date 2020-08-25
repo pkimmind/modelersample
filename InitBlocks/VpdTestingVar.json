@@ -1,0 +1,23 @@
+{
+  "initBlock": {
+    "name": "VpdTestingVar",
+    "type": "SESSION",
+    "refreshPeriod": 86400,
+    "connectionPool": "connectionPool:SQLDB_Northwind.Northwind Init Block Connections",
+    "selectStatements": [
+      {
+        "databaseType": "DEFAULT",
+        "query": "select 'FALSE' from dual"
+      }
+    ],
+    "variables": [ {
+        "name": "VPDTESTING",
+        "enableUsersToSetValue": true,
+        "securitySensitive": true,
+"Expr": {
+  "expressionTemplate": "'FALSE'"
+}
+      }
+    ]
+  }
+}

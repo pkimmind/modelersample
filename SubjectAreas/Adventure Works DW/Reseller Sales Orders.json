@@ -71,27 +71,18 @@
         "sourceLogicalTable": "Adventure Works DW.Reseller Sales Orders",
         "levels": [ {
             "name": "[Reseller Sales Order Details].[Reseller Sales Orders].[(All)]",
-            "displayColumns": [ {
-                "name": "[Reseller Sales Order Details].[Reseller Sales Orders].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Sales Orders.[Reseller Sales Order Details].[Reseller Sales Orders].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Reseller Sales Orders.[Reseller Sales Order Details].[Reseller Sales Orders].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Reseller Sales Orders.[Reseller Sales Order Details].[Reseller Sales Orders].[(All)]"
           },
           {
             "name": "Order Number",
-            "displayColumns": [ {
-                "name": "Order Number#1",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Sales Orders.Order Number#1"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Reseller Sales Orders.Order Number#1",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Reseller Sales Orders.Order Number#1"
           },
           {
             "name": "Order Line",
-            "displayColumns": [ {
-                "name": "Order Line#1",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller Sales Orders.Order Line#1"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Reseller Sales Orders.Order Line#1",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Reseller Sales Orders.Order Line#1"
           }
         ]
       }

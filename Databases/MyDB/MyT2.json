@@ -1,0 +1,53 @@
+{
+  "physicalTable": {
+    "name": "MyT2",
+    "sourceType": "TABLE",
+    "caching": {
+    },
+    "physicalColumns": [ {
+        "name": "CATALOG",
+        "dataType": "VARCHAR",
+        "length": 10,
+        "nullable": true
+      },
+      {
+        "name": "CATALOG_NAME",
+        "dataType": "VARCHAR",
+        "length": 120
+      },
+      {
+        "name": "DATABASE_NAME",
+        "dataType": "VARCHAR",
+        "length": 120
+      },
+      {
+        "name": "OTHER_RESERVED",
+        "dataType": "VARCHAR",
+        "length": 120
+      },
+      {
+        "name": "SCHEMA_NAME",
+        "dataType": "VARCHAR",
+        "length": 120
+      },
+      {
+        "name": "TABLE_NAME",
+        "dataType": "VARCHAR",
+        "length": 120,
+        "nullable": true
+      },
+      {
+        "name": "UPDATE_TS",
+        "dataType": "DATETIME",
+        "length": 120,
+        "nullable": true
+      },
+      {
+        "name": "UPDATE_TYPE",
+        "dataType": "DOUBLE",
+        "length": 10,
+        "nullable": true
+      }
+    ]
+  }
+}

@@ -3,9 +3,7 @@
     "name": "OpaqueCubeTable",
     "sourceType": "SELECT",
     "extName": "select {[Measures].[0AMOUNT]} on columns, { [0COSTCENTER].members } on rows, { [0FISCPER].members } on pages from [$0CCA_C11]",
-    "isCacheable": false,
     "caching": {
-      "enable": false
     },
     "memberReference": "Default",
     "isMemberAliasUnique": true,

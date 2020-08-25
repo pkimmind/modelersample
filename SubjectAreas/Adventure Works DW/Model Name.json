@@ -43,19 +43,13 @@
         "sourceLogicalTable": "Adventure Works DW.Model Name",
         "levels": [ {
             "name": "[Product].[Model Name].[(All)]",
-            "displayColumns": [ {
-                "name": "[Product].[Model Name].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Model Name.[Product].[Model Name].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Model Name.[Product].[Model Name].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Model Name.[Product].[Model Name].[(All)]"
           },
           {
             "name": "Model Name",
-            "displayColumns": [ {
-                "name": "Model Name",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Model Name.Model Name"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Model Name.Model Name",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Model Name.Model Name"
           }
         ]
       }

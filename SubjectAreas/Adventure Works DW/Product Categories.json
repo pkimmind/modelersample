@@ -175,35 +175,23 @@
         "sourceLogicalTable": "Adventure Works DW.Product Categories",
         "levels": [ {
             "name": "[Product].[Product Categories].[(All)]",
-            "displayColumns": [ {
-                "name": "[Product].[Product Categories].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Categories.[Product].[Product Categories].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Product Categories.[Product].[Product Categories].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Product Categories.[Product].[Product Categories].[(All)]"
           },
           {
             "name": "Category",
-            "displayColumns": [ {
-                "name": "Category#2",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Categories.Category#2"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Product Categories.Category#2",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Product Categories.Category#2"
           },
           {
             "name": "Subcategory",
-            "displayColumns": [ {
-                "name": "Subcategory#3",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Categories.Subcategory#3"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Product Categories.Subcategory#3",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Product Categories.Subcategory#3"
           },
           {
             "name": "Product",
-            "displayColumns": [ {
-                "name": "Product#1",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Categories.Product#1"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Product Categories.Product#1",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Product Categories.Product#1"
           }
         ]
       }

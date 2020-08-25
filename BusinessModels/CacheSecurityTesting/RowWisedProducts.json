@@ -1,0 +1,37 @@
+{
+  "logicalTable": {
+    "name": "RowWisedProducts",
+    "type": "LOOKUP",
+    "logicalColumns": [ {
+        "name": "ProductName",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "RowWisedProducts",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:CacheSecurityTesting.RowWisedProducts.ProductName"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "RowWisedProducts",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:CacheSecurityTesting.RowWisedProducts"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

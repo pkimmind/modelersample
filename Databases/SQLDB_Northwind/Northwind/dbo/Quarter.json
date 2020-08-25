@@ -37,7 +37,7 @@
       },
       {
         "databaseType": "TeradataV2R4",
-        "query": "select distinct \n	extract(year from OrderDate) as YEAR_NUM,\n	case \n	   when extract(month from OrderDate) <= 3 then 1\n	   when extract(month from OrderDate) <= 6 then 2\n	   when extract(month from OrderDate) <= 9 then 3             \n	   else 4 end as QTR_NUM,\n	'Q' || cast(QTR_NUM as character(1)) as QTR\nfrom Orders"
+        "query": "select distinct \n\textract(year from OrderDate) as YEAR_NUM,\n\tcase \n\t   when extract(month from OrderDate) <= 3 then 1\n\t   when extract(month from OrderDate) <= 6 then 2\n\t   when extract(month from OrderDate) <= 9 then 3             \n\t   else 4 end as QTR_NUM,\n\t'Q' || cast(QTR_NUM as character(1)) as QTR\nfrom Orders"
       },
       {
         "databaseType": "TimesTen",

@@ -39,19 +39,13 @@
         "sourceLogicalTable": "Adventure Works DW.Delivery Date.Calendar Year",
         "levels": [ {
             "name": "[Delivery Date].[Calendar Year].[(All)]",
-            "displayColumns": [ {
-                "name": "[Delivery Date].[Calendar Year].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Year.[Delivery Date].[Calendar Year].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Delivery Date.Calendar Year.[Delivery Date].[Calendar Year].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Year.[Delivery Date].[Calendar Year].[(All)]"
           },
           {
             "name": "Calendar Year",
-            "displayColumns": [ {
-                "name": "Calendar Year#5",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Year.Calendar Year#5"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Delivery Date.Calendar Year.Calendar Year#5",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Delivery Date.Calendar Year.Calendar Year#5"
           }
         ]
       }

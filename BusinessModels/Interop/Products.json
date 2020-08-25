@@ -1,0 +1,100 @@
+{
+  "logicalTable": {
+    "name": "Products",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "Family",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "$INTOP_C02",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:INFOCUBE.INTOP_C02.Family"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "sku",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "$INTOP_C02",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:INFOCUBE.INTOP_C02.sku"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Ounces",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "$INTOP_C02",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:INFOCUBE.INTOP_C02.OUNCES"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "$INTOP_C02",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:INFOCUBE.INTOP_C02"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        }
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "Family",
+      "logicalLevels": [
+        {
+          "name": "Family",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 4,
+          "primaryColumns": [
+            "Family"
+          ],
+          "displayColumn": "Family"
+        },
+        {
+          "name": "Sku",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 13,
+          "primaryColumns": [
+            "sku"
+          ],
+          "displayColumn": "sku"
+        }
+      ],
+      "logicalHierarchies": [ {
+          "name": "Products",
+          "levels": [ "Family", "Sku" ]
+        }
+      ]
+    }
+  }
+}

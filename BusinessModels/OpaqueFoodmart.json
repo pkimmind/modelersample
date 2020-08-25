@@ -1,0 +1,48 @@
+{
+  "businessModel": {
+    "name": "OpaqueFoodmart",
+    "joins": [      {
+        "name": "Logical Join",
+        "leftTable": "logicalTable:OpaqueFoodmart.Years",
+        "rightTable": "logicalTable:OpaqueFoodmart.Years",
+        "type": "INNER",
+        "cardinality": "MANY"
+      },
+      {
+        "name": "Relationship_2004:309331593108009",
+        "leftTable": "logicalTable:OpaqueFoodmart.Customer",
+        "rightTable": "logicalTable:OpaqueFoodmart.Customer",
+        "type": "INNER",
+        "cardinality": "MANY"
+      },
+      {
+        "name": "Relationship_2004:309451593108056",
+        "leftTable": "logicalTable:OpaqueFoodmart.Shipper",
+        "rightTable": "logicalTable:OpaqueFoodmart.Shipper",
+        "type": "INNER",
+        "cardinality": "MANY"
+      },
+      {
+        "name": "Relationship_2004:309361593108032",
+        "leftTable": "logicalTable:OpaqueFoodmart.Employee",
+        "rightTable": "logicalTable:OpaqueFoodmart.Employee",
+        "type": "INNER",
+        "cardinality": "MANY"
+      },
+      {
+        "name": "Relationship_2004:309391593108037",
+        "leftTable": "logicalTable:OpaqueFoodmart.Product",
+        "rightTable": "logicalTable:OpaqueFoodmart.Product",
+        "type": "INNER",
+        "cardinality": "MANY"
+      },
+      {
+        "name": "Relationship_2004:309421593108051",
+        "leftTable": "logicalTable:OpaqueFoodmart.ShipmentTime",
+        "rightTable": "logicalTable:OpaqueFoodmart.ShipmentTime",
+        "type": "INNER",
+        "cardinality": "MANY"
+      }
+    ]
+  }
+}

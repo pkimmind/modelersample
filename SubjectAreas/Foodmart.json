@@ -1,27 +1,25 @@
 {
   "subjectArea": {
     "name": "Foodmart",
-    "exportLogicalKeys": false,
     "sourceBusinessModel": "businessModel:Foodmart",
-    "implicitFactColumn": "logicalColumn:Foodmart.Sales.Profit",
     "tableOrder": [
       {
-        "name": "presentationTable:Foodmart..Time"
+        "name": "presentationTable:Foodmart.Sales"
       },
       {
-        "name": "presentationTable:Foodmart..Geography"
+        "name": "presentationTable:Foodmart.Geography"
       },
       {
-        "name": "presentationTable:Foodmart..Customer"
+        "name": "presentationTable:Foodmart.Time"
       },
       {
-        "name": "presentationTable:Foodmart..Facts: Sales"
+        "name": "presentationTable:Foodmart.Customer"
       },
       {
-        "name": "presentationTable:Foodmart..Facts: Budget"
+        "name": "presentationTable:Foodmart.Budget"
       },
       {
-        "name": "presentationTable:Foodmart..Category"
+        "name": "presentationTable:Foodmart.Category"
       }
     ],
     "permissions": [

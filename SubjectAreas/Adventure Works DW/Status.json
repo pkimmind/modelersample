@@ -35,19 +35,13 @@
         "sourceLogicalTable": "Adventure Works DW.Status",
         "levels": [ {
             "name": "[Employee].[Status].[(All)]",
-            "displayColumns": [ {
-                "name": "[Employee].[Status].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Status.[Employee].[Status].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Status.[Employee].[Status].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Status.[Employee].[Status].[(All)]"
           },
           {
             "name": "Status",
-            "displayColumns": [ {
-                "name": "Status#7",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Status.Status#7"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Status.Status#7",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Status.Status#7"
           }
         ]
       }

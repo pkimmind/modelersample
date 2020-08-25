@@ -35,19 +35,13 @@
         "sourceLogicalTable": "Adventure Works DW.Customer PO Number",
         "levels": [ {
             "name": "[Internet Sales Order Details].[Customer PO Number].[(All)]",
-            "displayColumns": [ {
-                "name": "[Internet Sales Order Details].[Customer PO Number].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer PO Number.[Internet Sales Order Details].[Customer PO Number].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Customer PO Number.[Internet Sales Order Details].[Customer PO Number].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Customer PO Number.[Internet Sales Order Details].[Customer PO Number].[(All)]"
           },
           {
             "name": "Customer PO Number",
-            "displayColumns": [ {
-                "name": "Customer PO Number",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer PO Number.Customer PO Number"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Customer PO Number.Customer PO Number",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Customer PO Number.Customer PO Number"
           }
         ]
       }

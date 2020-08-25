@@ -1,0 +1,13 @@
+{
+  "businessModel": {
+    "name": "Usage Tracking",
+    "joins": [      {
+        "name": "Relationship_2004:39901064958008",
+        "leftTable": "logicalTable:Usage Tracking.Topic",
+        "rightTable": "logicalTable:Usage Tracking.Topic",
+        "type": "INNER",
+        "cardinality": "MANY"
+      }
+    ]
+  }
+}

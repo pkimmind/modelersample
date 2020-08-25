@@ -1,0 +1,57 @@
+{
+  "logicalTable": {
+    "name": "Category",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "Category Description",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Budget",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart.Budget.Category Description"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Budget",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:FoodMart.Budget"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        }
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "Category Description",
+      "logicalLevels": [
+        {
+          "name": "Category Description",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 4,
+          "primaryColumns": [
+            "Category Description"
+          ],
+          "displayColumn": "Category Description"
+        }
+      ],
+      "logicalHierarchies": [ {
+          "name": "Category",
+          "levels": [ "Category Description" ]
+        }
+      ]
+    }
+  }
+}

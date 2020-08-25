@@ -35,19 +35,13 @@
         "sourceLogicalTable": "Adventure Works DW.Number of Children At Home",
         "levels": [ {
             "name": "[Customer].[Number of Children At Home].[(All)]",
-            "displayColumns": [ {
-                "name": "[Customer].[Number of Children At Home].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Children At Home.[Customer].[Number of Children At Home].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Number of Children At Home.[Customer].[Number of Children At Home].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Number of Children At Home.[Customer].[Number of Children At Home].[(All)]"
           },
           {
             "name": "Number of Children At Home",
-            "displayColumns": [ {
-                "name": "Number of Children At Home#2",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Children At Home.Number of Children At Home#2"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Number of Children At Home.Number of Children At Home#2",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Number of Children At Home.Number of Children At Home#2"
           }
         ]
       }

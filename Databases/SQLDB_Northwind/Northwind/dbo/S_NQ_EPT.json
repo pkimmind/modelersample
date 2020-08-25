@@ -1,12 +1,11 @@
 {
   "physicalTable": {
     "name": "S_NQ_EPT",
-    "isCacheable": false,
+    "sourceType": "TABLE",
     "isCacheEventTable": true,
     "caching": {
-      "enable": false
     },
-    "pollFreq": "6000",
+    "eventPollingFrequency": "6000",
     "physicalColumns": [ {
         "name": "CATALOG_NAME",
         "dataType": "VARCHAR",

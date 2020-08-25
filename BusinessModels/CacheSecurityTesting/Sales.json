@@ -1,0 +1,163 @@
+{
+  "logicalTable": {
+    "name": "Sales",
+    "type": "FACT",
+    "logicalColumns": [ {
+        "name": "Revenue",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "OrderDetails",
+              "physicalExpression": {
+                "expressionTemplate": "%1 * %2 ",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.OrderDetails.UnitPrice",
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.OrderDetails.Quantity"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "BASED_ON_DIMENSION",
+          "dimensionBasedRules": [ {
+              "dimension": "OTHER",
+              "rule": "SUM"
+            }
+          ]
+        }
+      },
+      {
+        "name": "PlanRevenue",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "SalesPlan",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:CacheSecurityTesting.SalesPlan.Revenue"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "BASED_ON_DIMENSION",
+          "dimensionBasedRules": [ {
+              "dimension": "OTHER",
+              "rule": "SUM"
+            }
+          ]
+        }
+      },
+      {
+        "name": "EmployeeID",
+        "dataType": "SMALLINT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "OrderDetails",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.EmployeeID"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "ShipCountry",
+        "dataType": "CHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "OrderDetails",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:SQLDB_Northwind.Northwind.dbo.Orders.ShipCountry"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "OrderDetails",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.OrderDetails",
+            "physicalTable:SQLDB_Northwind.Northwind.dbo.Orders"
+          ],
+          "logicalTableSourceJoins": [
+            {
+              "leftTable": "SQLDB_Northwind.Northwind.dbo.OrderDetails",
+              "rightTable": "SQLDB_Northwind.Northwind.dbo.Orders",
+              "joinType": "Inner",
+              "cardinality": "MANY TO ONE",
+              "physicalJoinRef": "SQLDB_Northwind.Northwind.dbo.OrderDetails.FK__OrderDeta__Order__1EC48A19"
+            },
+            {
+              "leftTable": "SQLDB_Northwind.Northwind.dbo.Orders",
+              "rightTable": "SQLDB_Northwind.Northwind.dbo.OrderDetails",
+              "joinType": "Inner",
+              "cardinality": " ONE TO MANY",
+              "physicalJoinRef": "SQLDB_Northwind.Northwind.dbo.OrderDetails.FK__OrderDeta__Order__1EC48A19"
+            }
+          ]
+        }
+      },
+      {
+        "name": "SalesPlan",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:CacheSecurityTesting.SalesPlan"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        }
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "All Employees",
+      "logicalLevels": [
+        {
+          "name": "All Employees",
+          "grandTotalLevel": true,
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1
+        },
+        {
+          "name": "Country",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 3,
+          "primaryColumns": [
+            "EmployeeCountry"
+          ]
+        },
+        {
+          "name": "Details",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 9,
+          "primaryColumns": [
+            "EmployeeID"
+          ]
+        }
+      ],
+      "logicalHierarchies": [ {
+          "name": "Employees",
+          "levels": [ "All Employees", "Country", "Details" ]
+        }
+      ]
+    }
+  }
+}

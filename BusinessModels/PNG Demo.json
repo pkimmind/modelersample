@@ -1,0 +1,34 @@
+{
+  "businessModel": {
+    "name": "PNG Demo",
+    "joins": [      {
+        "name": "PNG Demo:Logical Join",
+        "leftTable": "logicalTable:PNG Demo.Cost Center",
+        "rightTable": "logicalTable:PNG Demo.Cost Center",
+        "type": "INNER",
+        "cardinality": "MANY"
+      },
+      {
+        "name": "PNG Demo:Logical Join#1",
+        "leftTable": "logicalTable:PNG Demo.Cost Element",
+        "rightTable": "logicalTable:PNG Demo.Cost Element",
+        "type": "INNER",
+        "cardinality": "MANY"
+      },
+      {
+        "name": "PNG Demo:Logical Join#2",
+        "leftTable": "logicalTable:PNG Demo.Fiscal Year/Period",
+        "rightTable": "logicalTable:PNG Demo.Fiscal Year/Period",
+        "type": "INNER",
+        "cardinality": "MANY"
+      },
+      {
+        "name": "PNG Demo:Logical Join#4",
+        "leftTable": "logicalTable:PNG Demo.Vendor",
+        "rightTable": "logicalTable:PNG Demo.Vendor",
+        "type": "INNER",
+        "cardinality": "MANY"
+      }
+    ]
+  }
+}

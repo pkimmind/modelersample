@@ -1,9 +1,9 @@
 {
   "physicalTableAlias": {
-    "sourceTable": "physicalTable:W_MONTH_D",
+    "name": "W_MONTH_D_alias",
+    "sourceTable": "physicalTable:SQLDB_Northwind_Time.Northwind_Time.dbo.W_MONTH_D",
     "caching": {
       "enable": true
-    },
-    "overrideSourceCacheSetting": false
+    }
   }
 }

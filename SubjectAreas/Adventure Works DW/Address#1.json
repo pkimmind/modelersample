@@ -35,19 +35,13 @@
         "sourceLogicalTable": "Adventure Works DW.Address#1",
         "levels": [ {
             "name": "[Reseller].[Address].[(All)]",
-            "displayColumns": [ {
-                "name": "[Reseller].[Address].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Address#1.[Reseller].[Address].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Address#1.[Reseller].[Address].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Address#1.[Reseller].[Address].[(All)]"
           },
           {
             "name": "Address",
-            "displayColumns": [ {
-                "name": "Address#3",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Address#1.Address#3"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Address#1.Address#3",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Address#1.Address#3"
           }
         ]
       }

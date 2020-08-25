@@ -1,0 +1,80 @@
+{
+  "presentationTable": {
+    "name": "Customer",
+    "presentationColumns": [ {
+        "name": "CustomerID",
+        "sourceLogicalColumn": "logicalColumn:Sales.Customer.CustomerID"
+      },
+      {
+        "name": "SiteID",
+        "sourceLogicalColumn": "logicalColumn:Sales.Customer.SiteID"
+      },
+      {
+        "name": "CompanyName",
+        "sourceLogicalColumn": "logicalColumn:Sales.Customer.CompanyName"
+      },
+      {
+        "name": "SiteName",
+        "sourceLogicalColumn": "logicalColumn:Sales.Customer.SiteName"
+      },
+      {
+        "name": "ContactName",
+        "sourceLogicalColumn": "logicalColumn:Sales.Customer.ContactName"
+      },
+      {
+        "name": "ContactTitle",
+        "sourceLogicalColumn": "logicalColumn:Sales.Customer.ContactTitle"
+      },
+      {
+        "name": "Address",
+        "sourceLogicalColumn": "logicalColumn:Sales.Customer.Address"
+      },
+      {
+        "name": "City",
+        "sourceLogicalColumn": "logicalColumn:Sales.Customer.City"
+      },
+      {
+        "name": "Region",
+        "sourceLogicalColumn": "logicalColumn:Sales.Customer.Region"
+      },
+      {
+        "name": "PostalCode",
+        "sourceLogicalColumn": "logicalColumn:Sales.Customer.PostalCode"
+      },
+      {
+        "name": "Country",
+        "sourceLogicalColumn": "logicalColumn:Sales.Customer.Country"
+      },
+      {
+        "name": "Phone",
+        "sourceLogicalColumn": "logicalColumn:Sales.Customer.Phone"
+      },
+      {
+        "name": "Fax",
+        "sourceLogicalColumn": "logicalColumn:Sales.Customer.Fax"
+      },
+      {
+        "name": "Level",
+        "sourceLogicalColumn": "logicalColumn:Sales.Customer.Level"
+      }
+    ],
+    "hierarchies": [ {
+        "name": "Customer",
+        "sourceLogicalTable": "Sales.Customer",
+        "levels": [ {
+            "name": "Customer",
+            "displayColumn": "Sales.Customer.CustomerID",
+            "sourceLogicalLevel": "logicalColumn:Sales.Customer.CustomerID",
+            "displayColumn": "Sales.Customer.CompanyName",
+            "sourceLogicalLevel": "logicalColumn:Sales.Customer.CompanyName"
+          },
+          {
+            "name": "Site",
+            "displayColumn": "Sales.Customer.SiteID",
+            "sourceLogicalLevel": "logicalColumn:Sales.Customer.SiteID"
+          }
+        ]
+      }
+    ]
+  }
+}

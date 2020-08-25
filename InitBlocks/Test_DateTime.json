@@ -1,0 +1,19 @@
+{
+  "initBlock": {
+    "name": "Test_DateTime",
+    "type": "SESSION",
+    "isDeferredExecution": true,
+    "isDBIndependentSQL": true,
+    "refreshPeriod": 86400,
+    "selectStatements": [
+      {
+        "databaseType": "DEFAULT",
+        "query": "select  hiredate from SQLDB_Northwind.Northwind.dbo.employees\n"
+      }
+    ],
+    "variables": [ {
+        "name": "DatetimeVar"
+      }
+    ]
+  }
+}

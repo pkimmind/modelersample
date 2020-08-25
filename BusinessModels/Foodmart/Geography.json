@@ -1,0 +1,297 @@
+{
+  "logicalTable": {
+    "name": "Geography",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "Store Country",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart.Sales.Store Country"
+                ]
+              }
+            },
+            {
+              "logicalTableSource": "Budget",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart.Budget.Store Country"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Store State",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart.Sales.Store State"
+                ]
+              }
+            },
+            {
+              "logicalTableSource": "Budget",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart.Budget.Store State"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Store Name",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart.Sales.Store Name"
+                ]
+              }
+            },
+            {
+              "logicalTableSource": "Budget",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart.Budget.Store Name"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Store Sqft",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart.Sales.Store Sqft"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Store Manager",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart.Sales.Store Manager"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Store City",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart.Sales.Store City"
+                ]
+              }
+            },
+            {
+              "logicalTableSource": "Budget",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart.Budget.Store City"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "CountryAlias",
+        "dataType": "UNKNOWN",
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " INDEXCOL(0, %1)",
+              "expressionObjects": [
+                "logicalColumn:Foodmart.Geography.Store Country"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "CountryAliasAlias",
+        "dataType": "UNKNOWN",
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": "%1",
+              "expressionObjects": [
+                "logicalColumn:Foodmart.Geography.CountryAlias"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "CountryAliasAlias1",
+        "dataType": "UNKNOWN",
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " INDEXCOL(1, %1, %2)",
+              "expressionObjects": [
+                "logicalColumn:Foodmart.Geography.Store State",
+                "logicalColumn:Foodmart.Geography.CountryAlias"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "CountryAliasAlias2",
+        "dataType": "UNKNOWN",
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " INDEXCOL(0,  CASE  WHEN 0 > 1 THEN %1 ELSE %2 END )",
+              "expressionObjects": [
+                "logicalColumn:Foodmart.Geography.Store State",
+                "logicalColumn:Foodmart.Geography.CountryAliasAlias1"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "SessionVarAlias",
+        "dataType": "UNKNOWN",
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "physicalExpression": {
+              "expressionTemplate": " INDEXCOL( VALUEOF(NQ_SESSION.%1), %2, %3, %4)",
+              "expressionObjects": [
+                "variable:IndexColInitBlock.INDEXCOLINDEX",
+                "logicalColumn:Foodmart.Geography.Store Country",
+                "logicalColumn:Foodmart.Geography.Store State",
+                "logicalColumn:Foodmart.Geography.Store City"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Sales",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:FoodMart.Sales"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        }
+      },
+      {
+        "name": "Budget",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:FoodMart.Budget"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        }
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "Country",
+      "logicalLevels": [
+        {
+          "name": "Country",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "Store Country"
+          ],
+          "displayColumn": "Store Country"
+        },
+        {
+          "name": "State",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "Store State"
+          ],
+          "displayColumn": "Store State"
+        },
+        {
+          "name": "Store City",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "Store City"
+          ],
+          "displayColumn": "Store City"
+        },
+        {
+          "name": "Store",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "Store Name"
+          ],
+          "displayColumn": "Store Name"
+        }
+      ],
+      "logicalHierarchies": [ {
+          "name": "Geography",
+          "levels": [ "Country", "State", "Store City", "Store" ]
+        }
+      ]
+    }
+  }
+}

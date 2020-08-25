@@ -1,0 +1,15 @@
+{
+  "initBlock": {
+    "name": "COUNTRY_UK",
+    "type": "SESSION",
+    "isRowWiseInit": true,
+    "refreshPeriod": 86400,
+    "connectionPool": "connectionPool:SQLDB_Northwind.Northwind Init Block Connections",
+    "selectStatements": [
+      {
+        "databaseType": "DEFAULT",
+        "query": "select distinct 'COUNTRY_UK', country from employees where country = 'UK'"
+      }
+    ]
+  }
+}

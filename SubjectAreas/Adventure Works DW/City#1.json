@@ -47,19 +47,13 @@
         "sourceLogicalTable": "Adventure Works DW.City#1",
         "levels": [ {
             "name": "[Geography].[City].[(All)]",
-            "displayColumns": [ {
-                "name": "[Geography].[City].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City#1.[Geography].[City].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.City#1.[Geography].[City].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.City#1.[Geography].[City].[(All)]"
           },
           {
             "name": "City",
-            "displayColumns": [ {
-                "name": "City#4",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City#1.City#4"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.City#1.City#4",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.City#1.City#4"
           }
         ]
       }

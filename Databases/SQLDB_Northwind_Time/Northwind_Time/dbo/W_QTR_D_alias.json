@@ -1,9 +1,9 @@
 {
   "physicalTableAlias": {
-    "sourceTable": "physicalTable:W_QTR_D",
+    "name": "W_QTR_D_alias",
+    "sourceTable": "physicalTable:SQLDB_Northwind_Time.Northwind_Time.dbo.W_QTR_D",
     "caching": {
       "enable": true
-    },
-    "overrideSourceCacheSetting": false
+    }
   }
 }

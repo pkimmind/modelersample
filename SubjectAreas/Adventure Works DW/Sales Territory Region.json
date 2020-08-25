@@ -43,19 +43,13 @@
         "sourceLogicalTable": "Adventure Works DW.Sales Territory Region",
         "levels": [ {
             "name": "[Sales Territory].[Sales Territory Region].[(All)]",
-            "displayColumns": [ {
-                "name": "[Sales Territory].[Sales Territory Region].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Region.[Sales Territory].[Sales Territory Region].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Sales Territory Region.[Sales Territory].[Sales Territory Region].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Sales Territory Region.[Sales Territory].[Sales Territory Region].[(All)]"
           },
           {
             "name": "Sales Territory Region",
-            "displayColumns": [ {
-                "name": "Sales Territory Region",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory Region.Sales Territory Region"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Sales Territory Region.Sales Territory Region",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Sales Territory Region.Sales Territory Region"
           }
         ]
       }

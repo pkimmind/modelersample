@@ -1,9 +1,9 @@
 {
   "physicalTableAlias": {
-    "sourceTable": "physicalTable:Categories",
+    "name": "Cross Sell Categories",
+    "sourceTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Categories",
     "caching": {
       "enable": true
-    },
-    "overrideSourceCacheSetting": false
+    }
   }
 }

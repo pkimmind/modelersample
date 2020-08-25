@@ -71,35 +71,23 @@
         "sourceLogicalTable": "Adventure Works DW.Sales Territory",
         "levels": [ {
             "name": "[Sales Territory].[Sales Territory].[(All)]",
-            "displayColumns": [ {
-                "name": "[Sales Territory].[Sales Territory].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory.[Sales Territory].[Sales Territory].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Sales Territory.[Sales Territory].[Sales Territory].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Sales Territory.[Sales Territory].[Sales Territory].[(All)]"
           },
           {
             "name": "Group",
-            "displayColumns": [ {
-                "name": "Group",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory.Group"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Sales Territory.Group",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Sales Territory.Group"
           },
           {
             "name": "Country",
-            "displayColumns": [ {
-                "name": "Country#8",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory.Country#8"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Sales Territory.Country#8",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Sales Territory.Country#8"
           },
           {
             "name": "Region",
-            "displayColumns": [ {
-                "name": "Region",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Territory.Region"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Sales Territory.Region",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Sales Territory.Region"
           }
         ]
       }

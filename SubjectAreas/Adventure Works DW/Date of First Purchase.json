@@ -39,19 +39,13 @@
         "sourceLogicalTable": "Adventure Works DW.Date of First Purchase",
         "levels": [ {
             "name": "[Customer].[Date of First Purchase].[(All)]",
-            "displayColumns": [ {
-                "name": "[Customer].[Date of First Purchase].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date of First Purchase.[Customer].[Date of First Purchase].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Date of First Purchase.[Customer].[Date of First Purchase].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Date of First Purchase.[Customer].[Date of First Purchase].[(All)]"
           },
           {
             "name": "Date of First Purchase",
-            "displayColumns": [ {
-                "name": "Date of First Purchase#2",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date of First Purchase.Date of First Purchase#2"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Date of First Purchase.Date of First Purchase#2",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Date of First Purchase.Date of First Purchase#2"
           }
         ]
       }

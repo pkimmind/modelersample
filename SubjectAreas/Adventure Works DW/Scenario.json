@@ -23,11 +23,8 @@
         "sourceLogicalTable": "Adventure Works DW.Scenario",
         "levels": [ {
             "name": "Scenario",
-            "displayColumns": [ {
-                "name": "Scenario",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Scenario.Scenario"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Scenario.Scenario",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Scenario.Scenario"
           }
         ]
       }

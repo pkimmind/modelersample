@@ -35,19 +35,13 @@
         "sourceLogicalTable": "Adventure Works DW.Min Quantity",
         "levels": [ {
             "name": "[Promotion].[Min Quantity].[(All)]",
-            "displayColumns": [ {
-                "name": "[Promotion].[Min Quantity].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Quantity.[Promotion].[Min Quantity].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Min Quantity.[Promotion].[Min Quantity].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Min Quantity.[Promotion].[Min Quantity].[(All)]"
           },
           {
             "name": "Min Quantity",
-            "displayColumns": [ {
-                "name": "Min Quantity",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Min Quantity.Min Quantity"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Min Quantity.Min Quantity",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Min Quantity.Min Quantity"
           }
         ]
       }

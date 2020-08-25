@@ -1,0 +1,43 @@
+{
+  "presentationTable": {
+    "name": "ShipmentTime",
+    "presentationColumns": [ {
+        "name": "Week",
+        "sourceLogicalColumn": "logicalColumn:Sales.ShipmentTime.Week"
+      },
+      {
+        "name": "Qtr",
+        "sourceLogicalColumn": "logicalColumn:Sales.ShipmentTime.Qtr"
+      },
+      {
+        "name": "Year",
+        "sourceLogicalColumn": "logicalColumn:Sales.ShipmentTime.Year"
+      },
+      {
+        "name": "Level",
+        "sourceLogicalColumn": "logicalColumn:Sales.ShipmentTime.Level"
+      }
+    ],
+    "hierarchies": [ {
+        "name": "Time",
+        "sourceLogicalTable": "Sales.Time",
+        "levels": [ {
+            "name": "Year",
+            "displayColumn": "Sales.ShipmentTime.Year",
+            "sourceLogicalLevel": "logicalColumn:Sales.ShipmentTime.Year"
+          },
+          {
+            "name": "Qtr",
+            "displayColumn": "Sales.ShipmentTime.Qtr",
+            "sourceLogicalLevel": "logicalColumn:Sales.ShipmentTime.Qtr"
+          },
+          {
+            "name": "Week",
+            "displayColumn": "Sales.ShipmentTime.Week",
+            "sourceLogicalLevel": "logicalColumn:Sales.ShipmentTime.Week"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -35,19 +35,13 @@
         "sourceLogicalTable": "Adventure Works DW.Hire Year",
         "levels": [ {
             "name": "[Employee].[Hire Year].[(All)]",
-            "displayColumns": [ {
-                "name": "[Employee].[Hire Year].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Hire Year.[Employee].[Hire Year].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Hire Year.[Employee].[Hire Year].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Hire Year.[Employee].[Hire Year].[(All)]"
           },
           {
             "name": "Hire Year",
-            "displayColumns": [ {
-                "name": "Hire Year#7",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Hire Year.Hire Year#7"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Hire Year.Hire Year#7",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Hire Year.Hire Year#7"
           }
         ]
       }

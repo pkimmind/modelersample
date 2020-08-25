@@ -95,35 +95,23 @@
         "sourceLogicalTable": "Adventure Works DW.Product Model Categories",
         "levels": [ {
             "name": "[Product].[Product Model Categories].[(All)]",
-            "displayColumns": [ {
-                "name": "[Product].[Product Model Categories].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.[Product].[Product Model Categories].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Product Model Categories.[Product].[Product Model Categories].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Product Model Categories.[Product].[Product Model Categories].[(All)]"
           },
           {
             "name": "Category",
-            "displayColumns": [ {
-                "name": "Category#4",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.Category#4"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Product Model Categories.Category#4",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Product Model Categories.Category#4"
           },
           {
             "name": "Subcategory",
-            "displayColumns": [ {
-                "name": "Subcategory#5",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.Subcategory#5"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Product Model Categories.Subcategory#5",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Product Model Categories.Subcategory#5"
           },
           {
             "name": "Model",
-            "displayColumns": [ {
-                "name": "Model",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Product Model Categories.Model"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Product Model Categories.Model",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Product Model Categories.Model"
           }
         ]
       }

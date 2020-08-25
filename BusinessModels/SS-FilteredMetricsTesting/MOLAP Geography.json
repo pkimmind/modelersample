@@ -1,0 +1,90 @@
+{
+  "logicalTable": {
+    "name": "MOLAP Geography",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "Store Country",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart.Sales.Store Country"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Store State",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Sales",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:FoodMart.Sales.Store State"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Sales",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:FoodMart.Sales"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        }
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "All",
+      "logicalLevels": [
+        {
+          "name": "All",
+          "grandTotalLevel": true,
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1
+        },
+        {
+          "name": "Country",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "Store Country"
+          ],
+          "displayColumn": "Store Country"
+        },
+        {
+          "name": "State",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryColumns": [
+            "Store State",
+            "Store Country"
+          ],
+          "displayColumn": "Store State"
+        }
+      ],
+      "logicalHierarchies": [ {
+          "name": "MOLAP Geography",
+          "levels": [ "All", "Country", "State" ]
+        }
+      ]
+    }
+  }
+}

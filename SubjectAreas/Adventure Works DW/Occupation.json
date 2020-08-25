@@ -47,19 +47,13 @@
         "sourceLogicalTable": "Adventure Works DW.Occupation",
         "levels": [ {
             "name": "[Customer].[Occupation].[(All)]",
-            "displayColumns": [ {
-                "name": "[Customer].[Occupation].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Occupation.[Customer].[Occupation].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Occupation.[Customer].[Occupation].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Occupation.[Customer].[Occupation].[(All)]"
           },
           {
             "name": "Occupation",
-            "displayColumns": [ {
-                "name": "Occupation#2",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Occupation.Occupation#2"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Occupation.Occupation#2",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Occupation.Occupation#2"
           }
         ]
       }

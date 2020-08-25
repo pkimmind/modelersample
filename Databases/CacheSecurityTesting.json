@@ -1,11 +1,9 @@
 {
   "database": {
     "name": "CacheSecurityTesting",
-    "type": "Oracle10gR2",
     "dbFlag": 8,
-    "databaseType": 46,
-    "features": [
-      {
+    "databaseType": "Oracle 10g R2",
+    "features": [ {
         "name": "LENGTH_SUPPORTED",
         "value": false
       },
@@ -47,98 +45,55 @@
         "maxConnections": 100,
         "connection": "biserver-dev.us.oracle.com:1521/orcl",
         "type": "OCI10G",
-        "requiresFullyQualifedTableNames": false,
         "isSharedLogin": true,
-        "multithreaded": false,
-        "isCloseAfterEveryRequest": false,
         "outputType": "xml",
-        "ignoreFirstLine": false,
         "bulkInsertBufferSize": 32768,
         "tempTablePrefix": "TT",
         "transactionBoundary": 10,
-        "xmlaUseSession": false,
-        "supportParams": true,
-        "isSiebelJDBSecured": false
+        "supportParams": true
       }
     ],
-    "joins": [
-      {
-        "join": "simple",
+    "joins": [ {
+        "type": "SIMPLE",
         "name": "Employees_FKey",
-        "primaryKey": [
-          {
-            "name": "Employees_Country_Key",
-            "columns": [
-              "PhysicalColumn:SQLDB_Northwind.Northwind.dbo.Employees_Country.Country"
-            ]
-          }
-        ],
-        "foreignKey": [
-          {
-            "name": "Country",
-            "columns": [
-              "PhysicalColumn:CacheSecurityTesting...Employees.Country"
-            ]
+        "leftTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Employees_Country",
+        "rightTable": "physicalTable:CacheSecurityTesting.Employees",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees_Country.Country",
+            "rightColumn": "physicalColumn:CacheSecurityTesting.Employees.Country"
           }
         ]
       },
       {
-        "join": "simple",
+        "type": "SIMPLE",
         "name": "Employees_Dynamic_FKey",
-        "primaryKey": [
-          {
-            "name": "PK__Employees__Emplo__15EF4CF6",
-            "columns": [
-              "PhysicalColumn:CacheSecurityTesting...Employees.EmployeeID"
-            ]
-          }
-        ],
-        "foreignKey": [
-          {
-            "name": "employeeidVariable",
-            "columns": [
-              "PhysicalColumn:CacheSecurityTesting...Employees_Dynamic.employeeidVariable"
-            ]
+        "leftTable": "physicalTable:CacheSecurityTesting.Employees",
+        "rightTable": "physicalTable:CacheSecurityTesting.Employees_Dynamic",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:CacheSecurityTesting.Employees.EmployeeID",
+            "rightColumn": "physicalColumn:CacheSecurityTesting.Employees_Dynamic.employeeidVariable"
           }
         ]
       },
       {
-        "join": "simple",
+        "type": "SIMPLE",
         "name": "SalesPlan_FKey",
-        "primaryKey": [
-          {
-            "name": "Year_Key",
-            "columns": [
-              "PhysicalColumn:SQLDB_Northwind.Northwind.dbo.Year.Year"
-            ]
-          }
-        ],
-        "foreignKey": [
-          {
-            "name": "Year",
-            "columns": [
-              "PhysicalColumn:CacheSecurityTesting...SalesPlan.Year"
-            ]
+        "leftTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Year",
+        "rightTable": "physicalTable:CacheSecurityTesting.SalesPlan",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Year.Year",
+            "rightColumn": "physicalColumn:CacheSecurityTesting.SalesPlan.Year"
           }
         ]
       },
       {
-        "join": "simple",
+        "type": "SIMPLE",
         "name": "SalesPlan_FKey1",
-        "primaryKey": [
-          {
-            "name": "Employees_Country_Key",
-            "columns": [
-              "PhysicalColumn:SQLDB_Northwind.Northwind.dbo.Employees_Country.Country"
-            ]
-          }
-        ],
-        "foreignKey": [
-          {
-            "name": "Country",
-            "columns": [
-              "PhysicalColumn:CacheSecurityTesting...SalesPlan.Country"
-            ]
+        "leftTable": "physicalTable:SQLDB_Northwind.Northwind.dbo.Employees_Country",
+        "rightTable": "physicalTable:CacheSecurityTesting.SalesPlan",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:SQLDB_Northwind.Northwind.dbo.Employees_Country.Country",
+            "rightColumn": "physicalColumn:CacheSecurityTesting.SalesPlan.Country"
           }
         ]
       }

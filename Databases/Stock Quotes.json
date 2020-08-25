@@ -1,10 +1,8 @@
 {
   "database": {
     "name": "Stock Quotes",
-    "type": "XMLServer",
-    "databaseType": 26,
-    "features": [
-      {
+    "databaseType": "XML Server",
+    "features": [ {
         "name": "MAX_BULK_FETCH_BUFFER_SIZE",
         "value": "0X50000"
       },
@@ -20,21 +18,16 @@
         "maxConnections": 32,
         "connection": "http://www.webservicex.net/stockquote.asmx",
         "type": "Default",
-        "requiresFullyQualifedTableNames": false,
         "isSharedLogin": true,
-        "multithreaded": false,
         "isCloseAfterEveryRequest": true,
         "xmlRefreshInterval": 4294967295,
         "scriptPath": "java.exe -Dhttp.proxyHost=www-proxy.us.oracle.com -Dhttp.proxyPort=80 -classpath \\analytics\\server\\Query\\Execution\\DbGateway\\DbGatewayXML\\Test\\stocktick_webservices -jar \\analytics\\server\\Query\\Execution\\DbGateway\\DbGatewayXML\\Test\\stocktick_webservices\\XMLServiceAdapter.jar",
         "outputType": "xml",
         "gwDelim": ",",
-        "ignoreFirstLine": false,
         "bulkInsertBufferSize": 0,
         "transactionBoundary": 0,
-        "xmlaUseSession": false,
-        "xmlHeaderPath": "c:\ade\chlliu_blue_view\biserver\buildtree\orainst\config\OracleBIServerComponent\coreapplication_obis1\NQSQueryHeader.xml",
-        "trailerPath": "c:\ade\chlliu_blue_view\biserver\buildtree\orainst\config\OracleBIServerComponent\coreapplication_obis1\NQSQueryTrailer.xml",
-        "isSiebelJDBSecured": false
+        "xmlHeaderPath": "C:\\ADE\\hjie_biserver-5\\biserver\\analytics\\orainst\\config\\fmwconfig\\biconfig\\OBIS\\NQSQueryHeader.xml",
+        "trailerPath": "C:\\ADE\\hjie_biserver-5\\biserver\\analytics\\orainst\\config\\fmwconfig\\biconfig\\OBIS\\NQSQueryTrailer.xml"
       }
     ]
   }

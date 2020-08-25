@@ -5,6 +5,17 @@
         "name": "Category Description",
         "sourceLogicalColumn": "logicalColumn:Foodmart.Category.Category Description"
       }
+    ],
+    "hierarchies": [ {
+        "name": "Category",
+        "sourceLogicalTable": "Foodmart.Category",
+        "levels": [ {
+            "name": "Category Description",
+            "displayColumn": "Foodmart.Category.Category Description",
+            "sourceLogicalLevel": "logicalColumn:Foodmart.Category.Category Description"
+          }
+        ]
+      }
     ]
   }
 }

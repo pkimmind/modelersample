@@ -603,51 +603,33 @@
         "sourceLogicalTable": "Adventure Works DW.Employees",
         "levels": [ {
             "name": "[Employee].[Employees].[(All)]",
-            "displayColumns": [ {
-                "name": "[Employee].[Employees].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.[Employee].[Employees].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Employees.[Employee].[Employees].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Employees.[Employee].[Employees].[(All)]"
           },
           {
             "name": "Employee Level 02",
-            "displayColumns": [ {
-                "name": "Employee Level 02",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Employee Level 02"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Employees.Employee Level 02",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Employees.Employee Level 02"
           },
           {
             "name": "Employee Level 03",
-            "displayColumns": [ {
-                "name": "Employee Level 03",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Employee Level 03"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Employees.Employee Level 03",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Employees.Employee Level 03"
           },
           {
             "name": "Employee Level 04",
-            "displayColumns": [ {
-                "name": "Employee Level 04",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Employee Level 04"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Employees.Employee Level 04",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Employees.Employee Level 04"
           },
           {
             "name": "Employee Level 05",
-            "displayColumns": [ {
-                "name": "Employee Level 05",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Employee Level 05"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Employees.Employee Level 05",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Employees.Employee Level 05"
           },
           {
             "name": "Employee Level 06",
-            "displayColumns": [ {
-                "name": "Employee Level 06",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Employees.Employee Level 06"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Employees.Employee Level 06",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Employees.Employee Level 06"
           }
         ]
       }

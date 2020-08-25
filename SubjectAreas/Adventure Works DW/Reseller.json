@@ -99,19 +99,13 @@
         "sourceLogicalTable": "Adventure Works DW.Reseller",
         "levels": [ {
             "name": "[Reseller].[Reseller].[(All)]",
-            "displayColumns": [ {
-                "name": "[Reseller].[Reseller].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller.[Reseller].[Reseller].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Reseller.[Reseller].[Reseller].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Reseller.[Reseller].[Reseller].[(All)]"
           },
           {
             "name": "Reseller",
-            "displayColumns": [ {
-                "name": "Reseller",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Reseller.Reseller"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Reseller.Reseller",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Reseller.Reseller"
           }
         ]
       }

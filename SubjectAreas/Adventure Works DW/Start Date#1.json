@@ -39,19 +39,13 @@
         "sourceLogicalTable": "Adventure Works DW.Start Date#1",
         "levels": [ {
             "name": "[Product].[Start Date].[(All)]",
-            "displayColumns": [ {
-                "name": "[Product].[Start Date].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date#1.[Product].[Start Date].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Start Date#1.[Product].[Start Date].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Start Date#1.[Product].[Start Date].[(All)]"
           },
           {
             "name": "Start Date",
-            "displayColumns": [ {
-                "name": "Start Date#10",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Start Date#1.Start Date#10"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Start Date#1.Start Date#10",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Start Date#1.Start Date#10"
           }
         ]
       }

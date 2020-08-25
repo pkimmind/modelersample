@@ -35,19 +35,13 @@
         "sourceLogicalTable": "Adventure Works DW.Total Children",
         "levels": [ {
             "name": "[Customer].[Total Children].[(All)]",
-            "displayColumns": [ {
-                "name": "[Customer].[Total Children].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Total Children.[Customer].[Total Children].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Total Children.[Customer].[Total Children].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Total Children.[Customer].[Total Children].[(All)]"
           },
           {
             "name": "Total Children",
-            "displayColumns": [ {
-                "name": "Total Children#2",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Total Children.Total Children#2"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Total Children.Total Children#2",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Total Children.Total Children#2"
           }
         ]
       }

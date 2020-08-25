@@ -103,19 +103,13 @@
         "sourceLogicalTable": "Adventure Works DW.Customer",
         "levels": [ {
             "name": "[Customer].[Customer].[(All)]",
-            "displayColumns": [ {
-                "name": "[Customer].[Customer].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer.[Customer].[Customer].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Customer.[Customer].[Customer].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Customer.[Customer].[Customer].[(All)]"
           },
           {
             "name": "Customer",
-            "displayColumns": [ {
-                "name": "Customer",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer.Customer"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Customer.Customer",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Customer.Customer"
           }
         ]
       }

@@ -39,19 +39,13 @@
         "sourceLogicalTable": "Adventure Works DW.Gender",
         "levels": [ {
             "name": "[Customer].[Gender].[(All)]",
-            "displayColumns": [ {
-                "name": "[Customer].[Gender].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Gender.[Customer].[Gender].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Gender.[Customer].[Gender].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Gender.[Customer].[Gender].[(All)]"
           },
           {
             "name": "Gender",
-            "displayColumns": [ {
-                "name": "Gender#2",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Gender.Gender#2"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Gender.Gender#2",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Gender.Gender#2"
           }
         ]
       }

@@ -1,0 +1,57 @@
+{
+  "logicalTable": {
+    "name": "State",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "State",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "$INTOP_C02",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:INFOCUBE.INTOP_C02.STATE_MKT"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "$INTOP_C02",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:INFOCUBE.INTOP_C02"
+          ],
+          "logicalTableSourceJoins": [
+            {
+            }
+          ]
+        }
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "State",
+      "logicalLevels": [
+        {
+          "name": "State",
+          "aggregateToHigherLevel": true,
+          "numberOfElements": 20,
+          "primaryColumns": [
+            "State"
+          ],
+          "displayColumn": "State"
+        }
+      ],
+      "logicalHierarchies": [ {
+          "name": "Geography",
+          "levels": [ "State" ]
+        }
+      ]
+    }
+  }
+}

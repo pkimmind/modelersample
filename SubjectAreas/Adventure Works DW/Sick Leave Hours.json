@@ -39,19 +39,13 @@
         "sourceLogicalTable": "Adventure Works DW.Sick Leave Hours",
         "levels": [ {
             "name": "[Employee].[Sick Leave Hours].[(All)]",
-            "displayColumns": [ {
-                "name": "[Employee].[Sick Leave Hours].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sick Leave Hours.[Employee].[Sick Leave Hours].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Sick Leave Hours.[Employee].[Sick Leave Hours].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Sick Leave Hours.[Employee].[Sick Leave Hours].[(All)]"
           },
           {
             "name": "Sick Leave Hours",
-            "displayColumns": [ {
-                "name": "Sick Leave Hours#7",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sick Leave Hours.Sick Leave Hours#7"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Sick Leave Hours.Sick Leave Hours#7",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Sick Leave Hours.Sick Leave Hours#7"
           }
         ]
       }

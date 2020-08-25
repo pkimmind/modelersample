@@ -39,19 +39,13 @@
         "sourceLogicalTable": "Adventure Works DW.Number of Employees",
         "levels": [ {
             "name": "[Reseller].[Number of Employees].[(All)]",
-            "displayColumns": [ {
-                "name": "[Reseller].[Number of Employees].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Employees.[Reseller].[Number of Employees].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Number of Employees.[Reseller].[Number of Employees].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Number of Employees.[Reseller].[Number of Employees].[(All)]"
           },
           {
             "name": "Number of Employees",
-            "displayColumns": [ {
-                "name": "Number of Employees",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Number of Employees.Number of Employees"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Number of Employees.Number of Employees",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Number of Employees.Number of Employees"
           }
         ]
       }

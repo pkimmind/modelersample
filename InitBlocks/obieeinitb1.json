@@ -1,0 +1,18 @@
+{
+  "initBlock": {
+    "name": "obieeinitb1",
+    "type": "SESSION",
+    "isDBIndependentSQL": true,
+    "refreshPeriod": 86400,
+    "selectStatements": [
+      {
+        "databaseType": "DEFAULT",
+        "query": "select 'obieeval1' from SQLDB_Northwind.Northwind.dbo.employees"
+      }
+    ],
+    "variables": [ {
+        "name": "obieevar1"
+      }
+    ]
+  }
+}

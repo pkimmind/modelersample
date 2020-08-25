@@ -39,19 +39,13 @@
         "sourceLogicalTable": "Adventure Works DW.Yearly Income",
         "levels": [ {
             "name": "[Customer].[Yearly Income].[(All)]",
-            "displayColumns": [ {
-                "name": "[Customer].[Yearly Income].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Yearly Income.[Customer].[Yearly Income].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Yearly Income.[Customer].[Yearly Income].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Yearly Income.[Customer].[Yearly Income].[(All)]"
           },
           {
             "name": "Yearly Income",
-            "displayColumns": [ {
-                "name": "Yearly Income#2",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Yearly Income.Yearly Income#2"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Yearly Income.Yearly Income#2",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Yearly Income.Yearly Income#2"
           }
         ]
       }

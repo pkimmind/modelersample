@@ -5,28 +5,28 @@
     "sourceBusinessModel": "businessModel:AtomicStar",
     "tableOrder": [
       {
-        "name": "presentationTable:AtomicStar..SalesFacts"
+        "name": "presentationTable:AtomicStar.SalesFacts"
       },
       {
-        "name": "presentationTable:AtomicStar..Product"
+        "name": "presentationTable:AtomicStar.Product"
       },
       {
-        "name": "presentationTable:AtomicStar..Customer"
+        "name": "presentationTable:AtomicStar.Customer"
       },
       {
-        "name": "presentationTable:AtomicStar..ShipmentTime"
+        "name": "presentationTable:AtomicStar.ShipmentTime"
       },
       {
-        "name": "presentationTable:AtomicStar..Shipper"
+        "name": "presentationTable:AtomicStar.Shipper"
       },
       {
-        "name": "presentationTable:AtomicStar..Employee"
+        "name": "presentationTable:AtomicStar.Employee"
       }
     ],
     "permissions": [
       {
         "accessor": "BIAuthor",
-        "access": "na",
+        "access": "NOACCESS",
         "type": "role"
       }
     ]

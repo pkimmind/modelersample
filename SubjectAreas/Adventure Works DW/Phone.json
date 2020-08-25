@@ -35,19 +35,13 @@
         "sourceLogicalTable": "Adventure Works DW.Phone",
         "levels": [ {
             "name": "[Customer].[Phone].[(All)]",
-            "displayColumns": [ {
-                "name": "[Customer].[Phone].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Phone.[Customer].[Phone].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Phone.[Customer].[Phone].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Phone.[Customer].[Phone].[(All)]"
           },
           {
             "name": "Phone",
-            "displayColumns": [ {
-                "name": "Phone#2",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Phone.Phone#2"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Phone.Phone#2",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Phone.Phone#2"
           }
         ]
       }

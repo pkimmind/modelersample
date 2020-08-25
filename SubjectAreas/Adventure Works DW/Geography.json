@@ -119,43 +119,28 @@
         "sourceLogicalTable": "Adventure Works DW.Geography",
         "levels": [ {
             "name": "[Geography].[Geography].[(All)]",
-            "displayColumns": [ {
-                "name": "[Geography].[Geography].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.[Geography].[Geography].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Geography.[Geography].[Geography].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Geography.[Geography].[Geography].[(All)]"
           },
           {
             "name": "Country",
-            "displayColumns": [ {
-                "name": "Country#5",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.Country#5"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Geography.Country#5",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Geography.Country#5"
           },
           {
             "name": "State-Province",
-            "displayColumns": [ {
-                "name": "State-Province#5",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.State-Province#5"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Geography.State-Province#5",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Geography.State-Province#5"
           },
           {
             "name": "City",
-            "displayColumns": [ {
-                "name": "City#5",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.City#5"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Geography.City#5",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Geography.City#5"
           },
           {
             "name": "Postal Code",
-            "displayColumns": [ {
-                "name": "Postal Code#4",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Geography.Postal Code#4"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Geography.Postal Code#4",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Geography.Postal Code#4"
           }
         ]
       }

@@ -35,19 +35,13 @@
         "sourceLogicalTable": "Adventure Works DW.Days to Manufacture",
         "levels": [ {
             "name": "[Product].[Days to Manufacture].[(All)]",
-            "displayColumns": [ {
-                "name": "[Product].[Days to Manufacture].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Days to Manufacture.[Product].[Days to Manufacture].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Days to Manufacture.[Product].[Days to Manufacture].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Days to Manufacture.[Product].[Days to Manufacture].[(All)]"
           },
           {
             "name": "Days to Manufacture",
-            "displayColumns": [ {
-                "name": "Days to Manufacture",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Days to Manufacture.Days to Manufacture"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Days to Manufacture.Days to Manufacture",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Days to Manufacture.Days to Manufacture"
           }
         ]
       }

@@ -35,19 +35,13 @@
         "sourceLogicalTable": "Adventure Works DW.Sales Order Line#2",
         "levels": [ {
             "name": "[Sales Summary Order Details].[Sales Order Line].[(All)]",
-            "displayColumns": [ {
-                "name": "[Sales Summary Order Details].[Sales Order Line].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Line#2.[Sales Summary Order Details].[Sales Order Line].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Sales Order Line#2.[Sales Summary Order Details].[Sales Order Line].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Sales Order Line#2.[Sales Summary Order Details].[Sales Order Line].[(All)]"
           },
           {
             "name": "Sales Order Line",
-            "displayColumns": [ {
-                "name": "Sales Order Line#4",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Order Line#2.Sales Order Line#4"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Sales Order Line#2.Sales Order Line#4",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Sales Order Line#2.Sales Order Line#4"
           }
         ]
       }

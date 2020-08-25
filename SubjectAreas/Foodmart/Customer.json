@@ -1,6 +1,12 @@
 {
   "presentationTable": {
     "name": "Customer",
+    "localization": {
+      "localizationKey": "Customer",
+      "nameVariable": "VALUEOF(NQ_SESSION.CN_Foodmart_Customer)",
+      "descriptionVariable": "VALUEOF(NQ_SESSION.CD_Foodmart_Customer)"
+    },
+    "description": "My Presentation Table description",
     "presentationColumns": [ {
         "name": "Country",
         "sourceLogicalColumn": "logicalColumn:Foodmart.Customer.Country"
@@ -11,7 +17,19 @@
       },
       {
         "name": "City",
-        "sourceLogicalColumn": "logicalColumn:Foodmart.Customer.City"
+        "localization": {
+          "localizationKey": "City",
+          "nameVariable": "VALUEOF(NQ_SESSION.CN_Foodmart_Customer_City)",
+          "descriptionVariable": "VALUEOF(NQ_SESSION.CD_Foodmart_Customer_City)"
+        },
+        "sourceLogicalColumn": "logicalColumn:Foodmart.Customer.City",
+        "description": "My Column description",
+        "hideIfTrue": {
+          "expressionTemplate": "VALUEOF(Dynamic Country) ",
+          "expressionObjects": [
+            "variable:Test Dynamic Repository Variables.Dynamic Country"
+          ]
+        }
       },
       {
         "name": "Name",
@@ -37,6 +55,59 @@
         "name": "Member Card",
         "sourceLogicalColumn": "logicalColumn:Foodmart.Customer.Member Card"
       }
-    ]
+    ],
+    "hierarchies": [ {
+        "name": "Customer",
+        "localization": {
+          "localizationKey": "Customer",
+          "nameVariable": "VALUEOF(NQ_SESSION.CN_Foodmart_Customer_Customer)",
+          "descriptionVariable": "VALUEOF(NQ_SESSION.CD_Foodmart_Customer_Customer)"
+        },
+        "description": "My Presentation Hierarcy Description",
+        "hideIfTrue": {
+          "expressionTemplate": "VALUEOF(%1) ",
+          "expressionObjects": [
+            "variable:Test_Float"
+          ]
+        },
+        "sourceLogicalTable": "Foodmart.Customer",
+        "levels": [ {
+            "name": "All"
+          },
+          {
+            "name": "Country",
+            "displayColumn": "Foodmart.Customer.Country",
+            "sourceLogicalLevel": "logicalColumn:Foodmart.Customer.Country"
+          },
+          {
+            "name": "State",
+            "displayColumn": "Foodmart.Customer.State Province",
+            "sourceLogicalLevel": "logicalColumn:Foodmart.Customer.State Province"
+          },
+          {
+            "name": "City",
+            "localization": {
+              "localizationKey": "City",
+              "nameVariable": "VALUEOF(NQ_SESSION.CN_Customer_Customer_City)",
+              "descriptionVariable": "VALUEOF(NQ_SESSION.CD_Foodmart_Customer_Customer_City)"
+            },
+            "description": "My Level description",
+            "displayColumn": "Foodmart.Customer.City",
+            "sourceLogicalLevel": "logicalColumn:Foodmart.Customer.City"
+          },
+          {
+            "name": "Customer Name",
+            "displayColumn": "Foodmart.Customer.Name",
+            "sourceLogicalLevel": "logicalColumn:Foodmart.Customer.Name"
+          }
+        ]
+      }
+    ],
+    "hideIfTrue": {
+      "expressionTemplate": "VALUEOF(NQ_SESSION.%1) ",
+      "expressionObjects": [
+        "variable:initb1.var1"
+      ]
+    }
   }
 }

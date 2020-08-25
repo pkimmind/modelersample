@@ -35,19 +35,13 @@
         "sourceLogicalTable": "Adventure Works DW.Date.Fiscal Quarter of Year",
         "levels": [ {
             "name": "[Date].[Fiscal Quarter of Year].[(All)]",
-            "displayColumns": [ {
-                "name": "[Date].[Fiscal Quarter of Year].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal Quarter of Year.[Date].[Fiscal Quarter of Year].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Date.Fiscal Quarter of Year.[Date].[Fiscal Quarter of Year].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Date.Fiscal Quarter of Year.[Date].[Fiscal Quarter of Year].[(All)]"
           },
           {
             "name": "Fiscal Quarter of Year",
-            "displayColumns": [ {
-                "name": "Fiscal Quarter of Year#1",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Date.Fiscal Quarter of Year.Fiscal Quarter of Year#1"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Date.Fiscal Quarter of Year.Fiscal Quarter of Year#1",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Date.Fiscal Quarter of Year.Fiscal Quarter of Year#1"
           }
         ]
       }

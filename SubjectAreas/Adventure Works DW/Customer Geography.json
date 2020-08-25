@@ -199,51 +199,33 @@
         "sourceLogicalTable": "Adventure Works DW.Customer Geography",
         "levels": [ {
             "name": "[Customer].[Customer Geography].[(All)]",
-            "displayColumns": [ {
-                "name": "[Customer].[Customer Geography].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer Geography.[Customer].[Customer Geography].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Customer Geography.[Customer].[Customer Geography].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Customer Geography.[Customer].[Customer Geography].[(All)]"
           },
           {
             "name": "Country",
-            "displayColumns": [ {
-                "name": "Country#1",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer Geography.Country#1"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Customer Geography.Country#1",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Customer Geography.Country#1"
           },
           {
             "name": "State-Province",
-            "displayColumns": [ {
-                "name": "State-Province#1",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer Geography.State-Province#1"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Customer Geography.State-Province#1",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Customer Geography.State-Province#1"
           },
           {
             "name": "City",
-            "displayColumns": [ {
-                "name": "City#1",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer Geography.City#1"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Customer Geography.City#1",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Customer Geography.City#1"
           },
           {
             "name": "Postal Code",
-            "displayColumns": [ {
-                "name": "Postal Code#1",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer Geography.Postal Code#1"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Customer Geography.Postal Code#1",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Customer Geography.Postal Code#1"
           },
           {
             "name": "Customer",
-            "displayColumns": [ {
-                "name": "Customer#1",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Customer Geography.Customer#1"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Customer Geography.Customer#1",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Customer Geography.Customer#1"
           }
         ]
       }

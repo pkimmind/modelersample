@@ -167,51 +167,33 @@
         "sourceLogicalTable": "Adventure Works DW.Ship Date.Calendar",
         "levels": [ {
             "name": "[Ship Date].[Calendar].[(All)]",
-            "displayColumns": [ {
-                "name": "[Ship Date].[Calendar].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar.[Ship Date].[Calendar].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Ship Date.Calendar.[Ship Date].[Calendar].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Ship Date.Calendar.[Ship Date].[Calendar].[(All)]"
           },
           {
             "name": "Calendar Year",
-            "displayColumns": [ {
-                "name": "Calendar Year#6",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar.Calendar Year#6"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Ship Date.Calendar.Calendar Year#6",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Ship Date.Calendar.Calendar Year#6"
           },
           {
             "name": "Calendar Semester",
-            "displayColumns": [ {
-                "name": "Calendar Semester#4",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar.Calendar Semester#4"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Ship Date.Calendar.Calendar Semester#4",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Ship Date.Calendar.Calendar Semester#4"
           },
           {
             "name": "Calendar Quarter",
-            "displayColumns": [ {
-                "name": "Calendar Quarter#6",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar.Calendar Quarter#6"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Ship Date.Calendar.Calendar Quarter#6",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Ship Date.Calendar.Calendar Quarter#6"
           },
           {
             "name": "Month",
-            "displayColumns": [ {
-                "name": "Month#4",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar.Month#4"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Ship Date.Calendar.Month#4",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Ship Date.Calendar.Month#4"
           },
           {
             "name": "Date",
-            "displayColumns": [ {
-                "name": "Date#6",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Ship Date.Calendar.Date#6"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Ship Date.Calendar.Date#6",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Ship Date.Calendar.Date#6"
           }
         ]
       }

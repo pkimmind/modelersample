@@ -39,19 +39,13 @@
         "sourceLogicalTable": "Adventure Works DW.End Date#2",
         "levels": [ {
             "name": "[Promotion].[End Date].[(All)]",
-            "displayColumns": [ {
-                "name": "[Promotion].[End Date].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.End Date#2.[Promotion].[End Date].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.End Date#2.[Promotion].[End Date].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.End Date#2.[Promotion].[End Date].[(All)]"
           },
           {
             "name": "End Date",
-            "displayColumns": [ {
-                "name": "End Date#12",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.End Date#2.End Date#12"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.End Date#2.End Date#12",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.End Date#2.End Date#12"
           }
         ]
       }

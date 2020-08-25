@@ -59,19 +59,13 @@
         "sourceLogicalTable": "Adventure Works DW.Account",
         "levels": [ {
             "name": "[Account].[Account].[(All)]",
-            "displayColumns": [ {
-                "name": "[Account].[Account].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account.[Account].[Account].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Account.[Account].[Account].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Account.[Account].[Account].[(All)]"
           },
           {
             "name": "Account",
-            "displayColumns": [ {
-                "name": "Account",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Account.Account"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Account.Account",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Account.Account"
           }
         ]
       }

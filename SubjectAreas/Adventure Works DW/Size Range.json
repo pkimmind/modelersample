@@ -35,19 +35,13 @@
         "sourceLogicalTable": "Adventure Works DW.Size Range",
         "levels": [ {
             "name": "[Product].[Size Range].[(All)]",
-            "displayColumns": [ {
-                "name": "[Product].[Size Range].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Size Range.[Product].[Size Range].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Size Range.[Product].[Size Range].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Size Range.[Product].[Size Range].[(All)]"
           },
           {
             "name": "Size Range",
-            "displayColumns": [ {
-                "name": "Size Range#2",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Size Range.Size Range#2"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Size Range.Size Range#2",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Size Range.Size Range#2"
           }
         ]
       }

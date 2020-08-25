@@ -35,19 +35,13 @@
         "sourceLogicalTable": "Adventure Works DW.Bank Name",
         "levels": [ {
             "name": "[Reseller].[Bank Name].[(All)]",
-            "displayColumns": [ {
-                "name": "[Reseller].[Bank Name].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Bank Name.[Reseller].[Bank Name].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Bank Name.[Reseller].[Bank Name].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Bank Name.[Reseller].[Bank Name].[(All)]"
           },
           {
             "name": "Bank Name",
-            "displayColumns": [ {
-                "name": "Bank Name",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Bank Name.Bank Name"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Bank Name.Bank Name",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Bank Name.Bank Name"
           }
         ]
       }

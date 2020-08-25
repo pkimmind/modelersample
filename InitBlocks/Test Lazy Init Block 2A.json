@@ -1,0 +1,22 @@
+{
+  "initBlock": {
+    "name": "Test Lazy Init Block 2A",
+    "type": "SESSION",
+    "isDeferredExecution": true,
+    "refreshPeriod": 86400,
+    "connectionPool": "connectionPool:SQLDB_Northwind.Northwind Init Block Connections",
+    "selectStatements": [
+      {
+        "databaseType": "DEFAULT",
+        "query": "select 'value_2A' from employees"
+      }
+    ],
+    "variables": [ {
+        "name": "variable_2A",
+"Expr": {
+  "expressionTemplate": "'default_2A'"
+}
+      }
+    ]
+  }
+}

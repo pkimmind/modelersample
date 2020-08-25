@@ -47,19 +47,13 @@
         "sourceLogicalTable": "Adventure Works DW.City",
         "levels": [ {
             "name": "[Customer].[City].[(All)]",
-            "displayColumns": [ {
-                "name": "[Customer].[City].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City.[Customer].[City].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.City.[Customer].[City].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.City.[Customer].[City].[(All)]"
           },
           {
             "name": "City",
-            "displayColumns": [ {
-                "name": "City",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.City.City"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.City.City",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.City.City"
           }
         ]
       }

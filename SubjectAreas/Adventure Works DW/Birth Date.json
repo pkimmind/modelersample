@@ -35,19 +35,13 @@
         "sourceLogicalTable": "Adventure Works DW.Birth Date",
         "levels": [ {
             "name": "[Employee].[Birth Date].[(All)]",
-            "displayColumns": [ {
-                "name": "[Employee].[Birth Date].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Birth Date.[Employee].[Birth Date].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Birth Date.[Employee].[Birth Date].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Birth Date.[Employee].[Birth Date].[(All)]"
           },
           {
             "name": "Birth Date",
-            "displayColumns": [ {
-                "name": "Birth Date#2",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Birth Date.Birth Date#2"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Birth Date.Birth Date#2",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Birth Date.Birth Date#2"
           }
         ]
       }

@@ -47,19 +47,13 @@
         "sourceLogicalTable": "Adventure Works DW.State-Province",
         "levels": [ {
             "name": "[Customer].[State-Province].[(All)]",
-            "displayColumns": [ {
-                "name": "[Customer].[State-Province].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.State-Province.[Customer].[State-Province].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.State-Province.[Customer].[State-Province].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.State-Province.[Customer].[State-Province].[(All)]"
           },
           {
             "name": "State-Province",
-            "displayColumns": [ {
-                "name": "State-Province#3",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.State-Province.State-Province#3"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.State-Province.State-Province#3",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.State-Province.State-Province#3"
           }
         ]
       }

@@ -71,27 +71,18 @@
         "sourceLogicalTable": "Adventure Works DW.Internet Sales Orders",
         "levels": [ {
             "name": "[Internet Sales Order Details].[Internet Sales Orders].[(All)]",
-            "displayColumns": [ {
-                "name": "[Internet Sales Order Details].[Internet Sales Orders].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Internet Sales Orders.[Internet Sales Order Details].[Internet Sales Orders].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Internet Sales Orders.[Internet Sales Order Details].[Internet Sales Orders].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Internet Sales Orders.[Internet Sales Order Details].[Internet Sales Orders].[(All)]"
           },
           {
             "name": "Order Number",
-            "displayColumns": [ {
-                "name": "Order Number",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Internet Sales Orders.Order Number"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Internet Sales Orders.Order Number",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Internet Sales Orders.Order Number"
           },
           {
             "name": "Order Line",
-            "displayColumns": [ {
-                "name": "Order Line",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Internet Sales Orders.Order Line"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Internet Sales Orders.Order Line",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Internet Sales Orders.Order Line"
           }
         ]
       }

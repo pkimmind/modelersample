@@ -35,19 +35,13 @@
         "sourceLogicalTable": "Adventure Works DW.Sales Channel",
         "levels": [ {
             "name": "[Sales Channel].[Sales Channel].[(All)]",
-            "displayColumns": [ {
-                "name": "[Sales Channel].[Sales Channel].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Channel.[Sales Channel].[Sales Channel].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Sales Channel.[Sales Channel].[Sales Channel].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Sales Channel.[Sales Channel].[Sales Channel].[(All)]"
           },
           {
             "name": "Sales Channel",
-            "displayColumns": [ {
-                "name": "Sales Channel",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Sales Channel.Sales Channel"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Sales Channel.Sales Channel",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Sales Channel.Sales Channel"
           }
         ]
       }

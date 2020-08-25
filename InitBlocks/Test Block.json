@@ -1,0 +1,36 @@
+{
+  "initBlock": {
+    "name": "Test Block",
+    "type": "SESSION",
+    "refreshPeriod": 86400,
+    "connectionPool": "connectionPool:SQLDB_Northwind.Northwind Init Block Connections",
+    "selectStatements": [
+      {
+        "databaseType": "DEFAULT",
+        "query": "select region, country, 'SQLDB', 'North', 'wind', 'Customers'  from employees where employeeid = 1"
+      }
+    ],
+    "variables": [ {
+        "name": "REGION"
+      },
+      {
+        "name": "COUNTRY"
+      },
+      {
+        "name": "SQLDB"
+      },
+      {
+        "name": "North"
+      },
+      {
+        "name": "wind"
+      },
+      {
+        "name": "CustomersSamplingTable",
+"Expr": {
+  "expressionTemplate": "'Customers'"
+}
+      }
+    ]
+  }
+}

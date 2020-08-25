@@ -47,19 +47,13 @@
         "sourceLogicalTable": "Adventure Works DW.Country",
         "levels": [ {
             "name": "[Customer].[Country].[(All)]",
-            "displayColumns": [ {
-                "name": "[Customer].[Country].[(All)]",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Country.[Customer].[Country].[(All)]"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Country.[Customer].[Country].[(All)]",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Country.[Customer].[Country].[(All)]"
           },
           {
             "name": "Country",
-            "displayColumns": [ {
-                "name": "Country",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Country.Country"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Country.Country",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Country.Country"
           }
         ]
       }

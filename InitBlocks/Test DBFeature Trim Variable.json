@@ -1,0 +1,21 @@
+{
+  "initBlock": {
+    "name": "Test DBFeature Trim Variable",
+    "type": "SESSION",
+    "isDBIndependentSQL": true,
+    "refreshPeriod": 86400,
+    "selectStatements": [
+      {
+        "databaseType": "DEFAULT",
+        "query": "select 1 from SQLDB_Northwind.Northwind.dbo.employees"
+      }
+    ],
+    "variables": [ {
+        "name": "OBIS_DBFEATURES_Oracle 10g R2_IS_TRIM_SUPPORTED",
+"Expr": {
+  "expressionTemplate": "1"
+}
+      }
+    ]
+  }
+}

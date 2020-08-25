@@ -9,6 +9,22 @@
         "name": "Quarter",
         "sourceLogicalColumn": "logicalColumn:Foodmart.Time.Quarter"
       }
+    ],
+    "hierarchies": [ {
+        "name": "Time",
+        "sourceLogicalTable": "Foodmart.Time",
+        "levels": [ {
+            "name": "Year",
+            "displayColumn": "Foodmart.Time.Year",
+            "sourceLogicalLevel": "logicalColumn:Foodmart.Time.Year"
+          },
+          {
+            "name": "Quarter",
+            "displayColumn": "Foodmart.Time.Quarter",
+            "sourceLogicalLevel": "logicalColumn:Foodmart.Time.Quarter"
+          }
+        ]
+      }
     ]
   }
 }

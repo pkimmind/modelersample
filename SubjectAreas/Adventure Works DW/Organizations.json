@@ -119,35 +119,23 @@
         "sourceLogicalTable": "Adventure Works DW.Organizations",
         "levels": [ {
             "name": "Organization Level 01",
-            "displayColumns": [ {
-                "name": "Organization Level 01",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.Organization Level 01"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Organizations.Organization Level 01",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Organizations.Organization Level 01"
           },
           {
             "name": "Organization Level 02",
-            "displayColumns": [ {
-                "name": "Organization Level 02",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.Organization Level 02"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Organizations.Organization Level 02",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Organizations.Organization Level 02"
           },
           {
             "name": "Organization Level 03",
-            "displayColumns": [ {
-                "name": "Organization Level 03",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.Organization Level 03"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Organizations.Organization Level 03",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Organizations.Organization Level 03"
           },
           {
             "name": "Organization Level 04",
-            "displayColumns": [ {
-                "name": "Organization Level 04",
-                "sourceLogicalColumn": "logicalColumn:Adventure Works DW.Organizations.Organization Level 04"
-              }
-            ]
+            "displayColumn": "Adventure Works DW.Organizations.Organization Level 04",
+            "sourceLogicalLevel": "logicalColumn:Adventure Works DW.Organizations.Organization Level 04"
           }
         ]
       }

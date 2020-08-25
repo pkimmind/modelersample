@@ -1,10 +1,8 @@
 {
   "database": {
     "name": "BadRecurisveDB",
-    "type": "Oracle10gR2",
-    "databaseType": 46,
-    "features": [
-      {
+    "databaseType": "Oracle 10g R2",
+    "features": [ {
         "name": "LENGTH_SUPPORTED",
         "value": false
       },
@@ -38,18 +36,12 @@
         "maxConnections": 10,
         "connection": "biserver-dev.us.oracle.com:1521/orcl",
         "type": "Default",
-        "requiresFullyQualifedTableNames": false,
         "isSharedLogin": true,
-        "multithreaded": false,
-        "isCloseAfterEveryRequest": false,
         "outputType": "xml",
-        "ignoreFirstLine": false,
         "bulkInsertBufferSize": 131072,
         "tempTablePrefix": "TT",
         "transactionBoundary": 1000,
-        "xmlaUseSession": false,
-        "supportParams": true,
-        "isSiebelJDBSecured": false
+        "supportParams": true
       },
       {
         "name": "BadRecursiveVar2",
@@ -60,22 +52,17 @@
         "maxConnections": 10,
         "connection": "biserver-dev.us.oracle.com:1521/orcl",
         "type": "Default",
-        "requiresFullyQualifedTableNames": false,
         "isSharedLogin": true,
-        "multithreaded": false,
-        "isCloseAfterEveryRequest": false,
         "outputType": "xml",
-        "ignoreFirstLine": false,
         "bulkInsertBufferSize": 131072,
         "tempTablePrefix": "TT",
         "transactionBoundary": 1000,
-        "xmlaUseSession": false,
         "supportParams": true,
-        "isSiebelJDBSecured": false,
-        "runBeforeQueryScripts": {
-          "isEnabled": true,
-          "Value": "select 'valueof(NQ_SESSION.BADRECURSIVEVAR)' from dual"
-        }
+        "runBeforeQueryScripts": [ {
+            "isEnabled": true,
+            "Value": "select 'valueof(NQ_SESSION.BADRECURSIVEVAR)' from dual"
+          }
+        ]
       }
     ]
   }

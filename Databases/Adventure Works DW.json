@@ -1,10 +1,8 @@
 {
   "database": {
     "name": "Adventure Works DW",
-    "type": "AnalysisServices2008",
-    "databaseType": 69,
-    "features": [
-      {
+    "databaseType": "Analysis Services 2008",
+    "features": [ {
         "name": "TIMESTAMP_ADD_SUPPORTED"
       },
       {
@@ -28,19 +26,13 @@
         "maxConnections": 10,
         "connection": "http://slc10noq.us.oracle.com/olap16/msmdpump.dll",
         "type": "XMLA",
-        "requiresFullyQualifedTableNames": false,
         "isSharedLogin": true,
-        "multithreaded": false,
-        "isCloseAfterEveryRequest": false,
         "outputType": "xml",
-        "ignoreFirstLine": false,
         "bulkInsertBufferSize": 0,
         "transactionBoundary": 0,
         "xmlaInfo": "SLC10NOQ\\MSSQLSERVER16",
         "xmlaCatalog": "Adventure Works DW",
-        "xmlaUseSession": false,
-        "supportParams": true,
-        "isSiebelJDBSecured": false
+        "supportParams": true
       }
     ]
   }

@@ -1,0 +1,18 @@
+{
+  "initBlock": {
+    "name": "initb1",
+    "type": "SESSION",
+    "refreshPeriod": 86400,
+    "connectionPool": "connectionPool:SQLDB_Northwind.Northwind Init Block Connections",
+    "selectStatements": [
+      {
+        "databaseType": "DEFAULT",
+        "query": "select 'val_1' from employees"
+      }
+    ],
+    "variables": [ {
+        "name": "var1"
+      }
+    ]
+  }
+}
